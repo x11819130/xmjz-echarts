@@ -1,0 +1,65 @@
+package ${base.package};
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.experimental.Accessors;
+
+import java.io.Serializable;
+#foreach (${import} in ${base.imports})
+import ${import};
+#end
+
+/**
+ * 官方文档: <a href="${obj.url}">${obj.url}</a>
+ * <br/>序号: ${obj.order}
+ * <br/>默认值: #if(${prop.defaultValue})${prop.defaultValue}#else无#end
+
+ * <br/>js类型: ${obj.types}
+ * <br/>描述:
+##处理描述包含*/导致的异常
+#foreach (${desc} in ${obj.description.replace('*/','<i>*</i>/').split('\n')})
+ * ${desc}
+#end
+ *
+ * @author ${base.author}
+ * @date ${base.date}
+ */
+@Getter
+@Setter
+@Accessors(chain = true)
+public class ${obj.className} implements Serializable {
+    private static final long serialVersionUID = 1L;
+
+#foreach (${prop} in ${obj.props})
+    /**
+     * 官方文档: ${prop.url}
+     * <br/>序号: ${prop.order}
+     * <br/>默认值: #if(${prop.defaultValue})${prop.defaultValue}#else无#end
+
+     * <br/>js类型: ${prop.types}
+     * <br/>描述:
+#foreach (${desc} in ${prop.description.replace('*/','<i>*</i>/').split('\n')})
+     * ${desc}
+#end
+     */
+    private ${prop.javaType} ${prop.name};
+##是否平滑模式 生成不带set和get,只有属性名的getter和setter方法
+#if(${base.fluentMode})
+
+    /**
+     * @see #${prop.name}
+     */
+    public ${prop.javaType} ${prop.name}() {
+        return this.${prop.name};
+    }
+
+    /**
+     * @see #${prop.name}
+     */
+    public ${obj.className} ${prop.name}(${prop.javaType} ${prop.name}) {
+        this.${prop.name} = ${prop.name};return this;
+    }
+
+#end
+#end
+}
