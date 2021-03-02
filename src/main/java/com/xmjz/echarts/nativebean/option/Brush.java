@@ -351,6 +351,11 @@ public class Brush implements Serializable {
      * </code></pre>
      */
     private Object xAxisIndex;
+
+    public Object getxAxisIndex() {
+        return this.xAxisIndex;
+    }
+
     /**
      * 官方文档: https://echarts.apache.org/zh/option.html#brush.yAxisIndex
      * <br/>序号: 7
@@ -405,6 +410,11 @@ public class Brush implements Serializable {
      * </code></pre>
      */
     private Object yAxisIndex;
+
+    public Object getyAxisIndex() {
+        return this.yAxisIndex;
+    }
+
     /**
      * 官方文档: https://echarts.apache.org/zh/option.html#brush.brushType
      * <br/>序号: 8

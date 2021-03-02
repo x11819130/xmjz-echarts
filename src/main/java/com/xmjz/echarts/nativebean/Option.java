@@ -70,6 +70,11 @@ public class Option implements Serializable {
      * <p>直角坐标系 grid 中的 x 轴，一般情况下单个 grid 组件最多只能放上下两个 x 轴，多于两个 x 轴需要通过配置 <a href="#xAxis.offset">offset</a> 属性防止同个位置多个 x 轴的重叠。</p>
      */
     private XAxis xAxis;
+
+    public XAxis getxAxis() {
+        return this.xAxis;
+    }
+
     /**
      * 官方文档: https://echarts.apache.org/zh/option.html#yAxis
      * <br/>序号: 5
@@ -79,6 +84,11 @@ public class Option implements Serializable {
      * <p>直角坐标系 grid 中的 y 轴，一般情况下单个 grid 组件最多只能放左右两个 y 轴，多于两个 y 轴需要通过配置 <a href="#yAxis.offset">offset</a> 属性防止同个位置多个 Y 轴的重叠。</p>
      */
     private YAxis yAxis;
+
+    public YAxis getyAxis() {
+        return this.yAxis;
+    }
+
     /**
      * 官方文档: https://echarts.apache.org/zh/option.html#polar
      * <br/>序号: 6

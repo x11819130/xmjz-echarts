@@ -83,6 +83,11 @@ public class LineSeries extends Series implements Serializable {
      * <p>使用的 <a href="#xAxis">x 轴</a>的 index，在单个图表实例中存在多个 x 轴的时候有用。</p>
      */
     private Integer xAxisIndex;
+
+    public Integer getxAxisIndex() {
+        return this.xAxisIndex;
+    }
+
     /**
      * 官方文档: https://echarts.apache.org/zh/option.html#series-line.yAxisIndex
      * <br/>序号: 6
@@ -92,6 +97,11 @@ public class LineSeries extends Series implements Serializable {
      * <p>使用的 <a href="#yAxis">y 轴</a>的 index，在单个图表实例中存在多个 y轴的时候有用。</p>
      */
     private Integer yAxisIndex;
+
+    public Integer getyAxisIndex() {
+        return this.yAxisIndex;
+    }
+
     /**
      * 官方文档: https://echarts.apache.org/zh/option.html#series-line.polarIndex
      * <br/>序号: 7
