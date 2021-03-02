@@ -51,7 +51,7 @@ public class TemplateFormat {
         JSONArray props = propObj.getJSONArray("props");
         for (int i = 0; i < props.size(); i++) {
             JSONObject prop = props.getJSONObject(i);
-            //异常数据处理
+            //异常属性名处理
             String propName = prop.getString("name");
             if (propName.endsWith("(Object | 'none')")) {
                 //属性名为decal(Object | 'none')的异常 共计出现13次
@@ -82,7 +82,10 @@ public class TemplateFormat {
                     propName = propName.replace(":", "_");
                     prop.put("name", propName);
                 }
-                //description中还有一种包含*/的异常,在velocity模板中替换成了<i>*</i>/
+                //属性名首字母小写,第二个字母大写的 Jackson转json时会异常 导致如:xAxis=>xaxis 这种生成getter方法解决
+                if (propName.length() > 2 && Character.isUpperCase(propName.charAt(1))) {
+                    prop.put("lowerGetter", true);
+                }
             }
 
             String javaType = "Object";
@@ -93,6 +96,7 @@ public class TemplateFormat {
                 //为属性创建类
                 prop.put("relativePackage", relativePackage + "." + name);
                 parseObject(velocityEngine, prop);
+                //移除order为0的属性  但要为其生成类所以放在的下面
                 javaType = prop.getString("className");
                 imports.add(basePackage + relativePackage + "." + name + "." + javaType);
                 //如果只有一个类型且是数组 java类型就为List
@@ -117,7 +121,7 @@ public class TemplateFormat {
                             javaType = "Boolean";
                             break;
                         case "Array":
-                            javaType = "List<Object>";
+                            javaType = "series".equals(propName) ? "List<Series>" : "List<Object>";
                             imports.add("java.util.List");
                             break;
                         case "Function":

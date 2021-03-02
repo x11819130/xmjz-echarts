@@ -27,12 +27,13 @@ import ${import};
 @Getter
 @Setter
 @Accessors(chain = true)
-public class ${obj.className} implements Serializable {
+public class ${obj.className}#if(${obj.className.endsWith('Series')}) extends Series#end implements Serializable {
     private static final long serialVersionUID = 1L;
 
 #foreach (${prop} in ${obj.props})
+#if(${prop.order} > 0)
     /**
-     * 官方文档: ${prop.url}
+     * 官方文档: <a href="${prop.url}">${prop.url}</a>
      * <br/>序号: ${prop.order}
      * <br/>默认值: #if(${prop.defaultValue})${prop.defaultValue}#else无#end
 
@@ -43,6 +44,14 @@ public class ${obj.className} implements Serializable {
 #end
      */
     private ${prop.javaType} ${prop.name};
+##是否生成小写get方法 处理第二个字母是大写导致jackson转json的异常: 如:xAxis=>xaxis
+#if(${prop.lowerGetter})
+
+    public ${prop.javaType} get${prop.name}() {
+        return this.${prop.name};
+    }
+    
+#end
 ##是否平滑模式 生成不带set和get,只有属性名的getter和setter方法
 #if(${base.fluentMode})
 
@@ -60,6 +69,7 @@ public class ${obj.className} implements Serializable {
         this.${prop.name} = ${prop.name};return this;
     }
 
+#end
 #end
 #end
 }
