@@ -24,7 +24,7 @@ public class Progress implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.progress.lineStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.progress.lineStyle">https://echarts.apache.org/zh/option.html#timeline.progress.lineStyle</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -32,7 +32,7 @@ public class Progress implements Serializable {
      */
     private Object lineStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.progress.itemStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.progress.itemStyle">https://echarts.apache.org/zh/option.html#timeline.progress.itemStyle</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -40,7 +40,7 @@ public class Progress implements Serializable {
      */
     private Object itemStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.progress.label
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.progress.label">https://echarts.apache.org/zh/option.html#timeline.progress.label</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

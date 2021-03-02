@@ -24,7 +24,7 @@ public class StateAnimation implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#stateAnimation.duration
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#stateAnimation.duration">https://echarts.apache.org/zh/option.html#stateAnimation.duration</a>
      * <br/>序号: 1
      * <br/>默认值: 300
      * <br/>js类型: ["number"]
@@ -33,7 +33,7 @@ public class StateAnimation implements Serializable {
      */
     private Integer duration;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#stateAnimation.easing
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#stateAnimation.easing">https://echarts.apache.org/zh/option.html#stateAnimation.easing</a>
      * <br/>序号: 2
      * <br/>默认值: cubicOut
      * <br/>js类型: ["string"]

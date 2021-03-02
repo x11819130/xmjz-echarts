@@ -27,7 +27,7 @@ public class Label implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.rotate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.rotate">https://echarts.apache.org/zh/option.html#series-sunburst.label.rotate</a>
      * <br/>序号: 1
      * <br/>默认值: radial
      * <br/>js类型: ["string","number"]
@@ -40,7 +40,7 @@ public class Label implements Serializable {
      */
     private Object rotate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.align
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.align">https://echarts.apache.org/zh/option.html#series-sunburst.label.align</a>
      * <br/>序号: 2
      * <br/>默认值: center
      * <br/>js类型: ["string"]
@@ -50,7 +50,7 @@ public class Label implements Serializable {
      */
     private String align;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.minAngle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.minAngle">https://echarts.apache.org/zh/option.html#series-sunburst.label.minAngle</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -59,7 +59,7 @@ public class Label implements Serializable {
      */
     private Integer minAngle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.show
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.show">https://echarts.apache.org/zh/option.html#series-sunburst.label.show</a>
      * <br/>序号: 4
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -68,7 +68,7 @@ public class Label implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.position
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.position">https://echarts.apache.org/zh/option.html#series-sunburst.label.position</a>
      * <br/>序号: 5
      * <br/>默认值: inside
      * <br/>js类型: ["string","Array"]
@@ -94,7 +94,7 @@ public class Label implements Serializable {
      */
     private Object position;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.distance
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.distance">https://echarts.apache.org/zh/option.html#series-sunburst.label.distance</a>
      * <br/>序号: 6
      * <br/>默认值: 5
      * <br/>js类型: ["number"]
@@ -105,7 +105,7 @@ public class Label implements Serializable {
      */
     private Integer distance;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.offset
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.offset">https://echarts.apache.org/zh/option.html#series-sunburst.label.offset</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -114,7 +114,7 @@ public class Label implements Serializable {
      */
     private List<Object> offset;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.formatter
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.formatter">https://echarts.apache.org/zh/option.html#series-sunburst.label.formatter</a>
      * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["string","Function"]
@@ -205,7 +205,7 @@ public class Label implements Serializable {
      */
     private Object formatter;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.color
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.color">https://echarts.apache.org/zh/option.html#series-sunburst.label.color</a>
      * <br/>序号: 9
      * <br/>默认值: #fff
      * <br/>js类型: ["Color"]
@@ -215,7 +215,7 @@ public class Label implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.fontStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.fontStyle">https://echarts.apache.org/zh/option.html#series-sunburst.label.fontStyle</a>
      * <br/>序号: 10
      * <br/>默认值: normal
      * <br/>js类型: ["string"]
@@ -230,7 +230,7 @@ public class Label implements Serializable {
      */
     private String fontStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.fontWeight
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.fontWeight">https://echarts.apache.org/zh/option.html#series-sunburst.label.fontWeight</a>
      * <br/>序号: 11
      * <br/>默认值: normal
      * <br/>js类型: ["string","number"]
@@ -247,7 +247,7 @@ public class Label implements Serializable {
      */
     private Object fontWeight;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.fontFamily
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.fontFamily">https://echarts.apache.org/zh/option.html#series-sunburst.label.fontFamily</a>
      * <br/>序号: 12
      * <br/>默认值: sans-serif
      * <br/>js类型: ["string"]
@@ -257,7 +257,7 @@ public class Label implements Serializable {
      */
     private String fontFamily;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.fontSize
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.fontSize">https://echarts.apache.org/zh/option.html#series-sunburst.label.fontSize</a>
      * <br/>序号: 13
      * <br/>默认值: 12
      * <br/>js类型: ["number"]
@@ -266,7 +266,7 @@ public class Label implements Serializable {
      */
     private Integer fontSize;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.verticalAlign
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.verticalAlign">https://echarts.apache.org/zh/option.html#series-sunburst.label.verticalAlign</a>
      * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -291,7 +291,7 @@ public class Label implements Serializable {
      */
     private String verticalAlign;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.lineHeight
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.lineHeight">https://echarts.apache.org/zh/option.html#series-sunburst.label.lineHeight</a>
      * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -310,7 +310,7 @@ public class Label implements Serializable {
      */
     private Integer lineHeight;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.backgroundColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.backgroundColor">https://echarts.apache.org/zh/option.html#series-sunburst.label.backgroundColor</a>
      * <br/>序号: 16
      * <br/>默认值: transparent
      * <br/>js类型: ["string","Object"]
@@ -331,7 +331,7 @@ public class Label implements Serializable {
      */
     private Object backgroundColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.borderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.borderColor">https://echarts.apache.org/zh/option.html#series-sunburst.label.borderColor</a>
      * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -341,7 +341,7 @@ public class Label implements Serializable {
      */
     private String borderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.borderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.borderWidth">https://echarts.apache.org/zh/option.html#series-sunburst.label.borderWidth</a>
      * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -350,7 +350,7 @@ public class Label implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.borderRadius
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.borderRadius">https://echarts.apache.org/zh/option.html#series-sunburst.label.borderRadius</a>
      * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -359,7 +359,7 @@ public class Label implements Serializable {
      */
     private Object borderRadius;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.padding
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.padding">https://echarts.apache.org/zh/option.html#series-sunburst.label.padding</a>
      * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -374,7 +374,7 @@ public class Label implements Serializable {
      */
     private Object padding;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.shadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.shadowColor">https://echarts.apache.org/zh/option.html#series-sunburst.label.shadowColor</a>
      * <br/>序号: 21
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -383,7 +383,7 @@ public class Label implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.shadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.shadowBlur">https://echarts.apache.org/zh/option.html#series-sunburst.label.shadowBlur</a>
      * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -392,7 +392,7 @@ public class Label implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.shadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.shadowOffsetX">https://echarts.apache.org/zh/option.html#series-sunburst.label.shadowOffsetX</a>
      * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -401,7 +401,7 @@ public class Label implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.shadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.shadowOffsetY">https://echarts.apache.org/zh/option.html#series-sunburst.label.shadowOffsetY</a>
      * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -410,7 +410,7 @@ public class Label implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.width
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.width">https://echarts.apache.org/zh/option.html#series-sunburst.label.width</a>
      * <br/>序号: 25
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -419,7 +419,7 @@ public class Label implements Serializable {
      */
     private Integer width;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.height
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.height">https://echarts.apache.org/zh/option.html#series-sunburst.label.height</a>
      * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -428,7 +428,7 @@ public class Label implements Serializable {
      */
     private Integer height;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.textBorderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.textBorderColor">https://echarts.apache.org/zh/option.html#series-sunburst.label.textBorderColor</a>
      * <br/>序号: 27
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -438,7 +438,7 @@ public class Label implements Serializable {
      */
     private String textBorderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.textBorderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.textBorderWidth">https://echarts.apache.org/zh/option.html#series-sunburst.label.textBorderWidth</a>
      * <br/>序号: 28
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -447,7 +447,7 @@ public class Label implements Serializable {
      */
     private Integer textBorderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.textShadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.textShadowColor">https://echarts.apache.org/zh/option.html#series-sunburst.label.textShadowColor</a>
      * <br/>序号: 29
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -456,7 +456,7 @@ public class Label implements Serializable {
      */
     private String textShadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.textShadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.textShadowBlur">https://echarts.apache.org/zh/option.html#series-sunburst.label.textShadowBlur</a>
      * <br/>序号: 30
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -465,7 +465,7 @@ public class Label implements Serializable {
      */
     private Integer textShadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.textShadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.textShadowOffsetX">https://echarts.apache.org/zh/option.html#series-sunburst.label.textShadowOffsetX</a>
      * <br/>序号: 31
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -474,7 +474,7 @@ public class Label implements Serializable {
      */
     private Integer textShadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.textShadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.textShadowOffsetY">https://echarts.apache.org/zh/option.html#series-sunburst.label.textShadowOffsetY</a>
      * <br/>序号: 32
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -483,7 +483,7 @@ public class Label implements Serializable {
      */
     private Integer textShadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.overflow
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.overflow">https://echarts.apache.org/zh/option.html#series-sunburst.label.overflow</a>
      * <br/>序号: 33
      * <br/>默认值: none
      * <br/>js类型: ["string"]
@@ -497,7 +497,7 @@ public class Label implements Serializable {
      */
     private String overflow;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.ellipsis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.ellipsis">https://echarts.apache.org/zh/option.html#series-sunburst.label.ellipsis</a>
      * <br/>序号: 34
      * <br/>默认值: ...
      * <br/>js类型: ["string"]
@@ -506,7 +506,7 @@ public class Label implements Serializable {
      */
     private String ellipsis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.lineOverflow
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.lineOverflow">https://echarts.apache.org/zh/option.html#series-sunburst.label.lineOverflow</a>
      * <br/>序号: 35
      * <br/>默认值: none
      * <br/>js类型: ["string"]
@@ -518,7 +518,7 @@ public class Label implements Serializable {
      */
     private String lineOverflow;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.label.rich
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label.rich">https://echarts.apache.org/zh/option.html#series-sunburst.label.rich</a>
      * <br/>序号: 36
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

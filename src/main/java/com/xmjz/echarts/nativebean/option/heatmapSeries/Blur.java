@@ -27,7 +27,7 @@ public class Blur implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.blur.itemStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.blur.itemStyle">https://echarts.apache.org/zh/option.html#series-heatmap.blur.itemStyle</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -35,7 +35,7 @@ public class Blur implements Serializable {
      */
     private Object itemStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.blur.label
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.blur.label">https://echarts.apache.org/zh/option.html#series-heatmap.blur.label</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

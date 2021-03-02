@@ -29,7 +29,7 @@ public class GraphSeries extends Series implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.type
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.type">https://echarts.apache.org/zh/option.html#series-graph.type</a>
      * <br/>序号: 1
      * <br/>默认值: graph
      * <br/>js类型: ["string"]
@@ -37,7 +37,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.id
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.id">https://echarts.apache.org/zh/option.html#series-graph.id</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -46,7 +46,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.name
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.name">https://echarts.apache.org/zh/option.html#series-graph.name</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -55,7 +55,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private String name;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.legendHoverLink
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.legendHoverLink">https://echarts.apache.org/zh/option.html#series-graph.legendHoverLink</a>
      * <br/>序号: 4
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -64,7 +64,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Boolean legendHoverLink;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.coordinateSystem
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.coordinateSystem">https://echarts.apache.org/zh/option.html#series-graph.coordinateSystem</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -98,7 +98,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private String coordinateSystem;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.xAxisIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.xAxisIndex">https://echarts.apache.org/zh/option.html#series-graph.xAxisIndex</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -112,7 +112,7 @@ public class GraphSeries extends Series implements Serializable {
     }
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.yAxisIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.yAxisIndex">https://echarts.apache.org/zh/option.html#series-graph.yAxisIndex</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -126,7 +126,7 @@ public class GraphSeries extends Series implements Serializable {
     }
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.polarIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.polarIndex">https://echarts.apache.org/zh/option.html#series-graph.polarIndex</a>
      * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -135,7 +135,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Integer polarIndex;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.geoIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.geoIndex">https://echarts.apache.org/zh/option.html#series-graph.geoIndex</a>
      * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -144,7 +144,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Integer geoIndex;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.calendarIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.calendarIndex">https://echarts.apache.org/zh/option.html#series-graph.calendarIndex</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -153,7 +153,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Integer calendarIndex;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.center
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.center">https://echarts.apache.org/zh/option.html#series-graph.center</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -165,7 +165,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private List<Object> center;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.zoom
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.zoom">https://echarts.apache.org/zh/option.html#series-graph.zoom</a>
      * <br/>序号: 12
      * <br/>默认值: 1
      * <br/>js类型: ["number"]
@@ -174,7 +174,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Integer zoom;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.layout
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.layout">https://echarts.apache.org/zh/option.html#series-graph.layout</a>
      * <br/>序号: 13
      * <br/>默认值: none
      * <br/>js类型: ["string"]
@@ -192,7 +192,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private String layout;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.circular
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.circular">https://echarts.apache.org/zh/option.html#series-graph.circular</a>
      * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -201,7 +201,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Circular circular;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.force
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.force">https://echarts.apache.org/zh/option.html#series-graph.force</a>
      * <br/>序号: 15
      * <br/>默认值: 50
      * <br/>js类型: ["Object"]
@@ -211,7 +211,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Force force;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.roam
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.roam">https://echarts.apache.org/zh/option.html#series-graph.roam</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","string"]
@@ -220,7 +220,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Object roam;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.nodeScaleRatio
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.nodeScaleRatio">https://echarts.apache.org/zh/option.html#series-graph.nodeScaleRatio</a>
      * <br/>序号: 17
      * <br/>默认值: 0.6
      * <br/>js类型: ["number"]
@@ -229,7 +229,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Integer nodeScaleRatio;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.draggable
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.draggable">https://echarts.apache.org/zh/option.html#series-graph.draggable</a>
      * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -238,7 +238,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Boolean draggable;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeSymbol
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeSymbol">https://echarts.apache.org/zh/option.html#series-graph.edgeSymbol</a>
      * <br/>序号: 19
      * <br/>默认值: ["none","none"]
      * <br/>js类型: ["Array","string"]
@@ -249,7 +249,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Object edgeSymbol;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeSymbolSize
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeSymbolSize">https://echarts.apache.org/zh/option.html#series-graph.edgeSymbolSize</a>
      * <br/>序号: 20
      * <br/>默认值: 10
      * <br/>js类型: ["Array","number"]
@@ -258,7 +258,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Object edgeSymbolSize;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.cursor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.cursor">https://echarts.apache.org/zh/option.html#series-graph.cursor</a>
      * <br/>序号: 21
      * <br/>默认值: pointer
      * <br/>js类型: ["string"]
@@ -267,7 +267,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private String cursor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.itemStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.itemStyle">https://echarts.apache.org/zh/option.html#series-graph.itemStyle</a>
      * <br/>序号: 22
      * <br/>默认值: 自适应
      * <br/>js类型: ["Object"]
@@ -276,7 +276,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private ItemStyle itemStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.lineStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.lineStyle">https://echarts.apache.org/zh/option.html#series-graph.lineStyle</a>
      * <br/>序号: 23
      * <br/>默认值: #aaa
      * <br/>js类型: ["Object"]
@@ -285,7 +285,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private LineStyle lineStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.label
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.label">https://echarts.apache.org/zh/option.html#series-graph.label</a>
      * <br/>序号: 24
      * <br/>默认值: inside
      * <br/>js类型: ["Object"]
@@ -294,7 +294,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Label label;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel</a>
      * <br/>序号: 25
      * <br/>默认值: middle
      * <br/>js类型: ["Object"]
@@ -302,7 +302,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private EdgeLabel edgeLabel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.labelLayout
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.labelLayout">https://echarts.apache.org/zh/option.html#series-graph.labelLayout</a>
      * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["Object","Function"]
@@ -355,7 +355,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private LabelLayout labelLayout;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.emphasis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.emphasis">https://echarts.apache.org/zh/option.html#series-graph.emphasis</a>
      * <br/>序号: 27
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -364,7 +364,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Emphasis emphasis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.blur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.blur">https://echarts.apache.org/zh/option.html#series-graph.blur</a>
      * <br/>序号: 28
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -376,7 +376,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Blur blur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.select
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.select">https://echarts.apache.org/zh/option.html#series-graph.select</a>
      * <br/>序号: 29
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -388,7 +388,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Select select;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.selectedMode
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.selectedMode">https://echarts.apache.org/zh/option.html#series-graph.selectedMode</a>
      * <br/>序号: 30
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","string"]
@@ -402,7 +402,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Object selectedMode;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.categories
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.categories">https://echarts.apache.org/zh/option.html#series-graph.categories</a>
      * <br/>序号: 31
      * <br/>默认值: [0,0]
      * <br/>js类型: ["Array"]
@@ -412,7 +412,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private List<Categories> categories;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.autoCurveness
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.autoCurveness">https://echarts.apache.org/zh/option.html#series-graph.autoCurveness</a>
      * <br/>序号: 32
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","number","Array"]
@@ -425,7 +425,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Object autoCurveness;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.data
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.data">https://echarts.apache.org/zh/option.html#series-graph.data</a>
      * <br/>序号: 33
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -451,7 +451,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private List<Object> data;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.nodes
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.nodes">https://echarts.apache.org/zh/option.html#series-graph.nodes</a>
      * <br/>序号: 34
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -460,7 +460,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private List<Object> nodes;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.links
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.links">https://echarts.apache.org/zh/option.html#series-graph.links</a>
      * <br/>序号: 35
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -477,7 +477,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private List<Links> links;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edges
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edges">https://echarts.apache.org/zh/option.html#series-graph.edges</a>
      * <br/>序号: 36
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -486,7 +486,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private List<Object> edges;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.markPoint
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.markPoint">https://echarts.apache.org/zh/option.html#series-graph.markPoint</a>
      * <br/>序号: 37
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -495,7 +495,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Object markPoint;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.markLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.markLine">https://echarts.apache.org/zh/option.html#series-graph.markLine</a>
      * <br/>序号: 38
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -504,7 +504,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Object markLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.markArea
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.markArea">https://echarts.apache.org/zh/option.html#series-graph.markArea</a>
      * <br/>序号: 39
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -513,7 +513,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Object markArea;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.zlevel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.zlevel">https://echarts.apache.org/zh/option.html#series-graph.zlevel</a>
      * <br/>序号: 40
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -524,7 +524,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.z
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.z">https://echarts.apache.org/zh/option.html#series-graph.z</a>
      * <br/>序号: 41
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -534,7 +534,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.left
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.left">https://echarts.apache.org/zh/option.html#series-graph.left</a>
      * <br/>序号: 42
      * <br/>默认值: center
      * <br/>js类型: ["string","number"]
@@ -545,7 +545,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Object left;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.top
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.top">https://echarts.apache.org/zh/option.html#series-graph.top</a>
      * <br/>序号: 43
      * <br/>默认值: middle
      * <br/>js类型: ["string","number"]
@@ -556,7 +556,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Object top;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.right
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.right">https://echarts.apache.org/zh/option.html#series-graph.right</a>
      * <br/>序号: 44
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -567,7 +567,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Object right;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.bottom
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.bottom">https://echarts.apache.org/zh/option.html#series-graph.bottom</a>
      * <br/>序号: 45
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -578,7 +578,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Object bottom;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.width
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.width">https://echarts.apache.org/zh/option.html#series-graph.width</a>
      * <br/>序号: 46
      * <br/>默认值: 自适应
      * <br/>js类型: ["string","number"]
@@ -587,7 +587,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Object width;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.height
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.height">https://echarts.apache.org/zh/option.html#series-graph.height</a>
      * <br/>序号: 47
      * <br/>默认值: 自适应
      * <br/>js类型: ["string","number"]
@@ -596,7 +596,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Object height;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.silent
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.silent">https://echarts.apache.org/zh/option.html#series-graph.silent</a>
      * <br/>序号: 48
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -605,7 +605,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Boolean silent;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.animation
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.animation">https://echarts.apache.org/zh/option.html#series-graph.animation</a>
      * <br/>序号: 49
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -614,7 +614,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Boolean animation;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.animationThreshold
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.animationThreshold">https://echarts.apache.org/zh/option.html#series-graph.animationThreshold</a>
      * <br/>序号: 50
      * <br/>默认值: 2000
      * <br/>js类型: ["number"]
@@ -623,7 +623,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Integer animationThreshold;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.animationDuration
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.animationDuration">https://echarts.apache.org/zh/option.html#series-graph.animationDuration</a>
      * <br/>序号: 51
      * <br/>默认值: 1000
      * <br/>js类型: ["number","Function"]
@@ -637,7 +637,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Object animationDuration;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.animationEasing
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.animationEasing">https://echarts.apache.org/zh/option.html#series-graph.animationEasing</a>
      * <br/>序号: 52
      * <br/>默认值: cubicOut
      * <br/>js类型: ["string"]
@@ -646,7 +646,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private String animationEasing;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.animationDelay
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.animationDelay">https://echarts.apache.org/zh/option.html#series-graph.animationDelay</a>
      * <br/>序号: 53
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
@@ -662,7 +662,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Object animationDelay;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.animationDurationUpdate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.animationDurationUpdate">https://echarts.apache.org/zh/option.html#series-graph.animationDurationUpdate</a>
      * <br/>序号: 54
      * <br/>默认值: 300
      * <br/>js类型: ["number","Function"]
@@ -677,7 +677,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Object animationDurationUpdate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.animationEasingUpdate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.animationEasingUpdate">https://echarts.apache.org/zh/option.html#series-graph.animationEasingUpdate</a>
      * <br/>序号: 55
      * <br/>默认值: cubicInOut
      * <br/>js类型: ["string"]
@@ -686,7 +686,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private String animationEasingUpdate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.animationDelayUpdate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.animationDelayUpdate">https://echarts.apache.org/zh/option.html#series-graph.animationDelayUpdate</a>
      * <br/>序号: 56
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
@@ -702,7 +702,7 @@ public class GraphSeries extends Series implements Serializable {
      */
     private Object animationDelayUpdate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.tooltip
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.tooltip">https://echarts.apache.org/zh/option.html#series-graph.tooltip</a>
      * <br/>序号: 57
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

@@ -24,7 +24,7 @@ public class AxisLabel implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.show
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.show">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.show</a>
      * <br/>序号: 1
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -33,7 +33,7 @@ public class AxisLabel implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.interval
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.interval">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.interval</a>
      * <br/>序号: 2
      * <br/>默认值: auto
      * <br/>js类型: ["number","Function"]
@@ -49,7 +49,7 @@ public class AxisLabel implements Serializable {
      */
     private Object interval;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.inside
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.inside">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.inside</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -58,7 +58,7 @@ public class AxisLabel implements Serializable {
      */
     private Boolean inside;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.rotate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.rotate">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.rotate</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -68,7 +68,7 @@ public class AxisLabel implements Serializable {
      */
     private Integer rotate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.margin
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.margin">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.margin</a>
      * <br/>序号: 5
      * <br/>默认值: 8
      * <br/>js类型: ["number"]
@@ -77,7 +77,7 @@ public class AxisLabel implements Serializable {
      */
     private Integer margin;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.formatter
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.formatter">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.formatter</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["string","Function"]
@@ -349,7 +349,7 @@ public class AxisLabel implements Serializable {
      */
     private Object formatter;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.showMinLabel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.showMinLabel">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.showMinLabel</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -358,7 +358,7 @@ public class AxisLabel implements Serializable {
      */
     private Boolean showMinLabel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.showMaxLabel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.showMaxLabel">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.showMaxLabel</a>
      * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -367,7 +367,7 @@ public class AxisLabel implements Serializable {
      */
     private Boolean showMaxLabel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.color
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.color">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.color</a>
      * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["Color","Function"]
@@ -385,7 +385,7 @@ public class AxisLabel implements Serializable {
      */
     private Object color;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.fontStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.fontStyle">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.fontStyle</a>
      * <br/>序号: 10
      * <br/>默认值: normal
      * <br/>js类型: ["string"]
@@ -400,7 +400,7 @@ public class AxisLabel implements Serializable {
      */
     private String fontStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.fontWeight
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.fontWeight">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.fontWeight</a>
      * <br/>序号: 11
      * <br/>默认值: normal
      * <br/>js类型: ["string","number"]
@@ -417,7 +417,7 @@ public class AxisLabel implements Serializable {
      */
     private Object fontWeight;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.fontFamily
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.fontFamily">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.fontFamily</a>
      * <br/>序号: 12
      * <br/>默认值: sans-serif
      * <br/>js类型: ["string"]
@@ -427,7 +427,7 @@ public class AxisLabel implements Serializable {
      */
     private String fontFamily;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.fontSize
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.fontSize">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.fontSize</a>
      * <br/>序号: 13
      * <br/>默认值: 12
      * <br/>js类型: ["number"]
@@ -436,7 +436,7 @@ public class AxisLabel implements Serializable {
      */
     private Integer fontSize;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.align
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.align">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.align</a>
      * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -461,7 +461,7 @@ public class AxisLabel implements Serializable {
      */
     private String align;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.verticalAlign
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.verticalAlign">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.verticalAlign</a>
      * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -486,7 +486,7 @@ public class AxisLabel implements Serializable {
      */
     private String verticalAlign;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.lineHeight
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.lineHeight">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.lineHeight</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -505,7 +505,7 @@ public class AxisLabel implements Serializable {
      */
     private Integer lineHeight;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.backgroundColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.backgroundColor">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.backgroundColor</a>
      * <br/>序号: 17
      * <br/>默认值: transparent
      * <br/>js类型: ["string","Object"]
@@ -525,7 +525,7 @@ public class AxisLabel implements Serializable {
      */
     private Object backgroundColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.borderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.borderColor">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.borderColor</a>
      * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -534,7 +534,7 @@ public class AxisLabel implements Serializable {
      */
     private String borderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.borderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.borderWidth">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.borderWidth</a>
      * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -543,7 +543,7 @@ public class AxisLabel implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.borderRadius
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.borderRadius">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.borderRadius</a>
      * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -552,7 +552,7 @@ public class AxisLabel implements Serializable {
      */
     private Object borderRadius;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.padding
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.padding">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.padding</a>
      * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -567,7 +567,7 @@ public class AxisLabel implements Serializable {
      */
     private Object padding;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.shadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.shadowColor">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.shadowColor</a>
      * <br/>序号: 22
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -576,7 +576,7 @@ public class AxisLabel implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.shadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.shadowBlur">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.shadowBlur</a>
      * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -585,7 +585,7 @@ public class AxisLabel implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.shadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.shadowOffsetX">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.shadowOffsetX</a>
      * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -594,7 +594,7 @@ public class AxisLabel implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.shadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.shadowOffsetY">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.shadowOffsetY</a>
      * <br/>序号: 25
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -603,7 +603,7 @@ public class AxisLabel implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.width
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.width">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.width</a>
      * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -612,7 +612,7 @@ public class AxisLabel implements Serializable {
      */
     private Integer width;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.height
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.height">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.height</a>
      * <br/>序号: 27
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -621,7 +621,7 @@ public class AxisLabel implements Serializable {
      */
     private Integer height;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.textBorderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.textBorderColor">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.textBorderColor</a>
      * <br/>序号: 28
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -630,7 +630,7 @@ public class AxisLabel implements Serializable {
      */
     private String textBorderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.textBorderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.textBorderWidth">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.textBorderWidth</a>
      * <br/>序号: 29
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -639,7 +639,7 @@ public class AxisLabel implements Serializable {
      */
     private Integer textBorderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.textShadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.textShadowColor">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.textShadowColor</a>
      * <br/>序号: 30
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -648,7 +648,7 @@ public class AxisLabel implements Serializable {
      */
     private String textShadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.textShadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.textShadowBlur">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.textShadowBlur</a>
      * <br/>序号: 31
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -657,7 +657,7 @@ public class AxisLabel implements Serializable {
      */
     private Integer textShadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.textShadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.textShadowOffsetX">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.textShadowOffsetX</a>
      * <br/>序号: 32
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -666,7 +666,7 @@ public class AxisLabel implements Serializable {
      */
     private Integer textShadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.textShadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.textShadowOffsetY">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.textShadowOffsetY</a>
      * <br/>序号: 33
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -675,7 +675,7 @@ public class AxisLabel implements Serializable {
      */
     private Integer textShadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.overflow
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.overflow">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.overflow</a>
      * <br/>序号: 34
      * <br/>默认值: none
      * <br/>js类型: ["string"]
@@ -689,7 +689,7 @@ public class AxisLabel implements Serializable {
      */
     private String overflow;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.ellipsis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.ellipsis">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.ellipsis</a>
      * <br/>序号: 35
      * <br/>默认值: ...
      * <br/>js类型: ["string"]
@@ -698,7 +698,7 @@ public class AxisLabel implements Serializable {
      */
     private String ellipsis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.lineOverflow
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.lineOverflow">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.lineOverflow</a>
      * <br/>序号: 36
      * <br/>默认值: none
      * <br/>js类型: ["string"]
@@ -710,7 +710,7 @@ public class AxisLabel implements Serializable {
      */
     private String lineOverflow;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.rich
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.rich">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel.rich</a>
      * <br/>序号: 37
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

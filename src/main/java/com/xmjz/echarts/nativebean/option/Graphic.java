@@ -294,7 +294,7 @@ public class Graphic implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#graphic.id
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#graphic.id">https://echarts.apache.org/zh/option.html#graphic.id</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -303,7 +303,7 @@ public class Graphic implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#graphic.elements
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#graphic.elements">https://echarts.apache.org/zh/option.html#graphic.elements</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]

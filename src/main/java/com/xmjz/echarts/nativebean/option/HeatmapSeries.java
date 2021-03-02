@@ -31,7 +31,7 @@ public class HeatmapSeries extends Series implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.type
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.type">https://echarts.apache.org/zh/option.html#series-heatmap.type</a>
      * <br/>序号: 1
      * <br/>默认值: heatmap
      * <br/>js类型: ["string"]
@@ -39,7 +39,7 @@ public class HeatmapSeries extends Series implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.id
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.id">https://echarts.apache.org/zh/option.html#series-heatmap.id</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -48,7 +48,7 @@ public class HeatmapSeries extends Series implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.name
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.name">https://echarts.apache.org/zh/option.html#series-heatmap.name</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -57,7 +57,7 @@ public class HeatmapSeries extends Series implements Serializable {
      */
     private String name;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.coordinateSystem
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.coordinateSystem">https://echarts.apache.org/zh/option.html#series-heatmap.coordinateSystem</a>
      * <br/>序号: 4
      * <br/>默认值: cartesian2d
      * <br/>js类型: ["string"]
@@ -76,7 +76,7 @@ public class HeatmapSeries extends Series implements Serializable {
      */
     private String coordinateSystem;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.xAxisIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.xAxisIndex">https://echarts.apache.org/zh/option.html#series-heatmap.xAxisIndex</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -90,7 +90,7 @@ public class HeatmapSeries extends Series implements Serializable {
     }
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.yAxisIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.yAxisIndex">https://echarts.apache.org/zh/option.html#series-heatmap.yAxisIndex</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -104,7 +104,7 @@ public class HeatmapSeries extends Series implements Serializable {
     }
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.geoIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.geoIndex">https://echarts.apache.org/zh/option.html#series-heatmap.geoIndex</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -113,7 +113,7 @@ public class HeatmapSeries extends Series implements Serializable {
      */
     private Integer geoIndex;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.calendarIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.calendarIndex">https://echarts.apache.org/zh/option.html#series-heatmap.calendarIndex</a>
      * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -122,7 +122,7 @@ public class HeatmapSeries extends Series implements Serializable {
      */
     private Integer calendarIndex;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.pointSize
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.pointSize">https://echarts.apache.org/zh/option.html#series-heatmap.pointSize</a>
      * <br/>序号: 9
      * <br/>默认值: 20
      * <br/>js类型: ["number"]
@@ -131,7 +131,7 @@ public class HeatmapSeries extends Series implements Serializable {
      */
     private Integer pointSize;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.blurSize
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.blurSize">https://echarts.apache.org/zh/option.html#series-heatmap.blurSize</a>
      * <br/>序号: 10
      * <br/>默认值: 20
      * <br/>js类型: ["number"]
@@ -140,7 +140,7 @@ public class HeatmapSeries extends Series implements Serializable {
      */
     private Integer blurSize;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.minOpacity
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.minOpacity">https://echarts.apache.org/zh/option.html#series-heatmap.minOpacity</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -149,7 +149,7 @@ public class HeatmapSeries extends Series implements Serializable {
      */
     private Integer minOpacity;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.maxOpacity
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.maxOpacity">https://echarts.apache.org/zh/option.html#series-heatmap.maxOpacity</a>
      * <br/>序号: 12
      * <br/>默认值: 1
      * <br/>js类型: ["number"]
@@ -158,7 +158,7 @@ public class HeatmapSeries extends Series implements Serializable {
      */
     private Integer maxOpacity;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.progressive
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.progressive">https://echarts.apache.org/zh/option.html#series-heatmap.progressive</a>
      * <br/>序号: 13
      * <br/>默认值: 400
      * <br/>js类型: ["number"]
@@ -169,7 +169,7 @@ public class HeatmapSeries extends Series implements Serializable {
      */
     private Integer progressive;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.progressiveThreshold
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.progressiveThreshold">https://echarts.apache.org/zh/option.html#series-heatmap.progressiveThreshold</a>
      * <br/>序号: 14
      * <br/>默认值: 3000
      * <br/>js类型: ["number"]
@@ -178,7 +178,7 @@ public class HeatmapSeries extends Series implements Serializable {
      */
     private Integer progressiveThreshold;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.label
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.label">https://echarts.apache.org/zh/option.html#series-heatmap.label</a>
      * <br/>序号: 15
      * <br/>默认值: inside
      * <br/>js类型: ["Object"]
@@ -187,7 +187,7 @@ public class HeatmapSeries extends Series implements Serializable {
      */
     private Label label;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.labelLayout
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.labelLayout">https://echarts.apache.org/zh/option.html#series-heatmap.labelLayout</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["Object","Function"]
@@ -240,7 +240,7 @@ public class HeatmapSeries extends Series implements Serializable {
      */
     private LabelLayout labelLayout;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.itemStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.itemStyle">https://echarts.apache.org/zh/option.html#series-heatmap.itemStyle</a>
      * <br/>序号: 17
      * <br/>默认值: 自适应
      * <br/>js类型: ["Object"]
@@ -249,7 +249,7 @@ public class HeatmapSeries extends Series implements Serializable {
      */
     private ItemStyle itemStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.emphasis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.emphasis">https://echarts.apache.org/zh/option.html#series-heatmap.emphasis</a>
      * <br/>序号: 18
      * <br/>默认值: none
      * <br/>js类型: ["Object"]
@@ -258,7 +258,7 @@ public class HeatmapSeries extends Series implements Serializable {
      */
     private Emphasis emphasis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.blur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.blur">https://echarts.apache.org/zh/option.html#series-heatmap.blur</a>
      * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -270,7 +270,7 @@ public class HeatmapSeries extends Series implements Serializable {
      */
     private Blur blur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.select
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.select">https://echarts.apache.org/zh/option.html#series-heatmap.select</a>
      * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -282,7 +282,7 @@ public class HeatmapSeries extends Series implements Serializable {
      */
     private Select select;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.selectedMode
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.selectedMode">https://echarts.apache.org/zh/option.html#series-heatmap.selectedMode</a>
      * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","string"]
@@ -296,7 +296,7 @@ public class HeatmapSeries extends Series implements Serializable {
      */
     private Object selectedMode;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.data
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.data">https://echarts.apache.org/zh/option.html#series-heatmap.data</a>
      * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -419,7 +419,7 @@ public class HeatmapSeries extends Series implements Serializable {
      */
     private List<Object> data;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.markPoint
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.markPoint">https://echarts.apache.org/zh/option.html#series-heatmap.markPoint</a>
      * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -428,7 +428,7 @@ public class HeatmapSeries extends Series implements Serializable {
      */
     private Object markPoint;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.markLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.markLine">https://echarts.apache.org/zh/option.html#series-heatmap.markLine</a>
      * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -437,7 +437,7 @@ public class HeatmapSeries extends Series implements Serializable {
      */
     private Object markLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.markArea
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.markArea">https://echarts.apache.org/zh/option.html#series-heatmap.markArea</a>
      * <br/>序号: 25
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -446,7 +446,7 @@ public class HeatmapSeries extends Series implements Serializable {
      */
     private Object markArea;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.zlevel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.zlevel">https://echarts.apache.org/zh/option.html#series-heatmap.zlevel</a>
      * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -457,7 +457,7 @@ public class HeatmapSeries extends Series implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.z
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.z">https://echarts.apache.org/zh/option.html#series-heatmap.z</a>
      * <br/>序号: 27
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -467,7 +467,7 @@ public class HeatmapSeries extends Series implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.silent
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.silent">https://echarts.apache.org/zh/option.html#series-heatmap.silent</a>
      * <br/>序号: 28
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -476,7 +476,7 @@ public class HeatmapSeries extends Series implements Serializable {
      */
     private Boolean silent;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.tooltip
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.tooltip">https://echarts.apache.org/zh/option.html#series-heatmap.tooltip</a>
      * <br/>序号: 29
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

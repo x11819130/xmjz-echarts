@@ -64,7 +64,7 @@ public class Label implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#aria.label.enabled
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#aria.label.enabled">https://echarts.apache.org/zh/option.html#aria.label.enabled</a>
      * <br/>序号: 1
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -73,7 +73,7 @@ public class Label implements Serializable {
      */
     private Boolean enabled;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#aria.label.description
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#aria.label.description">https://echarts.apache.org/zh/option.html#aria.label.description</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -83,7 +83,7 @@ public class Label implements Serializable {
      */
     private String description;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#aria.label.general
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#aria.label.general">https://echarts.apache.org/zh/option.html#aria.label.general</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -92,7 +92,7 @@ public class Label implements Serializable {
      */
     private Object general;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#aria.label.series
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#aria.label.series">https://echarts.apache.org/zh/option.html#aria.label.series</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -101,7 +101,7 @@ public class Label implements Serializable {
      */
     private Object series;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#aria.label.data
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#aria.label.data">https://echarts.apache.org/zh/option.html#aria.label.data</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

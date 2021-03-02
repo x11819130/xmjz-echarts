@@ -24,7 +24,7 @@ public class ItemStyle implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.itemStyle.color
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.itemStyle.color">https://echarts.apache.org/zh/option.html#series-line.itemStyle.color</a>
      * <br/>序号: 1
      * <br/>默认值: 自适应
      * <br/>js类型: ["Color","Function"]
@@ -73,7 +73,7 @@ public class ItemStyle implements Serializable {
      */
     private Object color;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.itemStyle.borderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.itemStyle.borderColor">https://echarts.apache.org/zh/option.html#series-line.itemStyle.borderColor</a>
      * <br/>序号: 2
      * <br/>默认值: #000
      * <br/>js类型: ["Color"]
@@ -82,7 +82,7 @@ public class ItemStyle implements Serializable {
      */
     private String borderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.itemStyle.borderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.itemStyle.borderWidth">https://echarts.apache.org/zh/option.html#series-line.itemStyle.borderWidth</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -91,7 +91,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.itemStyle.borderType
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.itemStyle.borderType">https://echarts.apache.org/zh/option.html#series-line.itemStyle.borderType</a>
      * <br/>序号: 4
      * <br/>默认值: solid
      * <br/>js类型: ["string"]
@@ -100,7 +100,7 @@ public class ItemStyle implements Serializable {
      */
     private String borderType;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.itemStyle.shadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.itemStyle.shadowBlur">https://echarts.apache.org/zh/option.html#series-line.itemStyle.shadowBlur</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -115,7 +115,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.itemStyle.shadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.itemStyle.shadowColor">https://echarts.apache.org/zh/option.html#series-line.itemStyle.shadowColor</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -124,7 +124,7 @@ public class ItemStyle implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.itemStyle.shadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.itemStyle.shadowOffsetX">https://echarts.apache.org/zh/option.html#series-line.itemStyle.shadowOffsetX</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -133,7 +133,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.itemStyle.shadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.itemStyle.shadowOffsetY">https://echarts.apache.org/zh/option.html#series-line.itemStyle.shadowOffsetY</a>
      * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -142,7 +142,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.itemStyle.opacity
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.itemStyle.opacity">https://echarts.apache.org/zh/option.html#series-line.itemStyle.opacity</a>
      * <br/>序号: 9
      * <br/>默认值: 1
      * <br/>js类型: ["number"]
@@ -151,7 +151,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer opacity;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.itemStyle.decal(Object%20|%20'none')
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.itemStyle.decal(Object%20|%20'none')">https://echarts.apache.org/zh/option.html#series-line.itemStyle.decal(Object%20|%20'none')</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["any"]

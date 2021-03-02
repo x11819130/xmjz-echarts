@@ -29,7 +29,7 @@ public class GaugeSeries extends Series implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.type
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.type">https://echarts.apache.org/zh/option.html#series-gauge.type</a>
      * <br/>序号: 1
      * <br/>默认值: gauge
      * <br/>js类型: ["string"]
@@ -37,7 +37,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.id
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.id">https://echarts.apache.org/zh/option.html#series-gauge.id</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -46,7 +46,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.name
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.name">https://echarts.apache.org/zh/option.html#series-gauge.name</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -55,7 +55,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private String name;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.zlevel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.zlevel">https://echarts.apache.org/zh/option.html#series-gauge.zlevel</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -66,7 +66,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.z
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.z">https://echarts.apache.org/zh/option.html#series-gauge.z</a>
      * <br/>序号: 5
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -76,7 +76,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.center
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.center">https://echarts.apache.org/zh/option.html#series-gauge.center</a>
      * <br/>序号: 6
      * <br/>默认值: ["50%","50%"]
      * <br/>js类型: ["Array"]
@@ -92,7 +92,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private List<Object> center;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.radius
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.radius">https://echarts.apache.org/zh/option.html#series-gauge.radius</a>
      * <br/>序号: 7
      * <br/>默认值: 75%
      * <br/>js类型: ["number","string"]
@@ -101,7 +101,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private Object radius;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.legendHoverLink
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.legendHoverLink">https://echarts.apache.org/zh/option.html#series-gauge.legendHoverLink</a>
      * <br/>序号: 8
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -110,7 +110,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private Boolean legendHoverLink;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.startAngle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.startAngle">https://echarts.apache.org/zh/option.html#series-gauge.startAngle</a>
      * <br/>序号: 9
      * <br/>默认值: 225
      * <br/>js类型: ["number"]
@@ -119,7 +119,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private Integer startAngle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.endAngle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.endAngle">https://echarts.apache.org/zh/option.html#series-gauge.endAngle</a>
      * <br/>序号: 10
      * <br/>默认值: -45
      * <br/>js类型: ["number"]
@@ -128,7 +128,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private Integer endAngle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.clockwise
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.clockwise">https://echarts.apache.org/zh/option.html#series-gauge.clockwise</a>
      * <br/>序号: 11
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -137,7 +137,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private Boolean clockwise;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.data
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.data">https://echarts.apache.org/zh/option.html#series-gauge.data</a>
      * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -177,7 +177,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private List<Object> data;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.min
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.min">https://echarts.apache.org/zh/option.html#series-gauge.min</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -186,7 +186,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private Integer min;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.max
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.max">https://echarts.apache.org/zh/option.html#series-gauge.max</a>
      * <br/>序号: 14
      * <br/>默认值: 100
      * <br/>js类型: ["number"]
@@ -195,7 +195,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private Integer max;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.splitNumber
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.splitNumber">https://echarts.apache.org/zh/option.html#series-gauge.splitNumber</a>
      * <br/>序号: 15
      * <br/>默认值: 10
      * <br/>js类型: ["number"]
@@ -204,7 +204,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private Integer splitNumber;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.axisLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.axisLine">https://echarts.apache.org/zh/option.html#series-gauge.axisLine</a>
      * <br/>序号: 16
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -213,7 +213,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private AxisLine axisLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.progress
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.progress">https://echarts.apache.org/zh/option.html#series-gauge.progress</a>
      * <br/>序号: 17
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -225,7 +225,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private Progress progress;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.splitLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.splitLine">https://echarts.apache.org/zh/option.html#series-gauge.splitLine</a>
      * <br/>序号: 18
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -234,7 +234,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private SplitLine splitLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.axisTick
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.axisTick">https://echarts.apache.org/zh/option.html#series-gauge.axisTick</a>
      * <br/>序号: 19
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -243,7 +243,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private AxisTick axisTick;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.axisLabel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.axisLabel">https://echarts.apache.org/zh/option.html#series-gauge.axisLabel</a>
      * <br/>序号: 20
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -252,7 +252,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private AxisLabel axisLabel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.pointer
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.pointer">https://echarts.apache.org/zh/option.html#series-gauge.pointer</a>
      * <br/>序号: 21
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -261,7 +261,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private Pointer pointer;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.anchor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.anchor">https://echarts.apache.org/zh/option.html#series-gauge.anchor</a>
      * <br/>序号: 22
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -273,7 +273,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private Anchor anchor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.itemStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.itemStyle">https://echarts.apache.org/zh/option.html#series-gauge.itemStyle</a>
      * <br/>序号: 23
      * <br/>默认值: auto
      * <br/>js类型: ["Object"]
@@ -282,7 +282,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private ItemStyle itemStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.emphasis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.emphasis">https://echarts.apache.org/zh/option.html#series-gauge.emphasis</a>
      * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -291,7 +291,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private Emphasis emphasis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.title
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title">https://echarts.apache.org/zh/option.html#series-gauge.title</a>
      * <br/>序号: 25
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -300,7 +300,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private Title title;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.detail
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.detail">https://echarts.apache.org/zh/option.html#series-gauge.detail</a>
      * <br/>序号: 26
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -309,7 +309,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private Detail detail;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.markPoint
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.markPoint">https://echarts.apache.org/zh/option.html#series-gauge.markPoint</a>
      * <br/>序号: 27
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -318,7 +318,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private Object markPoint;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.markLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.markLine">https://echarts.apache.org/zh/option.html#series-gauge.markLine</a>
      * <br/>序号: 28
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -327,7 +327,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private Object markLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.markArea
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.markArea">https://echarts.apache.org/zh/option.html#series-gauge.markArea</a>
      * <br/>序号: 29
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -336,7 +336,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private Object markArea;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.silent
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.silent">https://echarts.apache.org/zh/option.html#series-gauge.silent</a>
      * <br/>序号: 30
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -345,7 +345,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private Boolean silent;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.animation
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.animation">https://echarts.apache.org/zh/option.html#series-gauge.animation</a>
      * <br/>序号: 31
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -354,7 +354,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private Boolean animation;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.animationThreshold
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.animationThreshold">https://echarts.apache.org/zh/option.html#series-gauge.animationThreshold</a>
      * <br/>序号: 32
      * <br/>默认值: 2000
      * <br/>js类型: ["number"]
@@ -363,7 +363,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private Integer animationThreshold;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.animationDuration
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.animationDuration">https://echarts.apache.org/zh/option.html#series-gauge.animationDuration</a>
      * <br/>序号: 33
      * <br/>默认值: 1000
      * <br/>js类型: ["number","Function"]
@@ -377,7 +377,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private Object animationDuration;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.animationEasing
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.animationEasing">https://echarts.apache.org/zh/option.html#series-gauge.animationEasing</a>
      * <br/>序号: 34
      * <br/>默认值: cubicOut
      * <br/>js类型: ["string"]
@@ -386,7 +386,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private String animationEasing;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.animationDelay
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.animationDelay">https://echarts.apache.org/zh/option.html#series-gauge.animationDelay</a>
      * <br/>序号: 35
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
@@ -402,7 +402,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private Object animationDelay;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.animationDurationUpdate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.animationDurationUpdate">https://echarts.apache.org/zh/option.html#series-gauge.animationDurationUpdate</a>
      * <br/>序号: 36
      * <br/>默认值: 300
      * <br/>js类型: ["number","Function"]
@@ -417,7 +417,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private Object animationDurationUpdate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.animationEasingUpdate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.animationEasingUpdate">https://echarts.apache.org/zh/option.html#series-gauge.animationEasingUpdate</a>
      * <br/>序号: 37
      * <br/>默认值: cubicInOut
      * <br/>js类型: ["string"]
@@ -426,7 +426,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private String animationEasingUpdate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.animationDelayUpdate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.animationDelayUpdate">https://echarts.apache.org/zh/option.html#series-gauge.animationDelayUpdate</a>
      * <br/>序号: 38
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
@@ -442,7 +442,7 @@ public class GaugeSeries extends Series implements Serializable {
      */
     private Object animationDelayUpdate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.tooltip
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.tooltip">https://echarts.apache.org/zh/option.html#series-gauge.tooltip</a>
      * <br/>序号: 39
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

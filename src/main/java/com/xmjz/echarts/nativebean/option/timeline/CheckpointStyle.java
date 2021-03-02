@@ -25,7 +25,7 @@ public class CheckpointStyle implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.symbol
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.symbol">https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.symbol</a>
      * <br/>序号: 1
      * <br/>默认值: circle
      * <br/>js类型: ["string"]
@@ -45,7 +45,7 @@ public class CheckpointStyle implements Serializable {
      */
     private String symbol;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.symbolSize
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.symbolSize">https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.symbolSize</a>
      * <br/>序号: 2
      * <br/>默认值: 13
      * <br/>js类型: ["number","Array"]
@@ -54,7 +54,7 @@ public class CheckpointStyle implements Serializable {
      */
     private Object symbolSize;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.symbolRotate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.symbolRotate">https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.symbolRotate</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -63,7 +63,7 @@ public class CheckpointStyle implements Serializable {
      */
     private Integer symbolRotate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.symbolKeepAspect
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.symbolKeepAspect">https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.symbolKeepAspect</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -72,7 +72,7 @@ public class CheckpointStyle implements Serializable {
      */
     private Boolean symbolKeepAspect;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.symbolOffset
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.symbolOffset">https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.symbolOffset</a>
      * <br/>序号: 5
      * <br/>默认值: [0,0]
      * <br/>js类型: ["Array"]
@@ -82,7 +82,7 @@ public class CheckpointStyle implements Serializable {
      */
     private List<Object> symbolOffset;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.color
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.color">https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.color</a>
      * <br/>序号: 6
      * <br/>默认值: #316bf3
      * <br/>js类型: ["Color"]
@@ -127,7 +127,7 @@ public class CheckpointStyle implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.borderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.borderColor">https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.borderColor</a>
      * <br/>序号: 7
      * <br/>默认值: #fff
      * <br/>js类型: ["Color"]
@@ -136,7 +136,7 @@ public class CheckpointStyle implements Serializable {
      */
     private String borderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.borderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.borderWidth">https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.borderWidth</a>
      * <br/>序号: 8
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -145,7 +145,7 @@ public class CheckpointStyle implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.borderType
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.borderType">https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.borderType</a>
      * <br/>序号: 9
      * <br/>默认值: solid
      * <br/>js类型: ["string"]
@@ -154,7 +154,7 @@ public class CheckpointStyle implements Serializable {
      */
     private String borderType;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.shadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.shadowBlur">https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.shadowBlur</a>
      * <br/>序号: 10
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -169,7 +169,7 @@ public class CheckpointStyle implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.shadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.shadowColor">https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.shadowColor</a>
      * <br/>序号: 11
      * <br/>默认值: rgba(0, 0, 0, 0.3)
      * <br/>js类型: ["Color"]
@@ -178,7 +178,7 @@ public class CheckpointStyle implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.shadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.shadowOffsetX">https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.shadowOffsetX</a>
      * <br/>序号: 12
      * <br/>默认值: 1
      * <br/>js类型: ["number"]
@@ -187,7 +187,7 @@ public class CheckpointStyle implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.shadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.shadowOffsetY">https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.shadowOffsetY</a>
      * <br/>序号: 13
      * <br/>默认值: 1
      * <br/>js类型: ["number"]
@@ -196,7 +196,7 @@ public class CheckpointStyle implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.opacity
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.opacity">https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.opacity</a>
      * <br/>序号: 14
      * <br/>默认值: 1
      * <br/>js类型: ["number"]
@@ -205,7 +205,7 @@ public class CheckpointStyle implements Serializable {
      */
     private Integer opacity;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.animation
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.animation">https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.animation</a>
      * <br/>序号: 15
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -214,7 +214,7 @@ public class CheckpointStyle implements Serializable {
      */
     private Boolean animation;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.animationDuration
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.animationDuration">https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.animationDuration</a>
      * <br/>序号: 16
      * <br/>默认值: 300
      * <br/>js类型: ["number"]
@@ -223,7 +223,7 @@ public class CheckpointStyle implements Serializable {
      */
     private Integer animationDuration;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.animationEasing
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.animationEasing">https://echarts.apache.org/zh/option.html#timeline.checkpointStyle.animationEasing</a>
      * <br/>序号: 17
      * <br/>默认值: quinticInOut
      * <br/>js类型: ["string"]

@@ -92,7 +92,7 @@ public class Levels implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.levels.visualDimension
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.visualDimension">https://echarts.apache.org/zh/option.html#series-treemap.levels.visualDimension</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -117,7 +117,7 @@ public class Levels implements Serializable {
      */
     private Integer visualDimension;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.levels.visualMin
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.visualMin">https://echarts.apache.org/zh/option.html#series-treemap.levels.visualMin</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -127,7 +127,7 @@ public class Levels implements Serializable {
      */
     private Integer visualMin;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.levels.visualMax
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.visualMax">https://echarts.apache.org/zh/option.html#series-treemap.levels.visualMax</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -137,7 +137,7 @@ public class Levels implements Serializable {
      */
     private Integer visualMax;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.levels.color
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.color">https://echarts.apache.org/zh/option.html#series-treemap.levels.color</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -156,7 +156,7 @@ public class Levels implements Serializable {
      */
     private List<Object> color;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.levels.colorAlpha
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.colorAlpha">https://echarts.apache.org/zh/option.html#series-treemap.levels.colorAlpha</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -182,7 +182,7 @@ public class Levels implements Serializable {
      */
     private List<Object> colorAlpha;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.levels.colorSaturation
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.colorSaturation">https://echarts.apache.org/zh/option.html#series-treemap.levels.colorSaturation</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -208,7 +208,7 @@ public class Levels implements Serializable {
      */
     private Integer colorSaturation;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.levels.colorMappingBy
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.colorMappingBy">https://echarts.apache.org/zh/option.html#series-treemap.levels.colorMappingBy</a>
      * <br/>序号: 7
      * <br/>默认值: index
      * <br/>js类型: ["string"]
@@ -247,7 +247,7 @@ public class Levels implements Serializable {
      */
     private String colorMappingBy;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.levels.visibleMin
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.visibleMin">https://echarts.apache.org/zh/option.html#series-treemap.levels.visibleMin</a>
      * <br/>序号: 8
      * <br/>默认值: 10
      * <br/>js类型: ["number"]
@@ -272,7 +272,7 @@ public class Levels implements Serializable {
      */
     private Integer visibleMin;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.levels.childrenVisibleMin
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.childrenVisibleMin">https://echarts.apache.org/zh/option.html#series-treemap.levels.childrenVisibleMin</a>
      * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -297,7 +297,7 @@ public class Levels implements Serializable {
      */
     private Integer childrenVisibleMin;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.levels.label
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.label">https://echarts.apache.org/zh/option.html#series-treemap.levels.label</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -320,7 +320,7 @@ public class Levels implements Serializable {
      */
     private Object label;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.levels.upperLabel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.upperLabel">https://echarts.apache.org/zh/option.html#series-treemap.levels.upperLabel</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -351,7 +351,7 @@ public class Levels implements Serializable {
      */
     private Object upperLabel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.levels.itemStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.itemStyle">https://echarts.apache.org/zh/option.html#series-treemap.levels.itemStyle</a>
      * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -373,7 +373,7 @@ public class Levels implements Serializable {
      */
     private Object itemStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.levels.emphasis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.emphasis">https://echarts.apache.org/zh/option.html#series-treemap.levels.emphasis</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -382,7 +382,7 @@ public class Levels implements Serializable {
      */
     private Object emphasis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.levels.blur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.blur">https://echarts.apache.org/zh/option.html#series-treemap.levels.blur</a>
      * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -394,7 +394,7 @@ public class Levels implements Serializable {
      */
     private Object blur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.levels.select
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.select">https://echarts.apache.org/zh/option.html#series-treemap.levels.select</a>
      * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

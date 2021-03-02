@@ -24,7 +24,7 @@ public class Emphasis implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-radar.emphasis.focus
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.emphasis.focus">https://echarts.apache.org/zh/option.html#series-radar.emphasis.focus</a>
      * <br/>序号: 1
      * <br/>默认值: none
      * <br/>js类型: ["string"]
@@ -49,7 +49,7 @@ public class Emphasis implements Serializable {
      */
     private String focus;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-radar.emphasis.blurScope
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.emphasis.blurScope">https://echarts.apache.org/zh/option.html#series-radar.emphasis.blurScope</a>
      * <br/>序号: 2
      * <br/>默认值: coordinateSystem
      * <br/>js类型: ["string"]
@@ -66,7 +66,7 @@ public class Emphasis implements Serializable {
      */
     private String blurScope;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-radar.emphasis.itemStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.emphasis.itemStyle">https://echarts.apache.org/zh/option.html#series-radar.emphasis.itemStyle</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -74,7 +74,7 @@ public class Emphasis implements Serializable {
      */
     private Object itemStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-radar.emphasis.label
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.emphasis.label">https://echarts.apache.org/zh/option.html#series-radar.emphasis.label</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -82,7 +82,7 @@ public class Emphasis implements Serializable {
      */
     private Object label;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-radar.emphasis.lineStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.emphasis.lineStyle">https://echarts.apache.org/zh/option.html#series-radar.emphasis.lineStyle</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -90,7 +90,7 @@ public class Emphasis implements Serializable {
      */
     private Object lineStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-radar.emphasis.areaStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.emphasis.areaStyle">https://echarts.apache.org/zh/option.html#series-radar.emphasis.areaStyle</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

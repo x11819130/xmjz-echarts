@@ -28,7 +28,7 @@ public class FunnelSeries extends Series implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.type
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.type">https://echarts.apache.org/zh/option.html#series-funnel.type</a>
      * <br/>序号: 1
      * <br/>默认值: funnel
      * <br/>js类型: ["string"]
@@ -36,7 +36,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.id
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.id">https://echarts.apache.org/zh/option.html#series-funnel.id</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -45,7 +45,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.name
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.name">https://echarts.apache.org/zh/option.html#series-funnel.name</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -54,7 +54,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private String name;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.min
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.min">https://echarts.apache.org/zh/option.html#series-funnel.min</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -63,7 +63,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Integer min;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.max
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.max">https://echarts.apache.org/zh/option.html#series-funnel.max</a>
      * <br/>序号: 5
      * <br/>默认值: 100
      * <br/>js类型: ["number"]
@@ -72,7 +72,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Integer max;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.minSize
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.minSize">https://echarts.apache.org/zh/option.html#series-funnel.minSize</a>
      * <br/>序号: 6
      * <br/>默认值: 0%
      * <br/>js类型: ["number","string"]
@@ -82,7 +82,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Object minSize;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.maxSize
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.maxSize">https://echarts.apache.org/zh/option.html#series-funnel.maxSize</a>
      * <br/>序号: 7
      * <br/>默认值: 100%
      * <br/>js类型: ["number","string"]
@@ -92,7 +92,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Object maxSize;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.orient
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.orient">https://echarts.apache.org/zh/option.html#series-funnel.orient</a>
      * <br/>序号: 8
      * <br/>默认值: vertical
      * <br/>js类型: ["string"]
@@ -104,7 +104,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private String orient;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.sort
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.sort">https://echarts.apache.org/zh/option.html#series-funnel.sort</a>
      * <br/>序号: 9
      * <br/>默认值: descending
      * <br/>js类型: ["string","Function"]
@@ -113,7 +113,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Object sort;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.gap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.gap">https://echarts.apache.org/zh/option.html#series-funnel.gap</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -122,7 +122,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Integer gap;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.legendHoverLink
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.legendHoverLink">https://echarts.apache.org/zh/option.html#series-funnel.legendHoverLink</a>
      * <br/>序号: 11
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -131,7 +131,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Boolean legendHoverLink;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.funnelAlign
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.funnelAlign">https://echarts.apache.org/zh/option.html#series-funnel.funnelAlign</a>
      * <br/>序号: 12
      * <br/>默认值: center
      * <br/>js类型: ["string"]
@@ -140,7 +140,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private String funnelAlign;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.label
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label">https://echarts.apache.org/zh/option.html#series-funnel.label</a>
      * <br/>序号: 13
      * <br/>默认值: outside
      * <br/>js类型: ["Object"]
@@ -149,7 +149,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Label label;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.labelLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.labelLine">https://echarts.apache.org/zh/option.html#series-funnel.labelLine</a>
      * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -158,7 +158,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private LabelLine labelLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.itemStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.itemStyle">https://echarts.apache.org/zh/option.html#series-funnel.itemStyle</a>
      * <br/>序号: 15
      * <br/>默认值: 自适应
      * <br/>js类型: ["Object"]
@@ -167,7 +167,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private ItemStyle itemStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.labelLayout
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.labelLayout">https://echarts.apache.org/zh/option.html#series-funnel.labelLayout</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["Object","Function"]
@@ -220,7 +220,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private LabelLayout labelLayout;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.emphasis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.emphasis">https://echarts.apache.org/zh/option.html#series-funnel.emphasis</a>
      * <br/>序号: 17
      * <br/>默认值: none
      * <br/>js类型: ["Object"]
@@ -229,7 +229,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Emphasis emphasis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.blur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.blur">https://echarts.apache.org/zh/option.html#series-funnel.blur</a>
      * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -241,7 +241,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Blur blur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.select
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.select">https://echarts.apache.org/zh/option.html#series-funnel.select</a>
      * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -253,7 +253,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Select select;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.selectedMode
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.selectedMode">https://echarts.apache.org/zh/option.html#series-funnel.selectedMode</a>
      * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","string"]
@@ -267,7 +267,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Object selectedMode;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.zlevel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.zlevel">https://echarts.apache.org/zh/option.html#series-funnel.zlevel</a>
      * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -278,7 +278,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.z
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.z">https://echarts.apache.org/zh/option.html#series-funnel.z</a>
      * <br/>序号: 22
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -288,7 +288,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.left
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.left">https://echarts.apache.org/zh/option.html#series-funnel.left</a>
      * <br/>序号: 23
      * <br/>默认值: 80
      * <br/>js类型: ["string","number"]
@@ -299,7 +299,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Object left;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.top
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.top">https://echarts.apache.org/zh/option.html#series-funnel.top</a>
      * <br/>序号: 24
      * <br/>默认值: 60
      * <br/>js类型: ["string","number"]
@@ -310,7 +310,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Object top;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.right
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.right">https://echarts.apache.org/zh/option.html#series-funnel.right</a>
      * <br/>序号: 25
      * <br/>默认值: 80
      * <br/>js类型: ["string","number"]
@@ -320,7 +320,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Object right;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.bottom
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.bottom">https://echarts.apache.org/zh/option.html#series-funnel.bottom</a>
      * <br/>序号: 26
      * <br/>默认值: 60
      * <br/>js类型: ["string","number"]
@@ -330,7 +330,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Object bottom;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.width
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.width">https://echarts.apache.org/zh/option.html#series-funnel.width</a>
      * <br/>序号: 27
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -339,7 +339,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Object width;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.height
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.height">https://echarts.apache.org/zh/option.html#series-funnel.height</a>
      * <br/>序号: 28
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -348,7 +348,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Object height;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.seriesLayoutBy
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.seriesLayoutBy">https://echarts.apache.org/zh/option.html#series-funnel.seriesLayoutBy</a>
      * <br/>序号: 29
      * <br/>默认值: column
      * <br/>js类型: ["string"]
@@ -362,7 +362,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private String seriesLayoutBy;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.datasetIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.datasetIndex">https://echarts.apache.org/zh/option.html#series-funnel.datasetIndex</a>
      * <br/>序号: 30
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -371,7 +371,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Integer datasetIndex;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.dimensions
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.dimensions">https://echarts.apache.org/zh/option.html#series-funnel.dimensions</a>
      * <br/>序号: 31
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -429,7 +429,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private List<Object> dimensions;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.encode
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.encode">https://echarts.apache.org/zh/option.html#series-funnel.encode</a>
      * <br/>序号: 32
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -547,7 +547,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Object encode;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.data
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.data">https://echarts.apache.org/zh/option.html#series-funnel.data</a>
      * <br/>序号: 33
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -587,7 +587,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private List<Object> data;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.markPoint
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.markPoint">https://echarts.apache.org/zh/option.html#series-funnel.markPoint</a>
      * <br/>序号: 34
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -596,7 +596,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Object markPoint;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.markLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.markLine">https://echarts.apache.org/zh/option.html#series-funnel.markLine</a>
      * <br/>序号: 35
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -605,7 +605,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Object markLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.markArea
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.markArea">https://echarts.apache.org/zh/option.html#series-funnel.markArea</a>
      * <br/>序号: 36
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -614,7 +614,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Object markArea;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.silent
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.silent">https://echarts.apache.org/zh/option.html#series-funnel.silent</a>
      * <br/>序号: 37
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -623,7 +623,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Boolean silent;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.animation
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.animation">https://echarts.apache.org/zh/option.html#series-funnel.animation</a>
      * <br/>序号: 38
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -632,7 +632,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Boolean animation;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.animationThreshold
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.animationThreshold">https://echarts.apache.org/zh/option.html#series-funnel.animationThreshold</a>
      * <br/>序号: 39
      * <br/>默认值: 2000
      * <br/>js类型: ["number"]
@@ -641,7 +641,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Integer animationThreshold;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.animationDuration
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.animationDuration">https://echarts.apache.org/zh/option.html#series-funnel.animationDuration</a>
      * <br/>序号: 40
      * <br/>默认值: 1000
      * <br/>js类型: ["number","Function"]
@@ -655,7 +655,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Object animationDuration;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.animationEasing
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.animationEasing">https://echarts.apache.org/zh/option.html#series-funnel.animationEasing</a>
      * <br/>序号: 41
      * <br/>默认值: cubicOut
      * <br/>js类型: ["string"]
@@ -664,7 +664,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private String animationEasing;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.animationDelay
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.animationDelay">https://echarts.apache.org/zh/option.html#series-funnel.animationDelay</a>
      * <br/>序号: 42
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
@@ -680,7 +680,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Object animationDelay;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.animationDurationUpdate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.animationDurationUpdate">https://echarts.apache.org/zh/option.html#series-funnel.animationDurationUpdate</a>
      * <br/>序号: 43
      * <br/>默认值: 300
      * <br/>js类型: ["number","Function"]
@@ -695,7 +695,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Object animationDurationUpdate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.animationEasingUpdate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.animationEasingUpdate">https://echarts.apache.org/zh/option.html#series-funnel.animationEasingUpdate</a>
      * <br/>序号: 44
      * <br/>默认值: cubicInOut
      * <br/>js类型: ["string"]
@@ -704,7 +704,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private String animationEasingUpdate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.animationDelayUpdate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.animationDelayUpdate">https://echarts.apache.org/zh/option.html#series-funnel.animationDelayUpdate</a>
      * <br/>序号: 45
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
@@ -720,7 +720,7 @@ public class FunnelSeries extends Series implements Serializable {
      */
     private Object animationDelayUpdate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-funnel.tooltip
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.tooltip">https://echarts.apache.org/zh/option.html#series-funnel.tooltip</a>
      * <br/>序号: 46
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

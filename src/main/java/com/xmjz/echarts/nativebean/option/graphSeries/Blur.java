@@ -27,7 +27,7 @@ public class Blur implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.blur.itemStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.blur.itemStyle">https://echarts.apache.org/zh/option.html#series-graph.blur.itemStyle</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -35,7 +35,7 @@ public class Blur implements Serializable {
      */
     private Object itemStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.blur.lineStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.blur.lineStyle">https://echarts.apache.org/zh/option.html#series-graph.blur.lineStyle</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -43,7 +43,7 @@ public class Blur implements Serializable {
      */
     private Object lineStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.blur.label
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.blur.label">https://echarts.apache.org/zh/option.html#series-graph.blur.label</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -51,7 +51,7 @@ public class Blur implements Serializable {
      */
     private Object label;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.blur.edgeLabel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.blur.edgeLabel">https://echarts.apache.org/zh/option.html#series-graph.blur.edgeLabel</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

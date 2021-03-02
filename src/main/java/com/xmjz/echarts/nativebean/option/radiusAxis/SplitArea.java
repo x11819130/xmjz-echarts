@@ -24,7 +24,7 @@ public class SplitArea implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.splitArea.interval
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.splitArea.interval">https://echarts.apache.org/zh/option.html#radiusAxis.splitArea.interval</a>
      * <br/>序号: 1
      * <br/>默认值: auto
      * <br/>js类型: ["number","Function"]
@@ -40,7 +40,7 @@ public class SplitArea implements Serializable {
      */
     private Object interval;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.splitArea.show
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.splitArea.show">https://echarts.apache.org/zh/option.html#radiusAxis.splitArea.show</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -49,7 +49,7 @@ public class SplitArea implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.splitArea.areaStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.splitArea.areaStyle">https://echarts.apache.org/zh/option.html#radiusAxis.splitArea.areaStyle</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

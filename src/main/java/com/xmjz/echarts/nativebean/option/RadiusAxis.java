@@ -27,7 +27,7 @@ public class RadiusAxis implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.id
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.id">https://echarts.apache.org/zh/option.html#radiusAxis.id</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -36,7 +36,7 @@ public class RadiusAxis implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.polarIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.polarIndex">https://echarts.apache.org/zh/option.html#radiusAxis.polarIndex</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -45,7 +45,7 @@ public class RadiusAxis implements Serializable {
      */
     private Integer polarIndex;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.type
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.type">https://echarts.apache.org/zh/option.html#radiusAxis.type</a>
      * <br/>序号: 3
      * <br/>默认值: value
      * <br/>js类型: ["string"]
@@ -69,7 +69,7 @@ public class RadiusAxis implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.name
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.name">https://echarts.apache.org/zh/option.html#radiusAxis.name</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -78,7 +78,7 @@ public class RadiusAxis implements Serializable {
      */
     private String name;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.nameLocation
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.nameLocation">https://echarts.apache.org/zh/option.html#radiusAxis.nameLocation</a>
      * <br/>序号: 5
      * <br/>默认值: end
      * <br/>js类型: ["string"]
@@ -93,7 +93,7 @@ public class RadiusAxis implements Serializable {
      */
     private String nameLocation;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.nameTextStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.nameTextStyle">https://echarts.apache.org/zh/option.html#radiusAxis.nameTextStyle</a>
      * <br/>序号: 6
      * <br/>默认值: normal
      * <br/>js类型: ["Object"]
@@ -102,7 +102,7 @@ public class RadiusAxis implements Serializable {
      */
     private NameTextStyle nameTextStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.nameGap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.nameGap">https://echarts.apache.org/zh/option.html#radiusAxis.nameGap</a>
      * <br/>序号: 7
      * <br/>默认值: 15
      * <br/>js类型: ["number"]
@@ -111,7 +111,7 @@ public class RadiusAxis implements Serializable {
      */
     private Integer nameGap;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.nameRotate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.nameRotate">https://echarts.apache.org/zh/option.html#radiusAxis.nameRotate</a>
      * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -120,7 +120,7 @@ public class RadiusAxis implements Serializable {
      */
     private Integer nameRotate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.inverse
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.inverse">https://echarts.apache.org/zh/option.html#radiusAxis.inverse</a>
      * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -129,7 +129,7 @@ public class RadiusAxis implements Serializable {
      */
     private Boolean inverse;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.boundaryGap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.boundaryGap">https://echarts.apache.org/zh/option.html#radiusAxis.boundaryGap</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","Array"]
@@ -143,7 +143,7 @@ public class RadiusAxis implements Serializable {
      */
     private Object boundaryGap;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.min
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.min">https://echarts.apache.org/zh/option.html#radiusAxis.min</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["number","string","Function"]
@@ -161,7 +161,7 @@ public class RadiusAxis implements Serializable {
      */
     private Object min;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.max
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.max">https://echarts.apache.org/zh/option.html#radiusAxis.max</a>
      * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["number","string","Function"]
@@ -179,7 +179,7 @@ public class RadiusAxis implements Serializable {
      */
     private Object max;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.scale
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.scale">https://echarts.apache.org/zh/option.html#radiusAxis.scale</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -190,7 +190,7 @@ public class RadiusAxis implements Serializable {
      */
     private Boolean scale;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.splitNumber
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.splitNumber">https://echarts.apache.org/zh/option.html#radiusAxis.splitNumber</a>
      * <br/>序号: 14
      * <br/>默认值: 5
      * <br/>js类型: ["number"]
@@ -200,7 +200,7 @@ public class RadiusAxis implements Serializable {
      */
     private Integer splitNumber;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.minInterval
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.minInterval">https://echarts.apache.org/zh/option.html#radiusAxis.minInterval</a>
      * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -215,7 +215,7 @@ public class RadiusAxis implements Serializable {
      */
     private Integer minInterval;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.maxInterval
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.maxInterval">https://echarts.apache.org/zh/option.html#radiusAxis.maxInterval</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -230,7 +230,7 @@ public class RadiusAxis implements Serializable {
      */
     private Integer maxInterval;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.interval
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.interval">https://echarts.apache.org/zh/option.html#radiusAxis.interval</a>
      * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -241,7 +241,7 @@ public class RadiusAxis implements Serializable {
      */
     private Integer interval;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.logBase
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.logBase">https://echarts.apache.org/zh/option.html#radiusAxis.logBase</a>
      * <br/>序号: 18
      * <br/>默认值: 10
      * <br/>js类型: ["number"]
@@ -250,7 +250,7 @@ public class RadiusAxis implements Serializable {
      */
     private Integer logBase;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.silent
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.silent">https://echarts.apache.org/zh/option.html#radiusAxis.silent</a>
      * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -259,7 +259,7 @@ public class RadiusAxis implements Serializable {
      */
     private Boolean silent;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.triggerEvent
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.triggerEvent">https://echarts.apache.org/zh/option.html#radiusAxis.triggerEvent</a>
      * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -279,7 +279,7 @@ public class RadiusAxis implements Serializable {
      */
     private Boolean triggerEvent;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.axisLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.axisLine">https://echarts.apache.org/zh/option.html#radiusAxis.axisLine</a>
      * <br/>序号: 21
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -288,7 +288,7 @@ public class RadiusAxis implements Serializable {
      */
     private AxisLine axisLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.axisTick
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.axisTick">https://echarts.apache.org/zh/option.html#radiusAxis.axisTick</a>
      * <br/>序号: 22
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -297,7 +297,7 @@ public class RadiusAxis implements Serializable {
      */
     private AxisTick axisTick;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.minorTick
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.minorTick">https://echarts.apache.org/zh/option.html#radiusAxis.minorTick</a>
      * <br/>序号: 23
      * <br/>默认值: 5
      * <br/>js类型: ["Object"]
@@ -317,7 +317,7 @@ public class RadiusAxis implements Serializable {
      */
     private MinorTick minorTick;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.axisLabel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.axisLabel">https://echarts.apache.org/zh/option.html#radiusAxis.axisLabel</a>
      * <br/>序号: 24
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -326,7 +326,7 @@ public class RadiusAxis implements Serializable {
      */
     private AxisLabel axisLabel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.splitLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.splitLine">https://echarts.apache.org/zh/option.html#radiusAxis.splitLine</a>
      * <br/>序号: 25
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -335,7 +335,7 @@ public class RadiusAxis implements Serializable {
      */
     private SplitLine splitLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.minorSplitLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.minorSplitLine">https://echarts.apache.org/zh/option.html#radiusAxis.minorSplitLine</a>
      * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -347,7 +347,7 @@ public class RadiusAxis implements Serializable {
      */
     private MinorSplitLine minorSplitLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.splitArea
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.splitArea">https://echarts.apache.org/zh/option.html#radiusAxis.splitArea</a>
      * <br/>序号: 27
      * <br/>默认值: auto
      * <br/>js类型: ["Object"]
@@ -356,7 +356,7 @@ public class RadiusAxis implements Serializable {
      */
     private SplitArea splitArea;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.data
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.data">https://echarts.apache.org/zh/option.html#radiusAxis.data</a>
      * <br/>序号: 28
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -380,7 +380,7 @@ public class RadiusAxis implements Serializable {
      */
     private List<Object> data;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.axisPointer
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.axisPointer">https://echarts.apache.org/zh/option.html#radiusAxis.axisPointer</a>
      * <br/>序号: 29
      * <br/>默认值: line
      * <br/>js类型: ["Object"]
@@ -389,7 +389,7 @@ public class RadiusAxis implements Serializable {
      */
     private AxisPointer axisPointer;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.zlevel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.zlevel">https://echarts.apache.org/zh/option.html#radiusAxis.zlevel</a>
      * <br/>序号: 30
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -400,7 +400,7 @@ public class RadiusAxis implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.z
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.z">https://echarts.apache.org/zh/option.html#radiusAxis.z</a>
      * <br/>序号: 31
      * <br/>默认值: 无
      * <br/>js类型: ["number"]

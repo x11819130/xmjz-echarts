@@ -23,7 +23,7 @@ public class EdgeLabel implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.show
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.show">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.show</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -32,7 +32,7 @@ public class EdgeLabel implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.position
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.position">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.position</a>
      * <br/>序号: 2
      * <br/>默认值: middle
      * <br/>js类型: ["string"]
@@ -46,7 +46,7 @@ public class EdgeLabel implements Serializable {
      */
     private String position;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.formatter
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.formatter">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.formatter</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["string","Function"]
@@ -137,7 +137,7 @@ public class EdgeLabel implements Serializable {
      */
     private Object formatter;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.color
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.color">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.color</a>
      * <br/>序号: 4
      * <br/>默认值: #fff
      * <br/>js类型: ["Color"]
@@ -146,7 +146,7 @@ public class EdgeLabel implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.fontStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.fontStyle">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.fontStyle</a>
      * <br/>序号: 5
      * <br/>默认值: normal
      * <br/>js类型: ["string"]
@@ -161,7 +161,7 @@ public class EdgeLabel implements Serializable {
      */
     private String fontStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.fontWeight
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.fontWeight">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.fontWeight</a>
      * <br/>序号: 6
      * <br/>默认值: normal
      * <br/>js类型: ["string","number"]
@@ -178,7 +178,7 @@ public class EdgeLabel implements Serializable {
      */
     private Object fontWeight;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.fontFamily
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.fontFamily">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.fontFamily</a>
      * <br/>序号: 7
      * <br/>默认值: sans-serif
      * <br/>js类型: ["string"]
@@ -188,7 +188,7 @@ public class EdgeLabel implements Serializable {
      */
     private String fontFamily;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.fontSize
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.fontSize">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.fontSize</a>
      * <br/>序号: 8
      * <br/>默认值: 12
      * <br/>js类型: ["number"]
@@ -197,7 +197,7 @@ public class EdgeLabel implements Serializable {
      */
     private Integer fontSize;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.align
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.align">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.align</a>
      * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -222,7 +222,7 @@ public class EdgeLabel implements Serializable {
      */
     private String align;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.verticalAlign
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.verticalAlign">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.verticalAlign</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -247,7 +247,7 @@ public class EdgeLabel implements Serializable {
      */
     private String verticalAlign;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.lineHeight
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.lineHeight">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.lineHeight</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -266,7 +266,7 @@ public class EdgeLabel implements Serializable {
      */
     private Integer lineHeight;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.backgroundColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.backgroundColor">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.backgroundColor</a>
      * <br/>序号: 12
      * <br/>默认值: transparent
      * <br/>js类型: ["string","Object"]
@@ -286,7 +286,7 @@ public class EdgeLabel implements Serializable {
      */
     private Object backgroundColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.borderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.borderColor">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.borderColor</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -295,7 +295,7 @@ public class EdgeLabel implements Serializable {
      */
     private String borderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.borderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.borderWidth">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.borderWidth</a>
      * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -304,7 +304,7 @@ public class EdgeLabel implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.borderRadius
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.borderRadius">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.borderRadius</a>
      * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -313,7 +313,7 @@ public class EdgeLabel implements Serializable {
      */
     private Object borderRadius;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.padding
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.padding">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.padding</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -328,7 +328,7 @@ public class EdgeLabel implements Serializable {
      */
     private Object padding;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.shadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.shadowColor">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.shadowColor</a>
      * <br/>序号: 17
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -337,7 +337,7 @@ public class EdgeLabel implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.shadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.shadowBlur">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.shadowBlur</a>
      * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -346,7 +346,7 @@ public class EdgeLabel implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.shadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.shadowOffsetX">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.shadowOffsetX</a>
      * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -355,7 +355,7 @@ public class EdgeLabel implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.shadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.shadowOffsetY">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.shadowOffsetY</a>
      * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -364,7 +364,7 @@ public class EdgeLabel implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.width
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.width">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.width</a>
      * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -373,7 +373,7 @@ public class EdgeLabel implements Serializable {
      */
     private Integer width;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.height
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.height">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.height</a>
      * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -382,7 +382,7 @@ public class EdgeLabel implements Serializable {
      */
     private Integer height;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.textBorderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.textBorderColor">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.textBorderColor</a>
      * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -391,7 +391,7 @@ public class EdgeLabel implements Serializable {
      */
     private String textBorderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.textBorderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.textBorderWidth">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.textBorderWidth</a>
      * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -400,7 +400,7 @@ public class EdgeLabel implements Serializable {
      */
     private Integer textBorderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.textShadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.textShadowColor">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.textShadowColor</a>
      * <br/>序号: 25
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -409,7 +409,7 @@ public class EdgeLabel implements Serializable {
      */
     private String textShadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.textShadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.textShadowBlur">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.textShadowBlur</a>
      * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -418,7 +418,7 @@ public class EdgeLabel implements Serializable {
      */
     private Integer textShadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.textShadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.textShadowOffsetX">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.textShadowOffsetX</a>
      * <br/>序号: 27
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -427,7 +427,7 @@ public class EdgeLabel implements Serializable {
      */
     private Integer textShadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.textShadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.textShadowOffsetY">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.textShadowOffsetY</a>
      * <br/>序号: 28
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -436,7 +436,7 @@ public class EdgeLabel implements Serializable {
      */
     private Integer textShadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.overflow
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.overflow">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.overflow</a>
      * <br/>序号: 29
      * <br/>默认值: none
      * <br/>js类型: ["string"]
@@ -450,7 +450,7 @@ public class EdgeLabel implements Serializable {
      */
     private String overflow;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.ellipsis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.ellipsis">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.ellipsis</a>
      * <br/>序号: 30
      * <br/>默认值: ...
      * <br/>js类型: ["string"]
@@ -459,7 +459,7 @@ public class EdgeLabel implements Serializable {
      */
     private String ellipsis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.lineOverflow
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.lineOverflow">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.lineOverflow</a>
      * <br/>序号: 31
      * <br/>默认值: none
      * <br/>js类型: ["string"]
@@ -471,7 +471,7 @@ public class EdgeLabel implements Serializable {
      */
     private String lineOverflow;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.rich
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.rich">https://echarts.apache.org/zh/option.html#series-graph.edgeLabel.rich</a>
      * <br/>序号: 32
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

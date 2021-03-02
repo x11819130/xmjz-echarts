@@ -34,7 +34,7 @@ public class BoxplotSeries extends Series implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-boxplot.type
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.type">https://echarts.apache.org/zh/option.html#series-boxplot.type</a>
      * <br/>序号: 1
      * <br/>默认值: boxplot
      * <br/>js类型: ["string"]
@@ -42,7 +42,7 @@ public class BoxplotSeries extends Series implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-boxplot.id
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.id">https://echarts.apache.org/zh/option.html#series-boxplot.id</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -51,7 +51,7 @@ public class BoxplotSeries extends Series implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-boxplot.coordinateSystem
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.coordinateSystem">https://echarts.apache.org/zh/option.html#series-boxplot.coordinateSystem</a>
      * <br/>序号: 3
      * <br/>默认值: cartesian2d
      * <br/>js类型: ["string"]
@@ -65,7 +65,7 @@ public class BoxplotSeries extends Series implements Serializable {
      */
     private String coordinateSystem;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-boxplot.xAxisIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.xAxisIndex">https://echarts.apache.org/zh/option.html#series-boxplot.xAxisIndex</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -79,7 +79,7 @@ public class BoxplotSeries extends Series implements Serializable {
     }
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-boxplot.yAxisIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.yAxisIndex">https://echarts.apache.org/zh/option.html#series-boxplot.yAxisIndex</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -93,7 +93,7 @@ public class BoxplotSeries extends Series implements Serializable {
     }
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-boxplot.name
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.name">https://echarts.apache.org/zh/option.html#series-boxplot.name</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -102,7 +102,7 @@ public class BoxplotSeries extends Series implements Serializable {
      */
     private String name;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-boxplot.legendHoverLink
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.legendHoverLink">https://echarts.apache.org/zh/option.html#series-boxplot.legendHoverLink</a>
      * <br/>序号: 7
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -111,7 +111,7 @@ public class BoxplotSeries extends Series implements Serializable {
      */
     private Boolean legendHoverLink;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-boxplot.hoverAnimation
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.hoverAnimation">https://echarts.apache.org/zh/option.html#series-boxplot.hoverAnimation</a>
      * <br/>序号: 8
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -120,7 +120,7 @@ public class BoxplotSeries extends Series implements Serializable {
      */
     private Boolean hoverAnimation;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-boxplot.layout
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.layout">https://echarts.apache.org/zh/option.html#series-boxplot.layout</a>
      * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -136,7 +136,7 @@ public class BoxplotSeries extends Series implements Serializable {
      */
     private String layout;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-boxplot.boxWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.boxWidth">https://echarts.apache.org/zh/option.html#series-boxplot.boxWidth</a>
      * <br/>序号: 10
      * <br/>默认值: [7,50]
      * <br/>js类型: ["Array"]
@@ -146,7 +146,7 @@ public class BoxplotSeries extends Series implements Serializable {
      */
     private List<Object> boxWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-boxplot.itemStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.itemStyle">https://echarts.apache.org/zh/option.html#series-boxplot.itemStyle</a>
      * <br/>序号: 11
      * <br/>默认值: #fff
      * <br/>js类型: ["Object"]
@@ -155,7 +155,7 @@ public class BoxplotSeries extends Series implements Serializable {
      */
     private ItemStyle itemStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-boxplot.emphasis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.emphasis">https://echarts.apache.org/zh/option.html#series-boxplot.emphasis</a>
      * <br/>序号: 12
      * <br/>默认值: none
      * <br/>js类型: ["Object"]
@@ -164,7 +164,7 @@ public class BoxplotSeries extends Series implements Serializable {
      */
     private Emphasis emphasis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-boxplot.blur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.blur">https://echarts.apache.org/zh/option.html#series-boxplot.blur</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -176,7 +176,7 @@ public class BoxplotSeries extends Series implements Serializable {
      */
     private Blur blur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-boxplot.select
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.select">https://echarts.apache.org/zh/option.html#series-boxplot.select</a>
      * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -188,7 +188,7 @@ public class BoxplotSeries extends Series implements Serializable {
      */
     private Select select;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-boxplot.selectedMode
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.selectedMode">https://echarts.apache.org/zh/option.html#series-boxplot.selectedMode</a>
      * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","string"]
@@ -202,7 +202,7 @@ public class BoxplotSeries extends Series implements Serializable {
      */
     private Object selectedMode;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-boxplot.dimensions
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.dimensions">https://echarts.apache.org/zh/option.html#series-boxplot.dimensions</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -260,7 +260,7 @@ public class BoxplotSeries extends Series implements Serializable {
      */
     private List<Object> dimensions;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-boxplot.encode
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.encode">https://echarts.apache.org/zh/option.html#series-boxplot.encode</a>
      * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -378,7 +378,7 @@ public class BoxplotSeries extends Series implements Serializable {
      */
     private Object encode;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-boxplot.data
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.data">https://echarts.apache.org/zh/option.html#series-boxplot.data</a>
      * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -405,7 +405,7 @@ public class BoxplotSeries extends Series implements Serializable {
      */
     private List<Object> data;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-boxplot.markPoint
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.markPoint">https://echarts.apache.org/zh/option.html#series-boxplot.markPoint</a>
      * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -414,7 +414,7 @@ public class BoxplotSeries extends Series implements Serializable {
      */
     private Object markPoint;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-boxplot.markLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.markLine">https://echarts.apache.org/zh/option.html#series-boxplot.markLine</a>
      * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -423,7 +423,7 @@ public class BoxplotSeries extends Series implements Serializable {
      */
     private Object markLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-boxplot.markArea
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.markArea">https://echarts.apache.org/zh/option.html#series-boxplot.markArea</a>
      * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -432,7 +432,7 @@ public class BoxplotSeries extends Series implements Serializable {
      */
     private Object markArea;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-boxplot.zlevel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.zlevel">https://echarts.apache.org/zh/option.html#series-boxplot.zlevel</a>
      * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -443,7 +443,7 @@ public class BoxplotSeries extends Series implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-boxplot.z
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.z">https://echarts.apache.org/zh/option.html#series-boxplot.z</a>
      * <br/>序号: 23
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -453,7 +453,7 @@ public class BoxplotSeries extends Series implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-boxplot.silent
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.silent">https://echarts.apache.org/zh/option.html#series-boxplot.silent</a>
      * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -462,7 +462,7 @@ public class BoxplotSeries extends Series implements Serializable {
      */
     private Boolean silent;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-boxplot.animationDuration
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.animationDuration">https://echarts.apache.org/zh/option.html#series-boxplot.animationDuration</a>
      * <br/>序号: 25
      * <br/>默认值: 800
      * <br/>js类型: ["number","Function"]
@@ -476,7 +476,7 @@ public class BoxplotSeries extends Series implements Serializable {
      */
     private Object animationDuration;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-boxplot.animationEasing
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.animationEasing">https://echarts.apache.org/zh/option.html#series-boxplot.animationEasing</a>
      * <br/>序号: 26
      * <br/>默认值: elasticOut
      * <br/>js类型: ["string"]
@@ -485,7 +485,7 @@ public class BoxplotSeries extends Series implements Serializable {
      */
     private String animationEasing;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-boxplot.animationDelay
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.animationDelay">https://echarts.apache.org/zh/option.html#series-boxplot.animationDelay</a>
      * <br/>序号: 27
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
@@ -501,7 +501,7 @@ public class BoxplotSeries extends Series implements Serializable {
      */
     private Object animationDelay;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-boxplot.tooltip
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.tooltip">https://echarts.apache.org/zh/option.html#series-boxplot.tooltip</a>
      * <br/>序号: 28
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

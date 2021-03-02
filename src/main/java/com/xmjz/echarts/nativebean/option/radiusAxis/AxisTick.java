@@ -24,7 +24,7 @@ public class AxisTick implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.axisTick.show
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.axisTick.show">https://echarts.apache.org/zh/option.html#radiusAxis.axisTick.show</a>
      * <br/>序号: 1
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -33,7 +33,7 @@ public class AxisTick implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.axisTick.alignWithLabel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.axisTick.alignWithLabel">https://echarts.apache.org/zh/option.html#radiusAxis.axisTick.alignWithLabel</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -43,7 +43,7 @@ public class AxisTick implements Serializable {
      */
     private Boolean alignWithLabel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.axisTick.interval
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.axisTick.interval">https://echarts.apache.org/zh/option.html#radiusAxis.axisTick.interval</a>
      * <br/>序号: 3
      * <br/>默认值: auto
      * <br/>js类型: ["number","Function"]
@@ -59,7 +59,7 @@ public class AxisTick implements Serializable {
      */
     private Object interval;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.axisTick.inside
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.axisTick.inside">https://echarts.apache.org/zh/option.html#radiusAxis.axisTick.inside</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -68,7 +68,7 @@ public class AxisTick implements Serializable {
      */
     private Boolean inside;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.axisTick.length
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.axisTick.length">https://echarts.apache.org/zh/option.html#radiusAxis.axisTick.length</a>
      * <br/>序号: 5
      * <br/>默认值: 5
      * <br/>js类型: ["number"]
@@ -77,7 +77,7 @@ public class AxisTick implements Serializable {
      */
     private Integer length;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis.axisTick.lineStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.axisTick.lineStyle">https://echarts.apache.org/zh/option.html#radiusAxis.axisTick.lineStyle</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

@@ -24,7 +24,7 @@ public class TextStyle implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.textStyle.color
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.textStyle.color">https://echarts.apache.org/zh/option.html#tooltip.textStyle.color</a>
      * <br/>序号: 1
      * <br/>默认值: #fff
      * <br/>js类型: ["Color"]
@@ -33,7 +33,7 @@ public class TextStyle implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.textStyle.fontStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.textStyle.fontStyle">https://echarts.apache.org/zh/option.html#tooltip.textStyle.fontStyle</a>
      * <br/>序号: 2
      * <br/>默认值: normal
      * <br/>js类型: ["string"]
@@ -48,7 +48,7 @@ public class TextStyle implements Serializable {
      */
     private String fontStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.textStyle.fontWeight
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.textStyle.fontWeight">https://echarts.apache.org/zh/option.html#tooltip.textStyle.fontWeight</a>
      * <br/>序号: 3
      * <br/>默认值: normal
      * <br/>js类型: ["string","number"]
@@ -65,7 +65,7 @@ public class TextStyle implements Serializable {
      */
     private Object fontWeight;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.textStyle.fontFamily
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.textStyle.fontFamily">https://echarts.apache.org/zh/option.html#tooltip.textStyle.fontFamily</a>
      * <br/>序号: 4
      * <br/>默认值: sans-serif
      * <br/>js类型: ["string"]
@@ -75,7 +75,7 @@ public class TextStyle implements Serializable {
      */
     private String fontFamily;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.textStyle.fontSize
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.textStyle.fontSize">https://echarts.apache.org/zh/option.html#tooltip.textStyle.fontSize</a>
      * <br/>序号: 5
      * <br/>默认值: 14
      * <br/>js类型: ["number"]
@@ -84,7 +84,7 @@ public class TextStyle implements Serializable {
      */
     private Integer fontSize;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.textStyle.lineHeight
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.textStyle.lineHeight">https://echarts.apache.org/zh/option.html#tooltip.textStyle.lineHeight</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -103,7 +103,7 @@ public class TextStyle implements Serializable {
      */
     private Integer lineHeight;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.textStyle.width
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.textStyle.width">https://echarts.apache.org/zh/option.html#tooltip.textStyle.width</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -112,7 +112,7 @@ public class TextStyle implements Serializable {
      */
     private Integer width;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.textStyle.height
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.textStyle.height">https://echarts.apache.org/zh/option.html#tooltip.textStyle.height</a>
      * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -121,7 +121,7 @@ public class TextStyle implements Serializable {
      */
     private Integer height;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.textStyle.textBorderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.textStyle.textBorderColor">https://echarts.apache.org/zh/option.html#tooltip.textStyle.textBorderColor</a>
      * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -130,7 +130,7 @@ public class TextStyle implements Serializable {
      */
     private String textBorderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.textStyle.textBorderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.textStyle.textBorderWidth">https://echarts.apache.org/zh/option.html#tooltip.textStyle.textBorderWidth</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -139,7 +139,7 @@ public class TextStyle implements Serializable {
      */
     private Integer textBorderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.textStyle.textShadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.textStyle.textShadowColor">https://echarts.apache.org/zh/option.html#tooltip.textStyle.textShadowColor</a>
      * <br/>序号: 11
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -148,7 +148,7 @@ public class TextStyle implements Serializable {
      */
     private String textShadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.textStyle.textShadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.textStyle.textShadowBlur">https://echarts.apache.org/zh/option.html#tooltip.textStyle.textShadowBlur</a>
      * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -157,7 +157,7 @@ public class TextStyle implements Serializable {
      */
     private Integer textShadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.textStyle.textShadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.textStyle.textShadowOffsetX">https://echarts.apache.org/zh/option.html#tooltip.textStyle.textShadowOffsetX</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -166,7 +166,7 @@ public class TextStyle implements Serializable {
      */
     private Integer textShadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.textStyle.textShadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.textStyle.textShadowOffsetY">https://echarts.apache.org/zh/option.html#tooltip.textStyle.textShadowOffsetY</a>
      * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -175,7 +175,7 @@ public class TextStyle implements Serializable {
      */
     private Integer textShadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.textStyle.overflow
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.textStyle.overflow">https://echarts.apache.org/zh/option.html#tooltip.textStyle.overflow</a>
      * <br/>序号: 15
      * <br/>默认值: none
      * <br/>js类型: ["string"]
@@ -189,7 +189,7 @@ public class TextStyle implements Serializable {
      */
     private String overflow;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.textStyle.ellipsis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.textStyle.ellipsis">https://echarts.apache.org/zh/option.html#tooltip.textStyle.ellipsis</a>
      * <br/>序号: 16
      * <br/>默认值: ...
      * <br/>js类型: ["string"]
@@ -198,7 +198,7 @@ public class TextStyle implements Serializable {
      */
     private String ellipsis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.textStyle.lineOverflow
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.textStyle.lineOverflow">https://echarts.apache.org/zh/option.html#tooltip.textStyle.lineOverflow</a>
      * <br/>序号: 17
      * <br/>默认值: none
      * <br/>js类型: ["string"]

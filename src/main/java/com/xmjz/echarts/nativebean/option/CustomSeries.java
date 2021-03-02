@@ -143,7 +143,7 @@ public class CustomSeries extends Series implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.type
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.type">https://echarts.apache.org/zh/option.html#series-custom.type</a>
      * <br/>序号: 1
      * <br/>默认值: custom
      * <br/>js类型: ["string"]
@@ -151,7 +151,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.id
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.id">https://echarts.apache.org/zh/option.html#series-custom.id</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -160,7 +160,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.name
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.name">https://echarts.apache.org/zh/option.html#series-custom.name</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -169,7 +169,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private String name;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.legendHoverLink
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.legendHoverLink">https://echarts.apache.org/zh/option.html#series-custom.legendHoverLink</a>
      * <br/>序号: 4
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -178,7 +178,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private Boolean legendHoverLink;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.coordinateSystem
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.coordinateSystem">https://echarts.apache.org/zh/option.html#series-custom.coordinateSystem</a>
      * <br/>序号: 5
      * <br/>默认值: cartesian2d
      * <br/>js类型: ["string"]
@@ -212,7 +212,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private String coordinateSystem;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.xAxisIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.xAxisIndex">https://echarts.apache.org/zh/option.html#series-custom.xAxisIndex</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -226,7 +226,7 @@ public class CustomSeries extends Series implements Serializable {
     }
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.yAxisIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.yAxisIndex">https://echarts.apache.org/zh/option.html#series-custom.yAxisIndex</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -240,7 +240,7 @@ public class CustomSeries extends Series implements Serializable {
     }
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.polarIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.polarIndex">https://echarts.apache.org/zh/option.html#series-custom.polarIndex</a>
      * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -249,7 +249,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private Integer polarIndex;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.geoIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.geoIndex">https://echarts.apache.org/zh/option.html#series-custom.geoIndex</a>
      * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -258,7 +258,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private Integer geoIndex;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.calendarIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.calendarIndex">https://echarts.apache.org/zh/option.html#series-custom.calendarIndex</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -267,7 +267,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private Integer calendarIndex;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.renderItem
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.renderItem">https://echarts.apache.org/zh/option.html#series-custom.renderItem</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["Function"]
@@ -322,7 +322,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private RenderItem renderItem;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.itemStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.itemStyle">https://echarts.apache.org/zh/option.html#series-custom.itemStyle</a>
      * <br/>序号: 12
      * <br/>默认值: 自适应
      * <br/>js类型: ["Object"]
@@ -331,7 +331,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private ItemStyle itemStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.labelLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.labelLine">https://echarts.apache.org/zh/option.html#series-custom.labelLine</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -340,7 +340,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private LabelLine labelLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.labelLayout
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.labelLayout">https://echarts.apache.org/zh/option.html#series-custom.labelLayout</a>
      * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["Object","Function"]
@@ -393,7 +393,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private LabelLayout labelLayout;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.selectedMode
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.selectedMode">https://echarts.apache.org/zh/option.html#series-custom.selectedMode</a>
      * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","string"]
@@ -407,7 +407,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private Object selectedMode;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.dimensions
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.dimensions">https://echarts.apache.org/zh/option.html#series-custom.dimensions</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -465,7 +465,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private List<Object> dimensions;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.encode
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.encode">https://echarts.apache.org/zh/option.html#series-custom.encode</a>
      * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -583,7 +583,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private Object encode;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.seriesLayoutBy
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.seriesLayoutBy">https://echarts.apache.org/zh/option.html#series-custom.seriesLayoutBy</a>
      * <br/>序号: 18
      * <br/>默认值: column
      * <br/>js类型: ["string"]
@@ -597,7 +597,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private String seriesLayoutBy;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.datasetIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.datasetIndex">https://echarts.apache.org/zh/option.html#series-custom.datasetIndex</a>
      * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -606,7 +606,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private Integer datasetIndex;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.data
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.data">https://echarts.apache.org/zh/option.html#series-custom.data</a>
      * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -729,7 +729,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private List<Object> data;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.clip
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.clip">https://echarts.apache.org/zh/option.html#series-custom.clip</a>
      * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -750,7 +750,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private Boolean clip;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.zlevel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.zlevel">https://echarts.apache.org/zh/option.html#series-custom.zlevel</a>
      * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -761,7 +761,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.z
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.z">https://echarts.apache.org/zh/option.html#series-custom.z</a>
      * <br/>序号: 23
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -771,7 +771,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.silent
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.silent">https://echarts.apache.org/zh/option.html#series-custom.silent</a>
      * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -780,7 +780,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private Boolean silent;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.animation
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.animation">https://echarts.apache.org/zh/option.html#series-custom.animation</a>
      * <br/>序号: 25
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -789,7 +789,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private Boolean animation;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.animationThreshold
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.animationThreshold">https://echarts.apache.org/zh/option.html#series-custom.animationThreshold</a>
      * <br/>序号: 26
      * <br/>默认值: 2000
      * <br/>js类型: ["number"]
@@ -798,7 +798,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private Integer animationThreshold;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.animationDuration
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.animationDuration">https://echarts.apache.org/zh/option.html#series-custom.animationDuration</a>
      * <br/>序号: 27
      * <br/>默认值: 1000
      * <br/>js类型: ["number","Function"]
@@ -812,7 +812,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private Object animationDuration;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.animationEasing
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.animationEasing">https://echarts.apache.org/zh/option.html#series-custom.animationEasing</a>
      * <br/>序号: 28
      * <br/>默认值: cubicOut
      * <br/>js类型: ["string"]
@@ -821,7 +821,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private String animationEasing;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.animationDelay
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.animationDelay">https://echarts.apache.org/zh/option.html#series-custom.animationDelay</a>
      * <br/>序号: 29
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
@@ -837,7 +837,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private Object animationDelay;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.animationDurationUpdate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.animationDurationUpdate">https://echarts.apache.org/zh/option.html#series-custom.animationDurationUpdate</a>
      * <br/>序号: 30
      * <br/>默认值: 300
      * <br/>js类型: ["number","Function"]
@@ -852,7 +852,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private Object animationDurationUpdate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.animationEasingUpdate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.animationEasingUpdate">https://echarts.apache.org/zh/option.html#series-custom.animationEasingUpdate</a>
      * <br/>序号: 31
      * <br/>默认值: cubicInOut
      * <br/>js类型: ["string"]
@@ -861,7 +861,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private String animationEasingUpdate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.animationDelayUpdate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.animationDelayUpdate">https://echarts.apache.org/zh/option.html#series-custom.animationDelayUpdate</a>
      * <br/>序号: 32
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
@@ -877,7 +877,7 @@ public class CustomSeries extends Series implements Serializable {
      */
     private Object animationDelayUpdate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.tooltip
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.tooltip">https://echarts.apache.org/zh/option.html#series-custom.tooltip</a>
      * <br/>序号: 33
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

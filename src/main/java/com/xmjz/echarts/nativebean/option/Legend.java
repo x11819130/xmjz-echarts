@@ -30,7 +30,7 @@ public class Legend implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.type
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.type">https://echarts.apache.org/zh/option.html#legend.type</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -59,7 +59,7 @@ public class Legend implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.id
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.id">https://echarts.apache.org/zh/option.html#legend.id</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -68,7 +68,7 @@ public class Legend implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.show
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.show">https://echarts.apache.org/zh/option.html#legend.show</a>
      * <br/>序号: 3
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -76,7 +76,7 @@ public class Legend implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.zlevel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.zlevel">https://echarts.apache.org/zh/option.html#legend.zlevel</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -87,7 +87,7 @@ public class Legend implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.z
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.z">https://echarts.apache.org/zh/option.html#legend.z</a>
      * <br/>序号: 5
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -97,7 +97,7 @@ public class Legend implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.left
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.left">https://echarts.apache.org/zh/option.html#legend.left</a>
      * <br/>序号: 6
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -108,7 +108,7 @@ public class Legend implements Serializable {
      */
     private Object left;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.top
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.top">https://echarts.apache.org/zh/option.html#legend.top</a>
      * <br/>序号: 7
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -119,7 +119,7 @@ public class Legend implements Serializable {
      */
     private Object top;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.right
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.right">https://echarts.apache.org/zh/option.html#legend.right</a>
      * <br/>序号: 8
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -130,7 +130,7 @@ public class Legend implements Serializable {
      */
     private Object right;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.bottom
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.bottom">https://echarts.apache.org/zh/option.html#legend.bottom</a>
      * <br/>序号: 9
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -141,7 +141,7 @@ public class Legend implements Serializable {
      */
     private Object bottom;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.width
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.width">https://echarts.apache.org/zh/option.html#legend.width</a>
      * <br/>序号: 10
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -150,7 +150,7 @@ public class Legend implements Serializable {
      */
     private Object width;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.height
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.height">https://echarts.apache.org/zh/option.html#legend.height</a>
      * <br/>序号: 11
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -159,7 +159,7 @@ public class Legend implements Serializable {
      */
     private Object height;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.orient
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.orient">https://echarts.apache.org/zh/option.html#legend.orient</a>
      * <br/>序号: 12
      * <br/>默认值: horizontal
      * <br/>js类型: ["string"]
@@ -173,7 +173,7 @@ public class Legend implements Serializable {
      */
     private String orient;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.align
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.align">https://echarts.apache.org/zh/option.html#legend.align</a>
      * <br/>序号: 13
      * <br/>默认值: auto
      * <br/>js类型: ["string"]
@@ -188,7 +188,7 @@ public class Legend implements Serializable {
      */
     private String align;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.padding
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.padding">https://echarts.apache.org/zh/option.html#legend.padding</a>
      * <br/>序号: 14
      * <br/>默认值: 5
      * <br/>js类型: ["number","Array"]
@@ -210,7 +210,7 @@ public class Legend implements Serializable {
      */
     private Object padding;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.itemGap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.itemGap">https://echarts.apache.org/zh/option.html#legend.itemGap</a>
      * <br/>序号: 15
      * <br/>默认值: 10
      * <br/>js类型: ["number"]
@@ -219,7 +219,7 @@ public class Legend implements Serializable {
      */
     private Integer itemGap;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.itemWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.itemWidth">https://echarts.apache.org/zh/option.html#legend.itemWidth</a>
      * <br/>序号: 16
      * <br/>默认值: 25
      * <br/>js类型: ["number"]
@@ -228,7 +228,7 @@ public class Legend implements Serializable {
      */
     private Integer itemWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.itemHeight
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.itemHeight">https://echarts.apache.org/zh/option.html#legend.itemHeight</a>
      * <br/>序号: 17
      * <br/>默认值: 14
      * <br/>js类型: ["number"]
@@ -237,7 +237,7 @@ public class Legend implements Serializable {
      */
     private Integer itemHeight;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.symbolKeepAspect
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.symbolKeepAspect">https://echarts.apache.org/zh/option.html#legend.symbolKeepAspect</a>
      * <br/>序号: 18
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -246,7 +246,7 @@ public class Legend implements Serializable {
      */
     private Boolean symbolKeepAspect;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.formatter
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.formatter">https://echarts.apache.org/zh/option.html#legend.formatter</a>
      * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["string","Function"]
@@ -263,7 +263,7 @@ public class Legend implements Serializable {
      */
     private Object formatter;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectedMode
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectedMode">https://echarts.apache.org/zh/option.html#legend.selectedMode</a>
      * <br/>序号: 20
      * <br/>默认值: true
      * <br/>js类型: ["string","boolean"]
@@ -273,7 +273,7 @@ public class Legend implements Serializable {
      */
     private Object selectedMode;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.inactiveColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.inactiveColor">https://echarts.apache.org/zh/option.html#legend.inactiveColor</a>
      * <br/>序号: 21
      * <br/>默认值: #ccc
      * <br/>js类型: ["Color"]
@@ -282,7 +282,7 @@ public class Legend implements Serializable {
      */
     private String inactiveColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selected
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selected">https://echarts.apache.org/zh/option.html#legend.selected</a>
      * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -299,7 +299,7 @@ public class Legend implements Serializable {
      */
     private Object selected;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.textStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.textStyle">https://echarts.apache.org/zh/option.html#legend.textStyle</a>
      * <br/>序号: 23
      * <br/>默认值: #333
      * <br/>js类型: ["Object"]
@@ -308,7 +308,7 @@ public class Legend implements Serializable {
      */
     private TextStyle textStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.tooltip
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.tooltip">https://echarts.apache.org/zh/option.html#legend.tooltip</a>
      * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -326,7 +326,7 @@ public class Legend implements Serializable {
      */
     private Object tooltip;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.icon
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.icon">https://echarts.apache.org/zh/option.html#legend.icon</a>
      * <br/>序号: 25
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -346,7 +346,7 @@ public class Legend implements Serializable {
      */
     private String icon;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.data
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.data">https://echarts.apache.org/zh/option.html#legend.data</a>
      * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -368,7 +368,7 @@ public class Legend implements Serializable {
      */
     private List<Object> data;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.backgroundColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.backgroundColor">https://echarts.apache.org/zh/option.html#legend.backgroundColor</a>
      * <br/>序号: 27
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -380,7 +380,7 @@ public class Legend implements Serializable {
      */
     private String backgroundColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.borderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.borderColor">https://echarts.apache.org/zh/option.html#legend.borderColor</a>
      * <br/>序号: 28
      * <br/>默认值: #ccc
      * <br/>js类型: ["Color"]
@@ -389,7 +389,7 @@ public class Legend implements Serializable {
      */
     private String borderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.borderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.borderWidth">https://echarts.apache.org/zh/option.html#legend.borderWidth</a>
      * <br/>序号: 29
      * <br/>默认值: 1
      * <br/>js类型: ["number"]
@@ -398,7 +398,7 @@ public class Legend implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.borderRadius
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.borderRadius">https://echarts.apache.org/zh/option.html#legend.borderRadius</a>
      * <br/>序号: 30
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -411,7 +411,7 @@ public class Legend implements Serializable {
      */
     private Object borderRadius;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.shadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.shadowBlur">https://echarts.apache.org/zh/option.html#legend.shadowBlur</a>
      * <br/>序号: 31
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -427,7 +427,7 @@ public class Legend implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.shadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.shadowColor">https://echarts.apache.org/zh/option.html#legend.shadowColor</a>
      * <br/>序号: 32
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -437,7 +437,7 @@ public class Legend implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.shadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.shadowOffsetX">https://echarts.apache.org/zh/option.html#legend.shadowOffsetX</a>
      * <br/>序号: 33
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -447,7 +447,7 @@ public class Legend implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.shadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.shadowOffsetY">https://echarts.apache.org/zh/option.html#legend.shadowOffsetY</a>
      * <br/>序号: 34
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -457,7 +457,7 @@ public class Legend implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.scrollDataIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.scrollDataIndex">https://echarts.apache.org/zh/option.html#legend.scrollDataIndex</a>
      * <br/>序号: 35
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -470,7 +470,7 @@ public class Legend implements Serializable {
      */
     private Integer scrollDataIndex;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.pageButtonItemGap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageButtonItemGap">https://echarts.apache.org/zh/option.html#legend.pageButtonItemGap</a>
      * <br/>序号: 36
      * <br/>默认值: 5
      * <br/>js类型: ["number"]
@@ -481,7 +481,7 @@ public class Legend implements Serializable {
      */
     private Integer pageButtonItemGap;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.pageButtonGap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageButtonGap">https://echarts.apache.org/zh/option.html#legend.pageButtonGap</a>
      * <br/>序号: 37
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -492,7 +492,7 @@ public class Legend implements Serializable {
      */
     private Integer pageButtonGap;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.pageButtonPosition
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageButtonPosition">https://echarts.apache.org/zh/option.html#legend.pageButtonPosition</a>
      * <br/>序号: 38
      * <br/>默认值: end
      * <br/>js类型: ["string"]
@@ -507,7 +507,7 @@ public class Legend implements Serializable {
      */
     private String pageButtonPosition;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.pageFormatter
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageFormatter">https://echarts.apache.org/zh/option.html#legend.pageFormatter</a>
      * <br/>序号: 39
      * <br/>默认值: {current}/{total}
      * <br/>js类型: ["string","Function"]
@@ -524,7 +524,7 @@ public class Legend implements Serializable {
      */
     private Object pageFormatter;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.pageIcons
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageIcons">https://echarts.apache.org/zh/option.html#legend.pageIcons</a>
      * <br/>序号: 40
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -534,7 +534,7 @@ public class Legend implements Serializable {
      */
     private PageIcons pageIcons;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.pageIconColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageIconColor">https://echarts.apache.org/zh/option.html#legend.pageIconColor</a>
      * <br/>序号: 41
      * <br/>默认值: #2f4554
      * <br/>js类型: ["string"]
@@ -545,7 +545,7 @@ public class Legend implements Serializable {
      */
     private String pageIconColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.pageIconInactiveColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageIconInactiveColor">https://echarts.apache.org/zh/option.html#legend.pageIconInactiveColor</a>
      * <br/>序号: 42
      * <br/>默认值: #aaa
      * <br/>js类型: ["string"]
@@ -556,7 +556,7 @@ public class Legend implements Serializable {
      */
     private String pageIconInactiveColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.pageIconSize
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageIconSize">https://echarts.apache.org/zh/option.html#legend.pageIconSize</a>
      * <br/>序号: 43
      * <br/>默认值: 15
      * <br/>js类型: ["number","Array"]
@@ -567,7 +567,7 @@ public class Legend implements Serializable {
      */
     private Object pageIconSize;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.pageTextStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageTextStyle">https://echarts.apache.org/zh/option.html#legend.pageTextStyle</a>
      * <br/>序号: 44
      * <br/>默认值: #333
      * <br/>js类型: ["Object"]
@@ -577,7 +577,7 @@ public class Legend implements Serializable {
      */
     private PageTextStyle pageTextStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.animation
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.animation">https://echarts.apache.org/zh/option.html#legend.animation</a>
      * <br/>序号: 45
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -586,7 +586,7 @@ public class Legend implements Serializable {
      */
     private Boolean animation;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.animationDurationUpdate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.animationDurationUpdate">https://echarts.apache.org/zh/option.html#legend.animationDurationUpdate</a>
      * <br/>序号: 46
      * <br/>默认值: 800
      * <br/>js类型: ["number"]
@@ -595,7 +595,7 @@ public class Legend implements Serializable {
      */
     private Integer animationDurationUpdate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.emphasis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.emphasis">https://echarts.apache.org/zh/option.html#legend.emphasis</a>
      * <br/>序号: 47
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -603,7 +603,7 @@ public class Legend implements Serializable {
      */
     private Emphasis emphasis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selector
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selector">https://echarts.apache.org/zh/option.html#legend.selector</a>
      * <br/>序号: 48
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","Array"]
@@ -634,7 +634,7 @@ public class Legend implements Serializable {
      */
     private Object selector;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel">https://echarts.apache.org/zh/option.html#legend.selectorLabel</a>
      * <br/>序号: 49
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -646,7 +646,7 @@ public class Legend implements Serializable {
      */
     private SelectorLabel selectorLabel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorPosition
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorPosition">https://echarts.apache.org/zh/option.html#legend.selectorPosition</a>
      * <br/>序号: 50
      * <br/>默认值: auto
      * <br/>js类型: ["string"]
@@ -658,7 +658,7 @@ public class Legend implements Serializable {
      */
     private String selectorPosition;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorItemGap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorItemGap">https://echarts.apache.org/zh/option.html#legend.selectorItemGap</a>
      * <br/>序号: 51
      * <br/>默认值: 7
      * <br/>js类型: ["number"]
@@ -670,7 +670,7 @@ public class Legend implements Serializable {
      */
     private Integer selectorItemGap;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorButtonGap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorButtonGap">https://echarts.apache.org/zh/option.html#legend.selectorButtonGap</a>
      * <br/>序号: 52
      * <br/>默认值: 10
      * <br/>js类型: ["number"]

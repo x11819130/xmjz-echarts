@@ -165,7 +165,7 @@ public class Brush implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#brush.id
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.id">https://echarts.apache.org/zh/option.html#brush.id</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -174,7 +174,7 @@ public class Brush implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#brush.toolbox
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.toolbox">https://echarts.apache.org/zh/option.html#brush.toolbox</a>
      * <br/>序号: 2
      * <br/>默认值: ["rect","polygon","keep","clear"]
      * <br/>js类型: ["Array"]
@@ -192,7 +192,7 @@ public class Brush implements Serializable {
      */
     private List<Object> toolbox;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#brush.brushLink
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.brushLink">https://echarts.apache.org/zh/option.html#brush.brushLink</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Array","string"]
@@ -230,7 +230,7 @@ public class Brush implements Serializable {
      */
     private Object brushLink;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#brush.seriesIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.seriesIndex">https://echarts.apache.org/zh/option.html#brush.seriesIndex</a>
      * <br/>序号: 4
      * <br/>默认值: all
      * <br/>js类型: ["Array","number","string"]
@@ -244,7 +244,7 @@ public class Brush implements Serializable {
      */
     private Object seriesIndex;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#brush.geoIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.geoIndex">https://echarts.apache.org/zh/option.html#brush.geoIndex</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Array","number","string"]
@@ -298,7 +298,7 @@ public class Brush implements Serializable {
      */
     private Object geoIndex;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#brush.xAxisIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.xAxisIndex">https://echarts.apache.org/zh/option.html#brush.xAxisIndex</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Array","number","string"]
@@ -357,7 +357,7 @@ public class Brush implements Serializable {
     }
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#brush.yAxisIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.yAxisIndex">https://echarts.apache.org/zh/option.html#brush.yAxisIndex</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["Array","number","string"]
@@ -416,7 +416,7 @@ public class Brush implements Serializable {
     }
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#brush.brushType
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.brushType">https://echarts.apache.org/zh/option.html#brush.brushType</a>
      * <br/>序号: 8
      * <br/>默认值: rect
      * <br/>js类型: ["string"]
@@ -431,7 +431,7 @@ public class Brush implements Serializable {
      */
     private String brushType;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#brush.brushMode
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.brushMode">https://echarts.apache.org/zh/option.html#brush.brushMode</a>
      * <br/>序号: 9
      * <br/>默认值: single
      * <br/>js类型: ["string"]
@@ -444,7 +444,7 @@ public class Brush implements Serializable {
      */
     private String brushMode;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#brush.transformable
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.transformable">https://echarts.apache.org/zh/option.html#brush.transformable</a>
      * <br/>序号: 10
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -453,7 +453,7 @@ public class Brush implements Serializable {
      */
     private Boolean transformable;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#brush.brushStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.brushStyle">https://echarts.apache.org/zh/option.html#brush.brushStyle</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -468,7 +468,7 @@ public class Brush implements Serializable {
      */
     private Object brushStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#brush.throttleType
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.throttleType">https://echarts.apache.org/zh/option.html#brush.throttleType</a>
      * <br/>序号: 12
      * <br/>默认值: fixRate
      * <br/>js类型: ["string"]
@@ -483,7 +483,7 @@ public class Brush implements Serializable {
      */
     private String throttleType;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#brush.throttleDelay
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.throttleDelay">https://echarts.apache.org/zh/option.html#brush.throttleDelay</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -499,7 +499,7 @@ public class Brush implements Serializable {
      */
     private Integer throttleDelay;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#brush.removeOnClick
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.removeOnClick">https://echarts.apache.org/zh/option.html#brush.removeOnClick</a>
      * <br/>序号: 14
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -508,7 +508,7 @@ public class Brush implements Serializable {
      */
     private Boolean removeOnClick;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#brush.inBrush
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.inBrush">https://echarts.apache.org/zh/option.html#brush.inBrush</a>
      * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -529,7 +529,7 @@ public class Brush implements Serializable {
      */
     private Object inBrush;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#brush.outOfBrush
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.outOfBrush">https://echarts.apache.org/zh/option.html#brush.outOfBrush</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -558,7 +558,7 @@ public class Brush implements Serializable {
      */
     private Object outOfBrush;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#brush.z
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.z">https://echarts.apache.org/zh/option.html#brush.z</a>
      * <br/>序号: 17
      * <br/>默认值: 10000
      * <br/>js类型: ["number"]

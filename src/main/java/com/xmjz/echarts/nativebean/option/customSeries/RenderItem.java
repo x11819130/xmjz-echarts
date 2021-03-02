@@ -70,7 +70,7 @@ public class RenderItem implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.renderItem.arguments
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.renderItem.arguments">https://echarts.apache.org/zh/option.html#series-custom.renderItem.arguments</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["any"]
@@ -79,7 +79,7 @@ public class RenderItem implements Serializable {
      */
     private Object arguments;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.renderItem.return
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.renderItem.return">https://echarts.apache.org/zh/option.html#series-custom.renderItem.return</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -120,7 +120,7 @@ public class RenderItem implements Serializable {
      */
     private Object return_;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_group
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_group">https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_group</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -129,7 +129,7 @@ public class RenderItem implements Serializable {
      */
     private Object return_group;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_path
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_path">https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_path</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -142,7 +142,7 @@ public class RenderItem implements Serializable {
      */
     private Object return_path;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_image
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_image">https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_image</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -150,7 +150,7 @@ public class RenderItem implements Serializable {
      */
     private Object return_image;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_text
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_text">https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_text</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -159,7 +159,7 @@ public class RenderItem implements Serializable {
      */
     private Object return_text;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_rect
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_rect">https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_rect</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -168,7 +168,7 @@ public class RenderItem implements Serializable {
      */
     private Object return_rect;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_circle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_circle">https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_circle</a>
      * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -177,7 +177,7 @@ public class RenderItem implements Serializable {
      */
     private Object return_circle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_ring
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_ring">https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_ring</a>
      * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -186,7 +186,7 @@ public class RenderItem implements Serializable {
      */
     private Object return_ring;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_sector
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_sector">https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_sector</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -195,7 +195,7 @@ public class RenderItem implements Serializable {
      */
     private Object return_sector;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_arc
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_arc">https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_arc</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -204,7 +204,7 @@ public class RenderItem implements Serializable {
      */
     private Object return_arc;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_polygon
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_polygon">https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_polygon</a>
      * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -213,7 +213,7 @@ public class RenderItem implements Serializable {
      */
     private Object return_polygon;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_polyline
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_polyline">https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_polyline</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -222,7 +222,7 @@ public class RenderItem implements Serializable {
      */
     private Object return_polyline;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_line
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_line">https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_line</a>
      * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -231,7 +231,7 @@ public class RenderItem implements Serializable {
      */
     private Object return_line;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_bezierCurve
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_bezierCurve">https://echarts.apache.org/zh/option.html#series-custom.renderItem.return_bezierCurve</a>
      * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

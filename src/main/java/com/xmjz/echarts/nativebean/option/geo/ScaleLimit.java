@@ -24,7 +24,7 @@ public class ScaleLimit implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.scaleLimit.min
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.scaleLimit.min">https://echarts.apache.org/zh/option.html#geo.scaleLimit.min</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -33,7 +33,7 @@ public class ScaleLimit implements Serializable {
      */
     private Integer min;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.scaleLimit.max
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.scaleLimit.max">https://echarts.apache.org/zh/option.html#geo.scaleLimit.max</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["number"]

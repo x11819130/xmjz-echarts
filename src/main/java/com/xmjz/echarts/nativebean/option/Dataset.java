@@ -27,7 +27,7 @@ public class Dataset implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#dataset.id
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#dataset.id">https://echarts.apache.org/zh/option.html#dataset.id</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -36,7 +36,7 @@ public class Dataset implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#dataset.source
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#dataset.source">https://echarts.apache.org/zh/option.html#dataset.source</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Array","Object"]
@@ -70,7 +70,7 @@ public class Dataset implements Serializable {
      */
     private Object source;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#dataset.dimensions
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#dataset.dimensions">https://echarts.apache.org/zh/option.html#dataset.dimensions</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -128,7 +128,7 @@ public class Dataset implements Serializable {
      */
     private List<Object> dimensions;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#dataset.sourceHeader
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#dataset.sourceHeader">https://echarts.apache.org/zh/option.html#dataset.sourceHeader</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -143,7 +143,7 @@ public class Dataset implements Serializable {
      */
     private Boolean sourceHeader;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#dataset.transform
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#dataset.transform">https://echarts.apache.org/zh/option.html#dataset.transform</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -152,7 +152,7 @@ public class Dataset implements Serializable {
      */
     private List<Transform> transform;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#dataset.fromDatasetIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#dataset.fromDatasetIndex">https://echarts.apache.org/zh/option.html#dataset.fromDatasetIndex</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -162,7 +162,7 @@ public class Dataset implements Serializable {
      */
     private Integer fromDatasetIndex;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#dataset.fromDatasetId
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#dataset.fromDatasetId">https://echarts.apache.org/zh/option.html#dataset.fromDatasetId</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -172,7 +172,7 @@ public class Dataset implements Serializable {
      */
     private String fromDatasetId;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#dataset.fromTransformResult
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#dataset.fromTransformResult">https://echarts.apache.org/zh/option.html#dataset.fromTransformResult</a>
      * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["number"]

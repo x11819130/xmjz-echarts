@@ -29,7 +29,7 @@ public class MapSeries extends Series implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.type
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.type">https://echarts.apache.org/zh/option.html#series-map.type</a>
      * <br/>序号: 1
      * <br/>默认值: map
      * <br/>js类型: ["string"]
@@ -37,7 +37,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.id
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.id">https://echarts.apache.org/zh/option.html#series-map.id</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -46,7 +46,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.name
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.name">https://echarts.apache.org/zh/option.html#series-map.name</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -55,7 +55,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private String name;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.map
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.map">https://echarts.apache.org/zh/option.html#series-map.map</a>
      * <br/>序号: 4
      * <br/>默认值:
      * <br/>js类型: ["string"]
@@ -93,7 +93,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private String map;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.roam
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.roam">https://echarts.apache.org/zh/option.html#series-map.roam</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","string"]
@@ -102,7 +102,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private Object roam;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.center
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.center">https://echarts.apache.org/zh/option.html#series-map.center</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -114,7 +114,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private List<Object> center;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.aspectScale
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.aspectScale">https://echarts.apache.org/zh/option.html#series-map.aspectScale</a>
      * <br/>序号: 7
      * <br/>默认值: 0.75
      * <br/>js类型: ["number"]
@@ -124,7 +124,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private Integer aspectScale;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.boundingCoords
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.boundingCoords">https://echarts.apache.org/zh/option.html#series-map.boundingCoords</a>
      * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -143,7 +143,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private List<Object> boundingCoords;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.zoom
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.zoom">https://echarts.apache.org/zh/option.html#series-map.zoom</a>
      * <br/>序号: 9
      * <br/>默认值: 1
      * <br/>js类型: ["number"]
@@ -152,7 +152,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private Integer zoom;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.scaleLimit
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.scaleLimit">https://echarts.apache.org/zh/option.html#series-map.scaleLimit</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -161,7 +161,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private ScaleLimit scaleLimit;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.nameMap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.nameMap">https://echarts.apache.org/zh/option.html#series-map.nameMap</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -174,7 +174,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private Object nameMap;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.nameProperty
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.nameProperty">https://echarts.apache.org/zh/option.html#series-map.nameProperty</a>
      * <br/>序号: 12
      * <br/>默认值: name
      * <br/>js类型: ["string"]
@@ -195,7 +195,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private String nameProperty;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.selectedMode
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.selectedMode">https://echarts.apache.org/zh/option.html#series-map.selectedMode</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","string"]
@@ -204,7 +204,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private Object selectedMode;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.label
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.label">https://echarts.apache.org/zh/option.html#series-map.label</a>
      * <br/>序号: 14
      * <br/>默认值: 5
      * <br/>js类型: ["Object"]
@@ -213,7 +213,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private Label label;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.itemStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.itemStyle">https://echarts.apache.org/zh/option.html#series-map.itemStyle</a>
      * <br/>序号: 15
      * <br/>默认值: #eee
      * <br/>js类型: ["Object"]
@@ -222,7 +222,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private ItemStyle itemStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.emphasis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.emphasis">https://echarts.apache.org/zh/option.html#series-map.emphasis</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -231,7 +231,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private Emphasis emphasis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.select
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.select">https://echarts.apache.org/zh/option.html#series-map.select</a>
      * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -240,7 +240,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private Select select;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.zlevel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.zlevel">https://echarts.apache.org/zh/option.html#series-map.zlevel</a>
      * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -251,7 +251,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.z
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.z">https://echarts.apache.org/zh/option.html#series-map.z</a>
      * <br/>序号: 19
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -261,7 +261,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.left
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.left">https://echarts.apache.org/zh/option.html#series-map.left</a>
      * <br/>序号: 20
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -272,7 +272,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private Object left;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.top
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.top">https://echarts.apache.org/zh/option.html#series-map.top</a>
      * <br/>序号: 21
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -283,7 +283,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private Object top;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.right
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.right">https://echarts.apache.org/zh/option.html#series-map.right</a>
      * <br/>序号: 22
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -294,7 +294,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private Object right;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.bottom
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.bottom">https://echarts.apache.org/zh/option.html#series-map.bottom</a>
      * <br/>序号: 23
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -305,7 +305,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private Object bottom;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.layoutCenter
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.layoutCenter">https://echarts.apache.org/zh/option.html#series-map.layoutCenter</a>
      * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -320,7 +320,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private List<Object> layoutCenter;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.layoutSize
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.layoutSize">https://echarts.apache.org/zh/option.html#series-map.layoutSize</a>
      * <br/>序号: 25
      * <br/>默认值: 无
      * <br/>js类型: ["number","string"]
@@ -329,7 +329,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private Object layoutSize;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.geoIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.geoIndex">https://echarts.apache.org/zh/option.html#series-map.geoIndex</a>
      * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -339,7 +339,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private Integer geoIndex;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.mapValueCalculation
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.mapValueCalculation">https://echarts.apache.org/zh/option.html#series-map.mapValueCalculation</a>
      * <br/>序号: 27
      * <br/>默认值: sum
      * <br/>js类型: ["string"]
@@ -354,7 +354,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private String mapValueCalculation;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.showLegendSymbol
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.showLegendSymbol">https://echarts.apache.org/zh/option.html#series-map.showLegendSymbol</a>
      * <br/>序号: 28
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -363,7 +363,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private Boolean showLegendSymbol;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.seriesLayoutBy
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.seriesLayoutBy">https://echarts.apache.org/zh/option.html#series-map.seriesLayoutBy</a>
      * <br/>序号: 29
      * <br/>默认值: column
      * <br/>js类型: ["string"]
@@ -377,7 +377,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private String seriesLayoutBy;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.datasetIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.datasetIndex">https://echarts.apache.org/zh/option.html#series-map.datasetIndex</a>
      * <br/>序号: 30
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -386,7 +386,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private Integer datasetIndex;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.labelLayout
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.labelLayout">https://echarts.apache.org/zh/option.html#series-map.labelLayout</a>
      * <br/>序号: 31
      * <br/>默认值: 无
      * <br/>js类型: ["Object","Function"]
@@ -439,7 +439,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private LabelLayout labelLayout;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.labelLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.labelLine">https://echarts.apache.org/zh/option.html#series-map.labelLine</a>
      * <br/>序号: 32
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -448,7 +448,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private LabelLine labelLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.data
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.data">https://echarts.apache.org/zh/option.html#series-map.data</a>
      * <br/>序号: 33
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -488,7 +488,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private List<Object> data;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.markPoint
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.markPoint">https://echarts.apache.org/zh/option.html#series-map.markPoint</a>
      * <br/>序号: 34
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -497,7 +497,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private Object markPoint;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.markLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.markLine">https://echarts.apache.org/zh/option.html#series-map.markLine</a>
      * <br/>序号: 35
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -506,7 +506,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private Object markLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.markArea
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.markArea">https://echarts.apache.org/zh/option.html#series-map.markArea</a>
      * <br/>序号: 36
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -515,7 +515,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private Object markArea;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.silent
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.silent">https://echarts.apache.org/zh/option.html#series-map.silent</a>
      * <br/>序号: 37
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -524,7 +524,7 @@ public class MapSeries extends Series implements Serializable {
      */
     private Boolean silent;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.tooltip
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.tooltip">https://echarts.apache.org/zh/option.html#series-map.tooltip</a>
      * <br/>序号: 38
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

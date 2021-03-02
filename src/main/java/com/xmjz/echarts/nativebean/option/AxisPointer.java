@@ -88,7 +88,7 @@ public class AxisPointer implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#axisPointer.id
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.id">https://echarts.apache.org/zh/option.html#axisPointer.id</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -97,7 +97,7 @@ public class AxisPointer implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#axisPointer.show
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.show">https://echarts.apache.org/zh/option.html#axisPointer.show</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -106,7 +106,7 @@ public class AxisPointer implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#axisPointer.type
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.type">https://echarts.apache.org/zh/option.html#axisPointer.type</a>
      * <br/>序号: 3
      * <br/>默认值: line
      * <br/>js类型: ["string"]
@@ -124,7 +124,7 @@ public class AxisPointer implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#axisPointer.snap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.snap">https://echarts.apache.org/zh/option.html#axisPointer.snap</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -134,7 +134,7 @@ public class AxisPointer implements Serializable {
      */
     private Boolean snap;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#axisPointer.z
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.z">https://echarts.apache.org/zh/option.html#axisPointer.z</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -143,7 +143,7 @@ public class AxisPointer implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#axisPointer.label
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.label">https://echarts.apache.org/zh/option.html#axisPointer.label</a>
      * <br/>序号: 6
      * <br/>默认值: auto
      * <br/>js类型: ["Object"]
@@ -152,7 +152,7 @@ public class AxisPointer implements Serializable {
      */
     private Label label;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#axisPointer.lineStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.lineStyle">https://echarts.apache.org/zh/option.html#axisPointer.lineStyle</a>
      * <br/>序号: 7
      * <br/>默认值: #555
      * <br/>js类型: ["Object"]
@@ -161,7 +161,7 @@ public class AxisPointer implements Serializable {
      */
     private LineStyle lineStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#axisPointer.shadowStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.shadowStyle">https://echarts.apache.org/zh/option.html#axisPointer.shadowStyle</a>
      * <br/>序号: 8
      * <br/>默认值: rgba(150,150,150,0.3)
      * <br/>js类型: ["Object"]
@@ -170,7 +170,7 @@ public class AxisPointer implements Serializable {
      */
     private ShadowStyle shadowStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#axisPointer.triggerTooltip
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.triggerTooltip">https://echarts.apache.org/zh/option.html#axisPointer.triggerTooltip</a>
      * <br/>序号: 9
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -179,7 +179,7 @@ public class AxisPointer implements Serializable {
      */
     private Boolean triggerTooltip;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#axisPointer.value
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.value">https://echarts.apache.org/zh/option.html#axisPointer.value</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -188,7 +188,7 @@ public class AxisPointer implements Serializable {
      */
     private Integer value;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#axisPointer.status
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.status">https://echarts.apache.org/zh/option.html#axisPointer.status</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -197,7 +197,7 @@ public class AxisPointer implements Serializable {
      */
     private Boolean status;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#axisPointer.handle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.handle">https://echarts.apache.org/zh/option.html#axisPointer.handle</a>
      * <br/>序号: 12
      * <br/>默认值: 45
      * <br/>js类型: ["Object"]
@@ -206,7 +206,7 @@ public class AxisPointer implements Serializable {
      */
     private Handle handle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#axisPointer.link
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.link">https://echarts.apache.org/zh/option.html#axisPointer.link</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -266,7 +266,7 @@ public class AxisPointer implements Serializable {
      */
     private List<Object> link;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#axisPointer.triggerOn
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.triggerOn">https://echarts.apache.org/zh/option.html#axisPointer.triggerOn</a>
      * <br/>序号: 14
      * <br/>默认值: mousemove|click
      * <br/>js类型: ["string"]

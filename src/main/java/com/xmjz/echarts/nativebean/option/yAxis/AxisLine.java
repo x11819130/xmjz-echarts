@@ -25,7 +25,7 @@ public class AxisLine implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#yAxis.axisLine.show
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.axisLine.show">https://echarts.apache.org/zh/option.html#yAxis.axisLine.show</a>
      * <br/>序号: 1
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -34,7 +34,7 @@ public class AxisLine implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#yAxis.axisLine.onZero
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.axisLine.onZero">https://echarts.apache.org/zh/option.html#yAxis.axisLine.onZero</a>
      * <br/>序号: 2
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -43,7 +43,7 @@ public class AxisLine implements Serializable {
      */
     private Boolean onZero;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#yAxis.axisLine.onZeroAxisIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.axisLine.onZeroAxisIndex">https://echarts.apache.org/zh/option.html#yAxis.axisLine.onZeroAxisIndex</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -52,7 +52,7 @@ public class AxisLine implements Serializable {
      */
     private Integer onZeroAxisIndex;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#yAxis.axisLine.symbol
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.axisLine.symbol">https://echarts.apache.org/zh/option.html#yAxis.axisLine.symbol</a>
      * <br/>序号: 4
      * <br/>默认值: none
      * <br/>js类型: ["string","Array"]
@@ -61,7 +61,7 @@ public class AxisLine implements Serializable {
      */
     private Object symbol;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#yAxis.axisLine.symbolSize
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.axisLine.symbolSize">https://echarts.apache.org/zh/option.html#yAxis.axisLine.symbolSize</a>
      * <br/>序号: 5
      * <br/>默认值: [10,15]
      * <br/>js类型: ["Array"]
@@ -70,7 +70,7 @@ public class AxisLine implements Serializable {
      */
     private List<Object> symbolSize;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#yAxis.axisLine.symbolOffset
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.axisLine.symbolOffset">https://echarts.apache.org/zh/option.html#yAxis.axisLine.symbolOffset</a>
      * <br/>序号: 6
      * <br/>默认值: [0,0]
      * <br/>js类型: ["Array","number"]
@@ -79,7 +79,7 @@ public class AxisLine implements Serializable {
      */
     private Object symbolOffset;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#yAxis.axisLine.lineStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.axisLine.lineStyle">https://echarts.apache.org/zh/option.html#yAxis.axisLine.lineStyle</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

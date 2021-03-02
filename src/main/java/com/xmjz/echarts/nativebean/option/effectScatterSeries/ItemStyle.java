@@ -24,7 +24,7 @@ public class ItemStyle implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-effectScatter.itemStyle.color
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-effectScatter.itemStyle.color">https://echarts.apache.org/zh/option.html#series-effectScatter.itemStyle.color</a>
      * <br/>序号: 1
      * <br/>默认值: 自适应
      * <br/>js类型: ["Color","Function"]
@@ -73,7 +73,7 @@ public class ItemStyle implements Serializable {
      */
     private Object color;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-effectScatter.itemStyle.borderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-effectScatter.itemStyle.borderColor">https://echarts.apache.org/zh/option.html#series-effectScatter.itemStyle.borderColor</a>
      * <br/>序号: 2
      * <br/>默认值: #000
      * <br/>js类型: ["Color"]
@@ -82,7 +82,7 @@ public class ItemStyle implements Serializable {
      */
     private String borderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-effectScatter.itemStyle.borderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-effectScatter.itemStyle.borderWidth">https://echarts.apache.org/zh/option.html#series-effectScatter.itemStyle.borderWidth</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -91,7 +91,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-effectScatter.itemStyle.borderType
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-effectScatter.itemStyle.borderType">https://echarts.apache.org/zh/option.html#series-effectScatter.itemStyle.borderType</a>
      * <br/>序号: 4
      * <br/>默认值: solid
      * <br/>js类型: ["string"]
@@ -100,7 +100,7 @@ public class ItemStyle implements Serializable {
      */
     private String borderType;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-effectScatter.itemStyle.shadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-effectScatter.itemStyle.shadowBlur">https://echarts.apache.org/zh/option.html#series-effectScatter.itemStyle.shadowBlur</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -115,7 +115,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-effectScatter.itemStyle.shadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-effectScatter.itemStyle.shadowColor">https://echarts.apache.org/zh/option.html#series-effectScatter.itemStyle.shadowColor</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -124,7 +124,7 @@ public class ItemStyle implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-effectScatter.itemStyle.shadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-effectScatter.itemStyle.shadowOffsetX">https://echarts.apache.org/zh/option.html#series-effectScatter.itemStyle.shadowOffsetX</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -133,7 +133,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-effectScatter.itemStyle.shadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-effectScatter.itemStyle.shadowOffsetY">https://echarts.apache.org/zh/option.html#series-effectScatter.itemStyle.shadowOffsetY</a>
      * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -142,7 +142,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-effectScatter.itemStyle.opacity
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-effectScatter.itemStyle.opacity">https://echarts.apache.org/zh/option.html#series-effectScatter.itemStyle.opacity</a>
      * <br/>序号: 9
      * <br/>默认值: 1
      * <br/>js类型: ["number"]

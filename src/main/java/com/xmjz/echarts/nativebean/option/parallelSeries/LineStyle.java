@@ -24,7 +24,7 @@ public class LineStyle implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-parallel.lineStyle.color
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.lineStyle.color">https://echarts.apache.org/zh/option.html#series-parallel.lineStyle.color</a>
      * <br/>序号: 1
      * <br/>默认值: #000
      * <br/>js类型: ["Color"]
@@ -69,7 +69,7 @@ public class LineStyle implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-parallel.lineStyle.width
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.lineStyle.width">https://echarts.apache.org/zh/option.html#series-parallel.lineStyle.width</a>
      * <br/>序号: 2
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -78,7 +78,7 @@ public class LineStyle implements Serializable {
      */
     private Integer width;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-parallel.lineStyle.type
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.lineStyle.type">https://echarts.apache.org/zh/option.html#series-parallel.lineStyle.type</a>
      * <br/>序号: 3
      * <br/>默认值: solid
      * <br/>js类型: ["string"]
@@ -93,7 +93,7 @@ public class LineStyle implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-parallel.lineStyle.shadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.lineStyle.shadowBlur">https://echarts.apache.org/zh/option.html#series-parallel.lineStyle.shadowBlur</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -108,7 +108,7 @@ public class LineStyle implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-parallel.lineStyle.shadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.lineStyle.shadowColor">https://echarts.apache.org/zh/option.html#series-parallel.lineStyle.shadowColor</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -117,7 +117,7 @@ public class LineStyle implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-parallel.lineStyle.shadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.lineStyle.shadowOffsetX">https://echarts.apache.org/zh/option.html#series-parallel.lineStyle.shadowOffsetX</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -126,7 +126,7 @@ public class LineStyle implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-parallel.lineStyle.shadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.lineStyle.shadowOffsetY">https://echarts.apache.org/zh/option.html#series-parallel.lineStyle.shadowOffsetY</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -135,7 +135,7 @@ public class LineStyle implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-parallel.lineStyle.opacity
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.lineStyle.opacity">https://echarts.apache.org/zh/option.html#series-parallel.lineStyle.opacity</a>
      * <br/>序号: 8
      * <br/>默认值: 0.45
      * <br/>js类型: ["number"]

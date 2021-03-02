@@ -24,7 +24,7 @@ public class Emphasis implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-candlestick.emphasis.focus
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.emphasis.focus">https://echarts.apache.org/zh/option.html#series-candlestick.emphasis.focus</a>
      * <br/>序号: 1
      * <br/>默认值: none
      * <br/>js类型: ["string"]
@@ -49,7 +49,7 @@ public class Emphasis implements Serializable {
      */
     private String focus;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-candlestick.emphasis.blurScope
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.emphasis.blurScope">https://echarts.apache.org/zh/option.html#series-candlestick.emphasis.blurScope</a>
      * <br/>序号: 2
      * <br/>默认值: coordinateSystem
      * <br/>js类型: ["string"]
@@ -66,7 +66,7 @@ public class Emphasis implements Serializable {
      */
     private String blurScope;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-candlestick.emphasis.itemStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.emphasis.itemStyle">https://echarts.apache.org/zh/option.html#series-candlestick.emphasis.itemStyle</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

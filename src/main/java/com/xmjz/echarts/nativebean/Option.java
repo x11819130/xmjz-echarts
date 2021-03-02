@@ -26,7 +26,7 @@ public class Option implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title">https://echarts.apache.org/zh/option.html#title</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -38,7 +38,7 @@ public class Option implements Serializable {
      */
     private Title title;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend">https://echarts.apache.org/zh/option.html#legend</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -50,7 +50,7 @@ public class Option implements Serializable {
      */
     private Legend legend;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#grid
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#grid">https://echarts.apache.org/zh/option.html#grid</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -62,7 +62,7 @@ public class Option implements Serializable {
      */
     private Grid grid;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis">https://echarts.apache.org/zh/option.html#xAxis</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -76,7 +76,7 @@ public class Option implements Serializable {
     }
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#yAxis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis">https://echarts.apache.org/zh/option.html#yAxis</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -90,7 +90,7 @@ public class Option implements Serializable {
     }
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#polar
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#polar">https://echarts.apache.org/zh/option.html#polar</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -101,7 +101,7 @@ public class Option implements Serializable {
      */
     private Polar polar;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radiusAxis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis">https://echarts.apache.org/zh/option.html#radiusAxis</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -110,7 +110,7 @@ public class Option implements Serializable {
      */
     private RadiusAxis radiusAxis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis">https://echarts.apache.org/zh/option.html#angleAxis</a>
      * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -119,7 +119,7 @@ public class Option implements Serializable {
      */
     private AngleAxis angleAxis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar">https://echarts.apache.org/zh/option.html#radar</a>
      * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -131,7 +131,7 @@ public class Option implements Serializable {
      */
     private Radar radar;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#dataZoom
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#dataZoom">https://echarts.apache.org/zh/option.html#dataZoom</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -316,7 +316,7 @@ public class Option implements Serializable {
      */
     private List<Object> dataZoom;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#visualMap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#visualMap">https://echarts.apache.org/zh/option.html#visualMap</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -371,7 +371,7 @@ public class Option implements Serializable {
      */
     private List<Object> visualMap;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip">https://echarts.apache.org/zh/option.html#tooltip</a>
      * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -394,7 +394,7 @@ public class Option implements Serializable {
      */
     private Tooltip tooltip;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#axisPointer
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer">https://echarts.apache.org/zh/option.html#axisPointer</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -462,7 +462,7 @@ public class Option implements Serializable {
      */
     private AxisPointer axisPointer;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#toolbox
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox">https://echarts.apache.org/zh/option.html#toolbox</a>
      * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -473,7 +473,7 @@ public class Option implements Serializable {
      */
     private Toolbox toolbox;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#brush
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush">https://echarts.apache.org/zh/option.html#brush</a>
      * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -622,7 +622,7 @@ public class Option implements Serializable {
      */
     private Brush brush;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo">https://echarts.apache.org/zh/option.html#geo</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -645,7 +645,7 @@ public class Option implements Serializable {
      */
     private Geo geo;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallel">https://echarts.apache.org/zh/option.html#parallel</a>
      * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -755,7 +755,7 @@ public class Option implements Serializable {
      */
     private Parallel parallel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis">https://echarts.apache.org/zh/option.html#parallelAxis</a>
      * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -866,7 +866,7 @@ public class Option implements Serializable {
      */
     private ParallelAxis parallelAxis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis">https://echarts.apache.org/zh/option.html#singleAxis</a>
      * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -876,7 +876,7 @@ public class Option implements Serializable {
      */
     private SingleAxis singleAxis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline">https://echarts.apache.org/zh/option.html#timeline</a>
      * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -982,7 +982,7 @@ public class Option implements Serializable {
      */
     private Timeline timeline;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#graphic
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#graphic">https://echarts.apache.org/zh/option.html#graphic</a>
      * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -1259,7 +1259,7 @@ public class Option implements Serializable {
      */
     private Graphic graphic;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#calendar
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar">https://echarts.apache.org/zh/option.html#calendar</a>
      * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -1295,7 +1295,7 @@ public class Option implements Serializable {
      */
     private Calendar calendar;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#dataset
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#dataset">https://echarts.apache.org/zh/option.html#dataset</a>
      * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -1305,7 +1305,7 @@ public class Option implements Serializable {
      */
     private Dataset dataset;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#aria
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#aria">https://echarts.apache.org/zh/option.html#aria</a>
      * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -1315,7 +1315,7 @@ public class Option implements Serializable {
      */
     private Aria aria;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series">https://echarts.apache.org/zh/option.html#series</a>
      * <br/>序号: 25
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -1323,7 +1323,7 @@ public class Option implements Serializable {
      */
     private List<Series> series;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#darkMode
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#darkMode">https://echarts.apache.org/zh/option.html#darkMode</a>
      * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -1334,7 +1334,7 @@ public class Option implements Serializable {
      */
     private Object darkMode;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#color
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#color">https://echarts.apache.org/zh/option.html#color</a>
      * <br/>序号: 27
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -1346,7 +1346,7 @@ public class Option implements Serializable {
      */
     private Object color;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#backgroundColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#backgroundColor">https://echarts.apache.org/zh/option.html#backgroundColor</a>
      * <br/>序号: 28
      * <br/>默认值: transparent
      * <br/>js类型: ["string"]
@@ -1391,7 +1391,7 @@ public class Option implements Serializable {
      */
     private String backgroundColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#textStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#textStyle">https://echarts.apache.org/zh/option.html#textStyle</a>
      * <br/>序号: 29
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -1400,7 +1400,7 @@ public class Option implements Serializable {
      */
     private TextStyle textStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#animation
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#animation">https://echarts.apache.org/zh/option.html#animation</a>
      * <br/>序号: 30
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -1409,7 +1409,7 @@ public class Option implements Serializable {
      */
     private Boolean animation;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#animationThreshold
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#animationThreshold">https://echarts.apache.org/zh/option.html#animationThreshold</a>
      * <br/>序号: 31
      * <br/>默认值: 2000
      * <br/>js类型: ["number"]
@@ -1418,7 +1418,7 @@ public class Option implements Serializable {
      */
     private Integer animationThreshold;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#animationDuration
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#animationDuration">https://echarts.apache.org/zh/option.html#animationDuration</a>
      * <br/>序号: 32
      * <br/>默认值: 1000
      * <br/>js类型: ["number"]
@@ -1432,7 +1432,7 @@ public class Option implements Serializable {
      */
     private Integer animationDuration;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#animationEasing
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#animationEasing">https://echarts.apache.org/zh/option.html#animationEasing</a>
      * <br/>序号: 33
      * <br/>默认值: cubicOut
      * <br/>js类型: ["string"]
@@ -1441,7 +1441,7 @@ public class Option implements Serializable {
      */
     private String animationEasing;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#animationDelay
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#animationDelay">https://echarts.apache.org/zh/option.html#animationDelay</a>
      * <br/>序号: 34
      * <br/>默认值: 0
      * <br/>js类型: ["number"]
@@ -1457,7 +1457,7 @@ public class Option implements Serializable {
      */
     private Integer animationDelay;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#animationDurationUpdate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#animationDurationUpdate">https://echarts.apache.org/zh/option.html#animationDurationUpdate</a>
      * <br/>序号: 35
      * <br/>默认值: 300
      * <br/>js类型: ["number"]
@@ -1472,7 +1472,7 @@ public class Option implements Serializable {
      */
     private Integer animationDurationUpdate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#animationEasingUpdate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#animationEasingUpdate">https://echarts.apache.org/zh/option.html#animationEasingUpdate</a>
      * <br/>序号: 36
      * <br/>默认值: cubicInOut
      * <br/>js类型: ["string"]
@@ -1481,7 +1481,7 @@ public class Option implements Serializable {
      */
     private String animationEasingUpdate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#animationDelayUpdate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#animationDelayUpdate">https://echarts.apache.org/zh/option.html#animationDelayUpdate</a>
      * <br/>序号: 37
      * <br/>默认值: 0
      * <br/>js类型: ["number"]
@@ -1497,7 +1497,7 @@ public class Option implements Serializable {
      */
     private Integer animationDelayUpdate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#stateAnimation
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#stateAnimation">https://echarts.apache.org/zh/option.html#stateAnimation</a>
      * <br/>序号: 38
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -1506,7 +1506,7 @@ public class Option implements Serializable {
      */
     private StateAnimation stateAnimation;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#blendMode
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#blendMode">https://echarts.apache.org/zh/option.html#blendMode</a>
      * <br/>序号: 39
      * <br/>默认值: source-over
      * <br/>js类型: ["string"]
@@ -1517,7 +1517,7 @@ public class Option implements Serializable {
      */
     private String blendMode;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#hoverLayerThreshold
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#hoverLayerThreshold">https://echarts.apache.org/zh/option.html#hoverLayerThreshold</a>
      * <br/>序号: 40
      * <br/>默认值: 3000
      * <br/>js类型: ["number"]
@@ -1528,7 +1528,7 @@ public class Option implements Serializable {
      */
     private Integer hoverLayerThreshold;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#useUTC
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#useUTC">https://echarts.apache.org/zh/option.html#useUTC</a>
      * <br/>序号: 41
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -1548,7 +1548,7 @@ public class Option implements Serializable {
      */
     private Boolean useUTC;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#options
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#options">https://echarts.apache.org/zh/option.html#options</a>
      * <br/>序号: 42
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -1557,7 +1557,7 @@ public class Option implements Serializable {
      */
     private Object options;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#media
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#media">https://echarts.apache.org/zh/option.html#media</a>
      * <br/>序号: 43
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]

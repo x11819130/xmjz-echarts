@@ -27,7 +27,7 @@ public class AngleAxis implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis.id
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.id">https://echarts.apache.org/zh/option.html#angleAxis.id</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -36,7 +36,7 @@ public class AngleAxis implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis.polarIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.polarIndex">https://echarts.apache.org/zh/option.html#angleAxis.polarIndex</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -45,7 +45,7 @@ public class AngleAxis implements Serializable {
      */
     private Integer polarIndex;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis.startAngle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.startAngle">https://echarts.apache.org/zh/option.html#angleAxis.startAngle</a>
      * <br/>序号: 3
      * <br/>默认值: 90
      * <br/>js类型: ["number"]
@@ -56,7 +56,7 @@ public class AngleAxis implements Serializable {
      */
     private Integer startAngle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis.clockwise
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.clockwise">https://echarts.apache.org/zh/option.html#angleAxis.clockwise</a>
      * <br/>序号: 4
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -67,7 +67,7 @@ public class AngleAxis implements Serializable {
      */
     private Boolean clockwise;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis.type
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.type">https://echarts.apache.org/zh/option.html#angleAxis.type</a>
      * <br/>序号: 5
      * <br/>默认值: category
      * <br/>js类型: ["string"]
@@ -91,7 +91,7 @@ public class AngleAxis implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis.boundaryGap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.boundaryGap">https://echarts.apache.org/zh/option.html#angleAxis.boundaryGap</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","Array"]
@@ -105,7 +105,7 @@ public class AngleAxis implements Serializable {
      */
     private Object boundaryGap;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis.min
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.min">https://echarts.apache.org/zh/option.html#angleAxis.min</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number","string","Function"]
@@ -123,7 +123,7 @@ public class AngleAxis implements Serializable {
      */
     private Object min;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis.max
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.max">https://echarts.apache.org/zh/option.html#angleAxis.max</a>
      * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["number","string","Function"]
@@ -141,7 +141,7 @@ public class AngleAxis implements Serializable {
      */
     private Object max;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis.scale
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.scale">https://echarts.apache.org/zh/option.html#angleAxis.scale</a>
      * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -152,7 +152,7 @@ public class AngleAxis implements Serializable {
      */
     private Boolean scale;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis.splitNumber
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.splitNumber">https://echarts.apache.org/zh/option.html#angleAxis.splitNumber</a>
      * <br/>序号: 10
      * <br/>默认值: 5
      * <br/>js类型: ["number"]
@@ -162,7 +162,7 @@ public class AngleAxis implements Serializable {
      */
     private Integer splitNumber;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis.minInterval
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.minInterval">https://echarts.apache.org/zh/option.html#angleAxis.minInterval</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -177,7 +177,7 @@ public class AngleAxis implements Serializable {
      */
     private Integer minInterval;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis.maxInterval
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.maxInterval">https://echarts.apache.org/zh/option.html#angleAxis.maxInterval</a>
      * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -192,7 +192,7 @@ public class AngleAxis implements Serializable {
      */
     private Integer maxInterval;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis.interval
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.interval">https://echarts.apache.org/zh/option.html#angleAxis.interval</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -203,7 +203,7 @@ public class AngleAxis implements Serializable {
      */
     private Integer interval;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis.logBase
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.logBase">https://echarts.apache.org/zh/option.html#angleAxis.logBase</a>
      * <br/>序号: 14
      * <br/>默认值: 10
      * <br/>js类型: ["number"]
@@ -212,7 +212,7 @@ public class AngleAxis implements Serializable {
      */
     private Integer logBase;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis.silent
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.silent">https://echarts.apache.org/zh/option.html#angleAxis.silent</a>
      * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -221,7 +221,7 @@ public class AngleAxis implements Serializable {
      */
     private Boolean silent;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis.triggerEvent
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.triggerEvent">https://echarts.apache.org/zh/option.html#angleAxis.triggerEvent</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -241,7 +241,7 @@ public class AngleAxis implements Serializable {
      */
     private Boolean triggerEvent;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis.axisLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLine">https://echarts.apache.org/zh/option.html#angleAxis.axisLine</a>
      * <br/>序号: 17
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -250,7 +250,7 @@ public class AngleAxis implements Serializable {
      */
     private AxisLine axisLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis.axisTick
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisTick">https://echarts.apache.org/zh/option.html#angleAxis.axisTick</a>
      * <br/>序号: 18
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -259,7 +259,7 @@ public class AngleAxis implements Serializable {
      */
     private AxisTick axisTick;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis.minorTick
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.minorTick">https://echarts.apache.org/zh/option.html#angleAxis.minorTick</a>
      * <br/>序号: 19
      * <br/>默认值: 5
      * <br/>js类型: ["Object"]
@@ -279,7 +279,7 @@ public class AngleAxis implements Serializable {
      */
     private MinorTick minorTick;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis.axisLabel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel</a>
      * <br/>序号: 20
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -288,7 +288,7 @@ public class AngleAxis implements Serializable {
      */
     private AxisLabel axisLabel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis.splitLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.splitLine">https://echarts.apache.org/zh/option.html#angleAxis.splitLine</a>
      * <br/>序号: 21
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -297,7 +297,7 @@ public class AngleAxis implements Serializable {
      */
     private SplitLine splitLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis.minorSplitLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.minorSplitLine">https://echarts.apache.org/zh/option.html#angleAxis.minorSplitLine</a>
      * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -309,7 +309,7 @@ public class AngleAxis implements Serializable {
      */
     private MinorSplitLine minorSplitLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis.splitArea
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.splitArea">https://echarts.apache.org/zh/option.html#angleAxis.splitArea</a>
      * <br/>序号: 23
      * <br/>默认值: auto
      * <br/>js类型: ["Object"]
@@ -318,7 +318,7 @@ public class AngleAxis implements Serializable {
      */
     private SplitArea splitArea;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis.data
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.data">https://echarts.apache.org/zh/option.html#angleAxis.data</a>
      * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -342,7 +342,7 @@ public class AngleAxis implements Serializable {
      */
     private List<Object> data;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis.axisPointer
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisPointer">https://echarts.apache.org/zh/option.html#angleAxis.axisPointer</a>
      * <br/>序号: 25
      * <br/>默认值: line
      * <br/>js类型: ["Object"]
@@ -351,7 +351,7 @@ public class AngleAxis implements Serializable {
      */
     private AxisPointer axisPointer;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis.zlevel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.zlevel">https://echarts.apache.org/zh/option.html#angleAxis.zlevel</a>
      * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -362,7 +362,7 @@ public class AngleAxis implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis.z
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.z">https://echarts.apache.org/zh/option.html#angleAxis.z</a>
      * <br/>序号: 27
      * <br/>默认值: 无
      * <br/>js类型: ["number"]

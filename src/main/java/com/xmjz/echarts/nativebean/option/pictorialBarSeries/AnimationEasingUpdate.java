@@ -24,7 +24,7 @@ public class AnimationEasingUpdate implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.animationEasingUpdate.animationDelay
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.animationEasingUpdate.animationDelay">https://echarts.apache.org/zh/option.html#series-pictorialBar.animationEasingUpdate.animationDelay</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
@@ -44,7 +44,7 @@ public class AnimationEasingUpdate implements Serializable {
      */
     private Object animationDelay;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.animationEasingUpdate.animationDelayUpdate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.animationEasingUpdate.animationDelayUpdate">https://echarts.apache.org/zh/option.html#series-pictorialBar.animationEasingUpdate.animationDelayUpdate</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]

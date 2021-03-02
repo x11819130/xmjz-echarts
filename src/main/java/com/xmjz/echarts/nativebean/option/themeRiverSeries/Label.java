@@ -25,7 +25,7 @@ public class Label implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.show
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.show">https://echarts.apache.org/zh/option.html#series-themeRiver.label.show</a>
      * <br/>序号: 1
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -34,7 +34,7 @@ public class Label implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.position
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.position">https://echarts.apache.org/zh/option.html#series-themeRiver.label.position</a>
      * <br/>序号: 2
      * <br/>默认值: left
      * <br/>js类型: ["string","Array"]
@@ -60,7 +60,7 @@ public class Label implements Serializable {
      */
     private Object position;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.distance
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.distance">https://echarts.apache.org/zh/option.html#series-themeRiver.label.distance</a>
      * <br/>序号: 3
      * <br/>默认值: 5
      * <br/>js类型: ["number"]
@@ -71,7 +71,7 @@ public class Label implements Serializable {
      */
     private Integer distance;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.rotate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.rotate">https://echarts.apache.org/zh/option.html#series-themeRiver.label.rotate</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -81,7 +81,7 @@ public class Label implements Serializable {
      */
     private Integer rotate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.offset
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.offset">https://echarts.apache.org/zh/option.html#series-themeRiver.label.offset</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -90,7 +90,7 @@ public class Label implements Serializable {
      */
     private List<Object> offset;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.color
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.color">https://echarts.apache.org/zh/option.html#series-themeRiver.label.color</a>
      * <br/>序号: 6
      * <br/>默认值: #000
      * <br/>js类型: ["Color"]
@@ -100,7 +100,7 @@ public class Label implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.fontStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.fontStyle">https://echarts.apache.org/zh/option.html#series-themeRiver.label.fontStyle</a>
      * <br/>序号: 7
      * <br/>默认值: normal
      * <br/>js类型: ["string"]
@@ -115,7 +115,7 @@ public class Label implements Serializable {
      */
     private String fontStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.fontWeight
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.fontWeight">https://echarts.apache.org/zh/option.html#series-themeRiver.label.fontWeight</a>
      * <br/>序号: 8
      * <br/>默认值: normal
      * <br/>js类型: ["string","number"]
@@ -132,7 +132,7 @@ public class Label implements Serializable {
      */
     private Object fontWeight;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.fontFamily
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.fontFamily">https://echarts.apache.org/zh/option.html#series-themeRiver.label.fontFamily</a>
      * <br/>序号: 9
      * <br/>默认值: sans-serif
      * <br/>js类型: ["string"]
@@ -142,7 +142,7 @@ public class Label implements Serializable {
      */
     private String fontFamily;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.fontSize
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.fontSize">https://echarts.apache.org/zh/option.html#series-themeRiver.label.fontSize</a>
      * <br/>序号: 10
      * <br/>默认值: 11
      * <br/>js类型: ["number"]
@@ -151,7 +151,7 @@ public class Label implements Serializable {
      */
     private Integer fontSize;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.lineHeight
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.lineHeight">https://echarts.apache.org/zh/option.html#series-themeRiver.label.lineHeight</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -170,7 +170,7 @@ public class Label implements Serializable {
      */
     private Integer lineHeight;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.backgroundColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.backgroundColor">https://echarts.apache.org/zh/option.html#series-themeRiver.label.backgroundColor</a>
      * <br/>序号: 12
      * <br/>默认值: transparent
      * <br/>js类型: ["string","Object"]
@@ -191,7 +191,7 @@ public class Label implements Serializable {
      */
     private Object backgroundColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.borderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.borderColor">https://echarts.apache.org/zh/option.html#series-themeRiver.label.borderColor</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -201,7 +201,7 @@ public class Label implements Serializable {
      */
     private String borderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.borderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.borderWidth">https://echarts.apache.org/zh/option.html#series-themeRiver.label.borderWidth</a>
      * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -210,7 +210,7 @@ public class Label implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.borderRadius
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.borderRadius">https://echarts.apache.org/zh/option.html#series-themeRiver.label.borderRadius</a>
      * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -219,7 +219,7 @@ public class Label implements Serializable {
      */
     private Object borderRadius;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.padding
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.padding">https://echarts.apache.org/zh/option.html#series-themeRiver.label.padding</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -234,7 +234,7 @@ public class Label implements Serializable {
      */
     private Object padding;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.shadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.shadowColor">https://echarts.apache.org/zh/option.html#series-themeRiver.label.shadowColor</a>
      * <br/>序号: 17
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -243,7 +243,7 @@ public class Label implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.shadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.shadowBlur">https://echarts.apache.org/zh/option.html#series-themeRiver.label.shadowBlur</a>
      * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -252,7 +252,7 @@ public class Label implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.shadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.shadowOffsetX">https://echarts.apache.org/zh/option.html#series-themeRiver.label.shadowOffsetX</a>
      * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -261,7 +261,7 @@ public class Label implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.shadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.shadowOffsetY">https://echarts.apache.org/zh/option.html#series-themeRiver.label.shadowOffsetY</a>
      * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -270,7 +270,7 @@ public class Label implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.width
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.width">https://echarts.apache.org/zh/option.html#series-themeRiver.label.width</a>
      * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -279,7 +279,7 @@ public class Label implements Serializable {
      */
     private Integer width;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.height
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.height">https://echarts.apache.org/zh/option.html#series-themeRiver.label.height</a>
      * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -288,7 +288,7 @@ public class Label implements Serializable {
      */
     private Integer height;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.textBorderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.textBorderColor">https://echarts.apache.org/zh/option.html#series-themeRiver.label.textBorderColor</a>
      * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -298,7 +298,7 @@ public class Label implements Serializable {
      */
     private String textBorderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.textBorderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.textBorderWidth">https://echarts.apache.org/zh/option.html#series-themeRiver.label.textBorderWidth</a>
      * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -307,7 +307,7 @@ public class Label implements Serializable {
      */
     private Integer textBorderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.textShadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.textShadowColor">https://echarts.apache.org/zh/option.html#series-themeRiver.label.textShadowColor</a>
      * <br/>序号: 25
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -316,7 +316,7 @@ public class Label implements Serializable {
      */
     private String textShadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.textShadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.textShadowBlur">https://echarts.apache.org/zh/option.html#series-themeRiver.label.textShadowBlur</a>
      * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -325,7 +325,7 @@ public class Label implements Serializable {
      */
     private Integer textShadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.textShadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.textShadowOffsetX">https://echarts.apache.org/zh/option.html#series-themeRiver.label.textShadowOffsetX</a>
      * <br/>序号: 27
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -334,7 +334,7 @@ public class Label implements Serializable {
      */
     private Integer textShadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.textShadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.textShadowOffsetY">https://echarts.apache.org/zh/option.html#series-themeRiver.label.textShadowOffsetY</a>
      * <br/>序号: 28
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -343,7 +343,7 @@ public class Label implements Serializable {
      */
     private Integer textShadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.overflow
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.overflow">https://echarts.apache.org/zh/option.html#series-themeRiver.label.overflow</a>
      * <br/>序号: 29
      * <br/>默认值: none
      * <br/>js类型: ["string"]
@@ -357,7 +357,7 @@ public class Label implements Serializable {
      */
     private String overflow;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.ellipsis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.ellipsis">https://echarts.apache.org/zh/option.html#series-themeRiver.label.ellipsis</a>
      * <br/>序号: 30
      * <br/>默认值: ...
      * <br/>js类型: ["string"]
@@ -366,7 +366,7 @@ public class Label implements Serializable {
      */
     private String ellipsis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.lineOverflow
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.lineOverflow">https://echarts.apache.org/zh/option.html#series-themeRiver.label.lineOverflow</a>
      * <br/>序号: 31
      * <br/>默认值: none
      * <br/>js类型: ["string"]
@@ -378,7 +378,7 @@ public class Label implements Serializable {
      */
     private String lineOverflow;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label.rich
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label.rich">https://echarts.apache.org/zh/option.html#series-themeRiver.label.rich</a>
      * <br/>序号: 32
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

@@ -23,7 +23,7 @@ public class Emphasis implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-parallel.emphasis.lineStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.emphasis.lineStyle">https://echarts.apache.org/zh/option.html#series-parallel.emphasis.lineStyle</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

@@ -36,7 +36,7 @@ public class ThemeRiverSeries extends Series implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.type
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.type">https://echarts.apache.org/zh/option.html#series-themeRiver.type</a>
      * <br/>序号: 1
      * <br/>默认值: themeRiver
      * <br/>js类型: ["string"]
@@ -44,7 +44,7 @@ public class ThemeRiverSeries extends Series implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.id
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.id">https://echarts.apache.org/zh/option.html#series-themeRiver.id</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -53,7 +53,7 @@ public class ThemeRiverSeries extends Series implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.name
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.name">https://echarts.apache.org/zh/option.html#series-themeRiver.name</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -62,7 +62,7 @@ public class ThemeRiverSeries extends Series implements Serializable {
      */
     private String name;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.zlevel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.zlevel">https://echarts.apache.org/zh/option.html#series-themeRiver.zlevel</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -73,7 +73,7 @@ public class ThemeRiverSeries extends Series implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.z
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.z">https://echarts.apache.org/zh/option.html#series-themeRiver.z</a>
      * <br/>序号: 5
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -83,7 +83,7 @@ public class ThemeRiverSeries extends Series implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.left
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.left">https://echarts.apache.org/zh/option.html#series-themeRiver.left</a>
      * <br/>序号: 6
      * <br/>默认值: 5%
      * <br/>js类型: ["string","number"]
@@ -94,7 +94,7 @@ public class ThemeRiverSeries extends Series implements Serializable {
      */
     private Object left;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.top
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.top">https://echarts.apache.org/zh/option.html#series-themeRiver.top</a>
      * <br/>序号: 7
      * <br/>默认值: 5%
      * <br/>js类型: ["string","number"]
@@ -105,7 +105,7 @@ public class ThemeRiverSeries extends Series implements Serializable {
      */
     private Object top;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.right
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.right">https://echarts.apache.org/zh/option.html#series-themeRiver.right</a>
      * <br/>序号: 8
      * <br/>默认值: 5%
      * <br/>js类型: ["string","number"]
@@ -115,7 +115,7 @@ public class ThemeRiverSeries extends Series implements Serializable {
      */
     private Object right;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.bottom
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.bottom">https://echarts.apache.org/zh/option.html#series-themeRiver.bottom</a>
      * <br/>序号: 9
      * <br/>默认值: 5%
      * <br/>js类型: ["string","number"]
@@ -125,7 +125,7 @@ public class ThemeRiverSeries extends Series implements Serializable {
      */
     private Object bottom;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.width
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.width">https://echarts.apache.org/zh/option.html#series-themeRiver.width</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["string","number"]
@@ -134,7 +134,7 @@ public class ThemeRiverSeries extends Series implements Serializable {
      */
     private Object width;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.height
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.height">https://echarts.apache.org/zh/option.html#series-themeRiver.height</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["string","number"]
@@ -145,7 +145,7 @@ public class ThemeRiverSeries extends Series implements Serializable {
      */
     private Object height;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.coordinateSystem
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.coordinateSystem">https://echarts.apache.org/zh/option.html#series-themeRiver.coordinateSystem</a>
      * <br/>序号: 12
      * <br/>默认值: single
      * <br/>js类型: ["string"]
@@ -154,7 +154,7 @@ public class ThemeRiverSeries extends Series implements Serializable {
      */
     private String coordinateSystem;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.boundaryGap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.boundaryGap">https://echarts.apache.org/zh/option.html#series-themeRiver.boundaryGap</a>
      * <br/>序号: 13
      * <br/>默认值: ["10%","10%"]
      * <br/>js类型: ["Array"]
@@ -163,7 +163,7 @@ public class ThemeRiverSeries extends Series implements Serializable {
      */
     private List<Object> boundaryGap;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.singleAxisIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.singleAxisIndex">https://echarts.apache.org/zh/option.html#series-themeRiver.singleAxisIndex</a>
      * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -172,7 +172,7 @@ public class ThemeRiverSeries extends Series implements Serializable {
      */
     private Integer singleAxisIndex;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.label
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.label">https://echarts.apache.org/zh/option.html#series-themeRiver.label</a>
      * <br/>序号: 15
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -181,7 +181,7 @@ public class ThemeRiverSeries extends Series implements Serializable {
      */
     private Label label;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.labelLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.labelLine">https://echarts.apache.org/zh/option.html#series-themeRiver.labelLine</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -190,7 +190,7 @@ public class ThemeRiverSeries extends Series implements Serializable {
      */
     private LabelLine labelLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.labelLayout
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.labelLayout">https://echarts.apache.org/zh/option.html#series-themeRiver.labelLayout</a>
      * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["Object","Function"]
@@ -243,7 +243,7 @@ public class ThemeRiverSeries extends Series implements Serializable {
      */
     private LabelLayout labelLayout;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.itemStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.itemStyle">https://echarts.apache.org/zh/option.html#series-themeRiver.itemStyle</a>
      * <br/>序号: 18
      * <br/>默认值: 自适应
      * <br/>js类型: ["Object"]
@@ -252,7 +252,7 @@ public class ThemeRiverSeries extends Series implements Serializable {
      */
     private ItemStyle itemStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.emphasis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.emphasis">https://echarts.apache.org/zh/option.html#series-themeRiver.emphasis</a>
      * <br/>序号: 19
      * <br/>默认值: none
      * <br/>js类型: ["Object"]
@@ -261,7 +261,7 @@ public class ThemeRiverSeries extends Series implements Serializable {
      */
     private Emphasis emphasis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.blur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.blur">https://echarts.apache.org/zh/option.html#series-themeRiver.blur</a>
      * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -273,7 +273,7 @@ public class ThemeRiverSeries extends Series implements Serializable {
      */
     private Blur blur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.select
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.select">https://echarts.apache.org/zh/option.html#series-themeRiver.select</a>
      * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -285,7 +285,7 @@ public class ThemeRiverSeries extends Series implements Serializable {
      */
     private Select select;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.selectedMode
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.selectedMode">https://echarts.apache.org/zh/option.html#series-themeRiver.selectedMode</a>
      * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","string"]
@@ -299,7 +299,7 @@ public class ThemeRiverSeries extends Series implements Serializable {
      */
     private Object selectedMode;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.data
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.data">https://echarts.apache.org/zh/option.html#series-themeRiver.data</a>
      * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -324,7 +324,7 @@ public class ThemeRiverSeries extends Series implements Serializable {
      */
     private List<Object> data;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-themeRiver.tooltip
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.tooltip">https://echarts.apache.org/zh/option.html#series-themeRiver.tooltip</a>
      * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

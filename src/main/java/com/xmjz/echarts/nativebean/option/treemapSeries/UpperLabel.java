@@ -47,7 +47,7 @@ public class UpperLabel implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.show
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.show">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.show</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -56,7 +56,7 @@ public class UpperLabel implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.position
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.position">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.position</a>
      * <br/>序号: 2
      * <br/>默认值: inside
      * <br/>js类型: ["string","Array"]
@@ -82,7 +82,7 @@ public class UpperLabel implements Serializable {
      */
     private Object position;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.distance
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.distance">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.distance</a>
      * <br/>序号: 3
      * <br/>默认值: 5
      * <br/>js类型: ["number"]
@@ -93,7 +93,7 @@ public class UpperLabel implements Serializable {
      */
     private Integer distance;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.rotate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.rotate">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.rotate</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -103,7 +103,7 @@ public class UpperLabel implements Serializable {
      */
     private Integer rotate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.offset
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.offset">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.offset</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -112,7 +112,7 @@ public class UpperLabel implements Serializable {
      */
     private List<Object> offset;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.formatter
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.formatter">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.formatter</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["string","Function"]
@@ -203,7 +203,7 @@ public class UpperLabel implements Serializable {
      */
     private Object formatter;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.color
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.color">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.color</a>
      * <br/>序号: 7
      * <br/>默认值: #fff
      * <br/>js类型: ["Color"]
@@ -213,7 +213,7 @@ public class UpperLabel implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.fontStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.fontStyle">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.fontStyle</a>
      * <br/>序号: 8
      * <br/>默认值: normal
      * <br/>js类型: ["string"]
@@ -228,7 +228,7 @@ public class UpperLabel implements Serializable {
      */
     private String fontStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.fontWeight
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.fontWeight">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.fontWeight</a>
      * <br/>序号: 9
      * <br/>默认值: normal
      * <br/>js类型: ["string","number"]
@@ -245,7 +245,7 @@ public class UpperLabel implements Serializable {
      */
     private Object fontWeight;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.fontFamily
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.fontFamily">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.fontFamily</a>
      * <br/>序号: 10
      * <br/>默认值: sans-serif
      * <br/>js类型: ["string"]
@@ -255,7 +255,7 @@ public class UpperLabel implements Serializable {
      */
     private String fontFamily;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.fontSize
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.fontSize">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.fontSize</a>
      * <br/>序号: 11
      * <br/>默认值: 12
      * <br/>js类型: ["number"]
@@ -264,7 +264,7 @@ public class UpperLabel implements Serializable {
      */
     private Integer fontSize;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.align
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.align">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.align</a>
      * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -289,7 +289,7 @@ public class UpperLabel implements Serializable {
      */
     private String align;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.verticalAlign
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.verticalAlign">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.verticalAlign</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -314,7 +314,7 @@ public class UpperLabel implements Serializable {
      */
     private String verticalAlign;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.lineHeight
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.lineHeight">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.lineHeight</a>
      * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -333,7 +333,7 @@ public class UpperLabel implements Serializable {
      */
     private Integer lineHeight;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.backgroundColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.backgroundColor">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.backgroundColor</a>
      * <br/>序号: 15
      * <br/>默认值: transparent
      * <br/>js类型: ["string","Object"]
@@ -354,7 +354,7 @@ public class UpperLabel implements Serializable {
      */
     private Object backgroundColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.borderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.borderColor">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.borderColor</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -364,7 +364,7 @@ public class UpperLabel implements Serializable {
      */
     private String borderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.borderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.borderWidth">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.borderWidth</a>
      * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -373,7 +373,7 @@ public class UpperLabel implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.borderRadius
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.borderRadius">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.borderRadius</a>
      * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -382,7 +382,7 @@ public class UpperLabel implements Serializable {
      */
     private Object borderRadius;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.padding
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.padding">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.padding</a>
      * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -397,7 +397,7 @@ public class UpperLabel implements Serializable {
      */
     private Object padding;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.shadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.shadowColor">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.shadowColor</a>
      * <br/>序号: 20
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -406,7 +406,7 @@ public class UpperLabel implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.shadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.shadowBlur">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.shadowBlur</a>
      * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -415,7 +415,7 @@ public class UpperLabel implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.shadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.shadowOffsetX">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.shadowOffsetX</a>
      * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -424,7 +424,7 @@ public class UpperLabel implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.shadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.shadowOffsetY">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.shadowOffsetY</a>
      * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -433,7 +433,7 @@ public class UpperLabel implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.width
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.width">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.width</a>
      * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -442,7 +442,7 @@ public class UpperLabel implements Serializable {
      */
     private Integer width;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.height
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.height">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.height</a>
      * <br/>序号: 25
      * <br/>默认值: 20
      * <br/>js类型: ["number"]
@@ -451,7 +451,7 @@ public class UpperLabel implements Serializable {
      */
     private Integer height;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.textBorderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.textBorderColor">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.textBorderColor</a>
      * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -461,7 +461,7 @@ public class UpperLabel implements Serializable {
      */
     private String textBorderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.textBorderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.textBorderWidth">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.textBorderWidth</a>
      * <br/>序号: 27
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -470,7 +470,7 @@ public class UpperLabel implements Serializable {
      */
     private Integer textBorderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.textShadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.textShadowColor">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.textShadowColor</a>
      * <br/>序号: 28
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -479,7 +479,7 @@ public class UpperLabel implements Serializable {
      */
     private String textShadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.textShadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.textShadowBlur">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.textShadowBlur</a>
      * <br/>序号: 29
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -488,7 +488,7 @@ public class UpperLabel implements Serializable {
      */
     private Integer textShadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.textShadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.textShadowOffsetX">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.textShadowOffsetX</a>
      * <br/>序号: 30
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -497,7 +497,7 @@ public class UpperLabel implements Serializable {
      */
     private Integer textShadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.textShadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.textShadowOffsetY">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.textShadowOffsetY</a>
      * <br/>序号: 31
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -506,7 +506,7 @@ public class UpperLabel implements Serializable {
      */
     private Integer textShadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.overflow
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.overflow">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.overflow</a>
      * <br/>序号: 32
      * <br/>默认值: none
      * <br/>js类型: ["string"]
@@ -520,7 +520,7 @@ public class UpperLabel implements Serializable {
      */
     private String overflow;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.ellipsis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.ellipsis">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.ellipsis</a>
      * <br/>序号: 33
      * <br/>默认值: ...
      * <br/>js类型: ["string"]
@@ -529,7 +529,7 @@ public class UpperLabel implements Serializable {
      */
     private String ellipsis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.lineOverflow
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.lineOverflow">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.lineOverflow</a>
      * <br/>序号: 34
      * <br/>默认值: none
      * <br/>js类型: ["string"]
@@ -541,7 +541,7 @@ public class UpperLabel implements Serializable {
      */
     private String lineOverflow;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.rich
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.rich">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel.rich</a>
      * <br/>序号: 35
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

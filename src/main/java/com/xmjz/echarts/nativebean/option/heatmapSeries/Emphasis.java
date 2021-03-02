@@ -24,7 +24,7 @@ public class Emphasis implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.emphasis.focus
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.emphasis.focus">https://echarts.apache.org/zh/option.html#series-heatmap.emphasis.focus</a>
      * <br/>序号: 1
      * <br/>默认值: none
      * <br/>js类型: ["string"]
@@ -49,7 +49,7 @@ public class Emphasis implements Serializable {
      */
     private String focus;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.emphasis.blurScope
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.emphasis.blurScope">https://echarts.apache.org/zh/option.html#series-heatmap.emphasis.blurScope</a>
      * <br/>序号: 2
      * <br/>默认值: coordinateSystem
      * <br/>js类型: ["string"]
@@ -66,7 +66,7 @@ public class Emphasis implements Serializable {
      */
     private String blurScope;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.emphasis.itemStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.emphasis.itemStyle">https://echarts.apache.org/zh/option.html#series-heatmap.emphasis.itemStyle</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -74,7 +74,7 @@ public class Emphasis implements Serializable {
      */
     private Object itemStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-heatmap.emphasis.label
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.emphasis.label">https://echarts.apache.org/zh/option.html#series-heatmap.emphasis.label</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

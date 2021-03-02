@@ -47,7 +47,7 @@ public class Levels implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.levels.label
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.levels.label">https://echarts.apache.org/zh/option.html#series-sunburst.levels.label</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -58,7 +58,7 @@ public class Levels implements Serializable {
      */
     private Object label;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.levels.labelLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.levels.labelLine">https://echarts.apache.org/zh/option.html#series-sunburst.levels.labelLine</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -67,7 +67,7 @@ public class Levels implements Serializable {
      */
     private Object labelLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.levels.itemStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.levels.itemStyle">https://echarts.apache.org/zh/option.html#series-sunburst.levels.itemStyle</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -78,7 +78,7 @@ public class Levels implements Serializable {
      */
     private Object itemStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.levels.emphasis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.levels.emphasis">https://echarts.apache.org/zh/option.html#series-sunburst.levels.emphasis</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["any"]
@@ -87,7 +87,7 @@ public class Levels implements Serializable {
      */
     private Object emphasis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.levels.blur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.levels.blur">https://echarts.apache.org/zh/option.html#series-sunburst.levels.blur</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["any"]
@@ -96,7 +96,7 @@ public class Levels implements Serializable {
      */
     private Object blur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sunburst.levels.select
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.levels.select">https://echarts.apache.org/zh/option.html#series-sunburst.levels.select</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["any"]

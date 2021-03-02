@@ -40,7 +40,7 @@ public class Tooltip implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.show
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.show">https://echarts.apache.org/zh/option.html#tooltip.show</a>
      * <br/>序号: 1
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -49,7 +49,7 @@ public class Tooltip implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.trigger
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.trigger">https://echarts.apache.org/zh/option.html#tooltip.trigger</a>
      * <br/>序号: 2
      * <br/>默认值: item
      * <br/>js类型: ["string"]
@@ -71,7 +71,7 @@ public class Tooltip implements Serializable {
      */
     private String trigger;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.axisPointer
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.axisPointer">https://echarts.apache.org/zh/option.html#tooltip.axisPointer</a>
      * <br/>序号: 3
      * <br/>默认值: line
      * <br/>js类型: ["Object"]
@@ -140,7 +140,7 @@ public class Tooltip implements Serializable {
      */
     private AxisPointer axisPointer;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.showContent
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.showContent">https://echarts.apache.org/zh/option.html#tooltip.showContent</a>
      * <br/>序号: 4
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -149,7 +149,7 @@ public class Tooltip implements Serializable {
      */
     private Boolean showContent;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.alwaysShowContent
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.alwaysShowContent">https://echarts.apache.org/zh/option.html#tooltip.alwaysShowContent</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -159,7 +159,7 @@ public class Tooltip implements Serializable {
      */
     private Boolean alwaysShowContent;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.triggerOn
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.triggerOn">https://echarts.apache.org/zh/option.html#tooltip.triggerOn</a>
      * <br/>序号: 6
      * <br/>默认值: mousemove|click
      * <br/>js类型: ["string"]
@@ -183,7 +183,7 @@ public class Tooltip implements Serializable {
      */
     private String triggerOn;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.showDelay
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.showDelay">https://echarts.apache.org/zh/option.html#tooltip.showDelay</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -192,7 +192,7 @@ public class Tooltip implements Serializable {
      */
     private Integer showDelay;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.hideDelay
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.hideDelay">https://echarts.apache.org/zh/option.html#tooltip.hideDelay</a>
      * <br/>序号: 8
      * <br/>默认值: 100
      * <br/>js类型: ["number"]
@@ -201,7 +201,7 @@ public class Tooltip implements Serializable {
      */
     private Integer hideDelay;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.enterable
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.enterable">https://echarts.apache.org/zh/option.html#tooltip.enterable</a>
      * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -210,7 +210,7 @@ public class Tooltip implements Serializable {
      */
     private Boolean enterable;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.renderMode
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.renderMode">https://echarts.apache.org/zh/option.html#tooltip.renderMode</a>
      * <br/>序号: 10
      * <br/>默认值: html
      * <br/>js类型: ["string"]
@@ -219,7 +219,7 @@ public class Tooltip implements Serializable {
      */
     private String renderMode;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.confine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.confine">https://echarts.apache.org/zh/option.html#tooltip.confine</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -229,7 +229,7 @@ public class Tooltip implements Serializable {
      */
     private Boolean confine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.appendToBody
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.appendToBody">https://echarts.apache.org/zh/option.html#tooltip.appendToBody</a>
      * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -244,7 +244,7 @@ public class Tooltip implements Serializable {
      */
     private Boolean appendToBody;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.className
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.className">https://echarts.apache.org/zh/option.html#tooltip.className</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -259,7 +259,7 @@ public class Tooltip implements Serializable {
      */
     private String className;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.transitionDuration
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.transitionDuration">https://echarts.apache.org/zh/option.html#tooltip.transitionDuration</a>
      * <br/>序号: 14
      * <br/>默认值: 0.4
      * <br/>js类型: ["number"]
@@ -268,7 +268,7 @@ public class Tooltip implements Serializable {
      */
     private Integer transitionDuration;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.position
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.position">https://echarts.apache.org/zh/option.html#tooltip.position</a>
      * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["string","Array","Function"]
@@ -334,7 +334,7 @@ public class Tooltip implements Serializable {
      */
     private Object position;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.formatter
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.formatter">https://echarts.apache.org/zh/option.html#tooltip.formatter</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["string","Function"]
@@ -513,7 +513,7 @@ public class Tooltip implements Serializable {
      */
     private Object formatter;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.backgroundColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.backgroundColor">https://echarts.apache.org/zh/option.html#tooltip.backgroundColor</a>
      * <br/>序号: 17
      * <br/>默认值: rgba(50,50,50,0.7)
      * <br/>js类型: ["Color"]
@@ -522,7 +522,7 @@ public class Tooltip implements Serializable {
      */
     private String backgroundColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.borderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.borderColor">https://echarts.apache.org/zh/option.html#tooltip.borderColor</a>
      * <br/>序号: 18
      * <br/>默认值: #333
      * <br/>js类型: ["Color"]
@@ -531,7 +531,7 @@ public class Tooltip implements Serializable {
      */
     private String borderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.borderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.borderWidth">https://echarts.apache.org/zh/option.html#tooltip.borderWidth</a>
      * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -540,7 +540,7 @@ public class Tooltip implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.padding
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.padding">https://echarts.apache.org/zh/option.html#tooltip.padding</a>
      * <br/>序号: 20
      * <br/>默认值: 5
      * <br/>js类型: ["number"]
@@ -562,7 +562,7 @@ public class Tooltip implements Serializable {
      */
     private Integer padding;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.textStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.textStyle">https://echarts.apache.org/zh/option.html#tooltip.textStyle</a>
      * <br/>序号: 21
      * <br/>默认值: #fff
      * <br/>js类型: ["Object"]
@@ -571,7 +571,7 @@ public class Tooltip implements Serializable {
      */
     private TextStyle textStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.extraCssText
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.extraCssText">https://echarts.apache.org/zh/option.html#tooltip.extraCssText</a>
      * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -582,7 +582,7 @@ public class Tooltip implements Serializable {
      */
     private String extraCssText;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.order
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.order">https://echarts.apache.org/zh/option.html#tooltip.order</a>
      * <br/>序号: 23
      * <br/>默认值: seriesAsc
      * <br/>js类型: ["string"]

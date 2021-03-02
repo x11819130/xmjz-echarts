@@ -25,7 +25,7 @@ public class Media implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#media.query
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#media.query">https://echarts.apache.org/zh/option.html#media.query</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -34,7 +34,7 @@ public class Media implements Serializable {
      */
     private Query query;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#media.option
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#media.option">https://echarts.apache.org/zh/option.html#media.option</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

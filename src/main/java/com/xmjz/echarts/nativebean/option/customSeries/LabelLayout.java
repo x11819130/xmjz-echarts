@@ -69,7 +69,7 @@ public class LabelLayout implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.labelLayout.hideOverlap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.labelLayout.hideOverlap">https://echarts.apache.org/zh/option.html#series-custom.labelLayout.hideOverlap</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -80,7 +80,7 @@ public class LabelLayout implements Serializable {
      */
     private Boolean hideOverlap;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.labelLayout.moveOverlap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.labelLayout.moveOverlap">https://echarts.apache.org/zh/option.html#series-custom.labelLayout.moveOverlap</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -96,7 +96,7 @@ public class LabelLayout implements Serializable {
      */
     private String moveOverlap;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.labelLayout.x
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.labelLayout.x">https://echarts.apache.org/zh/option.html#series-custom.labelLayout.x</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["number","string"]
@@ -105,7 +105,7 @@ public class LabelLayout implements Serializable {
      */
     private Object x;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.labelLayout.y
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.labelLayout.y">https://echarts.apache.org/zh/option.html#series-custom.labelLayout.y</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number","string"]
@@ -114,7 +114,7 @@ public class LabelLayout implements Serializable {
      */
     private Object y;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.labelLayout.dx
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.labelLayout.dx">https://echarts.apache.org/zh/option.html#series-custom.labelLayout.dx</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -123,7 +123,7 @@ public class LabelLayout implements Serializable {
      */
     private Integer dx;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.labelLayout.dy
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.labelLayout.dy">https://echarts.apache.org/zh/option.html#series-custom.labelLayout.dy</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -132,7 +132,7 @@ public class LabelLayout implements Serializable {
      */
     private Integer dy;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.labelLayout.rotate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.labelLayout.rotate">https://echarts.apache.org/zh/option.html#series-custom.labelLayout.rotate</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -141,7 +141,7 @@ public class LabelLayout implements Serializable {
      */
     private Integer rotate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.labelLayout.width
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.labelLayout.width">https://echarts.apache.org/zh/option.html#series-custom.labelLayout.width</a>
      * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -150,7 +150,7 @@ public class LabelLayout implements Serializable {
      */
     private Integer width;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.labelLayout.height
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.labelLayout.height">https://echarts.apache.org/zh/option.html#series-custom.labelLayout.height</a>
      * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -159,7 +159,7 @@ public class LabelLayout implements Serializable {
      */
     private Integer height;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.labelLayout.align
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.labelLayout.align">https://echarts.apache.org/zh/option.html#series-custom.labelLayout.align</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -168,7 +168,7 @@ public class LabelLayout implements Serializable {
      */
     private String align;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.labelLayout.verticalAlign
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.labelLayout.verticalAlign">https://echarts.apache.org/zh/option.html#series-custom.labelLayout.verticalAlign</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -177,7 +177,7 @@ public class LabelLayout implements Serializable {
      */
     private String verticalAlign;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.labelLayout.fontSize
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.labelLayout.fontSize">https://echarts.apache.org/zh/option.html#series-custom.labelLayout.fontSize</a>
      * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -186,7 +186,7 @@ public class LabelLayout implements Serializable {
      */
     private Integer fontSize;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.labelLayout.draggable
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.labelLayout.draggable">https://echarts.apache.org/zh/option.html#series-custom.labelLayout.draggable</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -195,7 +195,7 @@ public class LabelLayout implements Serializable {
      */
     private Boolean draggable;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.labelLayout.labelLinePoints
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.labelLayout.labelLinePoints">https://echarts.apache.org/zh/option.html#series-custom.labelLayout.labelLinePoints</a>
      * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]

@@ -24,7 +24,7 @@ public class Select implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.select.label
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.select.label">https://echarts.apache.org/zh/option.html#series-map.select.label</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -32,7 +32,7 @@ public class Select implements Serializable {
      */
     private Object label;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-map.select.itemStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.select.itemStyle">https://echarts.apache.org/zh/option.html#series-map.select.itemStyle</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

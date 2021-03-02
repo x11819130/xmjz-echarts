@@ -126,7 +126,7 @@ public class Parallel implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallel.id
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallel.id">https://echarts.apache.org/zh/option.html#parallel.id</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -135,7 +135,7 @@ public class Parallel implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallel.zlevel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallel.zlevel">https://echarts.apache.org/zh/option.html#parallel.zlevel</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -146,7 +146,7 @@ public class Parallel implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallel.z
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallel.z">https://echarts.apache.org/zh/option.html#parallel.z</a>
      * <br/>序号: 3
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -156,7 +156,7 @@ public class Parallel implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallel.left
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallel.left">https://echarts.apache.org/zh/option.html#parallel.left</a>
      * <br/>序号: 4
      * <br/>默认值: 80
      * <br/>js类型: ["string","number"]
@@ -167,7 +167,7 @@ public class Parallel implements Serializable {
      */
     private Object left;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallel.top
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallel.top">https://echarts.apache.org/zh/option.html#parallel.top</a>
      * <br/>序号: 5
      * <br/>默认值: 60
      * <br/>js类型: ["string","number"]
@@ -178,7 +178,7 @@ public class Parallel implements Serializable {
      */
     private Object top;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallel.right
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallel.right">https://echarts.apache.org/zh/option.html#parallel.right</a>
      * <br/>序号: 6
      * <br/>默认值: 80
      * <br/>js类型: ["string","number"]
@@ -188,7 +188,7 @@ public class Parallel implements Serializable {
      */
     private Object right;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallel.bottom
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallel.bottom">https://echarts.apache.org/zh/option.html#parallel.bottom</a>
      * <br/>序号: 7
      * <br/>默认值: 60
      * <br/>js类型: ["string","number"]
@@ -198,7 +198,7 @@ public class Parallel implements Serializable {
      */
     private Object bottom;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallel.width
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallel.width">https://echarts.apache.org/zh/option.html#parallel.width</a>
      * <br/>序号: 8
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -207,7 +207,7 @@ public class Parallel implements Serializable {
      */
     private Object width;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallel.height
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallel.height">https://echarts.apache.org/zh/option.html#parallel.height</a>
      * <br/>序号: 9
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -216,7 +216,7 @@ public class Parallel implements Serializable {
      */
     private Object height;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallel.layout
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallel.layout">https://echarts.apache.org/zh/option.html#parallel.layout</a>
      * <br/>序号: 10
      * <br/>默认值: horizontal
      * <br/>js类型: ["string"]
@@ -231,7 +231,7 @@ public class Parallel implements Serializable {
      */
     private String layout;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallel.axisExpandable
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallel.axisExpandable">https://echarts.apache.org/zh/option.html#parallel.axisExpandable</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -242,7 +242,7 @@ public class Parallel implements Serializable {
      */
     private Boolean axisExpandable;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallel.axisExpandCenter
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallel.axisExpandCenter">https://echarts.apache.org/zh/option.html#parallel.axisExpandCenter</a>
      * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -252,7 +252,7 @@ public class Parallel implements Serializable {
      */
     private Integer axisExpandCenter;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallel.axisExpandCount
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallel.axisExpandCount">https://echarts.apache.org/zh/option.html#parallel.axisExpandCount</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -263,7 +263,7 @@ public class Parallel implements Serializable {
      */
     private Integer axisExpandCount;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallel.axisExpandWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallel.axisExpandWidth">https://echarts.apache.org/zh/option.html#parallel.axisExpandWidth</a>
      * <br/>序号: 14
      * <br/>默认值: 50
      * <br/>js类型: ["number"]
@@ -273,7 +273,7 @@ public class Parallel implements Serializable {
      */
     private Integer axisExpandWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallel.axisExpandTriggerOn
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallel.axisExpandTriggerOn">https://echarts.apache.org/zh/option.html#parallel.axisExpandTriggerOn</a>
      * <br/>序号: 15
      * <br/>默认值: click
      * <br/>js类型: ["string"]
@@ -286,7 +286,7 @@ public class Parallel implements Serializable {
      */
     private String axisExpandTriggerOn;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallel.parallelAxisDefault
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallel.parallelAxisDefault">https://echarts.apache.org/zh/option.html#parallel.parallelAxisDefault</a>
      * <br/>序号: 16
      * <br/>默认值: value
      * <br/>js类型: ["Object"]

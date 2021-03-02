@@ -27,7 +27,7 @@ public class XAxis implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.id
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.id">https://echarts.apache.org/zh/option.html#xAxis.id</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -36,7 +36,7 @@ public class XAxis implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.show
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.show">https://echarts.apache.org/zh/option.html#xAxis.show</a>
      * <br/>序号: 2
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -45,7 +45,7 @@ public class XAxis implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.gridIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.gridIndex">https://echarts.apache.org/zh/option.html#xAxis.gridIndex</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -54,7 +54,7 @@ public class XAxis implements Serializable {
      */
     private Integer gridIndex;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.position
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.position">https://echarts.apache.org/zh/option.html#xAxis.position</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -69,7 +69,7 @@ public class XAxis implements Serializable {
      */
     private String position;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.offset
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.offset">https://echarts.apache.org/zh/option.html#xAxis.offset</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -78,7 +78,7 @@ public class XAxis implements Serializable {
      */
     private Integer offset;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.realtimeSort
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.realtimeSort">https://echarts.apache.org/zh/option.html#xAxis.realtimeSort</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -88,7 +88,7 @@ public class XAxis implements Serializable {
      */
     private Boolean realtimeSort;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.sortSeriesIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.sortSeriesIndex">https://echarts.apache.org/zh/option.html#xAxis.sortSeriesIndex</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -98,7 +98,7 @@ public class XAxis implements Serializable {
      */
     private Integer sortSeriesIndex;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.type
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.type">https://echarts.apache.org/zh/option.html#xAxis.type</a>
      * <br/>序号: 8
      * <br/>默认值: category
      * <br/>js类型: ["string"]
@@ -122,7 +122,7 @@ public class XAxis implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.name
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.name">https://echarts.apache.org/zh/option.html#xAxis.name</a>
      * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -131,7 +131,7 @@ public class XAxis implements Serializable {
      */
     private String name;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.nameLocation
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.nameLocation">https://echarts.apache.org/zh/option.html#xAxis.nameLocation</a>
      * <br/>序号: 10
      * <br/>默认值: end
      * <br/>js类型: ["string"]
@@ -146,7 +146,7 @@ public class XAxis implements Serializable {
      */
     private String nameLocation;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.nameTextStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.nameTextStyle">https://echarts.apache.org/zh/option.html#xAxis.nameTextStyle</a>
      * <br/>序号: 11
      * <br/>默认值: normal
      * <br/>js类型: ["Object"]
@@ -155,7 +155,7 @@ public class XAxis implements Serializable {
      */
     private NameTextStyle nameTextStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.nameGap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.nameGap">https://echarts.apache.org/zh/option.html#xAxis.nameGap</a>
      * <br/>序号: 12
      * <br/>默认值: 15
      * <br/>js类型: ["number"]
@@ -164,7 +164,7 @@ public class XAxis implements Serializable {
      */
     private Integer nameGap;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.nameRotate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.nameRotate">https://echarts.apache.org/zh/option.html#xAxis.nameRotate</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -173,7 +173,7 @@ public class XAxis implements Serializable {
      */
     private Integer nameRotate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.inverse
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.inverse">https://echarts.apache.org/zh/option.html#xAxis.inverse</a>
      * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -182,7 +182,7 @@ public class XAxis implements Serializable {
      */
     private Boolean inverse;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.boundaryGap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.boundaryGap">https://echarts.apache.org/zh/option.html#xAxis.boundaryGap</a>
      * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","Array"]
@@ -196,7 +196,7 @@ public class XAxis implements Serializable {
      */
     private Object boundaryGap;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.min
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.min">https://echarts.apache.org/zh/option.html#xAxis.min</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["number","string","Function"]
@@ -214,7 +214,7 @@ public class XAxis implements Serializable {
      */
     private Object min;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.max
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.max">https://echarts.apache.org/zh/option.html#xAxis.max</a>
      * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["number","string","Function"]
@@ -232,7 +232,7 @@ public class XAxis implements Serializable {
      */
     private Object max;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.scale
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.scale">https://echarts.apache.org/zh/option.html#xAxis.scale</a>
      * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -243,7 +243,7 @@ public class XAxis implements Serializable {
      */
     private Boolean scale;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.splitNumber
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.splitNumber">https://echarts.apache.org/zh/option.html#xAxis.splitNumber</a>
      * <br/>序号: 19
      * <br/>默认值: 5
      * <br/>js类型: ["number"]
@@ -253,7 +253,7 @@ public class XAxis implements Serializable {
      */
     private Integer splitNumber;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.minInterval
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.minInterval">https://echarts.apache.org/zh/option.html#xAxis.minInterval</a>
      * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -268,7 +268,7 @@ public class XAxis implements Serializable {
      */
     private Integer minInterval;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.maxInterval
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.maxInterval">https://echarts.apache.org/zh/option.html#xAxis.maxInterval</a>
      * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -283,7 +283,7 @@ public class XAxis implements Serializable {
      */
     private Integer maxInterval;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.interval
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.interval">https://echarts.apache.org/zh/option.html#xAxis.interval</a>
      * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -294,7 +294,7 @@ public class XAxis implements Serializable {
      */
     private Integer interval;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.logBase
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.logBase">https://echarts.apache.org/zh/option.html#xAxis.logBase</a>
      * <br/>序号: 23
      * <br/>默认值: 10
      * <br/>js类型: ["number"]
@@ -303,7 +303,7 @@ public class XAxis implements Serializable {
      */
     private Integer logBase;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.silent
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.silent">https://echarts.apache.org/zh/option.html#xAxis.silent</a>
      * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -312,7 +312,7 @@ public class XAxis implements Serializable {
      */
     private Boolean silent;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.triggerEvent
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.triggerEvent">https://echarts.apache.org/zh/option.html#xAxis.triggerEvent</a>
      * <br/>序号: 25
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -332,7 +332,7 @@ public class XAxis implements Serializable {
      */
     private Boolean triggerEvent;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.axisLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.axisLine">https://echarts.apache.org/zh/option.html#xAxis.axisLine</a>
      * <br/>序号: 26
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -341,7 +341,7 @@ public class XAxis implements Serializable {
      */
     private AxisLine axisLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.axisTick
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.axisTick">https://echarts.apache.org/zh/option.html#xAxis.axisTick</a>
      * <br/>序号: 27
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -350,7 +350,7 @@ public class XAxis implements Serializable {
      */
     private AxisTick axisTick;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.minorTick
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.minorTick">https://echarts.apache.org/zh/option.html#xAxis.minorTick</a>
      * <br/>序号: 28
      * <br/>默认值: 5
      * <br/>js类型: ["Object"]
@@ -370,7 +370,7 @@ public class XAxis implements Serializable {
      */
     private MinorTick minorTick;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.axisLabel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.axisLabel">https://echarts.apache.org/zh/option.html#xAxis.axisLabel</a>
      * <br/>序号: 29
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -379,7 +379,7 @@ public class XAxis implements Serializable {
      */
     private AxisLabel axisLabel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.splitLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.splitLine">https://echarts.apache.org/zh/option.html#xAxis.splitLine</a>
      * <br/>序号: 30
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -388,7 +388,7 @@ public class XAxis implements Serializable {
      */
     private SplitLine splitLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.minorSplitLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.minorSplitLine">https://echarts.apache.org/zh/option.html#xAxis.minorSplitLine</a>
      * <br/>序号: 31
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -400,7 +400,7 @@ public class XAxis implements Serializable {
      */
     private MinorSplitLine minorSplitLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.splitArea
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.splitArea">https://echarts.apache.org/zh/option.html#xAxis.splitArea</a>
      * <br/>序号: 32
      * <br/>默认值: auto
      * <br/>js类型: ["Object"]
@@ -409,7 +409,7 @@ public class XAxis implements Serializable {
      */
     private SplitArea splitArea;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.data
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.data">https://echarts.apache.org/zh/option.html#xAxis.data</a>
      * <br/>序号: 33
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -433,7 +433,7 @@ public class XAxis implements Serializable {
      */
     private List<Object> data;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.axisPointer
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.axisPointer">https://echarts.apache.org/zh/option.html#xAxis.axisPointer</a>
      * <br/>序号: 34
      * <br/>默认值: line
      * <br/>js类型: ["Object"]
@@ -442,7 +442,7 @@ public class XAxis implements Serializable {
      */
     private AxisPointer axisPointer;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.zlevel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.zlevel">https://echarts.apache.org/zh/option.html#xAxis.zlevel</a>
      * <br/>序号: 35
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -453,7 +453,7 @@ public class XAxis implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#xAxis.z
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.z">https://echarts.apache.org/zh/option.html#xAxis.z</a>
      * <br/>序号: 36
      * <br/>默认值: 无
      * <br/>js类型: ["number"]

@@ -25,7 +25,7 @@ public class EndLabel implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.show
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.show">https://echarts.apache.org/zh/option.html#series-line.endLabel.show</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -34,7 +34,7 @@ public class EndLabel implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.distance
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.distance">https://echarts.apache.org/zh/option.html#series-line.endLabel.distance</a>
      * <br/>序号: 2
      * <br/>默认值: 5
      * <br/>js类型: ["number"]
@@ -43,7 +43,7 @@ public class EndLabel implements Serializable {
      */
     private Integer distance;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.rotate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.rotate">https://echarts.apache.org/zh/option.html#series-line.endLabel.rotate</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -53,7 +53,7 @@ public class EndLabel implements Serializable {
      */
     private Integer rotate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.offset
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.offset">https://echarts.apache.org/zh/option.html#series-line.endLabel.offset</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -62,7 +62,7 @@ public class EndLabel implements Serializable {
      */
     private List<Object> offset;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.formatter
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.formatter">https://echarts.apache.org/zh/option.html#series-line.endLabel.formatter</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["string","Function"]
@@ -153,7 +153,7 @@ public class EndLabel implements Serializable {
      */
     private Object formatter;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.color
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.color">https://echarts.apache.org/zh/option.html#series-line.endLabel.color</a>
      * <br/>序号: 6
      * <br/>默认值: #fff
      * <br/>js类型: ["Color"]
@@ -163,7 +163,7 @@ public class EndLabel implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.fontStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.fontStyle">https://echarts.apache.org/zh/option.html#series-line.endLabel.fontStyle</a>
      * <br/>序号: 7
      * <br/>默认值: normal
      * <br/>js类型: ["string"]
@@ -178,7 +178,7 @@ public class EndLabel implements Serializable {
      */
     private String fontStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.fontWeight
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.fontWeight">https://echarts.apache.org/zh/option.html#series-line.endLabel.fontWeight</a>
      * <br/>序号: 8
      * <br/>默认值: normal
      * <br/>js类型: ["string","number"]
@@ -195,7 +195,7 @@ public class EndLabel implements Serializable {
      */
     private Object fontWeight;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.fontFamily
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.fontFamily">https://echarts.apache.org/zh/option.html#series-line.endLabel.fontFamily</a>
      * <br/>序号: 9
      * <br/>默认值: sans-serif
      * <br/>js类型: ["string"]
@@ -205,7 +205,7 @@ public class EndLabel implements Serializable {
      */
     private String fontFamily;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.fontSize
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.fontSize">https://echarts.apache.org/zh/option.html#series-line.endLabel.fontSize</a>
      * <br/>序号: 10
      * <br/>默认值: 12
      * <br/>js类型: ["number"]
@@ -214,7 +214,7 @@ public class EndLabel implements Serializable {
      */
     private Integer fontSize;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.align
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.align">https://echarts.apache.org/zh/option.html#series-line.endLabel.align</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -239,7 +239,7 @@ public class EndLabel implements Serializable {
      */
     private String align;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.verticalAlign
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.verticalAlign">https://echarts.apache.org/zh/option.html#series-line.endLabel.verticalAlign</a>
      * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -264,7 +264,7 @@ public class EndLabel implements Serializable {
      */
     private String verticalAlign;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.lineHeight
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.lineHeight">https://echarts.apache.org/zh/option.html#series-line.endLabel.lineHeight</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -283,7 +283,7 @@ public class EndLabel implements Serializable {
      */
     private Integer lineHeight;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.backgroundColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.backgroundColor">https://echarts.apache.org/zh/option.html#series-line.endLabel.backgroundColor</a>
      * <br/>序号: 14
      * <br/>默认值: transparent
      * <br/>js类型: ["string","Object"]
@@ -304,7 +304,7 @@ public class EndLabel implements Serializable {
      */
     private Object backgroundColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.borderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.borderColor">https://echarts.apache.org/zh/option.html#series-line.endLabel.borderColor</a>
      * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -314,7 +314,7 @@ public class EndLabel implements Serializable {
      */
     private String borderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.borderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.borderWidth">https://echarts.apache.org/zh/option.html#series-line.endLabel.borderWidth</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -323,7 +323,7 @@ public class EndLabel implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.borderRadius
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.borderRadius">https://echarts.apache.org/zh/option.html#series-line.endLabel.borderRadius</a>
      * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -332,7 +332,7 @@ public class EndLabel implements Serializable {
      */
     private Object borderRadius;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.padding
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.padding">https://echarts.apache.org/zh/option.html#series-line.endLabel.padding</a>
      * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -347,7 +347,7 @@ public class EndLabel implements Serializable {
      */
     private Object padding;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.shadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.shadowColor">https://echarts.apache.org/zh/option.html#series-line.endLabel.shadowColor</a>
      * <br/>序号: 19
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -356,7 +356,7 @@ public class EndLabel implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.shadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.shadowBlur">https://echarts.apache.org/zh/option.html#series-line.endLabel.shadowBlur</a>
      * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -365,7 +365,7 @@ public class EndLabel implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.shadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.shadowOffsetX">https://echarts.apache.org/zh/option.html#series-line.endLabel.shadowOffsetX</a>
      * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -374,7 +374,7 @@ public class EndLabel implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.shadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.shadowOffsetY">https://echarts.apache.org/zh/option.html#series-line.endLabel.shadowOffsetY</a>
      * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -383,7 +383,7 @@ public class EndLabel implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.width
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.width">https://echarts.apache.org/zh/option.html#series-line.endLabel.width</a>
      * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -392,7 +392,7 @@ public class EndLabel implements Serializable {
      */
     private Integer width;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.height
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.height">https://echarts.apache.org/zh/option.html#series-line.endLabel.height</a>
      * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -401,7 +401,7 @@ public class EndLabel implements Serializable {
      */
     private Integer height;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.textBorderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.textBorderColor">https://echarts.apache.org/zh/option.html#series-line.endLabel.textBorderColor</a>
      * <br/>序号: 25
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -411,7 +411,7 @@ public class EndLabel implements Serializable {
      */
     private String textBorderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.textBorderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.textBorderWidth">https://echarts.apache.org/zh/option.html#series-line.endLabel.textBorderWidth</a>
      * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -420,7 +420,7 @@ public class EndLabel implements Serializable {
      */
     private Integer textBorderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.textShadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.textShadowColor">https://echarts.apache.org/zh/option.html#series-line.endLabel.textShadowColor</a>
      * <br/>序号: 27
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -429,7 +429,7 @@ public class EndLabel implements Serializable {
      */
     private String textShadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.textShadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.textShadowBlur">https://echarts.apache.org/zh/option.html#series-line.endLabel.textShadowBlur</a>
      * <br/>序号: 28
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -438,7 +438,7 @@ public class EndLabel implements Serializable {
      */
     private Integer textShadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.textShadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.textShadowOffsetX">https://echarts.apache.org/zh/option.html#series-line.endLabel.textShadowOffsetX</a>
      * <br/>序号: 29
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -447,7 +447,7 @@ public class EndLabel implements Serializable {
      */
     private Integer textShadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.textShadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.textShadowOffsetY">https://echarts.apache.org/zh/option.html#series-line.endLabel.textShadowOffsetY</a>
      * <br/>序号: 30
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -456,7 +456,7 @@ public class EndLabel implements Serializable {
      */
     private Integer textShadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.overflow
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.overflow">https://echarts.apache.org/zh/option.html#series-line.endLabel.overflow</a>
      * <br/>序号: 31
      * <br/>默认值: none
      * <br/>js类型: ["string"]
@@ -470,7 +470,7 @@ public class EndLabel implements Serializable {
      */
     private String overflow;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.ellipsis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.ellipsis">https://echarts.apache.org/zh/option.html#series-line.endLabel.ellipsis</a>
      * <br/>序号: 32
      * <br/>默认值: ...
      * <br/>js类型: ["string"]
@@ -479,7 +479,7 @@ public class EndLabel implements Serializable {
      */
     private String ellipsis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.lineOverflow
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.lineOverflow">https://echarts.apache.org/zh/option.html#series-line.endLabel.lineOverflow</a>
      * <br/>序号: 33
      * <br/>默认值: none
      * <br/>js类型: ["string"]
@@ -491,7 +491,7 @@ public class EndLabel implements Serializable {
      */
     private String lineOverflow;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.rich
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.rich">https://echarts.apache.org/zh/option.html#series-line.endLabel.rich</a>
      * <br/>序号: 34
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -533,7 +533,7 @@ public class EndLabel implements Serializable {
      */
     private Object rich;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-line.endLabel.valueAnimation
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel.valueAnimation">https://echarts.apache.org/zh/option.html#series-line.endLabel.valueAnimation</a>
      * <br/>序号: 35
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]

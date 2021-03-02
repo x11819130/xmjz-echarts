@@ -25,7 +25,7 @@ public class Label implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.show
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.show">https://echarts.apache.org/zh/option.html#series-tree.label.show</a>
      * <br/>序号: 1
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -34,7 +34,7 @@ public class Label implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.position
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.position">https://echarts.apache.org/zh/option.html#series-tree.label.position</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string","Array"]
@@ -60,7 +60,7 @@ public class Label implements Serializable {
      */
     private Object position;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.distance
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.distance">https://echarts.apache.org/zh/option.html#series-tree.label.distance</a>
      * <br/>序号: 3
      * <br/>默认值: 5
      * <br/>js类型: ["number"]
@@ -71,7 +71,7 @@ public class Label implements Serializable {
      */
     private Integer distance;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.rotate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.rotate">https://echarts.apache.org/zh/option.html#series-tree.label.rotate</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -81,7 +81,7 @@ public class Label implements Serializable {
      */
     private Integer rotate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.offset
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.offset">https://echarts.apache.org/zh/option.html#series-tree.label.offset</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -90,7 +90,7 @@ public class Label implements Serializable {
      */
     private List<Object> offset;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.formatter
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.formatter">https://echarts.apache.org/zh/option.html#series-tree.label.formatter</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["string","Function"]
@@ -183,7 +183,7 @@ public class Label implements Serializable {
      */
     private Object formatter;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.color
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.color">https://echarts.apache.org/zh/option.html#series-tree.label.color</a>
      * <br/>序号: 7
      * <br/>默认值: #fff
      * <br/>js类型: ["Color"]
@@ -193,7 +193,7 @@ public class Label implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.fontStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.fontStyle">https://echarts.apache.org/zh/option.html#series-tree.label.fontStyle</a>
      * <br/>序号: 8
      * <br/>默认值: normal
      * <br/>js类型: ["string"]
@@ -208,7 +208,7 @@ public class Label implements Serializable {
      */
     private String fontStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.fontWeight
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.fontWeight">https://echarts.apache.org/zh/option.html#series-tree.label.fontWeight</a>
      * <br/>序号: 9
      * <br/>默认值: normal
      * <br/>js类型: ["string","number"]
@@ -225,7 +225,7 @@ public class Label implements Serializable {
      */
     private Object fontWeight;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.fontFamily
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.fontFamily">https://echarts.apache.org/zh/option.html#series-tree.label.fontFamily</a>
      * <br/>序号: 10
      * <br/>默认值: sans-serif
      * <br/>js类型: ["string"]
@@ -235,7 +235,7 @@ public class Label implements Serializable {
      */
     private String fontFamily;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.fontSize
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.fontSize">https://echarts.apache.org/zh/option.html#series-tree.label.fontSize</a>
      * <br/>序号: 11
      * <br/>默认值: 12
      * <br/>js类型: ["number"]
@@ -244,7 +244,7 @@ public class Label implements Serializable {
      */
     private Integer fontSize;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.align
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.align">https://echarts.apache.org/zh/option.html#series-tree.label.align</a>
      * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -269,7 +269,7 @@ public class Label implements Serializable {
      */
     private String align;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.verticalAlign
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.verticalAlign">https://echarts.apache.org/zh/option.html#series-tree.label.verticalAlign</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -294,7 +294,7 @@ public class Label implements Serializable {
      */
     private String verticalAlign;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.lineHeight
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.lineHeight">https://echarts.apache.org/zh/option.html#series-tree.label.lineHeight</a>
      * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -313,7 +313,7 @@ public class Label implements Serializable {
      */
     private Integer lineHeight;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.backgroundColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.backgroundColor">https://echarts.apache.org/zh/option.html#series-tree.label.backgroundColor</a>
      * <br/>序号: 15
      * <br/>默认值: transparent
      * <br/>js类型: ["string","Object"]
@@ -334,7 +334,7 @@ public class Label implements Serializable {
      */
     private Object backgroundColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.borderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.borderColor">https://echarts.apache.org/zh/option.html#series-tree.label.borderColor</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -344,7 +344,7 @@ public class Label implements Serializable {
      */
     private String borderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.borderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.borderWidth">https://echarts.apache.org/zh/option.html#series-tree.label.borderWidth</a>
      * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -353,7 +353,7 @@ public class Label implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.borderRadius
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.borderRadius">https://echarts.apache.org/zh/option.html#series-tree.label.borderRadius</a>
      * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -362,7 +362,7 @@ public class Label implements Serializable {
      */
     private Object borderRadius;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.padding
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.padding">https://echarts.apache.org/zh/option.html#series-tree.label.padding</a>
      * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -377,7 +377,7 @@ public class Label implements Serializable {
      */
     private Object padding;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.shadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.shadowColor">https://echarts.apache.org/zh/option.html#series-tree.label.shadowColor</a>
      * <br/>序号: 20
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -386,7 +386,7 @@ public class Label implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.shadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.shadowBlur">https://echarts.apache.org/zh/option.html#series-tree.label.shadowBlur</a>
      * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -395,7 +395,7 @@ public class Label implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.shadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.shadowOffsetX">https://echarts.apache.org/zh/option.html#series-tree.label.shadowOffsetX</a>
      * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -404,7 +404,7 @@ public class Label implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.shadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.shadowOffsetY">https://echarts.apache.org/zh/option.html#series-tree.label.shadowOffsetY</a>
      * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -413,7 +413,7 @@ public class Label implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.width
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.width">https://echarts.apache.org/zh/option.html#series-tree.label.width</a>
      * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -422,7 +422,7 @@ public class Label implements Serializable {
      */
     private Integer width;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.height
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.height">https://echarts.apache.org/zh/option.html#series-tree.label.height</a>
      * <br/>序号: 25
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -431,7 +431,7 @@ public class Label implements Serializable {
      */
     private Integer height;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.textBorderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.textBorderColor">https://echarts.apache.org/zh/option.html#series-tree.label.textBorderColor</a>
      * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -441,7 +441,7 @@ public class Label implements Serializable {
      */
     private String textBorderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.textBorderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.textBorderWidth">https://echarts.apache.org/zh/option.html#series-tree.label.textBorderWidth</a>
      * <br/>序号: 27
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -450,7 +450,7 @@ public class Label implements Serializable {
      */
     private Integer textBorderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.textShadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.textShadowColor">https://echarts.apache.org/zh/option.html#series-tree.label.textShadowColor</a>
      * <br/>序号: 28
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -459,7 +459,7 @@ public class Label implements Serializable {
      */
     private String textShadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.textShadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.textShadowBlur">https://echarts.apache.org/zh/option.html#series-tree.label.textShadowBlur</a>
      * <br/>序号: 29
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -468,7 +468,7 @@ public class Label implements Serializable {
      */
     private Integer textShadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.textShadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.textShadowOffsetX">https://echarts.apache.org/zh/option.html#series-tree.label.textShadowOffsetX</a>
      * <br/>序号: 30
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -477,7 +477,7 @@ public class Label implements Serializable {
      */
     private Integer textShadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.textShadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.textShadowOffsetY">https://echarts.apache.org/zh/option.html#series-tree.label.textShadowOffsetY</a>
      * <br/>序号: 31
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -486,7 +486,7 @@ public class Label implements Serializable {
      */
     private Integer textShadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.overflow
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.overflow">https://echarts.apache.org/zh/option.html#series-tree.label.overflow</a>
      * <br/>序号: 32
      * <br/>默认值: none
      * <br/>js类型: ["string"]
@@ -500,7 +500,7 @@ public class Label implements Serializable {
      */
     private String overflow;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.ellipsis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.ellipsis">https://echarts.apache.org/zh/option.html#series-tree.label.ellipsis</a>
      * <br/>序号: 33
      * <br/>默认值: ...
      * <br/>js类型: ["string"]
@@ -509,7 +509,7 @@ public class Label implements Serializable {
      */
     private String ellipsis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.lineOverflow
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.lineOverflow">https://echarts.apache.org/zh/option.html#series-tree.label.lineOverflow</a>
      * <br/>序号: 34
      * <br/>默认值: none
      * <br/>js类型: ["string"]
@@ -521,7 +521,7 @@ public class Label implements Serializable {
      */
     private String lineOverflow;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label.rich
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label.rich">https://echarts.apache.org/zh/option.html#series-tree.label.rich</a>
      * <br/>序号: 35
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

@@ -56,7 +56,7 @@ public class TreemapSeries extends Series implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.type
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.type">https://echarts.apache.org/zh/option.html#series-treemap.type</a>
      * <br/>序号: 1
      * <br/>默认值: treemap
      * <br/>js类型: ["string"]
@@ -64,7 +64,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.id
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.id">https://echarts.apache.org/zh/option.html#series-treemap.id</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -73,7 +73,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.name
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.name">https://echarts.apache.org/zh/option.html#series-treemap.name</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -82,7 +82,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private String name;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.zlevel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.zlevel">https://echarts.apache.org/zh/option.html#series-treemap.zlevel</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -93,7 +93,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.z
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.z">https://echarts.apache.org/zh/option.html#series-treemap.z</a>
      * <br/>序号: 5
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -103,7 +103,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.left
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.left">https://echarts.apache.org/zh/option.html#series-treemap.left</a>
      * <br/>序号: 6
      * <br/>默认值: center
      * <br/>js类型: ["string","number"]
@@ -114,7 +114,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private Object left;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.top
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.top">https://echarts.apache.org/zh/option.html#series-treemap.top</a>
      * <br/>序号: 7
      * <br/>默认值: middle
      * <br/>js类型: ["string","number"]
@@ -125,7 +125,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private Object top;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.right
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.right">https://echarts.apache.org/zh/option.html#series-treemap.right</a>
      * <br/>序号: 8
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -136,7 +136,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private Object right;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.bottom
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.bottom">https://echarts.apache.org/zh/option.html#series-treemap.bottom</a>
      * <br/>序号: 9
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -147,7 +147,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private Object bottom;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.width
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.width">https://echarts.apache.org/zh/option.html#series-treemap.width</a>
      * <br/>序号: 10
      * <br/>默认值: 80%
      * <br/>js类型: ["string","number"]
@@ -156,7 +156,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private Object width;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.height
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.height">https://echarts.apache.org/zh/option.html#series-treemap.height</a>
      * <br/>序号: 11
      * <br/>默认值: 80%
      * <br/>js类型: ["string","number"]
@@ -165,7 +165,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private Object height;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.squareRatio
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.squareRatio">https://echarts.apache.org/zh/option.html#series-treemap.squareRatio</a>
      * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -175,7 +175,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private Integer squareRatio;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.leafDepth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.leafDepth">https://echarts.apache.org/zh/option.html#series-treemap.leafDepth</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -189,7 +189,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private Integer leafDepth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.drillDownIcon
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.drillDownIcon">https://echarts.apache.org/zh/option.html#series-treemap.drillDownIcon</a>
      * <br/>序号: 14
      * <br/>默认值: ▶
      * <br/>js类型: ["string"]
@@ -198,7 +198,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private String drillDownIcon;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.roam
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.roam">https://echarts.apache.org/zh/option.html#series-treemap.roam</a>
      * <br/>序号: 15
      * <br/>默认值: true
      * <br/>js类型: ["boolean","string"]
@@ -213,7 +213,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private Object roam;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.nodeClick
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.nodeClick">https://echarts.apache.org/zh/option.html#series-treemap.nodeClick</a>
      * <br/>序号: 16
      * <br/>默认值: zoomToNode
      * <br/>js类型: ["boolean","string"]
@@ -227,7 +227,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private Object nodeClick;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.zoomToNodeRatio
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.zoomToNodeRatio">https://echarts.apache.org/zh/option.html#series-treemap.zoomToNodeRatio</a>
      * <br/>序号: 17
      * <br/>默认值: 0.1024
      * <br/>js类型: ["number"]
@@ -236,7 +236,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private Integer zoomToNodeRatio;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.visualDimension
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.visualDimension">https://echarts.apache.org/zh/option.html#series-treemap.visualDimension</a>
      * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -261,7 +261,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private Integer visualDimension;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.visualMin
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.visualMin">https://echarts.apache.org/zh/option.html#series-treemap.visualMin</a>
      * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -271,7 +271,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private Integer visualMin;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.visualMax
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.visualMax">https://echarts.apache.org/zh/option.html#series-treemap.visualMax</a>
      * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -281,7 +281,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private Integer visualMax;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.colorAlpha
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.colorAlpha">https://echarts.apache.org/zh/option.html#series-treemap.colorAlpha</a>
      * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -307,7 +307,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private List<Object> colorAlpha;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.colorSaturation
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.colorSaturation">https://echarts.apache.org/zh/option.html#series-treemap.colorSaturation</a>
      * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -333,7 +333,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private Integer colorSaturation;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.colorMappingBy
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.colorMappingBy">https://echarts.apache.org/zh/option.html#series-treemap.colorMappingBy</a>
      * <br/>序号: 23
      * <br/>默认值: index
      * <br/>js类型: ["string"]
@@ -372,7 +372,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private String colorMappingBy;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.visibleMin
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.visibleMin">https://echarts.apache.org/zh/option.html#series-treemap.visibleMin</a>
      * <br/>序号: 24
      * <br/>默认值: 10
      * <br/>js类型: ["number"]
@@ -397,7 +397,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private Integer visibleMin;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.childrenVisibleMin
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.childrenVisibleMin">https://echarts.apache.org/zh/option.html#series-treemap.childrenVisibleMin</a>
      * <br/>序号: 25
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -422,7 +422,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private Integer childrenVisibleMin;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.label
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.label">https://echarts.apache.org/zh/option.html#series-treemap.label</a>
      * <br/>序号: 26
      * <br/>默认值: inside
      * <br/>js类型: ["Object"]
@@ -445,7 +445,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private Label label;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.upperLabel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.upperLabel">https://echarts.apache.org/zh/option.html#series-treemap.upperLabel</a>
      * <br/>序号: 27
      * <br/>默认值: inside
      * <br/>js类型: ["Object"]
@@ -476,7 +476,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private UpperLabel upperLabel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.itemStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.itemStyle">https://echarts.apache.org/zh/option.html#series-treemap.itemStyle</a>
      * <br/>序号: 28
      * <br/>默认值: #fff,
      * <br/>js类型: ["Object"]
@@ -498,7 +498,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private ItemStyle itemStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.emphasis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.emphasis">https://echarts.apache.org/zh/option.html#series-treemap.emphasis</a>
      * <br/>序号: 29
      * <br/>默认值: none
      * <br/>js类型: ["Object"]
@@ -507,7 +507,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private Emphasis emphasis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.blur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.blur">https://echarts.apache.org/zh/option.html#series-treemap.blur</a>
      * <br/>序号: 30
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -519,7 +519,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private Blur blur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.select
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.select">https://echarts.apache.org/zh/option.html#series-treemap.select</a>
      * <br/>序号: 31
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -531,7 +531,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private Select select;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.selectedMode
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.selectedMode">https://echarts.apache.org/zh/option.html#series-treemap.selectedMode</a>
      * <br/>序号: 32
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","string"]
@@ -545,7 +545,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private Object selectedMode;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.breadcrumb
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.breadcrumb">https://echarts.apache.org/zh/option.html#series-treemap.breadcrumb</a>
      * <br/>序号: 33
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -554,7 +554,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private Breadcrumb breadcrumb;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.labelLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.labelLine">https://echarts.apache.org/zh/option.html#series-treemap.labelLine</a>
      * <br/>序号: 34
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -563,7 +563,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private LabelLine labelLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.labelLayout
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.labelLayout">https://echarts.apache.org/zh/option.html#series-treemap.labelLayout</a>
      * <br/>序号: 35
      * <br/>默认值: 无
      * <br/>js类型: ["Object","Function"]
@@ -616,7 +616,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private LabelLayout labelLayout;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.levels
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels">https://echarts.apache.org/zh/option.html#series-treemap.levels</a>
      * <br/>序号: 36
      * <br/>默认值: index
      * <br/>js类型: ["Array"]
@@ -692,7 +692,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private List<Levels> levels;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.data
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.data">https://echarts.apache.org/zh/option.html#series-treemap.data</a>
      * <br/>序号: 37
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -743,7 +743,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private List<Object> data;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.silent
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.silent">https://echarts.apache.org/zh/option.html#series-treemap.silent</a>
      * <br/>序号: 38
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -752,7 +752,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private Boolean silent;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.animationDuration
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.animationDuration">https://echarts.apache.org/zh/option.html#series-treemap.animationDuration</a>
      * <br/>序号: 39
      * <br/>默认值: 1500
      * <br/>js类型: ["number","Function"]
@@ -766,7 +766,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private Object animationDuration;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.animationEasing
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.animationEasing">https://echarts.apache.org/zh/option.html#series-treemap.animationEasing</a>
      * <br/>序号: 40
      * <br/>默认值: quinticInOut
      * <br/>js类型: ["string"]
@@ -775,7 +775,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private String animationEasing;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.animationDelay
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.animationDelay">https://echarts.apache.org/zh/option.html#series-treemap.animationDelay</a>
      * <br/>序号: 41
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
@@ -791,7 +791,7 @@ public class TreemapSeries extends Series implements Serializable {
      */
     private Object animationDelay;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.tooltip
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.tooltip">https://echarts.apache.org/zh/option.html#series-treemap.tooltip</a>
      * <br/>序号: 42
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

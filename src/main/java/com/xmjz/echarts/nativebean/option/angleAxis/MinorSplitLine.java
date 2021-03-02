@@ -27,7 +27,7 @@ public class MinorSplitLine implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis.minorSplitLine.show
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.minorSplitLine.show">https://echarts.apache.org/zh/option.html#angleAxis.minorSplitLine.show</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -36,7 +36,7 @@ public class MinorSplitLine implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#angleAxis.minorSplitLine.lineStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.minorSplitLine.lineStyle">https://echarts.apache.org/zh/option.html#angleAxis.minorSplitLine.lineStyle</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

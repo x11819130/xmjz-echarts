@@ -23,7 +23,7 @@ public class SubtextStyle implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.subtextStyle.color
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.subtextStyle.color">https://echarts.apache.org/zh/option.html#title.subtextStyle.color</a>
      * <br/>序号: 1
      * <br/>默认值: #aaa
      * <br/>js类型: ["Color"]
@@ -32,7 +32,7 @@ public class SubtextStyle implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.subtextStyle.fontStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.subtextStyle.fontStyle">https://echarts.apache.org/zh/option.html#title.subtextStyle.fontStyle</a>
      * <br/>序号: 2
      * <br/>默认值: normal
      * <br/>js类型: ["string"]
@@ -47,7 +47,7 @@ public class SubtextStyle implements Serializable {
      */
     private String fontStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.subtextStyle.fontWeight
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.subtextStyle.fontWeight">https://echarts.apache.org/zh/option.html#title.subtextStyle.fontWeight</a>
      * <br/>序号: 3
      * <br/>默认值: normal
      * <br/>js类型: ["string","number"]
@@ -64,7 +64,7 @@ public class SubtextStyle implements Serializable {
      */
     private Object fontWeight;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.subtextStyle.fontFamily
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.subtextStyle.fontFamily">https://echarts.apache.org/zh/option.html#title.subtextStyle.fontFamily</a>
      * <br/>序号: 4
      * <br/>默认值: sans-serif
      * <br/>js类型: ["string"]
@@ -74,7 +74,7 @@ public class SubtextStyle implements Serializable {
      */
     private String fontFamily;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.subtextStyle.fontSize
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.subtextStyle.fontSize">https://echarts.apache.org/zh/option.html#title.subtextStyle.fontSize</a>
      * <br/>序号: 5
      * <br/>默认值: 12
      * <br/>js类型: ["number"]
@@ -83,7 +83,7 @@ public class SubtextStyle implements Serializable {
      */
     private Integer fontSize;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.subtextStyle.align
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.subtextStyle.align">https://echarts.apache.org/zh/option.html#title.subtextStyle.align</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -108,7 +108,7 @@ public class SubtextStyle implements Serializable {
      */
     private String align;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.subtextStyle.verticalAlign
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.subtextStyle.verticalAlign">https://echarts.apache.org/zh/option.html#title.subtextStyle.verticalAlign</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -133,7 +133,7 @@ public class SubtextStyle implements Serializable {
      */
     private String verticalAlign;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.subtextStyle.lineHeight
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.subtextStyle.lineHeight">https://echarts.apache.org/zh/option.html#title.subtextStyle.lineHeight</a>
      * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -152,7 +152,7 @@ public class SubtextStyle implements Serializable {
      */
     private Integer lineHeight;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.subtextStyle.width
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.subtextStyle.width">https://echarts.apache.org/zh/option.html#title.subtextStyle.width</a>
      * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -161,7 +161,7 @@ public class SubtextStyle implements Serializable {
      */
     private Integer width;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.subtextStyle.height
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.subtextStyle.height">https://echarts.apache.org/zh/option.html#title.subtextStyle.height</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -170,7 +170,7 @@ public class SubtextStyle implements Serializable {
      */
     private Integer height;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.subtextStyle.textBorderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.subtextStyle.textBorderColor">https://echarts.apache.org/zh/option.html#title.subtextStyle.textBorderColor</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -179,7 +179,7 @@ public class SubtextStyle implements Serializable {
      */
     private String textBorderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.subtextStyle.textBorderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.subtextStyle.textBorderWidth">https://echarts.apache.org/zh/option.html#title.subtextStyle.textBorderWidth</a>
      * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -188,7 +188,7 @@ public class SubtextStyle implements Serializable {
      */
     private Integer textBorderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.subtextStyle.textShadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.subtextStyle.textShadowColor">https://echarts.apache.org/zh/option.html#title.subtextStyle.textShadowColor</a>
      * <br/>序号: 13
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -197,7 +197,7 @@ public class SubtextStyle implements Serializable {
      */
     private String textShadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.subtextStyle.textShadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.subtextStyle.textShadowBlur">https://echarts.apache.org/zh/option.html#title.subtextStyle.textShadowBlur</a>
      * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -206,7 +206,7 @@ public class SubtextStyle implements Serializable {
      */
     private Integer textShadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.subtextStyle.textShadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.subtextStyle.textShadowOffsetX">https://echarts.apache.org/zh/option.html#title.subtextStyle.textShadowOffsetX</a>
      * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -215,7 +215,7 @@ public class SubtextStyle implements Serializable {
      */
     private Integer textShadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.subtextStyle.textShadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.subtextStyle.textShadowOffsetY">https://echarts.apache.org/zh/option.html#title.subtextStyle.textShadowOffsetY</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -224,7 +224,7 @@ public class SubtextStyle implements Serializable {
      */
     private Integer textShadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.subtextStyle.overflow
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.subtextStyle.overflow">https://echarts.apache.org/zh/option.html#title.subtextStyle.overflow</a>
      * <br/>序号: 17
      * <br/>默认值: none
      * <br/>js类型: ["string"]
@@ -238,7 +238,7 @@ public class SubtextStyle implements Serializable {
      */
     private String overflow;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.subtextStyle.ellipsis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.subtextStyle.ellipsis">https://echarts.apache.org/zh/option.html#title.subtextStyle.ellipsis</a>
      * <br/>序号: 18
      * <br/>默认值: ...
      * <br/>js类型: ["string"]
@@ -247,7 +247,7 @@ public class SubtextStyle implements Serializable {
      */
     private String ellipsis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.subtextStyle.lineOverflow
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.subtextStyle.lineOverflow">https://echarts.apache.org/zh/option.html#title.subtextStyle.lineOverflow</a>
      * <br/>序号: 19
      * <br/>默认值: none
      * <br/>js类型: ["string"]
@@ -259,7 +259,7 @@ public class SubtextStyle implements Serializable {
      */
     private String lineOverflow;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.subtextStyle.rich
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.subtextStyle.rich">https://echarts.apache.org/zh/option.html#title.subtextStyle.rich</a>
      * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

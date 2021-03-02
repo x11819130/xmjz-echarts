@@ -27,7 +27,7 @@ public class Polar implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#polar.id
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#polar.id">https://echarts.apache.org/zh/option.html#polar.id</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -36,7 +36,7 @@ public class Polar implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#polar.zlevel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#polar.zlevel">https://echarts.apache.org/zh/option.html#polar.zlevel</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -47,7 +47,7 @@ public class Polar implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#polar.z
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#polar.z">https://echarts.apache.org/zh/option.html#polar.z</a>
      * <br/>序号: 3
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -57,7 +57,7 @@ public class Polar implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#polar.center
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#polar.center">https://echarts.apache.org/zh/option.html#polar.center</a>
      * <br/>序号: 4
      * <br/>默认值: ["50%","50%"]
      * <br/>js类型: ["Array"]
@@ -73,7 +73,7 @@ public class Polar implements Serializable {
      */
     private List<Object> center;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#polar.radius
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#polar.radius">https://echarts.apache.org/zh/option.html#polar.radius</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["number","string","Array"]
@@ -89,7 +89,7 @@ public class Polar implements Serializable {
      */
     private Object radius;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#polar.tooltip
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#polar.tooltip">https://echarts.apache.org/zh/option.html#polar.tooltip</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

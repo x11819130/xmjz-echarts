@@ -128,7 +128,7 @@ public class ParallelAxis implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.id
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.id">https://echarts.apache.org/zh/option.html#parallelAxis.id</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -137,7 +137,7 @@ public class ParallelAxis implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.dim
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.dim">https://echarts.apache.org/zh/option.html#parallelAxis.dim</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -162,7 +162,7 @@ public class ParallelAxis implements Serializable {
      */
     private Integer dim;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.parallelIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.parallelIndex">https://echarts.apache.org/zh/option.html#parallelAxis.parallelIndex</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -187,7 +187,7 @@ public class ParallelAxis implements Serializable {
      */
     private Integer parallelIndex;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.realtime
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.realtime">https://echarts.apache.org/zh/option.html#parallelAxis.realtime</a>
      * <br/>序号: 4
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -197,7 +197,7 @@ public class ParallelAxis implements Serializable {
      */
     private Boolean realtime;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle">https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle</a>
      * <br/>序号: 5
      * <br/>默认值: 20
      * <br/>js类型: ["Object"]
@@ -206,7 +206,7 @@ public class ParallelAxis implements Serializable {
      */
     private AreaSelectStyle areaSelectStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.type
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.type">https://echarts.apache.org/zh/option.html#parallelAxis.type</a>
      * <br/>序号: 6
      * <br/>默认值: value
      * <br/>js类型: ["string"]
@@ -230,7 +230,7 @@ public class ParallelAxis implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.name
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.name">https://echarts.apache.org/zh/option.html#parallelAxis.name</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -239,7 +239,7 @@ public class ParallelAxis implements Serializable {
      */
     private String name;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameLocation
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameLocation">https://echarts.apache.org/zh/option.html#parallelAxis.nameLocation</a>
      * <br/>序号: 8
      * <br/>默认值: end
      * <br/>js类型: ["string"]
@@ -254,7 +254,7 @@ public class ParallelAxis implements Serializable {
      */
     private String nameLocation;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle</a>
      * <br/>序号: 9
      * <br/>默认值: normal
      * <br/>js类型: ["Object"]
@@ -263,7 +263,7 @@ public class ParallelAxis implements Serializable {
      */
     private NameTextStyle nameTextStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameGap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameGap">https://echarts.apache.org/zh/option.html#parallelAxis.nameGap</a>
      * <br/>序号: 10
      * <br/>默认值: 15
      * <br/>js类型: ["number"]
@@ -272,7 +272,7 @@ public class ParallelAxis implements Serializable {
      */
     private Integer nameGap;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameRotate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameRotate">https://echarts.apache.org/zh/option.html#parallelAxis.nameRotate</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -281,7 +281,7 @@ public class ParallelAxis implements Serializable {
      */
     private Integer nameRotate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.inverse
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.inverse">https://echarts.apache.org/zh/option.html#parallelAxis.inverse</a>
      * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -290,7 +290,7 @@ public class ParallelAxis implements Serializable {
      */
     private Boolean inverse;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.boundaryGap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.boundaryGap">https://echarts.apache.org/zh/option.html#parallelAxis.boundaryGap</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","Array"]
@@ -304,7 +304,7 @@ public class ParallelAxis implements Serializable {
      */
     private Object boundaryGap;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.min
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.min">https://echarts.apache.org/zh/option.html#parallelAxis.min</a>
      * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["number","string","Function"]
@@ -322,7 +322,7 @@ public class ParallelAxis implements Serializable {
      */
     private Object min;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.max
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.max">https://echarts.apache.org/zh/option.html#parallelAxis.max</a>
      * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["number","string","Function"]
@@ -340,7 +340,7 @@ public class ParallelAxis implements Serializable {
      */
     private Object max;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.scale
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.scale">https://echarts.apache.org/zh/option.html#parallelAxis.scale</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -351,7 +351,7 @@ public class ParallelAxis implements Serializable {
      */
     private Boolean scale;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.splitNumber
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.splitNumber">https://echarts.apache.org/zh/option.html#parallelAxis.splitNumber</a>
      * <br/>序号: 17
      * <br/>默认值: 5
      * <br/>js类型: ["number"]
@@ -361,7 +361,7 @@ public class ParallelAxis implements Serializable {
      */
     private Integer splitNumber;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.minInterval
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.minInterval">https://echarts.apache.org/zh/option.html#parallelAxis.minInterval</a>
      * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -376,7 +376,7 @@ public class ParallelAxis implements Serializable {
      */
     private Integer minInterval;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.maxInterval
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.maxInterval">https://echarts.apache.org/zh/option.html#parallelAxis.maxInterval</a>
      * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -391,7 +391,7 @@ public class ParallelAxis implements Serializable {
      */
     private Integer maxInterval;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.interval
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.interval">https://echarts.apache.org/zh/option.html#parallelAxis.interval</a>
      * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -402,7 +402,7 @@ public class ParallelAxis implements Serializable {
      */
     private Integer interval;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.logBase
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.logBase">https://echarts.apache.org/zh/option.html#parallelAxis.logBase</a>
      * <br/>序号: 21
      * <br/>默认值: 10
      * <br/>js类型: ["number"]
@@ -411,7 +411,7 @@ public class ParallelAxis implements Serializable {
      */
     private Integer logBase;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.silent
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.silent">https://echarts.apache.org/zh/option.html#parallelAxis.silent</a>
      * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -420,7 +420,7 @@ public class ParallelAxis implements Serializable {
      */
     private Boolean silent;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.triggerEvent
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.triggerEvent">https://echarts.apache.org/zh/option.html#parallelAxis.triggerEvent</a>
      * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -440,7 +440,7 @@ public class ParallelAxis implements Serializable {
      */
     private Boolean triggerEvent;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.axisLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.axisLine">https://echarts.apache.org/zh/option.html#parallelAxis.axisLine</a>
      * <br/>序号: 24
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -449,7 +449,7 @@ public class ParallelAxis implements Serializable {
      */
     private AxisLine axisLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.axisTick
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.axisTick">https://echarts.apache.org/zh/option.html#parallelAxis.axisTick</a>
      * <br/>序号: 25
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -458,7 +458,7 @@ public class ParallelAxis implements Serializable {
      */
     private AxisTick axisTick;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.minorTick
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.minorTick">https://echarts.apache.org/zh/option.html#parallelAxis.minorTick</a>
      * <br/>序号: 26
      * <br/>默认值: 5
      * <br/>js类型: ["Object"]
@@ -478,7 +478,7 @@ public class ParallelAxis implements Serializable {
      */
     private MinorTick minorTick;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.axisLabel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.axisLabel">https://echarts.apache.org/zh/option.html#parallelAxis.axisLabel</a>
      * <br/>序号: 27
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -487,7 +487,7 @@ public class ParallelAxis implements Serializable {
      */
     private AxisLabel axisLabel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.data
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.data">https://echarts.apache.org/zh/option.html#parallelAxis.data</a>
      * <br/>序号: 28
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]

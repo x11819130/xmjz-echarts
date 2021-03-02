@@ -24,7 +24,7 @@ public class Query implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#media.query.minWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#media.query.minWidth">https://echarts.apache.org/zh/option.html#media.query.minWidth</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -33,7 +33,7 @@ public class Query implements Serializable {
      */
     private Integer minWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#media.query.maxHeight
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#media.query.maxHeight">https://echarts.apache.org/zh/option.html#media.query.maxHeight</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -42,7 +42,7 @@ public class Query implements Serializable {
      */
     private Integer maxHeight;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#media.query.minAspectRatio
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#media.query.minAspectRatio">https://echarts.apache.org/zh/option.html#media.query.minAspectRatio</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["number"]

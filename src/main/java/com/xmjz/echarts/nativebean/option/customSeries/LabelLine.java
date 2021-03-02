@@ -24,7 +24,7 @@ public class LabelLine implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.labelLine.show
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.labelLine.show">https://echarts.apache.org/zh/option.html#series-custom.labelLine.show</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -33,7 +33,7 @@ public class LabelLine implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.labelLine.showAbove
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.labelLine.showAbove">https://echarts.apache.org/zh/option.html#series-custom.labelLine.showAbove</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -42,7 +42,7 @@ public class LabelLine implements Serializable {
      */
     private Boolean showAbove;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.labelLine.length2
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.labelLine.length2">https://echarts.apache.org/zh/option.html#series-custom.labelLine.length2</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -51,7 +51,7 @@ public class LabelLine implements Serializable {
      */
     private Integer length2;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.labelLine.smooth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.labelLine.smooth">https://echarts.apache.org/zh/option.html#series-custom.labelLine.smooth</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","number"]
@@ -60,7 +60,7 @@ public class LabelLine implements Serializable {
      */
     private Object smooth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.labelLine.minTurnAngle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.labelLine.minTurnAngle">https://echarts.apache.org/zh/option.html#series-custom.labelLine.minTurnAngle</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -70,7 +70,7 @@ public class LabelLine implements Serializable {
      */
     private Integer minTurnAngle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-custom.labelLine.lineStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.labelLine.lineStyle">https://echarts.apache.org/zh/option.html#series-custom.labelLine.lineStyle</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

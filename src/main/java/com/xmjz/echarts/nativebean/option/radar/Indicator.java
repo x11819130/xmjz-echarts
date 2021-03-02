@@ -33,7 +33,7 @@ public class Indicator implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.indicator.name
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.indicator.name">https://echarts.apache.org/zh/option.html#radar.indicator.name</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -42,7 +42,7 @@ public class Indicator implements Serializable {
      */
     private String name;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.indicator.max
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.indicator.max">https://echarts.apache.org/zh/option.html#radar.indicator.max</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -51,7 +51,7 @@ public class Indicator implements Serializable {
      */
     private Integer max;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.indicator.min
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.indicator.min">https://echarts.apache.org/zh/option.html#radar.indicator.min</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -60,7 +60,7 @@ public class Indicator implements Serializable {
      */
     private Integer min;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.indicator.color
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.indicator.color">https://echarts.apache.org/zh/option.html#radar.indicator.color</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["string"]

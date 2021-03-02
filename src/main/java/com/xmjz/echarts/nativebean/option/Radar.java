@@ -29,7 +29,7 @@ public class Radar implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.id
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.id">https://echarts.apache.org/zh/option.html#radar.id</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -38,7 +38,7 @@ public class Radar implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.zlevel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.zlevel">https://echarts.apache.org/zh/option.html#radar.zlevel</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -49,7 +49,7 @@ public class Radar implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.z
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.z">https://echarts.apache.org/zh/option.html#radar.z</a>
      * <br/>序号: 3
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -59,7 +59,7 @@ public class Radar implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.center
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.center">https://echarts.apache.org/zh/option.html#radar.center</a>
      * <br/>序号: 4
      * <br/>默认值: ["50%","50%"]
      * <br/>js类型: ["Array"]
@@ -75,7 +75,7 @@ public class Radar implements Serializable {
      */
     private List<Object> center;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.radius
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.radius">https://echarts.apache.org/zh/option.html#radar.radius</a>
      * <br/>序号: 5
      * <br/>默认值: 75%
      * <br/>js类型: ["number","string","Array"]
@@ -91,7 +91,7 @@ public class Radar implements Serializable {
      */
     private Object radius;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.startAngle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.startAngle">https://echarts.apache.org/zh/option.html#radar.startAngle</a>
      * <br/>序号: 6
      * <br/>默认值: 90
      * <br/>js类型: ["number"]
@@ -100,7 +100,7 @@ public class Radar implements Serializable {
      */
     private Integer startAngle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name">https://echarts.apache.org/zh/option.html#radar.name</a>
      * <br/>序号: 7
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -109,7 +109,7 @@ public class Radar implements Serializable {
      */
     private Name name;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.nameGap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.nameGap">https://echarts.apache.org/zh/option.html#radar.nameGap</a>
      * <br/>序号: 8
      * <br/>默认值: 15
      * <br/>js类型: ["number"]
@@ -118,7 +118,7 @@ public class Radar implements Serializable {
      */
     private Integer nameGap;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.splitNumber
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.splitNumber">https://echarts.apache.org/zh/option.html#radar.splitNumber</a>
      * <br/>序号: 9
      * <br/>默认值: 5
      * <br/>js类型: ["number"]
@@ -127,7 +127,7 @@ public class Radar implements Serializable {
      */
     private Integer splitNumber;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.shape
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.shape">https://echarts.apache.org/zh/option.html#radar.shape</a>
      * <br/>序号: 10
      * <br/>默认值: polygon
      * <br/>js类型: ["string"]
@@ -136,7 +136,7 @@ public class Radar implements Serializable {
      */
     private String shape;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.scale
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.scale">https://echarts.apache.org/zh/option.html#radar.scale</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -145,7 +145,7 @@ public class Radar implements Serializable {
      */
     private Boolean scale;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.silent
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.silent">https://echarts.apache.org/zh/option.html#radar.silent</a>
      * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -154,7 +154,7 @@ public class Radar implements Serializable {
      */
     private Boolean silent;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.triggerEvent
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.triggerEvent">https://echarts.apache.org/zh/option.html#radar.triggerEvent</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -174,7 +174,7 @@ public class Radar implements Serializable {
      */
     private Boolean triggerEvent;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.axisLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisLine">https://echarts.apache.org/zh/option.html#radar.axisLine</a>
      * <br/>序号: 14
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -183,7 +183,7 @@ public class Radar implements Serializable {
      */
     private AxisLine axisLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.axisTick
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisTick">https://echarts.apache.org/zh/option.html#radar.axisTick</a>
      * <br/>序号: 15
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -192,7 +192,7 @@ public class Radar implements Serializable {
      */
     private AxisTick axisTick;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.axisLabel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisLabel">https://echarts.apache.org/zh/option.html#radar.axisLabel</a>
      * <br/>序号: 16
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -201,7 +201,7 @@ public class Radar implements Serializable {
      */
     private AxisLabel axisLabel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.splitLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.splitLine">https://echarts.apache.org/zh/option.html#radar.splitLine</a>
      * <br/>序号: 17
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -210,7 +210,7 @@ public class Radar implements Serializable {
      */
     private SplitLine splitLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.splitArea
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.splitArea">https://echarts.apache.org/zh/option.html#radar.splitArea</a>
      * <br/>序号: 18
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -219,7 +219,7 @@ public class Radar implements Serializable {
      */
     private SplitArea splitArea;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.indicator
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.indicator">https://echarts.apache.org/zh/option.html#radar.indicator</a>
      * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]

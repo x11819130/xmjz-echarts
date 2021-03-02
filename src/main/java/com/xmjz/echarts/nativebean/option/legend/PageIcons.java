@@ -26,7 +26,7 @@ public class PageIcons implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.pageIcons.horizontal
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageIcons.horizontal">https://echarts.apache.org/zh/option.html#legend.pageIcons.horizontal</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -46,7 +46,7 @@ public class PageIcons implements Serializable {
      */
     private List<Object> horizontal;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.pageIcons.vertical
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageIcons.vertical">https://echarts.apache.org/zh/option.html#legend.pageIcons.vertical</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]

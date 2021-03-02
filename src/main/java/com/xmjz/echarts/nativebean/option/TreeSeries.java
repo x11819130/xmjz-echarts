@@ -34,7 +34,7 @@ public class TreeSeries extends Series implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.type
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.type">https://echarts.apache.org/zh/option.html#series-tree.type</a>
      * <br/>序号: 1
      * <br/>默认值: tree
      * <br/>js类型: ["string"]
@@ -42,7 +42,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.id
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.id">https://echarts.apache.org/zh/option.html#series-tree.id</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -51,7 +51,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.name
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.name">https://echarts.apache.org/zh/option.html#series-tree.name</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -60,7 +60,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private String name;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.zlevel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.zlevel">https://echarts.apache.org/zh/option.html#series-tree.zlevel</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -71,7 +71,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.z
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.z">https://echarts.apache.org/zh/option.html#series-tree.z</a>
      * <br/>序号: 5
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -81,7 +81,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.left
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.left">https://echarts.apache.org/zh/option.html#series-tree.left</a>
      * <br/>序号: 6
      * <br/>默认值: 12%
      * <br/>js类型: ["string","number"]
@@ -92,7 +92,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private Object left;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.top
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.top">https://echarts.apache.org/zh/option.html#series-tree.top</a>
      * <br/>序号: 7
      * <br/>默认值: 12%
      * <br/>js类型: ["string","number"]
@@ -103,7 +103,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private Object top;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.right
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.right">https://echarts.apache.org/zh/option.html#series-tree.right</a>
      * <br/>序号: 8
      * <br/>默认值: 12%
      * <br/>js类型: ["string","number"]
@@ -113,7 +113,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private Object right;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.bottom
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.bottom">https://echarts.apache.org/zh/option.html#series-tree.bottom</a>
      * <br/>序号: 9
      * <br/>默认值: 12%
      * <br/>js类型: ["string","number"]
@@ -123,7 +123,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private Object bottom;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.width
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.width">https://echarts.apache.org/zh/option.html#series-tree.width</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["string","number"]
@@ -132,7 +132,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private Object width;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.height
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.height">https://echarts.apache.org/zh/option.html#series-tree.height</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["string","number"]
@@ -141,7 +141,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private Object height;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.layout
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.layout">https://echarts.apache.org/zh/option.html#series-tree.layout</a>
      * <br/>序号: 12
      * <br/>默认值: orthogonal
      * <br/>js类型: ["string"]
@@ -157,7 +157,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private String layout;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.orient
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.orient">https://echarts.apache.org/zh/option.html#series-tree.orient</a>
      * <br/>序号: 13
      * <br/>默认值: LR
      * <br/>js类型: ["string"]
@@ -166,7 +166,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private String orient;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.symbol
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.symbol">https://echarts.apache.org/zh/option.html#series-tree.symbol</a>
      * <br/>序号: 14
      * <br/>默认值: emptyCircle
      * <br/>js类型: ["string","Function"]
@@ -189,7 +189,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private Object symbol;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.symbolSize
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.symbolSize">https://echarts.apache.org/zh/option.html#series-tree.symbolSize</a>
      * <br/>序号: 15
      * <br/>默认值: 7
      * <br/>js类型: ["number","Array","Function"]
@@ -202,7 +202,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private Object symbolSize;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.symbolRotate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.symbolRotate">https://echarts.apache.org/zh/option.html#series-tree.symbolRotate</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
@@ -218,7 +218,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private Object symbolRotate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.symbolKeepAspect
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.symbolKeepAspect">https://echarts.apache.org/zh/option.html#series-tree.symbolKeepAspect</a>
      * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -227,7 +227,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private Boolean symbolKeepAspect;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.symbolOffset
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.symbolOffset">https://echarts.apache.org/zh/option.html#series-tree.symbolOffset</a>
      * <br/>序号: 18
      * <br/>默认值: [0,0]
      * <br/>js类型: ["Array"]
@@ -237,7 +237,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private List<Object> symbolOffset;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.edgeShape
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.edgeShape">https://echarts.apache.org/zh/option.html#series-tree.edgeShape</a>
      * <br/>序号: 19
      * <br/>默认值: curve
      * <br/>js类型: ["string"]
@@ -250,7 +250,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private String edgeShape;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.edgeForkPosition
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.edgeForkPosition">https://echarts.apache.org/zh/option.html#series-tree.edgeForkPosition</a>
      * <br/>序号: 20
      * <br/>默认值: 50%
      * <br/>js类型: ["string"]
@@ -260,7 +260,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private String edgeForkPosition;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.roam
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.roam">https://echarts.apache.org/zh/option.html#series-tree.roam</a>
      * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","string"]
@@ -269,7 +269,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private Object roam;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.expandAndCollapse
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.expandAndCollapse">https://echarts.apache.org/zh/option.html#series-tree.expandAndCollapse</a>
      * <br/>序号: 22
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -279,7 +279,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private Boolean expandAndCollapse;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.initialTreeDepth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.initialTreeDepth">https://echarts.apache.org/zh/option.html#series-tree.initialTreeDepth</a>
      * <br/>序号: 23
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -288,7 +288,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private Integer initialTreeDepth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.itemStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.itemStyle">https://echarts.apache.org/zh/option.html#series-tree.itemStyle</a>
      * <br/>序号: 24
      * <br/>默认值: 自适应
      * <br/>js类型: ["Object"]
@@ -297,7 +297,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private ItemStyle itemStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.label
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.label">https://echarts.apache.org/zh/option.html#series-tree.label</a>
      * <br/>序号: 25
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -306,7 +306,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private Label label;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.labelLayout
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.labelLayout">https://echarts.apache.org/zh/option.html#series-tree.labelLayout</a>
      * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["Object","Function"]
@@ -359,7 +359,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private LabelLayout labelLayout;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.lineStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.lineStyle">https://echarts.apache.org/zh/option.html#series-tree.lineStyle</a>
      * <br/>序号: 27
      * <br/>默认值: #ccc
      * <br/>js类型: ["Object"]
@@ -368,7 +368,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private LineStyle lineStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.emphasis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.emphasis">https://echarts.apache.org/zh/option.html#series-tree.emphasis</a>
      * <br/>序号: 28
      * <br/>默认值: none
      * <br/>js类型: ["Object"]
@@ -377,7 +377,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private Emphasis emphasis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.blur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.blur">https://echarts.apache.org/zh/option.html#series-tree.blur</a>
      * <br/>序号: 29
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -389,7 +389,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private Blur blur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.select
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.select">https://echarts.apache.org/zh/option.html#series-tree.select</a>
      * <br/>序号: 30
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -401,7 +401,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private Select select;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.selectedMode
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.selectedMode">https://echarts.apache.org/zh/option.html#series-tree.selectedMode</a>
      * <br/>序号: 31
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","string"]
@@ -415,7 +415,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private Object selectedMode;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.leaves
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.leaves">https://echarts.apache.org/zh/option.html#series-tree.leaves</a>
      * <br/>序号: 32
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -424,7 +424,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private Leaves leaves;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.data
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.data">https://echarts.apache.org/zh/option.html#series-tree.data</a>
      * <br/>序号: 33
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -458,7 +458,7 @@ public class TreeSeries extends Series implements Serializable {
      */
     private Object data;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.tooltip
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.tooltip">https://echarts.apache.org/zh/option.html#series-tree.tooltip</a>
      * <br/>序号: 34
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

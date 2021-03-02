@@ -63,7 +63,7 @@ public class PictorialBarSeries extends Series implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.type
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.type">https://echarts.apache.org/zh/option.html#series-pictorialBar.type</a>
      * <br/>序号: 1
      * <br/>默认值: pictorialBar
      * <br/>js类型: ["string"]
@@ -71,7 +71,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.id
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.id">https://echarts.apache.org/zh/option.html#series-pictorialBar.id</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -80,7 +80,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.name
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.name">https://echarts.apache.org/zh/option.html#series-pictorialBar.name</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -89,7 +89,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private String name;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.legendHoverLink
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.legendHoverLink">https://echarts.apache.org/zh/option.html#series-pictorialBar.legendHoverLink</a>
      * <br/>序号: 4
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -98,7 +98,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Boolean legendHoverLink;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.coordinateSystem
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.coordinateSystem">https://echarts.apache.org/zh/option.html#series-pictorialBar.coordinateSystem</a>
      * <br/>序号: 5
      * <br/>默认值: cartesian2d
      * <br/>js类型: ["string"]
@@ -112,7 +112,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private String coordinateSystem;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.xAxisIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.xAxisIndex">https://echarts.apache.org/zh/option.html#series-pictorialBar.xAxisIndex</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -126,7 +126,7 @@ public class PictorialBarSeries extends Series implements Serializable {
     }
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.yAxisIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.yAxisIndex">https://echarts.apache.org/zh/option.html#series-pictorialBar.yAxisIndex</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -140,7 +140,7 @@ public class PictorialBarSeries extends Series implements Serializable {
     }
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.cursor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.cursor">https://echarts.apache.org/zh/option.html#series-pictorialBar.cursor</a>
      * <br/>序号: 8
      * <br/>默认值: pointer
      * <br/>js类型: ["string"]
@@ -149,7 +149,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private String cursor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.label
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.label">https://echarts.apache.org/zh/option.html#series-pictorialBar.label</a>
      * <br/>序号: 9
      * <br/>默认值: inside
      * <br/>js类型: ["Object"]
@@ -158,7 +158,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Label label;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.labelLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.labelLine">https://echarts.apache.org/zh/option.html#series-pictorialBar.labelLine</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -167,7 +167,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private LabelLine labelLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.labelLayout
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.labelLayout">https://echarts.apache.org/zh/option.html#series-pictorialBar.labelLayout</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["Object","Function"]
@@ -220,7 +220,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private LabelLayout labelLayout;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.itemStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.itemStyle">https://echarts.apache.org/zh/option.html#series-pictorialBar.itemStyle</a>
      * <br/>序号: 12
      * <br/>默认值: 自适应
      * <br/>js类型: ["Object"]
@@ -229,7 +229,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private ItemStyle itemStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.emphasis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.emphasis">https://echarts.apache.org/zh/option.html#series-pictorialBar.emphasis</a>
      * <br/>序号: 13
      * <br/>默认值: none
      * <br/>js类型: ["Object"]
@@ -238,7 +238,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Emphasis emphasis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.blur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.blur">https://echarts.apache.org/zh/option.html#series-pictorialBar.blur</a>
      * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -250,7 +250,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Blur blur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.select
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.select">https://echarts.apache.org/zh/option.html#series-pictorialBar.select</a>
      * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -262,7 +262,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Object select;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.selectedMode
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.selectedMode">https://echarts.apache.org/zh/option.html#series-pictorialBar.selectedMode</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","string"]
@@ -276,7 +276,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private SelectedMode selectedMode;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.barWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.barWidth">https://echarts.apache.org/zh/option.html#series-pictorialBar.barWidth</a>
      * <br/>序号: 17
      * <br/>默认值: 自适应
      * <br/>js类型: ["number","string"]
@@ -291,7 +291,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Object barWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.barMaxWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.barMaxWidth">https://echarts.apache.org/zh/option.html#series-pictorialBar.barMaxWidth</a>
      * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["number","string"]
@@ -303,7 +303,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Object barMaxWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.barMinWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.barMinWidth">https://echarts.apache.org/zh/option.html#series-pictorialBar.barMinWidth</a>
      * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["number","string"]
@@ -315,7 +315,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Object barMinWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.barMinHeight
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.barMinHeight">https://echarts.apache.org/zh/option.html#series-pictorialBar.barMinHeight</a>
      * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -324,7 +324,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Integer barMinHeight;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.barMinAngle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.barMinAngle">https://echarts.apache.org/zh/option.html#series-pictorialBar.barMinAngle</a>
      * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -334,7 +334,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Integer barMinAngle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.barGap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.barGap">https://echarts.apache.org/zh/option.html#series-pictorialBar.barGap</a>
      * <br/>序号: 22
      * <br/>默认值: -100%
      * <br/>js类型: ["string"]
@@ -347,7 +347,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private String barGap;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.barCategoryGap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.barCategoryGap">https://echarts.apache.org/zh/option.html#series-pictorialBar.barCategoryGap</a>
      * <br/>序号: 23
      * <br/>默认值: 20%
      * <br/>js类型: ["string"]
@@ -357,7 +357,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private String barCategoryGap;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.symbol
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.symbol">https://echarts.apache.org/zh/option.html#series-pictorialBar.symbol</a>
      * <br/>序号: 24
      * <br/>默认值: circle
      * <br/>js类型: ["string"]
@@ -399,7 +399,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private String symbol;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolSize
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolSize">https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolSize</a>
      * <br/>序号: 25
      * <br/>默认值: ["100%","100%"]
      * <br/>js类型: ["number","Array"]
@@ -444,7 +444,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Object symbolSize;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolPosition
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolPosition">https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolPosition</a>
      * <br/>序号: 26
      * <br/>默认值: start
      * <br/>js类型: ["string"]
@@ -481,7 +481,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private String symbolPosition;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolOffset
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolOffset">https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolOffset</a>
      * <br/>序号: 27
      * <br/>默认值: [0,0]
      * <br/>js类型: ["Array"]
@@ -516,7 +516,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private List<Object> symbolOffset;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolRotate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolRotate">https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolRotate</a>
      * <br/>序号: 28
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -543,7 +543,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Integer symbolRotate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolRepeat
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolRepeat">https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolRepeat</a>
      * <br/>序号: 29
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","number","string"]
@@ -581,7 +581,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Object symbolRepeat;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolRepeatDirection
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolRepeatDirection">https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolRepeatDirection</a>
      * <br/>序号: 30
      * <br/>默认值: start
      * <br/>js类型: ["string"]
@@ -620,7 +620,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private String symbolRepeatDirection;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolMargin
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolMargin">https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolMargin</a>
      * <br/>序号: 31
      * <br/>默认值: 无
      * <br/>js类型: ["number","string"]
@@ -661,7 +661,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Object symbolMargin;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolClip
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolClip">https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolClip</a>
      * <br/>序号: 32
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -701,7 +701,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Boolean symbolClip;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolBoundingData
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolBoundingData">https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolBoundingData</a>
      * <br/>序号: 33
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -764,7 +764,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Object symbolBoundingData;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolPatternSize
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolPatternSize">https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolPatternSize</a>
      * <br/>序号: 34
      * <br/>默认值: 400
      * <br/>js类型: ["number"]
@@ -809,7 +809,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Integer symbolPatternSize;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.hoverAnimation
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.hoverAnimation">https://echarts.apache.org/zh/option.html#series-pictorialBar.hoverAnimation</a>
      * <br/>序号: 35
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -835,7 +835,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private HoverAnimation hoverAnimation;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.dimensions
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.dimensions">https://echarts.apache.org/zh/option.html#series-pictorialBar.dimensions</a>
      * <br/>序号: 36
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -893,7 +893,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private List<Object> dimensions;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.encode
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.encode">https://echarts.apache.org/zh/option.html#series-pictorialBar.encode</a>
      * <br/>序号: 37
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -1011,7 +1011,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Object encode;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.data
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.data">https://echarts.apache.org/zh/option.html#series-pictorialBar.data</a>
      * <br/>序号: 38
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -1134,7 +1134,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private List<Object> data;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.markPoint
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.markPoint">https://echarts.apache.org/zh/option.html#series-pictorialBar.markPoint</a>
      * <br/>序号: 39
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -1143,7 +1143,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Object markPoint;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.markLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.markLine">https://echarts.apache.org/zh/option.html#series-pictorialBar.markLine</a>
      * <br/>序号: 40
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -1152,7 +1152,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Object markLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.markArea
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.markArea">https://echarts.apache.org/zh/option.html#series-pictorialBar.markArea</a>
      * <br/>序号: 41
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -1161,7 +1161,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Object markArea;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.zlevel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.zlevel">https://echarts.apache.org/zh/option.html#series-pictorialBar.zlevel</a>
      * <br/>序号: 42
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -1172,7 +1172,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.z
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.z">https://echarts.apache.org/zh/option.html#series-pictorialBar.z</a>
      * <br/>序号: 43
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -1182,7 +1182,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.silent
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.silent">https://echarts.apache.org/zh/option.html#series-pictorialBar.silent</a>
      * <br/>序号: 44
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -1191,7 +1191,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Boolean silent;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.animation
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.animation">https://echarts.apache.org/zh/option.html#series-pictorialBar.animation</a>
      * <br/>序号: 45
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -1200,7 +1200,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Boolean animation;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.animationThreshold
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.animationThreshold">https://echarts.apache.org/zh/option.html#series-pictorialBar.animationThreshold</a>
      * <br/>序号: 46
      * <br/>默认值: 2000
      * <br/>js类型: ["number"]
@@ -1209,7 +1209,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Integer animationThreshold;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.animationDuration
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.animationDuration">https://echarts.apache.org/zh/option.html#series-pictorialBar.animationDuration</a>
      * <br/>序号: 47
      * <br/>默认值: 1000
      * <br/>js类型: ["number","Function"]
@@ -1223,7 +1223,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Object animationDuration;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.animationEasing
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.animationEasing">https://echarts.apache.org/zh/option.html#series-pictorialBar.animationEasing</a>
      * <br/>序号: 48
      * <br/>默认值: cubicOut
      * <br/>js类型: ["string"]
@@ -1232,7 +1232,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private String animationEasing;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.animationDurationUpdate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.animationDurationUpdate">https://echarts.apache.org/zh/option.html#series-pictorialBar.animationDurationUpdate</a>
      * <br/>序号: 49
      * <br/>默认值: 300
      * <br/>js类型: ["number","Function"]
@@ -1247,7 +1247,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Object animationDurationUpdate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.animationEasingUpdate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.animationEasingUpdate">https://echarts.apache.org/zh/option.html#series-pictorialBar.animationEasingUpdate</a>
      * <br/>序号: 50
      * <br/>默认值: cubicInOut
      * <br/>js类型: ["string"]
@@ -1256,7 +1256,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private AnimationEasingUpdate animationEasingUpdate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pictorialBar.tooltip
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.tooltip">https://echarts.apache.org/zh/option.html#series-pictorialBar.tooltip</a>
      * <br/>序号: 51
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

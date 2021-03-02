@@ -24,7 +24,7 @@ public class Transform implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#dataset.transform-filter
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#dataset.transform-filter">https://echarts.apache.org/zh/option.html#dataset.transform-filter</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -32,7 +32,7 @@ public class Transform implements Serializable {
      */
     private Object transform_filter;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#dataset.transform-sort
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#dataset.transform-sort">https://echarts.apache.org/zh/option.html#dataset.transform-sort</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -40,7 +40,7 @@ public class Transform implements Serializable {
      */
     private Object transform_sort;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#dataset.transform-xxx:xxx
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#dataset.transform-xxx:xxx">https://echarts.apache.org/zh/option.html#dataset.transform-xxx:xxx</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

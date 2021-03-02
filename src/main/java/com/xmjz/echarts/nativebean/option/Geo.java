@@ -40,7 +40,7 @@ public class Geo implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.id
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.id">https://echarts.apache.org/zh/option.html#geo.id</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -49,7 +49,7 @@ public class Geo implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.show
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.show">https://echarts.apache.org/zh/option.html#geo.show</a>
      * <br/>序号: 2
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -58,7 +58,7 @@ public class Geo implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.map
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.map">https://echarts.apache.org/zh/option.html#geo.map</a>
      * <br/>序号: 3
      * <br/>默认值:
      * <br/>js类型: ["string"]
@@ -96,7 +96,7 @@ public class Geo implements Serializable {
      */
     private String map;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.roam
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.roam">https://echarts.apache.org/zh/option.html#geo.roam</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","string"]
@@ -105,7 +105,7 @@ public class Geo implements Serializable {
      */
     private Object roam;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.center
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.center">https://echarts.apache.org/zh/option.html#geo.center</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -117,7 +117,7 @@ public class Geo implements Serializable {
      */
     private List<Object> center;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.aspectScale
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.aspectScale">https://echarts.apache.org/zh/option.html#geo.aspectScale</a>
      * <br/>序号: 6
      * <br/>默认值: 0.75
      * <br/>js类型: ["number"]
@@ -127,7 +127,7 @@ public class Geo implements Serializable {
      */
     private Integer aspectScale;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.boundingCoords
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.boundingCoords">https://echarts.apache.org/zh/option.html#geo.boundingCoords</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -146,7 +146,7 @@ public class Geo implements Serializable {
      */
     private List<Object> boundingCoords;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.zoom
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.zoom">https://echarts.apache.org/zh/option.html#geo.zoom</a>
      * <br/>序号: 8
      * <br/>默认值: 1
      * <br/>js类型: ["number"]
@@ -155,7 +155,7 @@ public class Geo implements Serializable {
      */
     private Integer zoom;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.scaleLimit
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.scaleLimit">https://echarts.apache.org/zh/option.html#geo.scaleLimit</a>
      * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -164,7 +164,7 @@ public class Geo implements Serializable {
      */
     private ScaleLimit scaleLimit;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.nameMap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.nameMap">https://echarts.apache.org/zh/option.html#geo.nameMap</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -177,7 +177,7 @@ public class Geo implements Serializable {
      */
     private Object nameMap;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.nameProperty
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.nameProperty">https://echarts.apache.org/zh/option.html#geo.nameProperty</a>
      * <br/>序号: 11
      * <br/>默认值: name
      * <br/>js类型: ["string"]
@@ -198,7 +198,7 @@ public class Geo implements Serializable {
      */
     private String nameProperty;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.selectedMode
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.selectedMode">https://echarts.apache.org/zh/option.html#geo.selectedMode</a>
      * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","string"]
@@ -207,7 +207,7 @@ public class Geo implements Serializable {
      */
     private Object selectedMode;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.label
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.label">https://echarts.apache.org/zh/option.html#geo.label</a>
      * <br/>序号: 13
      * <br/>默认值: 5
      * <br/>js类型: ["Object"]
@@ -216,7 +216,7 @@ public class Geo implements Serializable {
      */
     private Label label;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.itemStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.itemStyle">https://echarts.apache.org/zh/option.html#geo.itemStyle</a>
      * <br/>序号: 14
      * <br/>默认值: #eee
      * <br/>js类型: ["Object"]
@@ -225,7 +225,7 @@ public class Geo implements Serializable {
      */
     private ItemStyle itemStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.emphasis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.emphasis">https://echarts.apache.org/zh/option.html#geo.emphasis</a>
      * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -234,7 +234,7 @@ public class Geo implements Serializable {
      */
     private Emphasis emphasis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.select
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.select">https://echarts.apache.org/zh/option.html#geo.select</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -243,7 +243,7 @@ public class Geo implements Serializable {
      */
     private Select select;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.zlevel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.zlevel">https://echarts.apache.org/zh/option.html#geo.zlevel</a>
      * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -254,7 +254,7 @@ public class Geo implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.z
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.z">https://echarts.apache.org/zh/option.html#geo.z</a>
      * <br/>序号: 18
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -264,7 +264,7 @@ public class Geo implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.left
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.left">https://echarts.apache.org/zh/option.html#geo.left</a>
      * <br/>序号: 19
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -275,7 +275,7 @@ public class Geo implements Serializable {
      */
     private Object left;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.top
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.top">https://echarts.apache.org/zh/option.html#geo.top</a>
      * <br/>序号: 20
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -286,7 +286,7 @@ public class Geo implements Serializable {
      */
     private Object top;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.right
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.right">https://echarts.apache.org/zh/option.html#geo.right</a>
      * <br/>序号: 21
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -297,7 +297,7 @@ public class Geo implements Serializable {
      */
     private Object right;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.bottom
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.bottom">https://echarts.apache.org/zh/option.html#geo.bottom</a>
      * <br/>序号: 22
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -308,7 +308,7 @@ public class Geo implements Serializable {
      */
     private Object bottom;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.layoutCenter
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.layoutCenter">https://echarts.apache.org/zh/option.html#geo.layoutCenter</a>
      * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -323,7 +323,7 @@ public class Geo implements Serializable {
      */
     private List<Object> layoutCenter;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.layoutSize
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.layoutSize">https://echarts.apache.org/zh/option.html#geo.layoutSize</a>
      * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["number","string"]
@@ -332,7 +332,7 @@ public class Geo implements Serializable {
      */
     private Object layoutSize;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.regions
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.regions">https://echarts.apache.org/zh/option.html#geo.regions</a>
      * <br/>序号: 25
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -351,7 +351,7 @@ public class Geo implements Serializable {
      */
     private List<Regions> regions;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.silent
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.silent">https://echarts.apache.org/zh/option.html#geo.silent</a>
      * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]

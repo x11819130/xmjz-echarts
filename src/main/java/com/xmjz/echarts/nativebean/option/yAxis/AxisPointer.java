@@ -24,7 +24,7 @@ public class AxisPointer implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#yAxis.axisPointer.show
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.axisPointer.show">https://echarts.apache.org/zh/option.html#yAxis.axisPointer.show</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -33,7 +33,7 @@ public class AxisPointer implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#yAxis.axisPointer.type
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.axisPointer.type">https://echarts.apache.org/zh/option.html#yAxis.axisPointer.type</a>
      * <br/>序号: 2
      * <br/>默认值: line
      * <br/>js类型: ["string"]
@@ -51,7 +51,7 @@ public class AxisPointer implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#yAxis.axisPointer.snap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.axisPointer.snap">https://echarts.apache.org/zh/option.html#yAxis.axisPointer.snap</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -61,7 +61,7 @@ public class AxisPointer implements Serializable {
      */
     private Boolean snap;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#yAxis.axisPointer.z
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.axisPointer.z">https://echarts.apache.org/zh/option.html#yAxis.axisPointer.z</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -70,7 +70,7 @@ public class AxisPointer implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#yAxis.axisPointer.label
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.axisPointer.label">https://echarts.apache.org/zh/option.html#yAxis.axisPointer.label</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -79,7 +79,7 @@ public class AxisPointer implements Serializable {
      */
     private Object label;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#yAxis.axisPointer.lineStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.axisPointer.lineStyle">https://echarts.apache.org/zh/option.html#yAxis.axisPointer.lineStyle</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -88,7 +88,7 @@ public class AxisPointer implements Serializable {
      */
     private Object lineStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#yAxis.axisPointer.shadowStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.axisPointer.shadowStyle">https://echarts.apache.org/zh/option.html#yAxis.axisPointer.shadowStyle</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -97,7 +97,7 @@ public class AxisPointer implements Serializable {
      */
     private Object shadowStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#yAxis.axisPointer.triggerTooltip
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.axisPointer.triggerTooltip">https://echarts.apache.org/zh/option.html#yAxis.axisPointer.triggerTooltip</a>
      * <br/>序号: 8
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -106,7 +106,7 @@ public class AxisPointer implements Serializable {
      */
     private Boolean triggerTooltip;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#yAxis.axisPointer.value
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.axisPointer.value">https://echarts.apache.org/zh/option.html#yAxis.axisPointer.value</a>
      * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -115,7 +115,7 @@ public class AxisPointer implements Serializable {
      */
     private Integer value;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#yAxis.axisPointer.status
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.axisPointer.status">https://echarts.apache.org/zh/option.html#yAxis.axisPointer.status</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -124,7 +124,7 @@ public class AxisPointer implements Serializable {
      */
     private Boolean status;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#yAxis.axisPointer.handle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.axisPointer.handle">https://echarts.apache.org/zh/option.html#yAxis.axisPointer.handle</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

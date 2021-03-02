@@ -24,7 +24,7 @@ public class SplitLine implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.splitLine.show
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.splitLine.show">https://echarts.apache.org/zh/option.html#singleAxis.splitLine.show</a>
      * <br/>序号: 1
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -33,7 +33,7 @@ public class SplitLine implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.splitLine.interval
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.splitLine.interval">https://echarts.apache.org/zh/option.html#singleAxis.splitLine.interval</a>
      * <br/>序号: 2
      * <br/>默认值: auto
      * <br/>js类型: ["number","Function"]
@@ -49,7 +49,7 @@ public class SplitLine implements Serializable {
      */
     private Object interval;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#singleAxis.splitLine.lineStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.splitLine.lineStyle">https://echarts.apache.org/zh/option.html#singleAxis.splitLine.lineStyle</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

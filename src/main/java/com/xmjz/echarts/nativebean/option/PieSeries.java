@@ -35,7 +35,7 @@ public class PieSeries extends Series implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.type
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.type">https://echarts.apache.org/zh/option.html#series-pie.type</a>
      * <br/>序号: 1
      * <br/>默认值: pie
      * <br/>js类型: ["string"]
@@ -43,7 +43,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.id
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.id">https://echarts.apache.org/zh/option.html#series-pie.id</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -52,7 +52,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.name
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.name">https://echarts.apache.org/zh/option.html#series-pie.name</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -61,7 +61,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private String name;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.legendHoverLink
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.legendHoverLink">https://echarts.apache.org/zh/option.html#series-pie.legendHoverLink</a>
      * <br/>序号: 4
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -70,7 +70,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Boolean legendHoverLink;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.selectedMode
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.selectedMode">https://echarts.apache.org/zh/option.html#series-pie.selectedMode</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","string"]
@@ -79,7 +79,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Object selectedMode;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.selectedOffset
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.selectedOffset">https://echarts.apache.org/zh/option.html#series-pie.selectedOffset</a>
      * <br/>序号: 6
      * <br/>默认值: 10
      * <br/>js类型: ["number"]
@@ -88,7 +88,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Integer selectedOffset;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.clockwise
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.clockwise">https://echarts.apache.org/zh/option.html#series-pie.clockwise</a>
      * <br/>序号: 7
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -97,7 +97,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Boolean clockwise;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.startAngle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.startAngle">https://echarts.apache.org/zh/option.html#series-pie.startAngle</a>
      * <br/>序号: 8
      * <br/>默认值: 90
      * <br/>js类型: ["number"]
@@ -106,7 +106,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Integer startAngle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.minAngle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.minAngle">https://echarts.apache.org/zh/option.html#series-pie.minAngle</a>
      * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -115,7 +115,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Integer minAngle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.minShowLabelAngle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.minShowLabelAngle">https://echarts.apache.org/zh/option.html#series-pie.minShowLabelAngle</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -124,7 +124,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Integer minShowLabelAngle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.roseType
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.roseType">https://echarts.apache.org/zh/option.html#series-pie.roseType</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","string"]
@@ -137,7 +137,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Object roseType;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.avoidLabelOverlap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.avoidLabelOverlap">https://echarts.apache.org/zh/option.html#series-pie.avoidLabelOverlap</a>
      * <br/>序号: 12
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -147,7 +147,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Boolean avoidLabelOverlap;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.stillShowZeroSum
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.stillShowZeroSum">https://echarts.apache.org/zh/option.html#series-pie.stillShowZeroSum</a>
      * <br/>序号: 13
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -156,7 +156,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Boolean stillShowZeroSum;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.cursor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.cursor">https://echarts.apache.org/zh/option.html#series-pie.cursor</a>
      * <br/>序号: 14
      * <br/>默认值: pointer
      * <br/>js类型: ["string"]
@@ -165,7 +165,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private String cursor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.zlevel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.zlevel">https://echarts.apache.org/zh/option.html#series-pie.zlevel</a>
      * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -176,7 +176,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.z
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.z">https://echarts.apache.org/zh/option.html#series-pie.z</a>
      * <br/>序号: 16
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -186,7 +186,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.left
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.left">https://echarts.apache.org/zh/option.html#series-pie.left</a>
      * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["string","number"]
@@ -197,7 +197,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Object left;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.top
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.top">https://echarts.apache.org/zh/option.html#series-pie.top</a>
      * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["string","number"]
@@ -208,7 +208,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Object top;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.right
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.right">https://echarts.apache.org/zh/option.html#series-pie.right</a>
      * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["string","number"]
@@ -219,7 +219,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Object right;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.bottom
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.bottom">https://echarts.apache.org/zh/option.html#series-pie.bottom</a>
      * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["string","number"]
@@ -230,7 +230,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Object bottom;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.width
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.width">https://echarts.apache.org/zh/option.html#series-pie.width</a>
      * <br/>序号: 21
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -239,7 +239,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Object width;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.height
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.height">https://echarts.apache.org/zh/option.html#series-pie.height</a>
      * <br/>序号: 22
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -248,7 +248,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Object height;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.label
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.label">https://echarts.apache.org/zh/option.html#series-pie.label</a>
      * <br/>序号: 23
      * <br/>默认值: outside
      * <br/>js类型: ["Object"]
@@ -257,7 +257,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Label label;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.labelLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.labelLine">https://echarts.apache.org/zh/option.html#series-pie.labelLine</a>
      * <br/>序号: 24
      * <br/>默认值: 90
      * <br/>js类型: ["Object"]
@@ -266,7 +266,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private LabelLine labelLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.labelLayout
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.labelLayout">https://echarts.apache.org/zh/option.html#series-pie.labelLayout</a>
      * <br/>序号: 25
      * <br/>默认值: 无
      * <br/>js类型: ["Object","Function"]
@@ -319,7 +319,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private LabelLayout labelLayout;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.itemStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.itemStyle">https://echarts.apache.org/zh/option.html#series-pie.itemStyle</a>
      * <br/>序号: 26
      * <br/>默认值: 自适应
      * <br/>js类型: ["Object"]
@@ -328,7 +328,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private ItemStyle itemStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.emphasis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.emphasis">https://echarts.apache.org/zh/option.html#series-pie.emphasis</a>
      * <br/>序号: 27
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -337,7 +337,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Emphasis emphasis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.blur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.blur">https://echarts.apache.org/zh/option.html#series-pie.blur</a>
      * <br/>序号: 28
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -349,7 +349,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Blur blur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.select
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.select">https://echarts.apache.org/zh/option.html#series-pie.select</a>
      * <br/>序号: 29
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -361,7 +361,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Select select;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.center
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.center">https://echarts.apache.org/zh/option.html#series-pie.center</a>
      * <br/>序号: 30
      * <br/>默认值: ["50%","50%"]
      * <br/>js类型: ["Array"]
@@ -377,7 +377,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private List<Object> center;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.radius
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.radius">https://echarts.apache.org/zh/option.html#series-pie.radius</a>
      * <br/>序号: 31
      * <br/>默认值: [0,"75%"]
      * <br/>js类型: ["number","string","Array"]
@@ -394,7 +394,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Object radius;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.seriesLayoutBy
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.seriesLayoutBy">https://echarts.apache.org/zh/option.html#series-pie.seriesLayoutBy</a>
      * <br/>序号: 32
      * <br/>默认值: column
      * <br/>js类型: ["string"]
@@ -408,7 +408,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private String seriesLayoutBy;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.datasetIndex
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.datasetIndex">https://echarts.apache.org/zh/option.html#series-pie.datasetIndex</a>
      * <br/>序号: 33
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -417,7 +417,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Integer datasetIndex;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.dimensions
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.dimensions">https://echarts.apache.org/zh/option.html#series-pie.dimensions</a>
      * <br/>序号: 34
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -475,7 +475,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private List<Object> dimensions;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.encode
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.encode">https://echarts.apache.org/zh/option.html#series-pie.encode</a>
      * <br/>序号: 35
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -593,7 +593,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Object encode;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.data
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.data">https://echarts.apache.org/zh/option.html#series-pie.data</a>
      * <br/>序号: 36
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -633,7 +633,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private List<Object> data;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.markPoint
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.markPoint">https://echarts.apache.org/zh/option.html#series-pie.markPoint</a>
      * <br/>序号: 37
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -642,7 +642,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Object markPoint;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.markLine
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.markLine">https://echarts.apache.org/zh/option.html#series-pie.markLine</a>
      * <br/>序号: 38
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -651,7 +651,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Object markLine;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.markArea
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.markArea">https://echarts.apache.org/zh/option.html#series-pie.markArea</a>
      * <br/>序号: 39
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -660,7 +660,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Object markArea;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.silent
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.silent">https://echarts.apache.org/zh/option.html#series-pie.silent</a>
      * <br/>序号: 40
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -669,7 +669,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Boolean silent;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.animationType
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.animationType">https://echarts.apache.org/zh/option.html#series-pie.animationType</a>
      * <br/>序号: 41
      * <br/>默认值: expansion
      * <br/>js类型: ["string"]
@@ -682,7 +682,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private String animationType;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.animationTypeUpdate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.animationTypeUpdate">https://echarts.apache.org/zh/option.html#series-pie.animationTypeUpdate</a>
      * <br/>序号: 42
      * <br/>默认值: transition
      * <br/>js类型: ["string"]
@@ -698,7 +698,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private String animationTypeUpdate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.animation
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.animation">https://echarts.apache.org/zh/option.html#series-pie.animation</a>
      * <br/>序号: 43
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -707,7 +707,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Boolean animation;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.animationThreshold
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.animationThreshold">https://echarts.apache.org/zh/option.html#series-pie.animationThreshold</a>
      * <br/>序号: 44
      * <br/>默认值: 2000
      * <br/>js类型: ["number"]
@@ -716,7 +716,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Integer animationThreshold;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.animationDuration
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.animationDuration">https://echarts.apache.org/zh/option.html#series-pie.animationDuration</a>
      * <br/>序号: 45
      * <br/>默认值: 1000
      * <br/>js类型: ["number","Function"]
@@ -730,7 +730,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Object animationDuration;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.animationEasing
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.animationEasing">https://echarts.apache.org/zh/option.html#series-pie.animationEasing</a>
      * <br/>序号: 46
      * <br/>默认值: cubicOut
      * <br/>js类型: ["string"]
@@ -739,7 +739,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private String animationEasing;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.animationDelay
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.animationDelay">https://echarts.apache.org/zh/option.html#series-pie.animationDelay</a>
      * <br/>序号: 47
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
@@ -755,7 +755,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Object animationDelay;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.animationDurationUpdate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.animationDurationUpdate">https://echarts.apache.org/zh/option.html#series-pie.animationDurationUpdate</a>
      * <br/>序号: 48
      * <br/>默认值: 300
      * <br/>js类型: ["number","Function"]
@@ -770,7 +770,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Object animationDurationUpdate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.animationEasingUpdate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.animationEasingUpdate">https://echarts.apache.org/zh/option.html#series-pie.animationEasingUpdate</a>
      * <br/>序号: 49
      * <br/>默认值: cubicInOut
      * <br/>js类型: ["string"]
@@ -779,7 +779,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private String animationEasingUpdate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.animationDelayUpdate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.animationDelayUpdate">https://echarts.apache.org/zh/option.html#series-pie.animationDelayUpdate</a>
      * <br/>序号: 50
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
@@ -795,7 +795,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private Object animationDelayUpdate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-pie.tooltip
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.tooltip">https://echarts.apache.org/zh/option.html#series-pie.tooltip</a>
      * <br/>序号: 51
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

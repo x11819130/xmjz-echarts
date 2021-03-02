@@ -56,7 +56,7 @@ public class Levels implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sankey.levels.depth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.levels.depth">https://echarts.apache.org/zh/option.html#series-sankey.levels.depth</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -65,7 +65,7 @@ public class Levels implements Serializable {
      */
     private Integer depth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sankey.levels.label
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.levels.label">https://echarts.apache.org/zh/option.html#series-sankey.levels.label</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -73,7 +73,7 @@ public class Levels implements Serializable {
      */
     private Object label;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sankey.levels.itemStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.levels.itemStyle">https://echarts.apache.org/zh/option.html#series-sankey.levels.itemStyle</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -81,7 +81,7 @@ public class Levels implements Serializable {
      */
     private Object itemStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sankey.levels.lineStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.levels.lineStyle">https://echarts.apache.org/zh/option.html#series-sankey.levels.lineStyle</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -89,7 +89,7 @@ public class Levels implements Serializable {
      */
     private Object lineStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sankey.levels.emphasis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.levels.emphasis">https://echarts.apache.org/zh/option.html#series-sankey.levels.emphasis</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -97,7 +97,7 @@ public class Levels implements Serializable {
      */
     private Object emphasis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sankey.levels.blur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.levels.blur">https://echarts.apache.org/zh/option.html#series-sankey.levels.blur</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -108,7 +108,7 @@ public class Levels implements Serializable {
      */
     private Object blur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sankey.levels.select
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.levels.select">https://echarts.apache.org/zh/option.html#series-sankey.levels.select</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

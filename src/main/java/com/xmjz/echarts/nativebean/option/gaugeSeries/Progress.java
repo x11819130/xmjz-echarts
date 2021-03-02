@@ -27,7 +27,7 @@ public class Progress implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.progress.show
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.progress.show">https://echarts.apache.org/zh/option.html#series-gauge.progress.show</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -36,7 +36,7 @@ public class Progress implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.progress.overlap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.progress.overlap">https://echarts.apache.org/zh/option.html#series-gauge.progress.overlap</a>
      * <br/>序号: 2
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -45,7 +45,7 @@ public class Progress implements Serializable {
      */
     private Boolean overlap;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.progress.width
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.progress.width">https://echarts.apache.org/zh/option.html#series-gauge.progress.width</a>
      * <br/>序号: 3
      * <br/>默认值: 10
      * <br/>js类型: ["number"]
@@ -54,7 +54,7 @@ public class Progress implements Serializable {
      */
     private Integer width;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.progress.roundCap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.progress.roundCap">https://echarts.apache.org/zh/option.html#series-gauge.progress.roundCap</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -63,7 +63,7 @@ public class Progress implements Serializable {
      */
     private Boolean roundCap;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.progress.clip
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.progress.clip">https://echarts.apache.org/zh/option.html#series-gauge.progress.clip</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -72,7 +72,7 @@ public class Progress implements Serializable {
      */
     private Boolean clip;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.progress.itemStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.progress.itemStyle">https://echarts.apache.org/zh/option.html#series-gauge.progress.itemStyle</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

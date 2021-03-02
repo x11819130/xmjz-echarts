@@ -24,7 +24,7 @@ public class ControlStyle implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.controlStyle.show
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.controlStyle.show">https://echarts.apache.org/zh/option.html#timeline.controlStyle.show</a>
      * <br/>序号: 1
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -33,7 +33,7 @@ public class ControlStyle implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.controlStyle.showPlayBtn
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.controlStyle.showPlayBtn">https://echarts.apache.org/zh/option.html#timeline.controlStyle.showPlayBtn</a>
      * <br/>序号: 2
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -42,7 +42,7 @@ public class ControlStyle implements Serializable {
      */
     private Boolean showPlayBtn;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.controlStyle.showPrevBtn
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.controlStyle.showPrevBtn">https://echarts.apache.org/zh/option.html#timeline.controlStyle.showPrevBtn</a>
      * <br/>序号: 3
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -51,7 +51,7 @@ public class ControlStyle implements Serializable {
      */
     private Boolean showPrevBtn;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.controlStyle.showNextBtn
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.controlStyle.showNextBtn">https://echarts.apache.org/zh/option.html#timeline.controlStyle.showNextBtn</a>
      * <br/>序号: 4
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -60,7 +60,7 @@ public class ControlStyle implements Serializable {
      */
     private Boolean showNextBtn;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.controlStyle.itemSize
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.controlStyle.itemSize">https://echarts.apache.org/zh/option.html#timeline.controlStyle.itemSize</a>
      * <br/>序号: 5
      * <br/>默认值: 24
      * <br/>js类型: ["number"]
@@ -69,7 +69,7 @@ public class ControlStyle implements Serializable {
      */
     private Integer itemSize;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.controlStyle.itemGap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.controlStyle.itemGap">https://echarts.apache.org/zh/option.html#timeline.controlStyle.itemGap</a>
      * <br/>序号: 6
      * <br/>默认值: 12
      * <br/>js类型: ["number"]
@@ -78,7 +78,7 @@ public class ControlStyle implements Serializable {
      */
     private Integer itemGap;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.controlStyle.position
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.controlStyle.position">https://echarts.apache.org/zh/option.html#timeline.controlStyle.position</a>
      * <br/>序号: 7
      * <br/>默认值: left
      * <br/>js类型: ["string"]
@@ -93,7 +93,7 @@ public class ControlStyle implements Serializable {
      */
     private String position;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.controlStyle.playIcon
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.controlStyle.playIcon">https://echarts.apache.org/zh/option.html#timeline.controlStyle.playIcon</a>
      * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -111,7 +111,7 @@ public class ControlStyle implements Serializable {
      */
     private String playIcon;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.controlStyle.stopIcon
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.controlStyle.stopIcon">https://echarts.apache.org/zh/option.html#timeline.controlStyle.stopIcon</a>
      * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -129,7 +129,7 @@ public class ControlStyle implements Serializable {
      */
     private String stopIcon;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.controlStyle.prevIcon
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.controlStyle.prevIcon">https://echarts.apache.org/zh/option.html#timeline.controlStyle.prevIcon</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -147,7 +147,7 @@ public class ControlStyle implements Serializable {
      */
     private String prevIcon;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.controlStyle.nextIcon
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.controlStyle.nextIcon">https://echarts.apache.org/zh/option.html#timeline.controlStyle.nextIcon</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -165,7 +165,7 @@ public class ControlStyle implements Serializable {
      */
     private String nextIcon;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.controlStyle.color
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.controlStyle.color">https://echarts.apache.org/zh/option.html#timeline.controlStyle.color</a>
      * <br/>序号: 12
      * <br/>默认值: #A4B1D7
      * <br/>js类型: ["Color"]
@@ -210,7 +210,7 @@ public class ControlStyle implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.controlStyle.borderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.controlStyle.borderColor">https://echarts.apache.org/zh/option.html#timeline.controlStyle.borderColor</a>
      * <br/>序号: 13
      * <br/>默认值: #A4B1D7
      * <br/>js类型: ["Color"]
@@ -219,7 +219,7 @@ public class ControlStyle implements Serializable {
      */
     private String borderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.controlStyle.borderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.controlStyle.borderWidth">https://echarts.apache.org/zh/option.html#timeline.controlStyle.borderWidth</a>
      * <br/>序号: 14
      * <br/>默认值: 1
      * <br/>js类型: ["number"]
@@ -228,7 +228,7 @@ public class ControlStyle implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.controlStyle.borderType
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.controlStyle.borderType">https://echarts.apache.org/zh/option.html#timeline.controlStyle.borderType</a>
      * <br/>序号: 15
      * <br/>默认值: solid
      * <br/>js类型: ["string"]
@@ -237,7 +237,7 @@ public class ControlStyle implements Serializable {
      */
     private String borderType;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.controlStyle.shadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.controlStyle.shadowBlur">https://echarts.apache.org/zh/option.html#timeline.controlStyle.shadowBlur</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -252,7 +252,7 @@ public class ControlStyle implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.controlStyle.shadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.controlStyle.shadowColor">https://echarts.apache.org/zh/option.html#timeline.controlStyle.shadowColor</a>
      * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -261,7 +261,7 @@ public class ControlStyle implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.controlStyle.shadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.controlStyle.shadowOffsetX">https://echarts.apache.org/zh/option.html#timeline.controlStyle.shadowOffsetX</a>
      * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -270,7 +270,7 @@ public class ControlStyle implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.controlStyle.shadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.controlStyle.shadowOffsetY">https://echarts.apache.org/zh/option.html#timeline.controlStyle.shadowOffsetY</a>
      * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -279,7 +279,7 @@ public class ControlStyle implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#timeline.controlStyle.opacity
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.controlStyle.opacity">https://echarts.apache.org/zh/option.html#timeline.controlStyle.opacity</a>
      * <br/>序号: 20
      * <br/>默认值: 1
      * <br/>js类型: ["number"]

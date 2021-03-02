@@ -24,7 +24,7 @@ public class ShadowStyle implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#axisPointer.shadowStyle.color
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.shadowStyle.color">https://echarts.apache.org/zh/option.html#axisPointer.shadowStyle.color</a>
      * <br/>序号: 1
      * <br/>默认值: rgba(150,150,150,0.3)
      * <br/>js类型: ["Color"]
@@ -69,7 +69,7 @@ public class ShadowStyle implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#axisPointer.shadowStyle.shadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.shadowStyle.shadowBlur">https://echarts.apache.org/zh/option.html#axisPointer.shadowStyle.shadowBlur</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -84,7 +84,7 @@ public class ShadowStyle implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#axisPointer.shadowStyle.shadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.shadowStyle.shadowColor">https://echarts.apache.org/zh/option.html#axisPointer.shadowStyle.shadowColor</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -93,7 +93,7 @@ public class ShadowStyle implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#axisPointer.shadowStyle.shadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.shadowStyle.shadowOffsetX">https://echarts.apache.org/zh/option.html#axisPointer.shadowStyle.shadowOffsetX</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -102,7 +102,7 @@ public class ShadowStyle implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#axisPointer.shadowStyle.shadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.shadowStyle.shadowOffsetY">https://echarts.apache.org/zh/option.html#axisPointer.shadowStyle.shadowOffsetY</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -111,7 +111,7 @@ public class ShadowStyle implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#axisPointer.shadowStyle.opacity
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.shadowStyle.opacity">https://echarts.apache.org/zh/option.html#axisPointer.shadowStyle.opacity</a>
      * <br/>序号: 6
      * <br/>默认值: 1
      * <br/>js类型: ["number"]

@@ -24,7 +24,7 @@ public class SplitLine implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.splitLine.show
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.splitLine.show">https://echarts.apache.org/zh/option.html#series-gauge.splitLine.show</a>
      * <br/>序号: 1
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -33,7 +33,7 @@ public class SplitLine implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.splitLine.length
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.splitLine.length">https://echarts.apache.org/zh/option.html#series-gauge.splitLine.length</a>
      * <br/>序号: 2
      * <br/>默认值: 10
      * <br/>js类型: ["number","string"]
@@ -42,7 +42,7 @@ public class SplitLine implements Serializable {
      */
     private Object length;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.splitLine.distance
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.splitLine.distance">https://echarts.apache.org/zh/option.html#series-gauge.splitLine.distance</a>
      * <br/>序号: 3
      * <br/>默认值: 10
      * <br/>js类型: ["number"]
@@ -56,7 +56,7 @@ public class SplitLine implements Serializable {
      */
     private Integer distance;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-gauge.splitLine.lineStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.splitLine.lineStyle">https://echarts.apache.org/zh/option.html#series-gauge.splitLine.lineStyle</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

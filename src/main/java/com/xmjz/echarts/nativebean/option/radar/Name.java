@@ -24,7 +24,7 @@ public class Name implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name.show
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.show">https://echarts.apache.org/zh/option.html#radar.name.show</a>
      * <br/>序号: 1
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -33,7 +33,7 @@ public class Name implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name.formatter
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.formatter">https://echarts.apache.org/zh/option.html#radar.name.formatter</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string","Function"]
@@ -49,7 +49,7 @@ public class Name implements Serializable {
      */
     private Object formatter;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name.color
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.color">https://echarts.apache.org/zh/option.html#radar.name.color</a>
      * <br/>序号: 3
      * <br/>默认值: #333
      * <br/>js类型: ["Color"]
@@ -58,7 +58,7 @@ public class Name implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name.fontStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.fontStyle">https://echarts.apache.org/zh/option.html#radar.name.fontStyle</a>
      * <br/>序号: 4
      * <br/>默认值: normal
      * <br/>js类型: ["string"]
@@ -73,7 +73,7 @@ public class Name implements Serializable {
      */
     private String fontStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name.fontWeight
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.fontWeight">https://echarts.apache.org/zh/option.html#radar.name.fontWeight</a>
      * <br/>序号: 5
      * <br/>默认值: normal
      * <br/>js类型: ["string","number"]
@@ -90,7 +90,7 @@ public class Name implements Serializable {
      */
     private Object fontWeight;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name.fontFamily
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.fontFamily">https://echarts.apache.org/zh/option.html#radar.name.fontFamily</a>
      * <br/>序号: 6
      * <br/>默认值: sans-serif
      * <br/>js类型: ["string"]
@@ -100,7 +100,7 @@ public class Name implements Serializable {
      */
     private String fontFamily;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name.fontSize
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.fontSize">https://echarts.apache.org/zh/option.html#radar.name.fontSize</a>
      * <br/>序号: 7
      * <br/>默认值: 12
      * <br/>js类型: ["number"]
@@ -109,7 +109,7 @@ public class Name implements Serializable {
      */
     private Integer fontSize;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name.lineHeight
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.lineHeight">https://echarts.apache.org/zh/option.html#radar.name.lineHeight</a>
      * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -128,7 +128,7 @@ public class Name implements Serializable {
      */
     private Integer lineHeight;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name.backgroundColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.backgroundColor">https://echarts.apache.org/zh/option.html#radar.name.backgroundColor</a>
      * <br/>序号: 9
      * <br/>默认值: transparent
      * <br/>js类型: ["string","Object"]
@@ -148,7 +148,7 @@ public class Name implements Serializable {
      */
     private Object backgroundColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name.borderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.borderColor">https://echarts.apache.org/zh/option.html#radar.name.borderColor</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -157,7 +157,7 @@ public class Name implements Serializable {
      */
     private String borderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name.borderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.borderWidth">https://echarts.apache.org/zh/option.html#radar.name.borderWidth</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -166,7 +166,7 @@ public class Name implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name.borderRadius
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.borderRadius">https://echarts.apache.org/zh/option.html#radar.name.borderRadius</a>
      * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -175,7 +175,7 @@ public class Name implements Serializable {
      */
     private Object borderRadius;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name.padding
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.padding">https://echarts.apache.org/zh/option.html#radar.name.padding</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -190,7 +190,7 @@ public class Name implements Serializable {
      */
     private Object padding;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name.shadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.shadowColor">https://echarts.apache.org/zh/option.html#radar.name.shadowColor</a>
      * <br/>序号: 14
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -199,7 +199,7 @@ public class Name implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name.shadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.shadowBlur">https://echarts.apache.org/zh/option.html#radar.name.shadowBlur</a>
      * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -208,7 +208,7 @@ public class Name implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name.shadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.shadowOffsetX">https://echarts.apache.org/zh/option.html#radar.name.shadowOffsetX</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -217,7 +217,7 @@ public class Name implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name.shadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.shadowOffsetY">https://echarts.apache.org/zh/option.html#radar.name.shadowOffsetY</a>
      * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -226,7 +226,7 @@ public class Name implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name.width
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.width">https://echarts.apache.org/zh/option.html#radar.name.width</a>
      * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -235,7 +235,7 @@ public class Name implements Serializable {
      */
     private Integer width;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name.height
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.height">https://echarts.apache.org/zh/option.html#radar.name.height</a>
      * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -244,7 +244,7 @@ public class Name implements Serializable {
      */
     private Integer height;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name.textBorderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.textBorderColor">https://echarts.apache.org/zh/option.html#radar.name.textBorderColor</a>
      * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -253,7 +253,7 @@ public class Name implements Serializable {
      */
     private String textBorderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name.textBorderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.textBorderWidth">https://echarts.apache.org/zh/option.html#radar.name.textBorderWidth</a>
      * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -262,7 +262,7 @@ public class Name implements Serializable {
      */
     private Integer textBorderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name.textShadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.textShadowColor">https://echarts.apache.org/zh/option.html#radar.name.textShadowColor</a>
      * <br/>序号: 22
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -271,7 +271,7 @@ public class Name implements Serializable {
      */
     private String textShadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name.textShadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.textShadowBlur">https://echarts.apache.org/zh/option.html#radar.name.textShadowBlur</a>
      * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -280,7 +280,7 @@ public class Name implements Serializable {
      */
     private Integer textShadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name.textShadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.textShadowOffsetX">https://echarts.apache.org/zh/option.html#radar.name.textShadowOffsetX</a>
      * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -289,7 +289,7 @@ public class Name implements Serializable {
      */
     private Integer textShadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name.textShadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.textShadowOffsetY">https://echarts.apache.org/zh/option.html#radar.name.textShadowOffsetY</a>
      * <br/>序号: 25
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -298,7 +298,7 @@ public class Name implements Serializable {
      */
     private Integer textShadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name.overflow
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.overflow">https://echarts.apache.org/zh/option.html#radar.name.overflow</a>
      * <br/>序号: 26
      * <br/>默认值: none
      * <br/>js类型: ["string"]
@@ -312,7 +312,7 @@ public class Name implements Serializable {
      */
     private String overflow;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name.ellipsis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.ellipsis">https://echarts.apache.org/zh/option.html#radar.name.ellipsis</a>
      * <br/>序号: 27
      * <br/>默认值: ...
      * <br/>js类型: ["string"]
@@ -321,7 +321,7 @@ public class Name implements Serializable {
      */
     private String ellipsis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name.lineOverflow
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.lineOverflow">https://echarts.apache.org/zh/option.html#radar.name.lineOverflow</a>
      * <br/>序号: 28
      * <br/>默认值: none
      * <br/>js类型: ["string"]
@@ -333,7 +333,7 @@ public class Name implements Serializable {
      */
     private String lineOverflow;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#radar.name.rich
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.rich">https://echarts.apache.org/zh/option.html#radar.name.rich</a>
      * <br/>序号: 29
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

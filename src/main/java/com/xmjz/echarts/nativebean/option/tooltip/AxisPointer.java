@@ -84,7 +84,7 @@ public class AxisPointer implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.axisPointer.type
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.axisPointer.type">https://echarts.apache.org/zh/option.html#tooltip.axisPointer.type</a>
      * <br/>序号: 1
      * <br/>默认值: line
      * <br/>js类型: ["string"]
@@ -104,7 +104,7 @@ public class AxisPointer implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.axisPointer.axis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.axisPointer.axis">https://echarts.apache.org/zh/option.html#tooltip.axisPointer.axis</a>
      * <br/>序号: 2
      * <br/>默认值: auto
      * <br/>js类型: ["string"]
@@ -115,7 +115,7 @@ public class AxisPointer implements Serializable {
      */
     private String axis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.axisPointer.snap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.axisPointer.snap">https://echarts.apache.org/zh/option.html#tooltip.axisPointer.snap</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -125,7 +125,7 @@ public class AxisPointer implements Serializable {
      */
     private Boolean snap;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.axisPointer.z
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.axisPointer.z">https://echarts.apache.org/zh/option.html#tooltip.axisPointer.z</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -134,7 +134,7 @@ public class AxisPointer implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.axisPointer.label
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.axisPointer.label">https://echarts.apache.org/zh/option.html#tooltip.axisPointer.label</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -143,7 +143,7 @@ public class AxisPointer implements Serializable {
      */
     private Object label;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.axisPointer.lineStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.axisPointer.lineStyle">https://echarts.apache.org/zh/option.html#tooltip.axisPointer.lineStyle</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -152,7 +152,7 @@ public class AxisPointer implements Serializable {
      */
     private Object lineStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.axisPointer.shadowStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.axisPointer.shadowStyle">https://echarts.apache.org/zh/option.html#tooltip.axisPointer.shadowStyle</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -161,7 +161,7 @@ public class AxisPointer implements Serializable {
      */
     private Object shadowStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.axisPointer.crossStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.axisPointer.crossStyle">https://echarts.apache.org/zh/option.html#tooltip.axisPointer.crossStyle</a>
      * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -170,7 +170,7 @@ public class AxisPointer implements Serializable {
      */
     private Object crossStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.axisPointer.animation
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.axisPointer.animation">https://echarts.apache.org/zh/option.html#tooltip.axisPointer.animation</a>
      * <br/>序号: 9
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -179,7 +179,7 @@ public class AxisPointer implements Serializable {
      */
     private Boolean animation;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.axisPointer.animationThreshold
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.axisPointer.animationThreshold">https://echarts.apache.org/zh/option.html#tooltip.axisPointer.animationThreshold</a>
      * <br/>序号: 10
      * <br/>默认值: 2000
      * <br/>js类型: ["number"]
@@ -188,7 +188,7 @@ public class AxisPointer implements Serializable {
      */
     private Integer animationThreshold;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.axisPointer.animationDuration
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.axisPointer.animationDuration">https://echarts.apache.org/zh/option.html#tooltip.axisPointer.animationDuration</a>
      * <br/>序号: 11
      * <br/>默认值: 1000
      * <br/>js类型: ["number","Function"]
@@ -202,7 +202,7 @@ public class AxisPointer implements Serializable {
      */
     private Object animationDuration;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.axisPointer.animationEasing
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.axisPointer.animationEasing">https://echarts.apache.org/zh/option.html#tooltip.axisPointer.animationEasing</a>
      * <br/>序号: 12
      * <br/>默认值: cubicOut
      * <br/>js类型: ["string"]
@@ -211,7 +211,7 @@ public class AxisPointer implements Serializable {
      */
     private String animationEasing;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.axisPointer.animationDelay
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.axisPointer.animationDelay">https://echarts.apache.org/zh/option.html#tooltip.axisPointer.animationDelay</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
@@ -227,7 +227,7 @@ public class AxisPointer implements Serializable {
      */
     private Object animationDelay;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.axisPointer.animationDurationUpdate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.axisPointer.animationDurationUpdate">https://echarts.apache.org/zh/option.html#tooltip.axisPointer.animationDurationUpdate</a>
      * <br/>序号: 14
      * <br/>默认值: 200
      * <br/>js类型: ["number","Function"]
@@ -242,7 +242,7 @@ public class AxisPointer implements Serializable {
      */
     private Object animationDurationUpdate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.axisPointer.animationEasingUpdate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.axisPointer.animationEasingUpdate">https://echarts.apache.org/zh/option.html#tooltip.axisPointer.animationEasingUpdate</a>
      * <br/>序号: 15
      * <br/>默认值: exponentialOut
      * <br/>js类型: ["string"]
@@ -251,7 +251,7 @@ public class AxisPointer implements Serializable {
      */
     private String animationEasingUpdate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#tooltip.axisPointer.animationDelayUpdate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.axisPointer.animationDelayUpdate">https://echarts.apache.org/zh/option.html#tooltip.axisPointer.animationDelayUpdate</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]

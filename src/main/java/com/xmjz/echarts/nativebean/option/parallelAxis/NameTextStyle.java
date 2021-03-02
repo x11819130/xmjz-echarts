@@ -24,7 +24,7 @@ public class NameTextStyle implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.color
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.color">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.color</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -33,7 +33,7 @@ public class NameTextStyle implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.fontStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.fontStyle">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.fontStyle</a>
      * <br/>序号: 2
      * <br/>默认值: normal
      * <br/>js类型: ["string"]
@@ -48,7 +48,7 @@ public class NameTextStyle implements Serializable {
      */
     private String fontStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.fontWeight
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.fontWeight">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.fontWeight</a>
      * <br/>序号: 3
      * <br/>默认值: normal
      * <br/>js类型: ["string","number"]
@@ -65,7 +65,7 @@ public class NameTextStyle implements Serializable {
      */
     private Object fontWeight;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.fontFamily
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.fontFamily">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.fontFamily</a>
      * <br/>序号: 4
      * <br/>默认值: sans-serif
      * <br/>js类型: ["string"]
@@ -75,7 +75,7 @@ public class NameTextStyle implements Serializable {
      */
     private String fontFamily;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.fontSize
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.fontSize">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.fontSize</a>
      * <br/>序号: 5
      * <br/>默认值: 12
      * <br/>js类型: ["number"]
@@ -84,7 +84,7 @@ public class NameTextStyle implements Serializable {
      */
     private Integer fontSize;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.align
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.align">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.align</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -109,7 +109,7 @@ public class NameTextStyle implements Serializable {
      */
     private String align;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.verticalAlign
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.verticalAlign">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.verticalAlign</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -134,7 +134,7 @@ public class NameTextStyle implements Serializable {
      */
     private String verticalAlign;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.lineHeight
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.lineHeight">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.lineHeight</a>
      * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -153,7 +153,7 @@ public class NameTextStyle implements Serializable {
      */
     private Integer lineHeight;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.backgroundColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.backgroundColor">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.backgroundColor</a>
      * <br/>序号: 9
      * <br/>默认值: transparent
      * <br/>js类型: ["string","Object"]
@@ -173,7 +173,7 @@ public class NameTextStyle implements Serializable {
      */
     private Object backgroundColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.borderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.borderColor">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.borderColor</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -182,7 +182,7 @@ public class NameTextStyle implements Serializable {
      */
     private String borderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.borderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.borderWidth">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.borderWidth</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -191,7 +191,7 @@ public class NameTextStyle implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.borderRadius
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.borderRadius">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.borderRadius</a>
      * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -200,7 +200,7 @@ public class NameTextStyle implements Serializable {
      */
     private Object borderRadius;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.padding
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.padding">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.padding</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -215,7 +215,7 @@ public class NameTextStyle implements Serializable {
      */
     private Object padding;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.shadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.shadowColor">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.shadowColor</a>
      * <br/>序号: 14
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -224,7 +224,7 @@ public class NameTextStyle implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.shadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.shadowBlur">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.shadowBlur</a>
      * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -233,7 +233,7 @@ public class NameTextStyle implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.shadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.shadowOffsetX">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.shadowOffsetX</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -242,7 +242,7 @@ public class NameTextStyle implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.shadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.shadowOffsetY">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.shadowOffsetY</a>
      * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -251,7 +251,7 @@ public class NameTextStyle implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.width
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.width">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.width</a>
      * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -260,7 +260,7 @@ public class NameTextStyle implements Serializable {
      */
     private Integer width;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.height
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.height">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.height</a>
      * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -269,7 +269,7 @@ public class NameTextStyle implements Serializable {
      */
     private Integer height;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.textBorderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.textBorderColor">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.textBorderColor</a>
      * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -278,7 +278,7 @@ public class NameTextStyle implements Serializable {
      */
     private String textBorderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.textBorderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.textBorderWidth">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.textBorderWidth</a>
      * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -287,7 +287,7 @@ public class NameTextStyle implements Serializable {
      */
     private Integer textBorderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.textShadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.textShadowColor">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.textShadowColor</a>
      * <br/>序号: 22
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -296,7 +296,7 @@ public class NameTextStyle implements Serializable {
      */
     private String textShadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.textShadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.textShadowBlur">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.textShadowBlur</a>
      * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -305,7 +305,7 @@ public class NameTextStyle implements Serializable {
      */
     private Integer textShadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.textShadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.textShadowOffsetX">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.textShadowOffsetX</a>
      * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -314,7 +314,7 @@ public class NameTextStyle implements Serializable {
      */
     private Integer textShadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.textShadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.textShadowOffsetY">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.textShadowOffsetY</a>
      * <br/>序号: 25
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -323,7 +323,7 @@ public class NameTextStyle implements Serializable {
      */
     private Integer textShadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.overflow
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.overflow">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.overflow</a>
      * <br/>序号: 26
      * <br/>默认值: none
      * <br/>js类型: ["string"]
@@ -337,7 +337,7 @@ public class NameTextStyle implements Serializable {
      */
     private String overflow;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.ellipsis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.ellipsis">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.ellipsis</a>
      * <br/>序号: 27
      * <br/>默认值: ...
      * <br/>js类型: ["string"]
@@ -346,7 +346,7 @@ public class NameTextStyle implements Serializable {
      */
     private String ellipsis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.lineOverflow
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.lineOverflow">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.lineOverflow</a>
      * <br/>序号: 28
      * <br/>默认值: none
      * <br/>js类型: ["string"]
@@ -358,7 +358,7 @@ public class NameTextStyle implements Serializable {
      */
     private String lineOverflow;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.rich
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.rich">https://echarts.apache.org/zh/option.html#parallelAxis.nameTextStyle.rich</a>
      * <br/>序号: 29
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

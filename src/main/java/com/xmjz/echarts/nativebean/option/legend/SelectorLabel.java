@@ -28,7 +28,7 @@ public class SelectorLabel implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.show
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.show">https://echarts.apache.org/zh/option.html#legend.selectorLabel.show</a>
      * <br/>序号: 1
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -37,7 +37,7 @@ public class SelectorLabel implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.distance
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.distance">https://echarts.apache.org/zh/option.html#legend.selectorLabel.distance</a>
      * <br/>序号: 2
      * <br/>默认值: 5
      * <br/>js类型: ["number"]
@@ -46,7 +46,7 @@ public class SelectorLabel implements Serializable {
      */
     private Integer distance;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.rotate
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.rotate">https://echarts.apache.org/zh/option.html#legend.selectorLabel.rotate</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -56,7 +56,7 @@ public class SelectorLabel implements Serializable {
      */
     private Integer rotate;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.offset
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.offset">https://echarts.apache.org/zh/option.html#legend.selectorLabel.offset</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -65,7 +65,7 @@ public class SelectorLabel implements Serializable {
      */
     private List<Object> offset;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.color
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.color">https://echarts.apache.org/zh/option.html#legend.selectorLabel.color</a>
      * <br/>序号: 5
      * <br/>默认值: #fff
      * <br/>js类型: ["Color"]
@@ -75,7 +75,7 @@ public class SelectorLabel implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.fontStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.fontStyle">https://echarts.apache.org/zh/option.html#legend.selectorLabel.fontStyle</a>
      * <br/>序号: 6
      * <br/>默认值: normal
      * <br/>js类型: ["string"]
@@ -90,7 +90,7 @@ public class SelectorLabel implements Serializable {
      */
     private String fontStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.fontWeight
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.fontWeight">https://echarts.apache.org/zh/option.html#legend.selectorLabel.fontWeight</a>
      * <br/>序号: 7
      * <br/>默认值: normal
      * <br/>js类型: ["string","number"]
@@ -107,7 +107,7 @@ public class SelectorLabel implements Serializable {
      */
     private Object fontWeight;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.fontFamily
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.fontFamily">https://echarts.apache.org/zh/option.html#legend.selectorLabel.fontFamily</a>
      * <br/>序号: 8
      * <br/>默认值: sans-serif
      * <br/>js类型: ["string"]
@@ -117,7 +117,7 @@ public class SelectorLabel implements Serializable {
      */
     private String fontFamily;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.fontSize
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.fontSize">https://echarts.apache.org/zh/option.html#legend.selectorLabel.fontSize</a>
      * <br/>序号: 9
      * <br/>默认值: 12
      * <br/>js类型: ["number"]
@@ -126,7 +126,7 @@ public class SelectorLabel implements Serializable {
      */
     private Integer fontSize;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.align
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.align">https://echarts.apache.org/zh/option.html#legend.selectorLabel.align</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -151,7 +151,7 @@ public class SelectorLabel implements Serializable {
      */
     private String align;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.verticalAlign
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.verticalAlign">https://echarts.apache.org/zh/option.html#legend.selectorLabel.verticalAlign</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -176,7 +176,7 @@ public class SelectorLabel implements Serializable {
      */
     private String verticalAlign;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.lineHeight
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.lineHeight">https://echarts.apache.org/zh/option.html#legend.selectorLabel.lineHeight</a>
      * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -195,7 +195,7 @@ public class SelectorLabel implements Serializable {
      */
     private Integer lineHeight;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.backgroundColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.backgroundColor">https://echarts.apache.org/zh/option.html#legend.selectorLabel.backgroundColor</a>
      * <br/>序号: 13
      * <br/>默认值: transparent
      * <br/>js类型: ["string","Object"]
@@ -216,7 +216,7 @@ public class SelectorLabel implements Serializable {
      */
     private Object backgroundColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.borderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.borderColor">https://echarts.apache.org/zh/option.html#legend.selectorLabel.borderColor</a>
      * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -226,7 +226,7 @@ public class SelectorLabel implements Serializable {
      */
     private String borderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.borderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.borderWidth">https://echarts.apache.org/zh/option.html#legend.selectorLabel.borderWidth</a>
      * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -235,7 +235,7 @@ public class SelectorLabel implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.borderRadius
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.borderRadius">https://echarts.apache.org/zh/option.html#legend.selectorLabel.borderRadius</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -244,7 +244,7 @@ public class SelectorLabel implements Serializable {
      */
     private Object borderRadius;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.padding
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.padding">https://echarts.apache.org/zh/option.html#legend.selectorLabel.padding</a>
      * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -259,7 +259,7 @@ public class SelectorLabel implements Serializable {
      */
     private Object padding;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.shadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.shadowColor">https://echarts.apache.org/zh/option.html#legend.selectorLabel.shadowColor</a>
      * <br/>序号: 18
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -268,7 +268,7 @@ public class SelectorLabel implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.shadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.shadowBlur">https://echarts.apache.org/zh/option.html#legend.selectorLabel.shadowBlur</a>
      * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -277,7 +277,7 @@ public class SelectorLabel implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.shadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.shadowOffsetX">https://echarts.apache.org/zh/option.html#legend.selectorLabel.shadowOffsetX</a>
      * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -286,7 +286,7 @@ public class SelectorLabel implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.shadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.shadowOffsetY">https://echarts.apache.org/zh/option.html#legend.selectorLabel.shadowOffsetY</a>
      * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -295,7 +295,7 @@ public class SelectorLabel implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.width
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.width">https://echarts.apache.org/zh/option.html#legend.selectorLabel.width</a>
      * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -304,7 +304,7 @@ public class SelectorLabel implements Serializable {
      */
     private Integer width;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.height
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.height">https://echarts.apache.org/zh/option.html#legend.selectorLabel.height</a>
      * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -313,7 +313,7 @@ public class SelectorLabel implements Serializable {
      */
     private Integer height;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.textBorderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.textBorderColor">https://echarts.apache.org/zh/option.html#legend.selectorLabel.textBorderColor</a>
      * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -323,7 +323,7 @@ public class SelectorLabel implements Serializable {
      */
     private String textBorderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.textBorderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.textBorderWidth">https://echarts.apache.org/zh/option.html#legend.selectorLabel.textBorderWidth</a>
      * <br/>序号: 25
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -332,7 +332,7 @@ public class SelectorLabel implements Serializable {
      */
     private Integer textBorderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.textShadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.textShadowColor">https://echarts.apache.org/zh/option.html#legend.selectorLabel.textShadowColor</a>
      * <br/>序号: 26
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -341,7 +341,7 @@ public class SelectorLabel implements Serializable {
      */
     private String textShadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.textShadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.textShadowBlur">https://echarts.apache.org/zh/option.html#legend.selectorLabel.textShadowBlur</a>
      * <br/>序号: 27
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -350,7 +350,7 @@ public class SelectorLabel implements Serializable {
      */
     private Integer textShadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.textShadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.textShadowOffsetX">https://echarts.apache.org/zh/option.html#legend.selectorLabel.textShadowOffsetX</a>
      * <br/>序号: 28
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -359,7 +359,7 @@ public class SelectorLabel implements Serializable {
      */
     private Integer textShadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.textShadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.textShadowOffsetY">https://echarts.apache.org/zh/option.html#legend.selectorLabel.textShadowOffsetY</a>
      * <br/>序号: 29
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -368,7 +368,7 @@ public class SelectorLabel implements Serializable {
      */
     private Integer textShadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.overflow
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.overflow">https://echarts.apache.org/zh/option.html#legend.selectorLabel.overflow</a>
      * <br/>序号: 30
      * <br/>默认值: none
      * <br/>js类型: ["string"]
@@ -382,7 +382,7 @@ public class SelectorLabel implements Serializable {
      */
     private String overflow;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.ellipsis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.ellipsis">https://echarts.apache.org/zh/option.html#legend.selectorLabel.ellipsis</a>
      * <br/>序号: 31
      * <br/>默认值: ...
      * <br/>js类型: ["string"]
@@ -391,7 +391,7 @@ public class SelectorLabel implements Serializable {
      */
     private String ellipsis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.lineOverflow
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.lineOverflow">https://echarts.apache.org/zh/option.html#legend.selectorLabel.lineOverflow</a>
      * <br/>序号: 32
      * <br/>默认值: none
      * <br/>js类型: ["string"]
@@ -403,7 +403,7 @@ public class SelectorLabel implements Serializable {
      */
     private String lineOverflow;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#legend.selectorLabel.rich
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.selectorLabel.rich">https://echarts.apache.org/zh/option.html#legend.selectorLabel.rich</a>
      * <br/>序号: 33
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

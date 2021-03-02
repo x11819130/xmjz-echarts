@@ -37,7 +37,7 @@ public class ItemStyle implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.color
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.color">https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.color</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -46,7 +46,7 @@ public class ItemStyle implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.colorAlpha
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.colorAlpha">https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.colorAlpha</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -55,7 +55,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer colorAlpha;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.colorSaturation
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.colorSaturation">https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.colorSaturation</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -64,7 +64,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer colorSaturation;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.borderRadius
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.borderRadius">https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.borderRadius</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -73,7 +73,7 @@ public class ItemStyle implements Serializable {
      */
     private Object borderRadius;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.borderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.borderWidth">https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.borderWidth</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -82,7 +82,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.gapWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.gapWidth">https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.gapWidth</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -92,7 +92,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer gapWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.borderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.borderColor">https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.borderColor</a>
      * <br/>序号: 7
      * <br/>默认值: #fff,
      * <br/>js类型: ["Color"]
@@ -101,7 +101,7 @@ public class ItemStyle implements Serializable {
      */
     private String borderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.borderColorSaturation
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.borderColorSaturation">https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.borderColorSaturation</a>
      * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -115,7 +115,7 @@ public class ItemStyle implements Serializable {
      */
     private String borderColorSaturation;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.shadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.shadowBlur">https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.shadowBlur</a>
      * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -130,7 +130,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.shadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.shadowColor">https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.shadowColor</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -139,7 +139,7 @@ public class ItemStyle implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.shadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.shadowOffsetX">https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.shadowOffsetX</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -148,7 +148,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.shadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.shadowOffsetY">https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.shadowOffsetY</a>
      * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -157,7 +157,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.opacity
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.opacity">https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.opacity</a>
      * <br/>序号: 13
      * <br/>默认值: 1
      * <br/>js类型: ["number"]
@@ -166,7 +166,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer opacity;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.decal(Object%20|%20'none')
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.decal(Object%20|%20'none')">https://echarts.apache.org/zh/option.html#series-treemap.itemStyle.decal(Object%20|%20'none')</a>
      * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["any"]

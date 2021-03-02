@@ -34,7 +34,7 @@ public class Regions implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.regions.name
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.regions.name">https://echarts.apache.org/zh/option.html#geo.regions.name</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -43,7 +43,7 @@ public class Regions implements Serializable {
      */
     private String name;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.regions.selected
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.regions.selected">https://echarts.apache.org/zh/option.html#geo.regions.selected</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -52,7 +52,7 @@ public class Regions implements Serializable {
      */
     private Boolean selected;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.regions.itemStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.regions.itemStyle">https://echarts.apache.org/zh/option.html#geo.regions.itemStyle</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -61,7 +61,7 @@ public class Regions implements Serializable {
      */
     private Object itemStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.regions.label
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.regions.label">https://echarts.apache.org/zh/option.html#geo.regions.label</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -70,7 +70,7 @@ public class Regions implements Serializable {
      */
     private Object label;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.regions.emphasis
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.regions.emphasis">https://echarts.apache.org/zh/option.html#geo.regions.emphasis</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -79,7 +79,7 @@ public class Regions implements Serializable {
      */
     private Object emphasis;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#geo.regions.select
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.regions.select">https://echarts.apache.org/zh/option.html#geo.regions.select</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

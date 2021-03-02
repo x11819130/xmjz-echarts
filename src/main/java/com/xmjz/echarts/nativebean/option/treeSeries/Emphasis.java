@@ -24,7 +24,7 @@ public class Emphasis implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.emphasis.focus
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.emphasis.focus">https://echarts.apache.org/zh/option.html#series-tree.emphasis.focus</a>
      * <br/>序号: 1
      * <br/>默认值: none
      * <br/>js类型: ["string"]
@@ -53,7 +53,7 @@ public class Emphasis implements Serializable {
      */
     private String focus;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.emphasis.blurScope
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.emphasis.blurScope">https://echarts.apache.org/zh/option.html#series-tree.emphasis.blurScope</a>
      * <br/>序号: 2
      * <br/>默认值: coordinateSystem
      * <br/>js类型: ["string"]
@@ -70,7 +70,7 @@ public class Emphasis implements Serializable {
      */
     private String blurScope;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.emphasis.itemStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.emphasis.itemStyle">https://echarts.apache.org/zh/option.html#series-tree.emphasis.itemStyle</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -79,7 +79,7 @@ public class Emphasis implements Serializable {
      */
     private Object itemStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.emphasis.lineStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.emphasis.lineStyle">https://echarts.apache.org/zh/option.html#series-tree.emphasis.lineStyle</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -88,7 +88,7 @@ public class Emphasis implements Serializable {
      */
     private Object lineStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-tree.emphasis.label
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.emphasis.label">https://echarts.apache.org/zh/option.html#series-tree.emphasis.label</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

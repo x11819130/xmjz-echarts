@@ -49,7 +49,7 @@ public class Feature implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#toolbox.feature.saveAsImage
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.feature.saveAsImage">https://echarts.apache.org/zh/option.html#toolbox.feature.saveAsImage</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -58,7 +58,7 @@ public class Feature implements Serializable {
      */
     private Object saveAsImage;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#toolbox.feature.restore
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.feature.restore">https://echarts.apache.org/zh/option.html#toolbox.feature.restore</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -67,7 +67,7 @@ public class Feature implements Serializable {
      */
     private Object restore;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#toolbox.feature.dataView
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.feature.dataView">https://echarts.apache.org/zh/option.html#toolbox.feature.dataView</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -76,7 +76,7 @@ public class Feature implements Serializable {
      */
     private Object dataView;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#toolbox.feature.dataZoom
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.feature.dataZoom">https://echarts.apache.org/zh/option.html#toolbox.feature.dataZoom</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -85,7 +85,7 @@ public class Feature implements Serializable {
      */
     private Object dataZoom;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#toolbox.feature.magicType
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.feature.magicType">https://echarts.apache.org/zh/option.html#toolbox.feature.magicType</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -101,7 +101,7 @@ public class Feature implements Serializable {
      */
     private Object magicType;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#toolbox.feature.brush
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.feature.brush">https://echarts.apache.org/zh/option.html#toolbox.feature.brush</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

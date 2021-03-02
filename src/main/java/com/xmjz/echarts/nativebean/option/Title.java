@@ -29,7 +29,7 @@ public class Title implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.id
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.id">https://echarts.apache.org/zh/option.html#title.id</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -38,7 +38,7 @@ public class Title implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.show
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.show">https://echarts.apache.org/zh/option.html#title.show</a>
      * <br/>序号: 2
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -47,7 +47,7 @@ public class Title implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.text
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.text">https://echarts.apache.org/zh/option.html#title.text</a>
      * <br/>序号: 3
      * <br/>默认值:
      * <br/>js类型: ["string"]
@@ -56,7 +56,7 @@ public class Title implements Serializable {
      */
     private String text;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.link
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.link">https://echarts.apache.org/zh/option.html#title.link</a>
      * <br/>序号: 4
      * <br/>默认值:
      * <br/>js类型: ["string"]
@@ -65,7 +65,7 @@ public class Title implements Serializable {
      */
     private String link;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.target
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.target">https://echarts.apache.org/zh/option.html#title.target</a>
      * <br/>序号: 5
      * <br/>默认值: blank
      * <br/>js类型: ["string"]
@@ -81,7 +81,7 @@ public class Title implements Serializable {
      */
     private String target;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.textStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.textStyle">https://echarts.apache.org/zh/option.html#title.textStyle</a>
      * <br/>序号: 6
      * <br/>默认值: #333
      * <br/>js类型: ["Object"]
@@ -89,7 +89,7 @@ public class Title implements Serializable {
      */
     private TextStyle textStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.subtext
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.subtext">https://echarts.apache.org/zh/option.html#title.subtext</a>
      * <br/>序号: 7
      * <br/>默认值:
      * <br/>js类型: ["string"]
@@ -98,7 +98,7 @@ public class Title implements Serializable {
      */
     private String subtext;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.sublink
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.sublink">https://echarts.apache.org/zh/option.html#title.sublink</a>
      * <br/>序号: 8
      * <br/>默认值:
      * <br/>js类型: ["string"]
@@ -107,7 +107,7 @@ public class Title implements Serializable {
      */
     private String sublink;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.subtarget
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.subtarget">https://echarts.apache.org/zh/option.html#title.subtarget</a>
      * <br/>序号: 9
      * <br/>默认值: blank
      * <br/>js类型: ["string"]
@@ -122,7 +122,7 @@ public class Title implements Serializable {
      */
     private String subtarget;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.subtextStyle
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.subtextStyle">https://echarts.apache.org/zh/option.html#title.subtextStyle</a>
      * <br/>序号: 10
      * <br/>默认值: #aaa
      * <br/>js类型: ["Object"]
@@ -130,7 +130,7 @@ public class Title implements Serializable {
      */
     private SubtextStyle subtextStyle;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.textAlign
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.textAlign">https://echarts.apache.org/zh/option.html#title.textAlign</a>
      * <br/>序号: 11
      * <br/>默认值: auto
      * <br/>js类型: ["string"]
@@ -140,7 +140,7 @@ public class Title implements Serializable {
      */
     private String textAlign;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.textVerticalAlign
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.textVerticalAlign">https://echarts.apache.org/zh/option.html#title.textVerticalAlign</a>
      * <br/>序号: 12
      * <br/>默认值: auto
      * <br/>js类型: ["string"]
@@ -150,7 +150,7 @@ public class Title implements Serializable {
      */
     private String textVerticalAlign;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.triggerEvent
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.triggerEvent">https://echarts.apache.org/zh/option.html#title.triggerEvent</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -159,7 +159,7 @@ public class Title implements Serializable {
      */
     private Boolean triggerEvent;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.padding
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.padding">https://echarts.apache.org/zh/option.html#title.padding</a>
      * <br/>序号: 14
      * <br/>默认值: 5
      * <br/>js类型: ["number","Array"]
@@ -181,7 +181,7 @@ public class Title implements Serializable {
      */
     private Object padding;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.itemGap
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.itemGap">https://echarts.apache.org/zh/option.html#title.itemGap</a>
      * <br/>序号: 15
      * <br/>默认值: 10
      * <br/>js类型: ["number"]
@@ -190,7 +190,7 @@ public class Title implements Serializable {
      */
     private Integer itemGap;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.zlevel
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.zlevel">https://echarts.apache.org/zh/option.html#title.zlevel</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -201,7 +201,7 @@ public class Title implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.z
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.z">https://echarts.apache.org/zh/option.html#title.z</a>
      * <br/>序号: 17
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -211,7 +211,7 @@ public class Title implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.left
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.left">https://echarts.apache.org/zh/option.html#title.left</a>
      * <br/>序号: 18
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -222,7 +222,7 @@ public class Title implements Serializable {
      */
     private Object left;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.top
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.top">https://echarts.apache.org/zh/option.html#title.top</a>
      * <br/>序号: 19
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -233,7 +233,7 @@ public class Title implements Serializable {
      */
     private Object top;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.right
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.right">https://echarts.apache.org/zh/option.html#title.right</a>
      * <br/>序号: 20
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -244,7 +244,7 @@ public class Title implements Serializable {
      */
     private Object right;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.bottom
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.bottom">https://echarts.apache.org/zh/option.html#title.bottom</a>
      * <br/>序号: 21
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -255,7 +255,7 @@ public class Title implements Serializable {
      */
     private Object bottom;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.backgroundColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.backgroundColor">https://echarts.apache.org/zh/option.html#title.backgroundColor</a>
      * <br/>序号: 22
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -267,7 +267,7 @@ public class Title implements Serializable {
      */
     private String backgroundColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.borderColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.borderColor">https://echarts.apache.org/zh/option.html#title.borderColor</a>
      * <br/>序号: 23
      * <br/>默认值: #ccc
      * <br/>js类型: ["Color"]
@@ -276,7 +276,7 @@ public class Title implements Serializable {
      */
     private String borderColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.borderWidth
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.borderWidth">https://echarts.apache.org/zh/option.html#title.borderWidth</a>
      * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -285,7 +285,7 @@ public class Title implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.borderRadius
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.borderRadius">https://echarts.apache.org/zh/option.html#title.borderRadius</a>
      * <br/>序号: 25
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -298,7 +298,7 @@ public class Title implements Serializable {
      */
     private Object borderRadius;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.shadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.shadowBlur">https://echarts.apache.org/zh/option.html#title.shadowBlur</a>
      * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -314,7 +314,7 @@ public class Title implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.shadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.shadowColor">https://echarts.apache.org/zh/option.html#title.shadowColor</a>
      * <br/>序号: 27
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -324,7 +324,7 @@ public class Title implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.shadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.shadowOffsetX">https://echarts.apache.org/zh/option.html#title.shadowOffsetX</a>
      * <br/>序号: 28
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -334,7 +334,7 @@ public class Title implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#title.shadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title.shadowOffsetY">https://echarts.apache.org/zh/option.html#title.shadowOffsetY</a>
      * <br/>序号: 29
      * <br/>默认值: 无
      * <br/>js类型: ["number"]

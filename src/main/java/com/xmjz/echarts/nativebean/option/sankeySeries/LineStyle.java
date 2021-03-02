@@ -25,7 +25,7 @@ public class LineStyle implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sankey.lineStyle.color
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.lineStyle.color">https://echarts.apache.org/zh/option.html#series-sankey.lineStyle.color</a>
      * <br/>序号: 1
      * <br/>默认值: #314656
      * <br/>js类型: ["Color"]
@@ -34,7 +34,7 @@ public class LineStyle implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sankey.lineStyle.opacity
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.lineStyle.opacity">https://echarts.apache.org/zh/option.html#series-sankey.lineStyle.opacity</a>
      * <br/>序号: 2
      * <br/>默认值: 0.2
      * <br/>js类型: ["number"]
@@ -43,7 +43,7 @@ public class LineStyle implements Serializable {
      */
     private Integer opacity;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sankey.lineStyle.curveness
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.lineStyle.curveness">https://echarts.apache.org/zh/option.html#series-sankey.lineStyle.curveness</a>
      * <br/>序号: 3
      * <br/>默认值: 0.5
      * <br/>js类型: ["number"]
@@ -52,7 +52,7 @@ public class LineStyle implements Serializable {
      */
     private Integer curveness;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sankey.lineStyle.shadowBlur
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.lineStyle.shadowBlur">https://echarts.apache.org/zh/option.html#series-sankey.lineStyle.shadowBlur</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -67,7 +67,7 @@ public class LineStyle implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sankey.lineStyle.shadowColor
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.lineStyle.shadowColor">https://echarts.apache.org/zh/option.html#series-sankey.lineStyle.shadowColor</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -76,7 +76,7 @@ public class LineStyle implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sankey.lineStyle.shadowOffsetX
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.lineStyle.shadowOffsetX">https://echarts.apache.org/zh/option.html#series-sankey.lineStyle.shadowOffsetX</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -85,7 +85,7 @@ public class LineStyle implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: https://echarts.apache.org/zh/option.html#series-sankey.lineStyle.shadowOffsetY
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.lineStyle.shadowOffsetY">https://echarts.apache.org/zh/option.html#series-sankey.lineStyle.shadowOffsetY</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
