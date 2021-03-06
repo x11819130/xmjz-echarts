@@ -102,7 +102,7 @@ public class Label implements Serializable {
      * <br/>描述:
      * <p>是否对文字进行偏移。默认不偏移。例如：<code class="codespan">[30, 40]</code> 表示文字在横向上偏移 <code class="codespan">30</code>，纵向上偏移 <code class="codespan">40</code>。</p>
      */
-    private List<Object> offset;
+    private List<?> offset;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.label.formatter">https://echarts.apache.org/zh/option.html#series-treemap.label.formatter</a>
      * <br/>序号: 6

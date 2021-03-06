@@ -390,7 +390,7 @@ public class SankeySeries extends Series implements Serializable {
      * </code></pre>
      * <p><strong>注意:</strong> 节点的<code class="codespan">name</code>不能重复。</p>
      */
-    private List<Object> data;
+    private List<?> data;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.nodes">https://echarts.apache.org/zh/option.html#series-sankey.nodes</a>
      * <br/>序号: 28
@@ -399,7 +399,7 @@ public class SankeySeries extends Series implements Serializable {
      * <br/>描述:
      * <p>同 <a href="#series-sankey.data">data</a></p>
      */
-    private List<Object> nodes;
+    private List<?> nodes;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.links">https://echarts.apache.org/zh/option.html#series-sankey.links</a>
      * <br/>序号: 29
@@ -425,7 +425,7 @@ public class SankeySeries extends Series implements Serializable {
      * <br/>描述:
      * <p>同 <a href="#series-sankey.links">links</a></p>
      */
-    private List<Object> edges;
+    private List<?> edges;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.silent">https://echarts.apache.org/zh/option.html#series-sankey.silent</a>
      * <br/>序号: 31

@@ -242,7 +242,7 @@ public class EffectScatterSeries extends Series implements Serializable {
      * <p>标记相对于原本位置的偏移。默认情况下，标记会居中置放在数据对应的位置，但是如果 symbol 是自定义的矢量路径或者图片，就有可能不希望 symbol 居中。这时候可以使用该配置项配置 symbol 相对于原本居中的偏移，可以是绝对的像素值，也可以是相对的百分比。</p>
      * <p>例如 <code class="codespan">[0, '50%']</code> 就是把自己向上移动了一半的位置，在 symbol 图形是气泡的时候可以让图形下端的箭头对准数据点。</p>
      */
-    private List<Object> symbolOffset;
+    private List<?> symbolOffset;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-effectScatter.cursor">https://echarts.apache.org/zh/option.html#series-effectScatter.cursor</a>
      * <br/>序号: 19
@@ -459,7 +459,7 @@ public class EffectScatterSeries extends Series implements Serializable {
      * </ul>
      * <p>值得一提的是，当定义了 <code class="codespan">dimensions</code> 后，默认 <code class="codespan">tooltip</code> 中对个维度的显示，会变为『竖排』，从而方便显示每个维度的名称。如果没有定义 <code class="codespan">dimensions</code>，则默认 <code class="codespan">tooltip</code> 会横排显示，且只显示数值没有维度名称可显示。</p>
      */
-    private List<Object> dimensions;
+    private List<?> dimensions;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-effectScatter.encode">https://echarts.apache.org/zh/option.html#series-effectScatter.encode</a>
      * <br/>序号: 31
@@ -700,7 +700,7 @@ public class EffectScatterSeries extends Series implements Serializable {
      * <p>当某数据不存在时（ps：<em>不存在</em>不代表值为 0），可以用 <code class="codespan">'-'</code> 或者 <code class="codespan">null</code> 或者 <code class="codespan">undefined</code> 或者 <code class="codespan">NaN</code> 表示。</p>
      * <p>例如，无数据在折线图中可表现为该点是断开的，在其它图中可表示为图形不存在。</p>
      */
-    private List<Object> data;
+    private List<?> data;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-effectScatter.markPoint">https://echarts.apache.org/zh/option.html#series-effectScatter.markPoint</a>
      * <br/>序号: 33

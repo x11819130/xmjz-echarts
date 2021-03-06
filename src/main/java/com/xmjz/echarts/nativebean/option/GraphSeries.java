@@ -163,7 +163,7 @@ public class GraphSeries extends Series implements Serializable {
      * <pre><code class="lang-js hljs javascript">center: [<span class="hljs-number">115.97</span>, <span class="hljs-number">29.71</span>]
      * </code></pre>
      */
-    private List<Object> center;
+    private List<?> center;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.zoom">https://echarts.apache.org/zh/option.html#series-graph.zoom</a>
      * <br/>序号: 12
@@ -449,7 +449,7 @@ public class GraphSeries extends Series implements Serializable {
      * </code></pre>
      * <p><strong>注意:</strong> 节点的<code class="codespan">name</code>不能重复。</p>
      */
-    private List<Object> data;
+    private List<?> data;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.nodes">https://echarts.apache.org/zh/option.html#series-graph.nodes</a>
      * <br/>序号: 34
@@ -458,7 +458,7 @@ public class GraphSeries extends Series implements Serializable {
      * <br/>描述:
      * <p>别名，同 <a href="#series-graph.data">data</a></p>
      */
-    private List<Object> nodes;
+    private List<?> nodes;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.links">https://echarts.apache.org/zh/option.html#series-graph.links</a>
      * <br/>序号: 35
@@ -484,7 +484,7 @@ public class GraphSeries extends Series implements Serializable {
      * <br/>描述:
      * <p>别名，同 <a href="#series-graph.links">links</a></p>
      */
-    private List<Object> edges;
+    private List<?> edges;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.markPoint">https://echarts.apache.org/zh/option.html#series-graph.markPoint</a>
      * <br/>序号: 37

@@ -112,7 +112,7 @@ public class MapSeries extends Series implements Serializable {
      * <pre><code class="lang-js hljs javascript">center: [<span class="hljs-number">115.97</span>, <span class="hljs-number">29.71</span>]
      * </code></pre>
      */
-    private List<Object> center;
+    private List<?> center;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.aspectScale">https://echarts.apache.org/zh/option.html#series-map.aspectScale</a>
      * <br/>序号: 7
@@ -141,7 +141,7 @@ public class MapSeries extends Series implements Serializable {
      * ],
      * </code></pre>
      */
-    private List<Object> boundingCoords;
+    private List<?> boundingCoords;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.zoom">https://echarts.apache.org/zh/option.html#series-map.zoom</a>
      * <br/>序号: 9
@@ -318,7 +318,7 @@ public class MapSeries extends Series implements Serializable {
      * </code></pre>
      * <p>设置这两个值后 <code class="codespan">left/right/top/bottom/width/height</code> 无效。</p>
      */
-    private List<Object> layoutCenter;
+    private List<?> layoutCenter;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.layoutSize">https://echarts.apache.org/zh/option.html#series-map.layoutSize</a>
      * <br/>序号: 25
@@ -486,7 +486,7 @@ public class MapSeries extends Series implements Serializable {
      * }]
      * </code></pre>
      */
-    private List<Object> data;
+    private List<?> data;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.markPoint">https://echarts.apache.org/zh/option.html#series-map.markPoint</a>
      * <br/>序号: 34

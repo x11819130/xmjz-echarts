@@ -50,7 +50,7 @@ public class AxisLine implements Serializable {
      * <br/>描述:
      * <p>轴线两边的箭头的大小，第一个数字表示宽度（垂直坐标轴方向），第二个数字表示高度（平行坐标轴方向）。</p>
      */
-    private List<Object> symbolSize;
+    private List<?> symbolSize;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLine.symbolOffset">https://echarts.apache.org/zh/option.html#singleAxis.axisLine.symbolOffset</a>
      * <br/>序号: 4

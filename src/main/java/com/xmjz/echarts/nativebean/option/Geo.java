@@ -115,7 +115,7 @@ public class Geo implements Serializable {
      * <pre><code class="lang-js hljs javascript">center: [<span class="hljs-number">115.97</span>, <span class="hljs-number">29.71</span>]
      * </code></pre>
      */
-    private List<Object> center;
+    private List<?> center;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.aspectScale">https://echarts.apache.org/zh/option.html#geo.aspectScale</a>
      * <br/>序号: 6
@@ -144,7 +144,7 @@ public class Geo implements Serializable {
      * ],
      * </code></pre>
      */
-    private List<Object> boundingCoords;
+    private List<?> boundingCoords;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.zoom">https://echarts.apache.org/zh/option.html#geo.zoom</a>
      * <br/>序号: 8
@@ -321,7 +321,7 @@ public class Geo implements Serializable {
      * </code></pre>
      * <p>设置这两个值后 <code class="codespan">left/right/top/bottom/width/height</code> 无效。</p>
      */
-    private List<Object> layoutCenter;
+    private List<?> layoutCenter;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.layoutSize">https://echarts.apache.org/zh/option.html#geo.layoutSize</a>
      * <br/>序号: 24

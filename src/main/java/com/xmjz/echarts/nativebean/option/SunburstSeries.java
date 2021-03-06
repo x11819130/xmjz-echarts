@@ -96,7 +96,7 @@ public class SunburstSeries extends Series implements Serializable {
      * <span class="hljs-attr">center</span>: [<span class="hljs-string">'50%'</span>, <span class="hljs-string">'50%'</span>]
      * </code></pre>
      */
-    private List<Object> center;
+    private List<?> center;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.radius">https://echarts.apache.org/zh/option.html#series-sunburst.radius</a>
      * <br/>序号: 7
@@ -153,7 +153,7 @@ public class SunburstSeries extends Series implements Serializable {
      * }]
      * </code></pre>
      */
-    private List<Object> data;
+    private List<?> data;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.labelLayout">https://echarts.apache.org/zh/option.html#series-sunburst.labelLayout</a>
      * <br/>序号: 9

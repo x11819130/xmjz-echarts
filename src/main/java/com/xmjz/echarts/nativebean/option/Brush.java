@@ -190,7 +190,7 @@ public class Brush implements Serializable {
      * <li><code class="codespan">'clear'</code>：清空所有选框。</li>
      * </ul>
      */
-    private List<Object> toolbox;
+    private List<?> toolbox;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.brushLink">https://echarts.apache.org/zh/option.html#brush.brushLink</a>
      * <br/>序号: 3

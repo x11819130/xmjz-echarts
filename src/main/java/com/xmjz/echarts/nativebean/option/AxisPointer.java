@@ -264,7 +264,7 @@ public class AxisPointer implements Serializable {
      * <p>mapper 的返回值：</p>
      * <p><code class="codespan">{number}</code> 转换结果</p>
      */
-    private List<Object> link;
+    private List<?> link;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.triggerOn">https://echarts.apache.org/zh/option.html#axisPointer.triggerOn</a>
      * <br/>序号: 14

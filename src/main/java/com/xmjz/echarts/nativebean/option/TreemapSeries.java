@@ -305,7 +305,7 @@ public class TreemapSeries extends Series implements Serializable {
      * </ul>
      * </blockquote>
      */
-    private List<Object> colorAlpha;
+    private List<?> colorAlpha;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.colorSaturation">https://echarts.apache.org/zh/option.html#series-treemap.colorSaturation</a>
      * <br/>序号: 22
@@ -741,7 +741,7 @@ public class TreemapSeries extends Series implements Serializable {
      * ]
      * </code></pre>
      */
-    private List<Object> data;
+    private List<?> data;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.silent">https://echarts.apache.org/zh/option.html#series-treemap.silent</a>
      * <br/>序号: 38

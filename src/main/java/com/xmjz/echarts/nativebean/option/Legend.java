@@ -366,7 +366,7 @@ public class Legend implements Serializable {
      * }]
      * </code></pre>
      */
-    private List<Object> data;
+    private List<?> data;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.backgroundColor">https://echarts.apache.org/zh/option.html#legend.backgroundColor</a>
      * <br/>序号: 27

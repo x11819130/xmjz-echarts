@@ -338,7 +338,7 @@ public class LinesSeries extends Series implements Serializable {
      * }
      * </code></pre>
      */
-    private List<Object> data;
+    private List<?> data;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.markPoint">https://echarts.apache.org/zh/option.html#series-lines.markPoint</a>
      * <br/>序号: 24

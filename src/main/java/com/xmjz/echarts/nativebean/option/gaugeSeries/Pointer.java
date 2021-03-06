@@ -68,7 +68,7 @@ public class Pointer implements Serializable {
      *
      * <p>相对于仪表盘中心的偏移位置，数组第一项是水平方向的偏移，第二项是垂直方向的偏移。可以是绝对的数值，也可以是相对于仪表盘半径的百分比。</p>
      */
-    private List<Object> offsetCenter;
+    private List<?> offsetCenter;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.pointer.length">https://echarts.apache.org/zh/option.html#series-gauge.pointer.length</a>
      * <br/>序号: 4

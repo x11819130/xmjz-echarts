@@ -460,7 +460,7 @@ public class SingleAxis implements Serializable {
      * }, <span class="hljs-string">'周二'</span>, <span class="hljs-string">'周三'</span>, <span class="hljs-string">'周四'</span>, <span class="hljs-string">'周五'</span>, <span class="hljs-string">'周六'</span>, <span class="hljs-string">'周日'</span>]
      * </code></pre>
      */
-    private List<Object> data;
+    private List<?> data;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisPointer">https://echarts.apache.org/zh/option.html#singleAxis.axisPointer</a>
      * <br/>序号: 37

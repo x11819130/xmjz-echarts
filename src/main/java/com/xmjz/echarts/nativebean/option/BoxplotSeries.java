@@ -144,7 +144,7 @@ public class BoxplotSeries extends Series implements Serializable {
      * <p>box 的宽度的上下限。数组的意思是：<code class="codespan">[min, max]</code>。</p>
      * <p>可以是绝对数值，如 <code class="codespan">[7, 50]</code>，也可以是百分比，如 <code class="codespan">['40%', '90%']</code>。百分比的意思是，最大可能宽度（bandWidth）的百分之多少。</p>
      */
-    private List<Object> boxWidth;
+    private List<?> boxWidth;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.itemStyle">https://echarts.apache.org/zh/option.html#series-boxplot.itemStyle</a>
      * <br/>序号: 11
@@ -258,7 +258,7 @@ public class BoxplotSeries extends Series implements Serializable {
      * </ul>
      * <p>值得一提的是，当定义了 <code class="codespan">dimensions</code> 后，默认 <code class="codespan">tooltip</code> 中对个维度的显示，会变为『竖排』，从而方便显示每个维度的名称。如果没有定义 <code class="codespan">dimensions</code>，则默认 <code class="codespan">tooltip</code> 会横排显示，且只显示数值没有维度名称可显示。</p>
      */
-    private List<Object> dimensions;
+    private List<?> dimensions;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.encode">https://echarts.apache.org/zh/option.html#series-boxplot.encode</a>
      * <br/>序号: 17
@@ -403,7 +403,7 @@ public class BoxplotSeries extends Series implements Serializable {
      * <p>ECharts 并不内置对原始数据的处理，输入给 <code class="codespan">boxplot</code> 的数据须是如上五个统计结果量值。</p>
      * <p>但是 ECharts 也额外提供了简单的 <a href="https://github.com/apache/echarts/tree/master/extension/dataTool" target="_blank">原始数据处理函数</a>，如这个 <a href="https://echarts.apache.org/examples/zh/editor.html?c=boxplot-light-velocity&amp;edit=1&amp;reset=1" target="_blank">例子</a> 使用了<code class="codespan">echarts.dataTool.prepareBoxplotData</code> 来进行简单的数据统计。</p>
      */
-    private List<Object> data;
+    private List<?> data;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.markPoint">https://echarts.apache.org/zh/option.html#series-boxplot.markPoint</a>
      * <br/>序号: 19

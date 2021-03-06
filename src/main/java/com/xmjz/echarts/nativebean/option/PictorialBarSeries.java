@@ -514,7 +514,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      * }]
      * </code></pre>
      */
-    private List<Object> symbolOffset;
+    private List<?> symbolOffset;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolRotate">https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolRotate</a>
      * <br/>序号: 28
@@ -891,7 +891,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      * </ul>
      * <p>值得一提的是，当定义了 <code class="codespan">dimensions</code> 后，默认 <code class="codespan">tooltip</code> 中对个维度的显示，会变为『竖排』，从而方便显示每个维度的名称。如果没有定义 <code class="codespan">dimensions</code>，则默认 <code class="codespan">tooltip</code> 会横排显示，且只显示数值没有维度名称可显示。</p>
      */
-    private List<Object> dimensions;
+    private List<?> dimensions;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.encode">https://echarts.apache.org/zh/option.html#series-pictorialBar.encode</a>
      * <br/>序号: 37
@@ -1132,7 +1132,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      * <p>当某数据不存在时（ps：<em>不存在</em>不代表值为 0），可以用 <code class="codespan">'-'</code> 或者 <code class="codespan">null</code> 或者 <code class="codespan">undefined</code> 或者 <code class="codespan">NaN</code> 表示。</p>
      * <p>例如，无数据在折线图中可表现为该点是断开的，在其它图中可表示为图形不存在。</p>
      */
-    private List<Object> data;
+    private List<?> data;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.markPoint">https://echarts.apache.org/zh/option.html#series-pictorialBar.markPoint</a>
      * <br/>序号: 39

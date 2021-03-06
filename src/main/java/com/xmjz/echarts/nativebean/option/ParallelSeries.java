@@ -284,7 +284,7 @@ public class ParallelSeries extends Series implements Serializable {
      * </code></pre>
      * <p>数据中，每一行是一个『数据项』，每一列属于一个『维度』。（例如上面数据每一列的含义分别是：『日期』,『AQI指数』, 『PM2.5』, 『PM10』, 『一氧化碳值』, 『二氧化氮值』, 『二氧化硫值』）。</p>
      */
-    private List<Object> data;
+    private List<?> data;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.zlevel">https://echarts.apache.org/zh/option.html#series-parallel.zlevel</a>
      * <br/>序号: 16

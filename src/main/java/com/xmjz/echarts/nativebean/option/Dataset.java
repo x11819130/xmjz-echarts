@@ -126,7 +126,7 @@ public class Dataset implements Serializable {
      * </ul>
      * <p>值得一提的是，当定义了 <code class="codespan">dimensions</code> 后，默认 <code class="codespan">tooltip</code> 中对个维度的显示，会变为『竖排』，从而方便显示每个维度的名称。如果没有定义 <code class="codespan">dimensions</code>，则默认 <code class="codespan">tooltip</code> 会横排显示，且只显示数值没有维度名称可显示。</p>
      */
-    private List<Object> dimensions;
+    private List<?> dimensions;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#dataset.sourceHeader">https://echarts.apache.org/zh/option.html#dataset.sourceHeader</a>
      * <br/>序号: 4

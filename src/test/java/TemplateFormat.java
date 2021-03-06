@@ -121,7 +121,7 @@ public class TemplateFormat {
                             javaType = "Boolean";
                             break;
                         case "Array":
-                            javaType = "series".equals(propName) ? "List<Series>" : "List<Object>";
+                            javaType = "series".equals(propName) ? "List<Series>" : "List<?>";
                             imports.add("java.util.List");
                             break;
                         case "Function":

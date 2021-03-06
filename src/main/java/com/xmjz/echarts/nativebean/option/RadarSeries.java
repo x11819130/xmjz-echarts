@@ -133,7 +133,7 @@ public class RadarSeries extends Series implements Serializable {
      * <p>标记相对于原本位置的偏移。默认情况下，标记会居中置放在数据对应的位置，但是如果 symbol 是自定义的矢量路径或者图片，就有可能不希望 symbol 居中。这时候可以使用该配置项配置 symbol 相对于原本居中的偏移，可以是绝对的像素值，也可以是相对的百分比。</p>
      * <p>例如 <code class="codespan">[0, '50%']</code> 就是把自己向上移动了一半的位置，在 symbol 图形是气泡的时候可以让图形下端的箭头对准数据点。</p>
      */
-    private List<Object> symbolOffset;
+    private List<?> symbolOffset;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.label">https://echarts.apache.org/zh/option.html#series-radar.label</a>
      * <br/>序号: 10
@@ -290,7 +290,7 @@ public class RadarSeries extends Series implements Serializable {
      * </code></pre>
      * <p>其中的<code class="codespan">value</code>项数组是具体的数据，每个值跟 <a href="#radar.indicator">radar.indicator</a> 一一对应。</p>
      */
-    private List<Object> data;
+    private List<?> data;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.zlevel">https://echarts.apache.org/zh/option.html#series-radar.zlevel</a>
      * <br/>序号: 20

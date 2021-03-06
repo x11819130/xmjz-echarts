@@ -154,7 +154,7 @@ public class Levels implements Serializable {
      * </ul>
      * </blockquote>
      */
-    private List<Object> color;
+    private List<?> color;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.colorAlpha">https://echarts.apache.org/zh/option.html#series-treemap.levels.colorAlpha</a>
      * <br/>序号: 5
@@ -180,7 +180,7 @@ public class Levels implements Serializable {
      * </ul>
      * </blockquote>
      */
-    private List<Object> colorAlpha;
+    private List<?> colorAlpha;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.colorSaturation">https://echarts.apache.org/zh/option.html#series-treemap.levels.colorSaturation</a>
      * <br/>序号: 6

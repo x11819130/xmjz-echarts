@@ -314,7 +314,7 @@ public class Option implements Serializable {
      * </li>
      * </ul>
      */
-    private List<Object> dataZoom;
+    private List<?> dataZoom;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#visualMap">https://echarts.apache.org/zh/option.html#visualMap</a>
      * <br/>序号: 11
@@ -369,7 +369,7 @@ public class Option implements Serializable {
      * <strong>✦ 与 ECharts2 中 dataRange 的关系 ✦</strong></p>
      * <p><code class="codespan">visualMap</code> 是由 ECharts2 中的 <code class="codespan">dataRange</code> 组件改名以及扩展而来。ECharts3里 <code class="codespan">option</code> 中的 <code class="codespan">dataRange</code> 配置项仍然被兼容，会自动转换成 <code class="codespan">visualMap</code> 配置项。在option中推荐写 <code class="codespan">visualMap</code> 而非 <code class="codespan">dataRange</code>。</p>
      */
-    private List<Object> visualMap;
+    private List<?> visualMap;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip">https://echarts.apache.org/zh/option.html#tooltip</a>
      * <br/>序号: 12

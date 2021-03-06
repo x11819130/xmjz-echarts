@@ -73,7 +73,7 @@ public class Radar implements Serializable {
      * <span class="hljs-attr">center</span>: [<span class="hljs-string">'50%'</span>, <span class="hljs-string">'50%'</span>]
      * </code></pre>
      */
-    private List<Object> center;
+    private List<?> center;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.radius">https://echarts.apache.org/zh/option.html#radar.radius</a>
      * <br/>序号: 5

@@ -205,5 +205,5 @@ public class LabelLayout implements Serializable {
      * </code></pre>
      * <p>在饼图中常用来微调已经计算好的引导线，其它情况一般不建议设置。</p>
      */
-    private List<Object> labelLinePoints;
+    private List<?> labelLinePoints;
 }
