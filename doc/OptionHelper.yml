@@ -1,0 +1,2 @@
+values: Title|Legend|Grid|xAxis|yAxis|Polar|RadiusAxis|AngleAxis|Radar|Tooltip|AxisPointer|Toolbox|Brush|Geo|Parallel|ParallelAxis|SingleAxis|Timeline|Graphic|Calendar|Dataset|Aria|TextStyle|StateAnimation
+template: public {0} get{0}() {{return Optional.ofNullable(this.option.get{0}()).orElseGet(() -> option.set{0}(new {0}()).get{0}());}}
