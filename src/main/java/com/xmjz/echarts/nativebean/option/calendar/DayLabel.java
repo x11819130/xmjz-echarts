@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel">https://echarts.apache.org/zh/option.html#calendar.dayLabel</a>
- * <br/>序号: 15
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -24,7 +23,6 @@ public class DayLabel implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.show">https://echarts.apache.org/zh/option.html#calendar.dayLabel.show</a>
-     * <br/>序号: 1
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -33,7 +31,6 @@ public class DayLabel implements Serializable {
     private Boolean show;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.firstDay">https://echarts.apache.org/zh/option.html#calendar.dayLabel.firstDay</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -51,7 +48,6 @@ public class DayLabel implements Serializable {
     private Integer firstDay;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.margin">https://echarts.apache.org/zh/option.html#calendar.dayLabel.margin</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -60,7 +56,6 @@ public class DayLabel implements Serializable {
     private Integer margin;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.position">https://echarts.apache.org/zh/option.html#calendar.dayLabel.position</a>
-     * <br/>序号: 4
      * <br/>默认值: start
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -74,7 +69,6 @@ public class DayLabel implements Serializable {
     private String position;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.nameMap">https://echarts.apache.org/zh/option.html#calendar.dayLabel.nameMap</a>
-     * <br/>序号: 5
      * <br/>默认值: en
      * <br/>js类型: ["string","Array"]
      * <br/>描述:
@@ -99,7 +93,6 @@ public class DayLabel implements Serializable {
     private Object nameMap;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.color">https://echarts.apache.org/zh/option.html#calendar.dayLabel.color</a>
-     * <br/>序号: 6
      * <br/>默认值: #000
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -108,7 +101,6 @@ public class DayLabel implements Serializable {
     private String color;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.fontStyle">https://echarts.apache.org/zh/option.html#calendar.dayLabel.fontStyle</a>
-     * <br/>序号: 7
      * <br/>默认值: normal
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -123,7 +115,6 @@ public class DayLabel implements Serializable {
     private String fontStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.fontWeight">https://echarts.apache.org/zh/option.html#calendar.dayLabel.fontWeight</a>
-     * <br/>序号: 8
      * <br/>默认值: normal
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -140,7 +131,6 @@ public class DayLabel implements Serializable {
     private Object fontWeight;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.fontFamily">https://echarts.apache.org/zh/option.html#calendar.dayLabel.fontFamily</a>
-     * <br/>序号: 9
      * <br/>默认值: sans-serif
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -150,7 +140,6 @@ public class DayLabel implements Serializable {
     private String fontFamily;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.fontSize">https://echarts.apache.org/zh/option.html#calendar.dayLabel.fontSize</a>
-     * <br/>序号: 10
      * <br/>默认值: 12
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -159,7 +148,6 @@ public class DayLabel implements Serializable {
     private Integer fontSize;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.align">https://echarts.apache.org/zh/option.html#calendar.dayLabel.align</a>
-     * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -184,7 +172,6 @@ public class DayLabel implements Serializable {
     private String align;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.verticalAlign">https://echarts.apache.org/zh/option.html#calendar.dayLabel.verticalAlign</a>
-     * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -209,7 +196,6 @@ public class DayLabel implements Serializable {
     private String verticalAlign;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.lineHeight">https://echarts.apache.org/zh/option.html#calendar.dayLabel.lineHeight</a>
-     * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -228,7 +214,6 @@ public class DayLabel implements Serializable {
     private Integer lineHeight;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.backgroundColor">https://echarts.apache.org/zh/option.html#calendar.dayLabel.backgroundColor</a>
-     * <br/>序号: 14
      * <br/>默认值: transparent
      * <br/>js类型: ["string","Object"]
      * <br/>描述:
@@ -248,7 +233,6 @@ public class DayLabel implements Serializable {
     private Object backgroundColor;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.borderColor">https://echarts.apache.org/zh/option.html#calendar.dayLabel.borderColor</a>
-     * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -257,7 +241,6 @@ public class DayLabel implements Serializable {
     private String borderColor;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.borderWidth">https://echarts.apache.org/zh/option.html#calendar.dayLabel.borderWidth</a>
-     * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -265,8 +248,48 @@ public class DayLabel implements Serializable {
      */
     private Integer borderWidth;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.borderType">https://echarts.apache.org/zh/option.html#calendar.dayLabel.borderType</a>
+     * <br/>默认值: solid
+     * <br/>js类型: ["string","number","Array"]
+     * <br/>描述:
+     * <p>文字块边框描边类型。</p>
+     * <p>可选：</p>
+     * <ul>
+     * <li><code class="codespan">'solid'</code></li>
+     * <li><code class="codespan">'dashed'</code></li>
+     * <li><code class="codespan">'dotted'</code></li>
+     * </ul>
+     * <p>自 <code class="codespan">v5.0.0</code> 开始，也可以是 <code class="codespan">number</code> 或者 <code class="codespan">number</code> 数组，用以指定线条的 <a href="https://developer.mozilla.org/zh-CN/docs/Web/SVG/Attribute/stroke-dasharray" target="_blank">dash array</a>，配合
+     * <code class="codespan">borderDashOffset</code>
+     *  可实现更灵活的虚线效果。</p>
+     * <p>例如：</p>
+     * <pre><code class="lang-js hljs javascript">{
+     *
+     * <span class="hljs-attr">borderType</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
+     *
+     * <span class="hljs-attr">borderDashOffset</span>: <span class="hljs-number">5</span>
+     * }
+     * </code></pre>
+     */
+    private Object borderType;
+    /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.borderDashOffset">https://echarts.apache.org/zh/option.html#calendar.dayLabel.borderDashOffset</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["number"]
+     * <br/>描述:
+     * <blockquote>
+     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
+     * </blockquote>
+     *
+     *
+     * <p>用于设置虚线的偏移量，可搭配
+     * <code class="codespan">borderType</code>
+     * 指定 dash array 实现灵活的虚线效果。</p>
+     * <p>更多详情可以参考 MDN <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/lineDashOffset" target="_blank">lineDashOffset</a>。</p>
+     */
+    private Integer borderDashOffset;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.borderRadius">https://echarts.apache.org/zh/option.html#calendar.dayLabel.borderRadius</a>
-     * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
      * <br/>描述:
@@ -275,7 +298,6 @@ public class DayLabel implements Serializable {
     private Object borderRadius;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.padding">https://echarts.apache.org/zh/option.html#calendar.dayLabel.padding</a>
-     * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
      * <br/>描述:
@@ -290,7 +312,6 @@ public class DayLabel implements Serializable {
     private Object padding;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.shadowColor">https://echarts.apache.org/zh/option.html#calendar.dayLabel.shadowColor</a>
-     * <br/>序号: 19
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -299,7 +320,6 @@ public class DayLabel implements Serializable {
     private String shadowColor;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.shadowBlur">https://echarts.apache.org/zh/option.html#calendar.dayLabel.shadowBlur</a>
-     * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -308,7 +328,6 @@ public class DayLabel implements Serializable {
     private Integer shadowBlur;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.shadowOffsetX">https://echarts.apache.org/zh/option.html#calendar.dayLabel.shadowOffsetX</a>
-     * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -317,7 +336,6 @@ public class DayLabel implements Serializable {
     private Integer shadowOffsetX;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.shadowOffsetY">https://echarts.apache.org/zh/option.html#calendar.dayLabel.shadowOffsetY</a>
-     * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -326,7 +344,6 @@ public class DayLabel implements Serializable {
     private Integer shadowOffsetY;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.width">https://echarts.apache.org/zh/option.html#calendar.dayLabel.width</a>
-     * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -335,7 +352,6 @@ public class DayLabel implements Serializable {
     private Integer width;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.height">https://echarts.apache.org/zh/option.html#calendar.dayLabel.height</a>
-     * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -344,7 +360,6 @@ public class DayLabel implements Serializable {
     private Integer height;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.textBorderColor">https://echarts.apache.org/zh/option.html#calendar.dayLabel.textBorderColor</a>
-     * <br/>序号: 25
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -353,7 +368,6 @@ public class DayLabel implements Serializable {
     private String textBorderColor;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.textBorderWidth">https://echarts.apache.org/zh/option.html#calendar.dayLabel.textBorderWidth</a>
-     * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -361,8 +375,48 @@ public class DayLabel implements Serializable {
      */
     private Integer textBorderWidth;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.textBorderType">https://echarts.apache.org/zh/option.html#calendar.dayLabel.textBorderType</a>
+     * <br/>默认值: solid
+     * <br/>js类型: ["string","number","Array"]
+     * <br/>描述:
+     * <p>文字本身的描边类型。</p>
+     * <p>可选：</p>
+     * <ul>
+     * <li><code class="codespan">'solid'</code></li>
+     * <li><code class="codespan">'dashed'</code></li>
+     * <li><code class="codespan">'dotted'</code></li>
+     * </ul>
+     * <p>自 <code class="codespan">v5.0.0</code> 开始，也可以是 <code class="codespan">number</code> 或者 <code class="codespan">number</code> 数组，用以指定线条的 <a href="https://developer.mozilla.org/zh-CN/docs/Web/SVG/Attribute/stroke-dasharray" target="_blank">dash array</a>，配合
+     * <code class="codespan">textBorderDashOffset</code>
+     *  可实现更灵活的虚线效果。</p>
+     * <p>例如：</p>
+     * <pre><code class="lang-js hljs javascript">{
+     *
+     * <span class="hljs-attr">textBorderType</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
+     *
+     * <span class="hljs-attr">textBorderDashOffset</span>: <span class="hljs-number">5</span>
+     * }
+     * </code></pre>
+     */
+    private Object textBorderType;
+    /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.textBorderDashOffset">https://echarts.apache.org/zh/option.html#calendar.dayLabel.textBorderDashOffset</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["number"]
+     * <br/>描述:
+     * <blockquote>
+     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
+     * </blockquote>
+     *
+     *
+     * <p>用于设置虚线的偏移量，可搭配
+     * <code class="codespan">textBorderType</code>
+     * 指定 dash array 实现灵活的虚线效果。</p>
+     * <p>更多详情可以参考 MDN <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/lineDashOffset" target="_blank">lineDashOffset</a>。</p>
+     */
+    private Integer textBorderDashOffset;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.textShadowColor">https://echarts.apache.org/zh/option.html#calendar.dayLabel.textShadowColor</a>
-     * <br/>序号: 27
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -371,7 +425,6 @@ public class DayLabel implements Serializable {
     private String textShadowColor;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.textShadowBlur">https://echarts.apache.org/zh/option.html#calendar.dayLabel.textShadowBlur</a>
-     * <br/>序号: 28
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -380,7 +433,6 @@ public class DayLabel implements Serializable {
     private Integer textShadowBlur;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.textShadowOffsetX">https://echarts.apache.org/zh/option.html#calendar.dayLabel.textShadowOffsetX</a>
-     * <br/>序号: 29
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -389,7 +441,6 @@ public class DayLabel implements Serializable {
     private Integer textShadowOffsetX;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.textShadowOffsetY">https://echarts.apache.org/zh/option.html#calendar.dayLabel.textShadowOffsetY</a>
-     * <br/>序号: 30
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -398,7 +449,6 @@ public class DayLabel implements Serializable {
     private Integer textShadowOffsetY;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.overflow">https://echarts.apache.org/zh/option.html#calendar.dayLabel.overflow</a>
-     * <br/>序号: 31
      * <br/>默认值: none
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -412,7 +462,6 @@ public class DayLabel implements Serializable {
     private String overflow;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.ellipsis">https://echarts.apache.org/zh/option.html#calendar.dayLabel.ellipsis</a>
-     * <br/>序号: 32
      * <br/>默认值: ...
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -421,7 +470,6 @@ public class DayLabel implements Serializable {
     private String ellipsis;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.lineOverflow">https://echarts.apache.org/zh/option.html#calendar.dayLabel.lineOverflow</a>
-     * <br/>序号: 33
      * <br/>默认值: none
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -433,7 +481,6 @@ public class DayLabel implements Serializable {
     private String lineOverflow;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.rich">https://echarts.apache.org/zh/option.html#calendar.dayLabel.rich</a>
-     * <br/>序号: 34
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

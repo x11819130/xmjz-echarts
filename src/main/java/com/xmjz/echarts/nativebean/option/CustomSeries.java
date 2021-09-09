@@ -1,9 +1,6 @@
 package com.xmjz.echarts.nativebean.option;
 
-import com.xmjz.echarts.nativebean.option.customSeries.ItemStyle;
-import com.xmjz.echarts.nativebean.option.customSeries.LabelLayout;
-import com.xmjz.echarts.nativebean.option.customSeries.LabelLine;
-import com.xmjz.echarts.nativebean.option.customSeries.RenderItem;
+import com.xmjz.echarts.nativebean.option.customSeries.*;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
@@ -13,7 +10,6 @@ import java.util.List;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom">https://echarts.apache.org/zh/option.html#series-custom</a>
- * <br/>序号: 0
  * <br/>默认值: 无
  * <br/>js类型: ["object"]
  * <br/>描述:
@@ -21,13 +17,12 @@ import java.util.List;
  * <p>自定义系列可以自定义系列中的图形元素渲染。从而能扩展出不同的图表。</p>
  * <p>同时，echarts 会统一管理图形的创建删除、动画、与其他组件（如 <a href="#dataZoom">dataZoom</a>、<a href="#visualMap">visualMap</a>）的联动，使开发者不必纠结这些细节。</p>
  * <p><strong>例如，下面的例子使用 custom series 扩展出了 x-range 图：</strong></p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=custom-profile&amp;reset=1&amp;edit=1" width="800" height="500" data-ll-timeout="18"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=custom-profile&amp;reset=1&amp;edit=1" width="800" height="500" data-ll-timeout="21"></iframe>
  *
  *
  * <p><strong>更多的例子参见：<a href="https://echarts.apache.org/examples/zh/index.html#chart-type-custom" target="_blank">custom examples</a></strong></p>
  * <p><strong><a href="tutorial.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B3%BB%E5%88%97" target="_blank">这里是个教程</a></strong></p>
- * <p><br>
- * <strong>开发者自定义渲染逻辑（renderItem 函数）</strong></p>
+ * <p><strong>开发者自定义渲染逻辑（renderItem 函数）</strong></p>
  * <p>custom 系列需要开发者自己提供图形渲染的逻辑。这个渲染逻辑一般命名为 <a href="#series-custom.renderItem">renderItem</a>。例如：</p>
  * <pre><code class="lang-js hljs javascript"><span class="hljs-keyword">var</span> option = {
  *     ...,
@@ -75,8 +70,7 @@ import java.util.List;
  * </ul>
  * <p>有时候还需要用到 <a href="#series-custom.renderItem.arguments.api.size">api.size(...)</a> 函数，表示得到坐标系上一段数值范围对应的长度。</p>
  * <p>返回值中样式的设置可以使用 <a href="#series-custom.renderItem.arguments.api.style">api.style(...)</a> 函数，他能得到 <a href="#series-custom.itemStyle">series.itemStyle</a> 中定义的样式信息，以及视觉映射的样式信息。也可以用这种方式覆盖这些样式信息：<code class="codespan">api.style({fill: 'green', stroke: 'yellow'})</code>。</p>
- * <p><br>
- * <strong>维度的映射（encode 和 dimensions 属性）</strong></p>
+ * <p><strong>维度的映射（encode 和 dimensions 属性）</strong></p>
  * <p><code class="codespan">custom</code> 系列往往需要定义 <a href="#series-custom.encode">series.encode</a>，主要用于指明 <code class="codespan">data</code> 的哪些维度映射到哪些数轴上。从而，echarts 能根据这些维度的值的范围，画出合适的数轴刻度。
  * 同时，encode.tooltip 和 encode.label 也可以被指定，指明默认的 tooltip 和 label 显示什么内容。<a href="#series-custom.dimensions">series.dimensions</a> 也可以被指定，指明显示在 tooltip 中的维度名称，或者维度的类型。</p>
  * <p>例如：</p>
@@ -93,18 +87,15 @@ import java.util.List;
  *     }
  * }
  * </code></pre>
- * <p><br>
- * <strong>与 dataZoom 组件的结合</strong></p>
+ * <p><strong>与 dataZoom 组件的结合</strong></p>
  * <p>与 <a href="#dataZoom">dataZoom</a> 结合使用的时候，常常使用会设置 <a href="#dataZoom.filterMode">dataZoom.filterMode</a> 为 'weakFilter'，从而让 <code class="codespan">dataItem</code> 部分超出坐标系边界的时候，不会整体被过滤掉。</p>
- * <p><br>
- * <strong>关于 <code class="codespan">dataIndex</code> 和 <code class="codespan">dataIndexInside</code> 的区别</strong></p>
+ * <p><strong>关于 <code class="codespan">dataIndex</code> 和 <code class="codespan">dataIndexInside</code> 的区别</strong></p>
  * <ul>
  * <li><code class="codespan">dataIndex</code> 指的 <code class="codespan">dataItem</code> 在原始数据中的 index。</li>
  * <li><code class="codespan">dataIndexInside</code> 指的是 <code class="codespan">dataItem</code> 在当前数据窗口（参见 <a href="#dataZoom">dataZoom</a>）中的 index。</li>
  * </ul>
  * <p><a href="#series-custom.renderItem.arguments.api">renderItem.arguments.api</a> 中使用的参数都是 <code class="codespan">dataIndexInside</code> 而非 <code class="codespan">dataIndex</code>，因为从 <code class="codespan">dataIndex</code> 转换成 <code class="codespan">dataIndexInside</code> 需要时间开销。</p>
- * <p><br>
- * <strong>Event listener</strong></p>
+ * <p><strong>Event listener</strong></p>
  * <pre><code class="lang-js hljs javascript">chart.setOption({
  *     <span class="hljs-comment">// ...</span>
  *     <span class="hljs-attr">series</span>: {
@@ -143,7 +134,6 @@ public class CustomSeries extends Series implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.type">https://echarts.apache.org/zh/option.html#series-custom.type</a>
-     * <br/>序号: 1
      * <br/>默认值: custom
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -151,7 +141,6 @@ public class CustomSeries extends Series implements Serializable {
     private String type;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.id">https://echarts.apache.org/zh/option.html#series-custom.id</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -160,7 +149,6 @@ public class CustomSeries extends Series implements Serializable {
     private String id;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.name">https://echarts.apache.org/zh/option.html#series-custom.name</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -168,8 +156,22 @@ public class CustomSeries extends Series implements Serializable {
      */
     private String name;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.colorBy">https://echarts.apache.org/zh/option.html#series-custom.colorBy</a>
+     * <br/>默认值: series
+     * <br/>js类型: ["string"]
+     * <br/>描述:
+     * <blockquote>
+     * <p>从 <code class="codespan">v5.2.0</code> 开始支持</p>
+     * </blockquote>
+     * <p>从调色盘 <a href="#color">option.color</a> 中取色的策略，可取值为：</p>
+     * <ul>
+     * <li><code class="codespan">'series'</code>：按照系列分配调色盘中的颜色，同一系列中的所有数据都是用相同的颜色；</li>
+     * <li><code class="codespan">'data'</code>：按照数据项分配调色盘中的颜色，每个数据项都使用不同的颜色。</li>
+     * </ul>
+     */
+    private String colorBy;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.legendHoverLink">https://echarts.apache.org/zh/option.html#series-custom.legendHoverLink</a>
-     * <br/>序号: 4
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -178,7 +180,6 @@ public class CustomSeries extends Series implements Serializable {
     private Boolean legendHoverLink;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.coordinateSystem">https://echarts.apache.org/zh/option.html#series-custom.coordinateSystem</a>
-     * <br/>序号: 5
      * <br/>默认值: cartesian2d
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -212,7 +213,6 @@ public class CustomSeries extends Series implements Serializable {
     private String coordinateSystem;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.xAxisIndex">https://echarts.apache.org/zh/option.html#series-custom.xAxisIndex</a>
-     * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -226,7 +226,6 @@ public class CustomSeries extends Series implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.yAxisIndex">https://echarts.apache.org/zh/option.html#series-custom.yAxisIndex</a>
-     * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -240,7 +239,6 @@ public class CustomSeries extends Series implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.polarIndex">https://echarts.apache.org/zh/option.html#series-custom.polarIndex</a>
-     * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -249,7 +247,6 @@ public class CustomSeries extends Series implements Serializable {
     private Integer polarIndex;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.geoIndex">https://echarts.apache.org/zh/option.html#series-custom.geoIndex</a>
-     * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -258,7 +255,6 @@ public class CustomSeries extends Series implements Serializable {
     private Integer geoIndex;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.calendarIndex">https://echarts.apache.org/zh/option.html#series-custom.calendarIndex</a>
-     * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -267,7 +263,6 @@ public class CustomSeries extends Series implements Serializable {
     private Integer calendarIndex;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.renderItem">https://echarts.apache.org/zh/option.html#series-custom.renderItem</a>
-     * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["Function"]
      * <br/>描述:
@@ -322,7 +317,6 @@ public class CustomSeries extends Series implements Serializable {
     private RenderItem renderItem;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.itemStyle">https://echarts.apache.org/zh/option.html#series-custom.itemStyle</a>
-     * <br/>序号: 12
      * <br/>默认值: 自适应
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -331,7 +325,6 @@ public class CustomSeries extends Series implements Serializable {
     private ItemStyle itemStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.labelLine">https://echarts.apache.org/zh/option.html#series-custom.labelLine</a>
-     * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -340,7 +333,6 @@ public class CustomSeries extends Series implements Serializable {
     private LabelLine labelLine;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.labelLayout">https://echarts.apache.org/zh/option.html#series-custom.labelLayout</a>
-     * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["Object","Function"]
      * <br/>描述:
@@ -393,7 +385,6 @@ public class CustomSeries extends Series implements Serializable {
     private LabelLayout labelLayout;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.selectedMode">https://echarts.apache.org/zh/option.html#series-custom.selectedMode</a>
-     * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","string"]
      * <br/>描述:
@@ -407,7 +398,6 @@ public class CustomSeries extends Series implements Serializable {
     private Object selectedMode;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.dimensions">https://echarts.apache.org/zh/option.html#series-custom.dimensions</a>
-     * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -465,7 +455,6 @@ public class CustomSeries extends Series implements Serializable {
     private List<?> dimensions;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.encode">https://echarts.apache.org/zh/option.html#series-custom.encode</a>
-     * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -506,12 +495,14 @@ public class CustomSeries extends Series implements Serializable {
      * <span class="hljs-attr">encode</span>: {
      *     <span class="hljs-comment">// 使用 “名为 product 的维度” 和 “名为 score 的维度” 的值在 tooltip 中显示</span>
      *     <span class="hljs-attr">tooltip</span>: [<span class="hljs-string">'product'</span>, <span class="hljs-string">'score'</span>]
-     *     <span class="hljs-comment">// 使用 “维度 1” 和 “维度 3” 的维度名连起来作为系列名。（有时候名字比较长，这可以避免在 series.name 重复输入这些名字）</span>
+     *     <span class="hljs-comment">// 使用第一个维度和第三个维度的维度名连起来作为系列名。（有时候名字比较长，这可以避免在 series.name 重复输入这些名字）</span>
      *     <span class="hljs-attr">seriesName</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">3</span>],
-     *     <span class="hljs-comment">// 表示使用 “维度2” 中的值作为 id。这在使用 setOption 动态更新数据时有用处，可以使新老数据用 id 对应起来，从而能够产生合适的数据更新动画。</span>
+     *     <span class="hljs-comment">// 表示使用第二个维度中的值作为 id。这在使用 setOption 动态更新数据时有用处，可以使新老数据用 id 对应起来，从而能够产生合适的数据更新动画。</span>
      *     <span class="hljs-attr">itemId</span>: <span class="hljs-number">2</span>,
-     *     <span class="hljs-comment">// 指定数据项的名称使用 “维度3” 在饼图等图表中有用，可以使这个名字显示在图例（legend）中。</span>
-     *     <span class="hljs-attr">itemName</span>: <span class="hljs-number">3</span>
+     *     <span class="hljs-comment">// 指定数据项的名称使用第三个维度在饼图等图表中有用，可以使这个名字显示在图例（legend）中。</span>
+     *     <span class="hljs-attr">itemName</span>: <span class="hljs-number">3</span>,
+     *     <span class="hljs-comment">// 指定数据项的组 ID (groupID)，组 ID 会被用于分类数据，并在全局过渡动画中决定如何进行合并和分裂动画，具体见 universalTransition</span>
+     *     <span class="hljs-attr">itemGroupId</span>: <span class="hljs-number">4</span>
      * }
      *
      * <span class="hljs-comment">// 直角坐标系（grid/cartesian）特有的属性：</span>
@@ -583,7 +574,6 @@ public class CustomSeries extends Series implements Serializable {
     private Object encode;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.seriesLayoutBy">https://echarts.apache.org/zh/option.html#series-custom.seriesLayoutBy</a>
-     * <br/>序号: 18
      * <br/>默认值: column
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -597,7 +587,6 @@ public class CustomSeries extends Series implements Serializable {
     private String seriesLayoutBy;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.datasetIndex">https://echarts.apache.org/zh/option.html#series-custom.datasetIndex</a>
-     * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -605,8 +594,16 @@ public class CustomSeries extends Series implements Serializable {
      */
     private Integer datasetIndex;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.dataGroupId">https://echarts.apache.org/zh/option.html#series-custom.dataGroupId</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["string"]
+     * <br/>描述:
+     * <p>该系列所有数据共有的组 ID。组 ID 会被用于分类数据，并在全局过渡动画中决定如何进行合并和分裂动画。</p>
+     * <p>如果你使用了<a href="#dataset">dataset</a>组件来表达数据，推荐使用<code class="codespan">encode.itemGroupID</code>来指定哪个维度被编码为组 ID。</p>
+     */
+    private String dataGroupId;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.data">https://echarts.apache.org/zh/option.html#series-custom.data</a>
-     * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -729,7 +726,6 @@ public class CustomSeries extends Series implements Serializable {
     private List<?> data;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.clip">https://echarts.apache.org/zh/option.html#series-custom.clip</a>
-     * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -738,7 +734,7 @@ public class CustomSeries extends Series implements Serializable {
      * </blockquote>
      * <p>是否裁剪超出坐标系部分的图形，具体裁剪效果根据系列决定：</p>
      * <ul>
-     * <li>散点图：忽略中心点超出坐标系的图形，但是不裁剪单个图形</li>
+     * <li>散点图/带有涟漪特效动画的散点（气泡）图：忽略中心点超出坐标系的图形，但是不裁剪单个图形</li>
      * <li>柱状图：裁掉完全超出的柱子，但是不会裁剪只超出部分的柱子</li>
      * <li>折线图：裁掉所有超出坐标系的折线部分，拐点图形的逻辑按照散点图处理</li>
      * <li>路径图：裁掉所有超出坐标系的部分</li>
@@ -750,7 +746,6 @@ public class CustomSeries extends Series implements Serializable {
     private Boolean clip;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.zlevel">https://echarts.apache.org/zh/option.html#series-custom.zlevel</a>
-     * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -761,7 +756,6 @@ public class CustomSeries extends Series implements Serializable {
     private Integer zlevel;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.z">https://echarts.apache.org/zh/option.html#series-custom.z</a>
-     * <br/>序号: 23
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -771,7 +765,6 @@ public class CustomSeries extends Series implements Serializable {
     private Integer z;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.silent">https://echarts.apache.org/zh/option.html#series-custom.silent</a>
-     * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -780,7 +773,6 @@ public class CustomSeries extends Series implements Serializable {
     private Boolean silent;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.animation">https://echarts.apache.org/zh/option.html#series-custom.animation</a>
-     * <br/>序号: 25
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -789,7 +781,6 @@ public class CustomSeries extends Series implements Serializable {
     private Boolean animation;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.animationThreshold">https://echarts.apache.org/zh/option.html#series-custom.animationThreshold</a>
-     * <br/>序号: 26
      * <br/>默认值: 2000
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -798,7 +789,6 @@ public class CustomSeries extends Series implements Serializable {
     private Integer animationThreshold;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.animationDuration">https://echarts.apache.org/zh/option.html#series-custom.animationDuration</a>
-     * <br/>序号: 27
      * <br/>默认值: 1000
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -812,7 +802,6 @@ public class CustomSeries extends Series implements Serializable {
     private Object animationDuration;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.animationEasing">https://echarts.apache.org/zh/option.html#series-custom.animationEasing</a>
-     * <br/>序号: 28
      * <br/>默认值: cubicOut
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -821,7 +810,6 @@ public class CustomSeries extends Series implements Serializable {
     private String animationEasing;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.animationDelay">https://echarts.apache.org/zh/option.html#series-custom.animationDelay</a>
-     * <br/>序号: 29
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -837,7 +825,6 @@ public class CustomSeries extends Series implements Serializable {
     private Object animationDelay;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.animationDurationUpdate">https://echarts.apache.org/zh/option.html#series-custom.animationDurationUpdate</a>
-     * <br/>序号: 30
      * <br/>默认值: 300
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -852,7 +839,6 @@ public class CustomSeries extends Series implements Serializable {
     private Object animationDurationUpdate;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.animationEasingUpdate">https://echarts.apache.org/zh/option.html#series-custom.animationEasingUpdate</a>
-     * <br/>序号: 31
      * <br/>默认值: cubicInOut
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -861,7 +847,6 @@ public class CustomSeries extends Series implements Serializable {
     private String animationEasingUpdate;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.animationDelayUpdate">https://echarts.apache.org/zh/option.html#series-custom.animationDelayUpdate</a>
-     * <br/>序号: 32
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -876,8 +861,18 @@ public class CustomSeries extends Series implements Serializable {
      */
     private Object animationDelayUpdate;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.universalTransition">https://echarts.apache.org/zh/option.html#series-custom.universalTransition</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["object"]
+     * <br/>描述:
+     * <p>全局过渡动画相关的配置。</p>
+     * <p>全局过渡动画（Universal Transition）提供了任意系列之间进行变形动画的功能。开启该功能后，每次<code class="codespan">setOption</code>，相同<code class="codespan">id</code>的系列之间会自动关联进行动画的过渡，更细粒度的关联配置见<code class="codespan">universalTransition.seriesKey</code>配置。</p>
+     * <p>通过配置<code class="codespan">encode.itemGroupId</code>或者<code class="codespan">dataGroupId</code>等指定数据的分组，还可以实现诸如下钻，聚合等一对多或者多对一的动画。</p>
+     * <p>可以直接在系列中配置 <code class="codespan">universalTransition: true</code> 开启该功能。也可以提供一个对象进行更多属性的配置。</p>
+     */
+    private UniversalTransition universalTransition;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-custom.tooltip">https://echarts.apache.org/zh/option.html#series-custom.tooltip</a>
-     * <br/>序号: 33
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

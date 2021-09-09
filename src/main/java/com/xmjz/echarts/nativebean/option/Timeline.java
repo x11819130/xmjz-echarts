@@ -10,13 +10,12 @@ import java.util.List;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline">https://echarts.apache.org/zh/option.html#timeline</a>
- * <br/>序号: 20
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
  * <p><code class="codespan">timeline</code> 组件，提供了在多个 ECharts <code class="codespan">option</code> 间进行切换、播放等操作的功能。</p>
  * <p>示例效果如下：</p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/mix-timeline-all&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="18"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/mix-timeline-all&amp;edit=1&amp;reset=1" width="600" height="400"></iframe>
  *
  *
  * <p><code class="codespan">timeline</code> 和其他场景有些不同，它需要操作『多个option』。我们把传入 <code class="codespan">setOption</code> 第一个参数的东西，称为 <code class="codespan">ECOption</code>，然后称传统的 ECharts 单个 option 为 <code class="codespan">ECUnitOption</code>。</p>
@@ -123,7 +122,6 @@ public class Timeline implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.show">https://echarts.apache.org/zh/option.html#timeline.show</a>
-     * <br/>序号: 1
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -132,7 +130,6 @@ public class Timeline implements Serializable {
     private Boolean show;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.type">https://echarts.apache.org/zh/option.html#timeline.type</a>
-     * <br/>序号: 2
      * <br/>默认值: slider
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -141,7 +138,6 @@ public class Timeline implements Serializable {
     private String type;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.axisType">https://echarts.apache.org/zh/option.html#timeline.axisType</a>
-     * <br/>序号: 3
      * <br/>默认值: time
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -161,7 +157,6 @@ public class Timeline implements Serializable {
     private String axisType;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.currentIndex">https://echarts.apache.org/zh/option.html#timeline.currentIndex</a>
-     * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -170,7 +165,6 @@ public class Timeline implements Serializable {
     private Integer currentIndex;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.autoPlay">https://echarts.apache.org/zh/option.html#timeline.autoPlay</a>
-     * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -179,7 +173,6 @@ public class Timeline implements Serializable {
     private Boolean autoPlay;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.rewind">https://echarts.apache.org/zh/option.html#timeline.rewind</a>
-     * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -188,7 +181,6 @@ public class Timeline implements Serializable {
     private Boolean rewind;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.loop">https://echarts.apache.org/zh/option.html#timeline.loop</a>
-     * <br/>序号: 7
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -197,7 +189,6 @@ public class Timeline implements Serializable {
     private Boolean loop;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.playInterval">https://echarts.apache.org/zh/option.html#timeline.playInterval</a>
-     * <br/>序号: 8
      * <br/>默认值: 2000
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -206,7 +197,6 @@ public class Timeline implements Serializable {
     private Integer playInterval;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.realtime">https://echarts.apache.org/zh/option.html#timeline.realtime</a>
-     * <br/>序号: 9
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -215,7 +205,6 @@ public class Timeline implements Serializable {
     private Boolean realtime;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.replaceMerge">https://echarts.apache.org/zh/option.html#timeline.replaceMerge</a>
-     * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["Array","string"]
      * <br/>描述:
@@ -234,7 +223,6 @@ public class Timeline implements Serializable {
     private Object replaceMerge;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.controlPosition">https://echarts.apache.org/zh/option.html#timeline.controlPosition</a>
-     * <br/>序号: 11
      * <br/>默认值: left
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -243,7 +231,6 @@ public class Timeline implements Serializable {
     private String controlPosition;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.zlevel">https://echarts.apache.org/zh/option.html#timeline.zlevel</a>
-     * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -254,7 +241,6 @@ public class Timeline implements Serializable {
     private Integer zlevel;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.z">https://echarts.apache.org/zh/option.html#timeline.z</a>
-     * <br/>序号: 13
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -264,7 +250,6 @@ public class Timeline implements Serializable {
     private Integer z;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.left">https://echarts.apache.org/zh/option.html#timeline.left</a>
-     * <br/>序号: 14
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -275,7 +260,6 @@ public class Timeline implements Serializable {
     private Object left;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.top">https://echarts.apache.org/zh/option.html#timeline.top</a>
-     * <br/>序号: 15
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -286,7 +270,6 @@ public class Timeline implements Serializable {
     private Object top;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.right">https://echarts.apache.org/zh/option.html#timeline.right</a>
-     * <br/>序号: 16
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -297,7 +280,6 @@ public class Timeline implements Serializable {
     private Object right;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.bottom">https://echarts.apache.org/zh/option.html#timeline.bottom</a>
-     * <br/>序号: 17
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -308,7 +290,6 @@ public class Timeline implements Serializable {
     private Object bottom;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.padding">https://echarts.apache.org/zh/option.html#timeline.padding</a>
-     * <br/>序号: 18
      * <br/>默认值: 5
      * <br/>js类型: ["number","Array"]
      * <br/>描述:
@@ -330,7 +311,6 @@ public class Timeline implements Serializable {
     private Object padding;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.orient">https://echarts.apache.org/zh/option.html#timeline.orient</a>
-     * <br/>序号: 19
      * <br/>默认值: horizontal
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -343,7 +323,6 @@ public class Timeline implements Serializable {
     private String orient;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.inverse">https://echarts.apache.org/zh/option.html#timeline.inverse</a>
-     * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -354,7 +333,6 @@ public class Timeline implements Serializable {
     private Boolean inverse;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.symbol">https://echarts.apache.org/zh/option.html#timeline.symbol</a>
-     * <br/>序号: 21
      * <br/>默认值: emptyCircle
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -374,7 +352,6 @@ public class Timeline implements Serializable {
     private String symbol;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.symbolSize">https://echarts.apache.org/zh/option.html#timeline.symbolSize</a>
-     * <br/>序号: 22
      * <br/>默认值: 10
      * <br/>js类型: ["number","Array"]
      * <br/>描述:
@@ -383,7 +360,6 @@ public class Timeline implements Serializable {
     private Object symbolSize;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.symbolRotate">https://echarts.apache.org/zh/option.html#timeline.symbolRotate</a>
-     * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -392,7 +368,6 @@ public class Timeline implements Serializable {
     private Integer symbolRotate;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.symbolKeepAspect">https://echarts.apache.org/zh/option.html#timeline.symbolKeepAspect</a>
-     * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -401,17 +376,15 @@ public class Timeline implements Serializable {
     private Boolean symbolKeepAspect;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.symbolOffset">https://echarts.apache.org/zh/option.html#timeline.symbolOffset</a>
-     * <br/>序号: 25
      * <br/>默认值: [0,0]
      * <br/>js类型: ["Array"]
      * <br/>描述:
      * <p>timeline标记相对于原本位置的偏移。默认情况下，标记会居中置放在数据对应的位置，但是如果 symbol 是自定义的矢量路径或者图片，就有可能不希望 symbol 居中。这时候可以使用该配置项配置 symbol 相对于原本居中的偏移，可以是绝对的像素值，也可以是相对的百分比。</p>
-     * <p>例如 <code class="codespan">[0, '50%']</code> 就是把自己向上移动了一半的位置，在 symbol 图形是气泡的时候可以让图形下端的箭头对准数据点。</p>
+     * <p>例如 <code class="codespan">[0, '-50%']</code> 就是把自己向上移动了一半的位置，在 symbol 图形是气泡的时候可以让图形下端的箭头对准数据点。</p>
      */
     private List<?> symbolOffset;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.lineStyle">https://echarts.apache.org/zh/option.html#timeline.lineStyle</a>
-     * <br/>序号: 26
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -419,7 +392,6 @@ public class Timeline implements Serializable {
     private LineStyle lineStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.label">https://echarts.apache.org/zh/option.html#timeline.label</a>
-     * <br/>序号: 27
      * <br/>默认值: auto
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -428,7 +400,6 @@ public class Timeline implements Serializable {
     private Label label;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.itemStyle">https://echarts.apache.org/zh/option.html#timeline.itemStyle</a>
-     * <br/>序号: 28
      * <br/>默认值: #A4B1D7
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -437,7 +408,6 @@ public class Timeline implements Serializable {
     private ItemStyle itemStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.checkpointStyle">https://echarts.apache.org/zh/option.html#timeline.checkpointStyle</a>
-     * <br/>序号: 29
      * <br/>默认值: circle
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -446,7 +416,6 @@ public class Timeline implements Serializable {
     private CheckpointStyle checkpointStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.controlStyle">https://echarts.apache.org/zh/option.html#timeline.controlStyle</a>
-     * <br/>序号: 30
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -455,7 +424,6 @@ public class Timeline implements Serializable {
     private ControlStyle controlStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.progress">https://echarts.apache.org/zh/option.html#timeline.progress</a>
-     * <br/>序号: 31
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -464,7 +432,6 @@ public class Timeline implements Serializable {
     private Progress progress;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.emphasis">https://echarts.apache.org/zh/option.html#timeline.emphasis</a>
-     * <br/>序号: 32
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -472,7 +439,6 @@ public class Timeline implements Serializable {
     private Emphasis emphasis;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.data">https://echarts.apache.org/zh/option.html#timeline.data</a>
-     * <br/>序号: 33
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:

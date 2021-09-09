@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.hoverAnimation">https://echarts.apache.org/zh/option.html#series-pictorialBar.hoverAnimation</a>
- * <br/>序号: 35
  * <br/>默认值: 无
  * <br/>js类型: ["boolean"]
  * <br/>描述:
@@ -41,7 +40,6 @@ public class HoverAnimation implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.hoverAnimation.animation">https://echarts.apache.org/zh/option.html#series-pictorialBar.hoverAnimation.animation</a>
-     * <br/>序号: 1
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -50,7 +48,6 @@ public class HoverAnimation implements Serializable {
     private Boolean animation;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.hoverAnimation.animationThreshold">https://echarts.apache.org/zh/option.html#series-pictorialBar.hoverAnimation.animationThreshold</a>
-     * <br/>序号: 2
      * <br/>默认值: 2000
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -59,7 +56,6 @@ public class HoverAnimation implements Serializable {
     private Integer animationThreshold;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.hoverAnimation.animationDuration">https://echarts.apache.org/zh/option.html#series-pictorialBar.hoverAnimation.animationDuration</a>
-     * <br/>序号: 3
      * <br/>默认值: 1000
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -73,7 +69,6 @@ public class HoverAnimation implements Serializable {
     private Object animationDuration;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.hoverAnimation.animationEasing">https://echarts.apache.org/zh/option.html#series-pictorialBar.hoverAnimation.animationEasing</a>
-     * <br/>序号: 4
      * <br/>默认值: cubicOut
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -82,7 +77,6 @@ public class HoverAnimation implements Serializable {
     private String animationEasing;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.hoverAnimation.animationDurationUpdate">https://echarts.apache.org/zh/option.html#series-pictorialBar.hoverAnimation.animationDurationUpdate</a>
-     * <br/>序号: 5
      * <br/>默认值: 300
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -97,7 +91,6 @@ public class HoverAnimation implements Serializable {
     private Object animationDurationUpdate;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.hoverAnimation.animationEasingUpdate">https://echarts.apache.org/zh/option.html#series-pictorialBar.hoverAnimation.animationEasingUpdate</a>
-     * <br/>序号: 6
      * <br/>默认值: cubicInOut
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -106,7 +99,6 @@ public class HoverAnimation implements Serializable {
     private String animationEasingUpdate;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.hoverAnimation.animationDelay">https://echarts.apache.org/zh/option.html#series-pictorialBar.hoverAnimation.animationDelay</a>
-     * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -126,7 +118,6 @@ public class HoverAnimation implements Serializable {
     private Object animationDelay;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.hoverAnimation.animationDelayUpdate">https://echarts.apache.org/zh/option.html#series-pictorialBar.hoverAnimation.animationDelayUpdate</a>
-     * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
      * <br/>描述:

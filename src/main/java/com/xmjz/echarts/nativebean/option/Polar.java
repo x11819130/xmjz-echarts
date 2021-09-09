@@ -9,13 +9,12 @@ import java.util.List;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#polar">https://echarts.apache.org/zh/option.html#polar</a>
- * <br/>序号: 6
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
  * <p>极坐标系，可以用于散点图和折线图。每个极坐标系拥有一个<a href="#angleAxis">角度轴</a>和一个<a href="#radiusAxis">半径轴</a>。</p>
  * <p><strong>示例：</strong></p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-polar-punchCard&amp;edit=1&amp;reset=1" width="600" height="400"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-polar-punchCard&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="19"></iframe>
  *
  * @author auto
  */
@@ -27,7 +26,6 @@ public class Polar implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#polar.id">https://echarts.apache.org/zh/option.html#polar.id</a>
-     * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -36,7 +34,6 @@ public class Polar implements Serializable {
     private String id;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#polar.zlevel">https://echarts.apache.org/zh/option.html#polar.zlevel</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -47,7 +44,6 @@ public class Polar implements Serializable {
     private Integer zlevel;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#polar.z">https://echarts.apache.org/zh/option.html#polar.z</a>
-     * <br/>序号: 3
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -57,7 +53,6 @@ public class Polar implements Serializable {
     private Integer z;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#polar.center">https://echarts.apache.org/zh/option.html#polar.center</a>
-     * <br/>序号: 4
      * <br/>默认值: ["50%","50%"]
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -73,7 +68,6 @@ public class Polar implements Serializable {
     private List<?> center;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#polar.radius">https://echarts.apache.org/zh/option.html#polar.radius</a>
-     * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["number","string","Array"]
      * <br/>描述:
@@ -89,7 +83,6 @@ public class Polar implements Serializable {
     private Object radius;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#polar.tooltip">https://echarts.apache.org/zh/option.html#polar.tooltip</a>
-     * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

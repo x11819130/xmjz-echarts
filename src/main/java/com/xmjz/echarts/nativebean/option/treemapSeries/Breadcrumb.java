@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.breadcrumb">https://echarts.apache.org/zh/option.html#series-treemap.breadcrumb</a>
- * <br/>序号: 33
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -24,7 +23,6 @@ public class Breadcrumb implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.breadcrumb.show">https://echarts.apache.org/zh/option.html#series-treemap.breadcrumb.show</a>
-     * <br/>序号: 1
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -33,7 +31,6 @@ public class Breadcrumb implements Serializable {
     private Boolean show;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.breadcrumb.left">https://echarts.apache.org/zh/option.html#series-treemap.breadcrumb.left</a>
-     * <br/>序号: 2
      * <br/>默认值: center
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -44,7 +41,6 @@ public class Breadcrumb implements Serializable {
     private Object left;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.breadcrumb.top">https://echarts.apache.org/zh/option.html#series-treemap.breadcrumb.top</a>
-     * <br/>序号: 3
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -55,7 +51,6 @@ public class Breadcrumb implements Serializable {
     private Object top;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.breadcrumb.right">https://echarts.apache.org/zh/option.html#series-treemap.breadcrumb.right</a>
-     * <br/>序号: 4
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -66,7 +61,6 @@ public class Breadcrumb implements Serializable {
     private Object right;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.breadcrumb.bottom">https://echarts.apache.org/zh/option.html#series-treemap.breadcrumb.bottom</a>
-     * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -77,7 +71,6 @@ public class Breadcrumb implements Serializable {
     private Object bottom;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.breadcrumb.height">https://echarts.apache.org/zh/option.html#series-treemap.breadcrumb.height</a>
-     * <br/>序号: 6
      * <br/>默认值: 22
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -86,7 +79,6 @@ public class Breadcrumb implements Serializable {
     private Integer height;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.breadcrumb.emptyItemWidth">https://echarts.apache.org/zh/option.html#series-treemap.breadcrumb.emptyItemWidth</a>
-     * <br/>序号: 7
      * <br/>默认值: 25
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -95,7 +87,6 @@ public class Breadcrumb implements Serializable {
     private Integer emptyItemWidth;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.breadcrumb.itemStyle">https://echarts.apache.org/zh/option.html#series-treemap.breadcrumb.itemStyle</a>
-     * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -104,7 +95,6 @@ public class Breadcrumb implements Serializable {
     private Object itemStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.breadcrumb.emphasis">https://echarts.apache.org/zh/option.html#series-treemap.breadcrumb.emphasis</a>
-     * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

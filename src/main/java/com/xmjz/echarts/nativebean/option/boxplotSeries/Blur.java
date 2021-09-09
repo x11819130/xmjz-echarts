@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.blur">https://echarts.apache.org/zh/option.html#series-boxplot.blur</a>
- * <br/>序号: 13
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -27,7 +26,6 @@ public class Blur implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.blur.itemStyle">https://echarts.apache.org/zh/option.html#series-boxplot.blur.itemStyle</a>
-     * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

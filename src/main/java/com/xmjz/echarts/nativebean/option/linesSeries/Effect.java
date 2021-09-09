@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.effect">https://echarts.apache.org/zh/option.html#series-lines.effect</a>
- * <br/>序号: 9
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -25,7 +24,6 @@ public class Effect implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.effect.show">https://echarts.apache.org/zh/option.html#series-lines.effect.show</a>
-     * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -34,7 +32,6 @@ public class Effect implements Serializable {
     private Boolean show;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.effect.period">https://echarts.apache.org/zh/option.html#series-lines.effect.period</a>
-     * <br/>序号: 2
      * <br/>默认值: 4
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -43,7 +40,6 @@ public class Effect implements Serializable {
     private Integer period;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.effect.delay">https://echarts.apache.org/zh/option.html#series-lines.effect.delay</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -52,7 +48,6 @@ public class Effect implements Serializable {
     private Object delay;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.effect.constantSpeed">https://echarts.apache.org/zh/option.html#series-lines.effect.constantSpeed</a>
-     * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -61,7 +56,6 @@ public class Effect implements Serializable {
     private Integer constantSpeed;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.effect.symbol">https://echarts.apache.org/zh/option.html#series-lines.effect.symbol</a>
-     * <br/>序号: 5
      * <br/>默认值: circle
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -82,7 +76,6 @@ public class Effect implements Serializable {
     private String symbol;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.effect.symbolSize">https://echarts.apache.org/zh/option.html#series-lines.effect.symbolSize</a>
-     * <br/>序号: 6
      * <br/>默认值: 3
      * <br/>js类型: ["Array","number"]
      * <br/>描述:
@@ -91,7 +84,6 @@ public class Effect implements Serializable {
     private Object symbolSize;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.effect.color">https://echarts.apache.org/zh/option.html#series-lines.effect.color</a>
-     * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -100,7 +92,6 @@ public class Effect implements Serializable {
     private String color;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.effect.trailLength">https://echarts.apache.org/zh/option.html#series-lines.effect.trailLength</a>
-     * <br/>序号: 8
      * <br/>默认值: 0.2
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -109,7 +100,6 @@ public class Effect implements Serializable {
     private Integer trailLength;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.effect.loop">https://echarts.apache.org/zh/option.html#series-lines.effect.loop</a>
-     * <br/>序号: 9
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:

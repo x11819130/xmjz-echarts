@@ -9,18 +9,17 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar">https://echarts.apache.org/zh/option.html#calendar</a>
- * <br/>序号: 22
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
  * <p>日历坐标系组件。</p>
  * <p>在ECharts中，我们非常有创意地实现了日历图，是通过使用日历坐标系组件来达到日历图效果的，如下方的几个示例图所示，我们可以在热力图、散点图、关系图中使用日历坐标系。</p>
  * <p>在日历坐标系中使用热力图的示例:</p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=calendar-heatmap&amp;edit=1&amp;reset=1" width="800" height="400" data-ll-timeout="17"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=calendar-heatmap&amp;edit=1&amp;reset=1" width="800" height="400"></iframe>
  *
  *
  * <p>在日历坐标系中使用散点图的示例:</p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=calendar-effectscatter&amp;edit=1&amp;reset=1" width="800" height="600" data-ll-timeout="18"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=calendar-effectscatter&amp;edit=1&amp;reset=1" width="800" height="600"></iframe>
  *
  *
  * <p>在日历坐标系中使用关系图（以及混合图表）的示例:</p>
@@ -52,7 +51,6 @@ public class Calendar implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.id">https://echarts.apache.org/zh/option.html#calendar.id</a>
-     * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -61,7 +59,6 @@ public class Calendar implements Serializable {
     private String id;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.zlevel">https://echarts.apache.org/zh/option.html#calendar.zlevel</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -72,7 +69,6 @@ public class Calendar implements Serializable {
     private Integer zlevel;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.z">https://echarts.apache.org/zh/option.html#calendar.z</a>
-     * <br/>序号: 3
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -82,7 +78,6 @@ public class Calendar implements Serializable {
     private Integer z;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.left">https://echarts.apache.org/zh/option.html#calendar.left</a>
-     * <br/>序号: 4
      * <br/>默认值: 80
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -93,7 +88,6 @@ public class Calendar implements Serializable {
     private Object left;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.top">https://echarts.apache.org/zh/option.html#calendar.top</a>
-     * <br/>序号: 5
      * <br/>默认值: 60
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -104,7 +98,6 @@ public class Calendar implements Serializable {
     private Object top;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.right">https://echarts.apache.org/zh/option.html#calendar.right</a>
-     * <br/>序号: 6
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -115,7 +108,6 @@ public class Calendar implements Serializable {
     private Object right;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.bottom">https://echarts.apache.org/zh/option.html#calendar.bottom</a>
-     * <br/>序号: 7
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -126,7 +118,6 @@ public class Calendar implements Serializable {
     private Object bottom;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.width">https://echarts.apache.org/zh/option.html#calendar.width</a>
-     * <br/>序号: 8
      * <br/>默认值: auto
      * <br/>js类型: ["number","string"]
      * <br/>描述:
@@ -136,7 +127,6 @@ public class Calendar implements Serializable {
     private Object width;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.height">https://echarts.apache.org/zh/option.html#calendar.height</a>
-     * <br/>序号: 9
      * <br/>默认值: auto
      * <br/>js类型: ["number","string"]
      * <br/>描述:
@@ -146,7 +136,6 @@ public class Calendar implements Serializable {
     private Object height;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.range">https://echarts.apache.org/zh/option.html#calendar.range</a>
-     * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["number","string","Array"]
      * <br/>描述:
@@ -170,7 +159,6 @@ public class Calendar implements Serializable {
     private Object range;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.cellSize">https://echarts.apache.org/zh/option.html#calendar.cellSize</a>
-     * <br/>序号: 11
      * <br/>默认值: 20
      * <br/>js类型: ["number","Array"]
      * <br/>描述:
@@ -198,7 +186,6 @@ public class Calendar implements Serializable {
     private Object cellSize;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.orient">https://echarts.apache.org/zh/option.html#calendar.orient</a>
-     * <br/>序号: 12
      * <br/>默认值: horizontal
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -212,7 +199,6 @@ public class Calendar implements Serializable {
     private String orient;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.splitLine">https://echarts.apache.org/zh/option.html#calendar.splitLine</a>
-     * <br/>序号: 13
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -221,7 +207,6 @@ public class Calendar implements Serializable {
     private SplitLine splitLine;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.itemStyle">https://echarts.apache.org/zh/option.html#calendar.itemStyle</a>
-     * <br/>序号: 14
      * <br/>默认值: #fff
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -230,7 +215,6 @@ public class Calendar implements Serializable {
     private ItemStyle itemStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel">https://echarts.apache.org/zh/option.html#calendar.dayLabel</a>
-     * <br/>序号: 15
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -239,7 +223,6 @@ public class Calendar implements Serializable {
     private DayLabel dayLabel;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.monthLabel">https://echarts.apache.org/zh/option.html#calendar.monthLabel</a>
-     * <br/>序号: 16
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -248,7 +231,6 @@ public class Calendar implements Serializable {
     private MonthLabel monthLabel;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel">https://echarts.apache.org/zh/option.html#calendar.yearLabel</a>
-     * <br/>序号: 17
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -257,7 +239,6 @@ public class Calendar implements Serializable {
     private YearLabel yearLabel;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.silent">https://echarts.apache.org/zh/option.html#calendar.silent</a>
-     * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:

@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.axisTick">https://echarts.apache.org/zh/option.html#parallelAxis.axisTick</a>
- * <br/>序号: 25
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -24,7 +23,6 @@ public class AxisTick implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.axisTick.show">https://echarts.apache.org/zh/option.html#parallelAxis.axisTick.show</a>
-     * <br/>序号: 1
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -33,7 +31,6 @@ public class AxisTick implements Serializable {
     private Boolean show;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.axisTick.alignWithLabel">https://echarts.apache.org/zh/option.html#parallelAxis.axisTick.alignWithLabel</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -43,7 +40,6 @@ public class AxisTick implements Serializable {
     private Boolean alignWithLabel;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.axisTick.interval">https://echarts.apache.org/zh/option.html#parallelAxis.axisTick.interval</a>
-     * <br/>序号: 3
      * <br/>默认值: auto
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -59,7 +55,6 @@ public class AxisTick implements Serializable {
     private Object interval;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.axisTick.inside">https://echarts.apache.org/zh/option.html#parallelAxis.axisTick.inside</a>
-     * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -68,7 +63,6 @@ public class AxisTick implements Serializable {
     private Boolean inside;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.axisTick.length">https://echarts.apache.org/zh/option.html#parallelAxis.axisTick.length</a>
-     * <br/>序号: 5
      * <br/>默认值: 5
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -77,7 +71,6 @@ public class AxisTick implements Serializable {
     private Integer length;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.axisTick.lineStyle">https://echarts.apache.org/zh/option.html#parallelAxis.axisTick.lineStyle</a>
-     * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

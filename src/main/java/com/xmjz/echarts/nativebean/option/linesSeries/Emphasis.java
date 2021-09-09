@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.emphasis">https://echarts.apache.org/zh/option.html#series-lines.emphasis</a>
- * <br/>序号: 17
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -24,7 +23,6 @@ public class Emphasis implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.emphasis.focus">https://echarts.apache.org/zh/option.html#series-lines.emphasis.focus</a>
-     * <br/>序号: 1
      * <br/>默认值: none
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -35,6 +33,8 @@ public class Emphasis implements Serializable {
      * <ul>
      * <li><code class="codespan">'none'</code> 不淡出其它图形，默认使用该配置。</li>
      * <li><code class="codespan">'self'</code> 只聚焦（不淡出）当前高亮的数据的图形。</li>
+     * </ul>
+     * <ul>
      * <li><code class="codespan">'series'</code> 聚焦当前高亮的数据所在的系列的所有图形。</li>
      * </ul>
      * <p><strong>示例：</strong></p>
@@ -49,7 +49,6 @@ public class Emphasis implements Serializable {
     private String focus;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.emphasis.blurScope">https://echarts.apache.org/zh/option.html#series-lines.emphasis.blurScope</a>
-     * <br/>序号: 2
      * <br/>默认值: coordinateSystem
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -66,7 +65,6 @@ public class Emphasis implements Serializable {
     private String blurScope;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.emphasis.lineStyle">https://echarts.apache.org/zh/option.html#series-lines.emphasis.lineStyle</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -74,7 +72,6 @@ public class Emphasis implements Serializable {
     private Object lineStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.emphasis.label">https://echarts.apache.org/zh/option.html#series-lines.emphasis.label</a>
-     * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

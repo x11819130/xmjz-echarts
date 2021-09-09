@@ -10,7 +10,6 @@ import java.util.List;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#graphic">https://echarts.apache.org/zh/option.html#graphic</a>
- * <br/>序号: 21
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -28,11 +27,11 @@ import java.util.List;
  * <a href="#graphic.elements-arc">arc</a>,
  * <a href="#graphic.elements-group">group</a>,</p>
  * <p>下面示例中，使用图形元素做了水印，和文本块：</p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-graphic&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="18"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-graphic&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="20"></iframe>
  *
  *
  * <p>下面示例中，使用隐藏的图形元素实现了拖拽：</p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-draggable&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="19"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-draggable&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="21"></iframe>
  *
  *
  *
@@ -294,7 +293,6 @@ public class Graphic implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#graphic.id">https://echarts.apache.org/zh/option.html#graphic.id</a>
-     * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -303,7 +301,6 @@ public class Graphic implements Serializable {
     private String id;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#graphic.elements">https://echarts.apache.org/zh/option.html#graphic.elements</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:

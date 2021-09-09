@@ -10,12 +10,11 @@ import java.util.List;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#dataset">https://echarts.apache.org/zh/option.html#dataset</a>
- * <br/>序号: 23
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
  * <p>ECharts 4 开始支持了 <code class="codespan">数据集</code>（<code class="codespan">dataset</code>）组件用于单独的数据集声明，从而数据可以单独管理，被多个组件复用，并且可以自由指定数据到视觉的映射。这在不少场景下能带来使用上的方便。</p>
- * <p>关于 <code class="codespan">dataset</code> 的详情，请参见<a href="tutorial.html#%E4%BD%BF%E7%94%A8%20dataset%20%E7%AE%A1%E7%90%86%E6%95%B0%E6%8D%AE" target="_blank">教程</a>。</p>
+ * <p>关于 <code class="codespan">dataset</code> 的详情，请参见<a href="https://echarts.apache.org/handbook/zh/concepts/dataset" target="_blank">教程</a>。</p>
  *
  * @author auto
  */
@@ -27,7 +26,6 @@ public class Dataset implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#dataset.id">https://echarts.apache.org/zh/option.html#dataset.id</a>
-     * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -36,7 +34,6 @@ public class Dataset implements Serializable {
     private String id;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#dataset.source">https://echarts.apache.org/zh/option.html#dataset.source</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Array","Object"]
      * <br/>描述:
@@ -65,12 +62,11 @@ public class Dataset implements Serializable {
      *     <span class="hljs-string">'score'</span>: [<span class="hljs-number">95.8</span>, <span class="hljs-number">81.4</span>, <span class="hljs-number">91.2</span>, <span class="hljs-number">76.9</span>]
      * }
      * </code></pre>
-     * <p>关于 <code class="codespan">dataset</code> 的详情，请参见<a href="tutorial.html#%E4%BD%BF%E7%94%A8%20dataset%20%E7%AE%A1%E7%90%86%E6%95%B0%E6%8D%AE" target="_blank">教程</a>。</p>
+     * <p>关于 <code class="codespan">dataset</code> 的详情，请参见<a href="https://echarts.apache.org/handbook/zh/concepts/dataset" target="_blank">教程</a>。</p>
      */
     private Object source;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#dataset.dimensions">https://echarts.apache.org/zh/option.html#dataset.dimensions</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -128,7 +124,6 @@ public class Dataset implements Serializable {
     private List<?> dimensions;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#dataset.sourceHeader">https://echarts.apache.org/zh/option.html#dataset.sourceHeader</a>
-     * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -143,42 +138,38 @@ public class Dataset implements Serializable {
     private Boolean sourceHeader;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#dataset.transform">https://echarts.apache.org/zh/option.html#dataset.transform</a>
-     * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
-     * <p>参见这个教程： <a href="tutorial.html#%E4%BD%BF%E7%94%A8%20transform%20%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2" target="_blank">data transform</a>.</p>
+     * <p>参见 <a href="https://echarts.apache.org/handbook/zh/concepts/data-transform" target="_blank">数据变换教程</a></p>
      */
     private List<Transform> transform;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#dataset.fromDatasetIndex">https://echarts.apache.org/zh/option.html#dataset.fromDatasetIndex</a>
-     * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
      * <p>指定 <a href="#dataset.transform">dataset.transform</a> 以哪个 dataset 作为输入。如果 <a href="#dataset.transform">dataset.transform</a> 被指定了，但是 <code class="codespan">fromDatasetIndex</code> 和 <code class="codespan">fromDatasetId</code> 都没有被指定，那么默认会使用 <code class="codespan">fromDatasetIndex: 0</code>.</p>
-     * <p>参见这个教程： <a href="tutorial.html#%E4%BD%BF%E7%94%A8%20transform%20%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2" target="_blank">data transform</a>.</p>
+     * <p>参见 <a href="https://echarts.apache.org/handbook/zh/concepts/data-transform" target="_blank">数据变换教程</a></p>
      */
     private Integer fromDatasetIndex;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#dataset.fromDatasetId">https://echarts.apache.org/zh/option.html#dataset.fromDatasetId</a>
-     * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
      * <p>指定 <a href="#dataset.transform">dataset.transform</a> 以哪个 dataset 作为输入。</p>
-     * <p>参见这个教程： <a href="tutorial.html#%E4%BD%BF%E7%94%A8%20transform%20%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2" target="_blank">data transform</a>.</p>
+     * <p>参见 <a href="https://echarts.apache.org/handbook/zh/concepts/data-transform" target="_blank">数据变换教程</a></p>
      */
     private String fromDatasetId;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#dataset.fromTransformResult">https://echarts.apache.org/zh/option.html#dataset.fromTransformResult</a>
-     * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
      * <p>如果一个 <a href="#dataset.transform">dataset.transform</a> 会产出多个结果 data ，我们可以使用 <code class="codespan">fromTransformResult</code> 获得特定的结果。</p>
      * <p>大多数场景下，transform 只会产出一个结果，所以大多数情况下 <code class="codespan">fromTransformResult</code> 并不需要指定。当不指定 <code class="codespan">fromTransformResult</code> 时，默认使用 <code class="codespan">fromTransformResult: 0</code>。</p>
-     * <p>参见这个教程： <a href="tutorial.html#%E4%BD%BF%E7%94%A8%20transform%20%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2" target="_blank">data transform</a>.</p>
+     * <p>参见 <a href="https://echarts.apache.org/handbook/zh/concepts/data-transform" target="_blank">数据变换教程</a></p>
      */
     private Integer fromTransformResult;
 }

@@ -9,7 +9,6 @@ import java.util.List;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.categories">https://echarts.apache.org/zh/option.html#series-graph.categories</a>
- * <br/>序号: 31
  * <br/>默认值: 无
  * <br/>js类型: ["Array"]
  * <br/>描述:
@@ -26,7 +25,6 @@ public class Categories implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.categories.name">https://echarts.apache.org/zh/option.html#series-graph.categories.name</a>
-     * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -35,7 +33,6 @@ public class Categories implements Serializable {
     private String name;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.categories.symbol">https://echarts.apache.org/zh/option.html#series-graph.categories.symbol</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -55,7 +52,6 @@ public class Categories implements Serializable {
     private String symbol;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.categories.symbolSize">https://echarts.apache.org/zh/option.html#series-graph.categories.symbolSize</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
      * <br/>描述:
@@ -64,7 +60,6 @@ public class Categories implements Serializable {
     private Object symbolSize;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.categories.symbolRotate">https://echarts.apache.org/zh/option.html#series-graph.categories.symbolRotate</a>
-     * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -73,7 +68,6 @@ public class Categories implements Serializable {
     private Integer symbolRotate;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.categories.symbolKeepAspect">https://echarts.apache.org/zh/option.html#series-graph.categories.symbolKeepAspect</a>
-     * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -82,17 +76,15 @@ public class Categories implements Serializable {
     private Boolean symbolKeepAspect;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.categories.symbolOffset">https://echarts.apache.org/zh/option.html#series-graph.categories.symbolOffset</a>
-     * <br/>序号: 6
      * <br/>默认值: [0,0]
      * <br/>js类型: ["Array"]
      * <br/>描述:
      * <p>该类目节点标记相对于原本位置的偏移。默认情况下，标记会居中置放在数据对应的位置，但是如果 symbol 是自定义的矢量路径或者图片，就有可能不希望 symbol 居中。这时候可以使用该配置项配置 symbol 相对于原本居中的偏移，可以是绝对的像素值，也可以是相对的百分比。</p>
-     * <p>例如 <code class="codespan">[0, '50%']</code> 就是把自己向上移动了一半的位置，在 symbol 图形是气泡的时候可以让图形下端的箭头对准数据点。</p>
+     * <p>例如 <code class="codespan">[0, '-50%']</code> 就是把自己向上移动了一半的位置，在 symbol 图形是气泡的时候可以让图形下端的箭头对准数据点。</p>
      */
     private List<?> symbolOffset;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.categories.itemStyle">https://echarts.apache.org/zh/option.html#series-graph.categories.itemStyle</a>
-     * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -101,7 +93,6 @@ public class Categories implements Serializable {
     private Object itemStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.categories.label">https://echarts.apache.org/zh/option.html#series-graph.categories.label</a>
-     * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -110,7 +101,6 @@ public class Categories implements Serializable {
     private Object label;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.categories.emphasis">https://echarts.apache.org/zh/option.html#series-graph.categories.emphasis</a>
-     * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -119,7 +109,6 @@ public class Categories implements Serializable {
     private Object emphasis;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.categories.blur">https://echarts.apache.org/zh/option.html#series-graph.categories.blur</a>
-     * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -131,7 +120,6 @@ public class Categories implements Serializable {
     private Object blur;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.categories.select">https://echarts.apache.org/zh/option.html#series-graph.categories.select</a>
-     * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

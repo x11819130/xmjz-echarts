@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.emphasis">https://echarts.apache.org/zh/option.html#toolbox.emphasis</a>
- * <br/>序号: 9
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -23,7 +22,6 @@ public class Emphasis implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.emphasis.iconStyle">https://echarts.apache.org/zh/option.html#toolbox.emphasis.iconStyle</a>
-     * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

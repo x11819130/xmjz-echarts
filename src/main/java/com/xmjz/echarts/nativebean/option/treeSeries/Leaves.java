@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.leaves">https://echarts.apache.org/zh/option.html#series-tree.leaves</a>
- * <br/>序号: 32
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -24,7 +23,6 @@ public class Leaves implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.leaves.label">https://echarts.apache.org/zh/option.html#series-tree.leaves.label</a>
-     * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -33,7 +31,6 @@ public class Leaves implements Serializable {
     private Object label;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.leaves.itemStyle">https://echarts.apache.org/zh/option.html#series-tree.leaves.itemStyle</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -42,7 +39,6 @@ public class Leaves implements Serializable {
     private Object itemStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.leaves.emphasis">https://echarts.apache.org/zh/option.html#series-tree.leaves.emphasis</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -51,7 +47,6 @@ public class Leaves implements Serializable {
     private Object emphasis;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.leaves.blur">https://echarts.apache.org/zh/option.html#series-tree.leaves.blur</a>
-     * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -63,7 +58,6 @@ public class Leaves implements Serializable {
     private Object blur;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.leaves.select">https://echarts.apache.org/zh/option.html#series-tree.leaves.select</a>
-     * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

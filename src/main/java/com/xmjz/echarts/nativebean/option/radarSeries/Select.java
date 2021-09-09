@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.select">https://echarts.apache.org/zh/option.html#series-radar.select</a>
- * <br/>序号: 17
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -27,7 +26,6 @@ public class Select implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.select.itemStyle">https://echarts.apache.org/zh/option.html#series-radar.select.itemStyle</a>
-     * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -35,7 +33,6 @@ public class Select implements Serializable {
     private Object itemStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.select.label">https://echarts.apache.org/zh/option.html#series-radar.select.label</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -43,7 +40,6 @@ public class Select implements Serializable {
     private Object label;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.select.lineStyle">https://echarts.apache.org/zh/option.html#series-radar.select.lineStyle</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -51,7 +47,6 @@ public class Select implements Serializable {
     private Object lineStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.select.areaStyle">https://echarts.apache.org/zh/option.html#series-radar.select.areaStyle</a>
-     * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

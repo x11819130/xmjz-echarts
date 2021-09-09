@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.select">https://echarts.apache.org/zh/option.html#series-tree.select</a>
- * <br/>序号: 30
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -27,7 +26,6 @@ public class Select implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.select.itemStyle">https://echarts.apache.org/zh/option.html#series-tree.select.itemStyle</a>
-     * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -36,7 +34,6 @@ public class Select implements Serializable {
     private Object itemStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.select.lineStyle">https://echarts.apache.org/zh/option.html#series-tree.select.lineStyle</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -45,7 +42,6 @@ public class Select implements Serializable {
     private Object lineStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.select.label">https://echarts.apache.org/zh/option.html#series-tree.select.label</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

@@ -10,7 +10,6 @@ import java.util.List;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo">https://echarts.apache.org/zh/option.html#geo</a>
- * <br/>序号: 16
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -40,7 +39,6 @@ public class Geo implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.id">https://echarts.apache.org/zh/option.html#geo.id</a>
-     * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -49,7 +47,6 @@ public class Geo implements Serializable {
     private String id;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.show">https://echarts.apache.org/zh/option.html#geo.show</a>
-     * <br/>序号: 2
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -58,45 +55,42 @@ public class Geo implements Serializable {
     private Boolean show;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.map">https://echarts.apache.org/zh/option.html#geo.map</a>
-     * <br/>序号: 3
      * <br/>默认值:
      * <br/>js类型: ["string"]
      * <br/>描述:
-     * <p>地图类型。</p>
-     * <p>ECharts 3 中因为地图精度的提高，不再内置地图数据增大代码体积，你可以在<a href="http://ecomfe.github.io/echarts-builder-web/map3.html" target="_blank">地图下载界面</a>下载到需要的地图文件引入并注册到 ECharts 中。</p>
-     * <p>ECharts 中提供了两种格式的地图数据，一种是可以直接 script 标签引入的 js 文件，引入后会自动注册地图名字和数据。还有一种是 JSON 文件，需要通过 AJAX 异步加载后手动注册。</p>
-     * <p>下面是两种类型的使用示例：</p>
-     * <p><strong> JavaScript 引入示例 </strong></p>
-     * <pre><code class="lang-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"echarts.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-     * <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"map/js/china.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-     * <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
-     * <span class="hljs-keyword">var</span> chart = echarts.init(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'main'</span>));
-     * chart.setOption({
-     *     <span class="hljs-attr">series</span>: [{
-     *         <span class="hljs-attr">type</span>: <span class="hljs-string">'map'</span>,
-     *         <span class="hljs-attr">map</span>: <span class="hljs-string">'china'</span>
-     *     }]
-     * });
-     * </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-     * </code></pre>
-     * <p><strong> JSON 引入示例 </strong></p>
-     * <pre><code class="lang-js hljs javascript">$.<span class="hljs-keyword">get</span>('map/json/china.json', function (chinaJson) {
-     *     echarts.registerMap(<span class="hljs-string">'china'</span>, chinaJson);
+     * <p>使用 <a href="api.html#echarts.registerMap" target="_blank">registerMap</a> 注册的地图名称。</p>
+     * <p><strong>geoJSON 引入示例</strong></p>
+     * <pre><code class="lang-js hljs javascript">$.<span class="hljs-keyword">get</span>('map/china_geo.json', function (chinaJson) {
+     *     echarts.registerMap(<span class="hljs-string">'china'</span>, {<span class="hljs-attr">geoJSON</span>: geoJson});
      *     <span class="hljs-keyword">var</span> chart = echarts.init(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'main'</span>));
      *     chart.setOption({
-     *         <span class="hljs-attr">series</span>: [{
-     *             <span class="hljs-attr">type</span>: <span class="hljs-string">'map'</span>,
-     *             <span class="hljs-attr">map</span>: <span class="hljs-string">'china'</span>
+     *         <span class="hljs-attr">geo</span>: [{
+     *             <span class="hljs-attr">map</span>: <span class="hljs-string">'china'</span>,
+     *             ...
      *         }]
      *     });
      * });
      * </code></pre>
-     * <p>ECharts 使用 <a href="http://geojson.org/" target="_blank">geoJSON</a> 格式的数据作为地图的轮廓，除了上述数据，你也可以通过其它手段获取地图的 <a href="http://geojson.org/" target="_blank">geoJSON</a> 数据注册到 ECharts 中。参见示例 <a href="https://echarts.apache.org/examples/zh/editor.html?c=map-usa" target="_blank">USA Population Estimates</a></p>
+     * <p>也参见示例 <a href="https://echarts.apache.org/examples/zh/editor.html?c=custom-hexbin" target="_blank">geoJSON hexbin</a>。</p>
+     * <p>如上所示，ECharts 可以使用 <a href="http://geojson.org/" target="_blank">GeoJSON</a> 格式的数据作为地图的轮廓，你可以获取第三方的 <a href="http://geojson.org/" target="_blank">GeoJSON</a> 数据注册到 ECharts 中。例如第三方资源 <a href="https://github.com/echarts-maps" target="_blank">maps</a>。</p>
+     * <p><strong>SVG 引入示例</strong></p>
+     * <pre><code class="lang-js hljs javascript">$.<span class="hljs-keyword">get</span>('map/topographic_map.svg', function (svg) {
+     *     echarts.registerMap(<span class="hljs-string">'topo'</span>, {<span class="hljs-attr">svg</span>: svg});
+     *     <span class="hljs-keyword">var</span> chart = echarts.init(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'main'</span>));
+     *     chart.setOption({
+     *         <span class="hljs-attr">geo</span>: [{
+     *             <span class="hljs-attr">map</span>: <span class="hljs-string">'topo'</span>,
+     *             ...
+     *         }]
+     *     });
+     * });
+     * </code></pre>
+     * <p>也参见示例 <a href="https://echarts.apache.org/examples/zh/editor.html?c=geo-seatmap-flight" target="_blank">Flight Seatmap</a>。</p>
+     * <p>如上所示，ECharts 也可以使用 SVG 格式的地图。详情参见：<a href="tutorial.html#%E5%9C%B0%E7%90%86%E5%9D%90%E6%A0%87%E7%B3%BB%E5%92%8C%E5%9C%B0%E5%9B%BE%E7%B3%BB%E5%88%97%E7%9A%84%20SVG%20%E5%BA%95%E5%9B%BE" target="_blank">SVG 底图</a>。</p>
      */
     private String map;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.roam">https://echarts.apache.org/zh/option.html#geo.roam</a>
-     * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","string"]
      * <br/>描述:
@@ -105,7 +99,6 @@ public class Geo implements Serializable {
     private Object roam;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.center">https://echarts.apache.org/zh/option.html#geo.center</a>
-     * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -117,7 +110,6 @@ public class Geo implements Serializable {
     private List<?> center;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.aspectScale">https://echarts.apache.org/zh/option.html#geo.aspectScale</a>
-     * <br/>序号: 6
      * <br/>默认值: 0.75
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -127,7 +119,6 @@ public class Geo implements Serializable {
     private Integer aspectScale;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.boundingCoords">https://echarts.apache.org/zh/option.html#geo.boundingCoords</a>
-     * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -146,7 +137,6 @@ public class Geo implements Serializable {
     private List<?> boundingCoords;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.zoom">https://echarts.apache.org/zh/option.html#geo.zoom</a>
-     * <br/>序号: 8
      * <br/>默认值: 1
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -155,7 +145,6 @@ public class Geo implements Serializable {
     private Integer zoom;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.scaleLimit">https://echarts.apache.org/zh/option.html#geo.scaleLimit</a>
-     * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -164,7 +153,6 @@ public class Geo implements Serializable {
     private ScaleLimit scaleLimit;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.nameMap">https://echarts.apache.org/zh/option.html#geo.nameMap</a>
-     * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -177,7 +165,6 @@ public class Geo implements Serializable {
     private Object nameMap;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.nameProperty">https://echarts.apache.org/zh/option.html#geo.nameProperty</a>
-     * <br/>序号: 11
      * <br/>默认值: name
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -198,7 +185,6 @@ public class Geo implements Serializable {
     private String nameProperty;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.selectedMode">https://echarts.apache.org/zh/option.html#geo.selectedMode</a>
-     * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","string"]
      * <br/>描述:
@@ -207,7 +193,6 @@ public class Geo implements Serializable {
     private Object selectedMode;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.label">https://echarts.apache.org/zh/option.html#geo.label</a>
-     * <br/>序号: 13
      * <br/>默认值: 5
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -216,7 +201,6 @@ public class Geo implements Serializable {
     private Label label;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.itemStyle">https://echarts.apache.org/zh/option.html#geo.itemStyle</a>
-     * <br/>序号: 14
      * <br/>默认值: #eee
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -225,8 +209,7 @@ public class Geo implements Serializable {
     private ItemStyle itemStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.emphasis">https://echarts.apache.org/zh/option.html#geo.emphasis</a>
-     * <br/>序号: 15
-     * <br/>默认值: 无
+     * <br/>默认值: none
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>高亮状态下的多边形和标签样式。</p>
@@ -234,7 +217,6 @@ public class Geo implements Serializable {
     private Emphasis emphasis;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.select">https://echarts.apache.org/zh/option.html#geo.select</a>
-     * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -242,8 +224,18 @@ public class Geo implements Serializable {
      */
     private Select select;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.blur">https://echarts.apache.org/zh/option.html#geo.blur</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["Object"]
+     * <br/>描述:
+     * <blockquote>
+     * <p>从 <code class="codespan">v5.1.0</code> 开始支持</p>
+     * </blockquote>
+     * <p>淡出状态下的多边形和标签样式。</p>
+     */
+    private Blur blur;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.zlevel">https://echarts.apache.org/zh/option.html#geo.zlevel</a>
-     * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -254,7 +246,6 @@ public class Geo implements Serializable {
     private Integer zlevel;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.z">https://echarts.apache.org/zh/option.html#geo.z</a>
-     * <br/>序号: 18
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -264,7 +255,6 @@ public class Geo implements Serializable {
     private Integer z;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.left">https://echarts.apache.org/zh/option.html#geo.left</a>
-     * <br/>序号: 19
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -275,7 +265,6 @@ public class Geo implements Serializable {
     private Object left;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.top">https://echarts.apache.org/zh/option.html#geo.top</a>
-     * <br/>序号: 20
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -286,7 +275,6 @@ public class Geo implements Serializable {
     private Object top;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.right">https://echarts.apache.org/zh/option.html#geo.right</a>
-     * <br/>序号: 21
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -297,7 +285,6 @@ public class Geo implements Serializable {
     private Object right;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.bottom">https://echarts.apache.org/zh/option.html#geo.bottom</a>
-     * <br/>序号: 22
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -308,7 +295,6 @@ public class Geo implements Serializable {
     private Object bottom;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.layoutCenter">https://echarts.apache.org/zh/option.html#geo.layoutCenter</a>
-     * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -323,7 +309,6 @@ public class Geo implements Serializable {
     private List<?> layoutCenter;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.layoutSize">https://echarts.apache.org/zh/option.html#geo.layoutSize</a>
-     * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["number","string"]
      * <br/>描述:
@@ -332,7 +317,6 @@ public class Geo implements Serializable {
     private Object layoutSize;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.regions">https://echarts.apache.org/zh/option.html#geo.regions</a>
-     * <br/>序号: 25
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -351,11 +335,35 @@ public class Geo implements Serializable {
     private List<Regions> regions;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.silent">https://echarts.apache.org/zh/option.html#geo.silent</a>
-     * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
      * <p>图形是否不响应和触发鼠标事件，默认为 false，即响应和触发鼠标事件。</p>
      */
     private Boolean silent;
+    /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.tooltip">https://echarts.apache.org/zh/option.html#geo.tooltip</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["Object"]
+     * <br/>描述:
+     * <blockquote>
+     * <p>从 <code class="codespan">v5.1.0</code> 开始支持</p>
+     * </blockquote>
+     * <p>本坐标系特定的 tooltip 设定。</p>
+     * <hr>
+     * <p><strong>提示框组件的通用介绍：</strong></p>
+     * <p>提示框组件可以设置在多种地方：</p>
+     * <ul>
+     * <li><p>可以设置在全局，即 <a href="#tooltip">tooltip</a></p>
+     * </li>
+     * <li><p>可以设置在坐标系中，即 <a href="#grid.tooltip">grid.tooltip</a>、<a href="#polar.tooltip">polar.tooltip</a>、<a href="#single.tooltip">single.tooltip</a></p>
+     * </li>
+     * <li><p>可以设置在系列中，即 <a href="#series.tooltip">series.tooltip</a></p>
+     * </li>
+     * <li><p>可以设置在系列的每个数据项中，即 <a href="#series.data.tooltip">series.data.tooltip</a></p>
+     * </li>
+     * </ul>
+     * <hr>
+     */
+    private Object tooltip;
 }

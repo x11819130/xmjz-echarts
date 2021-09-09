@@ -10,7 +10,6 @@ import java.util.List;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst">https://echarts.apache.org/zh/option.html#series-sunburst</a>
- * <br/>序号: 0
  * <br/>默认值: 无
  * <br/>js类型: ["object"]
  * <br/>描述:
@@ -35,7 +34,6 @@ public class SunburstSeries extends Series implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.type">https://echarts.apache.org/zh/option.html#series-sunburst.type</a>
-     * <br/>序号: 1
      * <br/>默认值: sunburst
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -43,7 +41,6 @@ public class SunburstSeries extends Series implements Serializable {
     private String type;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.id">https://echarts.apache.org/zh/option.html#series-sunburst.id</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -52,7 +49,6 @@ public class SunburstSeries extends Series implements Serializable {
     private String id;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.name">https://echarts.apache.org/zh/option.html#series-sunburst.name</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -61,7 +57,6 @@ public class SunburstSeries extends Series implements Serializable {
     private String name;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.zlevel">https://echarts.apache.org/zh/option.html#series-sunburst.zlevel</a>
-     * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -72,7 +67,6 @@ public class SunburstSeries extends Series implements Serializable {
     private Integer zlevel;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.z">https://echarts.apache.org/zh/option.html#series-sunburst.z</a>
-     * <br/>序号: 5
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -82,7 +76,6 @@ public class SunburstSeries extends Series implements Serializable {
     private Integer z;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.center">https://echarts.apache.org/zh/option.html#series-sunburst.center</a>
-     * <br/>序号: 6
      * <br/>默认值: ["50%","50%"]
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -98,7 +91,6 @@ public class SunburstSeries extends Series implements Serializable {
     private List<?> center;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.radius">https://echarts.apache.org/zh/option.html#series-sunburst.radius</a>
-     * <br/>序号: 7
      * <br/>默认值: [0,"75%"]
      * <br/>js类型: ["number","string","Array"]
      * <br/>描述:
@@ -114,7 +106,6 @@ public class SunburstSeries extends Series implements Serializable {
     private Object radius;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.data">https://echarts.apache.org/zh/option.html#series-sunburst.data</a>
-     * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -155,7 +146,6 @@ public class SunburstSeries extends Series implements Serializable {
     private List<?> data;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.labelLayout">https://echarts.apache.org/zh/option.html#series-sunburst.labelLayout</a>
-     * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["Object","Function"]
      * <br/>描述:
@@ -163,7 +153,6 @@ public class SunburstSeries extends Series implements Serializable {
     private Object labelLayout;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label">https://echarts.apache.org/zh/option.html#series-sunburst.label</a>
-     * <br/>序号: 10
      * <br/>默认值: radial
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -174,7 +163,6 @@ public class SunburstSeries extends Series implements Serializable {
     private Label label;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.labelLine">https://echarts.apache.org/zh/option.html#series-sunburst.labelLine</a>
-     * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -183,7 +171,6 @@ public class SunburstSeries extends Series implements Serializable {
     private LabelLine labelLine;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.itemStyle">https://echarts.apache.org/zh/option.html#series-sunburst.itemStyle</a>
-     * <br/>序号: 12
      * <br/>默认值: 自适应
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -194,7 +181,6 @@ public class SunburstSeries extends Series implements Serializable {
     private ItemStyle itemStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.nodeClick">https://echarts.apache.org/zh/option.html#series-sunburst.nodeClick</a>
-     * <br/>序号: 13
      * <br/>默认值: rootToNode
      * <br/>js类型: ["boolean","string"]
      * <br/>描述:
@@ -208,7 +194,6 @@ public class SunburstSeries extends Series implements Serializable {
     private Object nodeClick;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.sort">https://echarts.apache.org/zh/option.html#series-sunburst.sort</a>
-     * <br/>序号: 14
      * <br/>默认值: desc
      * <br/>js类型: ["string","Function"]
      * <br/>描述:
@@ -221,7 +206,6 @@ public class SunburstSeries extends Series implements Serializable {
     private Object sort;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.renderLabelForZeroData">https://echarts.apache.org/zh/option.html#series-sunburst.renderLabelForZeroData</a>
-     * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -230,7 +214,6 @@ public class SunburstSeries extends Series implements Serializable {
     private Boolean renderLabelForZeroData;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.emphasis">https://echarts.apache.org/zh/option.html#series-sunburst.emphasis</a>
-     * <br/>序号: 16
      * <br/>默认值: none
      * <br/>js类型: ["any"]
      * <br/>描述:
@@ -239,7 +222,6 @@ public class SunburstSeries extends Series implements Serializable {
     private Emphasis emphasis;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.blur">https://echarts.apache.org/zh/option.html#series-sunburst.blur</a>
-     * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["any"]
      * <br/>描述:
@@ -248,7 +230,6 @@ public class SunburstSeries extends Series implements Serializable {
     private Blur blur;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.select">https://echarts.apache.org/zh/option.html#series-sunburst.select</a>
-     * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["any"]
      * <br/>描述:
@@ -257,7 +238,6 @@ public class SunburstSeries extends Series implements Serializable {
     private Select select;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.selectedMode">https://echarts.apache.org/zh/option.html#series-sunburst.selectedMode</a>
-     * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","string"]
      * <br/>描述:
@@ -271,7 +251,6 @@ public class SunburstSeries extends Series implements Serializable {
     private Object selectedMode;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.levels">https://echarts.apache.org/zh/option.html#series-sunburst.levels</a>
-     * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -303,7 +282,6 @@ public class SunburstSeries extends Series implements Serializable {
     private List<Levels> levels;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.animation">https://echarts.apache.org/zh/option.html#series-sunburst.animation</a>
-     * <br/>序号: 21
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -312,7 +290,6 @@ public class SunburstSeries extends Series implements Serializable {
     private Boolean animation;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.animationThreshold">https://echarts.apache.org/zh/option.html#series-sunburst.animationThreshold</a>
-     * <br/>序号: 22
      * <br/>默认值: 2000
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -321,7 +298,6 @@ public class SunburstSeries extends Series implements Serializable {
     private Integer animationThreshold;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.animationDuration">https://echarts.apache.org/zh/option.html#series-sunburst.animationDuration</a>
-     * <br/>序号: 23
      * <br/>默认值: 1000
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -335,7 +311,6 @@ public class SunburstSeries extends Series implements Serializable {
     private Object animationDuration;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.animationEasing">https://echarts.apache.org/zh/option.html#series-sunburst.animationEasing</a>
-     * <br/>序号: 24
      * <br/>默认值: cubicOut
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -344,7 +319,6 @@ public class SunburstSeries extends Series implements Serializable {
     private String animationEasing;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.animationDelay">https://echarts.apache.org/zh/option.html#series-sunburst.animationDelay</a>
-     * <br/>序号: 25
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -360,7 +334,6 @@ public class SunburstSeries extends Series implements Serializable {
     private Object animationDelay;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.animationDurationUpdate">https://echarts.apache.org/zh/option.html#series-sunburst.animationDurationUpdate</a>
-     * <br/>序号: 26
      * <br/>默认值: 500
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -375,7 +348,6 @@ public class SunburstSeries extends Series implements Serializable {
     private Object animationDurationUpdate;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.animationEasingUpdate">https://echarts.apache.org/zh/option.html#series-sunburst.animationEasingUpdate</a>
-     * <br/>序号: 27
      * <br/>默认值: cubicInOut
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -384,7 +356,6 @@ public class SunburstSeries extends Series implements Serializable {
     private String animationEasingUpdate;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.animationDelayUpdate">https://echarts.apache.org/zh/option.html#series-sunburst.animationDelayUpdate</a>
-     * <br/>序号: 28
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
      * <br/>描述:

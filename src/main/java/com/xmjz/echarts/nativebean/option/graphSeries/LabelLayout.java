@@ -9,7 +9,6 @@ import java.util.List;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.labelLayout">https://echarts.apache.org/zh/option.html#series-graph.labelLayout</a>
- * <br/>序号: 26
  * <br/>默认值: 无
  * <br/>js类型: ["Object","Function"]
  * <br/>描述:
@@ -69,7 +68,6 @@ public class LabelLayout implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.labelLayout.hideOverlap">https://echarts.apache.org/zh/option.html#series-graph.labelLayout.hideOverlap</a>
-     * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -80,7 +78,6 @@ public class LabelLayout implements Serializable {
     private Boolean hideOverlap;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.labelLayout.moveOverlap">https://echarts.apache.org/zh/option.html#series-graph.labelLayout.moveOverlap</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -96,7 +93,6 @@ public class LabelLayout implements Serializable {
     private String moveOverlap;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.labelLayout.x">https://echarts.apache.org/zh/option.html#series-graph.labelLayout.x</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["number","string"]
      * <br/>描述:
@@ -105,7 +101,6 @@ public class LabelLayout implements Serializable {
     private Object x;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.labelLayout.y">https://echarts.apache.org/zh/option.html#series-graph.labelLayout.y</a>
-     * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number","string"]
      * <br/>描述:
@@ -114,7 +109,6 @@ public class LabelLayout implements Serializable {
     private Object y;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.labelLayout.dx">https://echarts.apache.org/zh/option.html#series-graph.labelLayout.dx</a>
-     * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -123,7 +117,6 @@ public class LabelLayout implements Serializable {
     private Integer dx;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.labelLayout.dy">https://echarts.apache.org/zh/option.html#series-graph.labelLayout.dy</a>
-     * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -132,7 +125,6 @@ public class LabelLayout implements Serializable {
     private Integer dy;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.labelLayout.rotate">https://echarts.apache.org/zh/option.html#series-graph.labelLayout.rotate</a>
-     * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -141,7 +133,6 @@ public class LabelLayout implements Serializable {
     private Integer rotate;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.labelLayout.width">https://echarts.apache.org/zh/option.html#series-graph.labelLayout.width</a>
-     * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -150,7 +141,6 @@ public class LabelLayout implements Serializable {
     private Integer width;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.labelLayout.height">https://echarts.apache.org/zh/option.html#series-graph.labelLayout.height</a>
-     * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -159,7 +149,6 @@ public class LabelLayout implements Serializable {
     private Integer height;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.labelLayout.align">https://echarts.apache.org/zh/option.html#series-graph.labelLayout.align</a>
-     * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -168,7 +157,6 @@ public class LabelLayout implements Serializable {
     private String align;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.labelLayout.verticalAlign">https://echarts.apache.org/zh/option.html#series-graph.labelLayout.verticalAlign</a>
-     * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -177,7 +165,6 @@ public class LabelLayout implements Serializable {
     private String verticalAlign;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.labelLayout.fontSize">https://echarts.apache.org/zh/option.html#series-graph.labelLayout.fontSize</a>
-     * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -186,7 +173,6 @@ public class LabelLayout implements Serializable {
     private Integer fontSize;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.labelLayout.draggable">https://echarts.apache.org/zh/option.html#series-graph.labelLayout.draggable</a>
-     * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -195,7 +181,6 @@ public class LabelLayout implements Serializable {
     private Boolean draggable;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.labelLayout.labelLinePoints">https://echarts.apache.org/zh/option.html#series-graph.labelLayout.labelLinePoints</a>
-     * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:

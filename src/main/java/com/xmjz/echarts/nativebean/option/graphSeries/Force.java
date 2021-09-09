@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.force">https://echarts.apache.org/zh/option.html#series-graph.force</a>
- * <br/>序号: 15
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -25,7 +24,6 @@ public class Force implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.force.initLayout">https://echarts.apache.org/zh/option.html#series-graph.force.initLayout</a>
-     * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -36,7 +34,6 @@ public class Force implements Serializable {
     private String initLayout;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.force.repulsion">https://echarts.apache.org/zh/option.html#series-graph.force.repulsion</a>
-     * <br/>序号: 2
      * <br/>默认值: 50
      * <br/>js类型: ["Array","number"]
      * <br/>描述:
@@ -46,7 +43,6 @@ public class Force implements Serializable {
     private Object repulsion;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.force.gravity">https://echarts.apache.org/zh/option.html#series-graph.force.gravity</a>
-     * <br/>序号: 3
      * <br/>默认值: 0.1
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -55,7 +51,6 @@ public class Force implements Serializable {
     private Integer gravity;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.force.edgeLength">https://echarts.apache.org/zh/option.html#series-graph.force.edgeLength</a>
-     * <br/>序号: 4
      * <br/>默认值: 30
      * <br/>js类型: ["Array","number"]
      * <br/>描述:
@@ -68,7 +63,6 @@ public class Force implements Serializable {
     private Object edgeLength;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.force.layoutAnimation">https://echarts.apache.org/zh/option.html#series-graph.force.layoutAnimation</a>
-     * <br/>序号: 5
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -77,7 +71,6 @@ public class Force implements Serializable {
     private Boolean layoutAnimation;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.force.friction">https://echarts.apache.org/zh/option.html#series-graph.force.friction</a>
-     * <br/>序号: 6
      * <br/>默认值: 0.6
      * <br/>js类型: ["number"]
      * <br/>描述:

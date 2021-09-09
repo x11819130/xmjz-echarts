@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.selectedMode">https://echarts.apache.org/zh/option.html#series-pictorialBar.selectedMode</a>
- * <br/>序号: 16
  * <br/>默认值: 无
  * <br/>js类型: ["boolean","string"]
  * <br/>描述:
@@ -29,7 +28,6 @@ public class SelectedMode implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.selectedMode.label">https://echarts.apache.org/zh/option.html#series-pictorialBar.selectedMode.label</a>
-     * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -37,7 +35,6 @@ public class SelectedMode implements Serializable {
     private Object label;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.selectedMode.labelLine">https://echarts.apache.org/zh/option.html#series-pictorialBar.selectedMode.labelLine</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -46,7 +43,6 @@ public class SelectedMode implements Serializable {
     private Object labelLine;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.selectedMode.itemStyle">https://echarts.apache.org/zh/option.html#series-pictorialBar.selectedMode.itemStyle</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

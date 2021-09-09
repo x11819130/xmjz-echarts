@@ -9,7 +9,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#media">https://echarts.apache.org/zh/option.html#media</a>
- * <br/>序号: 43
  * <br/>默认值: 无
  * <br/>js类型: ["Array"]
  * <br/>描述:
@@ -25,7 +24,6 @@ public class Media implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#media.query">https://echarts.apache.org/zh/option.html#media.query</a>
-     * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -34,7 +32,6 @@ public class Media implements Serializable {
     private Query query;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#media.option">https://echarts.apache.org/zh/option.html#media.option</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#stateAnimation">https://echarts.apache.org/zh/option.html#stateAnimation</a>
- * <br/>序号: 38
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -24,7 +23,6 @@ public class StateAnimation implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#stateAnimation.duration">https://echarts.apache.org/zh/option.html#stateAnimation.duration</a>
-     * <br/>序号: 1
      * <br/>默认值: 300
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -33,7 +31,6 @@ public class StateAnimation implements Serializable {
     private Integer duration;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#stateAnimation.easing">https://echarts.apache.org/zh/option.html#stateAnimation.easing</a>
-     * <br/>序号: 2
      * <br/>默认值: cubicOut
      * <br/>js类型: ["string"]
      * <br/>描述:

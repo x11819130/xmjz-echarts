@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.circular">https://echarts.apache.org/zh/option.html#series-graph.circular</a>
- * <br/>序号: 14
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -24,7 +23,6 @@ public class Circular implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.circular.rotateLabel">https://echarts.apache.org/zh/option.html#series-graph.circular.rotateLabel</a>
-     * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:

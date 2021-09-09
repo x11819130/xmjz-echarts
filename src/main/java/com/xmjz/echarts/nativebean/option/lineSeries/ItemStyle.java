@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.itemStyle">https://echarts.apache.org/zh/option.html#series-line.itemStyle</a>
- * <br/>序号: 25
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -24,46 +23,12 @@ public class ItemStyle implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.itemStyle.color">https://echarts.apache.org/zh/option.html#series-line.itemStyle.color</a>
-     * <br/>序号: 1
      * <br/>默认值: 自适应
      * <br/>js类型: ["Color","Function"]
      * <br/>描述:
-     * <p>图形的颜色。 默认从全局调色盘 <a href="#color">option.color</a> 获取颜色 </p>
+     * <p>图形的颜色。 默认从全局调色盘 <a href="#color">option.color</a> 获取颜色。</p>
      * <blockquote>
-     * <p>颜色可以使用 RGB 表示，比如 <code class="codespan">'rgb(128, 128, 128)'</code>，如果想要加上 alpha 通道表示不透明度，可以使用 RGBA，比如 <code class="codespan">'rgba(128, 128, 128, 0.5)'</code>，也可以使用十六进制格式，比如 <code class="codespan">'#ccc'</code>。除了纯色之外颜色也支持渐变色和纹理填充</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-comment">// 线性渐变，前四个参数分别是 x0, y0, x2, y2, 范围从 0 - 1，相当于在图形包围盒中的百分比，如果 globalCoord 为 `true`，则该四个值是绝对的像素位置</span>
-     * <span class="hljs-attr">color</span>: {
-     *     <span class="hljs-attr">type</span>: <span class="hljs-string">'linear'</span>,
-     *     <span class="hljs-attr">x</span>: <span class="hljs-number">0</span>,
-     *     <span class="hljs-attr">y</span>: <span class="hljs-number">0</span>,
-     *     <span class="hljs-attr">x2</span>: <span class="hljs-number">0</span>,
-     *     <span class="hljs-attr">y2</span>: <span class="hljs-number">1</span>,
-     *     <span class="hljs-attr">colorStops</span>: [{
-     *         <span class="hljs-attr">offset</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">'red'</span> <span class="hljs-comment">// 0% 处的颜色</span>
-     *     }, {
-     *         <span class="hljs-attr">offset</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">'blue'</span> <span class="hljs-comment">// 100% 处的颜色</span>
-     *     }],
-     *     <span class="hljs-attr">global</span>: <span class="hljs-literal">false</span> <span class="hljs-comment">// 缺省为 false</span>
-     * }
-     * <span class="hljs-comment">// 径向渐变，前三个参数分别是圆心 x, y 和半径，取值同线性渐变</span>
-     * <span class="hljs-attr">color</span>: {
-     *     <span class="hljs-attr">type</span>: <span class="hljs-string">'radial'</span>,
-     *     <span class="hljs-attr">x</span>: <span class="hljs-number">0.5</span>,
-     *     <span class="hljs-attr">y</span>: <span class="hljs-number">0.5</span>,
-     *     <span class="hljs-attr">r</span>: <span class="hljs-number">0.5</span>,
-     *     <span class="hljs-attr">colorStops</span>: [{
-     *         <span class="hljs-attr">offset</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">'red'</span> <span class="hljs-comment">// 0% 处的颜色</span>
-     *     }, {
-     *         <span class="hljs-attr">offset</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">'blue'</span> <span class="hljs-comment">// 100% 处的颜色</span>
-     *     }],
-     *     <span class="hljs-attr">global</span>: <span class="hljs-literal">false</span> <span class="hljs-comment">// 缺省为 false</span>
-     * }
-     * <span class="hljs-comment">// 纹理填充</span>
-     * <span class="hljs-attr">color</span>: {
-     *     <span class="hljs-attr">image</span>: imageDom, <span class="hljs-comment">// 支持为 HTMLImageElement, HTMLCanvasElement，不支持路径字符串</span>
-     *     <span class="hljs-attr">repeat</span>: <span class="hljs-string">'repeat'</span> <span class="hljs-comment">// 是否平铺，可以是 'repeat-x', 'repeat-y', 'no-repeat'</span>
-     * }
-     * </code></pre>
+     * <p>支持使用<code class="codespan">rgb(255,255,255)</code>，<code class="codespan">rgba(255,255,255,1)</code>，<code class="codespan">#fff</code>等方式设置为纯色，也支持设置为渐变色和纹理填充，具体见<a href="#color">option.color</a></p>
      * </blockquote>
      * <p>支持使用回调函数。回调函数格式如下：</p>
      * <pre><code class="lang-js hljs javascript">(params: <span class="hljs-built_in">Object</span>) =&gt; Color
@@ -73,7 +38,6 @@ public class ItemStyle implements Serializable {
     private Object color;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.itemStyle.borderColor">https://echarts.apache.org/zh/option.html#series-line.itemStyle.borderColor</a>
-     * <br/>序号: 2
      * <br/>默认值: #000
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -82,7 +46,6 @@ public class ItemStyle implements Serializable {
     private String borderColor;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.itemStyle.borderWidth">https://echarts.apache.org/zh/option.html#series-line.itemStyle.borderWidth</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -91,16 +54,107 @@ public class ItemStyle implements Serializable {
     private Integer borderWidth;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.itemStyle.borderType">https://echarts.apache.org/zh/option.html#series-line.itemStyle.borderType</a>
-     * <br/>序号: 4
      * <br/>默认值: solid
+     * <br/>js类型: ["string","number","Array"]
+     * <br/>描述:
+     * <p>描边类型。</p>
+     * <p>可选：</p>
+     * <ul>
+     * <li><code class="codespan">'solid'</code></li>
+     * <li><code class="codespan">'dashed'</code></li>
+     * <li><code class="codespan">'dotted'</code></li>
+     * </ul>
+     * <p>自 <code class="codespan">v5.0.0</code> 开始，也可以是 <code class="codespan">number</code> 或者 <code class="codespan">number</code> 数组，用以指定线条的 <a href="https://developer.mozilla.org/zh-CN/docs/Web/SVG/Attribute/stroke-dasharray" target="_blank">dash array</a>，配合
+     * <code class="codespan">borderDashOffset</code>
+     *  可实现更灵活的虚线效果。</p>
+     * <p>例如：</p>
+     * <pre><code class="lang-js hljs javascript">{
+     *
+     * <span class="hljs-attr">borderType</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
+     *
+     * <span class="hljs-attr">borderDashOffset</span>: <span class="hljs-number">5</span>
+     * }
+     * </code></pre>
+     */
+    private Object borderType;
+    /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.itemStyle.borderDashOffset">https://echarts.apache.org/zh/option.html#series-line.itemStyle.borderDashOffset</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["number"]
+     * <br/>描述:
+     * <blockquote>
+     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
+     * </blockquote>
+     *
+     *
+     * <p>用于设置虚线的偏移量，可搭配
+     * <code class="codespan">borderType</code>
+     * 指定 dash array 实现灵活的虚线效果。</p>
+     * <p>更多详情可以参考 MDN <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/lineDashOffset" target="_blank">lineDashOffset</a>。</p>
+     */
+    private Integer borderDashOffset;
+    /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.itemStyle.borderCap">https://echarts.apache.org/zh/option.html#series-line.itemStyle.borderCap</a>
+     * <br/>默认值: butt
      * <br/>js类型: ["string"]
      * <br/>描述:
-     * <p>柱条的描边类型，默认为实线，支持 <code class="codespan">'solid'</code>, <code class="codespan">'dashed'</code>, <code class="codespan">'dotted'</code>。</p>
+     * <blockquote>
+     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
+     * </blockquote>
+     *
+     *
+     * <p>用于指定线段末端的绘制方式，可以是：</p>
+     * <ul>
+     * <li><code class="codespan">'butt'</code>: 线段末端以方形结束。</li>
+     * <li><code class="codespan">'round'</code>: 线段末端以圆形结束。</li>
+     * <li><code class="codespan">'square'</code>: 线段末端以方形结束，但是增加了一个宽度和线段相同，高度是线段厚度一半的矩形区域。</li>
+     * </ul>
+     * <p>默认值为 <code class="codespan">'butt'</code>。 更多详情可以参考 MDN <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/lineCap" target="_blank">lineCap</a>。</p>
      */
-    private String borderType;
+    private String borderCap;
+    /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.itemStyle.borderJoin">https://echarts.apache.org/zh/option.html#series-line.itemStyle.borderJoin</a>
+     * <br/>默认值: bevel
+     * <br/>js类型: ["string"]
+     * <br/>描述:
+     * <blockquote>
+     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
+     * </blockquote>
+     *
+     *
+     * <p>用于设置2个长度不为0的相连部分（线段，圆弧，曲线）如何连接在一起的属性（长度为0的变形部分，其指定的末端和控制点在同一位置，会被忽略）。</p>
+     * <p>可以是：</p>
+     * <ul>
+     * <li><code class="codespan">'bevel'</code>: 在相连部分的末端填充一个额外的以三角形为底的区域， 每个部分都有各自独立的矩形拐角。</li>
+     * <li><code class="codespan">'round'</code>: 通过填充一个额外的，圆心在相连部分末端的扇形，绘制拐角的形状。 圆角的半径是线段的宽度。</li>
+     * <li><code class="codespan">'miter'</code>: 通过延伸相连部分的外边缘，使其相交于一点，形成一个额外的菱形区域。这个设置可以通过
+     * <code class="codespan">borderMiterLimit</code>
+     * 属性看到效果。</li>
+     * </ul>
+     * <p>默认值为 <code class="codespan">'bevel'</code>。 更多详情可以参考 MDN <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/lineJoin" target="_blank">lineJoin</a>。</p>
+     */
+    private String borderJoin;
+    /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.itemStyle.borderMiterLimit">https://echarts.apache.org/zh/option.html#series-line.itemStyle.borderMiterLimit</a>
+     * <br/>默认值: 10
+     * <br/>js类型: ["number"]
+     * <br/>描述:
+     * <blockquote>
+     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
+     * </blockquote>
+     *
+     *
+     * <p>用于设置斜接面限制比例。只有当
+     * <code class="codespan">borderJoin</code>
+     * 为 <code class="codespan">miter</code> 时，
+     * <code class="codespan">borderMiterLimit</code>
+     * 才有效。</p>
+     * <p>默认值为 <code class="codespan">10</code>。负数、<code class="codespan">0</code>、<code class="codespan">Infinity</code> 和 <code class="codespan">NaN</code> 均会被忽略。</p>
+     * <p>更多详情可以参考 MDN <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/miterLimit" target="_blank">miterLimit</a>。</p>
+     */
+    private Integer borderMiterLimit;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.itemStyle.shadowBlur">https://echarts.apache.org/zh/option.html#series-line.itemStyle.shadowBlur</a>
-     * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -115,7 +169,6 @@ public class ItemStyle implements Serializable {
     private Integer shadowBlur;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.itemStyle.shadowColor">https://echarts.apache.org/zh/option.html#series-line.itemStyle.shadowColor</a>
-     * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -124,7 +177,6 @@ public class ItemStyle implements Serializable {
     private String shadowColor;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.itemStyle.shadowOffsetX">https://echarts.apache.org/zh/option.html#series-line.itemStyle.shadowOffsetX</a>
-     * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -133,7 +185,6 @@ public class ItemStyle implements Serializable {
     private Integer shadowOffsetX;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.itemStyle.shadowOffsetY">https://echarts.apache.org/zh/option.html#series-line.itemStyle.shadowOffsetY</a>
-     * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -142,7 +193,6 @@ public class ItemStyle implements Serializable {
     private Integer shadowOffsetY;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.itemStyle.opacity">https://echarts.apache.org/zh/option.html#series-line.itemStyle.opacity</a>
-     * <br/>序号: 9
      * <br/>默认值: 1
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -150,10 +200,9 @@ public class ItemStyle implements Serializable {
      */
     private Integer opacity;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.itemStyle.decal(Object%20|%20'none')">https://echarts.apache.org/zh/option.html#series-line.itemStyle.decal(Object%20|%20'none')</a>
-     * <br/>序号: 10
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.itemStyle.decal">https://echarts.apache.org/zh/option.html#series-line.itemStyle.decal</a>
      * <br/>默认值: 无
-     * <br/>js类型: ["any"]
+     * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>图形的贴花图案，在 <a href="#aria.enabled">aria.enabled</a> 与 <a href="#aria.decal.show">aria.decal.show</a> 都是 <code class="codespan">true</code> 的情况下才生效。</p>
      * <p>如果为 <code class="codespan">'none'</code> 表示不使用贴花图案。</p>

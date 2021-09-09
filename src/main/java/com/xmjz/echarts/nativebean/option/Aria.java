@@ -10,7 +10,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#aria">https://echarts.apache.org/zh/option.html#aria</a>
- * <br/>序号: 24
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -27,7 +26,6 @@ public class Aria implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#aria.enabled">https://echarts.apache.org/zh/option.html#aria.enabled</a>
-     * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -36,7 +34,6 @@ public class Aria implements Serializable {
     private Boolean enabled;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#aria.label">https://echarts.apache.org/zh/option.html#aria.label</a>
-     * <br/>序号: 2
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -85,7 +82,6 @@ public class Aria implements Serializable {
     private Label label;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#aria.decal">https://echarts.apache.org/zh/option.html#aria.decal</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

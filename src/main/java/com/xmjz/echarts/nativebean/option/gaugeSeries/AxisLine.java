@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.axisLine">https://echarts.apache.org/zh/option.html#series-gauge.axisLine</a>
- * <br/>序号: 16
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -24,7 +23,6 @@ public class AxisLine implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.axisLine.show">https://echarts.apache.org/zh/option.html#series-gauge.axisLine.show</a>
-     * <br/>序号: 1
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -33,7 +31,6 @@ public class AxisLine implements Serializable {
     private Boolean show;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.axisLine.roundCap">https://echarts.apache.org/zh/option.html#series-gauge.axisLine.roundCap</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -45,7 +42,6 @@ public class AxisLine implements Serializable {
     private Boolean roundCap;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.axisLine.lineStyle">https://echarts.apache.org/zh/option.html#series-gauge.axisLine.lineStyle</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

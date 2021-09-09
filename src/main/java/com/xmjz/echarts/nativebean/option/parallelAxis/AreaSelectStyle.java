@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle">https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle</a>
- * <br/>序号: 5
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -24,7 +23,6 @@ public class AreaSelectStyle implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle.width">https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle.width</a>
-     * <br/>序号: 1
      * <br/>默认值: 20
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -33,7 +31,6 @@ public class AreaSelectStyle implements Serializable {
     private Integer width;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle.borderWidth">https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle.borderWidth</a>
-     * <br/>序号: 2
      * <br/>默认值: 1
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -42,7 +39,6 @@ public class AreaSelectStyle implements Serializable {
     private Integer borderWidth;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle.borderColor">https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle.borderColor</a>
-     * <br/>序号: 3
      * <br/>默认值: rgba(160,197,232)
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -51,7 +47,6 @@ public class AreaSelectStyle implements Serializable {
     private String borderColor;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle.color">https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle.color</a>
-     * <br/>序号: 4
      * <br/>默认值: rgba(160,197,232)
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -60,7 +55,6 @@ public class AreaSelectStyle implements Serializable {
     private String color;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle.opacity">https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle.opacity</a>
-     * <br/>序号: 5
      * <br/>默认值: 0.3
      * <br/>js类型: ["number"]
      * <br/>描述:

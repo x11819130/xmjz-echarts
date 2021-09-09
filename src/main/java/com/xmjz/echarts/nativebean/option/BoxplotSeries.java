@@ -1,9 +1,6 @@
 package com.xmjz.echarts.nativebean.option;
 
-import com.xmjz.echarts.nativebean.option.boxplotSeries.Blur;
-import com.xmjz.echarts.nativebean.option.boxplotSeries.Emphasis;
-import com.xmjz.echarts.nativebean.option.boxplotSeries.ItemStyle;
-import com.xmjz.echarts.nativebean.option.boxplotSeries.Select;
+import com.xmjz.echarts.nativebean.option.boxplotSeries.*;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
@@ -13,7 +10,6 @@ import java.util.List;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot">https://echarts.apache.org/zh/option.html#series-boxplot</a>
- * <br/>序号: 0
  * <br/>默认值: 无
  * <br/>js类型: ["object"]
  * <br/>描述:
@@ -34,7 +30,6 @@ public class BoxplotSeries extends Series implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.type">https://echarts.apache.org/zh/option.html#series-boxplot.type</a>
-     * <br/>序号: 1
      * <br/>默认值: boxplot
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -42,7 +37,6 @@ public class BoxplotSeries extends Series implements Serializable {
     private String type;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.id">https://echarts.apache.org/zh/option.html#series-boxplot.id</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -51,7 +45,6 @@ public class BoxplotSeries extends Series implements Serializable {
     private String id;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.coordinateSystem">https://echarts.apache.org/zh/option.html#series-boxplot.coordinateSystem</a>
-     * <br/>序号: 3
      * <br/>默认值: cartesian2d
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -65,7 +58,6 @@ public class BoxplotSeries extends Series implements Serializable {
     private String coordinateSystem;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.xAxisIndex">https://echarts.apache.org/zh/option.html#series-boxplot.xAxisIndex</a>
-     * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -79,7 +71,6 @@ public class BoxplotSeries extends Series implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.yAxisIndex">https://echarts.apache.org/zh/option.html#series-boxplot.yAxisIndex</a>
-     * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -93,7 +84,6 @@ public class BoxplotSeries extends Series implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.name">https://echarts.apache.org/zh/option.html#series-boxplot.name</a>
-     * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -101,8 +91,22 @@ public class BoxplotSeries extends Series implements Serializable {
      */
     private String name;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.colorBy">https://echarts.apache.org/zh/option.html#series-boxplot.colorBy</a>
+     * <br/>默认值: series
+     * <br/>js类型: ["string"]
+     * <br/>描述:
+     * <blockquote>
+     * <p>从 <code class="codespan">v5.2.0</code> 开始支持</p>
+     * </blockquote>
+     * <p>从调色盘 <a href="#color">option.color</a> 中取色的策略，可取值为：</p>
+     * <ul>
+     * <li><code class="codespan">'series'</code>：按照系列分配调色盘中的颜色，同一系列中的所有数据都是用相同的颜色；</li>
+     * <li><code class="codespan">'data'</code>：按照数据项分配调色盘中的颜色，每个数据项都使用不同的颜色。</li>
+     * </ul>
+     */
+    private String colorBy;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.legendHoverLink">https://echarts.apache.org/zh/option.html#series-boxplot.legendHoverLink</a>
-     * <br/>序号: 7
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -111,7 +115,6 @@ public class BoxplotSeries extends Series implements Serializable {
     private Boolean legendHoverLink;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.hoverAnimation">https://echarts.apache.org/zh/option.html#series-boxplot.hoverAnimation</a>
-     * <br/>序号: 8
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -120,7 +123,6 @@ public class BoxplotSeries extends Series implements Serializable {
     private Boolean hoverAnimation;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.layout">https://echarts.apache.org/zh/option.html#series-boxplot.layout</a>
-     * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -136,7 +138,6 @@ public class BoxplotSeries extends Series implements Serializable {
     private String layout;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.boxWidth">https://echarts.apache.org/zh/option.html#series-boxplot.boxWidth</a>
-     * <br/>序号: 10
      * <br/>默认值: [7,50]
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -146,7 +147,6 @@ public class BoxplotSeries extends Series implements Serializable {
     private List<?> boxWidth;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.itemStyle">https://echarts.apache.org/zh/option.html#series-boxplot.itemStyle</a>
-     * <br/>序号: 11
      * <br/>默认值: #fff
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -155,7 +155,6 @@ public class BoxplotSeries extends Series implements Serializable {
     private ItemStyle itemStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.emphasis">https://echarts.apache.org/zh/option.html#series-boxplot.emphasis</a>
-     * <br/>序号: 12
      * <br/>默认值: none
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -164,7 +163,6 @@ public class BoxplotSeries extends Series implements Serializable {
     private Emphasis emphasis;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.blur">https://echarts.apache.org/zh/option.html#series-boxplot.blur</a>
-     * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -176,7 +174,6 @@ public class BoxplotSeries extends Series implements Serializable {
     private Blur blur;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.select">https://echarts.apache.org/zh/option.html#series-boxplot.select</a>
-     * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -188,7 +185,6 @@ public class BoxplotSeries extends Series implements Serializable {
     private Select select;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.selectedMode">https://echarts.apache.org/zh/option.html#series-boxplot.selectedMode</a>
-     * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","string"]
      * <br/>描述:
@@ -202,7 +198,6 @@ public class BoxplotSeries extends Series implements Serializable {
     private Object selectedMode;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.dimensions">https://echarts.apache.org/zh/option.html#series-boxplot.dimensions</a>
-     * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -260,7 +255,6 @@ public class BoxplotSeries extends Series implements Serializable {
     private List<?> dimensions;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.encode">https://echarts.apache.org/zh/option.html#series-boxplot.encode</a>
-     * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -301,12 +295,14 @@ public class BoxplotSeries extends Series implements Serializable {
      * <span class="hljs-attr">encode</span>: {
      *     <span class="hljs-comment">// 使用 “名为 product 的维度” 和 “名为 score 的维度” 的值在 tooltip 中显示</span>
      *     <span class="hljs-attr">tooltip</span>: [<span class="hljs-string">'product'</span>, <span class="hljs-string">'score'</span>]
-     *     <span class="hljs-comment">// 使用 “维度 1” 和 “维度 3” 的维度名连起来作为系列名。（有时候名字比较长，这可以避免在 series.name 重复输入这些名字）</span>
+     *     <span class="hljs-comment">// 使用第一个维度和第三个维度的维度名连起来作为系列名。（有时候名字比较长，这可以避免在 series.name 重复输入这些名字）</span>
      *     <span class="hljs-attr">seriesName</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">3</span>],
-     *     <span class="hljs-comment">// 表示使用 “维度2” 中的值作为 id。这在使用 setOption 动态更新数据时有用处，可以使新老数据用 id 对应起来，从而能够产生合适的数据更新动画。</span>
+     *     <span class="hljs-comment">// 表示使用第二个维度中的值作为 id。这在使用 setOption 动态更新数据时有用处，可以使新老数据用 id 对应起来，从而能够产生合适的数据更新动画。</span>
      *     <span class="hljs-attr">itemId</span>: <span class="hljs-number">2</span>,
-     *     <span class="hljs-comment">// 指定数据项的名称使用 “维度3” 在饼图等图表中有用，可以使这个名字显示在图例（legend）中。</span>
-     *     <span class="hljs-attr">itemName</span>: <span class="hljs-number">3</span>
+     *     <span class="hljs-comment">// 指定数据项的名称使用第三个维度在饼图等图表中有用，可以使这个名字显示在图例（legend）中。</span>
+     *     <span class="hljs-attr">itemName</span>: <span class="hljs-number">3</span>,
+     *     <span class="hljs-comment">// 指定数据项的组 ID (groupID)，组 ID 会被用于分类数据，并在全局过渡动画中决定如何进行合并和分裂动画，具体见 universalTransition</span>
+     *     <span class="hljs-attr">itemGroupId</span>: <span class="hljs-number">4</span>
      * }
      *
      * <span class="hljs-comment">// 直角坐标系（grid/cartesian）特有的属性：</span>
@@ -377,8 +373,16 @@ public class BoxplotSeries extends Series implements Serializable {
      */
     private Object encode;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.dataGroupId">https://echarts.apache.org/zh/option.html#series-boxplot.dataGroupId</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["string"]
+     * <br/>描述:
+     * <p>该系列所有数据共有的组 ID。组 ID 会被用于分类数据，并在全局过渡动画中决定如何进行合并和分裂动画。</p>
+     * <p>如果你使用了<a href="#dataset">dataset</a>组件来表达数据，推荐使用<code class="codespan">encode.itemGroupID</code>来指定哪个维度被编码为组 ID。</p>
+     */
+    private String dataGroupId;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.data">https://echarts.apache.org/zh/option.html#series-boxplot.data</a>
-     * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -405,7 +409,6 @@ public class BoxplotSeries extends Series implements Serializable {
     private List<?> data;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.markPoint">https://echarts.apache.org/zh/option.html#series-boxplot.markPoint</a>
-     * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -414,7 +417,6 @@ public class BoxplotSeries extends Series implements Serializable {
     private Object markPoint;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.markLine">https://echarts.apache.org/zh/option.html#series-boxplot.markLine</a>
-     * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -423,7 +425,6 @@ public class BoxplotSeries extends Series implements Serializable {
     private Object markLine;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.markArea">https://echarts.apache.org/zh/option.html#series-boxplot.markArea</a>
-     * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -432,7 +433,6 @@ public class BoxplotSeries extends Series implements Serializable {
     private Object markArea;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.zlevel">https://echarts.apache.org/zh/option.html#series-boxplot.zlevel</a>
-     * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -443,7 +443,6 @@ public class BoxplotSeries extends Series implements Serializable {
     private Integer zlevel;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.z">https://echarts.apache.org/zh/option.html#series-boxplot.z</a>
-     * <br/>序号: 23
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -453,7 +452,6 @@ public class BoxplotSeries extends Series implements Serializable {
     private Integer z;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.silent">https://echarts.apache.org/zh/option.html#series-boxplot.silent</a>
-     * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -462,7 +460,6 @@ public class BoxplotSeries extends Series implements Serializable {
     private Boolean silent;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.animationDuration">https://echarts.apache.org/zh/option.html#series-boxplot.animationDuration</a>
-     * <br/>序号: 25
      * <br/>默认值: 800
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -476,7 +473,6 @@ public class BoxplotSeries extends Series implements Serializable {
     private Object animationDuration;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.animationEasing">https://echarts.apache.org/zh/option.html#series-boxplot.animationEasing</a>
-     * <br/>序号: 26
      * <br/>默认值: elasticOut
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -485,7 +481,6 @@ public class BoxplotSeries extends Series implements Serializable {
     private String animationEasing;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.animationDelay">https://echarts.apache.org/zh/option.html#series-boxplot.animationDelay</a>
-     * <br/>序号: 27
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -500,8 +495,18 @@ public class BoxplotSeries extends Series implements Serializable {
      */
     private Object animationDelay;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.universalTransition">https://echarts.apache.org/zh/option.html#series-boxplot.universalTransition</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["object"]
+     * <br/>描述:
+     * <p>全局过渡动画相关的配置。</p>
+     * <p>全局过渡动画（Universal Transition）提供了任意系列之间进行变形动画的功能。开启该功能后，每次<code class="codespan">setOption</code>，相同<code class="codespan">id</code>的系列之间会自动关联进行动画的过渡，更细粒度的关联配置见<code class="codespan">universalTransition.seriesKey</code>配置。</p>
+     * <p>通过配置<code class="codespan">encode.itemGroupId</code>或者<code class="codespan">dataGroupId</code>等指定数据的分组，还可以实现诸如下钻，聚合等一对多或者多对一的动画。</p>
+     * <p>可以直接在系列中配置 <code class="codespan">universalTransition: true</code> 开启该功能。也可以提供一个对象进行更多属性的配置。</p>
+     */
+    private UniversalTransition universalTransition;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.tooltip">https://echarts.apache.org/zh/option.html#series-boxplot.tooltip</a>
-     * <br/>序号: 28
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

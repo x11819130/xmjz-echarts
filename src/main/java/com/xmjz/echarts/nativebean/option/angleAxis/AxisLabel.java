@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel</a>
- * <br/>序号: 20
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -24,7 +23,6 @@ public class AxisLabel implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.show">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.show</a>
-     * <br/>序号: 1
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -33,7 +31,6 @@ public class AxisLabel implements Serializable {
     private Boolean show;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.interval">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.interval</a>
-     * <br/>序号: 2
      * <br/>默认值: auto
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -49,7 +46,6 @@ public class AxisLabel implements Serializable {
     private Object interval;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.inside">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.inside</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -58,7 +54,6 @@ public class AxisLabel implements Serializable {
     private Boolean inside;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.margin">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.margin</a>
-     * <br/>序号: 4
      * <br/>默认值: 8
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -67,7 +62,6 @@ public class AxisLabel implements Serializable {
     private Integer margin;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.formatter">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.formatter</a>
-     * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["string","Function"]
      * <br/>描述:
@@ -339,7 +333,6 @@ public class AxisLabel implements Serializable {
     private Object formatter;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.showMinLabel">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.showMinLabel</a>
-     * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -348,7 +341,6 @@ public class AxisLabel implements Serializable {
     private Boolean showMinLabel;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.showMaxLabel">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.showMaxLabel</a>
-     * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -357,7 +349,6 @@ public class AxisLabel implements Serializable {
     private Boolean showMaxLabel;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.color">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.color</a>
-     * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["Color","Function"]
      * <br/>描述:
@@ -375,7 +366,6 @@ public class AxisLabel implements Serializable {
     private Object color;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.fontStyle">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.fontStyle</a>
-     * <br/>序号: 9
      * <br/>默认值: normal
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -390,7 +380,6 @@ public class AxisLabel implements Serializable {
     private String fontStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.fontWeight">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.fontWeight</a>
-     * <br/>序号: 10
      * <br/>默认值: normal
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -407,7 +396,6 @@ public class AxisLabel implements Serializable {
     private Object fontWeight;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.fontFamily">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.fontFamily</a>
-     * <br/>序号: 11
      * <br/>默认值: sans-serif
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -417,7 +405,6 @@ public class AxisLabel implements Serializable {
     private String fontFamily;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.fontSize">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.fontSize</a>
-     * <br/>序号: 12
      * <br/>默认值: 12
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -426,7 +413,6 @@ public class AxisLabel implements Serializable {
     private Integer fontSize;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.align">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.align</a>
-     * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -451,7 +437,6 @@ public class AxisLabel implements Serializable {
     private String align;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.verticalAlign">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.verticalAlign</a>
-     * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -476,7 +461,6 @@ public class AxisLabel implements Serializable {
     private String verticalAlign;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.lineHeight">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.lineHeight</a>
-     * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -495,7 +479,6 @@ public class AxisLabel implements Serializable {
     private Integer lineHeight;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.backgroundColor">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.backgroundColor</a>
-     * <br/>序号: 16
      * <br/>默认值: transparent
      * <br/>js类型: ["string","Object"]
      * <br/>描述:
@@ -515,7 +498,6 @@ public class AxisLabel implements Serializable {
     private Object backgroundColor;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.borderColor">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.borderColor</a>
-     * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -524,7 +506,6 @@ public class AxisLabel implements Serializable {
     private String borderColor;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.borderWidth">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.borderWidth</a>
-     * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -532,8 +513,48 @@ public class AxisLabel implements Serializable {
      */
     private Integer borderWidth;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.borderType">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.borderType</a>
+     * <br/>默认值: solid
+     * <br/>js类型: ["string","number","Array"]
+     * <br/>描述:
+     * <p>文字块边框描边类型。</p>
+     * <p>可选：</p>
+     * <ul>
+     * <li><code class="codespan">'solid'</code></li>
+     * <li><code class="codespan">'dashed'</code></li>
+     * <li><code class="codespan">'dotted'</code></li>
+     * </ul>
+     * <p>自 <code class="codespan">v5.0.0</code> 开始，也可以是 <code class="codespan">number</code> 或者 <code class="codespan">number</code> 数组，用以指定线条的 <a href="https://developer.mozilla.org/zh-CN/docs/Web/SVG/Attribute/stroke-dasharray" target="_blank">dash array</a>，配合
+     * <code class="codespan">borderDashOffset</code>
+     *  可实现更灵活的虚线效果。</p>
+     * <p>例如：</p>
+     * <pre><code class="lang-js hljs javascript">{
+     *
+     * <span class="hljs-attr">borderType</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
+     *
+     * <span class="hljs-attr">borderDashOffset</span>: <span class="hljs-number">5</span>
+     * }
+     * </code></pre>
+     */
+    private Object borderType;
+    /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.borderDashOffset">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.borderDashOffset</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["number"]
+     * <br/>描述:
+     * <blockquote>
+     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
+     * </blockquote>
+     *
+     *
+     * <p>用于设置虚线的偏移量，可搭配
+     * <code class="codespan">borderType</code>
+     * 指定 dash array 实现灵活的虚线效果。</p>
+     * <p>更多详情可以参考 MDN <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/lineDashOffset" target="_blank">lineDashOffset</a>。</p>
+     */
+    private Integer borderDashOffset;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.borderRadius">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.borderRadius</a>
-     * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
      * <br/>描述:
@@ -542,7 +563,6 @@ public class AxisLabel implements Serializable {
     private Object borderRadius;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.padding">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.padding</a>
-     * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
      * <br/>描述:
@@ -557,7 +577,6 @@ public class AxisLabel implements Serializable {
     private Object padding;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.shadowColor">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.shadowColor</a>
-     * <br/>序号: 21
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -566,7 +585,6 @@ public class AxisLabel implements Serializable {
     private String shadowColor;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.shadowBlur">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.shadowBlur</a>
-     * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -575,7 +593,6 @@ public class AxisLabel implements Serializable {
     private Integer shadowBlur;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.shadowOffsetX">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.shadowOffsetX</a>
-     * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -584,7 +601,6 @@ public class AxisLabel implements Serializable {
     private Integer shadowOffsetX;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.shadowOffsetY">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.shadowOffsetY</a>
-     * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -593,7 +609,6 @@ public class AxisLabel implements Serializable {
     private Integer shadowOffsetY;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.width">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.width</a>
-     * <br/>序号: 25
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -602,7 +617,6 @@ public class AxisLabel implements Serializable {
     private Integer width;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.height">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.height</a>
-     * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -611,7 +625,6 @@ public class AxisLabel implements Serializable {
     private Integer height;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.textBorderColor">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.textBorderColor</a>
-     * <br/>序号: 27
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -620,7 +633,6 @@ public class AxisLabel implements Serializable {
     private String textBorderColor;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.textBorderWidth">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.textBorderWidth</a>
-     * <br/>序号: 28
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -628,8 +640,48 @@ public class AxisLabel implements Serializable {
      */
     private Integer textBorderWidth;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.textBorderType">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.textBorderType</a>
+     * <br/>默认值: solid
+     * <br/>js类型: ["string","number","Array"]
+     * <br/>描述:
+     * <p>文字本身的描边类型。</p>
+     * <p>可选：</p>
+     * <ul>
+     * <li><code class="codespan">'solid'</code></li>
+     * <li><code class="codespan">'dashed'</code></li>
+     * <li><code class="codespan">'dotted'</code></li>
+     * </ul>
+     * <p>自 <code class="codespan">v5.0.0</code> 开始，也可以是 <code class="codespan">number</code> 或者 <code class="codespan">number</code> 数组，用以指定线条的 <a href="https://developer.mozilla.org/zh-CN/docs/Web/SVG/Attribute/stroke-dasharray" target="_blank">dash array</a>，配合
+     * <code class="codespan">textBorderDashOffset</code>
+     *  可实现更灵活的虚线效果。</p>
+     * <p>例如：</p>
+     * <pre><code class="lang-js hljs javascript">{
+     *
+     * <span class="hljs-attr">textBorderType</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
+     *
+     * <span class="hljs-attr">textBorderDashOffset</span>: <span class="hljs-number">5</span>
+     * }
+     * </code></pre>
+     */
+    private Object textBorderType;
+    /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.textBorderDashOffset">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.textBorderDashOffset</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["number"]
+     * <br/>描述:
+     * <blockquote>
+     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
+     * </blockquote>
+     *
+     *
+     * <p>用于设置虚线的偏移量，可搭配
+     * <code class="codespan">textBorderType</code>
+     * 指定 dash array 实现灵活的虚线效果。</p>
+     * <p>更多详情可以参考 MDN <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/lineDashOffset" target="_blank">lineDashOffset</a>。</p>
+     */
+    private Integer textBorderDashOffset;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.textShadowColor">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.textShadowColor</a>
-     * <br/>序号: 29
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -638,7 +690,6 @@ public class AxisLabel implements Serializable {
     private String textShadowColor;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.textShadowBlur">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.textShadowBlur</a>
-     * <br/>序号: 30
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -647,7 +698,6 @@ public class AxisLabel implements Serializable {
     private Integer textShadowBlur;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.textShadowOffsetX">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.textShadowOffsetX</a>
-     * <br/>序号: 31
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -656,7 +706,6 @@ public class AxisLabel implements Serializable {
     private Integer textShadowOffsetX;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.textShadowOffsetY">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.textShadowOffsetY</a>
-     * <br/>序号: 32
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -665,7 +714,6 @@ public class AxisLabel implements Serializable {
     private Integer textShadowOffsetY;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.overflow">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.overflow</a>
-     * <br/>序号: 33
      * <br/>默认值: none
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -679,7 +727,6 @@ public class AxisLabel implements Serializable {
     private String overflow;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.ellipsis">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.ellipsis</a>
-     * <br/>序号: 34
      * <br/>默认值: ...
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -688,7 +735,6 @@ public class AxisLabel implements Serializable {
     private String ellipsis;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.lineOverflow">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.lineOverflow</a>
-     * <br/>序号: 35
      * <br/>默认值: none
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -700,7 +746,6 @@ public class AxisLabel implements Serializable {
     private String lineOverflow;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.rich">https://echarts.apache.org/zh/option.html#angleAxis.axisLabel.rich</a>
-     * <br/>序号: 36
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

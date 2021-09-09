@@ -11,7 +11,8 @@ import ${import};
 
 /**
  * 官方文档: <a href="${obj.url}">${obj.url}</a>
- * <br/>序号: ${obj.order}
+##不显示序号了 影响版本比对
+## * <br/>序号: ${obj.order}
  * <br/>默认值: #if(${prop.defaultValue})${prop.defaultValue}#else无#end
 
  * <br/>js类型: ${obj.types}
@@ -22,7 +23,7 @@ import ${import};
 #end
  *
  * @author ${base.author}
-##不显示日期了
+##不显示日期了 影响版本比对
 ## * @date ${base.date}
  */
 @Getter
@@ -35,7 +36,8 @@ public class ${obj.className}#if(${obj.order} == 0) extends Series#end implement
 #if(${prop.order} > 0)
     /**
      * 官方文档: <a href="${prop.url}">${prop.url}</a>
-     * <br/>序号: ${prop.order}
+##不显示序号了 影响版本比对
+##     * <br/>序号: ${prop.order}
      * <br/>默认值: #if(${prop.defaultValue})${prop.defaultValue}#else无#end
 
      * <br/>js类型: ${prop.types}

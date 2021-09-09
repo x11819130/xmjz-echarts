@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#aria.decal">https://echarts.apache.org/zh/option.html#aria.decal</a>
- * <br/>序号: 3
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -34,7 +33,6 @@ public class Decal implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#aria.decal.show">https://echarts.apache.org/zh/option.html#aria.decal.show</a>
-     * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -43,7 +41,6 @@ public class Decal implements Serializable {
     private Boolean show;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#aria.decal.decals">https://echarts.apache.org/zh/option.html#aria.decal.decals</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Object","Array"]
      * <br/>描述:

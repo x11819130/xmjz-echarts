@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.backgroundStyle">https://echarts.apache.org/zh/option.html#series-bar.backgroundStyle</a>
- * <br/>序号: 10
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -28,16 +27,17 @@ public class BackgroundStyle implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.backgroundStyle.color">https://echarts.apache.org/zh/option.html#series-bar.backgroundStyle.color</a>
-     * <br/>序号: 1
      * <br/>默认值: rgba(180, 180, 180, 0.2)
      * <br/>js类型: ["Color"]
      * <br/>描述:
-     * <p>柱条的颜色。</p>
+     * <p>柱条的颜色。 </p>
+     * <blockquote>
+     * <p>支持使用<code class="codespan">rgb(255,255,255)</code>，<code class="codespan">rgba(255,255,255,1)</code>，<code class="codespan">#fff</code>等方式设置为纯色，也支持设置为渐变色和纹理填充，具体见<a href="#color">option.color</a></p>
+     * </blockquote>
      */
     private String color;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.backgroundStyle.borderColor">https://echarts.apache.org/zh/option.html#series-bar.backgroundStyle.borderColor</a>
-     * <br/>序号: 2
      * <br/>默认值: #000
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -46,7 +46,6 @@ public class BackgroundStyle implements Serializable {
     private String borderColor;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.backgroundStyle.borderWidth">https://echarts.apache.org/zh/option.html#series-bar.backgroundStyle.borderWidth</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -55,7 +54,6 @@ public class BackgroundStyle implements Serializable {
     private Integer borderWidth;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.backgroundStyle.borderType">https://echarts.apache.org/zh/option.html#series-bar.backgroundStyle.borderType</a>
-     * <br/>序号: 4
      * <br/>默认值: solid
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -64,7 +62,6 @@ public class BackgroundStyle implements Serializable {
     private String borderType;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.backgroundStyle.borderRadius">https://echarts.apache.org/zh/option.html#series-bar.backgroundStyle.borderRadius</a>
-     * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
      * <br/>描述:
@@ -77,7 +74,6 @@ public class BackgroundStyle implements Serializable {
     private Object borderRadius;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.backgroundStyle.shadowBlur">https://echarts.apache.org/zh/option.html#series-bar.backgroundStyle.shadowBlur</a>
-     * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -92,7 +88,6 @@ public class BackgroundStyle implements Serializable {
     private Integer shadowBlur;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.backgroundStyle.shadowColor">https://echarts.apache.org/zh/option.html#series-bar.backgroundStyle.shadowColor</a>
-     * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -101,7 +96,6 @@ public class BackgroundStyle implements Serializable {
     private String shadowColor;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.backgroundStyle.shadowOffsetX">https://echarts.apache.org/zh/option.html#series-bar.backgroundStyle.shadowOffsetX</a>
-     * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -110,7 +104,6 @@ public class BackgroundStyle implements Serializable {
     private Integer shadowOffsetX;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.backgroundStyle.shadowOffsetY">https://echarts.apache.org/zh/option.html#series-bar.backgroundStyle.shadowOffsetY</a>
-     * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -119,7 +112,6 @@ public class BackgroundStyle implements Serializable {
     private Integer shadowOffsetY;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.backgroundStyle.opacity">https://echarts.apache.org/zh/option.html#series-bar.backgroundStyle.opacity</a>
-     * <br/>序号: 10
      * <br/>默认值: 1
      * <br/>js类型: ["number"]
      * <br/>描述:

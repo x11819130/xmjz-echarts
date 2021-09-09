@@ -10,7 +10,6 @@ import java.util.List;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter">https://echarts.apache.org/zh/option.html#series-scatter</a>
- * <br/>序号: 0
  * <br/>默认值: 无
  * <br/>js类型: ["object"]
  * <br/>描述:
@@ -27,7 +26,6 @@ public class ScatterSeries extends Series implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.type">https://echarts.apache.org/zh/option.html#series-scatter.type</a>
-     * <br/>序号: 1
      * <br/>默认值: scatter
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -35,7 +33,6 @@ public class ScatterSeries extends Series implements Serializable {
     private String type;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.id">https://echarts.apache.org/zh/option.html#series-scatter.id</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -44,7 +41,6 @@ public class ScatterSeries extends Series implements Serializable {
     private String id;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.name">https://echarts.apache.org/zh/option.html#series-scatter.name</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -52,8 +48,22 @@ public class ScatterSeries extends Series implements Serializable {
      */
     private String name;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.colorBy">https://echarts.apache.org/zh/option.html#series-scatter.colorBy</a>
+     * <br/>默认值: series
+     * <br/>js类型: ["string"]
+     * <br/>描述:
+     * <blockquote>
+     * <p>从 <code class="codespan">v5.2.0</code> 开始支持</p>
+     * </blockquote>
+     * <p>从调色盘 <a href="#color">option.color</a> 中取色的策略，可取值为：</p>
+     * <ul>
+     * <li><code class="codespan">'series'</code>：按照系列分配调色盘中的颜色，同一系列中的所有数据都是用相同的颜色；</li>
+     * <li><code class="codespan">'data'</code>：按照数据项分配调色盘中的颜色，每个数据项都使用不同的颜色。</li>
+     * </ul>
+     */
+    private String colorBy;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.coordinateSystem">https://echarts.apache.org/zh/option.html#series-scatter.coordinateSystem</a>
-     * <br/>序号: 4
      * <br/>默认值: cartesian2d
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -77,7 +87,6 @@ public class ScatterSeries extends Series implements Serializable {
     private String coordinateSystem;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.xAxisIndex">https://echarts.apache.org/zh/option.html#series-scatter.xAxisIndex</a>
-     * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -91,7 +100,6 @@ public class ScatterSeries extends Series implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.yAxisIndex">https://echarts.apache.org/zh/option.html#series-scatter.yAxisIndex</a>
-     * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -105,7 +113,6 @@ public class ScatterSeries extends Series implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.polarIndex">https://echarts.apache.org/zh/option.html#series-scatter.polarIndex</a>
-     * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -114,7 +121,6 @@ public class ScatterSeries extends Series implements Serializable {
     private Integer polarIndex;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.geoIndex">https://echarts.apache.org/zh/option.html#series-scatter.geoIndex</a>
-     * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -123,7 +129,6 @@ public class ScatterSeries extends Series implements Serializable {
     private Integer geoIndex;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.calendarIndex">https://echarts.apache.org/zh/option.html#series-scatter.calendarIndex</a>
-     * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -132,7 +137,6 @@ public class ScatterSeries extends Series implements Serializable {
     private Integer calendarIndex;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.legendHoverLink">https://echarts.apache.org/zh/option.html#series-scatter.legendHoverLink</a>
-     * <br/>序号: 10
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -141,7 +145,6 @@ public class ScatterSeries extends Series implements Serializable {
     private Boolean legendHoverLink;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.symbol">https://echarts.apache.org/zh/option.html#series-scatter.symbol</a>
-     * <br/>序号: 11
      * <br/>默认值: circle
      * <br/>js类型: ["string","Function"]
      * <br/>描述:
@@ -164,7 +167,6 @@ public class ScatterSeries extends Series implements Serializable {
     private Object symbol;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.symbolSize">https://echarts.apache.org/zh/option.html#series-scatter.symbolSize</a>
-     * <br/>序号: 12
      * <br/>默认值: 10
      * <br/>js类型: ["number","Array","Function"]
      * <br/>描述:
@@ -177,7 +179,6 @@ public class ScatterSeries extends Series implements Serializable {
     private Object symbolSize;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.symbolRotate">https://echarts.apache.org/zh/option.html#series-scatter.symbolRotate</a>
-     * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -193,7 +194,6 @@ public class ScatterSeries extends Series implements Serializable {
     private Object symbolRotate;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.symbolKeepAspect">https://echarts.apache.org/zh/option.html#series-scatter.symbolKeepAspect</a>
-     * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -202,17 +202,15 @@ public class ScatterSeries extends Series implements Serializable {
     private Boolean symbolKeepAspect;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.symbolOffset">https://echarts.apache.org/zh/option.html#series-scatter.symbolOffset</a>
-     * <br/>序号: 15
      * <br/>默认值: [0,0]
      * <br/>js类型: ["Array"]
      * <br/>描述:
      * <p>标记相对于原本位置的偏移。默认情况下，标记会居中置放在数据对应的位置，但是如果 symbol 是自定义的矢量路径或者图片，就有可能不希望 symbol 居中。这时候可以使用该配置项配置 symbol 相对于原本居中的偏移，可以是绝对的像素值，也可以是相对的百分比。</p>
-     * <p>例如 <code class="codespan">[0, '50%']</code> 就是把自己向上移动了一半的位置，在 symbol 图形是气泡的时候可以让图形下端的箭头对准数据点。</p>
+     * <p>例如 <code class="codespan">[0, '-50%']</code> 就是把自己向上移动了一半的位置，在 symbol 图形是气泡的时候可以让图形下端的箭头对准数据点。</p>
      */
     private List<?> symbolOffset;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.large">https://echarts.apache.org/zh/option.html#series-scatter.large</a>
-     * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -223,7 +221,6 @@ public class ScatterSeries extends Series implements Serializable {
     private Boolean large;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.largeThreshold">https://echarts.apache.org/zh/option.html#series-scatter.largeThreshold</a>
-     * <br/>序号: 17
      * <br/>默认值: 2000
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -232,7 +229,6 @@ public class ScatterSeries extends Series implements Serializable {
     private Integer largeThreshold;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.cursor">https://echarts.apache.org/zh/option.html#series-scatter.cursor</a>
-     * <br/>序号: 18
      * <br/>默认值: pointer
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -241,7 +237,6 @@ public class ScatterSeries extends Series implements Serializable {
     private String cursor;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.label">https://echarts.apache.org/zh/option.html#series-scatter.label</a>
-     * <br/>序号: 19
      * <br/>默认值: inside
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -250,7 +245,6 @@ public class ScatterSeries extends Series implements Serializable {
     private Label label;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.labelLine">https://echarts.apache.org/zh/option.html#series-scatter.labelLine</a>
-     * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -259,7 +253,6 @@ public class ScatterSeries extends Series implements Serializable {
     private LabelLine labelLine;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.labelLayout">https://echarts.apache.org/zh/option.html#series-scatter.labelLayout</a>
-     * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["Object","Function"]
      * <br/>描述:
@@ -312,7 +305,6 @@ public class ScatterSeries extends Series implements Serializable {
     private LabelLayout labelLayout;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.itemStyle">https://echarts.apache.org/zh/option.html#series-scatter.itemStyle</a>
-     * <br/>序号: 22
      * <br/>默认值: 自适应
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -321,7 +313,6 @@ public class ScatterSeries extends Series implements Serializable {
     private ItemStyle itemStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.emphasis">https://echarts.apache.org/zh/option.html#series-scatter.emphasis</a>
-     * <br/>序号: 23
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -330,7 +321,6 @@ public class ScatterSeries extends Series implements Serializable {
     private Emphasis emphasis;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.blur">https://echarts.apache.org/zh/option.html#series-scatter.blur</a>
-     * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -342,7 +332,6 @@ public class ScatterSeries extends Series implements Serializable {
     private Blur blur;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.select">https://echarts.apache.org/zh/option.html#series-scatter.select</a>
-     * <br/>序号: 25
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -354,7 +343,6 @@ public class ScatterSeries extends Series implements Serializable {
     private Select select;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.selectedMode">https://echarts.apache.org/zh/option.html#series-scatter.selectedMode</a>
-     * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","string"]
      * <br/>描述:
@@ -368,7 +356,6 @@ public class ScatterSeries extends Series implements Serializable {
     private Object selectedMode;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.progressive">https://echarts.apache.org/zh/option.html#series-scatter.progressive</a>
-     * <br/>序号: 27
      * <br/>默认值: 400
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -379,7 +366,6 @@ public class ScatterSeries extends Series implements Serializable {
     private Integer progressive;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.progressiveThreshold">https://echarts.apache.org/zh/option.html#series-scatter.progressiveThreshold</a>
-     * <br/>序号: 28
      * <br/>默认值: 3000
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -388,7 +374,6 @@ public class ScatterSeries extends Series implements Serializable {
     private Integer progressiveThreshold;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.dimensions">https://echarts.apache.org/zh/option.html#series-scatter.dimensions</a>
-     * <br/>序号: 29
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -446,7 +431,6 @@ public class ScatterSeries extends Series implements Serializable {
     private List<?> dimensions;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.encode">https://echarts.apache.org/zh/option.html#series-scatter.encode</a>
-     * <br/>序号: 30
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -487,12 +471,14 @@ public class ScatterSeries extends Series implements Serializable {
      * <span class="hljs-attr">encode</span>: {
      *     <span class="hljs-comment">// 使用 “名为 product 的维度” 和 “名为 score 的维度” 的值在 tooltip 中显示</span>
      *     <span class="hljs-attr">tooltip</span>: [<span class="hljs-string">'product'</span>, <span class="hljs-string">'score'</span>]
-     *     <span class="hljs-comment">// 使用 “维度 1” 和 “维度 3” 的维度名连起来作为系列名。（有时候名字比较长，这可以避免在 series.name 重复输入这些名字）</span>
+     *     <span class="hljs-comment">// 使用第一个维度和第三个维度的维度名连起来作为系列名。（有时候名字比较长，这可以避免在 series.name 重复输入这些名字）</span>
      *     <span class="hljs-attr">seriesName</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">3</span>],
-     *     <span class="hljs-comment">// 表示使用 “维度2” 中的值作为 id。这在使用 setOption 动态更新数据时有用处，可以使新老数据用 id 对应起来，从而能够产生合适的数据更新动画。</span>
+     *     <span class="hljs-comment">// 表示使用第二个维度中的值作为 id。这在使用 setOption 动态更新数据时有用处，可以使新老数据用 id 对应起来，从而能够产生合适的数据更新动画。</span>
      *     <span class="hljs-attr">itemId</span>: <span class="hljs-number">2</span>,
-     *     <span class="hljs-comment">// 指定数据项的名称使用 “维度3” 在饼图等图表中有用，可以使这个名字显示在图例（legend）中。</span>
-     *     <span class="hljs-attr">itemName</span>: <span class="hljs-number">3</span>
+     *     <span class="hljs-comment">// 指定数据项的名称使用第三个维度在饼图等图表中有用，可以使这个名字显示在图例（legend）中。</span>
+     *     <span class="hljs-attr">itemName</span>: <span class="hljs-number">3</span>,
+     *     <span class="hljs-comment">// 指定数据项的组 ID (groupID)，组 ID 会被用于分类数据，并在全局过渡动画中决定如何进行合并和分裂动画，具体见 universalTransition</span>
+     *     <span class="hljs-attr">itemGroupId</span>: <span class="hljs-number">4</span>
      * }
      *
      * <span class="hljs-comment">// 直角坐标系（grid/cartesian）特有的属性：</span>
@@ -564,7 +550,6 @@ public class ScatterSeries extends Series implements Serializable {
     private Object encode;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.seriesLayoutBy">https://echarts.apache.org/zh/option.html#series-scatter.seriesLayoutBy</a>
-     * <br/>序号: 31
      * <br/>默认值: column
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -578,7 +563,6 @@ public class ScatterSeries extends Series implements Serializable {
     private String seriesLayoutBy;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.datasetIndex">https://echarts.apache.org/zh/option.html#series-scatter.datasetIndex</a>
-     * <br/>序号: 32
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -586,8 +570,16 @@ public class ScatterSeries extends Series implements Serializable {
      */
     private Integer datasetIndex;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.dataGroupId">https://echarts.apache.org/zh/option.html#series-scatter.dataGroupId</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["string"]
+     * <br/>描述:
+     * <p>该系列所有数据共有的组 ID。组 ID 会被用于分类数据，并在全局过渡动画中决定如何进行合并和分裂动画。</p>
+     * <p>如果你使用了<a href="#dataset">dataset</a>组件来表达数据，推荐使用<code class="codespan">encode.itemGroupID</code>来指定哪个维度被编码为组 ID。</p>
+     */
+    private String dataGroupId;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.data">https://echarts.apache.org/zh/option.html#series-scatter.data</a>
-     * <br/>序号: 33
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -710,7 +702,6 @@ public class ScatterSeries extends Series implements Serializable {
     private List<?> data;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.markPoint">https://echarts.apache.org/zh/option.html#series-scatter.markPoint</a>
-     * <br/>序号: 34
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -719,7 +710,6 @@ public class ScatterSeries extends Series implements Serializable {
     private Object markPoint;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.markLine">https://echarts.apache.org/zh/option.html#series-scatter.markLine</a>
-     * <br/>序号: 35
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -728,7 +718,6 @@ public class ScatterSeries extends Series implements Serializable {
     private Object markLine;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.markArea">https://echarts.apache.org/zh/option.html#series-scatter.markArea</a>
-     * <br/>序号: 36
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -737,7 +726,6 @@ public class ScatterSeries extends Series implements Serializable {
     private Object markArea;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.clip">https://echarts.apache.org/zh/option.html#series-scatter.clip</a>
-     * <br/>序号: 37
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -746,7 +734,7 @@ public class ScatterSeries extends Series implements Serializable {
      * </blockquote>
      * <p>是否裁剪超出坐标系部分的图形，具体裁剪效果根据系列决定：</p>
      * <ul>
-     * <li>散点图：忽略中心点超出坐标系的图形，但是不裁剪单个图形</li>
+     * <li>散点图/带有涟漪特效动画的散点（气泡）图：忽略中心点超出坐标系的图形，但是不裁剪单个图形</li>
      * <li>柱状图：裁掉完全超出的柱子，但是不会裁剪只超出部分的柱子</li>
      * <li>折线图：裁掉所有超出坐标系的折线部分，拐点图形的逻辑按照散点图处理</li>
      * <li>路径图：裁掉所有超出坐标系的部分</li>
@@ -758,7 +746,6 @@ public class ScatterSeries extends Series implements Serializable {
     private Boolean clip;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.zlevel">https://echarts.apache.org/zh/option.html#series-scatter.zlevel</a>
-     * <br/>序号: 38
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -769,7 +756,6 @@ public class ScatterSeries extends Series implements Serializable {
     private Integer zlevel;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.z">https://echarts.apache.org/zh/option.html#series-scatter.z</a>
-     * <br/>序号: 39
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -779,7 +765,6 @@ public class ScatterSeries extends Series implements Serializable {
     private Integer z;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.silent">https://echarts.apache.org/zh/option.html#series-scatter.silent</a>
-     * <br/>序号: 40
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -788,7 +773,6 @@ public class ScatterSeries extends Series implements Serializable {
     private Boolean silent;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.animation">https://echarts.apache.org/zh/option.html#series-scatter.animation</a>
-     * <br/>序号: 41
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -797,7 +781,6 @@ public class ScatterSeries extends Series implements Serializable {
     private Boolean animation;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.animationThreshold">https://echarts.apache.org/zh/option.html#series-scatter.animationThreshold</a>
-     * <br/>序号: 42
      * <br/>默认值: 2000
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -806,7 +789,6 @@ public class ScatterSeries extends Series implements Serializable {
     private Integer animationThreshold;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.animationDuration">https://echarts.apache.org/zh/option.html#series-scatter.animationDuration</a>
-     * <br/>序号: 43
      * <br/>默认值: 1000
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -820,7 +802,6 @@ public class ScatterSeries extends Series implements Serializable {
     private Object animationDuration;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.animationEasing">https://echarts.apache.org/zh/option.html#series-scatter.animationEasing</a>
-     * <br/>序号: 44
      * <br/>默认值: cubicOut
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -829,7 +810,6 @@ public class ScatterSeries extends Series implements Serializable {
     private String animationEasing;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.animationDelay">https://echarts.apache.org/zh/option.html#series-scatter.animationDelay</a>
-     * <br/>序号: 45
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -845,7 +825,6 @@ public class ScatterSeries extends Series implements Serializable {
     private Object animationDelay;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.animationDurationUpdate">https://echarts.apache.org/zh/option.html#series-scatter.animationDurationUpdate</a>
-     * <br/>序号: 46
      * <br/>默认值: 300
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -860,7 +839,6 @@ public class ScatterSeries extends Series implements Serializable {
     private Object animationDurationUpdate;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.animationEasingUpdate">https://echarts.apache.org/zh/option.html#series-scatter.animationEasingUpdate</a>
-     * <br/>序号: 47
      * <br/>默认值: cubicInOut
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -869,7 +847,6 @@ public class ScatterSeries extends Series implements Serializable {
     private String animationEasingUpdate;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.animationDelayUpdate">https://echarts.apache.org/zh/option.html#series-scatter.animationDelayUpdate</a>
-     * <br/>序号: 48
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -884,8 +861,18 @@ public class ScatterSeries extends Series implements Serializable {
      */
     private Object animationDelayUpdate;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.universalTransition">https://echarts.apache.org/zh/option.html#series-scatter.universalTransition</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["object"]
+     * <br/>描述:
+     * <p>全局过渡动画相关的配置。</p>
+     * <p>全局过渡动画（Universal Transition）提供了任意系列之间进行变形动画的功能。开启该功能后，每次<code class="codespan">setOption</code>，相同<code class="codespan">id</code>的系列之间会自动关联进行动画的过渡，更细粒度的关联配置见<code class="codespan">universalTransition.seriesKey</code>配置。</p>
+     * <p>通过配置<code class="codespan">encode.itemGroupId</code>或者<code class="codespan">dataGroupId</code>等指定数据的分组，还可以实现诸如下钻，聚合等一对多或者多对一的动画。</p>
+     * <p>可以直接在系列中配置 <code class="codespan">universalTransition: true</code> 开启该功能。也可以提供一个对象进行更多属性的配置。</p>
+     */
+    private UniversalTransition universalTransition;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.tooltip">https://echarts.apache.org/zh/option.html#series-scatter.tooltip</a>
-     * <br/>序号: 49
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

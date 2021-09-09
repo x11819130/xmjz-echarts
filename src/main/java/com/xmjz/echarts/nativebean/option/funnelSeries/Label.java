@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label">https://echarts.apache.org/zh/option.html#series-funnel.label</a>
- * <br/>序号: 13
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -24,7 +23,6 @@ public class Label implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.show">https://echarts.apache.org/zh/option.html#series-funnel.label.show</a>
-     * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -32,7 +30,6 @@ public class Label implements Serializable {
     private Boolean show;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.position">https://echarts.apache.org/zh/option.html#series-funnel.label.position</a>
-     * <br/>序号: 2
      * <br/>默认值: outside
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -59,7 +56,6 @@ public class Label implements Serializable {
     private String position;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.formatter">https://echarts.apache.org/zh/option.html#series-funnel.label.formatter</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["string","Function"]
      * <br/>描述:
@@ -155,7 +151,6 @@ public class Label implements Serializable {
     private Object formatter;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.color">https://echarts.apache.org/zh/option.html#series-funnel.label.color</a>
-     * <br/>序号: 4
      * <br/>默认值: #fff
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -164,7 +159,6 @@ public class Label implements Serializable {
     private String color;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.fontStyle">https://echarts.apache.org/zh/option.html#series-funnel.label.fontStyle</a>
-     * <br/>序号: 5
      * <br/>默认值: normal
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -179,7 +173,6 @@ public class Label implements Serializable {
     private String fontStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.fontWeight">https://echarts.apache.org/zh/option.html#series-funnel.label.fontWeight</a>
-     * <br/>序号: 6
      * <br/>默认值: normal
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -196,7 +189,6 @@ public class Label implements Serializable {
     private Object fontWeight;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.fontFamily">https://echarts.apache.org/zh/option.html#series-funnel.label.fontFamily</a>
-     * <br/>序号: 7
      * <br/>默认值: sans-serif
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -206,7 +198,6 @@ public class Label implements Serializable {
     private String fontFamily;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.fontSize">https://echarts.apache.org/zh/option.html#series-funnel.label.fontSize</a>
-     * <br/>序号: 8
      * <br/>默认值: 12
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -215,7 +206,6 @@ public class Label implements Serializable {
     private Integer fontSize;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.align">https://echarts.apache.org/zh/option.html#series-funnel.label.align</a>
-     * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -240,7 +230,6 @@ public class Label implements Serializable {
     private String align;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.verticalAlign">https://echarts.apache.org/zh/option.html#series-funnel.label.verticalAlign</a>
-     * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -265,7 +254,6 @@ public class Label implements Serializable {
     private String verticalAlign;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.lineHeight">https://echarts.apache.org/zh/option.html#series-funnel.label.lineHeight</a>
-     * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -284,7 +272,6 @@ public class Label implements Serializable {
     private Integer lineHeight;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.backgroundColor">https://echarts.apache.org/zh/option.html#series-funnel.label.backgroundColor</a>
-     * <br/>序号: 12
      * <br/>默认值: transparent
      * <br/>js类型: ["string","Object"]
      * <br/>描述:
@@ -304,7 +291,6 @@ public class Label implements Serializable {
     private Object backgroundColor;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.borderColor">https://echarts.apache.org/zh/option.html#series-funnel.label.borderColor</a>
-     * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -313,7 +299,6 @@ public class Label implements Serializable {
     private String borderColor;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.borderWidth">https://echarts.apache.org/zh/option.html#series-funnel.label.borderWidth</a>
-     * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -321,8 +306,48 @@ public class Label implements Serializable {
      */
     private Integer borderWidth;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.borderType">https://echarts.apache.org/zh/option.html#series-funnel.label.borderType</a>
+     * <br/>默认值: solid
+     * <br/>js类型: ["string","number","Array"]
+     * <br/>描述:
+     * <p>文字块边框描边类型。</p>
+     * <p>可选：</p>
+     * <ul>
+     * <li><code class="codespan">'solid'</code></li>
+     * <li><code class="codespan">'dashed'</code></li>
+     * <li><code class="codespan">'dotted'</code></li>
+     * </ul>
+     * <p>自 <code class="codespan">v5.0.0</code> 开始，也可以是 <code class="codespan">number</code> 或者 <code class="codespan">number</code> 数组，用以指定线条的 <a href="https://developer.mozilla.org/zh-CN/docs/Web/SVG/Attribute/stroke-dasharray" target="_blank">dash array</a>，配合
+     * <code class="codespan">borderDashOffset</code>
+     *  可实现更灵活的虚线效果。</p>
+     * <p>例如：</p>
+     * <pre><code class="lang-js hljs javascript">{
+     *
+     * <span class="hljs-attr">borderType</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
+     *
+     * <span class="hljs-attr">borderDashOffset</span>: <span class="hljs-number">5</span>
+     * }
+     * </code></pre>
+     */
+    private Object borderType;
+    /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.borderDashOffset">https://echarts.apache.org/zh/option.html#series-funnel.label.borderDashOffset</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["number"]
+     * <br/>描述:
+     * <blockquote>
+     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
+     * </blockquote>
+     *
+     *
+     * <p>用于设置虚线的偏移量，可搭配
+     * <code class="codespan">borderType</code>
+     * 指定 dash array 实现灵活的虚线效果。</p>
+     * <p>更多详情可以参考 MDN <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/lineDashOffset" target="_blank">lineDashOffset</a>。</p>
+     */
+    private Integer borderDashOffset;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.borderRadius">https://echarts.apache.org/zh/option.html#series-funnel.label.borderRadius</a>
-     * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
      * <br/>描述:
@@ -331,7 +356,6 @@ public class Label implements Serializable {
     private Object borderRadius;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.padding">https://echarts.apache.org/zh/option.html#series-funnel.label.padding</a>
-     * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
      * <br/>描述:
@@ -346,7 +370,6 @@ public class Label implements Serializable {
     private Object padding;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.shadowColor">https://echarts.apache.org/zh/option.html#series-funnel.label.shadowColor</a>
-     * <br/>序号: 17
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -355,7 +378,6 @@ public class Label implements Serializable {
     private String shadowColor;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.shadowBlur">https://echarts.apache.org/zh/option.html#series-funnel.label.shadowBlur</a>
-     * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -364,7 +386,6 @@ public class Label implements Serializable {
     private Integer shadowBlur;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.shadowOffsetX">https://echarts.apache.org/zh/option.html#series-funnel.label.shadowOffsetX</a>
-     * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -373,7 +394,6 @@ public class Label implements Serializable {
     private Integer shadowOffsetX;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.shadowOffsetY">https://echarts.apache.org/zh/option.html#series-funnel.label.shadowOffsetY</a>
-     * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -382,7 +402,6 @@ public class Label implements Serializable {
     private Integer shadowOffsetY;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.width">https://echarts.apache.org/zh/option.html#series-funnel.label.width</a>
-     * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -391,7 +410,6 @@ public class Label implements Serializable {
     private Integer width;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.height">https://echarts.apache.org/zh/option.html#series-funnel.label.height</a>
-     * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -400,7 +418,6 @@ public class Label implements Serializable {
     private Integer height;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.textBorderColor">https://echarts.apache.org/zh/option.html#series-funnel.label.textBorderColor</a>
-     * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -409,7 +426,6 @@ public class Label implements Serializable {
     private String textBorderColor;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.textBorderWidth">https://echarts.apache.org/zh/option.html#series-funnel.label.textBorderWidth</a>
-     * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -417,8 +433,48 @@ public class Label implements Serializable {
      */
     private Integer textBorderWidth;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.textBorderType">https://echarts.apache.org/zh/option.html#series-funnel.label.textBorderType</a>
+     * <br/>默认值: solid
+     * <br/>js类型: ["string","number","Array"]
+     * <br/>描述:
+     * <p>文字本身的描边类型。</p>
+     * <p>可选：</p>
+     * <ul>
+     * <li><code class="codespan">'solid'</code></li>
+     * <li><code class="codespan">'dashed'</code></li>
+     * <li><code class="codespan">'dotted'</code></li>
+     * </ul>
+     * <p>自 <code class="codespan">v5.0.0</code> 开始，也可以是 <code class="codespan">number</code> 或者 <code class="codespan">number</code> 数组，用以指定线条的 <a href="https://developer.mozilla.org/zh-CN/docs/Web/SVG/Attribute/stroke-dasharray" target="_blank">dash array</a>，配合
+     * <code class="codespan">textBorderDashOffset</code>
+     *  可实现更灵活的虚线效果。</p>
+     * <p>例如：</p>
+     * <pre><code class="lang-js hljs javascript">{
+     *
+     * <span class="hljs-attr">textBorderType</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
+     *
+     * <span class="hljs-attr">textBorderDashOffset</span>: <span class="hljs-number">5</span>
+     * }
+     * </code></pre>
+     */
+    private Object textBorderType;
+    /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.textBorderDashOffset">https://echarts.apache.org/zh/option.html#series-funnel.label.textBorderDashOffset</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["number"]
+     * <br/>描述:
+     * <blockquote>
+     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
+     * </blockquote>
+     *
+     *
+     * <p>用于设置虚线的偏移量，可搭配
+     * <code class="codespan">textBorderType</code>
+     * 指定 dash array 实现灵活的虚线效果。</p>
+     * <p>更多详情可以参考 MDN <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/lineDashOffset" target="_blank">lineDashOffset</a>。</p>
+     */
+    private Integer textBorderDashOffset;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.textShadowColor">https://echarts.apache.org/zh/option.html#series-funnel.label.textShadowColor</a>
-     * <br/>序号: 25
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -427,7 +483,6 @@ public class Label implements Serializable {
     private String textShadowColor;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.textShadowBlur">https://echarts.apache.org/zh/option.html#series-funnel.label.textShadowBlur</a>
-     * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -436,7 +491,6 @@ public class Label implements Serializable {
     private Integer textShadowBlur;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.textShadowOffsetX">https://echarts.apache.org/zh/option.html#series-funnel.label.textShadowOffsetX</a>
-     * <br/>序号: 27
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -445,7 +499,6 @@ public class Label implements Serializable {
     private Integer textShadowOffsetX;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.textShadowOffsetY">https://echarts.apache.org/zh/option.html#series-funnel.label.textShadowOffsetY</a>
-     * <br/>序号: 28
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -454,7 +507,6 @@ public class Label implements Serializable {
     private Integer textShadowOffsetY;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.overflow">https://echarts.apache.org/zh/option.html#series-funnel.label.overflow</a>
-     * <br/>序号: 29
      * <br/>默认值: none
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -468,7 +520,6 @@ public class Label implements Serializable {
     private String overflow;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.ellipsis">https://echarts.apache.org/zh/option.html#series-funnel.label.ellipsis</a>
-     * <br/>序号: 30
      * <br/>默认值: ...
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -477,7 +528,6 @@ public class Label implements Serializable {
     private String ellipsis;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.lineOverflow">https://echarts.apache.org/zh/option.html#series-funnel.label.lineOverflow</a>
-     * <br/>序号: 31
      * <br/>默认值: none
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -489,7 +539,6 @@ public class Label implements Serializable {
     private String lineOverflow;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.rich">https://echarts.apache.org/zh/option.html#series-funnel.label.rich</a>
-     * <br/>序号: 32
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

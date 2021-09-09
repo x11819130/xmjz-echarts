@@ -9,7 +9,6 @@ import java.util.List;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLine">https://echarts.apache.org/zh/option.html#singleAxis.axisLine</a>
- * <br/>序号: 29
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -25,7 +24,6 @@ public class AxisLine implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLine.show">https://echarts.apache.org/zh/option.html#singleAxis.axisLine.show</a>
-     * <br/>序号: 1
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -34,7 +32,6 @@ public class AxisLine implements Serializable {
     private Boolean show;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLine.symbol">https://echarts.apache.org/zh/option.html#singleAxis.axisLine.symbol</a>
-     * <br/>序号: 2
      * <br/>默认值: none
      * <br/>js类型: ["string","Array"]
      * <br/>描述:
@@ -43,7 +40,6 @@ public class AxisLine implements Serializable {
     private Object symbol;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLine.symbolSize">https://echarts.apache.org/zh/option.html#singleAxis.axisLine.symbolSize</a>
-     * <br/>序号: 3
      * <br/>默认值: [10,15]
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -52,7 +48,6 @@ public class AxisLine implements Serializable {
     private List<?> symbolSize;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLine.symbolOffset">https://echarts.apache.org/zh/option.html#singleAxis.axisLine.symbolOffset</a>
-     * <br/>序号: 4
      * <br/>默认值: [0,0]
      * <br/>js类型: ["Array","number"]
      * <br/>描述:
@@ -61,7 +56,6 @@ public class AxisLine implements Serializable {
     private Object symbolOffset;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLine.lineStyle">https://echarts.apache.org/zh/option.html#singleAxis.axisLine.lineStyle</a>
-     * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

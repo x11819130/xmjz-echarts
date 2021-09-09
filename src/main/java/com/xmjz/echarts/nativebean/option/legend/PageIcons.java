@@ -9,7 +9,6 @@ import java.util.List;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageIcons">https://echarts.apache.org/zh/option.html#legend.pageIcons</a>
- * <br/>序号: 40
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -26,7 +25,6 @@ public class PageIcons implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageIcons.horizontal">https://echarts.apache.org/zh/option.html#legend.pageIcons.horizontal</a>
-     * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -46,7 +44,6 @@ public class PageIcons implements Serializable {
     private List<?> horizontal;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageIcons.vertical">https://echarts.apache.org/zh/option.html#legend.pageIcons.vertical</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:

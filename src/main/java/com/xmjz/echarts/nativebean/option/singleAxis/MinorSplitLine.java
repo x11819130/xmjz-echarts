@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.minorSplitLine">https://echarts.apache.org/zh/option.html#singleAxis.minorSplitLine</a>
- * <br/>序号: 34
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -27,7 +26,6 @@ public class MinorSplitLine implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.minorSplitLine.show">https://echarts.apache.org/zh/option.html#singleAxis.minorSplitLine.show</a>
-     * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -36,7 +34,6 @@ public class MinorSplitLine implements Serializable {
     private Boolean show;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.minorSplitLine.lineStyle">https://echarts.apache.org/zh/option.html#singleAxis.minorSplitLine.lineStyle</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

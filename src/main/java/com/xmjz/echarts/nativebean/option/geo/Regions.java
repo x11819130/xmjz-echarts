@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.regions">https://echarts.apache.org/zh/option.html#geo.regions</a>
- * <br/>序号: 25
  * <br/>默认值: 无
  * <br/>js类型: ["Array"]
  * <br/>描述:
@@ -34,7 +33,6 @@ public class Regions implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.regions.name">https://echarts.apache.org/zh/option.html#geo.regions.name</a>
-     * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -43,7 +41,6 @@ public class Regions implements Serializable {
     private String name;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.regions.selected">https://echarts.apache.org/zh/option.html#geo.regions.selected</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -52,7 +49,6 @@ public class Regions implements Serializable {
     private Boolean selected;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.regions.itemStyle">https://echarts.apache.org/zh/option.html#geo.regions.itemStyle</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -61,7 +57,6 @@ public class Regions implements Serializable {
     private Object itemStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.regions.label">https://echarts.apache.org/zh/option.html#geo.regions.label</a>
-     * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -70,7 +65,6 @@ public class Regions implements Serializable {
     private Object label;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.regions.emphasis">https://echarts.apache.org/zh/option.html#geo.regions.emphasis</a>
-     * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -79,11 +73,32 @@ public class Regions implements Serializable {
     private Object emphasis;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.regions.select">https://echarts.apache.org/zh/option.html#geo.regions.select</a>
-     * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>选中状态的设置。</p>
      */
     private Object select;
+    /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.regions.blur">https://echarts.apache.org/zh/option.html#geo.regions.blur</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["Object"]
+     * <br/>描述:
+     * <blockquote>
+     * <p>从 <code class="codespan">v5.1.0</code> 开始支持</p>
+     * </blockquote>
+     * <p>淡出状态的设置。</p>
+     */
+    private Object blur;
+    /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.regions.tooltip">https://echarts.apache.org/zh/option.html#geo.regions.tooltip</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["any"]
+     * <br/>描述:
+     * <blockquote>
+     * <p>从 <code class="codespan">v5.1.0</code> 开始支持</p>
+     * </blockquote>
+     * <p>本 region 中特定的 tooltip 设定。</p>
+     */
+    private Object tooltip;
 }

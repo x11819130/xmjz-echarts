@@ -10,7 +10,6 @@ import java.util.List;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html">https://echarts.apache.org/zh/option.html</a>
- * <br/>序号: 1
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -26,19 +25,17 @@ public class Option implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#title">https://echarts.apache.org/zh/option.html#title</a>
-     * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>标题组件，包含主标题和副标题。</p>
      * <p>在 ECharts 2.x 中单个 ECharts 实例最多只能拥有一个标题组件。但是在 ECharts 3 中可以存在任意多个标题组件，这在需要标题进行排版，或者单个实例中的多个图表都需要标题时会比较有用。</p>
      * <p><strong>例如下面不同缓动函数效果的示例，每一个缓动效果图都带有一个标题组件：</strong></p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-easing&amp;edit=1&amp;reset=1" width="700" height="400" data-ll-timeout="17"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-easing&amp;edit=1&amp;reset=1" width="700" height="400" data-ll-timeout="18"></iframe>
      */
     private Title title;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend">https://echarts.apache.org/zh/option.html#legend</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -50,19 +47,17 @@ public class Option implements Serializable {
     private Legend legend;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#grid">https://echarts.apache.org/zh/option.html#grid</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>直角坐标系内绘图网格，单个 grid 内最多可以放置上下两个 X 轴，左右两个 Y 轴。可以在网格上绘制<a href="#series-line">折线图</a>，<a href="#series-bar">柱状图</a>，<a href="#series-scatter">散点图（气泡图）</a>。</p>
      * <p>在 ECharts 2.x 里单个 echarts 实例中最多只能存在一个 grid 组件，在 ECharts 3 中可以存在任意个 grid 组件。</p>
      * <p><strong>例如下面这个 Anscombe Quartet 的示例：</strong></p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-anscombe-quartet&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="16"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-anscombe-quartet&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="17"></iframe>
      */
     private Grid grid;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis">https://echarts.apache.org/zh/option.html#xAxis</a>
-     * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -76,7 +71,6 @@ public class Option implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis">https://echarts.apache.org/zh/option.html#yAxis</a>
-     * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -90,18 +84,16 @@ public class Option implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#polar">https://echarts.apache.org/zh/option.html#polar</a>
-     * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>极坐标系，可以用于散点图和折线图。每个极坐标系拥有一个<a href="#angleAxis">角度轴</a>和一个<a href="#radiusAxis">半径轴</a>。</p>
      * <p><strong>示例：</strong></p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-polar-punchCard&amp;edit=1&amp;reset=1" width="600" height="400"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-polar-punchCard&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="19"></iframe>
      */
     private Polar polar;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis">https://echarts.apache.org/zh/option.html#radiusAxis</a>
-     * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -110,7 +102,6 @@ public class Option implements Serializable {
     private RadiusAxis radiusAxis;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis">https://echarts.apache.org/zh/option.html#angleAxis</a>
-     * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -119,7 +110,6 @@ public class Option implements Serializable {
     private AngleAxis angleAxis;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar">https://echarts.apache.org/zh/option.html#radar</a>
-     * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -131,7 +121,6 @@ public class Option implements Serializable {
     private Radar radar;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#dataZoom">https://echarts.apache.org/zh/option.html#dataZoom</a>
-     * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -146,7 +135,7 @@ public class Option implements Serializable {
      * </li>
      * </ul>
      * <p>如下例子：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/scatter-dataZoom-all&amp;edit=1&amp;reset=1" width="600" height="400"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/scatter-dataZoom-all&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="17"></iframe>
      *
      *
      * <p><br></p>
@@ -316,7 +305,6 @@ public class Option implements Serializable {
     private List<?> dataZoom;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#visualMap">https://echarts.apache.org/zh/option.html#visualMap</a>
-     * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -371,7 +359,6 @@ public class Option implements Serializable {
     private List<?> visualMap;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip">https://echarts.apache.org/zh/option.html#tooltip</a>
-     * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -394,7 +381,6 @@ public class Option implements Serializable {
     private Tooltip tooltip;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer">https://echarts.apache.org/zh/option.html#axisPointer</a>
-     * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -462,7 +448,6 @@ public class Option implements Serializable {
     private AxisPointer axisPointer;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox">https://echarts.apache.org/zh/option.html#toolbox</a>
-     * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -473,7 +458,6 @@ public class Option implements Serializable {
     private Toolbox toolbox;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush">https://echarts.apache.org/zh/option.html#brush</a>
-     * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -485,7 +469,7 @@ public class Option implements Serializable {
      * <p>点击 <code class="codespan">toolbox</code> 中的按钮，能够进行『区域选择』、『清除选择』等操作。</p>
      * <p><br>
      * <code class="codespan">横向刷子</code> 的示例如下（点击 <code class="codespan">toolbox</code> 中的按钮启动刷选）：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=candlestick-brush&amp;edit=1&amp;reset=1" width="800" height="500"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=candlestick-brush&amp;edit=1&amp;reset=1" width="800" height="500" data-ll-timeout="20"></iframe>
      *
      *
      * <p><br>
@@ -622,7 +606,6 @@ public class Option implements Serializable {
     private Brush brush;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo">https://echarts.apache.org/zh/option.html#geo</a>
-     * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -645,7 +628,6 @@ public class Option implements Serializable {
     private Geo geo;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallel">https://echarts.apache.org/zh/option.html#parallel</a>
-     * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -666,7 +648,7 @@ public class Option implements Serializable {
      * </code></pre>
      * <p>数据中，每一行是一个『数据项』，每一列属于一个『维度』。（例如上面数据每一列的含义分别是：『日期』,『AQI指数』, 『PM2.5』, 『PM10』, 『一氧化碳值』, 『二氧化氮值』, 『二氧化硫值』）。</p>
      * <p>平行坐标系适用于对这种多维数据进行可视化分析。每一个维度（每一列）对应一个坐标轴，每一个『数据项』是一条线，贯穿多个坐标轴。在坐标轴上，可以进行数据选取等操作。如下：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/parallel-all&amp;edit=1&amp;reset=1" width="600" height="400"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/parallel-all&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="18"></iframe>
      *
      *
      * <p><strong>配置方式概要</strong></p>
@@ -755,7 +737,6 @@ public class Option implements Serializable {
     private Parallel parallel;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis">https://echarts.apache.org/zh/option.html#parallelAxis</a>
-     * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -777,7 +758,7 @@ public class Option implements Serializable {
      * </code></pre>
      * <p>数据中，每一行是一个『数据项』，每一列属于一个『维度』。（例如上面数据每一列的含义分别是：『日期』,『AQI指数』, 『PM2.5』, 『PM10』, 『一氧化碳值』, 『二氧化氮值』, 『二氧化硫值』）。</p>
      * <p>平行坐标系适用于对这种多维数据进行可视化分析。每一个维度（每一列）对应一个坐标轴，每一个『数据项』是一条线，贯穿多个坐标轴。在坐标轴上，可以进行数据选取等操作。如下：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/parallel-all&amp;edit=1&amp;reset=1" width="600" height="400"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/parallel-all&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="19"></iframe>
      *
      *
      * <p><strong>配置方式概要</strong></p>
@@ -866,23 +847,21 @@ public class Option implements Serializable {
     private ParallelAxis parallelAxis;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis">https://echarts.apache.org/zh/option.html#singleAxis</a>
-     * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>单轴。可以被应用到散点图中展现一维数据，如下示例</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-single-axis&amp;edit=1&amp;reset=1" width="700" height="500"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-single-axis&amp;edit=1&amp;reset=1" width="700" height="500" data-ll-timeout="19"></iframe>
      */
     private SingleAxis singleAxis;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline">https://echarts.apache.org/zh/option.html#timeline</a>
-     * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p><code class="codespan">timeline</code> 组件，提供了在多个 ECharts <code class="codespan">option</code> 间进行切换、播放等操作的功能。</p>
      * <p>示例效果如下：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/mix-timeline-all&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="18"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/mix-timeline-all&amp;edit=1&amp;reset=1" width="600" height="400"></iframe>
      *
      *
      * <p><code class="codespan">timeline</code> 和其他场景有些不同，它需要操作『多个option』。我们把传入 <code class="codespan">setOption</code> 第一个参数的东西，称为 <code class="codespan">ECOption</code>，然后称传统的 ECharts 单个 option 为 <code class="codespan">ECUnitOption</code>。</p>
@@ -982,7 +961,6 @@ public class Option implements Serializable {
     private Timeline timeline;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#graphic">https://echarts.apache.org/zh/option.html#graphic</a>
-     * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -1000,11 +978,11 @@ public class Option implements Serializable {
      * <a href="#graphic.elements-arc">arc</a>,
      * <a href="#graphic.elements-group">group</a>,</p>
      * <p>下面示例中，使用图形元素做了水印，和文本块：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-graphic&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="18"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-graphic&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="20"></iframe>
      *
      *
      * <p>下面示例中，使用隐藏的图形元素实现了拖拽：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-draggable&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="19"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-draggable&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="21"></iframe>
      *
      *
      *
@@ -1259,18 +1237,17 @@ public class Option implements Serializable {
     private Graphic graphic;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar">https://echarts.apache.org/zh/option.html#calendar</a>
-     * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>日历坐标系组件。</p>
      * <p>在ECharts中，我们非常有创意地实现了日历图，是通过使用日历坐标系组件来达到日历图效果的，如下方的几个示例图所示，我们可以在热力图、散点图、关系图中使用日历坐标系。</p>
      * <p>在日历坐标系中使用热力图的示例:</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=calendar-heatmap&amp;edit=1&amp;reset=1" width="800" height="400" data-ll-timeout="17"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=calendar-heatmap&amp;edit=1&amp;reset=1" width="800" height="400"></iframe>
      *
      *
      * <p>在日历坐标系中使用散点图的示例:</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=calendar-effectscatter&amp;edit=1&amp;reset=1" width="800" height="600" data-ll-timeout="18"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=calendar-effectscatter&amp;edit=1&amp;reset=1" width="800" height="600"></iframe>
      *
      *
      * <p>在日历坐标系中使用关系图（以及混合图表）的示例:</p>
@@ -1295,17 +1272,15 @@ public class Option implements Serializable {
     private Calendar calendar;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#dataset">https://echarts.apache.org/zh/option.html#dataset</a>
-     * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>ECharts 4 开始支持了 <code class="codespan">数据集</code>（<code class="codespan">dataset</code>）组件用于单独的数据集声明，从而数据可以单独管理，被多个组件复用，并且可以自由指定数据到视觉的映射。这在不少场景下能带来使用上的方便。</p>
-     * <p>关于 <code class="codespan">dataset</code> 的详情，请参见<a href="tutorial.html#%E4%BD%BF%E7%94%A8%20dataset%20%E7%AE%A1%E7%90%86%E6%95%B0%E6%8D%AE" target="_blank">教程</a>。</p>
+     * <p>关于 <code class="codespan">dataset</code> 的详情，请参见<a href="https://echarts.apache.org/handbook/zh/concepts/dataset" target="_blank">教程</a>。</p>
      */
     private Dataset dataset;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#aria">https://echarts.apache.org/zh/option.html#aria</a>
-     * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -1315,15 +1290,13 @@ public class Option implements Serializable {
     private Aria aria;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series">https://echarts.apache.org/zh/option.html#series</a>
-     * <br/>序号: 25
-     * <br/>默认值: 无
-     * <br/>js类型: ["Array"]
+     * <br/>默认值: [{
+     * <br/>js类型: ["string"]
      * <br/>描述:
      */
     private List<Series> series;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#darkMode">https://echarts.apache.org/zh/option.html#darkMode</a>
-     * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -1334,64 +1307,67 @@ public class Option implements Serializable {
     private Object darkMode;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#color">https://echarts.apache.org/zh/option.html#color</a>
-     * <br/>序号: 27
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
-     * <p>调色盘颜色列表。如果系列没有设置颜色，则会依次循环从该列表中取颜色作为系列颜色。</p>
-     * <p>默认为：</p>
+     * <p>调色盘颜色列表。如果系列没有设置颜色，则会依次循环从该列表中取颜色作为系列颜色。 默认为：</p>
      * <pre><code class="lang-js hljs javascript">[<span class="hljs-string">'#5470c6'</span>, <span class="hljs-string">'#91cc75'</span>, <span class="hljs-string">'#fac858'</span>, <span class="hljs-string">'#ee6666'</span>, <span class="hljs-string">'#73c0de'</span>, <span class="hljs-string">'#3ba272'</span>, <span class="hljs-string">'#fc8452'</span>, <span class="hljs-string">'#9a60b4'</span>, <span class="hljs-string">'#ea7ccc'</span>]
      * </code></pre>
+     * <p>支持的颜色格式：</p>
+     * <ul>
+     * <li><p>使用 RGB 表示纯颜色，比如 <code class="codespan">'rgb(128, 128, 128)'</code>，如果想要加上 alpha 通道表示不透明度，可以使用 RGBA，比如 <code class="codespan">'rgba(128, 128, 128, 0.5)'</code>，也可以使用十六进制格式，比如 <code class="codespan">'#ccc'</code>。</p>
+     * </li>
+     * <li><p>渐变色或者纹理填充</p>
+     * <pre><code class="lang-js hljs javascript"><span class="hljs-comment">// 线性渐变，前四个参数分别是 x0, y0, x2, y2, 范围从 0 - 1，相当于在图形包围盒中的百分比，如果 globalCoord 为 `true`，则该四个值是绝对的像素位置</span>
+     * {
+     *   <span class="hljs-attr">type</span>: <span class="hljs-string">'linear'</span>,
+     *   <span class="hljs-attr">x</span>: <span class="hljs-number">0</span>,
+     *   <span class="hljs-attr">y</span>: <span class="hljs-number">0</span>,
+     *   <span class="hljs-attr">x2</span>: <span class="hljs-number">0</span>,
+     *   <span class="hljs-attr">y2</span>: <span class="hljs-number">1</span>,
+     *   <span class="hljs-attr">colorStops</span>: [{
+     *       <span class="hljs-attr">offset</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">'red'</span> <span class="hljs-comment">// 0% 处的颜色</span>
+     *   }, {
+     *       <span class="hljs-attr">offset</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">'blue'</span> <span class="hljs-comment">// 100% 处的颜色</span>
+     *   }],
+     *   <span class="hljs-attr">global</span>: <span class="hljs-literal">false</span> <span class="hljs-comment">// 缺省为 false</span>
+     * }
+     * <span class="hljs-comment">// 径向渐变，前三个参数分别是圆心 x, y 和半径，取值同线性渐变</span>
+     * {
+     *   <span class="hljs-attr">type</span>: <span class="hljs-string">'radial'</span>,
+     *   <span class="hljs-attr">x</span>: <span class="hljs-number">0.5</span>,
+     *   <span class="hljs-attr">y</span>: <span class="hljs-number">0.5</span>,
+     *   <span class="hljs-attr">r</span>: <span class="hljs-number">0.5</span>,
+     *   <span class="hljs-attr">colorStops</span>: [{
+     *       <span class="hljs-attr">offset</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">'red'</span> <span class="hljs-comment">// 0% 处的颜色</span>
+     *   }, {
+     *       <span class="hljs-attr">offset</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">'blue'</span> <span class="hljs-comment">// 100% 处的颜色</span>
+     *   }],
+     *   <span class="hljs-attr">global</span>: <span class="hljs-literal">false</span> <span class="hljs-comment">// 缺省为 false</span>
+     * }
+     * <span class="hljs-comment">// 纹理填充</span>
+     * {
+     *   <span class="hljs-attr">image</span>: imageDom, <span class="hljs-comment">// 支持为 HTMLImageElement, HTMLCanvasElement，不支持路径字符串</span>
+     *   <span class="hljs-attr">repeat</span>: <span class="hljs-string">'repeat'</span> <span class="hljs-comment">// 是否平铺，可以是 'repeat-x', 'repeat-y', 'no-repeat'</span>
+     * }
+     * </code></pre>
+     * </li>
+     * </ul>
      */
     private Object color;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#backgroundColor">https://echarts.apache.org/zh/option.html#backgroundColor</a>
-     * <br/>序号: 28
      * <br/>默认值: transparent
      * <br/>js类型: ["string"]
      * <br/>描述:
      * <p>背景色，默认无背景。</p>
      * <blockquote>
-     * <p>颜色可以使用 RGB 表示，比如 <code class="codespan">'rgb(128, 128, 128)'</code>，如果想要加上 alpha 通道表示不透明度，可以使用 RGBA，比如 <code class="codespan">'rgba(128, 128, 128, 0.5)'</code>，也可以使用十六进制格式，比如 <code class="codespan">'#ccc'</code>。除了纯色之外颜色也支持渐变色和纹理填充</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-comment">// 线性渐变，前四个参数分别是 x0, y0, x2, y2, 范围从 0 - 1，相当于在图形包围盒中的百分比，如果 globalCoord 为 `true`，则该四个值是绝对的像素位置</span>
-     * <span class="hljs-attr">color</span>: {
-     *     <span class="hljs-attr">type</span>: <span class="hljs-string">'linear'</span>,
-     *     <span class="hljs-attr">x</span>: <span class="hljs-number">0</span>,
-     *     <span class="hljs-attr">y</span>: <span class="hljs-number">0</span>,
-     *     <span class="hljs-attr">x2</span>: <span class="hljs-number">0</span>,
-     *     <span class="hljs-attr">y2</span>: <span class="hljs-number">1</span>,
-     *     <span class="hljs-attr">colorStops</span>: [{
-     *         <span class="hljs-attr">offset</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">'red'</span> <span class="hljs-comment">// 0% 处的颜色</span>
-     *     }, {
-     *         <span class="hljs-attr">offset</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">'blue'</span> <span class="hljs-comment">// 100% 处的颜色</span>
-     *     }],
-     *     <span class="hljs-attr">global</span>: <span class="hljs-literal">false</span> <span class="hljs-comment">// 缺省为 false</span>
-     * }
-     * <span class="hljs-comment">// 径向渐变，前三个参数分别是圆心 x, y 和半径，取值同线性渐变</span>
-     * <span class="hljs-attr">color</span>: {
-     *     <span class="hljs-attr">type</span>: <span class="hljs-string">'radial'</span>,
-     *     <span class="hljs-attr">x</span>: <span class="hljs-number">0.5</span>,
-     *     <span class="hljs-attr">y</span>: <span class="hljs-number">0.5</span>,
-     *     <span class="hljs-attr">r</span>: <span class="hljs-number">0.5</span>,
-     *     <span class="hljs-attr">colorStops</span>: [{
-     *         <span class="hljs-attr">offset</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">'red'</span> <span class="hljs-comment">// 0% 处的颜色</span>
-     *     }, {
-     *         <span class="hljs-attr">offset</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">'blue'</span> <span class="hljs-comment">// 100% 处的颜色</span>
-     *     }],
-     *     <span class="hljs-attr">global</span>: <span class="hljs-literal">false</span> <span class="hljs-comment">// 缺省为 false</span>
-     * }
-     * <span class="hljs-comment">// 纹理填充</span>
-     * <span class="hljs-attr">color</span>: {
-     *     <span class="hljs-attr">image</span>: imageDom, <span class="hljs-comment">// 支持为 HTMLImageElement, HTMLCanvasElement，不支持路径字符串</span>
-     *     <span class="hljs-attr">repeat</span>: <span class="hljs-string">'repeat'</span> <span class="hljs-comment">// 是否平铺，可以是 'repeat-x', 'repeat-y', 'no-repeat'</span>
-     * }
-     * </code></pre>
+     * <p>支持使用<code class="codespan">rgb(255,255,255)</code>，<code class="codespan">rgba(255,255,255,1)</code>，<code class="codespan">#fff</code>等方式设置为纯色，也支持设置为渐变色和纹理填充，具体见<a href="#color">option.color</a></p>
      * </blockquote>
      */
     private String backgroundColor;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#textStyle">https://echarts.apache.org/zh/option.html#textStyle</a>
-     * <br/>序号: 29
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -1400,7 +1376,6 @@ public class Option implements Serializable {
     private TextStyle textStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#animation">https://echarts.apache.org/zh/option.html#animation</a>
-     * <br/>序号: 30
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -1409,7 +1384,6 @@ public class Option implements Serializable {
     private Boolean animation;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#animationThreshold">https://echarts.apache.org/zh/option.html#animationThreshold</a>
-     * <br/>序号: 31
      * <br/>默认值: 2000
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -1418,7 +1392,6 @@ public class Option implements Serializable {
     private Integer animationThreshold;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#animationDuration">https://echarts.apache.org/zh/option.html#animationDuration</a>
-     * <br/>序号: 32
      * <br/>默认值: 1000
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -1432,7 +1405,6 @@ public class Option implements Serializable {
     private Integer animationDuration;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#animationEasing">https://echarts.apache.org/zh/option.html#animationEasing</a>
-     * <br/>序号: 33
      * <br/>默认值: cubicOut
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -1441,7 +1413,6 @@ public class Option implements Serializable {
     private String animationEasing;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#animationDelay">https://echarts.apache.org/zh/option.html#animationDelay</a>
-     * <br/>序号: 34
      * <br/>默认值: 0
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -1457,7 +1428,6 @@ public class Option implements Serializable {
     private Integer animationDelay;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#animationDurationUpdate">https://echarts.apache.org/zh/option.html#animationDurationUpdate</a>
-     * <br/>序号: 35
      * <br/>默认值: 300
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -1472,7 +1442,6 @@ public class Option implements Serializable {
     private Integer animationDurationUpdate;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#animationEasingUpdate">https://echarts.apache.org/zh/option.html#animationEasingUpdate</a>
-     * <br/>序号: 36
      * <br/>默认值: cubicInOut
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -1481,7 +1450,6 @@ public class Option implements Serializable {
     private String animationEasingUpdate;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#animationDelayUpdate">https://echarts.apache.org/zh/option.html#animationDelayUpdate</a>
-     * <br/>序号: 37
      * <br/>默认值: 0
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -1497,7 +1465,6 @@ public class Option implements Serializable {
     private Integer animationDelayUpdate;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#stateAnimation">https://echarts.apache.org/zh/option.html#stateAnimation</a>
-     * <br/>序号: 38
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -1506,7 +1473,6 @@ public class Option implements Serializable {
     private StateAnimation stateAnimation;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#blendMode">https://echarts.apache.org/zh/option.html#blendMode</a>
-     * <br/>序号: 39
      * <br/>默认值: source-over
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -1517,7 +1483,6 @@ public class Option implements Serializable {
     private String blendMode;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#hoverLayerThreshold">https://echarts.apache.org/zh/option.html#hoverLayerThreshold</a>
-     * <br/>序号: 40
      * <br/>默认值: 3000
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -1528,7 +1493,6 @@ public class Option implements Serializable {
     private Integer hoverLayerThreshold;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#useUTC">https://echarts.apache.org/zh/option.html#useUTC</a>
-     * <br/>序号: 41
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -1548,7 +1512,6 @@ public class Option implements Serializable {
     private Boolean useUTC;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#options">https://echarts.apache.org/zh/option.html#options</a>
-     * <br/>序号: 42
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -1557,7 +1520,6 @@ public class Option implements Serializable {
     private Object options;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#media">https://echarts.apache.org/zh/option.html#media</a>
-     * <br/>序号: 43
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:

@@ -17,7 +17,7 @@ public class TemplateFormat {
     //项目地址
     private static final String PROJECT_DIR = "C:\\Users\\cgz\\git\\xmjz\\xmjz-echarts\\";
     //echarts-option文件地址
-    private static final String ECHARTS_OPTION_FILE = PROJECT_DIR + "doc\\echarts-option.v5.0.2.json";
+    private static final String ECHARTS_OPTION_FILE = PROJECT_DIR + "doc\\echarts-option.v5.2.0.json";
     //生成的类库包名
     private static final String BASE_PACKAGE = "com.xmjz.echarts.nativebean";
     //生成的类库文件存放位置

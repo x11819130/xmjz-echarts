@@ -10,7 +10,6 @@ import java.util.List;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey">https://echarts.apache.org/zh/option.html#series-sankey</a>
- * <br/>序号: 0
  * <br/>默认值: 无
  * <br/>js类型: ["object"]
  * <br/>描述:
@@ -38,7 +37,6 @@ public class SankeySeries extends Series implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.type">https://echarts.apache.org/zh/option.html#series-sankey.type</a>
-     * <br/>序号: 1
      * <br/>默认值: sankey
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -46,7 +44,6 @@ public class SankeySeries extends Series implements Serializable {
     private String type;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.id">https://echarts.apache.org/zh/option.html#series-sankey.id</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -55,7 +52,6 @@ public class SankeySeries extends Series implements Serializable {
     private String id;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.name">https://echarts.apache.org/zh/option.html#series-sankey.name</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -64,7 +60,6 @@ public class SankeySeries extends Series implements Serializable {
     private String name;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.zlevel">https://echarts.apache.org/zh/option.html#series-sankey.zlevel</a>
-     * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -75,7 +70,6 @@ public class SankeySeries extends Series implements Serializable {
     private Integer zlevel;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.z">https://echarts.apache.org/zh/option.html#series-sankey.z</a>
-     * <br/>序号: 5
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -85,7 +79,6 @@ public class SankeySeries extends Series implements Serializable {
     private Integer z;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.left">https://echarts.apache.org/zh/option.html#series-sankey.left</a>
-     * <br/>序号: 6
      * <br/>默认值: 5%
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -96,7 +89,6 @@ public class SankeySeries extends Series implements Serializable {
     private Object left;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.top">https://echarts.apache.org/zh/option.html#series-sankey.top</a>
-     * <br/>序号: 7
      * <br/>默认值: 5%
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -107,7 +99,6 @@ public class SankeySeries extends Series implements Serializable {
     private Object top;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.right">https://echarts.apache.org/zh/option.html#series-sankey.right</a>
-     * <br/>序号: 8
      * <br/>默认值: 20%
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -117,7 +108,6 @@ public class SankeySeries extends Series implements Serializable {
     private Object right;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.bottom">https://echarts.apache.org/zh/option.html#series-sankey.bottom</a>
-     * <br/>序号: 9
      * <br/>默认值: 5%
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -127,7 +117,6 @@ public class SankeySeries extends Series implements Serializable {
     private Object bottom;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.width">https://echarts.apache.org/zh/option.html#series-sankey.width</a>
-     * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -136,7 +125,6 @@ public class SankeySeries extends Series implements Serializable {
     private Object width;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.height">https://echarts.apache.org/zh/option.html#series-sankey.height</a>
-     * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -145,7 +133,6 @@ public class SankeySeries extends Series implements Serializable {
     private Object height;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.nodeWidth">https://echarts.apache.org/zh/option.html#series-sankey.nodeWidth</a>
-     * <br/>序号: 12
      * <br/>默认值: 20
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -154,7 +141,6 @@ public class SankeySeries extends Series implements Serializable {
     private Integer nodeWidth;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.nodeGap">https://echarts.apache.org/zh/option.html#series-sankey.nodeGap</a>
-     * <br/>序号: 13
      * <br/>默认值: 8
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -163,7 +149,6 @@ public class SankeySeries extends Series implements Serializable {
     private Integer nodeGap;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.nodeAlign">https://echarts.apache.org/zh/option.html#series-sankey.nodeAlign</a>
-     * <br/>序号: 14
      * <br/>默认值: justify
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -177,7 +162,6 @@ public class SankeySeries extends Series implements Serializable {
     private String nodeAlign;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.layoutIterations">https://echarts.apache.org/zh/option.html#series-sankey.layoutIterations</a>
-     * <br/>序号: 15
      * <br/>默认值: 32
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -186,7 +170,6 @@ public class SankeySeries extends Series implements Serializable {
     private Integer layoutIterations;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.orient">https://echarts.apache.org/zh/option.html#series-sankey.orient</a>
-     * <br/>序号: 16
      * <br/>默认值: horizontal
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -195,7 +178,6 @@ public class SankeySeries extends Series implements Serializable {
     private String orient;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.draggable">https://echarts.apache.org/zh/option.html#series-sankey.draggable</a>
-     * <br/>序号: 17
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -204,7 +186,6 @@ public class SankeySeries extends Series implements Serializable {
     private Boolean draggable;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.levels">https://echarts.apache.org/zh/option.html#series-sankey.levels</a>
-     * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -245,7 +226,6 @@ public class SankeySeries extends Series implements Serializable {
     private List<Levels> levels;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.label">https://echarts.apache.org/zh/option.html#series-sankey.label</a>
-     * <br/>序号: 19
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -254,7 +234,6 @@ public class SankeySeries extends Series implements Serializable {
     private Label label;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.labelLayout">https://echarts.apache.org/zh/option.html#series-sankey.labelLayout</a>
-     * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["Object","Function"]
      * <br/>描述:
@@ -307,7 +286,6 @@ public class SankeySeries extends Series implements Serializable {
     private LabelLayout labelLayout;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.itemStyle">https://echarts.apache.org/zh/option.html#series-sankey.itemStyle</a>
-     * <br/>序号: 21
      * <br/>默认值: 自适应
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -316,17 +294,14 @@ public class SankeySeries extends Series implements Serializable {
     private ItemStyle itemStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.lineStyle">https://echarts.apache.org/zh/option.html#series-sankey.lineStyle</a>
-     * <br/>序号: 22
      * <br/>默认值: #314656
      * <br/>js类型: ["Object"]
      * <br/>描述:
-     * <p>桑基图边的样式，其中 <a href="#series-sankey.lineStyle.color">lineStyle.color</a> 支持设置为<code class="codespan">'source'</code>或者<code class="codespan">'target'</code>特殊值，此时边会自动取源节点或目标节点的颜色作为自己的颜色。</p>
-     * <p>从 5.0 开始, <a href="#series-sankey.lineStyle.color">lineStyle.color</a> 还可以设置为<code class="codespan">'gradient'</code>，取从源节点到目标节点的渐变色。</p>
+     * <p>桑基图边的样式</p>
      */
     private LineStyle lineStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.emphasis">https://echarts.apache.org/zh/option.html#series-sankey.emphasis</a>
-     * <br/>序号: 23
      * <br/>默认值: none
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -335,7 +310,6 @@ public class SankeySeries extends Series implements Serializable {
     private Emphasis emphasis;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.blur">https://echarts.apache.org/zh/option.html#series-sankey.blur</a>
-     * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -347,7 +321,6 @@ public class SankeySeries extends Series implements Serializable {
     private Blur blur;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.select">https://echarts.apache.org/zh/option.html#series-sankey.select</a>
-     * <br/>序号: 25
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -359,7 +332,6 @@ public class SankeySeries extends Series implements Serializable {
     private Select select;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.selectedMode">https://echarts.apache.org/zh/option.html#series-sankey.selectedMode</a>
-     * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","string"]
      * <br/>描述:
@@ -373,7 +345,6 @@ public class SankeySeries extends Series implements Serializable {
     private Object selectedMode;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.data">https://echarts.apache.org/zh/option.html#series-sankey.data</a>
-     * <br/>序号: 27
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -392,7 +363,6 @@ public class SankeySeries extends Series implements Serializable {
     private List<?> data;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.nodes">https://echarts.apache.org/zh/option.html#series-sankey.nodes</a>
-     * <br/>序号: 28
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -401,7 +371,6 @@ public class SankeySeries extends Series implements Serializable {
     private List<?> nodes;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.links">https://echarts.apache.org/zh/option.html#series-sankey.links</a>
-     * <br/>序号: 29
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -418,7 +387,6 @@ public class SankeySeries extends Series implements Serializable {
     private List<Links> links;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.edges">https://echarts.apache.org/zh/option.html#series-sankey.edges</a>
-     * <br/>序号: 30
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -427,7 +395,6 @@ public class SankeySeries extends Series implements Serializable {
     private List<?> edges;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.silent">https://echarts.apache.org/zh/option.html#series-sankey.silent</a>
-     * <br/>序号: 31
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -436,7 +403,6 @@ public class SankeySeries extends Series implements Serializable {
     private Boolean silent;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.animation">https://echarts.apache.org/zh/option.html#series-sankey.animation</a>
-     * <br/>序号: 32
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -445,7 +411,6 @@ public class SankeySeries extends Series implements Serializable {
     private Boolean animation;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.animationThreshold">https://echarts.apache.org/zh/option.html#series-sankey.animationThreshold</a>
-     * <br/>序号: 33
      * <br/>默认值: 2000
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -454,7 +419,6 @@ public class SankeySeries extends Series implements Serializable {
     private Integer animationThreshold;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.animationDuration">https://echarts.apache.org/zh/option.html#series-sankey.animationDuration</a>
-     * <br/>序号: 34
      * <br/>默认值: 1000
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -468,7 +432,6 @@ public class SankeySeries extends Series implements Serializable {
     private Object animationDuration;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.animationEasing">https://echarts.apache.org/zh/option.html#series-sankey.animationEasing</a>
-     * <br/>序号: 35
      * <br/>默认值: linear
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -477,7 +440,6 @@ public class SankeySeries extends Series implements Serializable {
     private String animationEasing;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.animationDelay">https://echarts.apache.org/zh/option.html#series-sankey.animationDelay</a>
-     * <br/>序号: 36
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -493,7 +455,6 @@ public class SankeySeries extends Series implements Serializable {
     private Object animationDelay;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.animationDurationUpdate">https://echarts.apache.org/zh/option.html#series-sankey.animationDurationUpdate</a>
-     * <br/>序号: 37
      * <br/>默认值: 300
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -508,7 +469,6 @@ public class SankeySeries extends Series implements Serializable {
     private Object animationDurationUpdate;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.animationEasingUpdate">https://echarts.apache.org/zh/option.html#series-sankey.animationEasingUpdate</a>
-     * <br/>序号: 38
      * <br/>默认值: cubicInOut
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -517,7 +477,6 @@ public class SankeySeries extends Series implements Serializable {
     private String animationEasingUpdate;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.animationDelayUpdate">https://echarts.apache.org/zh/option.html#series-sankey.animationDelayUpdate</a>
-     * <br/>序号: 39
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -533,7 +492,6 @@ public class SankeySeries extends Series implements Serializable {
     private Object animationDelayUpdate;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.tooltip">https://echarts.apache.org/zh/option.html#series-sankey.tooltip</a>
-     * <br/>序号: 40
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

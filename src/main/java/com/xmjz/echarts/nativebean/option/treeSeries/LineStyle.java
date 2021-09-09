@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.lineStyle">https://echarts.apache.org/zh/option.html#series-tree.lineStyle</a>
- * <br/>序号: 27
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -24,7 +23,6 @@ public class LineStyle implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.lineStyle.color">https://echarts.apache.org/zh/option.html#series-tree.lineStyle.color</a>
-     * <br/>序号: 1
      * <br/>默认值: #ccc
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -33,7 +31,6 @@ public class LineStyle implements Serializable {
     private String color;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.lineStyle.width">https://echarts.apache.org/zh/option.html#series-tree.lineStyle.width</a>
-     * <br/>序号: 2
      * <br/>默认值: 1.5
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -42,7 +39,6 @@ public class LineStyle implements Serializable {
     private Integer width;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.lineStyle.curveness">https://echarts.apache.org/zh/option.html#series-tree.lineStyle.curveness</a>
-     * <br/>序号: 3
      * <br/>默认值: 0.5
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -51,7 +47,6 @@ public class LineStyle implements Serializable {
     private Integer curveness;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.lineStyle.shadowBlur">https://echarts.apache.org/zh/option.html#series-tree.lineStyle.shadowBlur</a>
-     * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -66,7 +61,6 @@ public class LineStyle implements Serializable {
     private Integer shadowBlur;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.lineStyle.shadowColor">https://echarts.apache.org/zh/option.html#series-tree.lineStyle.shadowColor</a>
-     * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -75,7 +69,6 @@ public class LineStyle implements Serializable {
     private String shadowColor;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.lineStyle.shadowOffsetX">https://echarts.apache.org/zh/option.html#series-tree.lineStyle.shadowOffsetX</a>
-     * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -84,7 +77,6 @@ public class LineStyle implements Serializable {
     private Integer shadowOffsetX;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.lineStyle.shadowOffsetY">https://echarts.apache.org/zh/option.html#series-tree.lineStyle.shadowOffsetY</a>
-     * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:

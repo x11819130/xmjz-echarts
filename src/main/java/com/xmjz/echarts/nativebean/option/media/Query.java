@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#media.query">https://echarts.apache.org/zh/option.html#media.query</a>
- * <br/>序号: 1
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -24,7 +23,6 @@ public class Query implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#media.query.minWidth">https://echarts.apache.org/zh/option.html#media.query.minWidth</a>
-     * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -33,7 +31,6 @@ public class Query implements Serializable {
     private Integer minWidth;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#media.query.maxHeight">https://echarts.apache.org/zh/option.html#media.query.maxHeight</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -42,7 +39,6 @@ public class Query implements Serializable {
     private Integer maxHeight;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#media.query.minAspectRatio">https://echarts.apache.org/zh/option.html#media.query.minAspectRatio</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:

@@ -10,7 +10,6 @@ import java.util.List;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap">https://echarts.apache.org/zh/option.html#series-heatmap</a>
- * <br/>序号: 0
  * <br/>默认值: 无
  * <br/>js类型: ["object"]
  * <br/>描述:
@@ -19,7 +18,7 @@ import java.util.List;
  * <p>可以应用在<a href="#grid">直角坐标系</a>以及<a href="#geo">地理坐标系</a>上，这两个坐标系上的表现形式相差很大，直角坐标系上必须要使用两个类目轴。</p>
  * <p>下面是在直角坐标系上应用的例子：</p>
  * <p><strong>直角坐标系：</strong></p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=heatmap-cartesian&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="19"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=heatmap-cartesian&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="18"></iframe>
  *
  * @author auto
  */
@@ -31,7 +30,6 @@ public class HeatmapSeries extends Series implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.type">https://echarts.apache.org/zh/option.html#series-heatmap.type</a>
-     * <br/>序号: 1
      * <br/>默认值: heatmap
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -39,7 +37,6 @@ public class HeatmapSeries extends Series implements Serializable {
     private String type;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.id">https://echarts.apache.org/zh/option.html#series-heatmap.id</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -48,7 +45,6 @@ public class HeatmapSeries extends Series implements Serializable {
     private String id;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.name">https://echarts.apache.org/zh/option.html#series-heatmap.name</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -57,7 +53,6 @@ public class HeatmapSeries extends Series implements Serializable {
     private String name;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.coordinateSystem">https://echarts.apache.org/zh/option.html#series-heatmap.coordinateSystem</a>
-     * <br/>序号: 4
      * <br/>默认值: cartesian2d
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -76,7 +71,6 @@ public class HeatmapSeries extends Series implements Serializable {
     private String coordinateSystem;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.xAxisIndex">https://echarts.apache.org/zh/option.html#series-heatmap.xAxisIndex</a>
-     * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -90,7 +84,6 @@ public class HeatmapSeries extends Series implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.yAxisIndex">https://echarts.apache.org/zh/option.html#series-heatmap.yAxisIndex</a>
-     * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -104,7 +97,6 @@ public class HeatmapSeries extends Series implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.geoIndex">https://echarts.apache.org/zh/option.html#series-heatmap.geoIndex</a>
-     * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -113,7 +105,6 @@ public class HeatmapSeries extends Series implements Serializable {
     private Integer geoIndex;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.calendarIndex">https://echarts.apache.org/zh/option.html#series-heatmap.calendarIndex</a>
-     * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -122,7 +113,6 @@ public class HeatmapSeries extends Series implements Serializable {
     private Integer calendarIndex;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.pointSize">https://echarts.apache.org/zh/option.html#series-heatmap.pointSize</a>
-     * <br/>序号: 9
      * <br/>默认值: 20
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -131,7 +121,6 @@ public class HeatmapSeries extends Series implements Serializable {
     private Integer pointSize;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.blurSize">https://echarts.apache.org/zh/option.html#series-heatmap.blurSize</a>
-     * <br/>序号: 10
      * <br/>默认值: 20
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -140,7 +129,6 @@ public class HeatmapSeries extends Series implements Serializable {
     private Integer blurSize;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.minOpacity">https://echarts.apache.org/zh/option.html#series-heatmap.minOpacity</a>
-     * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -149,7 +137,6 @@ public class HeatmapSeries extends Series implements Serializable {
     private Integer minOpacity;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.maxOpacity">https://echarts.apache.org/zh/option.html#series-heatmap.maxOpacity</a>
-     * <br/>序号: 12
      * <br/>默认值: 1
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -158,7 +145,6 @@ public class HeatmapSeries extends Series implements Serializable {
     private Integer maxOpacity;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.progressive">https://echarts.apache.org/zh/option.html#series-heatmap.progressive</a>
-     * <br/>序号: 13
      * <br/>默认值: 400
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -169,7 +155,6 @@ public class HeatmapSeries extends Series implements Serializable {
     private Integer progressive;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.progressiveThreshold">https://echarts.apache.org/zh/option.html#series-heatmap.progressiveThreshold</a>
-     * <br/>序号: 14
      * <br/>默认值: 3000
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -178,7 +163,6 @@ public class HeatmapSeries extends Series implements Serializable {
     private Integer progressiveThreshold;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.label">https://echarts.apache.org/zh/option.html#series-heatmap.label</a>
-     * <br/>序号: 15
      * <br/>默认值: inside
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -187,7 +171,6 @@ public class HeatmapSeries extends Series implements Serializable {
     private Label label;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.labelLayout">https://echarts.apache.org/zh/option.html#series-heatmap.labelLayout</a>
-     * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["Object","Function"]
      * <br/>描述:
@@ -240,7 +223,6 @@ public class HeatmapSeries extends Series implements Serializable {
     private LabelLayout labelLayout;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.itemStyle">https://echarts.apache.org/zh/option.html#series-heatmap.itemStyle</a>
-     * <br/>序号: 17
      * <br/>默认值: 自适应
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -249,7 +231,6 @@ public class HeatmapSeries extends Series implements Serializable {
     private ItemStyle itemStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.emphasis">https://echarts.apache.org/zh/option.html#series-heatmap.emphasis</a>
-     * <br/>序号: 18
      * <br/>默认值: none
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -257,8 +238,18 @@ public class HeatmapSeries extends Series implements Serializable {
      */
     private Emphasis emphasis;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.universalTransition">https://echarts.apache.org/zh/option.html#series-heatmap.universalTransition</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["object"]
+     * <br/>描述:
+     * <p>全局过渡动画相关的配置。</p>
+     * <p>全局过渡动画（Universal Transition）提供了任意系列之间进行变形动画的功能。开启该功能后，每次<code class="codespan">setOption</code>，相同<code class="codespan">id</code>的系列之间会自动关联进行动画的过渡，更细粒度的关联配置见<code class="codespan">universalTransition.seriesKey</code>配置。</p>
+     * <p>通过配置<code class="codespan">encode.itemGroupId</code>或者<code class="codespan">dataGroupId</code>等指定数据的分组，还可以实现诸如下钻，聚合等一对多或者多对一的动画。</p>
+     * <p>可以直接在系列中配置 <code class="codespan">universalTransition: true</code> 开启该功能。也可以提供一个对象进行更多属性的配置。</p>
+     */
+    private UniversalTransition universalTransition;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.blur">https://echarts.apache.org/zh/option.html#series-heatmap.blur</a>
-     * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -270,7 +261,6 @@ public class HeatmapSeries extends Series implements Serializable {
     private Blur blur;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.select">https://echarts.apache.org/zh/option.html#series-heatmap.select</a>
-     * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -282,7 +272,6 @@ public class HeatmapSeries extends Series implements Serializable {
     private Select select;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.selectedMode">https://echarts.apache.org/zh/option.html#series-heatmap.selectedMode</a>
-     * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","string"]
      * <br/>描述:
@@ -295,8 +284,156 @@ public class HeatmapSeries extends Series implements Serializable {
      */
     private Object selectedMode;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.encode">https://echarts.apache.org/zh/option.html#series-heatmap.encode</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["Object"]
+     * <br/>描述:
+     * <p>可以定义 <code class="codespan">data</code> 的哪个维度被编码成什么。比如：</p>
+     * <pre><code class="lang-js hljs javascript">option = {
+     *     <span class="hljs-attr">dataset</span>: {
+     *         <span class="hljs-attr">source</span>: [
+     *             <span class="hljs-comment">// 每一列称为一个『维度』。</span>
+     *             <span class="hljs-comment">// 这里分别是维度 0、1、2、3、4。</span>
+     *             [<span class="hljs-number">12</span>, <span class="hljs-number">44</span>, <span class="hljs-number">55</span>, <span class="hljs-number">66</span>, <span class="hljs-number">2</span>],
+     *             [<span class="hljs-number">23</span>, <span class="hljs-number">6</span>, <span class="hljs-number">16</span>, <span class="hljs-number">23</span>, <span class="hljs-number">1</span>],
+     *             ...
+     *         ]
+     *     },
+     *     <span class="hljs-attr">series</span>: {
+     *         <span class="hljs-attr">type</span>: <span class="hljs-string">'xxx'</span>,
+     *         <span class="hljs-attr">encode</span>: {
+     *             <span class="hljs-attr">x</span>: [<span class="hljs-number">3</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>],      <span class="hljs-comment">// 表示维度 3、1、5 映射到 x 轴。</span>
+     *             <span class="hljs-attr">y</span>: <span class="hljs-number">2</span>,              <span class="hljs-comment">// 表示维度 2 映射到 y 轴。</span>
+     *             <span class="hljs-attr">tooltip</span>: [<span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">4</span>] <span class="hljs-comment">// 表示维度 3、2、4 会在 tooltip 中显示。</span>
+     *         }
+     *     }
+     * }
+     * </code></pre>
+     * <p>当使用 <a href="#series.dimensions">dimensions</a> 给维度定义名称后，<code class="codespan">encode</code> 中可直接引用名称，例如：</p>
+     * <pre><code class="lang-js hljs javascript">series: {
+     *     <span class="hljs-attr">type</span>: <span class="hljs-string">'xxx'</span>,
+     *     <span class="hljs-attr">dimensions</span>: [<span class="hljs-string">'date'</span>, <span class="hljs-string">'open'</span>, <span class="hljs-string">'close'</span>, <span class="hljs-string">'highest'</span>, <span class="hljs-string">'lowest'</span>],
+     *     <span class="hljs-attr">encode</span>: {
+     *         <span class="hljs-attr">x</span>: <span class="hljs-string">'date'</span>,
+     *         <span class="hljs-attr">y</span>: [<span class="hljs-string">'open'</span>, <span class="hljs-string">'close'</span>, <span class="hljs-string">'highest'</span>, <span class="hljs-string">'lowest'</span>]
+     *     }
+     * }
+     * </code></pre>
+     * <p><code class="codespan">encode</code> 声明的基本结构如下，其中冒号左边是坐标系、标签等特定名称，如 <code class="codespan">'x'</code>, <code class="codespan">'y'</code>, <code class="codespan">'tooltip'</code> 等，冒号右边是数据中的维度名（string 格式）或者维度的序号（number 格式，从 0 开始计数），可以指定一个或多个维度（使用数组）。通常情况下，下面各种信息不需要所有的都写，按需写即可。</p>
+     * <p>下面是 encode 支持的属性：</p>
+     * <pre><code class="lang-js hljs javascript"><span class="hljs-comment">// 在任何坐标系和系列中，都支持：</span>
+     * <span class="hljs-attr">encode</span>: {
+     *     <span class="hljs-comment">// 使用 “名为 product 的维度” 和 “名为 score 的维度” 的值在 tooltip 中显示</span>
+     *     <span class="hljs-attr">tooltip</span>: [<span class="hljs-string">'product'</span>, <span class="hljs-string">'score'</span>]
+     *     <span class="hljs-comment">// 使用第一个维度和第三个维度的维度名连起来作为系列名。（有时候名字比较长，这可以避免在 series.name 重复输入这些名字）</span>
+     *     <span class="hljs-attr">seriesName</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">3</span>],
+     *     <span class="hljs-comment">// 表示使用第二个维度中的值作为 id。这在使用 setOption 动态更新数据时有用处，可以使新老数据用 id 对应起来，从而能够产生合适的数据更新动画。</span>
+     *     <span class="hljs-attr">itemId</span>: <span class="hljs-number">2</span>,
+     *     <span class="hljs-comment">// 指定数据项的名称使用第三个维度在饼图等图表中有用，可以使这个名字显示在图例（legend）中。</span>
+     *     <span class="hljs-attr">itemName</span>: <span class="hljs-number">3</span>,
+     *     <span class="hljs-comment">// 指定数据项的组 ID (groupID)，组 ID 会被用于分类数据，并在全局过渡动画中决定如何进行合并和分裂动画，具体见 universalTransition</span>
+     *     <span class="hljs-attr">itemGroupId</span>: <span class="hljs-number">4</span>
+     * }
+     *
+     * <span class="hljs-comment">// 直角坐标系（grid/cartesian）特有的属性：</span>
+     * <span class="hljs-attr">encode</span>: {
+     *     <span class="hljs-comment">// 把 “维度1”、“维度5”、“名为 score 的维度” 映射到 X 轴：</span>
+     *     <span class="hljs-attr">x</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">5</span>, <span class="hljs-string">'score'</span>],
+     *     <span class="hljs-comment">// 把“维度0”映射到 Y 轴。</span>
+     *     <span class="hljs-attr">y</span>: <span class="hljs-number">0</span>
+     * }
+     *
+     * <span class="hljs-comment">// 单轴（singleAxis）特有的属性：</span>
+     * <span class="hljs-attr">encode</span>: {
+     *     <span class="hljs-attr">single</span>: <span class="hljs-number">3</span>
+     * }
+     *
+     * <span class="hljs-comment">// 极坐标系（polar）特有的属性：</span>
+     * <span class="hljs-attr">encode</span>: {
+     *     <span class="hljs-attr">radius</span>: <span class="hljs-number">3</span>,
+     *     <span class="hljs-attr">angle</span>: <span class="hljs-number">2</span>
+     * }
+     *
+     * <span class="hljs-comment">// 地理坐标系（geo）特有的属性：</span>
+     * <span class="hljs-attr">encode</span>: {
+     *     <span class="hljs-attr">lng</span>: <span class="hljs-number">3</span>,
+     *     <span class="hljs-attr">lat</span>: <span class="hljs-number">2</span>
+     * }
+     *
+     * <span class="hljs-comment">// 对于一些没有坐标系的图表，例如饼图、漏斗图等，可以是：</span>
+     * <span class="hljs-attr">encode</span>: {
+     *     <span class="hljs-attr">value</span>: <span class="hljs-number">3</span>
+     * }
+     * </code></pre>
+     * <p>这是个更丰富的 <code class="codespan">encode</code> 的<a href="https://echarts.apache.org/examples/zh/view.html?c=dataset-encode1&amp;edit=1&amp;reset=1" target="_blank">示例</a>：</p>
+     * <p>特殊地，在 <a href="#series-custom">自定义系列（custom series）</a> 中，<code class="codespan">encode</code> 中轴可以不指定或设置为 <code class="codespan">null/undefined</code>，从而使系列免于受这个轴控制，也就是说，轴的范围（extent）不会受此系列数值的影响，轴被 <a href="#dataZoom">dataZoom</a> 控制时也不会过滤掉这个系列：</p>
+     * <pre><code class="lang-js hljs javascript"><span class="hljs-keyword">var</span> option = {
+     *     <span class="hljs-attr">xAxis</span>: {},
+     *     <span class="hljs-attr">yAxis</span>: {},
+     *     <span class="hljs-attr">dataZoom</span>: [{
+     *         <span class="hljs-attr">xAxisIndex</span>: <span class="hljs-number">0</span>
+     *     }, {
+     *         <span class="hljs-attr">yAxisIndex</span>: <span class="hljs-number">0</span>
+     *     }],
+     *     <span class="hljs-attr">series</span>: {
+     *         <span class="hljs-attr">type</span>: <span class="hljs-string">'custom'</span>,
+     *         <span class="hljs-attr">renderItem</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">params, api</span>) </span>{
+     *             <span class="hljs-keyword">return</span> {
+     *                 <span class="hljs-attr">type</span>: <span class="hljs-string">'circle'</span>,
+     *                 <span class="hljs-attr">shape</span>: {
+     *                     <span class="hljs-attr">cx</span>: <span class="hljs-number">100</span>, <span class="hljs-comment">// x 位置永远为 100</span>
+     *                     <span class="hljs-attr">cy</span>: api.coord([<span class="hljs-number">0</span>, api.value(<span class="hljs-number">0</span>)])[<span class="hljs-number">1</span>],
+     *                     <span class="hljs-attr">r</span>: <span class="hljs-number">30</span>
+     *                 },
+     *                 <span class="hljs-attr">style</span>: {
+     *                     <span class="hljs-attr">fill</span>: <span class="hljs-string">'blue'</span>
+     *                 }
+     *             };
+     *         },
+     *         <span class="hljs-attr">encode</span>: {
+     *             <span class="hljs-comment">// 这样这个系列就不会被 x 轴以及 x</span>
+     *             <span class="hljs-comment">// 轴上的 dataZoom 控制了。</span>
+     *             <span class="hljs-attr">x</span>: <span class="hljs-number">-1</span>,
+     *             <span class="hljs-attr">y</span>: <span class="hljs-number">1</span>
+     *         },
+     *         <span class="hljs-attr">data</span>: [ ... ]
+     *     }
+     * };
+     * </code></pre>
+     */
+    private Object encode;
+    /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.seriesLayoutBy">https://echarts.apache.org/zh/option.html#series-heatmap.seriesLayoutBy</a>
+     * <br/>默认值: column
+     * <br/>js类型: ["string"]
+     * <br/>描述:
+     * <p>当使用 <a href="#dataset">dataset</a> 时，<code class="codespan">seriesLayoutBy</code> 指定了 <code class="codespan">dataset</code> 中用行还是列对应到系列上，也就是说，系列“排布”到 <code class="codespan">dataset</code> 的行还是列上。可取值：</p>
+     * <ul>
+     * <li>'column'：默认，<code class="codespan">dataset</code> 的列对应于系列，从而 <code class="codespan">dataset</code> 中每一列是一个维度（dimension）。</li>
+     * <li>'row'：<code class="codespan">dataset</code> 的行对应于系列，从而 <code class="codespan">dataset</code> 中每一行是一个维度（dimension）。</li>
+     * </ul>
+     * <p>参见这个 <a href="https://echarts.apache.org/examples/zh/editor.html?c=dataset-series-layout-by&amp;theme=lite" target="_blank">示例</a></p>
+     */
+    private String seriesLayoutBy;
+    /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.datasetIndex">https://echarts.apache.org/zh/option.html#series-heatmap.datasetIndex</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["number"]
+     * <br/>描述:
+     * <p>如果 <a href="#series.data">series.data</a> 没有指定，并且 <a href="#dataset">dataset</a> 存在，那么就会使用 <a href="#dataset">dataset</a>。<code class="codespan">datasetIndex</code> 指定本系列使用那个 <a href="#dataset">dataset</a>。</p>
+     */
+    private Integer datasetIndex;
+    /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.dataGroupId">https://echarts.apache.org/zh/option.html#series-heatmap.dataGroupId</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["string"]
+     * <br/>描述:
+     * <p>该系列所有数据共有的组 ID。组 ID 会被用于分类数据，并在全局过渡动画中决定如何进行合并和分裂动画。</p>
+     * <p>如果你使用了<a href="#dataset">dataset</a>组件来表达数据，推荐使用<code class="codespan">encode.itemGroupID</code>来指定哪个维度被编码为组 ID。</p>
+     */
+    private String dataGroupId;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.data">https://echarts.apache.org/zh/option.html#series-heatmap.data</a>
-     * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -419,7 +556,6 @@ public class HeatmapSeries extends Series implements Serializable {
     private List<?> data;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.markPoint">https://echarts.apache.org/zh/option.html#series-heatmap.markPoint</a>
-     * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -428,7 +564,6 @@ public class HeatmapSeries extends Series implements Serializable {
     private Object markPoint;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.markLine">https://echarts.apache.org/zh/option.html#series-heatmap.markLine</a>
-     * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -437,7 +572,6 @@ public class HeatmapSeries extends Series implements Serializable {
     private Object markLine;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.markArea">https://echarts.apache.org/zh/option.html#series-heatmap.markArea</a>
-     * <br/>序号: 25
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -446,7 +580,6 @@ public class HeatmapSeries extends Series implements Serializable {
     private Object markArea;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.zlevel">https://echarts.apache.org/zh/option.html#series-heatmap.zlevel</a>
-     * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -457,7 +590,6 @@ public class HeatmapSeries extends Series implements Serializable {
     private Integer zlevel;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.z">https://echarts.apache.org/zh/option.html#series-heatmap.z</a>
-     * <br/>序号: 27
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -467,7 +599,6 @@ public class HeatmapSeries extends Series implements Serializable {
     private Integer z;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.silent">https://echarts.apache.org/zh/option.html#series-heatmap.silent</a>
-     * <br/>序号: 28
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -476,7 +607,6 @@ public class HeatmapSeries extends Series implements Serializable {
     private Boolean silent;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.tooltip">https://echarts.apache.org/zh/option.html#series-heatmap.tooltip</a>
-     * <br/>序号: 29
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

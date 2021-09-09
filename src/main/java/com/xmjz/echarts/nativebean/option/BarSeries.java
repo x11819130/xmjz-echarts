@@ -10,7 +10,6 @@ import java.util.List;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar">https://echarts.apache.org/zh/option.html#series-bar</a>
- * <br/>序号: 0
  * <br/>默认值: 无
  * <br/>js类型: ["object"]
  * <br/>描述:
@@ -27,7 +26,6 @@ public class BarSeries extends Series implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.type">https://echarts.apache.org/zh/option.html#series-bar.type</a>
-     * <br/>序号: 1
      * <br/>默认值: bar
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -35,7 +33,6 @@ public class BarSeries extends Series implements Serializable {
     private String type;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.id">https://echarts.apache.org/zh/option.html#series-bar.id</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -44,7 +41,6 @@ public class BarSeries extends Series implements Serializable {
     private String id;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.name">https://echarts.apache.org/zh/option.html#series-bar.name</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -52,8 +48,22 @@ public class BarSeries extends Series implements Serializable {
      */
     private String name;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.colorBy">https://echarts.apache.org/zh/option.html#series-bar.colorBy</a>
+     * <br/>默认值: series
+     * <br/>js类型: ["string"]
+     * <br/>描述:
+     * <blockquote>
+     * <p>从 <code class="codespan">v5.2.0</code> 开始支持</p>
+     * </blockquote>
+     * <p>从调色盘 <a href="#color">option.color</a> 中取色的策略，可取值为：</p>
+     * <ul>
+     * <li><code class="codespan">'series'</code>：按照系列分配调色盘中的颜色，同一系列中的所有数据都是用相同的颜色；</li>
+     * <li><code class="codespan">'data'</code>：按照数据项分配调色盘中的颜色，每个数据项都使用不同的颜色。</li>
+     * </ul>
+     */
+    private String colorBy;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.legendHoverLink">https://echarts.apache.org/zh/option.html#series-bar.legendHoverLink</a>
-     * <br/>序号: 4
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -62,7 +72,6 @@ public class BarSeries extends Series implements Serializable {
     private Boolean legendHoverLink;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.coordinateSystem">https://echarts.apache.org/zh/option.html#series-bar.coordinateSystem</a>
-     * <br/>序号: 5
      * <br/>默认值: cartesian2d
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -72,11 +81,15 @@ public class BarSeries extends Series implements Serializable {
      * <p>  使用二维的直角坐标系（也称笛卡尔坐标系），通过 <a href="#series-bar.xAxisIndex">xAxisIndex</a>, <a href="#series-bar.yAxisIndex">yAxisIndex</a>指定相应的坐标轴组件。</p>
      * </li>
      * </ul>
+     * <ul>
+     * <li><p><code class="codespan">'polar'</code></p>
+     * <p>  使用极坐标系，通过 <a href="#series-bar.polarIndex">polarIndex</a> 指定相应的极坐标组件</p>
+     * </li>
+     * </ul>
      */
     private String coordinateSystem;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.xAxisIndex">https://echarts.apache.org/zh/option.html#series-bar.xAxisIndex</a>
-     * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -90,7 +103,6 @@ public class BarSeries extends Series implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.yAxisIndex">https://echarts.apache.org/zh/option.html#series-bar.yAxisIndex</a>
-     * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -103,8 +115,15 @@ public class BarSeries extends Series implements Serializable {
     }
 
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.polarIndex">https://echarts.apache.org/zh/option.html#series-bar.polarIndex</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["number"]
+     * <br/>描述:
+     * <p>使用的<a href="#polar">极坐标系</a>的 index，在单个图表实例中存在多个极坐标系的时候有用。</p>
+     */
+    private Integer polarIndex;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.roundCap">https://echarts.apache.org/zh/option.html#series-bar.roundCap</a>
-     * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -120,7 +139,6 @@ public class BarSeries extends Series implements Serializable {
     private Boolean roundCap;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.showBackground">https://echarts.apache.org/zh/option.html#series-bar.showBackground</a>
-     * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -135,7 +153,6 @@ public class BarSeries extends Series implements Serializable {
     private Boolean showBackground;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.backgroundStyle">https://echarts.apache.org/zh/option.html#series-bar.backgroundStyle</a>
-     * <br/>序号: 10
      * <br/>默认值: rgba(180, 180, 180, 0.2)
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -148,8 +165,7 @@ public class BarSeries extends Series implements Serializable {
     private BackgroundStyle backgroundStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.label">https://echarts.apache.org/zh/option.html#series-bar.label</a>
-     * <br/>序号: 11
-     * <br/>默认值: inside
+     * <br/>默认值: 5
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>图形上的文本标签，可用于说明图形的一些数据信息，比如值，名称等。</p>
@@ -157,7 +173,6 @@ public class BarSeries extends Series implements Serializable {
     private Label label;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.labelLine">https://echarts.apache.org/zh/option.html#series-bar.labelLine</a>
-     * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -166,7 +181,6 @@ public class BarSeries extends Series implements Serializable {
     private LabelLine labelLine;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.itemStyle">https://echarts.apache.org/zh/option.html#series-bar.itemStyle</a>
-     * <br/>序号: 13
      * <br/>默认值: 自适应
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -175,7 +189,6 @@ public class BarSeries extends Series implements Serializable {
     private ItemStyle itemStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.labelLayout">https://echarts.apache.org/zh/option.html#series-bar.labelLayout</a>
-     * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["Object","Function"]
      * <br/>描述:
@@ -228,7 +241,6 @@ public class BarSeries extends Series implements Serializable {
     private LabelLayout labelLayout;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.emphasis">https://echarts.apache.org/zh/option.html#series-bar.emphasis</a>
-     * <br/>序号: 15
      * <br/>默认值: none
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -237,7 +249,6 @@ public class BarSeries extends Series implements Serializable {
     private Emphasis emphasis;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.blur">https://echarts.apache.org/zh/option.html#series-bar.blur</a>
-     * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -246,7 +257,6 @@ public class BarSeries extends Series implements Serializable {
     private Blur blur;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.select">https://echarts.apache.org/zh/option.html#series-bar.select</a>
-     * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -255,7 +265,6 @@ public class BarSeries extends Series implements Serializable {
     private Select select;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.selectedMode">https://echarts.apache.org/zh/option.html#series-bar.selectedMode</a>
-     * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","string"]
      * <br/>描述:
@@ -269,7 +278,6 @@ public class BarSeries extends Series implements Serializable {
     private Object selectedMode;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.stack">https://echarts.apache.org/zh/option.html#series-bar.stack</a>
-     * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -278,7 +286,6 @@ public class BarSeries extends Series implements Serializable {
     private String stack;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.sampling">https://echarts.apache.org/zh/option.html#series-bar.sampling</a>
-     * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -295,7 +302,6 @@ public class BarSeries extends Series implements Serializable {
     private String sampling;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.cursor">https://echarts.apache.org/zh/option.html#series-bar.cursor</a>
-     * <br/>序号: 21
      * <br/>默认值: pointer
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -304,7 +310,6 @@ public class BarSeries extends Series implements Serializable {
     private String cursor;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.barWidth">https://echarts.apache.org/zh/option.html#series-bar.barWidth</a>
-     * <br/>序号: 22
      * <br/>默认值: 自适应
      * <br/>js类型: ["number","string"]
      * <br/>描述:
@@ -319,7 +324,6 @@ public class BarSeries extends Series implements Serializable {
     private Object barWidth;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.barMaxWidth">https://echarts.apache.org/zh/option.html#series-bar.barMaxWidth</a>
-     * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["number","string"]
      * <br/>描述:
@@ -331,7 +335,6 @@ public class BarSeries extends Series implements Serializable {
     private Object barMaxWidth;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.barMinWidth">https://echarts.apache.org/zh/option.html#series-bar.barMinWidth</a>
-     * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["number","string"]
      * <br/>描述:
@@ -343,7 +346,6 @@ public class BarSeries extends Series implements Serializable {
     private Object barMinWidth;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.barMinHeight">https://echarts.apache.org/zh/option.html#series-bar.barMinHeight</a>
-     * <br/>序号: 25
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -352,7 +354,6 @@ public class BarSeries extends Series implements Serializable {
     private Integer barMinHeight;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.barMinAngle">https://echarts.apache.org/zh/option.html#series-bar.barMinAngle</a>
-     * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -362,7 +363,6 @@ public class BarSeries extends Series implements Serializable {
     private Integer barMinAngle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.barGap">https://echarts.apache.org/zh/option.html#series-bar.barGap</a>
-     * <br/>序号: 27
      * <br/>默认值: 30%
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -375,7 +375,6 @@ public class BarSeries extends Series implements Serializable {
     private String barGap;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.barCategoryGap">https://echarts.apache.org/zh/option.html#series-bar.barCategoryGap</a>
-     * <br/>序号: 28
      * <br/>默认值: 20%
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -385,7 +384,6 @@ public class BarSeries extends Series implements Serializable {
     private String barCategoryGap;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.large">https://echarts.apache.org/zh/option.html#series-bar.large</a>
-     * <br/>序号: 29
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -396,7 +394,6 @@ public class BarSeries extends Series implements Serializable {
     private Boolean large;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.largeThreshold">https://echarts.apache.org/zh/option.html#series-bar.largeThreshold</a>
-     * <br/>序号: 30
      * <br/>默认值: 400
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -405,7 +402,6 @@ public class BarSeries extends Series implements Serializable {
     private Integer largeThreshold;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.progressive">https://echarts.apache.org/zh/option.html#series-bar.progressive</a>
-     * <br/>序号: 31
      * <br/>默认值: 5000
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -416,7 +412,6 @@ public class BarSeries extends Series implements Serializable {
     private Integer progressive;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.progressiveThreshold">https://echarts.apache.org/zh/option.html#series-bar.progressiveThreshold</a>
-     * <br/>序号: 32
      * <br/>默认值: 3000
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -425,7 +420,6 @@ public class BarSeries extends Series implements Serializable {
     private Integer progressiveThreshold;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.progressiveChunkMode">https://echarts.apache.org/zh/option.html#series-bar.progressiveChunkMode</a>
-     * <br/>序号: 33
      * <br/>默认值: mod
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -438,7 +432,6 @@ public class BarSeries extends Series implements Serializable {
     private String progressiveChunkMode;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.dimensions">https://echarts.apache.org/zh/option.html#series-bar.dimensions</a>
-     * <br/>序号: 34
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -496,7 +489,6 @@ public class BarSeries extends Series implements Serializable {
     private List<?> dimensions;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.encode">https://echarts.apache.org/zh/option.html#series-bar.encode</a>
-     * <br/>序号: 35
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -537,12 +529,14 @@ public class BarSeries extends Series implements Serializable {
      * <span class="hljs-attr">encode</span>: {
      *     <span class="hljs-comment">// 使用 “名为 product 的维度” 和 “名为 score 的维度” 的值在 tooltip 中显示</span>
      *     <span class="hljs-attr">tooltip</span>: [<span class="hljs-string">'product'</span>, <span class="hljs-string">'score'</span>]
-     *     <span class="hljs-comment">// 使用 “维度 1” 和 “维度 3” 的维度名连起来作为系列名。（有时候名字比较长，这可以避免在 series.name 重复输入这些名字）</span>
+     *     <span class="hljs-comment">// 使用第一个维度和第三个维度的维度名连起来作为系列名。（有时候名字比较长，这可以避免在 series.name 重复输入这些名字）</span>
      *     <span class="hljs-attr">seriesName</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">3</span>],
-     *     <span class="hljs-comment">// 表示使用 “维度2” 中的值作为 id。这在使用 setOption 动态更新数据时有用处，可以使新老数据用 id 对应起来，从而能够产生合适的数据更新动画。</span>
+     *     <span class="hljs-comment">// 表示使用第二个维度中的值作为 id。这在使用 setOption 动态更新数据时有用处，可以使新老数据用 id 对应起来，从而能够产生合适的数据更新动画。</span>
      *     <span class="hljs-attr">itemId</span>: <span class="hljs-number">2</span>,
-     *     <span class="hljs-comment">// 指定数据项的名称使用 “维度3” 在饼图等图表中有用，可以使这个名字显示在图例（legend）中。</span>
-     *     <span class="hljs-attr">itemName</span>: <span class="hljs-number">3</span>
+     *     <span class="hljs-comment">// 指定数据项的名称使用第三个维度在饼图等图表中有用，可以使这个名字显示在图例（legend）中。</span>
+     *     <span class="hljs-attr">itemName</span>: <span class="hljs-number">3</span>,
+     *     <span class="hljs-comment">// 指定数据项的组 ID (groupID)，组 ID 会被用于分类数据，并在全局过渡动画中决定如何进行合并和分裂动画，具体见 universalTransition</span>
+     *     <span class="hljs-attr">itemGroupId</span>: <span class="hljs-number">4</span>
      * }
      *
      * <span class="hljs-comment">// 直角坐标系（grid/cartesian）特有的属性：</span>
@@ -614,7 +608,6 @@ public class BarSeries extends Series implements Serializable {
     private Object encode;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.seriesLayoutBy">https://echarts.apache.org/zh/option.html#series-bar.seriesLayoutBy</a>
-     * <br/>序号: 36
      * <br/>默认值: column
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -628,7 +621,6 @@ public class BarSeries extends Series implements Serializable {
     private String seriesLayoutBy;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.datasetIndex">https://echarts.apache.org/zh/option.html#series-bar.datasetIndex</a>
-     * <br/>序号: 37
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -636,8 +628,16 @@ public class BarSeries extends Series implements Serializable {
      */
     private Integer datasetIndex;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.dataGroupId">https://echarts.apache.org/zh/option.html#series-bar.dataGroupId</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["string"]
+     * <br/>描述:
+     * <p>该系列所有数据共有的组 ID。组 ID 会被用于分类数据，并在全局过渡动画中决定如何进行合并和分裂动画。</p>
+     * <p>如果你使用了<a href="#dataset">dataset</a>组件来表达数据，推荐使用<code class="codespan">encode.itemGroupID</code>来指定哪个维度被编码为组 ID。</p>
+     */
+    private String dataGroupId;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.data">https://echarts.apache.org/zh/option.html#series-bar.data</a>
-     * <br/>序号: 38
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -760,7 +760,6 @@ public class BarSeries extends Series implements Serializable {
     private List<?> data;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.clip">https://echarts.apache.org/zh/option.html#series-bar.clip</a>
-     * <br/>序号: 39
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -769,7 +768,7 @@ public class BarSeries extends Series implements Serializable {
      * </blockquote>
      * <p>是否裁剪超出坐标系部分的图形，具体裁剪效果根据系列决定：</p>
      * <ul>
-     * <li>散点图：忽略中心点超出坐标系的图形，但是不裁剪单个图形</li>
+     * <li>散点图/带有涟漪特效动画的散点（气泡）图：忽略中心点超出坐标系的图形，但是不裁剪单个图形</li>
      * <li>柱状图：裁掉完全超出的柱子，但是不会裁剪只超出部分的柱子</li>
      * <li>折线图：裁掉所有超出坐标系的折线部分，拐点图形的逻辑按照散点图处理</li>
      * <li>路径图：裁掉所有超出坐标系的部分</li>
@@ -781,7 +780,6 @@ public class BarSeries extends Series implements Serializable {
     private Boolean clip;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.zlevel">https://echarts.apache.org/zh/option.html#series-bar.zlevel</a>
-     * <br/>序号: 40
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -792,7 +790,6 @@ public class BarSeries extends Series implements Serializable {
     private Integer zlevel;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.z">https://echarts.apache.org/zh/option.html#series-bar.z</a>
-     * <br/>序号: 41
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -802,7 +799,6 @@ public class BarSeries extends Series implements Serializable {
     private Integer z;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.silent">https://echarts.apache.org/zh/option.html#series-bar.silent</a>
-     * <br/>序号: 42
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -811,7 +807,6 @@ public class BarSeries extends Series implements Serializable {
     private Boolean silent;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.animation">https://echarts.apache.org/zh/option.html#series-bar.animation</a>
-     * <br/>序号: 43
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -820,7 +815,6 @@ public class BarSeries extends Series implements Serializable {
     private Boolean animation;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.animationThreshold">https://echarts.apache.org/zh/option.html#series-bar.animationThreshold</a>
-     * <br/>序号: 44
      * <br/>默认值: 2000
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -829,7 +823,6 @@ public class BarSeries extends Series implements Serializable {
     private Integer animationThreshold;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.animationDuration">https://echarts.apache.org/zh/option.html#series-bar.animationDuration</a>
-     * <br/>序号: 45
      * <br/>默认值: 1000
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -843,7 +836,6 @@ public class BarSeries extends Series implements Serializable {
     private Object animationDuration;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.animationEasing">https://echarts.apache.org/zh/option.html#series-bar.animationEasing</a>
-     * <br/>序号: 46
      * <br/>默认值: cubicOut
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -852,7 +844,6 @@ public class BarSeries extends Series implements Serializable {
     private String animationEasing;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.animationDelay">https://echarts.apache.org/zh/option.html#series-bar.animationDelay</a>
-     * <br/>序号: 47
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -868,7 +859,6 @@ public class BarSeries extends Series implements Serializable {
     private Object animationDelay;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.animationDurationUpdate">https://echarts.apache.org/zh/option.html#series-bar.animationDurationUpdate</a>
-     * <br/>序号: 48
      * <br/>默认值: 300
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -883,7 +873,6 @@ public class BarSeries extends Series implements Serializable {
     private Object animationDurationUpdate;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.animationEasingUpdate">https://echarts.apache.org/zh/option.html#series-bar.animationEasingUpdate</a>
-     * <br/>序号: 49
      * <br/>默认值: cubicInOut
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -892,7 +881,6 @@ public class BarSeries extends Series implements Serializable {
     private String animationEasingUpdate;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.animationDelayUpdate">https://echarts.apache.org/zh/option.html#series-bar.animationDelayUpdate</a>
-     * <br/>序号: 50
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -907,8 +895,18 @@ public class BarSeries extends Series implements Serializable {
      */
     private Object animationDelayUpdate;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.universalTransition">https://echarts.apache.org/zh/option.html#series-bar.universalTransition</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["object"]
+     * <br/>描述:
+     * <p>全局过渡动画相关的配置。</p>
+     * <p>全局过渡动画（Universal Transition）提供了任意系列之间进行变形动画的功能。开启该功能后，每次<code class="codespan">setOption</code>，相同<code class="codespan">id</code>的系列之间会自动关联进行动画的过渡，更细粒度的关联配置见<code class="codespan">universalTransition.seriesKey</code>配置。</p>
+     * <p>通过配置<code class="codespan">encode.itemGroupId</code>或者<code class="codespan">dataGroupId</code>等指定数据的分组，还可以实现诸如下钻，聚合等一对多或者多对一的动画。</p>
+     * <p>可以直接在系列中配置 <code class="codespan">universalTransition: true</code> 开启该功能。也可以提供一个对象进行更多属性的配置。</p>
+     */
+    private UniversalTransition universalTransition;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.tooltip">https://echarts.apache.org/zh/option.html#series-bar.tooltip</a>
-     * <br/>序号: 51
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

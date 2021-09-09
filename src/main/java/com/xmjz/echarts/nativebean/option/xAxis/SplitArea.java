@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.splitArea">https://echarts.apache.org/zh/option.html#xAxis.splitArea</a>
- * <br/>序号: 32
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -24,7 +23,6 @@ public class SplitArea implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.splitArea.interval">https://echarts.apache.org/zh/option.html#xAxis.splitArea.interval</a>
-     * <br/>序号: 1
      * <br/>默认值: auto
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -40,7 +38,6 @@ public class SplitArea implements Serializable {
     private Object interval;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.splitArea.show">https://echarts.apache.org/zh/option.html#xAxis.splitArea.show</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -49,7 +46,6 @@ public class SplitArea implements Serializable {
     private Boolean show;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.splitArea.areaStyle">https://echarts.apache.org/zh/option.html#xAxis.splitArea.areaStyle</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.labelLine">https://echarts.apache.org/zh/option.html#series-themeRiver.labelLine</a>
- * <br/>序号: 16
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -24,7 +23,6 @@ public class LabelLine implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.labelLine.show">https://echarts.apache.org/zh/option.html#series-themeRiver.labelLine.show</a>
-     * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -33,7 +31,6 @@ public class LabelLine implements Serializable {
     private Boolean show;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.labelLine.showAbove">https://echarts.apache.org/zh/option.html#series-themeRiver.labelLine.showAbove</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -42,7 +39,6 @@ public class LabelLine implements Serializable {
     private Boolean showAbove;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.labelLine.length2">https://echarts.apache.org/zh/option.html#series-themeRiver.labelLine.length2</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -51,7 +47,6 @@ public class LabelLine implements Serializable {
     private Integer length2;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.labelLine.smooth">https://echarts.apache.org/zh/option.html#series-themeRiver.labelLine.smooth</a>
-     * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","number"]
      * <br/>描述:
@@ -60,7 +55,6 @@ public class LabelLine implements Serializable {
     private Object smooth;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.labelLine.minTurnAngle">https://echarts.apache.org/zh/option.html#series-themeRiver.labelLine.minTurnAngle</a>
-     * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -70,7 +64,6 @@ public class LabelLine implements Serializable {
     private Integer minTurnAngle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-themeRiver.labelLine.lineStyle">https://echarts.apache.org/zh/option.html#series-themeRiver.labelLine.lineStyle</a>
-     * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

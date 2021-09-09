@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.select">https://echarts.apache.org/zh/option.html#series-lines.select</a>
- * <br/>序号: 19
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -27,7 +26,6 @@ public class Select implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.select.lineStyle">https://echarts.apache.org/zh/option.html#series-lines.select.lineStyle</a>
-     * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -35,7 +33,6 @@ public class Select implements Serializable {
     private Object lineStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.select.label">https://echarts.apache.org/zh/option.html#series-lines.select.label</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

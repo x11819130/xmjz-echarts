@@ -9,7 +9,6 @@ import java.util.List;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.pointer">https://echarts.apache.org/zh/option.html#series-gauge.pointer</a>
- * <br/>序号: 21
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -25,7 +24,6 @@ public class Pointer implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.pointer.show">https://echarts.apache.org/zh/option.html#series-gauge.pointer.show</a>
-     * <br/>序号: 1
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -33,8 +31,20 @@ public class Pointer implements Serializable {
      */
     private Boolean show;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.pointer.showAbove">https://echarts.apache.org/zh/option.html#series-gauge.pointer.showAbove</a>
+     * <br/>默认值: true
+     * <br/>js类型: ["boolean"]
+     * <br/>描述:
+     * <blockquote>
+     * <p>从 <code class="codespan">v5.2.0</code> 开始支持</p>
+     * </blockquote>
+     *
+     *
+     * <p>指针是否显示在标题和仪表盘详情上方。</p>
+     */
+    private Boolean showAbove;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.pointer.icon">https://echarts.apache.org/zh/option.html#series-gauge.pointer.icon</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -56,7 +66,6 @@ public class Pointer implements Serializable {
     private String icon;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.pointer.offsetCenter">https://echarts.apache.org/zh/option.html#series-gauge.pointer.offsetCenter</a>
-     * <br/>序号: 3
      * <br/>默认值: [0,0]
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -70,7 +79,6 @@ public class Pointer implements Serializable {
     private List<?> offsetCenter;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.pointer.length">https://echarts.apache.org/zh/option.html#series-gauge.pointer.length</a>
-     * <br/>序号: 4
      * <br/>默认值: 60%
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -79,7 +87,6 @@ public class Pointer implements Serializable {
     private Object length;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.pointer.width">https://echarts.apache.org/zh/option.html#series-gauge.pointer.width</a>
-     * <br/>序号: 5
      * <br/>默认值: 6
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -88,7 +95,6 @@ public class Pointer implements Serializable {
     private Integer width;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.pointer.keepAspect">https://echarts.apache.org/zh/option.html#series-gauge.pointer.keepAspect</a>
-     * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -102,7 +108,6 @@ public class Pointer implements Serializable {
     private Boolean keepAspect;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.pointer.itemStyle">https://echarts.apache.org/zh/option.html#series-gauge.pointer.itemStyle</a>
-     * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

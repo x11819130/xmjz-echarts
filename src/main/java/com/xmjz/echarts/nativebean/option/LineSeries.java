@@ -10,7 +10,6 @@ import java.util.List;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line">https://echarts.apache.org/zh/option.html#series-line</a>
- * <br/>序号: 0
  * <br/>默认值: 无
  * <br/>js类型: ["object"]
  * <br/>描述:
@@ -18,7 +17,7 @@ import java.util.List;
  * <p>折线图是用折线将各个数据点<a href="#series-line.symbol">标志</a>连接起来的图表，用于展现数据的变化趋势。可用于<a href="#grid">直角坐标系</a>和<a href="#polar">极坐标系</a>上。</p>
  * <p><strong>Tip:</strong> 设置 <a href="#series-line.areaStyle">areaStyle</a> 后可以绘制面积图。</p>
  * <p><strong>Tip:</strong> 配合分段型 <a href="#visualMap-piecewise">visualMap</a> 组件可以将折线/面积图通过不同颜色分区间。如下示例</p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-aqi&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="17"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-aqi&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="18"></iframe>
  *
  * @author auto
  */
@@ -30,7 +29,6 @@ public class LineSeries extends Series implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.type">https://echarts.apache.org/zh/option.html#series-line.type</a>
-     * <br/>序号: 1
      * <br/>默认值: line
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -38,7 +36,6 @@ public class LineSeries extends Series implements Serializable {
     private String type;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.id">https://echarts.apache.org/zh/option.html#series-line.id</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -47,7 +44,6 @@ public class LineSeries extends Series implements Serializable {
     private String id;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.name">https://echarts.apache.org/zh/option.html#series-line.name</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -55,8 +51,22 @@ public class LineSeries extends Series implements Serializable {
      */
     private String name;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.colorBy">https://echarts.apache.org/zh/option.html#series-line.colorBy</a>
+     * <br/>默认值: series
+     * <br/>js类型: ["string"]
+     * <br/>描述:
+     * <blockquote>
+     * <p>从 <code class="codespan">v5.2.0</code> 开始支持</p>
+     * </blockquote>
+     * <p>从调色盘 <a href="#color">option.color</a> 中取色的策略，可取值为：</p>
+     * <ul>
+     * <li><code class="codespan">'series'</code>：按照系列分配调色盘中的颜色，同一系列中的所有数据都是用相同的颜色；</li>
+     * <li><code class="codespan">'data'</code>：按照数据项分配调色盘中的颜色，每个数据项都使用不同的颜色。</li>
+     * </ul>
+     */
+    private String colorBy;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.coordinateSystem">https://echarts.apache.org/zh/option.html#series-line.coordinateSystem</a>
-     * <br/>序号: 4
      * <br/>默认值: cartesian2d
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -75,7 +85,6 @@ public class LineSeries extends Series implements Serializable {
     private String coordinateSystem;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.xAxisIndex">https://echarts.apache.org/zh/option.html#series-line.xAxisIndex</a>
-     * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -89,7 +98,6 @@ public class LineSeries extends Series implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.yAxisIndex">https://echarts.apache.org/zh/option.html#series-line.yAxisIndex</a>
-     * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -103,7 +111,6 @@ public class LineSeries extends Series implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.polarIndex">https://echarts.apache.org/zh/option.html#series-line.polarIndex</a>
-     * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -112,7 +119,6 @@ public class LineSeries extends Series implements Serializable {
     private Integer polarIndex;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.symbol">https://echarts.apache.org/zh/option.html#series-line.symbol</a>
-     * <br/>序号: 8
      * <br/>默认值: emptyCircle
      * <br/>js类型: ["string","Function"]
      * <br/>描述:
@@ -135,7 +141,6 @@ public class LineSeries extends Series implements Serializable {
     private Object symbol;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.symbolSize">https://echarts.apache.org/zh/option.html#series-line.symbolSize</a>
-     * <br/>序号: 9
      * <br/>默认值: 4
      * <br/>js类型: ["number","Array","Function"]
      * <br/>描述:
@@ -148,7 +153,6 @@ public class LineSeries extends Series implements Serializable {
     private Object symbolSize;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.symbolRotate">https://echarts.apache.org/zh/option.html#series-line.symbolRotate</a>
-     * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -164,7 +168,6 @@ public class LineSeries extends Series implements Serializable {
     private Object symbolRotate;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.symbolKeepAspect">https://echarts.apache.org/zh/option.html#series-line.symbolKeepAspect</a>
-     * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -173,17 +176,15 @@ public class LineSeries extends Series implements Serializable {
     private Boolean symbolKeepAspect;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.symbolOffset">https://echarts.apache.org/zh/option.html#series-line.symbolOffset</a>
-     * <br/>序号: 12
      * <br/>默认值: [0,0]
      * <br/>js类型: ["Array"]
      * <br/>描述:
      * <p>标记相对于原本位置的偏移。默认情况下，标记会居中置放在数据对应的位置，但是如果 symbol 是自定义的矢量路径或者图片，就有可能不希望 symbol 居中。这时候可以使用该配置项配置 symbol 相对于原本居中的偏移，可以是绝对的像素值，也可以是相对的百分比。</p>
-     * <p>例如 <code class="codespan">[0, '50%']</code> 就是把自己向上移动了一半的位置，在 symbol 图形是气泡的时候可以让图形下端的箭头对准数据点。</p>
+     * <p>例如 <code class="codespan">[0, '-50%']</code> 就是把自己向上移动了一半的位置，在 symbol 图形是气泡的时候可以让图形下端的箭头对准数据点。</p>
      */
     private List<?> symbolOffset;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.showSymbol">https://echarts.apache.org/zh/option.html#series-line.showSymbol</a>
-     * <br/>序号: 13
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -192,7 +193,6 @@ public class LineSeries extends Series implements Serializable {
     private Boolean showSymbol;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.showAllSymbol">https://echarts.apache.org/zh/option.html#series-line.showAllSymbol</a>
-     * <br/>序号: 14
      * <br/>默认值: auto
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -207,7 +207,6 @@ public class LineSeries extends Series implements Serializable {
     private Boolean showAllSymbol;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.legendHoverLink">https://echarts.apache.org/zh/option.html#series-line.legendHoverLink</a>
-     * <br/>序号: 15
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -216,7 +215,6 @@ public class LineSeries extends Series implements Serializable {
     private Boolean legendHoverLink;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.stack">https://echarts.apache.org/zh/option.html#series-line.stack</a>
-     * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -227,7 +225,6 @@ public class LineSeries extends Series implements Serializable {
     private String stack;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.cursor">https://echarts.apache.org/zh/option.html#series-line.cursor</a>
-     * <br/>序号: 17
      * <br/>默认值: pointer
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -236,7 +233,6 @@ public class LineSeries extends Series implements Serializable {
     private String cursor;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.connectNulls">https://echarts.apache.org/zh/option.html#series-line.connectNulls</a>
-     * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -245,7 +241,6 @@ public class LineSeries extends Series implements Serializable {
     private Boolean connectNulls;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.clip">https://echarts.apache.org/zh/option.html#series-line.clip</a>
-     * <br/>序号: 19
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -254,7 +249,7 @@ public class LineSeries extends Series implements Serializable {
      * </blockquote>
      * <p>是否裁剪超出坐标系部分的图形，具体裁剪效果根据系列决定：</p>
      * <ul>
-     * <li>散点图：忽略中心点超出坐标系的图形，但是不裁剪单个图形</li>
+     * <li>散点图/带有涟漪特效动画的散点（气泡）图：忽略中心点超出坐标系的图形，但是不裁剪单个图形</li>
      * <li>柱状图：裁掉完全超出的柱子，但是不会裁剪只超出部分的柱子</li>
      * <li>折线图：裁掉所有超出坐标系的折线部分，拐点图形的逻辑按照散点图处理</li>
      * <li>路径图：裁掉所有超出坐标系的部分</li>
@@ -266,7 +261,6 @@ public class LineSeries extends Series implements Serializable {
     private Boolean clip;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.step">https://echarts.apache.org/zh/option.html#series-line.step</a>
-     * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["string","boolean"]
      * <br/>描述:
@@ -277,7 +271,6 @@ public class LineSeries extends Series implements Serializable {
     private Object step;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.label">https://echarts.apache.org/zh/option.html#series-line.label</a>
-     * <br/>序号: 21
      * <br/>默认值: top
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -286,16 +279,17 @@ public class LineSeries extends Series implements Serializable {
     private Label label;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.endLabel">https://echarts.apache.org/zh/option.html#series-line.endLabel</a>
-     * <br/>序号: 22
      * <br/>默认值: 5
      * <br/>js类型: ["Object"]
      * <br/>描述:
+     * <blockquote>
+     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
+     * </blockquote>
      * <p>折线端点的标签。</p>
      */
     private EndLabel endLabel;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.labelLine">https://echarts.apache.org/zh/option.html#series-line.labelLine</a>
-     * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -304,7 +298,6 @@ public class LineSeries extends Series implements Serializable {
     private LabelLine labelLine;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.labelLayout">https://echarts.apache.org/zh/option.html#series-line.labelLayout</a>
-     * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["Object","Function"]
      * <br/>描述:
@@ -357,7 +350,6 @@ public class LineSeries extends Series implements Serializable {
     private LabelLayout labelLayout;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.itemStyle">https://echarts.apache.org/zh/option.html#series-line.itemStyle</a>
-     * <br/>序号: 25
      * <br/>默认值: 自适应
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -366,7 +358,6 @@ public class LineSeries extends Series implements Serializable {
     private ItemStyle itemStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.lineStyle">https://echarts.apache.org/zh/option.html#series-line.lineStyle</a>
-     * <br/>序号: 26
      * <br/>默认值: #000
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -376,7 +367,6 @@ public class LineSeries extends Series implements Serializable {
     private LineStyle lineStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.areaStyle">https://echarts.apache.org/zh/option.html#series-line.areaStyle</a>
-     * <br/>序号: 27
      * <br/>默认值: #000
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -385,7 +375,6 @@ public class LineSeries extends Series implements Serializable {
     private AreaStyle areaStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.emphasis">https://echarts.apache.org/zh/option.html#series-line.emphasis</a>
-     * <br/>序号: 28
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -394,7 +383,6 @@ public class LineSeries extends Series implements Serializable {
     private Emphasis emphasis;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.blur">https://echarts.apache.org/zh/option.html#series-line.blur</a>
-     * <br/>序号: 29
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -406,7 +394,6 @@ public class LineSeries extends Series implements Serializable {
     private Blur blur;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.select">https://echarts.apache.org/zh/option.html#series-line.select</a>
-     * <br/>序号: 30
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -418,7 +405,6 @@ public class LineSeries extends Series implements Serializable {
     private Select select;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.selectedMode">https://echarts.apache.org/zh/option.html#series-line.selectedMode</a>
-     * <br/>序号: 31
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","string"]
      * <br/>描述:
@@ -432,7 +418,6 @@ public class LineSeries extends Series implements Serializable {
     private Object selectedMode;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.smooth">https://echarts.apache.org/zh/option.html#series-line.smooth</a>
-     * <br/>序号: 32
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","number"]
      * <br/>描述:
@@ -443,7 +428,6 @@ public class LineSeries extends Series implements Serializable {
     private Object smooth;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.smoothMonotone">https://echarts.apache.org/zh/option.html#series-line.smoothMonotone</a>
-     * <br/>序号: 33
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -462,7 +446,6 @@ public class LineSeries extends Series implements Serializable {
     private String smoothMonotone;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.sampling">https://echarts.apache.org/zh/option.html#series-line.sampling</a>
-     * <br/>序号: 34
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -479,7 +462,6 @@ public class LineSeries extends Series implements Serializable {
     private String sampling;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.dimensions">https://echarts.apache.org/zh/option.html#series-line.dimensions</a>
-     * <br/>序号: 35
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -537,7 +519,6 @@ public class LineSeries extends Series implements Serializable {
     private List<?> dimensions;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.encode">https://echarts.apache.org/zh/option.html#series-line.encode</a>
-     * <br/>序号: 36
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -578,12 +559,14 @@ public class LineSeries extends Series implements Serializable {
      * <span class="hljs-attr">encode</span>: {
      *     <span class="hljs-comment">// 使用 “名为 product 的维度” 和 “名为 score 的维度” 的值在 tooltip 中显示</span>
      *     <span class="hljs-attr">tooltip</span>: [<span class="hljs-string">'product'</span>, <span class="hljs-string">'score'</span>]
-     *     <span class="hljs-comment">// 使用 “维度 1” 和 “维度 3” 的维度名连起来作为系列名。（有时候名字比较长，这可以避免在 series.name 重复输入这些名字）</span>
+     *     <span class="hljs-comment">// 使用第一个维度和第三个维度的维度名连起来作为系列名。（有时候名字比较长，这可以避免在 series.name 重复输入这些名字）</span>
      *     <span class="hljs-attr">seriesName</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">3</span>],
-     *     <span class="hljs-comment">// 表示使用 “维度2” 中的值作为 id。这在使用 setOption 动态更新数据时有用处，可以使新老数据用 id 对应起来，从而能够产生合适的数据更新动画。</span>
+     *     <span class="hljs-comment">// 表示使用第二个维度中的值作为 id。这在使用 setOption 动态更新数据时有用处，可以使新老数据用 id 对应起来，从而能够产生合适的数据更新动画。</span>
      *     <span class="hljs-attr">itemId</span>: <span class="hljs-number">2</span>,
-     *     <span class="hljs-comment">// 指定数据项的名称使用 “维度3” 在饼图等图表中有用，可以使这个名字显示在图例（legend）中。</span>
-     *     <span class="hljs-attr">itemName</span>: <span class="hljs-number">3</span>
+     *     <span class="hljs-comment">// 指定数据项的名称使用第三个维度在饼图等图表中有用，可以使这个名字显示在图例（legend）中。</span>
+     *     <span class="hljs-attr">itemName</span>: <span class="hljs-number">3</span>,
+     *     <span class="hljs-comment">// 指定数据项的组 ID (groupID)，组 ID 会被用于分类数据，并在全局过渡动画中决定如何进行合并和分裂动画，具体见 universalTransition</span>
+     *     <span class="hljs-attr">itemGroupId</span>: <span class="hljs-number">4</span>
      * }
      *
      * <span class="hljs-comment">// 直角坐标系（grid/cartesian）特有的属性：</span>
@@ -655,7 +638,6 @@ public class LineSeries extends Series implements Serializable {
     private Object encode;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.seriesLayoutBy">https://echarts.apache.org/zh/option.html#series-line.seriesLayoutBy</a>
-     * <br/>序号: 37
      * <br/>默认值: column
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -669,7 +651,6 @@ public class LineSeries extends Series implements Serializable {
     private String seriesLayoutBy;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.datasetIndex">https://echarts.apache.org/zh/option.html#series-line.datasetIndex</a>
-     * <br/>序号: 38
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -677,8 +658,16 @@ public class LineSeries extends Series implements Serializable {
      */
     private Integer datasetIndex;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.dataGroupId">https://echarts.apache.org/zh/option.html#series-line.dataGroupId</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["string"]
+     * <br/>描述:
+     * <p>该系列所有数据共有的组 ID。组 ID 会被用于分类数据，并在全局过渡动画中决定如何进行合并和分裂动画。</p>
+     * <p>如果你使用了<a href="#dataset">dataset</a>组件来表达数据，推荐使用<code class="codespan">encode.itemGroupID</code>来指定哪个维度被编码为组 ID。</p>
+     */
+    private String dataGroupId;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.data">https://echarts.apache.org/zh/option.html#series-line.data</a>
-     * <br/>序号: 39
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -801,7 +790,6 @@ public class LineSeries extends Series implements Serializable {
     private List<?> data;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.markPoint">https://echarts.apache.org/zh/option.html#series-line.markPoint</a>
-     * <br/>序号: 40
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -810,7 +798,6 @@ public class LineSeries extends Series implements Serializable {
     private Object markPoint;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.markLine">https://echarts.apache.org/zh/option.html#series-line.markLine</a>
-     * <br/>序号: 41
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -819,7 +806,6 @@ public class LineSeries extends Series implements Serializable {
     private Object markLine;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.markArea">https://echarts.apache.org/zh/option.html#series-line.markArea</a>
-     * <br/>序号: 42
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -828,7 +814,6 @@ public class LineSeries extends Series implements Serializable {
     private Object markArea;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.zlevel">https://echarts.apache.org/zh/option.html#series-line.zlevel</a>
-     * <br/>序号: 43
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -839,7 +824,6 @@ public class LineSeries extends Series implements Serializable {
     private Integer zlevel;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.z">https://echarts.apache.org/zh/option.html#series-line.z</a>
-     * <br/>序号: 44
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -849,7 +833,6 @@ public class LineSeries extends Series implements Serializable {
     private Integer z;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.silent">https://echarts.apache.org/zh/option.html#series-line.silent</a>
-     * <br/>序号: 45
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -858,7 +841,6 @@ public class LineSeries extends Series implements Serializable {
     private Boolean silent;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.animation">https://echarts.apache.org/zh/option.html#series-line.animation</a>
-     * <br/>序号: 46
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -867,7 +849,6 @@ public class LineSeries extends Series implements Serializable {
     private Boolean animation;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.animationThreshold">https://echarts.apache.org/zh/option.html#series-line.animationThreshold</a>
-     * <br/>序号: 47
      * <br/>默认值: 2000
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -876,7 +857,6 @@ public class LineSeries extends Series implements Serializable {
     private Integer animationThreshold;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.animationDuration">https://echarts.apache.org/zh/option.html#series-line.animationDuration</a>
-     * <br/>序号: 48
      * <br/>默认值: 1000
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -890,7 +870,6 @@ public class LineSeries extends Series implements Serializable {
     private Object animationDuration;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.animationEasing">https://echarts.apache.org/zh/option.html#series-line.animationEasing</a>
-     * <br/>序号: 49
      * <br/>默认值: linear
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -899,7 +878,6 @@ public class LineSeries extends Series implements Serializable {
     private String animationEasing;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.animationDelay">https://echarts.apache.org/zh/option.html#series-line.animationDelay</a>
-     * <br/>序号: 50
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -915,7 +893,6 @@ public class LineSeries extends Series implements Serializable {
     private Object animationDelay;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.animationDurationUpdate">https://echarts.apache.org/zh/option.html#series-line.animationDurationUpdate</a>
-     * <br/>序号: 51
      * <br/>默认值: 300
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -930,7 +907,6 @@ public class LineSeries extends Series implements Serializable {
     private Object animationDurationUpdate;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.animationEasingUpdate">https://echarts.apache.org/zh/option.html#series-line.animationEasingUpdate</a>
-     * <br/>序号: 52
      * <br/>默认值: cubicInOut
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -939,7 +915,6 @@ public class LineSeries extends Series implements Serializable {
     private String animationEasingUpdate;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.animationDelayUpdate">https://echarts.apache.org/zh/option.html#series-line.animationDelayUpdate</a>
-     * <br/>序号: 53
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -954,8 +929,18 @@ public class LineSeries extends Series implements Serializable {
      */
     private Object animationDelayUpdate;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.universalTransition">https://echarts.apache.org/zh/option.html#series-line.universalTransition</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["object"]
+     * <br/>描述:
+     * <p>全局过渡动画相关的配置。</p>
+     * <p>全局过渡动画（Universal Transition）提供了任意系列之间进行变形动画的功能。开启该功能后，每次<code class="codespan">setOption</code>，相同<code class="codespan">id</code>的系列之间会自动关联进行动画的过渡，更细粒度的关联配置见<code class="codespan">universalTransition.seriesKey</code>配置。</p>
+     * <p>通过配置<code class="codespan">encode.itemGroupId</code>或者<code class="codespan">dataGroupId</code>等指定数据的分组，还可以实现诸如下钻，聚合等一对多或者多对一的动画。</p>
+     * <p>可以直接在系列中配置 <code class="codespan">universalTransition: true</code> 开启该功能。也可以提供一个对象进行更多属性的配置。</p>
+     */
+    private UniversalTransition universalTransition;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-line.tooltip">https://echarts.apache.org/zh/option.html#series-line.tooltip</a>
-     * <br/>序号: 54
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

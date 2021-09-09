@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.feature">https://echarts.apache.org/zh/option.html#toolbox.feature</a>
- * <br/>序号: 7
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -49,7 +48,6 @@ public class Feature implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.feature.saveAsImage">https://echarts.apache.org/zh/option.html#toolbox.feature.saveAsImage</a>
-     * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -58,7 +56,6 @@ public class Feature implements Serializable {
     private Object saveAsImage;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.feature.restore">https://echarts.apache.org/zh/option.html#toolbox.feature.restore</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -67,7 +64,6 @@ public class Feature implements Serializable {
     private Object restore;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.feature.dataView">https://echarts.apache.org/zh/option.html#toolbox.feature.dataView</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -76,7 +72,6 @@ public class Feature implements Serializable {
     private Object dataView;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.feature.dataZoom">https://echarts.apache.org/zh/option.html#toolbox.feature.dataZoom</a>
-     * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -85,7 +80,6 @@ public class Feature implements Serializable {
     private Object dataZoom;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.feature.magicType">https://echarts.apache.org/zh/option.html#toolbox.feature.magicType</a>
-     * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -93,7 +87,7 @@ public class Feature implements Serializable {
      * <strong>示例：</strong></p>
      * <pre><code class="lang-js hljs javascript">feature: {
      *     <span class="hljs-attr">magicType</span>: {
-     *         <span class="hljs-attr">type</span>: [<span class="hljs-string">'line'</span>, <span class="hljs-string">'bar'</span>, <span class="hljs-string">'stack'</span>, <span class="hljs-string">'tiled'</span>]
+     *         <span class="hljs-attr">type</span>: [<span class="hljs-string">'line'</span>, <span class="hljs-string">'bar'</span>, <span class="hljs-string">'stack'</span>]
      *     }
      * }
      * </code></pre>
@@ -101,7 +95,6 @@ public class Feature implements Serializable {
     private Object magicType;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.feature.brush">https://echarts.apache.org/zh/option.html#toolbox.feature.brush</a>
-     * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

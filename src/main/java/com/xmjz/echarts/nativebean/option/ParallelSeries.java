@@ -11,7 +11,6 @@ import java.util.List;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel">https://echarts.apache.org/zh/option.html#series-parallel</a>
- * <br/>序号: 0
  * <br/>默认值: 无
  * <br/>js类型: ["object"]
  * <br/>描述:
@@ -33,7 +32,7 @@ import java.util.List;
  * </code></pre>
  * <p>数据中，每一行是一个『数据项』，每一列属于一个『维度』。（例如上面数据每一列的含义分别是：『日期』,『AQI指数』, 『PM2.5』, 『PM10』, 『一氧化碳值』, 『二氧化氮值』, 『二氧化硫值』）。</p>
  * <p>平行坐标系适用于对这种多维数据进行可视化分析。每一个维度（每一列）对应一个坐标轴，每一个『数据项』是一条线，贯穿多个坐标轴。在坐标轴上，可以进行数据选取等操作。如下：</p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/parallel-all&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="17"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/parallel-all&amp;edit=1&amp;reset=1" width="600" height="400"></iframe>
  *
  *
  * <p><strong>配置方式概要</strong></p>
@@ -129,7 +128,6 @@ public class ParallelSeries extends Series implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.type">https://echarts.apache.org/zh/option.html#series-parallel.type</a>
-     * <br/>序号: 1
      * <br/>默认值: parallel
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -137,7 +135,6 @@ public class ParallelSeries extends Series implements Serializable {
     private String type;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.id">https://echarts.apache.org/zh/option.html#series-parallel.id</a>
-     * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -146,7 +143,6 @@ public class ParallelSeries extends Series implements Serializable {
     private String id;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.coordinateSystem">https://echarts.apache.org/zh/option.html#series-parallel.coordinateSystem</a>
-     * <br/>序号: 3
      * <br/>默认值: parallel
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -160,7 +156,6 @@ public class ParallelSeries extends Series implements Serializable {
     private String coordinateSystem;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.parallelIndex">https://echarts.apache.org/zh/option.html#series-parallel.parallelIndex</a>
-     * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -169,7 +164,6 @@ public class ParallelSeries extends Series implements Serializable {
     private Integer parallelIndex;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.name">https://echarts.apache.org/zh/option.html#series-parallel.name</a>
-     * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -177,8 +171,22 @@ public class ParallelSeries extends Series implements Serializable {
      */
     private String name;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.colorBy">https://echarts.apache.org/zh/option.html#series-parallel.colorBy</a>
+     * <br/>默认值: series
+     * <br/>js类型: ["string"]
+     * <br/>描述:
+     * <blockquote>
+     * <p>从 <code class="codespan">v5.2.0</code> 开始支持</p>
+     * </blockquote>
+     * <p>从调色盘 <a href="#color">option.color</a> 中取色的策略，可取值为：</p>
+     * <ul>
+     * <li><code class="codespan">'series'</code>：按照系列分配调色盘中的颜色，同一系列中的所有数据都是用相同的颜色；</li>
+     * <li><code class="codespan">'data'</code>：按照数据项分配调色盘中的颜色，每个数据项都使用不同的颜色。</li>
+     * </ul>
+     */
+    private String colorBy;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.lineStyle">https://echarts.apache.org/zh/option.html#series-parallel.lineStyle</a>
-     * <br/>序号: 6
      * <br/>默认值: #000
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -187,7 +195,6 @@ public class ParallelSeries extends Series implements Serializable {
     private LineStyle lineStyle;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.emphasis">https://echarts.apache.org/zh/option.html#series-parallel.emphasis</a>
-     * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -195,7 +202,6 @@ public class ParallelSeries extends Series implements Serializable {
     private Emphasis emphasis;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.inactiveOpacity">https://echarts.apache.org/zh/option.html#series-parallel.inactiveOpacity</a>
-     * <br/>序号: 8
      * <br/>默认值: 0.05
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -204,7 +210,6 @@ public class ParallelSeries extends Series implements Serializable {
     private Integer inactiveOpacity;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.activeOpacity">https://echarts.apache.org/zh/option.html#series-parallel.activeOpacity</a>
-     * <br/>序号: 9
      * <br/>默认值: 1
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -213,7 +218,6 @@ public class ParallelSeries extends Series implements Serializable {
     private Integer activeOpacity;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.realtime">https://echarts.apache.org/zh/option.html#series-parallel.realtime</a>
-     * <br/>序号: 10
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -222,7 +226,6 @@ public class ParallelSeries extends Series implements Serializable {
     private Boolean realtime;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.smooth">https://echarts.apache.org/zh/option.html#series-parallel.smooth</a>
-     * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","number"]
      * <br/>描述:
@@ -231,7 +234,6 @@ public class ParallelSeries extends Series implements Serializable {
     private Object smooth;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.progressive">https://echarts.apache.org/zh/option.html#series-parallel.progressive</a>
-     * <br/>序号: 12
      * <br/>默认值: 500
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -242,7 +244,6 @@ public class ParallelSeries extends Series implements Serializable {
     private Integer progressive;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.progressiveThreshold">https://echarts.apache.org/zh/option.html#series-parallel.progressiveThreshold</a>
-     * <br/>序号: 13
      * <br/>默认值: 3000
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -251,7 +252,6 @@ public class ParallelSeries extends Series implements Serializable {
     private Integer progressiveThreshold;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.progressiveChunkMode">https://echarts.apache.org/zh/option.html#series-parallel.progressiveChunkMode</a>
-     * <br/>序号: 14
      * <br/>默认值: sequential
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -264,7 +264,6 @@ public class ParallelSeries extends Series implements Serializable {
     private String progressiveChunkMode;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.data">https://echarts.apache.org/zh/option.html#series-parallel.data</a>
-     * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -286,7 +285,6 @@ public class ParallelSeries extends Series implements Serializable {
     private List<?> data;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.zlevel">https://echarts.apache.org/zh/option.html#series-parallel.zlevel</a>
-     * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -297,7 +295,6 @@ public class ParallelSeries extends Series implements Serializable {
     private Integer zlevel;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.z">https://echarts.apache.org/zh/option.html#series-parallel.z</a>
-     * <br/>序号: 17
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -307,7 +304,6 @@ public class ParallelSeries extends Series implements Serializable {
     private Integer z;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.silent">https://echarts.apache.org/zh/option.html#series-parallel.silent</a>
-     * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -316,7 +312,6 @@ public class ParallelSeries extends Series implements Serializable {
     private Boolean silent;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.animation">https://echarts.apache.org/zh/option.html#series-parallel.animation</a>
-     * <br/>序号: 19
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -325,7 +320,6 @@ public class ParallelSeries extends Series implements Serializable {
     private Boolean animation;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.animationThreshold">https://echarts.apache.org/zh/option.html#series-parallel.animationThreshold</a>
-     * <br/>序号: 20
      * <br/>默认值: 2000
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -334,7 +328,6 @@ public class ParallelSeries extends Series implements Serializable {
     private Integer animationThreshold;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.animationDuration">https://echarts.apache.org/zh/option.html#series-parallel.animationDuration</a>
-     * <br/>序号: 21
      * <br/>默认值: 1000
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -348,7 +341,6 @@ public class ParallelSeries extends Series implements Serializable {
     private Object animationDuration;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.animationEasing">https://echarts.apache.org/zh/option.html#series-parallel.animationEasing</a>
-     * <br/>序号: 22
      * <br/>默认值: linear
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -357,7 +349,6 @@ public class ParallelSeries extends Series implements Serializable {
     private String animationEasing;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.animationDelay">https://echarts.apache.org/zh/option.html#series-parallel.animationDelay</a>
-     * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -373,7 +364,6 @@ public class ParallelSeries extends Series implements Serializable {
     private Object animationDelay;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.animationDurationUpdate">https://echarts.apache.org/zh/option.html#series-parallel.animationDurationUpdate</a>
-     * <br/>序号: 24
      * <br/>默认值: 300
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -388,7 +378,6 @@ public class ParallelSeries extends Series implements Serializable {
     private Object animationDurationUpdate;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.animationEasingUpdate">https://echarts.apache.org/zh/option.html#series-parallel.animationEasingUpdate</a>
-     * <br/>序号: 25
      * <br/>默认值: cubicInOut
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -397,7 +386,6 @@ public class ParallelSeries extends Series implements Serializable {
     private String animationEasingUpdate;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.animationDelayUpdate">https://echarts.apache.org/zh/option.html#series-parallel.animationDelayUpdate</a>
-     * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
      * <br/>描述:

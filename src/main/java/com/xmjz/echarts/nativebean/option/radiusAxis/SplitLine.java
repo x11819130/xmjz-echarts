@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.splitLine">https://echarts.apache.org/zh/option.html#radiusAxis.splitLine</a>
- * <br/>序号: 25
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -24,7 +23,6 @@ public class SplitLine implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.splitLine.show">https://echarts.apache.org/zh/option.html#radiusAxis.splitLine.show</a>
-     * <br/>序号: 1
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -33,7 +31,6 @@ public class SplitLine implements Serializable {
     private Boolean show;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.splitLine.interval">https://echarts.apache.org/zh/option.html#radiusAxis.splitLine.interval</a>
-     * <br/>序号: 2
      * <br/>默认值: auto
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -49,7 +46,6 @@ public class SplitLine implements Serializable {
     private Object interval;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.splitLine.lineStyle">https://echarts.apache.org/zh/option.html#radiusAxis.splitLine.lineStyle</a>
-     * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
