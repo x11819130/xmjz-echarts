@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>树图中每个节点的样式，其中 <a href="#series-tree.itemStyle.color">itemStyle.color</a> 表示节点的填充色，用来区别当前节点所对应的子树折叠或展开的状态。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

@@ -16,7 +16,6 @@ import java.io.Serializable;
  * <p>从 5.0 开始, <a href="#series-sankey.lineStyle.color">lineStyle.color</a> 还可以设置为<code class="codespan">'gradient'</code>，取从源节点到目标节点的渐变色。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

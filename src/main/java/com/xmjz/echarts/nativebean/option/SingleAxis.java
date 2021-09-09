@@ -19,7 +19,6 @@ import java.util.List;
  * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-single-axis&amp;edit=1&amp;reset=1" width="700" height="500"></iframe>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

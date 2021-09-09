@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>公用的 icon 样式设置。由于 icon 的文本信息只在 icon hover 时候才显示，所以文字相关的配置项请在 <code class="codespan">emphasis</code> 下设置。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

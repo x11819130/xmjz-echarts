@@ -18,7 +18,6 @@ import java.io.Serializable;
  * <p>数据选中时的图形样式和标签样式。开启 <a href="#series-funnel.selectedMode">selectedMode</a> 后有效。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

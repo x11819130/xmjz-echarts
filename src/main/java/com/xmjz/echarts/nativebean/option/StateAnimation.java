@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>状态切换的动画配置，支持在每个系列里设置单独针对该系列的配置。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

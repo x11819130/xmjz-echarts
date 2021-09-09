@@ -18,7 +18,6 @@ import java.util.List;
  * <p>直角坐标系 grid 中的 y 轴，一般情况下单个 grid 组件最多只能放左右两个 y 轴，多于两个 y 轴需要通过配置 <a href="#yAxis.offset">offset</a> 属性防止同个位置多个 Y 轴的重叠。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

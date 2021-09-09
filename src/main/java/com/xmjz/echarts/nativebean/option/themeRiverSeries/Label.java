@@ -16,7 +16,6 @@ import java.util.List;
  * <p><code class="codespan">label</code> 描述了主题河流中每个带状河流分支对应的文本标签的样式。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

@@ -18,7 +18,6 @@ import java.io.Serializable;
  * <p>默认关闭，需要通过将 <a href="#aria.enabled">aria.enabled</a> 设置为 <code class="codespan">true</code> 开启。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

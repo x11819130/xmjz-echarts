@@ -16,7 +16,6 @@ import java.util.List;
  * <p>『当前项』（<code class="codespan">checkpoint</code>）的图形样式。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

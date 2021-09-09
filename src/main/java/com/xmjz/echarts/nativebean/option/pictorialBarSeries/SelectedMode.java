@@ -20,7 +20,6 @@ import java.io.Serializable;
  * <p>选中模式的配置，表示是否支持多个选中，默认关闭，支持布尔值和字符串，字符串取值可选<code class="codespan">'single'</code>，<code class="codespan">'multiple'</code>，分别表示单选还是多选。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

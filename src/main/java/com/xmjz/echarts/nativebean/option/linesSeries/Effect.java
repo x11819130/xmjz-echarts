@@ -16,7 +16,6 @@ import java.io.Serializable;
  * <p><strong>注意：</strong> 所有带有尾迹特效的图表需要单独放在一个层，也就是需要单独设置 <a href="#series-lines.zlevel">zlevel</a>，同时建议关闭该层的动画（<a href="#series-lines.animation">animation</a>: false）。不然位于同个层的其它系列的图形，和动画的<a href="#series-lines.label">标签</a>也会产生不必要的残影。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

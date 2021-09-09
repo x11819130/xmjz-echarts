@@ -16,7 +16,6 @@ import java.util.List;
  * <p><code class="codespan">label</code> 描述了每个矩形节点中文本标签的样式。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

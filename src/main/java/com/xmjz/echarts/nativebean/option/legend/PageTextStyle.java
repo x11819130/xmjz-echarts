@@ -16,7 +16,6 @@ import java.io.Serializable;
  * <p>图例页信息的文字样式。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

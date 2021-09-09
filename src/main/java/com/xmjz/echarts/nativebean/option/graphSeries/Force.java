@@ -16,7 +16,6 @@ import java.io.Serializable;
  * <p>力引导布局的结果有良好的对称性和局部聚合性，也比较美观。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

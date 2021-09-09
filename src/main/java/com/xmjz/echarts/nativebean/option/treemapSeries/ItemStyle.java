@@ -28,7 +28,6 @@ import java.io.Serializable;
  * </blockquote>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

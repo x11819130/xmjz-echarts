@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>坐标轴刻度标签的相关设置。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

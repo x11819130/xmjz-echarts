@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>在坐标轴上可以进行框选，这里是一些框选的设置。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

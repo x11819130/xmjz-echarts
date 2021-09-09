@@ -18,7 +18,6 @@ import java.io.Serializable;
  * <p>坐标轴在 <a href="#grid">grid</a> 区域中的次分隔线。次分割线会对齐次刻度线 <a href="#radiusAxis.minorTick">minorTick</a></p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

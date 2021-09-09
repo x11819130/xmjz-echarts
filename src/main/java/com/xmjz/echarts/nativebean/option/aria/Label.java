@@ -55,7 +55,6 @@ import java.io.Serializable;
  * <p><img width="800" height="auto" src="documents/asset/img/echarts-aria.jpg"></p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

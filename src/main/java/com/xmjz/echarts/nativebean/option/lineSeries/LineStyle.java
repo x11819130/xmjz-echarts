@@ -16,7 +16,6 @@ import java.io.Serializable;
  * <p><strong>注：</strong> 修改 <code class="codespan">lineStyle</code> 中的颜色不会影响图例颜色，如果需要图例颜色和折线图颜色一致，需修改 <a href="#series-line.itemStyle.color">itemStyle.color</a>，线条颜色默认也会取该颜色。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

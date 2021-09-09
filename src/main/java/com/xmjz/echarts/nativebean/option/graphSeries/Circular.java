@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>环形布局相关配置</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

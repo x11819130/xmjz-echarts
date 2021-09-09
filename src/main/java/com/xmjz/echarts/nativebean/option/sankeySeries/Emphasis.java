@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>桑基图的高亮状态。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

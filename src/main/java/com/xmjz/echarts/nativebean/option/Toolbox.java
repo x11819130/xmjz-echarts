@@ -20,7 +20,6 @@ import java.io.Serializable;
  * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-marker&amp;reset=1&amp;edit=1" width="600" height="400"></iframe>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

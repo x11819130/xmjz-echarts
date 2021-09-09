@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>高亮的图形样式和标签样式。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

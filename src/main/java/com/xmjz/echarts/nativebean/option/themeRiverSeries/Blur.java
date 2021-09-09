@@ -18,7 +18,6 @@ import java.io.Serializable;
  * <p>淡出状态的配置。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

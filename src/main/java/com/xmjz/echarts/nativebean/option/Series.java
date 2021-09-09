@@ -1,14 +1,24 @@
 package com.xmjz.echarts.nativebean.option;
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.experimental.Accessors;
+
+import java.io.Serializable;
+
 /**
- * 官方文档: https://echarts.apache.org/zh/option.html#series
+ * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series">https://echarts.apache.org/zh/option.html#series</a>
  * <br/>序号: 25
  * <br/>默认值: 无
  * <br/>js类型: ["Array"]
  * <br/>描述:
  *
  * @author auto
- * @date 2021-03-02
  */
-public class Series {
+@Getter
+@Setter
+@Accessors(chain = true)
+public class Series implements Serializable {
+    private static final long serialVersionUID = 1L;
+
 }

@@ -285,7 +285,6 @@ import java.util.List;
  * <p>注意，可以用 <a href="graphic.elements.bounding" target="_blank">bounding</a> 来设置是否整体限制在父节点范围内。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

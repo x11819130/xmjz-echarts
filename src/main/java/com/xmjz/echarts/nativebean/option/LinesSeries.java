@@ -19,7 +19,6 @@ import java.util.List;
  * <p>ECharts 2.x 里会用地图上的 <code class="codespan">markLine</code> 去绘制迁徙效果，在 ECharts 3 里建议使用单独的 <code class="codespan">lines</code> 类型图表。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

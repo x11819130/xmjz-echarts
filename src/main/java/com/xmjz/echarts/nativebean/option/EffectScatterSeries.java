@@ -18,7 +18,6 @@ import java.util.List;
  * <p><strong>Tip:</strong> ECharts 2.x 中在地图上通过 markPoint 实现地图特效在 ECharts 3 中建议通过地理坐标系上的 effectScatter 实现。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

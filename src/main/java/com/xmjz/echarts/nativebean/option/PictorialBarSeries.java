@@ -54,7 +54,6 @@ import java.util.List;
  * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-clip&amp;reset=1&amp;edit=1" width="800" height="600"></iframe>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

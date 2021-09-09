@@ -18,7 +18,6 @@ import java.util.List;
  * <p>柱状图（或称条形图）是一种通过柱形的高度（横向的情况下则是宽度）来表现数据大小的一种常用图表类型。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

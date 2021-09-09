@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>拖拽手柄，适用于触屏的环境。参见 <a href="https://echarts.apache.org/examples/zh/editor.html?c=line-tooltip-touch&amp;edit=1&amp;reset=1" target="_blank">例子</a>。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

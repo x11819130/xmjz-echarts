@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>坐标轴指示器配置项。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

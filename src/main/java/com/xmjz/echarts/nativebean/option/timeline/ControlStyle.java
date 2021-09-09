@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>『控制按钮』的样式。『控制按钮』包括：『播放按钮』、『前进按钮』、『后退按钮』。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

@@ -18,7 +18,6 @@ import java.io.Serializable;
  * <p>K 线图的选中状态。开启 <a href="#series-candlestick.selectedMode">selectedMode</a> 后有效。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

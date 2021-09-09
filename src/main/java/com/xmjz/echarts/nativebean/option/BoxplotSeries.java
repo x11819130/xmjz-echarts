@@ -25,7 +25,6 @@ import java.util.List;
  * <p>也支持多个 <code class="codespan">series</code> 在同一个坐标系中，参见 <a href="https://echarts.apache.org/examples/zh/editor.html?c=boxplot-multi&amp;edit=1&amp;reset=1" target="_blank">例子</a>。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

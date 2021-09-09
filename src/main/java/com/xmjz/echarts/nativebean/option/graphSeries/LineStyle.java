@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>关系边的公用线条样式。其中 <a href="#series-graph.lineStyle.color">lineStyle.color</a> 支持设置为<code class="codespan">'source'</code>或者<code class="codespan">'target'</code>特殊值，此时边会自动取源节点或目标节点的颜色作为自己的颜色。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

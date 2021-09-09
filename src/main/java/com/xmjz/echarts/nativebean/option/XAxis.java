@@ -18,7 +18,6 @@ import java.util.List;
  * <p>直角坐标系 grid 中的 x 轴，一般情况下单个 grid 组件最多只能放上下两个 x 轴，多于两个 x 轴需要通过配置 <a href="#xAxis.offset">offset</a> 属性防止同个位置多个 x 轴的重叠。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

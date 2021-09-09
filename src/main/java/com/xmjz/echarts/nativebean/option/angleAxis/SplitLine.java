@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>坐标轴在 <a href="#grid">grid</a> 区域中的分隔线。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

@@ -6,7 +6,7 @@
 
     <groupId>com.xmjz</groupId>
     <artifactId>xmjz-echarts</artifactId>
-    <version>1.0.0</version>
+    <version>5.0.2</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -21,10 +21,16 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.4</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.62</version>
-            <scope>provided</scope>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>commons-io</groupId>
@@ -37,12 +43,6 @@
             <artifactId>velocity</artifactId>
             <version>1.7</version>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.4</version>
-            <scope>provided</scope>
         </dependency>
     </dependencies>
 
@@ -64,7 +64,48 @@
                 </configuration>
                 <executions>
                     <execution>
-                        <phase>compile</phase>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <!--lombok还原插件-->
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok-maven-plugin</artifactId>
+                <version>1.18.4.0</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                    <sourceDirectory>src/main/java</sourceDirectory>
+                    <!-- 默认放到generated-sources下idea里会提示类重复 -->
+                    <outputDirectory>${project.build.directory}/generated-test-sources/delombok</outputDirectory>
+                </configuration>
+                <executions>
+                    <execution>
+                        <!--verify阶段:检测测试后的包是否完好,此阶段位于package之后,install/deploy之前-->
+                        <!--详见:https://maven.apache.org/ref/3.8.2/maven-core/lifecycles.htm -->
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>delombok</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.0.1</version>
+                <configuration>
+                    <!-- 从delombok还原的源码目录导出文档 -->
+                    <sourcepath>${project.build.directory}/generated-test-sources/delombok</sourcepath>
+                    <additionalJOption>-Xdoclint:none</additionalJOption>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <phase>verify</phase>
                         <goals>
                             <goal>jar</goal>
                         </goals>

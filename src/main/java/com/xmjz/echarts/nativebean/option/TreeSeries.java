@@ -25,7 +25,6 @@ import java.util.List;
  * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=tree-legend&amp;edit=1&amp;reset=1" width="800" height="680"></iframe>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

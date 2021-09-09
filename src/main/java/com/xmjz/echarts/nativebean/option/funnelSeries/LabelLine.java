@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>标签的视觉引导线样式，在 <a href="#series-funnel.label.position">label 位置</a> 设置为<code class="codespan">'left'</code>或者<code class="codespan">'right'</code>的时候会显示视觉引导线。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

@@ -20,7 +20,6 @@ import java.util.List;
  * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=gauge&amp;reset=1&amp;edit=1" width="600" height="500" data-ll-timeout="19"></iframe>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

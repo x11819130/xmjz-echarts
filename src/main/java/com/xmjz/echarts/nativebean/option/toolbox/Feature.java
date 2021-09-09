@@ -40,7 +40,6 @@ import java.io.Serializable;
  * </code></pre>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

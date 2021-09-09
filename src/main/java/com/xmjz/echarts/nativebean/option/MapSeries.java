@@ -20,7 +20,6 @@ import java.util.List;
  * <p><strong>Tip: </strong>在 ECharts 3 中不再建议在地图类型的图表使用 <code class="codespan">markLine</code> 和 <code class="codespan">markPoint</code>。如果要实现点数据或者线数据的可视化，可以使用在<a href="#geo">地理坐标系组件</a>上的<a href="#series-scatter">散点图</a>和<a href="#series-lines">线图</a>。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p><a href="#tooltip.axisPointer.type">axisPointer.type</a> 为 <code class="codespan">'line'</code> 时有效。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

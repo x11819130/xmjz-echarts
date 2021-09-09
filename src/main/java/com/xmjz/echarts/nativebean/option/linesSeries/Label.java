@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>标签相关配置。在 <a href="#series-lines.polyline">polyline</a> 设置为 <code class="codespan">true</code> 时无效。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

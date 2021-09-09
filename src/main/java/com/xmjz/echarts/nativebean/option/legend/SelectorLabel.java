@@ -19,7 +19,6 @@ import java.util.List;
  * <p>选择器按钮的文本标签样式，默认显示。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

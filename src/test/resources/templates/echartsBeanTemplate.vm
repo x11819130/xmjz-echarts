@@ -22,12 +22,13 @@ import ${import};
 #end
  *
  * @author ${base.author}
- * @date ${base.date}
+##不显示日期了
+## * @date ${base.date}
  */
 @Getter
 @Setter
 @Accessors(chain = true)
-public class ${obj.className}#if(${obj.className.endsWith('Series')}) extends Series#end implements Serializable {
+public class ${obj.className}#if(${obj.order} == 0) extends Series#end implements Serializable {
     private static final long serialVersionUID = 1L;
 
 #foreach (${prop} in ${obj.props})

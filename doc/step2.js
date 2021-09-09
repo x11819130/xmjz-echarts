@@ -1,5 +1,5 @@
-(function() {
-        function download(filename, text, type='plain') {
+(function () {
+        function download(filename, text, type = 'plain') {
             var pom = document.createElement('a');
             pom.setAttribute('href', 'data:text/' + type + ';charset=utf-8,' + encodeURIComponent(text));
             pom.setAttribute('download', filename);
@@ -11,10 +11,11 @@
                 pom.click();
             }
         }
+
         function parseChildren(objs, level1List) {
             let order = 1;
             objs.props = [];
-            level1List.forEach(level1=>{
+            level1List.forEach(level1 => {
                     let prop = {};
                     prop.order = order++;
                     prop.name = level1.querySelector('h4 .path-base').textContent;
@@ -38,7 +39,7 @@
                         }
                     }
                     prop.types = [];
-                    level1.querySelector('.prop-types').querySelectorAll('span.prop-type').forEach(type=>{
+                    level1.querySelector('.prop-types').querySelectorAll('span.prop-type').forEach(type => {
                             prop.types.push(type.textContent);
                         }
                     );
@@ -82,16 +83,24 @@
             });
         }
 
-        function parseOptionProps(props, i=0) {
+        async function getVersion() {
+            const text = await fetch('https://echarts.apache.org/zh/changelog.html').then(data => data.text());
+            const result = (text.match('<h2 id=".*">(.*)</h2>')[1]);
+            console.info("当前echarts版本:", result);
+            return result;
+        }
+
+        async function parseOptionProps(props, i = 0) {
             if (props.length <= i) {
                 console.info('全部解析完成');
-                download('echarts-option.json',JSON.stringify(OPTION),'json');
+                 let v = await getVersion();
+                download(`echarts-option.${v}.json`, JSON.stringify(OPTION), 'json');
             } else {
                 let objs = props[i++];
                 let url = objs.url;
                 //width=300,height=200,
                 let s = window.open(url, '_blank', 'top=100px,left=0px,titlebar=no');
-                s.onload = ()=>{
+                s.onload = () => {
                     try {
                         parseLevel0(objs, s.document);
                     } finally {
@@ -102,6 +111,7 @@
                 }
             }
         }
+
         parseOptionProps(window.OPTION.props);
     }
 )();

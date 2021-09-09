@@ -16,7 +16,6 @@ import java.util.List;
  * <p>折线端点的标签。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

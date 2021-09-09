@@ -117,7 +117,6 @@ import java.io.Serializable;
  * <p>可以通过 <a href="#parallel.axisExpandable">parallel.axisExpandable</a> 来改善显示效果。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

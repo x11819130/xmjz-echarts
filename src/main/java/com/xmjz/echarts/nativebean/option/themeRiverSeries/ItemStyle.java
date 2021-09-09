@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>主题河流中每个带状河流分支的样式。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

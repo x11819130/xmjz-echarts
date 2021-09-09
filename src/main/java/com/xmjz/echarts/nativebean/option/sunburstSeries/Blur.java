@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>淡出状态配置。开启 <a href="#series-sunburst.emphasis.focus">emphasis.focus</a> 后有效。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

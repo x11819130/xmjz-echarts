@@ -17,7 +17,6 @@ import java.util.List;
  * <p>如果节点有分类的话可以通过 <a href="#series-graph.data.category">data[i].category</a> 指定每个节点的类目，类目的样式会被应用到节点样式上。<a href="#legend">图例</a>也可以基于<code class="codespan">categories</code>名字展现和筛选。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

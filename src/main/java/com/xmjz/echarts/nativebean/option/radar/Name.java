@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>雷达图每个指示器名称的配置项。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

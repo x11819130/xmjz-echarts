@@ -17,7 +17,6 @@ import java.util.List;
  * <p>图例控制块的图标。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

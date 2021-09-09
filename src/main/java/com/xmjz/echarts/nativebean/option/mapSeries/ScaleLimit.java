@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>滚轮缩放的极限控制，通过<code class="codespan">min</code>, <code class="codespan">max</code>最小和最大的缩放值，默认的缩放为<code class="codespan">1</code>。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

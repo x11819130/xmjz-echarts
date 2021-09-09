@@ -25,7 +25,6 @@ import java.io.Serializable;
  * <p>绝大部分支持填充色的系列都支持贴花图案，包括：<code class="codespan">'line'</code>, <code class="codespan">'bar'</code>, <code class="codespan">'pie'</code>, <code class="codespan">'radar'</code>, <code class="codespan">'treemap'</code>, <code class="codespan">'sunburst'</code>, <code class="codespan">'boxplot'</code>, <code class="codespan">'sankey'</code>, <code class="codespan">'funnel'</code>, <code class="codespan">'gauge'</code>, <code class="codespan">'pictorialBar'</code>, <code class="codespan">'themeRiver'</code>, <code class="codespan">'custom'</code> 等。其中，部分系列默认没有填充色（如 <code class="codespan">'line'</code>, <code class="codespan">'radar'</code>, <code class="codespan">'boxplot'</code>）需要在设置了填充样式 <code class="codespan">areaStyle</code> 的情况下才生效。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

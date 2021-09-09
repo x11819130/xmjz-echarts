@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>数据更新动画的缓动效果。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

@@ -18,7 +18,6 @@ import java.io.Serializable;
  * <p>展示当前进度。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

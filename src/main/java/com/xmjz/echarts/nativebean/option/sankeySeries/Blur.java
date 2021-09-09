@@ -18,7 +18,6 @@ import java.io.Serializable;
  * <p>桑基图的淡出状态。开启 <a href="#series-sankey.emphasis.focus">emphasis.focus</a> 后有效。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

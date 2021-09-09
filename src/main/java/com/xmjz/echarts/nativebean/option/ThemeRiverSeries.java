@@ -27,7 +27,6 @@ import java.util.List;
  * <p>此外，原数据集中的时间属性，映射到单个时间轴上。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

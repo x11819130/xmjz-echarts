@@ -29,7 +29,6 @@ import java.util.List;
  * <p>如果想指定每层节点的顺序是按照 <a href="#series-sankey.data">data</a> 中的顺序排列的。可以设置 <a href="#series-sankey.layoutIterations">layoutIterations</a> 为 <code class="codespan">0</code>。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

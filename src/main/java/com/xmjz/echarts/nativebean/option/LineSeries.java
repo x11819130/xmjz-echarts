@@ -21,7 +21,6 @@ import java.util.List;
  * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-aqi&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="17"></iframe>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

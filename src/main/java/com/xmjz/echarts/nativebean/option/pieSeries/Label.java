@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>饼图图形上的文本标签，可用于说明图形的一些数据信息，比如值，名称等。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

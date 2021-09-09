@@ -17,7 +17,6 @@ import java.util.List;
  * Eachrts Option Object
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

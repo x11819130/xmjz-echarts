@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>样式设置，在直角坐标系(<a href="#series-heatmap.coordinateSystem">coordinateSystem</a>: 'cartesian2d')上有效。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

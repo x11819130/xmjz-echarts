@@ -83,7 +83,6 @@ import java.util.List;
  * <p><img width="500" height="auto" src="documents/asset/img/treemap-border-gap.png"></p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

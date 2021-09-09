@@ -18,7 +18,6 @@ import java.io.Serializable;
  * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-anscombe-quartet&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="16"></iframe>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

@@ -18,7 +18,6 @@ import java.util.List;
  * <p>可以应用在<a href="#grid">直角坐标系</a>，<a href="#polar">极坐标系</a>，<a href="#geo">地理坐标系</a>上。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

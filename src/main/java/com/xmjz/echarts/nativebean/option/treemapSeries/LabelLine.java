@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>标签的视觉引导线配置。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

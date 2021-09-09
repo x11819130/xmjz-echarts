@@ -18,7 +18,6 @@ import java.io.Serializable;
  * <p>选中状态的图形样式。开启 <a href="#series-heatmap.selectedMode">selectedMode</a> 后有效。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

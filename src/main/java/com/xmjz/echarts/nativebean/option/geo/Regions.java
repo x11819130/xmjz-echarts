@@ -25,7 +25,6 @@ import java.io.Serializable;
  * <p>geo 区域的颜色也可以被 map series 所控制，参见 <a href="#series-map.geoIndex">series-map.geoIndex</a>。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>K 线图的图形样式。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

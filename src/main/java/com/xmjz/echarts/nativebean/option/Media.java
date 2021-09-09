@@ -16,7 +16,6 @@ import java.io.Serializable;
  * <p>请参见 <a href="tutorial.html#%E7%A7%BB%E5%8A%A8%E7%AB%AF%E8%87%AA%E9%80%82%E5%BA%94" target="_blank">移动端自适应</a>。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

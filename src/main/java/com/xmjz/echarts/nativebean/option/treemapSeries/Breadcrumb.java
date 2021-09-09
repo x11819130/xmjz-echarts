@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>面包屑，能够显示当前节点的路径。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

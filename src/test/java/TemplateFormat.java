@@ -14,8 +14,17 @@ import java.io.IOException;
 import java.util.*;
 
 public class TemplateFormat {
+    //项目地址
+    private static final String PROJECT_DIR = "C:\\Users\\cgz\\git\\xmjz\\xmjz-echarts\\";
+    //echarts-option文件地址
+    private static final String ECHARTS_OPTION_FILE = PROJECT_DIR + "doc\\echarts-option.v5.0.2.json";
+    //生成的类库包名
+    private static final String BASE_PACKAGE = "com.xmjz.echarts.nativebean";
+    //生成的类库文件存放位置
+    private static final String CLASS_DIR = PROJECT_DIR + "src\\main\\java\\" + BASE_PACKAGE.replace(".", "\\");
+
     public static void main(String[] args) throws IOException {
-        String jsonString = FileUtils.readFileToString(new File("C:\\Users\\Administrator\\Desktop\\echarts-option.json"), "utf-8");
+        String jsonString = FileUtils.readFileToString(new File(ECHARTS_OPTION_FILE), "utf-8");
         Properties properties = new Properties();
         properties.setProperty("resource.loader", "class");
         properties.setProperty("class.resource.loader.class", "org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader");
@@ -38,7 +47,7 @@ public class TemplateFormat {
      * @throws IOException 文件操作异常
      */
     private static void parseObject(VelocityEngine velocityEngine, JSONObject propObj) throws IOException {
-        String basePackage = "com.xmjz.echarts.nativebean";
+        String basePackage = BASE_PACKAGE;
         VelocityContext context = new VelocityContext();
         //导入列表 全类名
         Set<String> imports = new TreeSet<>();
@@ -96,15 +105,25 @@ public class TemplateFormat {
                 //为属性创建类
                 prop.put("relativePackage", relativePackage + "." + name);
                 parseObject(velocityEngine, prop);
-                //移除order为0的属性  但要为其生成类所以放在的下面
-                javaType = prop.getString("className");
-                imports.add(basePackage + relativePackage + "." + name + "." + javaType);
-                //如果只有一个类型且是数组 java类型就为List
-                if (types.size() == 1 && types.getString(0).equals("Array")) {
-                    javaType = "List<" + javaType + ">";
-                    imports.add("java.util.List");
-                    System.out.println(">>>>>>>>>>>>>只有一个类型且是数组 还有子属性:" + relativePackage + "." + name + "." + propName);
+                //移除order为0的属性  但要为其生成类所以放在parseObject的下面
+                if (prop.getInteger("order") != 0) {
+                    javaType = prop.getString("className");
+                    imports.add(basePackage + relativePackage + "." + name + "." + javaType);
+                    //如果只有一个类型且是数组 java类型就为List
+                    if (types.size() == 1 && types.getString(0).equals("Array")) {
+                        javaType = "List<" + javaType + ">";
+                        imports.add("java.util.List");
+                        System.out.println(">>>>>>>>>>>>>只有一个类型且是数组 还有子属性:" + relativePackage + "." + name + "." + propName);
+                    }
                 }
+            } else if ("option".equals(name) && "series".equals(propName)) {
+                //特殊处理option.series
+                System.out.println(">>>>>>>>>>>>>特殊处理Option.series");
+                prop.put("relativePackage", relativePackage + "." + name);
+                parseObject(velocityEngine, prop);
+                imports.add(basePackage + relativePackage + "." + name + ".Series");
+                imports.add("java.util.List");
+                javaType = "List<Series>";
             } else {
                 //使用java类
                 if (types.size() == 1) {
@@ -121,7 +140,7 @@ public class TemplateFormat {
                             javaType = "Boolean";
                             break;
                         case "Array":
-                            javaType = "series".equals(propName) ? "List<Series>" : "List<?>";
+                            javaType = "List<?>";
                             imports.add("java.util.List");
                             break;
                         case "Function":
@@ -143,7 +162,8 @@ public class TemplateFormat {
             put("date", DateFormatUtils.format(new Date(), "yyyy-MM-dd"));
         }});
         context.put("obj", propObj);
-        File file = new File("E:\\cgz\\java\\MyEclipse\\git\\xmjz\\xmjz-echarts\\src\\main\\java\\com\\xmjz\\echarts\\nativebean" + relativePackage.replace(".", "\\"), className + ".java");
+        //生成的类库文件存放位置
+        File file = new File(CLASS_DIR + relativePackage.replace(".", "\\"), className + ".java");
         if (!file.getParentFile().exists()) {
             boolean mkdirs = file.getParentFile().mkdirs();
             if (!mkdirs) {

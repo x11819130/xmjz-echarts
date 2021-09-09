@@ -16,7 +16,6 @@ import java.util.List;
  * <p>仪表盘详情，用于显示数据。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

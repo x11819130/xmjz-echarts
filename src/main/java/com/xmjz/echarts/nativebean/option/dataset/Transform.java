@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>参见这个教程： <a href="tutorial.html#%E4%BD%BF%E7%94%A8%20transform%20%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2" target="_blank">data transform</a>.</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>提示框浮层的文本样式。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

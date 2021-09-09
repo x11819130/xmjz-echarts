@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>高亮的仪表盘指针样式</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

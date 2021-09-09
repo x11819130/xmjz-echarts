@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>设置日历坐标分隔线的样式。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

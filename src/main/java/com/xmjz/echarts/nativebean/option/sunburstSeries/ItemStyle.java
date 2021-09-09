@@ -17,7 +17,6 @@ import java.io.Serializable;
  * <p><strong>优先级：<a href="#series-sunburst.data.itemStyle">series.data.itemStyle</a> &gt; <a href="#series-sunburst.levels.itemStyle">series.levels.itemStyle</a> &gt; <a href="#series-sunburst.itemStyle">series.itemStyle</a>。</strong></p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

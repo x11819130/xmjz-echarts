@@ -1,6 +1,5 @@
 package com.xmjz.echarts;
 
-import com.alibaba.fastjson.JSON;
 import com.xmjz.echarts.nativebean.Option;
 import com.xmjz.echarts.nativebean.option.Calendar;
 import com.xmjz.echarts.nativebean.option.*;
@@ -10,7 +9,7 @@ import java.lang.reflect.Method;
 import java.util.*;
 
 /**
- * Option辅助类
+ * 一个Option辅助类
  *
  * @author chengz
  * @date 2021/3/2
@@ -24,10 +23,6 @@ public class OptionHelper {
 
     public static OptionHelper load(Option option) {
         return new OptionHelper(option);
-    }
-
-    public static OptionHelper loadFromJson(String optionJson) {
-        return new OptionHelper(JSON.parseObject(optionJson, Option.class));
     }
 
     public Option getOption() {

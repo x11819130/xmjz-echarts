@@ -19,7 +19,6 @@ import java.util.List;
  * <p>表盘中指针的固定点。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

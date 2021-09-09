@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>叶子节点的特殊配置，如上面的树图实例中，叶子节点和非叶子节点的标签位置不同。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>设置日历格的样式</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

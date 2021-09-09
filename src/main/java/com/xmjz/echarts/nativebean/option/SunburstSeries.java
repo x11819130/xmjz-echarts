@@ -26,7 +26,6 @@ import java.util.List;
  * <p>旭日图默认支持数据下钻，也就是说，当用户点击了某个扇形块之后，将会以该节点作为根结点显示，并且在中间出现一个返回上层节点的圆。如果不希望有数据下钻功能，可以通过将 <a href="#series-treemap.nodeClick">series-sunburst.nodeClick</a> 设置为 <code class="codespan">false</code> 实现。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter

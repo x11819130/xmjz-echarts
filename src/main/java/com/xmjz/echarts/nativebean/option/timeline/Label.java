@@ -15,7 +15,6 @@ import java.io.Serializable;
  * <p>轴的文本标签。<code class="codespan">emphasis</code> 是文本高亮的样式，比如鼠标悬浮或者图例联动高亮的时候会使用 <code class="codespan">emphasis</code> 作为文本的样式。</p>
  *
  * @author auto
- * @date 2021-03-02
  */
 @Getter
 @Setter
