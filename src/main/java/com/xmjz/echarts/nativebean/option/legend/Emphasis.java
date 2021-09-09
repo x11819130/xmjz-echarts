@@ -7,7 +7,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.emphasis">https://echarts.apache.org/zh/option.html#legend.emphasis</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#legend.emphasis">https://echarts.apache.org/v4/zh/option.html#legend.emphasis</a>
  * <br/>序号: 47
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
@@ -22,7 +22,7 @@ public class Emphasis implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.emphasis.selectorLabel">https://echarts.apache.org/zh/option.html#legend.emphasis.selectorLabel</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#legend.emphasis.selectorLabel">https://echarts.apache.org/v4/zh/option.html#legend.emphasis.selectorLabel</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

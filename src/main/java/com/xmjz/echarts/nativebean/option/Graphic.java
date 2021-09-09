@@ -9,30 +9,30 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#graphic">https://echarts.apache.org/zh/option.html#graphic</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#graphic">https://echarts.apache.org/v4/zh/option.html#graphic</a>
  * <br/>序号: 21
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
  * <p><code class="codespan">graphic</code> 是原生图形元素组件。可以支持的图形元素包括：</p>
- * <p><a href="#graphic.elements-image">image</a>,
- * <a href="#graphic.elements-text">text</a>,
- * <a href="#graphic.elements-circle">circle</a>,
- * <a href="#graphic.elements-sector">sector</a>,
- * <a href="#graphic.elements-ring">ring</a>,
- * <a href="#graphic.elements-polygon">polygon</a>,
- * <a href="#graphic.elements-polyline">polyline</a>,
- * <a href="#graphic.elements-rect">rect</a>,
- * <a href="#graphic.elements-line">line</a>,
- * <a href="#graphic.elements-bezierCurve">bezierCurve</a>,
- * <a href="#graphic.elements-arc">arc</a>,
- * <a href="#graphic.elements-group">group</a>,</p>
+ * <p><a href="#graphic.elementsimage">image</a>,
+ * <a href="#graphic.elementstext">text</a>,
+ * <a href="#graphic.elementscircle">circle</a>,
+ * <a href="#graphic.elementssector">sector</a>,
+ * <a href="#graphic.elementsring">ring</a>,
+ * <a href="#graphic.elementspolygon">polygon</a>,
+ * <a href="#graphic.elementspolyline">polyline</a>,
+ * <a href="#graphic.elementsrect">rect</a>,
+ * <a href="#graphic.elementsline">line</a>,
+ * <a href="#graphic.elementsbezierCurve">bezierCurve</a>,
+ * <a href="#graphic.elementsarc">arc</a>,
+ * <a href="#graphic.elementsgroup">group</a>,</p>
  * <p>下面示例中，使用图形元素做了水印，和文本块：</p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-graphic&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="18"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-graphic&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="27"><iframe />
  *
  *
  * <p>下面示例中，使用隐藏的图形元素实现了拖拽：</p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-draggable&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="19"></iframe>
+ * <iframe  data-src="https://echarts.apache.org/examples/zh/view.html?c=line-draggable&edit=1&reset=1" width="600" height="400"><iframe />
  *
  *
  *
@@ -41,37 +41,37 @@ import java.util.List;
  * <hr>
  * <p><strong>graphic 设置介绍</strong></p>
  * <p>只配一个图形元素时的简写方法：</p>
- * <pre><code class="lang-javascript hljs">myChart.setOption({
+ * <pre><code class="lang-javascript">myChart.setOption({
  *     ...,
- *     <span class="hljs-attr">graphic</span>: {
- *         <span class="hljs-attr">type</span>: <span class="hljs-string">'image'</span>,
+ *     graphic: {
+ *         type: &#39;image&#39;,
  *         ...
  *     }
  * });
  * </code></pre>
  * <p>配多个图形元素：</p>
- * <pre><code class="lang-javascript hljs">myChart.setOption({
+ * <pre><code class="lang-javascript">myChart.setOption({
  *     ...,
- *     <span class="hljs-attr">graphic</span>: [
- *         { <span class="hljs-comment">// 一个图形元素，类型是 image。</span>
- *             <span class="hljs-attr">type</span>: <span class="hljs-string">'image'</span>,
+ *     graphic: [
+ *         { // 一个图形元素，类型是 image。
+ *             type: &#39;image&#39;,
  *             ...
  *         },
- *         { <span class="hljs-comment">// 一个图形元素，类型是 text，指定了 id。</span>
- *             <span class="hljs-attr">type</span>: <span class="hljs-string">'text'</span>,
- *             <span class="hljs-attr">id</span>: <span class="hljs-string">'text1'</span>,
+ *         { // 一个图形元素，类型是 text，指定了 id。
+ *             type: &#39;text&#39;,
+ *             id: &#39;text1&#39;,
  *             ...
  *         },
- *         { <span class="hljs-comment">// 一个图形元素，类型是 group，可以嵌套子节点。</span>
- *             <span class="hljs-attr">type</span>: <span class="hljs-string">'group'</span>,
- *             <span class="hljs-attr">children</span>: [
+ *         { // 一个图形元素，类型是 group，可以嵌套子节点。
+ *             type: &#39;group&#39;,
+ *             children: [
  *                 {
- *                     <span class="hljs-attr">type</span>: <span class="hljs-string">'rect'</span>,
- *                     <span class="hljs-attr">id</span>: <span class="hljs-string">'rect1'</span>,
+ *                     type: &#39;rect&#39;,
+ *                     id: &#39;rect1&#39;,
  *                     ...
  *                 },
  *                 {
- *                     <span class="hljs-attr">type</span>: <span class="hljs-string">'image'</span>,
+ *                     type: &#39;image&#39;,
  *                     ...
  *                 },
  *                 ...
@@ -83,19 +83,19 @@ import java.util.List;
  *
  * </code></pre>
  * <p>使用 setOption 来删除或更换（替代）已有的图形元素：</p>
- * <pre><code class="lang-javascript hljs">myChart.setOption({
+ * <pre><code class="lang-javascript">myChart.setOption({
  *     ...,
- *     <span class="hljs-attr">graphic</span>: [
- *         { <span class="hljs-comment">// 删除上例中定义的 'text1' 元素。</span>
- *             <span class="hljs-attr">id</span>: <span class="hljs-string">'text1'</span>,
- *             <span class="hljs-attr">$action</span>: <span class="hljs-string">'remove'</span>,
+ *     graphic: [
+ *         { // 删除上例中定义的 &#39;text1&#39; 元素。
+ *             id: &#39;text1&#39;,
+ *             $action: &#39;remove&#39;,
  *             ...
  *         },
- *         { <span class="hljs-comment">// 将上例中定义的 'rect1' 元素换成 circle。</span>
- *           <span class="hljs-comment">// 注意尽管 'rect1' 在一个 group 中，但这里并不需要顾忌层级，用id指定就可以了。</span>
- *             <span class="hljs-attr">id</span>: <span class="hljs-string">'rect1'</span>,
- *             <span class="hljs-attr">$action</span>: <span class="hljs-string">'replace'</span>,
- *             <span class="hljs-attr">type</span>: <span class="hljs-string">'circle'</span>,
+ *         { // 将上例中定义的 &#39;rect1&#39; 元素换成 circle。
+ *           // 注意尽管 &#39;rect1&#39; 在一个 group 中，但这里并不需要顾忌层级，用id指定就可以了。
+ *             id: &#39;rect1&#39;,
+ *             $action: &#39;replace&#39;,
+ *             type: &#39;circle&#39;,
  *             ...
  *         }
  *     ]
@@ -107,45 +107,45 @@ import java.util.List;
  * <hr>
  * <p><strong>图形元素设置介绍</strong></p>
  * <p>介绍每个图形元素的配置。不同类型的图形元素的设置有这些共性：</p>
- * <pre><code class="lang-javascript hljs">{
- *     <span class="hljs-comment">// id 用于在更新图形元素时指定更新哪个图形元素，如果不需要用可以忽略。</span>
- *     <span class="hljs-attr">id</span>: <span class="hljs-string">'xxx'</span>,
+ * <pre><code class="lang-javascript">{
+ *     // id 用于在更新图形元素时指定更新哪个图形元素，如果不需要用可以忽略。
+ *     id: &#39;xxx&#39;,
  *
- *     <span class="hljs-comment">// 这个字段在第一次设置时不能忽略，取值见上方『支持的图形元素』。</span>
- *     <span class="hljs-attr">type</span>: <span class="hljs-string">'image'</span>,
+ *     // 这个字段在第一次设置时不能忽略，取值见上方『支持的图形元素』。
+ *     type: &#39;image&#39;,
  *
- *     <span class="hljs-comment">// 下面的各个属性如果不需要设置都可以忽略，忽略则取默认值。</span>
+ *     // 下面的各个属性如果不需要设置都可以忽略，忽略则取默认值。
  *
- *     <span class="hljs-comment">// 指定本次 setOption 对此图形元素进行的操作。默认是 'merge'，还可以 'replace' 或 'remove'。</span>
- *     <span class="hljs-attr">$action</span>: <span class="hljs-string">'replace'</span>,
+ *     // 指定本次 setOption 对此图形元素进行的操作。默认是 &#39;merge&#39;，还可以 &#39;replace&#39; 或 &#39;remove&#39;。
+ *     $action: &#39;replace&#39;,
  *
- *     <span class="hljs-comment">// 这是四个相对于父元素的定位属性，每个属性可取『像素值』或者『百分比』或者 'center'/'middle'。</span>
- *     <span class="hljs-attr">left</span>: <span class="hljs-number">10</span>,
- *     <span class="hljs-comment">// right: 10,</span>
- *     <span class="hljs-attr">top</span>: <span class="hljs-string">'center'</span>,
- *     <span class="hljs-comment">// bottom: '10%',</span>
+ *     // 这是四个相对于父元素的定位属性，每个属性可取『像素值』或者『百分比』或者 &#39;center&#39;/&#39;middle&#39;。
+ *     left: 10,
+ *     // right: 10,
+ *     top: &#39;center&#39;,
+ *     // bottom: &#39;10%&#39;,
  *
- *     <span class="hljs-attr">shape</span>: {
- *         <span class="hljs-comment">// 定位、形状相关的设置，如 x, y, cx, cy, width, height, r, points 等。</span>
- *         <span class="hljs-comment">// 注意，如果设置了 left/right/top/bottom，这里的定位用的 x/y/cx/cy 会失效。</span>
+ *     shape: {
+ *         // 定位、形状相关的设置，如 x, y, cx, cy, width, height, r, points 等。
+ *         // 注意，如果设置了 left/right/top/bottom，这里的定位用的 x/y/cx/cy 会失效。
  *     },
  *
- *     <span class="hljs-attr">style</span>: {
- *         <span class="hljs-comment">// 样式相关的设置，如 fill, stroke, lineWidth, shadowBlur 等。</span>
+ *     style: {
+ *         // 样式相关的设置，如 fill, stroke, lineWidth, shadowBlur 等。
  *     },
  *
- *     <span class="hljs-comment">// 表示 z 高度，从而指定了图形元素的覆盖关系。</span>
- *     <span class="hljs-attr">z</span>: <span class="hljs-number">10</span>,
- *     <span class="hljs-comment">// 表示不响应事件。</span>
- *     <span class="hljs-attr">silent</span>: <span class="hljs-literal">true</span>,
- *     <span class="hljs-comment">// 表示节点不显示</span>
- *     <span class="hljs-attr">invisible</span>: <span class="hljs-literal">false</span>,
- *     <span class="hljs-comment">// 设置是否整体限制在父节点范围内。可选值：'raw', 'all'。</span>
- *     <span class="hljs-attr">bouding</span>: <span class="hljs-string">'raw'</span>,
- *     <span class="hljs-comment">// 是否可以被拖拽。</span>
- *     <span class="hljs-attr">draggable</span>: <span class="hljs-literal">false</span>,
- *     <span class="hljs-comment">// 事件的监听器，还可以是 onmousemove, ondrag 等。支持的事件参见下。</span>
- *     <span class="hljs-attr">onclick</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{...}
+ *     // 表示 z 高度，从而指定了图形元素的覆盖关系。
+ *     z: 10,
+ *     // 表示不响应事件。
+ *     silent: true,
+ *     // 表示节点不显示
+ *     invisible: false,
+ *     // 设置是否整体限制在父节点范围内。可选值：&#39;raw&#39;, &#39;all&#39;。
+ *     bouding: &#39;raw&#39;,
+ *     // 是否可以被拖拽。
+ *     draggable: false,
+ *     // 事件的监听器，还可以是 onmousemove, ondrag 等。支持的事件参见下。
+ *     onclick: function () {...}
  * }
  * </code></pre>
  * <p><br></p>
@@ -161,39 +161,39 @@ import java.util.List;
  * <hr>
  * <p><strong>图形元素的基本形状设置</strong></p>
  * <p>每个图形元素本身有自己的图形基本的位置和尺寸设置，例如：</p>
- * <pre><code class="lang-javascript hljs">{
- *     <span class="hljs-attr">type</span>: <span class="hljs-string">'rect'</span>,
- *     <span class="hljs-attr">shape</span>: {
- *         <span class="hljs-attr">x</span>: <span class="hljs-number">10</span>,
- *         <span class="hljs-attr">y</span>: <span class="hljs-number">10</span>,
- *         <span class="hljs-attr">width</span>: <span class="hljs-number">100</span>,
- *         <span class="hljs-attr">height</span>: <span class="hljs-number">200</span>
+ * <pre><code class="lang-javascript">{
+ *     type: &#39;rect&#39;,
+ *     shape: {
+ *         x: 10,
+ *         y: 10,
+ *         width: 100,
+ *         height: 200
  *     }
  * },
  * {
- *     <span class="hljs-attr">type</span>: <span class="hljs-string">'circle'</span>,
- *     <span class="hljs-attr">shape</span>: {
- *         <span class="hljs-attr">cx</span>: <span class="hljs-number">20</span>,
- *         <span class="hljs-attr">cy</span>: <span class="hljs-number">30</span>,
- *         <span class="hljs-attr">r</span>: <span class="hljs-number">100</span>
+ *     type: &#39;circle&#39;,
+ *     shape: {
+ *         cx: 20,
+ *         cy: 30,
+ *         r: 100
  *     }
  * },
  * {
- *     <span class="hljs-attr">type</span>: <span class="hljs-string">'image'</span>,
- *     <span class="hljs-attr">style</span>: {
- *         <span class="hljs-attr">image</span>: <span class="hljs-string">'http://xxx.xxx.xxx/a.png'</span>,
- *         <span class="hljs-attr">x</span>: <span class="hljs-number">100</span>,
- *         <span class="hljs-attr">y</span>: <span class="hljs-number">200</span>,
- *         <span class="hljs-attr">width</span>: <span class="hljs-number">230</span>,
- *         <span class="hljs-attr">height</span>: <span class="hljs-number">400</span>
+ *     type: &#39;image&#39;,
+ *     style: {
+ *         image: &#39;http://xxx.xxx.xxx/a.png&#39;,
+ *         x: 100,
+ *         y: 200,
+ *         width: 230,
+ *         height: 400
  *     }
  * },
  * {
- *     <span class="hljs-attr">type</span>: <span class="hljs-string">'text'</span>,
- *     <span class="hljs-attr">style</span>: {
- *         <span class="hljs-attr">text</span>: <span class="hljs-string">'This text'</span>,
- *         <span class="hljs-attr">x</span>: <span class="hljs-number">100</span>,
- *         <span class="hljs-attr">y</span>: <span class="hljs-number">200</span>
+ *     type: &#39;text&#39;,
+ *     style: {
+ *         text: &#39;This text&#39;,
+ *         x: 100,
+ *         y: 200
  *     }
  *
  * }
@@ -203,14 +203,14 @@ import java.util.List;
  * <p><strong>图形元素的定位和 transfrom</strong></p>
  * <p>除此以外，可以以 transform 的方式对图形进行平移、旋转、缩放，
  * 参见：<a href="#graphic.elements.position">position</a>、<a href="#graphic.elements.rotation">rotation</a>、<a href="#graphic.elements.scale">scale</a>、<a href="#graphic.elements.origin">origin</a>。</p>
- * <pre><code class="lang-javascript hljs">{
- *     <span class="hljs-attr">type</span>: <span class="hljs-string">'rect'</span>,
- *     <span class="hljs-attr">position</span>: [<span class="hljs-number">100</span>, <span class="hljs-number">200</span>], <span class="hljs-comment">// 平移，默认值为 [0, 0]。</span>
- *     <span class="hljs-attr">scale</span>: [<span class="hljs-number">2</span>, <span class="hljs-number">4</span>], <span class="hljs-comment">// 缩放，默认值为 [1, 1]。表示缩放的倍数。</span>
- *     <span class="hljs-attr">rotation</span>: <span class="hljs-built_in">Math</span>.PI / <span class="hljs-number">4</span>, <span class="hljs-comment">// 旋转，默认值为 0。表示旋转的弧度值。正值表示逆时针旋转。</span>
- *     <span class="hljs-attr">origin</span>: [<span class="hljs-number">10</span>, <span class="hljs-number">20</span>], <span class="hljs-comment">// 旋转和缩放的中心点，默认值为 [0, 0]。</span>
- *     <span class="hljs-attr">shape</span>: {
- *         <span class="hljs-comment">// ...</span>
+ * <pre><code class="lang-javascript">{
+ *     type: &#39;rect&#39;,
+ *     position: [100, 200], // 平移，默认值为 [0, 0]。
+ *     scale: [2, 4], // 缩放，默认值为 [1, 1]。表示缩放的倍数。
+ *     rotation: Math.PI / 4, // 旋转，默认值为 0。表示旋转的弧度值。正值表示逆时针旋转。
+ *     origin: [10, 20], // 旋转和缩放的中心点，默认值为 [0, 0]。
+ *     shape: {
+ *         // ...
  *     }
  * }
  * </code></pre>
@@ -231,58 +231,59 @@ import java.util.List;
  * <p><strong>图形元素相对定位</strong></p>
  * <p>以上两者是基本的绝对定位，除此之外，在实际应用中，容器尺寸常常是不确定甚至动态变化的，所以需要提供相对定位的机制。graphic 组件使用 <a href="#graphic.elements.left">left</a> / <a href="#graphic.elements.right">right</a> / <a href="#graphic.elements.top">top</a> / <a href="#graphic.elements.bottom">bottom</a> / <a href="#graphic.elements.width">width</a> / <a href="#graphic.elements.height">height</a> 提供了相对定位的机制。</p>
  * <p>例如：</p>
- * <pre><code class="lang-javascript hljs">{ <span class="hljs-comment">// 将图片定位到最下方的中间：</span>
- *     <span class="hljs-attr">type</span>: <span class="hljs-string">'image'</span>,
- *     <span class="hljs-attr">left</span>: <span class="hljs-string">'center'</span>, <span class="hljs-comment">// 水平定位到中间</span>
- *     <span class="hljs-attr">bottom</span>: <span class="hljs-string">'10%'</span>,  <span class="hljs-comment">// 定位到距离下边界 10% 处</span>
- *     <span class="hljs-attr">style</span>: {
- *         <span class="hljs-attr">image</span>: <span class="hljs-string">'http://xxx.xxx.xxx/a.png'</span>,
- *         <span class="hljs-attr">width</span>: <span class="hljs-number">45</span>,
- *         <span class="hljs-attr">height</span>: <span class="hljs-number">45</span>
+ * <pre><code class="lang-javascript">{ // 将图片定位到最下方的中间：
+ *     type: &#39;image&#39;,
+ *     left: &#39;center&#39;, // 水平定位到中间
+ *     bottom: &#39;10%&#39;,  // 定位到距离下边界 10% 处
+ *     style: {
+ *         image: &#39;http://xxx.xxx.xxx/a.png&#39;,
+ *         width: 45,
+ *         height: 45
  *     }
  * },
- * { <span class="hljs-comment">// 将旋转过的 group 整体定位右下角：</span>
- *     <span class="hljs-attr">type</span>: <span class="hljs-string">'group'</span>,
- *     <span class="hljs-attr">right</span>: <span class="hljs-number">0</span>,  <span class="hljs-comment">// 定位到右下角</span>
- *     <span class="hljs-attr">bottom</span>: <span class="hljs-number">0</span>, <span class="hljs-comment">// 定位到右下角</span>
- *     <span class="hljs-attr">rotation</span>: <span class="hljs-built_in">Math</span>.PI / <span class="hljs-number">4</span>,
- *     <span class="hljs-attr">children</span>: [
+ * { // 将旋转过的 group 整体定位右下角：
+ *     type: &#39;group&#39;,
+ *     right: 0,  // 定位到右下角
+ *     bottom: 0, // 定位到右下角
+ *     rotation: Math.PI / 4,
+ *     children: [
  *         {
- *             <span class="hljs-attr">type</span>: <span class="hljs-string">'rect'</span>,
- *             <span class="hljs-attr">left</span>: <span class="hljs-string">'center'</span>, <span class="hljs-comment">// 相对父元素居中</span>
- *             <span class="hljs-attr">top</span>: <span class="hljs-string">'middle'</span>,  <span class="hljs-comment">// 相对父元素居中</span>
- *             <span class="hljs-attr">shape</span>: {
- *                 <span class="hljs-attr">width</span>: <span class="hljs-number">190</span>,
- *                 <span class="hljs-attr">height</span>: <span class="hljs-number">90</span>
+ *             type: &#39;rect&#39;,
+ *             left: &#39;center&#39;, // 相对父元素居中
+ *             top: &#39;middle&#39;,  // 相对父元素居中
+ *             shape: {
+ *                 width: 190,
+ *                 height: 90
  *             },
- *             <span class="hljs-attr">style</span>: {
- *                 <span class="hljs-attr">fill</span>: <span class="hljs-string">'#fff'</span>,
- *                 <span class="hljs-attr">stroke</span>: <span class="hljs-string">'#999'</span>,
- *                 <span class="hljs-attr">lineWidth</span>: <span class="hljs-number">2</span>,
- *                 <span class="hljs-attr">shadowBlur</span>: <span class="hljs-number">8</span>,
- *                 <span class="hljs-attr">shadowOffsetX</span>: <span class="hljs-number">3</span>,
- *                 <span class="hljs-attr">shadowOffsetY</span>: <span class="hljs-number">3</span>,
- *                 <span class="hljs-attr">shadowColor</span>: <span class="hljs-string">'rgba(0,0,0,0.3)'</span>
+ *             style: {
+ *                 fill: &#39;#fff&#39;,
+ *                 stroke: &#39;#999&#39;,
+ *                 lineWidth: 2,
+ *                 shadowBlur: 8,
+ *                 shadowOffsetX: 3,
+ *                 shadowOffsetY: 3,
+ *                 shadowColor: &#39;rgba(0,0,0,0.3)&#39;
  *             }
  *         },
  *         {
- *             <span class="hljs-attr">type</span>: <span class="hljs-string">'text'</span>,
- *             <span class="hljs-attr">left</span>: <span class="hljs-string">'center'</span>, <span class="hljs-comment">// 相对父元素居中</span>
- *             <span class="hljs-attr">top</span>: <span class="hljs-string">'middle'</span>,  <span class="hljs-comment">// 相对父元素居中</span>
- *             <span class="hljs-attr">style</span>: {
- *                 <span class="hljs-attr">fill</span>: <span class="hljs-string">'#777'</span>,
- *                 <span class="hljs-attr">text</span>: [
- *                     <span class="hljs-string">'This is text'</span>,
- *                     <span class="hljs-string">'这是一段文字'</span>,
- *                     <span class="hljs-string">'Print some text'</span>
- *                 ].join(<span class="hljs-string">'\n'</span>),
- *                 <span class="hljs-attr">font</span>: <span class="hljs-string">'14px Microsoft YaHei'</span>
+ *             type: &#39;text&#39;,
+ *             left: &#39;center&#39;, // 相对父元素居中
+ *             top: &#39;middle&#39;,  // 相对父元素居中
+ *             style: {
+ *                 fill: &#39;#777&#39;,
+ *                 text: [
+ *                     &#39;This is text&#39;,
+ *                     &#39;这是一段文字&#39;,
+ *                     &#39;Print some text&#39;
+ *                 ].join(&#39;\n&#39;),
+ *                 font: &#39;14px Microsoft YaHei&#39;
  *             }
  *         }
  *     ]
  * }
  * </code></pre>
  * <p>注意，可以用 <a href="graphic.elements.bounding" target="_blank">bounding</a> 来设置是否整体限制在父节点范围内。</p>
+ * </iframe>
  *
  * @author auto
  */
@@ -293,7 +294,7 @@ public class Graphic implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#graphic.id">https://echarts.apache.org/zh/option.html#graphic.id</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#graphic.id">https://echarts.apache.org/v4/zh/option.html#graphic.id</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -302,7 +303,7 @@ public class Graphic implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#graphic.elements">https://echarts.apache.org/zh/option.html#graphic.elements</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#graphic.elements">https://echarts.apache.org/v4/zh/option.html#graphic.elements</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]

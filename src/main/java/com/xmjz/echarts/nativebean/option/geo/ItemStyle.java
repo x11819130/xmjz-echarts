@@ -7,7 +7,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.itemStyle">https://echarts.apache.org/zh/option.html#geo.itemStyle</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#geo.itemStyle">https://echarts.apache.org/v4/zh/option.html#geo.itemStyle</a>
  * <br/>序号: 14
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
@@ -23,7 +23,7 @@ public class ItemStyle implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.itemStyle.areaColor">https://echarts.apache.org/zh/option.html#geo.itemStyle.areaColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#geo.itemStyle.areaColor">https://echarts.apache.org/v4/zh/option.html#geo.itemStyle.areaColor</a>
      * <br/>序号: 1
      * <br/>默认值: #eee
      * <br/>js类型: ["Color"]
@@ -68,7 +68,7 @@ public class ItemStyle implements Serializable {
      */
     private String areaColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.itemStyle.color">https://echarts.apache.org/zh/option.html#geo.itemStyle.color</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#geo.itemStyle.color">https://echarts.apache.org/v4/zh/option.html#geo.itemStyle.color</a>
      * <br/>序号: 2
      * <br/>默认值: 自适应
      * <br/>js类型: ["Color"]
@@ -113,7 +113,7 @@ public class ItemStyle implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.itemStyle.borderColor">https://echarts.apache.org/zh/option.html#geo.itemStyle.borderColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#geo.itemStyle.borderColor">https://echarts.apache.org/v4/zh/option.html#geo.itemStyle.borderColor</a>
      * <br/>序号: 3
      * <br/>默认值: #000
      * <br/>js类型: ["Color"]
@@ -122,7 +122,7 @@ public class ItemStyle implements Serializable {
      */
     private String borderColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.itemStyle.borderWidth">https://echarts.apache.org/zh/option.html#geo.itemStyle.borderWidth</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#geo.itemStyle.borderWidth">https://echarts.apache.org/v4/zh/option.html#geo.itemStyle.borderWidth</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -131,7 +131,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.itemStyle.borderType">https://echarts.apache.org/zh/option.html#geo.itemStyle.borderType</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#geo.itemStyle.borderType">https://echarts.apache.org/v4/zh/option.html#geo.itemStyle.borderType</a>
      * <br/>序号: 5
      * <br/>默认值: solid
      * <br/>js类型: ["string"]
@@ -140,7 +140,7 @@ public class ItemStyle implements Serializable {
      */
     private String borderType;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.itemStyle.shadowBlur">https://echarts.apache.org/zh/option.html#geo.itemStyle.shadowBlur</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#geo.itemStyle.shadowBlur">https://echarts.apache.org/v4/zh/option.html#geo.itemStyle.shadowBlur</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -155,7 +155,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.itemStyle.shadowColor">https://echarts.apache.org/zh/option.html#geo.itemStyle.shadowColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#geo.itemStyle.shadowColor">https://echarts.apache.org/v4/zh/option.html#geo.itemStyle.shadowColor</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -164,7 +164,7 @@ public class ItemStyle implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.itemStyle.shadowOffsetX">https://echarts.apache.org/zh/option.html#geo.itemStyle.shadowOffsetX</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#geo.itemStyle.shadowOffsetX">https://echarts.apache.org/v4/zh/option.html#geo.itemStyle.shadowOffsetX</a>
      * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -173,7 +173,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.itemStyle.shadowOffsetY">https://echarts.apache.org/zh/option.html#geo.itemStyle.shadowOffsetY</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#geo.itemStyle.shadowOffsetY">https://echarts.apache.org/v4/zh/option.html#geo.itemStyle.shadowOffsetY</a>
      * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -182,7 +182,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.itemStyle.opacity">https://echarts.apache.org/zh/option.html#geo.itemStyle.opacity</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#geo.itemStyle.opacity">https://echarts.apache.org/v4/zh/option.html#geo.itemStyle.opacity</a>
      * <br/>序号: 10
      * <br/>默认值: 1
      * <br/>js类型: ["number"]

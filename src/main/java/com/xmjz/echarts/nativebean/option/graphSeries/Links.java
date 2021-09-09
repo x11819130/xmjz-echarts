@@ -7,8 +7,8 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.links">https://echarts.apache.org/zh/option.html#series-graph.links</a>
- * <br/>序号: 35
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-graph.links">https://echarts.apache.org/v4/zh/option.html#series-graph.links</a>
+ * <br/>序号: 38
  * <br/>默认值: 无
  * <br/>js类型: ["Array"]
  * <br/>描述:
@@ -31,7 +31,7 @@ public class Links implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.links.source">https://echarts.apache.org/zh/option.html#series-graph.links.source</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-graph.links.source">https://echarts.apache.org/v4/zh/option.html#series-graph.links.source</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string","number"]
@@ -40,7 +40,7 @@ public class Links implements Serializable {
      */
     private Object source;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.links.target">https://echarts.apache.org/zh/option.html#series-graph.links.target</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-graph.links.target">https://echarts.apache.org/v4/zh/option.html#series-graph.links.target</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string","number"]
@@ -49,7 +49,7 @@ public class Links implements Serializable {
      */
     private Object target;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.links.value">https://echarts.apache.org/zh/option.html#series-graph.links.value</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-graph.links.value">https://echarts.apache.org/v4/zh/option.html#series-graph.links.value</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -58,7 +58,7 @@ public class Links implements Serializable {
      */
     private Integer value;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.links.lineStyle">https://echarts.apache.org/zh/option.html#series-graph.links.lineStyle</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-graph.links.lineStyle">https://echarts.apache.org/v4/zh/option.html#series-graph.links.lineStyle</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -67,7 +67,7 @@ public class Links implements Serializable {
      */
     private Object lineStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.links.label">https://echarts.apache.org/zh/option.html#series-graph.links.label</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-graph.links.label">https://echarts.apache.org/v4/zh/option.html#series-graph.links.label</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -75,41 +75,16 @@ public class Links implements Serializable {
      */
     private Object label;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.links.emphasis">https://echarts.apache.org/zh/option.html#series-graph.links.emphasis</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-graph.links.emphasis">https://echarts.apache.org/v4/zh/option.html#series-graph.links.emphasis</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
-     * <p>该关系边的高亮状态。</p>
      */
     private Object emphasis;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.links.blur">https://echarts.apache.org/zh/option.html#series-graph.links.blur</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-graph.links.symbol">https://echarts.apache.org/v4/zh/option.html#series-graph.links.symbol</a>
      * <br/>序号: 7
-     * <br/>默认值: 无
-     * <br/>js类型: ["Object"]
-     * <br/>描述:
-     * <blockquote>
-     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
-     * </blockquote>
-     * <p>该关系边的淡出状态。</p>
-     */
-    private Object blur;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.links.select">https://echarts.apache.org/zh/option.html#series-graph.links.select</a>
-     * <br/>序号: 8
-     * <br/>默认值: 无
-     * <br/>js类型: ["Object"]
-     * <br/>描述:
-     * <blockquote>
-     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
-     * </blockquote>
-     * <p>该关系边的选中状态。</p>
-     */
-    private Object select;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.links.symbol">https://echarts.apache.org/zh/option.html#series-graph.links.symbol</a>
-     * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["Array","string"]
      * <br/>描述:
@@ -117,8 +92,8 @@ public class Links implements Serializable {
      */
     private Object symbol;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.links.symbolSize">https://echarts.apache.org/zh/option.html#series-graph.links.symbolSize</a>
-     * <br/>序号: 10
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-graph.links.symbolSize">https://echarts.apache.org/v4/zh/option.html#series-graph.links.symbolSize</a>
+     * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["Array","string"]
      * <br/>描述:
@@ -126,8 +101,8 @@ public class Links implements Serializable {
      */
     private Object symbolSize;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-graph.links.ignoreForceLayout">https://echarts.apache.org/zh/option.html#series-graph.links.ignoreForceLayout</a>
-     * <br/>序号: 11
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-graph.links.ignoreForceLayout">https://echarts.apache.org/v4/zh/option.html#series-graph.links.ignoreForceLayout</a>
+     * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:

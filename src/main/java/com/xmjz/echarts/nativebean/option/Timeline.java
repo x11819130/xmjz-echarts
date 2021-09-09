@@ -9,109 +9,102 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline">https://echarts.apache.org/zh/option.html#timeline</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline">https://echarts.apache.org/v4/zh/option.html#timeline</a>
  * <br/>序号: 20
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
  * <p><code class="codespan">timeline</code> 组件，提供了在多个 ECharts <code class="codespan">option</code> 间进行切换、播放等操作的功能。</p>
  * <p>示例效果如下：</p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/mix-timeline-all&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="18"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/mix-timeline-all&amp;edit=1&amp;reset=1" width="600" height="400"><iframe />
  *
  *
- * <p><code class="codespan">timeline</code> 和其他场景有些不同，它需要操作『多个option』。我们把传入 <code class="codespan">setOption</code> 第一个参数的东西，称为 <code class="codespan">ECOption</code>，然后称传统的 ECharts 单个 option 为 <code class="codespan">ECUnitOption</code>。</p>
+ * <p><code class="codespan">timeline</code> 和其他组件有些不同，它需要操作『多个option』。
+ * 假设，我们把 ECharts 的传统的 option 称为<em>原子option</em>，那么使用 <code class="codespan">timeline</code> 时，传入 ECharts 的 option 就成为了一个集合多个原子option的<em>复合option</em>。如下示例：</p>
+ * <pre><code class="lang-javascript">// 如下，baseOption 是一个 『原子option』，options 数组中的每一项也是一个 『原子option』。
+ * // 每个『原子option』中就是本文档中描述的各种配置项。
+ * myChart.setOption(
+ *     {
+ *         baseOption: {
+ *             timeline: {
+ *                 ...,
+ *                 data: [&#39;2002-01-01&#39;, &#39;2003-01-01&#39;, &#39;2004-01-01&#39;]
+ *             },
+ *             grid: {...},
+ *             xAxis: [...],
+ *             yAxis: [...],
+ *             series: [
+ *                 { // 系列一的一些其他配置
+ *                     type: &#39;bar&#39;,
+ *                     ...
+ *                 },
+ *                 { // 系列二的一些其他配置
+ *                     type: &#39;line&#39;,
+ *                     ...
+ *                 },
+ *                 { // 系列三的一些其他配置
+ *                     type: &#39;pie&#39;,
+ *                     ...
+ *                 }
+ *             ]
+ *         },
+ *         options: [
+ *             { // 这是&#39;2002-01-01&#39; 对应的 option
+ *                 title: {
+ *                     text: &#39;2002年统计值&#39;
+ *                 },
+ *                 series: [
+ *                     {data: []}, // 系列一的数据
+ *                     {data: []}, // 系列二的数据
+ *                     {data: []}  // 系列三的数据
+ *                 ]
+ *             },
+ *             { // 这是&#39;2003-01-01&#39; 对应的 option
+ *                 title: {
+ *                     text: &#39;2003年统计值&#39;
+ *                 },
+ *                 series: [
+ *                     {data: []},
+ *                     {data: []},
+ *                     {data: []}
+ *                 ]
+ *             },
+ *             { // 这是&#39;2004-01-01&#39; 对应的 option
+ *                 title: {
+ *                     text: &#39;2004年统计值&#39;
+ *                 },
+ *                 series: [
+ *                     {data: []},
+ *                     {data: []},
+ *                     {data: []}
+ *                 ]
+ *             }
+ *         ]
+ *     }
+ * );
+ * </code></pre>
+ * <p>在上例中，<code class="codespan">timeline.data</code> 中的每一项，对应于 <code class="codespan">options</code> 数组中的每个 <code class="codespan">option</code>。</p>
+ * <p><br>
+ * <strong>使用注意与最佳实践：</strong></p>
  * <ul>
- * <li>当 <code class="codespan">timeline</code> 和 <code class="codespan">media query</code> 没有被设置时，一个 <code class="codespan">ECUnitOption</code> 就是一个 <code class="codespan">ECOption</code>。</li>
- * <li>当 <code class="codespan">timeline</code> 或 <code class="codespan">media query</code> 被使用设置时，一个 <code class="codespan">ECOption</code> 由几个 <code class="codespan">ECUnitOption</code> 组成。<ul>
- * <li><code class="codespan">ECOption</code> 的各个根属性，形成一个 <code class="codespan">ECUnitOption</code>，叫做 <code class="codespan">baseOption</code>，它代表了各种默认设置。</li>
- * <li><code class="codespan">options</code> 数组每项，形成一个 <code class="codespan">ECUnitOption</code>，我们为了方便也叫做 <code class="codespan">switchableOption</code>，它代表了每个时间粒度对应的 option。</li>
- * </ul>
+ * <li><p>公有的配置项，推荐配置在 <code class="codespan">baseOption</code> 中。<code class="codespan">timeline</code> 播放切换时，会把 <code class="codespan">options</code> 数组中的对应的 <code class="codespan">option</code>，与 <code class="codespan">baseOption</code> 进行 merge 形成最终的 <code class="codespan">option</code>。</p>
  * </li>
- * <li><code class="codespan">baseOption</code> 和一个 <code class="codespan">switchableOption</code> 会用来计算最终的 <code class="codespan">finalOption</code>，图表就是根据这个最终结果绘制的。</li>
+ * <li><p><code class="codespan">options</code> 数组中，如果某一数组项中配置了某个属性，那么其他数组项中也必须配置某个属性，而不能缺省。否则这个属性的执行效果会遗留。</p>
+ * </li>
+ * <li><p><em>复合 option</em> 中的 <code class="codespan">options</code> 不支持 merge。</p>
+ * <p>  也就是说，当第二（或三、四、五 ...）次 <code class="codespan">chart.setOption(rawOption)</code> 时，如果 <code class="codespan">rawOption</code> 是<em>复合 option</em>（即包含 <code class="codespan">options</code> 列表），那么新的 <code class="codespan">rawOption.options</code> 列表不会和老的 <code class="codespan">options</code> 列表进行 merge，而是简单替代。当然，<code class="codespan">rawOption.baseOption</code> 仍然会正常和老的 option 进行merge。</p>
+ * </li>
  * </ul>
- * <p>例如：</p>
- * <pre><code class="lang-javascript hljs"><span class="hljs-comment">// 如下，baseOption 是一个 『原子option』，options 数组</span>
- * <span class="hljs-comment">// 中的每一项也是一个 『原子option』。</span>
- * <span class="hljs-comment">// 每个『原子option』中就是本文档中描述的各种配置项。</span>
- * myChart.setOption({
- *     <span class="hljs-comment">// `baseOption` 的属性.</span>
- *     <span class="hljs-attr">timeline</span>: {
- *         ...,
- *         <span class="hljs-comment">// `timeline.data` 中的每一项，对应于 `options`</span>
- *         <span class="hljs-comment">// 数组中的每个 `option`</span>
- *         <span class="hljs-attr">data</span>: [<span class="hljs-string">'2002-01-01'</span>, <span class="hljs-string">'2003-01-01'</span>, <span class="hljs-string">'2004-01-01'</span>]
- *     },
- *     <span class="hljs-attr">grid</span>: { ... },
- *     <span class="hljs-attr">xAxis</span>: [ ... ],
- *     <span class="hljs-attr">yAxis</span>: [ ... ],
- *     <span class="hljs-attr">series</span>: [{
- *         <span class="hljs-comment">// 系列一的一些其他配置</span>
- *         <span class="hljs-attr">type</span>: <span class="hljs-string">'bar'</span>,
- *         ...
- *     }, {
- *         <span class="hljs-comment">// 系列二的一些其他配置</span>
- *         <span class="hljs-attr">type</span>: <span class="hljs-string">'line'</span>,
- *         ...
- *     }, {
- *         <span class="hljs-comment">// 系列三的一些其他配置</span>
- *         <span class="hljs-attr">type</span>: <span class="hljs-string">'pie'</span>,
- *         ...
- *     }],
- *     <span class="hljs-comment">// `switchableOption`s:</span>
- *     <span class="hljs-attr">options</span>: [{
- *         <span class="hljs-comment">// 这是'2002-01-01' 对应的 option</span>
- *         <span class="hljs-attr">title</span>: {
- *             <span class="hljs-attr">text</span>: <span class="hljs-string">'2002年统计值'</span>
- *         },
- *         <span class="hljs-attr">series</span>: [
- *             { <span class="hljs-attr">data</span>: [] }, <span class="hljs-comment">// 系列一的数据</span>
- *             { <span class="hljs-attr">data</span>: [] }, <span class="hljs-comment">// 系列二的数据</span>
- *             { <span class="hljs-attr">data</span>: [] }  <span class="hljs-comment">// 系列三的数据</span>
- *         ]
- *     }, {
- *         <span class="hljs-comment">// 这是'2003-01-01' 对应的 option</span>
- *         <span class="hljs-attr">title</span>: {
- *             <span class="hljs-attr">text</span>: <span class="hljs-string">'2003年统计值'</span>
- *         },
- *         <span class="hljs-attr">series</span>: [
- *             { <span class="hljs-attr">data</span>: [] },
- *             { <span class="hljs-attr">data</span>: [] },
- *             { <span class="hljs-attr">data</span>: [] }
- *         ]
- *     }, {
- *         <span class="hljs-comment">// 这是'2004-01-01' 对应的 option</span>
- *         <span class="hljs-attr">title</span>: {
- *             <span class="hljs-attr">text</span>: <span class="hljs-string">'2004年统计值'</span>
- *         },
- *         <span class="hljs-attr">series</span>: [
- *             { <span class="hljs-attr">data</span>: [] },
- *             { <span class="hljs-attr">data</span>: [] },
- *             { <span class="hljs-attr">data</span>: [] }
- *         ]
- *     }]
- * });
- * </code></pre>
  * <p><br>
- * <strong><code class="codespan">finalOption</code> 是怎么计算出来的?</strong></p>
- * <p>初始化的时候，对应于当前时间的那个 <code class="codespan">switchableOption</code> 会被合并（merge）到 <code class="codespan">baseOption</code>，形成 <code class="codespan">finalOption</code>。而每当时间变化时，对应于新时间的 <code class="codespan">switchableOption</code> 会被合并（merge）到<code class="codespan">finalOption</code>。</p>
- * <p>有两种合并（merge）策略：</p>
+ * <strong>与 ECharts 2 的兼容性：</strong></p>
  * <ul>
- * <li>默认使用 <code class="codespan">NORMAL_MERGE</code>。</li>
- * <li>如果 <a href="#option.html#timeline.replaceMerge">timeline.replaceMerge</a> 被指定了，则使用 <code class="codespan">REPLACE_MERGE</code>。如果要知道 <code class="codespan">REPLACE_MERGE</code> 更多信息，可以参见 <a href="#api.html#echartsInstance.setOption">setOption</a> 中 <code class="codespan">REPLACE_MERGE</code> 一节。
- * 。</li>
+ * <li><p>ECharts 3 中不再支持 timeline.notMerge 参数，也就是不支持 notMerge 模式。如果遇到这种场景需要使用，可在外部进行option管理，并用 setOption(option, true) 这样的notMerge方式设置。</p>
+ * </li>
+ * <li><p>ECharts 3 和 ECharts 2 相比，timeline 属性的定义位置有所不同，移到了 <code class="codespan">baseOption</code> 中，统一作为一个普通的组件看待。但是，仍然兼容 ECharts2 的 timeline 定义位置，只是不再推荐这样写。</p>
+ * </li>
  * </ul>
- * <p><br>
- * <strong>兼容 ECharts4</strong></p>
- * <p>如下这种设置方式，也支持：</p>
- * <pre><code class="lang-js hljs javascript">option = {
- *     <span class="hljs-attr">baseOption</span>: {
- *         <span class="hljs-attr">timeline</span>: {},
- *         <span class="hljs-attr">series</span>: [],
- *         <span class="hljs-comment">// ... other properties of baseOption.</span>
- *     },
- *     <span class="hljs-attr">options</span>: []
- * };
- * </code></pre>
+ *
+ * </iframe>
  *
  * @author auto
  */
@@ -122,7 +115,7 @@ public class Timeline implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.show">https://echarts.apache.org/zh/option.html#timeline.show</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.show">https://echarts.apache.org/v4/zh/option.html#timeline.show</a>
      * <br/>序号: 1
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -131,7 +124,7 @@ public class Timeline implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.type">https://echarts.apache.org/zh/option.html#timeline.type</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.type">https://echarts.apache.org/v4/zh/option.html#timeline.type</a>
      * <br/>序号: 2
      * <br/>默认值: slider
      * <br/>js类型: ["string"]
@@ -140,7 +133,7 @@ public class Timeline implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.axisType">https://echarts.apache.org/zh/option.html#timeline.axisType</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.axisType">https://echarts.apache.org/v4/zh/option.html#timeline.axisType</a>
      * <br/>序号: 3
      * <br/>默认值: time
      * <br/>js类型: ["string"]
@@ -160,7 +153,7 @@ public class Timeline implements Serializable {
      */
     private String axisType;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.currentIndex">https://echarts.apache.org/zh/option.html#timeline.currentIndex</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.currentIndex">https://echarts.apache.org/v4/zh/option.html#timeline.currentIndex</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -169,7 +162,7 @@ public class Timeline implements Serializable {
      */
     private Integer currentIndex;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.autoPlay">https://echarts.apache.org/zh/option.html#timeline.autoPlay</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.autoPlay">https://echarts.apache.org/v4/zh/option.html#timeline.autoPlay</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -178,7 +171,7 @@ public class Timeline implements Serializable {
      */
     private Boolean autoPlay;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.rewind">https://echarts.apache.org/zh/option.html#timeline.rewind</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.rewind">https://echarts.apache.org/v4/zh/option.html#timeline.rewind</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -187,7 +180,7 @@ public class Timeline implements Serializable {
      */
     private Boolean rewind;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.loop">https://echarts.apache.org/zh/option.html#timeline.loop</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.loop">https://echarts.apache.org/v4/zh/option.html#timeline.loop</a>
      * <br/>序号: 7
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -196,7 +189,7 @@ public class Timeline implements Serializable {
      */
     private Boolean loop;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.playInterval">https://echarts.apache.org/zh/option.html#timeline.playInterval</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.playInterval">https://echarts.apache.org/v4/zh/option.html#timeline.playInterval</a>
      * <br/>序号: 8
      * <br/>默认值: 2000
      * <br/>js类型: ["number"]
@@ -205,7 +198,7 @@ public class Timeline implements Serializable {
      */
     private Integer playInterval;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.realtime">https://echarts.apache.org/zh/option.html#timeline.realtime</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.realtime">https://echarts.apache.org/v4/zh/option.html#timeline.realtime</a>
      * <br/>序号: 9
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -214,27 +207,8 @@ public class Timeline implements Serializable {
      */
     private Boolean realtime;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.replaceMerge">https://echarts.apache.org/zh/option.html#timeline.replaceMerge</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.controlPosition">https://echarts.apache.org/v4/zh/option.html#timeline.controlPosition</a>
      * <br/>序号: 10
-     * <br/>默认值: 无
-     * <br/>js类型: ["Array","string"]
-     * <br/>描述:
-     * <p>初始化的时候，对应于当前时间的那个 <code class="codespan">switchableOption</code> 会被合并（merge）到 <code class="codespan">baseOption</code>，形成 <code class="codespan">finalOption</code>。而每当时间变化时，对应于新时间的 <code class="codespan">switchableOption</code> 会被合并（merge）到<code class="codespan">finalOption</code>。</p>
-     * <p>有两种合并（merge）策略：</p>
-     * <ul>
-     * <li>默认使用 <code class="codespan">NORMAL_MERGE</code>。</li>
-     * <li>如果 <a href="#option.html#timeline.replaceMerge">timeline.replaceMerge</a> 被指定了，则使用 <code class="codespan">REPLACE_MERGE</code>。如果要知道 <code class="codespan">REPLACE_MERGE</code> 更多信息，可以参见 <a href="#api.html#echartsInstance.setOption">setOption</a> 中 <code class="codespan">REPLACE_MERGE</code> 一节。
-     * 。</li>
-     * </ul>
-     * <p><br></p>
-     * <p><code class="codespan">replaceMerge</code> 的值可以是一个组件的 <code class="codespan">mainType</code>，例如 <code class="codespan">replaceMerge: 'xAxis'</code>。也可以是 <code class="codespan">mainType</code> 数组，例如 <code class="codespan">replaceMerge: ['xAxis', 'series']</code>。</p>
-     * <p>常见需要使用 <code class="codespan">replaceMerge</code> 的地方是，如果需要下一个时间刻度的 series 完全替换上一个时间刻度的 series 而不进行任何 merge ，可以设置 <code class="codespan">replaceMerge: 'series'</code>，并且两个时间刻度的 series id 不相同或者没有 id 。</p>
-     * <p>参见这个 <a href="https://echarts.apache.org/examples/zh/editor.html?c=doc-example/timeline-dynamic-series&amp;edit=1&amp;reset=1" target="_blank">示例</a>。</p>
-     */
-    private Object replaceMerge;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.controlPosition">https://echarts.apache.org/zh/option.html#timeline.controlPosition</a>
-     * <br/>序号: 11
      * <br/>默认值: left
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -242,8 +216,8 @@ public class Timeline implements Serializable {
      */
     private String controlPosition;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.zlevel">https://echarts.apache.org/zh/option.html#timeline.zlevel</a>
-     * <br/>序号: 12
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.zlevel">https://echarts.apache.org/v4/zh/option.html#timeline.zlevel</a>
+     * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -253,8 +227,8 @@ public class Timeline implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.z">https://echarts.apache.org/zh/option.html#timeline.z</a>
-     * <br/>序号: 13
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.z">https://echarts.apache.org/v4/zh/option.html#timeline.z</a>
+     * <br/>序号: 12
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -263,8 +237,8 @@ public class Timeline implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.left">https://echarts.apache.org/zh/option.html#timeline.left</a>
-     * <br/>序号: 14
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.left">https://echarts.apache.org/v4/zh/option.html#timeline.left</a>
+     * <br/>序号: 13
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -274,8 +248,8 @@ public class Timeline implements Serializable {
      */
     private Object left;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.top">https://echarts.apache.org/zh/option.html#timeline.top</a>
-     * <br/>序号: 15
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.top">https://echarts.apache.org/v4/zh/option.html#timeline.top</a>
+     * <br/>序号: 14
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -285,8 +259,8 @@ public class Timeline implements Serializable {
      */
     private Object top;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.right">https://echarts.apache.org/zh/option.html#timeline.right</a>
-     * <br/>序号: 16
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.right">https://echarts.apache.org/v4/zh/option.html#timeline.right</a>
+     * <br/>序号: 15
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -296,8 +270,8 @@ public class Timeline implements Serializable {
      */
     private Object right;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.bottom">https://echarts.apache.org/zh/option.html#timeline.bottom</a>
-     * <br/>序号: 17
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.bottom">https://echarts.apache.org/v4/zh/option.html#timeline.bottom</a>
+     * <br/>序号: 16
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -307,8 +281,8 @@ public class Timeline implements Serializable {
      */
     private Object bottom;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.padding">https://echarts.apache.org/zh/option.html#timeline.padding</a>
-     * <br/>序号: 18
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.padding">https://echarts.apache.org/v4/zh/option.html#timeline.padding</a>
+     * <br/>序号: 17
      * <br/>默认值: 5
      * <br/>js类型: ["number","Array"]
      * <br/>描述:
@@ -329,8 +303,8 @@ public class Timeline implements Serializable {
      */
     private Object padding;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.orient">https://echarts.apache.org/zh/option.html#timeline.orient</a>
-     * <br/>序号: 19
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.orient">https://echarts.apache.org/v4/zh/option.html#timeline.orient</a>
+     * <br/>序号: 18
      * <br/>默认值: horizontal
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -342,8 +316,8 @@ public class Timeline implements Serializable {
      */
     private String orient;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.inverse">https://echarts.apache.org/zh/option.html#timeline.inverse</a>
-     * <br/>序号: 20
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.inverse">https://echarts.apache.org/v4/zh/option.html#timeline.inverse</a>
+     * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -353,14 +327,14 @@ public class Timeline implements Serializable {
      */
     private Boolean inverse;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.symbol">https://echarts.apache.org/zh/option.html#timeline.symbol</a>
-     * <br/>序号: 21
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.symbol">https://echarts.apache.org/v4/zh/option.html#timeline.symbol</a>
+     * <br/>序号: 20
      * <br/>默认值: emptyCircle
      * <br/>js类型: ["string"]
      * <br/>描述:
      * <p>timeline标记的图形。</p>
-     * <p>ECharts 提供的标记类型包括</p>
-     * <p><code class="codespan">'circle'</code>, <code class="codespan">'rect'</code>, <code class="codespan">'roundRect'</code>, <code class="codespan">'triangle'</code>, <code class="codespan">'diamond'</code>, <code class="codespan">'pin'</code>, <code class="codespan">'arrow'</code>, <code class="codespan">'none'</code></p>
+     * <p>ECharts 提供的标记类型包括
+     * <code class="codespan">'circle'</code>, <code class="codespan">'rect'</code>, <code class="codespan">'roundRect'</code>, <code class="codespan">'triangle'</code>, <code class="codespan">'diamond'</code>, <code class="codespan">'pin'</code>, <code class="codespan">'arrow'</code>, <code class="codespan">'none'</code></p>
      * <p>可以通过 <code class="codespan">'image://url'</code> 设置为图片，其中 URL 为图片的链接，或者 <code class="codespan">dataURI</code>。</p>
      * <p>URL 为图片链接例如：</p>
      * <pre><code class="hljs javascript"><span class="hljs-string">'image://http://xxx.xxx.xxx/a/b.png'</span>
@@ -373,8 +347,8 @@ public class Timeline implements Serializable {
      */
     private String symbol;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.symbolSize">https://echarts.apache.org/zh/option.html#timeline.symbolSize</a>
-     * <br/>序号: 22
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.symbolSize">https://echarts.apache.org/v4/zh/option.html#timeline.symbolSize</a>
+     * <br/>序号: 21
      * <br/>默认值: 10
      * <br/>js类型: ["number","Array"]
      * <br/>描述:
@@ -382,8 +356,8 @@ public class Timeline implements Serializable {
      */
     private Object symbolSize;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.symbolRotate">https://echarts.apache.org/zh/option.html#timeline.symbolRotate</a>
-     * <br/>序号: 23
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.symbolRotate">https://echarts.apache.org/v4/zh/option.html#timeline.symbolRotate</a>
+     * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -391,8 +365,8 @@ public class Timeline implements Serializable {
      */
     private Integer symbolRotate;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.symbolKeepAspect">https://echarts.apache.org/zh/option.html#timeline.symbolKeepAspect</a>
-     * <br/>序号: 24
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.symbolKeepAspect">https://echarts.apache.org/v4/zh/option.html#timeline.symbolKeepAspect</a>
+     * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -400,8 +374,8 @@ public class Timeline implements Serializable {
      */
     private Boolean symbolKeepAspect;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.symbolOffset">https://echarts.apache.org/zh/option.html#timeline.symbolOffset</a>
-     * <br/>序号: 25
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.symbolOffset">https://echarts.apache.org/v4/zh/option.html#timeline.symbolOffset</a>
+     * <br/>序号: 24
      * <br/>默认值: [0,0]
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -410,16 +384,16 @@ public class Timeline implements Serializable {
      */
     private List<?> symbolOffset;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.lineStyle">https://echarts.apache.org/zh/option.html#timeline.lineStyle</a>
-     * <br/>序号: 26
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.lineStyle">https://echarts.apache.org/v4/zh/option.html#timeline.lineStyle</a>
+     * <br/>序号: 25
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
      * <br/>描述:
      */
     private LineStyle lineStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.label">https://echarts.apache.org/zh/option.html#timeline.label</a>
-     * <br/>序号: 27
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.label">https://echarts.apache.org/v4/zh/option.html#timeline.label</a>
+     * <br/>序号: 26
      * <br/>默认值: auto
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -427,17 +401,17 @@ public class Timeline implements Serializable {
      */
     private Label label;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.itemStyle">https://echarts.apache.org/zh/option.html#timeline.itemStyle</a>
-     * <br/>序号: 28
-     * <br/>默认值: #A4B1D7
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.itemStyle">https://echarts.apache.org/v4/zh/option.html#timeline.itemStyle</a>
+     * <br/>序号: 27
+     * <br/>默认值: #304654
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>timeline  图形样式。</p>
      */
     private ItemStyle itemStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.checkpointStyle">https://echarts.apache.org/zh/option.html#timeline.checkpointStyle</a>
-     * <br/>序号: 29
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.checkpointStyle">https://echarts.apache.org/v4/zh/option.html#timeline.checkpointStyle</a>
+     * <br/>序号: 28
      * <br/>默认值: circle
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -445,8 +419,8 @@ public class Timeline implements Serializable {
      */
     private CheckpointStyle checkpointStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.controlStyle">https://echarts.apache.org/zh/option.html#timeline.controlStyle</a>
-     * <br/>序号: 30
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.controlStyle">https://echarts.apache.org/v4/zh/option.html#timeline.controlStyle</a>
+     * <br/>序号: 29
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -454,25 +428,16 @@ public class Timeline implements Serializable {
      */
     private ControlStyle controlStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.progress">https://echarts.apache.org/zh/option.html#timeline.progress</a>
-     * <br/>序号: 31
-     * <br/>默认值: 无
-     * <br/>js类型: ["Object"]
-     * <br/>描述:
-     * <p>进度条中的线条，拐点，标签的样式。</p>
-     */
-    private Progress progress;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.emphasis">https://echarts.apache.org/zh/option.html#timeline.emphasis</a>
-     * <br/>序号: 32
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.emphasis">https://echarts.apache.org/v4/zh/option.html#timeline.emphasis</a>
+     * <br/>序号: 30
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
      */
     private Emphasis emphasis;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.data">https://echarts.apache.org/zh/option.html#timeline.data</a>
-     * <br/>序号: 33
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.data">https://echarts.apache.org/v4/zh/option.html#timeline.data</a>
+     * <br/>序号: 31
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:

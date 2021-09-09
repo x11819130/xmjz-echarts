@@ -7,7 +7,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.handle">https://echarts.apache.org/zh/option.html#axisPointer.handle</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#axisPointer.handle">https://echarts.apache.org/v4/zh/option.html#axisPointer.handle</a>
  * <br/>序号: 12
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
@@ -23,7 +23,7 @@ public class Handle implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.handle.show">https://echarts.apache.org/zh/option.html#axisPointer.handle.show</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#axisPointer.handle.show">https://echarts.apache.org/v4/zh/option.html#axisPointer.handle.show</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -32,7 +32,7 @@ public class Handle implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.handle.icon">https://echarts.apache.org/zh/option.html#axisPointer.handle.icon</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#axisPointer.handle.icon">https://echarts.apache.org/v4/zh/option.html#axisPointer.handle.icon</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["any"]
@@ -50,7 +50,7 @@ public class Handle implements Serializable {
      */
     private Object icon;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.handle.size">https://echarts.apache.org/zh/option.html#axisPointer.handle.size</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#axisPointer.handle.size">https://echarts.apache.org/v4/zh/option.html#axisPointer.handle.size</a>
      * <br/>序号: 3
      * <br/>默认值: 45
      * <br/>js类型: ["number","Array"]
@@ -59,7 +59,7 @@ public class Handle implements Serializable {
      */
     private Object size;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.handle.margin">https://echarts.apache.org/zh/option.html#axisPointer.handle.margin</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#axisPointer.handle.margin">https://echarts.apache.org/v4/zh/option.html#axisPointer.handle.margin</a>
      * <br/>序号: 4
      * <br/>默认值: 50
      * <br/>js类型: ["number"]
@@ -68,7 +68,7 @@ public class Handle implements Serializable {
      */
     private Integer margin;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.handle.color">https://echarts.apache.org/zh/option.html#axisPointer.handle.color</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#axisPointer.handle.color">https://echarts.apache.org/v4/zh/option.html#axisPointer.handle.color</a>
      * <br/>序号: 5
      * <br/>默认值: #333
      * <br/>js类型: ["string"]
@@ -77,7 +77,7 @@ public class Handle implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.handle.throttle">https://echarts.apache.org/zh/option.html#axisPointer.handle.throttle</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#axisPointer.handle.throttle">https://echarts.apache.org/v4/zh/option.html#axisPointer.handle.throttle</a>
      * <br/>序号: 6
      * <br/>默认值: 40
      * <br/>js类型: ["number"]
@@ -86,7 +86,7 @@ public class Handle implements Serializable {
      */
     private Integer throttle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.handle.shadowBlur">https://echarts.apache.org/zh/option.html#axisPointer.handle.shadowBlur</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#axisPointer.handle.shadowBlur">https://echarts.apache.org/v4/zh/option.html#axisPointer.handle.shadowBlur</a>
      * <br/>序号: 7
      * <br/>默认值: 3
      * <br/>js类型: ["number"]
@@ -101,7 +101,7 @@ public class Handle implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.handle.shadowColor">https://echarts.apache.org/zh/option.html#axisPointer.handle.shadowColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#axisPointer.handle.shadowColor">https://echarts.apache.org/v4/zh/option.html#axisPointer.handle.shadowColor</a>
      * <br/>序号: 8
      * <br/>默认值: #aaa
      * <br/>js类型: ["Color"]
@@ -110,7 +110,7 @@ public class Handle implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.handle.shadowOffsetX">https://echarts.apache.org/zh/option.html#axisPointer.handle.shadowOffsetX</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#axisPointer.handle.shadowOffsetX">https://echarts.apache.org/v4/zh/option.html#axisPointer.handle.shadowOffsetX</a>
      * <br/>序号: 9
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -119,7 +119,7 @@ public class Handle implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#axisPointer.handle.shadowOffsetY">https://echarts.apache.org/zh/option.html#axisPointer.handle.shadowOffsetY</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#axisPointer.handle.shadowOffsetY">https://echarts.apache.org/v4/zh/option.html#axisPointer.handle.shadowOffsetY</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["number"]

@@ -1,9 +1,7 @@
 package com.xmjz.echarts.nativebean.option;
 
-import com.xmjz.echarts.nativebean.option.candlestickSeries.Blur;
-import com.xmjz.echarts.nativebean.option.candlestickSeries.Emphasis;
-import com.xmjz.echarts.nativebean.option.candlestickSeries.ItemStyle;
-import com.xmjz.echarts.nativebean.option.candlestickSeries.Select;
+import com.xmjz.echarts.nativebean.option.candlestickSeries.Tooltip;
+import com.xmjz.echarts.nativebean.option.candlestickSeries.*;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
@@ -12,7 +10,7 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick">https://echarts.apache.org/zh/option.html#series-candlestick</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick">https://echarts.apache.org/v4/zh/option.html#series-candlestick</a>
  * <br/>序号: 0
  * <br/>默认值: 无
  * <br/>js类型: ["object"]
@@ -20,7 +18,7 @@ import java.util.List;
  * <p><a href="https://en.wikipedia.org/wiki/Candlestick_chart" target="_blank">Candlestick</a> 即我们常说的 <code class="codespan">K线图</code>。</p>
  * <p>在 ECharts3 中，同时支持 <code class="codespan">'candlestick'</code> 和 <code class="codespan">'k'</code>这两种 <code class="codespan">'series.type'</code>（<code class="codespan">'k'</code> 会被自动转为 <code class="codespan">'candlestick'</code>）。</p>
  * <p><strong>示例如下：</strong></p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=candlestick-sh&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="18"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=candlestick-sh&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="20"><iframe />
  *
  *
  *
@@ -37,6 +35,8 @@ import java.util.List;
  * <p><br>
  * <br></p>
  *
+ * </iframe>
+ *
  * @author auto
  */
 @Getter
@@ -46,7 +46,7 @@ public class CandlestickSeries extends Series implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.type">https://echarts.apache.org/zh/option.html#series-candlestick.type</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.type">https://echarts.apache.org/v4/zh/option.html#series-candlestick.type</a>
      * <br/>序号: 1
      * <br/>默认值: candlestick
      * <br/>js类型: ["string"]
@@ -54,7 +54,7 @@ public class CandlestickSeries extends Series implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.id">https://echarts.apache.org/zh/option.html#series-candlestick.id</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.id">https://echarts.apache.org/v4/zh/option.html#series-candlestick.id</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -63,7 +63,7 @@ public class CandlestickSeries extends Series implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.coordinateSystem">https://echarts.apache.org/zh/option.html#series-candlestick.coordinateSystem</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.coordinateSystem">https://echarts.apache.org/v4/zh/option.html#series-candlestick.coordinateSystem</a>
      * <br/>序号: 3
      * <br/>默认值: cartesian2d
      * <br/>js类型: ["string"]
@@ -77,7 +77,7 @@ public class CandlestickSeries extends Series implements Serializable {
      */
     private String coordinateSystem;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.xAxisIndex">https://echarts.apache.org/zh/option.html#series-candlestick.xAxisIndex</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.xAxisIndex">https://echarts.apache.org/v4/zh/option.html#series-candlestick.xAxisIndex</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -91,7 +91,7 @@ public class CandlestickSeries extends Series implements Serializable {
     }
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.yAxisIndex">https://echarts.apache.org/zh/option.html#series-candlestick.yAxisIndex</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.yAxisIndex">https://echarts.apache.org/v4/zh/option.html#series-candlestick.yAxisIndex</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -105,7 +105,7 @@ public class CandlestickSeries extends Series implements Serializable {
     }
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.name">https://echarts.apache.org/zh/option.html#series-candlestick.name</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.name">https://echarts.apache.org/v4/zh/option.html#series-candlestick.name</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -114,7 +114,7 @@ public class CandlestickSeries extends Series implements Serializable {
      */
     private String name;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.legendHoverLink">https://echarts.apache.org/zh/option.html#series-candlestick.legendHoverLink</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.legendHoverLink">https://echarts.apache.org/v4/zh/option.html#series-candlestick.legendHoverLink</a>
      * <br/>序号: 7
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -123,7 +123,7 @@ public class CandlestickSeries extends Series implements Serializable {
      */
     private Boolean legendHoverLink;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.hoverAnimation">https://echarts.apache.org/zh/option.html#series-candlestick.hoverAnimation</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.hoverAnimation">https://echarts.apache.org/v4/zh/option.html#series-candlestick.hoverAnimation</a>
      * <br/>序号: 8
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -132,7 +132,7 @@ public class CandlestickSeries extends Series implements Serializable {
      */
     private Boolean hoverAnimation;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.layout">https://echarts.apache.org/zh/option.html#series-candlestick.layout</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.layout">https://echarts.apache.org/v4/zh/option.html#series-candlestick.layout</a>
      * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -148,7 +148,7 @@ public class CandlestickSeries extends Series implements Serializable {
      */
     private String layout;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.barWidth">https://echarts.apache.org/zh/option.html#series-candlestick.barWidth</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.barWidth">https://echarts.apache.org/v4/zh/option.html#series-candlestick.barWidth</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -157,7 +157,7 @@ public class CandlestickSeries extends Series implements Serializable {
      */
     private Integer barWidth;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.barMinWidth">https://echarts.apache.org/zh/option.html#series-candlestick.barMinWidth</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.barMinWidth">https://echarts.apache.org/v4/zh/option.html#series-candlestick.barMinWidth</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["number","string"]
@@ -166,7 +166,7 @@ public class CandlestickSeries extends Series implements Serializable {
      */
     private Object barMinWidth;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.barMaxWidth">https://echarts.apache.org/zh/option.html#series-candlestick.barMaxWidth</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.barMaxWidth">https://echarts.apache.org/v4/zh/option.html#series-candlestick.barMaxWidth</a>
      * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["number","string"]
@@ -175,7 +175,7 @@ public class CandlestickSeries extends Series implements Serializable {
      */
     private Object barMaxWidth;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.itemStyle">https://echarts.apache.org/zh/option.html#series-candlestick.itemStyle</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.itemStyle">https://echarts.apache.org/v4/zh/option.html#series-candlestick.itemStyle</a>
      * <br/>序号: 13
      * <br/>默认值: #c23531
      * <br/>js类型: ["Object"]
@@ -184,55 +184,17 @@ public class CandlestickSeries extends Series implements Serializable {
      */
     private ItemStyle itemStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.emphasis">https://echarts.apache.org/zh/option.html#series-candlestick.emphasis</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.emphasis">https://echarts.apache.org/v4/zh/option.html#series-candlestick.emphasis</a>
      * <br/>序号: 14
-     * <br/>默认值: none
+     * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
-     * <p>K 线图的高亮状态。</p>
+     * <p>K 线图的高亮图形样式。</p>
      */
     private Emphasis emphasis;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.blur">https://echarts.apache.org/zh/option.html#series-candlestick.blur</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.large">https://echarts.apache.org/v4/zh/option.html#series-candlestick.large</a>
      * <br/>序号: 15
-     * <br/>默认值: 无
-     * <br/>js类型: ["Object"]
-     * <br/>描述:
-     * <blockquote>
-     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
-     * </blockquote>
-     * <p>K 线图的淡出状态。开启 <a href="#series-candlestick.emphasis.focus">emphasis.focus</a> 后有效</p>
-     */
-    private Blur blur;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.select">https://echarts.apache.org/zh/option.html#series-candlestick.select</a>
-     * <br/>序号: 16
-     * <br/>默认值: 无
-     * <br/>js类型: ["Object"]
-     * <br/>描述:
-     * <blockquote>
-     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
-     * </blockquote>
-     * <p>K 线图的选中状态。开启 <a href="#series-candlestick.selectedMode">selectedMode</a> 后有效。</p>
-     */
-    private Select select;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.selectedMode">https://echarts.apache.org/zh/option.html#series-candlestick.selectedMode</a>
-     * <br/>序号: 17
-     * <br/>默认值: 无
-     * <br/>js类型: ["boolean","string"]
-     * <br/>描述:
-     * <blockquote>
-     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
-     * </blockquote>
-     *
-     *
-     * <p>选中模式的配置，表示是否支持多个选中，默认关闭，支持布尔值和字符串，字符串取值可选<code class="codespan">'single'</code>，<code class="codespan">'multiple'</code>，分别表示单选还是多选。</p>
-     */
-    private Object selectedMode;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.large">https://echarts.apache.org/zh/option.html#series-candlestick.large</a>
-     * <br/>序号: 18
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -242,8 +204,8 @@ public class CandlestickSeries extends Series implements Serializable {
      */
     private Boolean large;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.largeThreshold">https://echarts.apache.org/zh/option.html#series-candlestick.largeThreshold</a>
-     * <br/>序号: 19
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.largeThreshold">https://echarts.apache.org/v4/zh/option.html#series-candlestick.largeThreshold</a>
+     * <br/>序号: 16
      * <br/>默认值: 600
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -251,8 +213,8 @@ public class CandlestickSeries extends Series implements Serializable {
      */
     private Integer largeThreshold;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.progressive">https://echarts.apache.org/zh/option.html#series-candlestick.progressive</a>
-     * <br/>序号: 20
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.progressive">https://echarts.apache.org/v4/zh/option.html#series-candlestick.progressive</a>
+     * <br/>序号: 17
      * <br/>默认值: 3000
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -262,8 +224,8 @@ public class CandlestickSeries extends Series implements Serializable {
      */
     private Integer progressive;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.progressiveThreshold">https://echarts.apache.org/zh/option.html#series-candlestick.progressiveThreshold</a>
-     * <br/>序号: 21
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.progressiveThreshold">https://echarts.apache.org/v4/zh/option.html#series-candlestick.progressiveThreshold</a>
+     * <br/>序号: 18
      * <br/>默认值: 10000
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -271,8 +233,8 @@ public class CandlestickSeries extends Series implements Serializable {
      */
     private Integer progressiveThreshold;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.progressiveChunkMode">https://echarts.apache.org/zh/option.html#series-candlestick.progressiveChunkMode</a>
-     * <br/>序号: 22
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.progressiveChunkMode">https://echarts.apache.org/v4/zh/option.html#series-candlestick.progressiveChunkMode</a>
+     * <br/>序号: 19
      * <br/>默认值: mod
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -284,13 +246,13 @@ public class CandlestickSeries extends Series implements Serializable {
      */
     private String progressiveChunkMode;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.dimensions">https://echarts.apache.org/zh/option.html#series-candlestick.dimensions</a>
-     * <br/>序号: 23
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.dimensions">https://echarts.apache.org/v4/zh/option.html#series-candlestick.dimensions</a>
+     * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
      * <p>使用 dimensions 定义 <code class="codespan">series.data</code> 或者 <code class="codespan">dataset.source</code> 的每个维度的信息。</p>
-     * <p>注意：如果使用了 <a href="#dataset">dataset</a>，那么可以在 <a href="#dataset.dimensions">dataset.dimensions</a> 中定义 dimension ，或者在 <a href="#dataset.source">dataset.source</a> 的第一行/列中给出 dimension 名称。于是就不用在这里指定 dimension。但如果在这里指定了 <code class="codespan">dimensions</code>，那么优先使用这里的。</p>
+     * <p>注意：如果使用了 <a href="#dataset">dataset</a>，那么可以在 <a href="#dataset.source">dataset.source</a> 的第一行/列中给出 dimension 名称。于是就不用在这里指定 dimension。但是，如果在这里指定了 <code class="codespan">dimensions</code>，那么 ECharts 不再会自动从 <code class="codespan">dataset.source</code> 的第一行/列中获取维度信息。</p>
      * <p>例如：</p>
      * <pre><code class="lang-js hljs javascript">option = {
      *     <span class="hljs-attr">dataset</span>: {
@@ -342,8 +304,8 @@ public class CandlestickSeries extends Series implements Serializable {
      */
     private List<?> dimensions;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.encode">https://echarts.apache.org/zh/option.html#series-candlestick.encode</a>
-     * <br/>序号: 24
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.encode">https://echarts.apache.org/v4/zh/option.html#series-candlestick.encode</a>
+     * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -460,8 +422,8 @@ public class CandlestickSeries extends Series implements Serializable {
      */
     private Object encode;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.data">https://echarts.apache.org/zh/option.html#series-candlestick.data</a>
-     * <br/>序号: 25
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.data">https://echarts.apache.org/v4/zh/option.html#series-candlestick.data</a>
+     * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -480,37 +442,37 @@ public class CandlestickSeries extends Series implements Serializable {
      * <pre><code class="lang-javascript hljs">[open, close, lowest, highest] （即：[开盘值, 收盘值, 最低值, 最高值]）
      * </code></pre>
      */
-    private List<?> data;
+    private List<Data> data;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.markPoint">https://echarts.apache.org/zh/option.html#series-candlestick.markPoint</a>
-     * <br/>序号: 26
-     * <br/>默认值: 无
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.markPoint">https://echarts.apache.org/v4/zh/option.html#series-candlestick.markPoint</a>
+     * <br/>序号: 23
+     * <br/>默认值: pin
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>图表标注。</p>
      */
-    private Object markPoint;
+    private MarkPoint markPoint;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.markLine">https://echarts.apache.org/zh/option.html#series-candlestick.markLine</a>
-     * <br/>序号: 27
-     * <br/>默认值: 无
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.markLine">https://echarts.apache.org/v4/zh/option.html#series-candlestick.markLine</a>
+     * <br/>序号: 24
+     * <br/>默认值: 2
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>图表标线。</p>
      */
-    private Object markLine;
+    private MarkLine markLine;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.markArea">https://echarts.apache.org/zh/option.html#series-candlestick.markArea</a>
-     * <br/>序号: 28
-     * <br/>默认值: 无
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.markArea">https://echarts.apache.org/v4/zh/option.html#series-candlestick.markArea</a>
+     * <br/>序号: 25
+     * <br/>默认值: 2000
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>图表标域，常用于标记图表中某个范围的数据，例如标出某段时间投放了广告。</p>
      */
-    private Object markArea;
+    private MarkArea markArea;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.clip">https://echarts.apache.org/zh/option.html#series-candlestick.clip</a>
-     * <br/>序号: 29
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.clip">https://echarts.apache.org/v4/zh/option.html#series-candlestick.clip</a>
+     * <br/>序号: 26
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -520,7 +482,7 @@ public class CandlestickSeries extends Series implements Serializable {
      * <p>是否裁剪超出坐标系部分的图形，具体裁剪效果根据系列决定：</p>
      * <ul>
      * <li>散点图：忽略中心点超出坐标系的图形，但是不裁剪单个图形</li>
-     * <li>柱状图：裁掉完全超出的柱子，但是不会裁剪只超出部分的柱子</li>
+     * <li>柱状图：裁掉所有超出坐标系的部分，但是依然保留柱子的宽度</li>
      * <li>折线图：裁掉所有超出坐标系的折线部分，拐点图形的逻辑按照散点图处理</li>
      * <li>路径图：裁掉所有超出坐标系的部分</li>
      * <li>K 线图：忽略整体都超出坐标系的图形，但是不裁剪单个图形</li>
@@ -530,8 +492,8 @@ public class CandlestickSeries extends Series implements Serializable {
      */
     private Boolean clip;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.zlevel">https://echarts.apache.org/zh/option.html#series-candlestick.zlevel</a>
-     * <br/>序号: 30
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.zlevel">https://echarts.apache.org/v4/zh/option.html#series-candlestick.zlevel</a>
+     * <br/>序号: 27
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -541,8 +503,8 @@ public class CandlestickSeries extends Series implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.z">https://echarts.apache.org/zh/option.html#series-candlestick.z</a>
-     * <br/>序号: 31
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.z">https://echarts.apache.org/v4/zh/option.html#series-candlestick.z</a>
+     * <br/>序号: 28
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -551,8 +513,8 @@ public class CandlestickSeries extends Series implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.silent">https://echarts.apache.org/zh/option.html#series-candlestick.silent</a>
-     * <br/>序号: 32
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.silent">https://echarts.apache.org/v4/zh/option.html#series-candlestick.silent</a>
+     * <br/>序号: 29
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -560,8 +522,8 @@ public class CandlestickSeries extends Series implements Serializable {
      */
     private Boolean silent;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.animationDuration">https://echarts.apache.org/zh/option.html#series-candlestick.animationDuration</a>
-     * <br/>序号: 33
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.animationDuration">https://echarts.apache.org/v4/zh/option.html#series-candlestick.animationDuration</a>
+     * <br/>序号: 30
      * <br/>默认值: 300
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -574,8 +536,8 @@ public class CandlestickSeries extends Series implements Serializable {
      */
     private Object animationDuration;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.animationEasing">https://echarts.apache.org/zh/option.html#series-candlestick.animationEasing</a>
-     * <br/>序号: 34
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.animationEasing">https://echarts.apache.org/v4/zh/option.html#series-candlestick.animationEasing</a>
+     * <br/>序号: 31
      * <br/>默认值: linear
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -583,8 +545,8 @@ public class CandlestickSeries extends Series implements Serializable {
      */
     private String animationEasing;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.animationDelay">https://echarts.apache.org/zh/option.html#series-candlestick.animationDelay</a>
-     * <br/>序号: 35
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.animationDelay">https://echarts.apache.org/v4/zh/option.html#series-candlestick.animationDelay</a>
+     * <br/>序号: 32
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -599,12 +561,12 @@ public class CandlestickSeries extends Series implements Serializable {
      */
     private Object animationDelay;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.tooltip">https://echarts.apache.org/zh/option.html#series-candlestick.tooltip</a>
-     * <br/>序号: 36
-     * <br/>默认值: 无
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.tooltip">https://echarts.apache.org/v4/zh/option.html#series-candlestick.tooltip</a>
+     * <br/>序号: 33
+     * <br/>默认值: rgba(50,50,50,0.7)
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>本系列特定的 tooltip 设定。</p>
      */
-    private Object tooltip;
+    private Tooltip tooltip;
 }

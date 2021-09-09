@@ -1,5 +1,6 @@
 package com.xmjz.echarts.nativebean.option;
 
+import com.xmjz.echarts.nativebean.option.parallelSeries.Data;
 import com.xmjz.echarts.nativebean.option.parallelSeries.Emphasis;
 import com.xmjz.echarts.nativebean.option.parallelSeries.LineStyle;
 import lombok.Getter;
@@ -10,12 +11,14 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel">https://echarts.apache.org/zh/option.html#series-parallel</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-parallel">https://echarts.apache.org/v4/zh/option.html#series-parallel</a>
  * <br/>序号: 0
  * <br/>默认值: 无
  * <br/>js类型: ["object"]
  * <br/>描述:
  * <p>平行坐标系的系列。</p>
+ * <p><br></p>
+ * <hr>
  * <p><strong>平行坐标系介绍</strong></p>
  * <p><a href="https://en.wikipedia.org/wiki/Parallel_coordinates" target="_blank">平行坐标系（Parallel Coordinates）</a> 是一种常用的可视化高维数据的图表。</p>
  * <p>例如 <a href="#series-parallel.data">series-parallel.data</a> 中有如下数据：</p>
@@ -33,61 +36,63 @@ import java.util.List;
  * </code></pre>
  * <p>数据中，每一行是一个『数据项』，每一列属于一个『维度』。（例如上面数据每一列的含义分别是：『日期』,『AQI指数』, 『PM2.5』, 『PM10』, 『一氧化碳值』, 『二氧化氮值』, 『二氧化硫值』）。</p>
  * <p>平行坐标系适用于对这种多维数据进行可视化分析。每一个维度（每一列）对应一个坐标轴，每一个『数据项』是一条线，贯穿多个坐标轴。在坐标轴上，可以进行数据选取等操作。如下：</p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/parallel-all&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="17"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/parallel-all&amp;edit=1&amp;reset=1" width="600" height="400"><iframe />
  *
  *
+ * <p><br></p>
+ * <hr>
  * <p><strong>配置方式概要</strong></p>
  * <p>『平行坐标系』的 <code class="codespan">option</code> 基本配置如下例：</p>
- * <pre><code class="lang-javascript hljs">option = {
- *     <span class="hljs-attr">parallelAxis</span>: [                     <span class="hljs-comment">// 这是一个个『坐标轴』的定义</span>
- *         {<span class="hljs-attr">dim</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">name</span>: schema[<span class="hljs-number">0</span>].text}, <span class="hljs-comment">// 每个『坐标轴』有个 'dim' 属性，表示坐标轴的维度号。</span>
- *         {<span class="hljs-attr">dim</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">name</span>: schema[<span class="hljs-number">1</span>].text},
- *         {<span class="hljs-attr">dim</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">name</span>: schema[<span class="hljs-number">2</span>].text},
- *         {<span class="hljs-attr">dim</span>: <span class="hljs-number">3</span>, <span class="hljs-attr">name</span>: schema[<span class="hljs-number">3</span>].text},
- *         {<span class="hljs-attr">dim</span>: <span class="hljs-number">4</span>, <span class="hljs-attr">name</span>: schema[<span class="hljs-number">4</span>].text},
- *         {<span class="hljs-attr">dim</span>: <span class="hljs-number">5</span>, <span class="hljs-attr">name</span>: schema[<span class="hljs-number">5</span>].text},
- *         {<span class="hljs-attr">dim</span>: <span class="hljs-number">6</span>, <span class="hljs-attr">name</span>: schema[<span class="hljs-number">6</span>].text},
- *         {<span class="hljs-attr">dim</span>: <span class="hljs-number">7</span>, <span class="hljs-attr">name</span>: schema[<span class="hljs-number">7</span>].text,
- *             <span class="hljs-attr">type</span>: <span class="hljs-string">'category'</span>,           <span class="hljs-comment">// 坐标轴也可以支持类别型数据</span>
- *             <span class="hljs-attr">data</span>: [<span class="hljs-string">'优'</span>, <span class="hljs-string">'良'</span>, <span class="hljs-string">'轻度污染'</span>, <span class="hljs-string">'中度污染'</span>, <span class="hljs-string">'重度污染'</span>, <span class="hljs-string">'严重污染'</span>]
+ * <pre><code class="lang-javascript">option = {
+ *     parallelAxis: [                     // 这是一个个『坐标轴』的定义
+ *         {dim: 0, name: schema[0].text}, // 每个『坐标轴』有个 &#39;dim&#39; 属性，表示坐标轴的维度号。
+ *         {dim: 1, name: schema[1].text},
+ *         {dim: 2, name: schema[2].text},
+ *         {dim: 3, name: schema[3].text},
+ *         {dim: 4, name: schema[4].text},
+ *         {dim: 5, name: schema[5].text},
+ *         {dim: 6, name: schema[6].text},
+ *         {dim: 7, name: schema[7].text,
+ *             type: &#39;category&#39;,           // 坐标轴也可以支持类别型数据
+ *             data: [&#39;优&#39;, &#39;良&#39;, &#39;轻度污染&#39;, &#39;中度污染&#39;, &#39;重度污染&#39;, &#39;严重污染&#39;]
  *         }
  *     ],
- *     <span class="hljs-attr">parallel</span>: {                         <span class="hljs-comment">// 这是『坐标系』的定义</span>
- *         <span class="hljs-attr">left</span>: <span class="hljs-string">'5%'</span>,                     <span class="hljs-comment">// 平行坐标系的位置设置</span>
- *         <span class="hljs-attr">right</span>: <span class="hljs-string">'13%'</span>,
- *         <span class="hljs-attr">bottom</span>: <span class="hljs-string">'10%'</span>,
- *         <span class="hljs-attr">top</span>: <span class="hljs-string">'20%'</span>,
- *         <span class="hljs-attr">parallelAxisDefault</span>: {          <span class="hljs-comment">// 『坐标轴』的公有属性可以配置在这里避免重复书写</span>
- *             <span class="hljs-attr">type</span>: <span class="hljs-string">'value'</span>,
- *             <span class="hljs-attr">nameLocation</span>: <span class="hljs-string">'end'</span>,
- *             <span class="hljs-attr">nameGap</span>: <span class="hljs-number">20</span>
+ *     parallel: {                         // 这是『坐标系』的定义
+ *         left: &#39;5%&#39;,                     // 平行坐标系的位置设置
+ *         right: &#39;13%&#39;,
+ *         bottom: &#39;10%&#39;,
+ *         top: &#39;20%&#39;,
+ *         parallelAxisDefault: {          // 『坐标轴』的公有属性可以配置在这里避免重复书写
+ *             type: &#39;value&#39;,
+ *             nameLocation: &#39;end&#39;,
+ *             nameGap: 20
  *         }
  *     },
- *     <span class="hljs-attr">series</span>: [                           <span class="hljs-comment">// 这里三个系列共用一个平行坐标系</span>
+ *     series: [                           // 这里三个系列共用一个平行坐标系
  *         {
- *             <span class="hljs-attr">name</span>: <span class="hljs-string">'北京'</span>,
- *             <span class="hljs-attr">type</span>: <span class="hljs-string">'parallel'</span>,           <span class="hljs-comment">// 这个系列类型是 'parallel'</span>
- *             <span class="hljs-attr">data</span>: [
- *                 [<span class="hljs-number">1</span>,  <span class="hljs-number">55</span>,  <span class="hljs-number">9</span>,   <span class="hljs-number">56</span>,  <span class="hljs-number">0.46</span>,  <span class="hljs-number">18</span>,  <span class="hljs-number">6</span>,  <span class="hljs-string">'良'</span>],
- *                 [<span class="hljs-number">2</span>,  <span class="hljs-number">25</span>,  <span class="hljs-number">11</span>,  <span class="hljs-number">21</span>,  <span class="hljs-number">0.65</span>,  <span class="hljs-number">34</span>,  <span class="hljs-number">9</span>,  <span class="hljs-string">'优'</span>],
+ *             name: &#39;北京&#39;,
+ *             type: &#39;parallel&#39;,           // 这个系列类型是 &#39;parallel&#39;
+ *             data: [
+ *                 [1,  55,  9,   56,  0.46,  18,  6,  &#39;良&#39;],
+ *                 [2,  25,  11,  21,  0.65,  34,  9,  &#39;优&#39;],
  *                 ...
  *             ]
  *         },
  *         {
- *             <span class="hljs-attr">name</span>: <span class="hljs-string">'上海'</span>,
- *             <span class="hljs-attr">type</span>: <span class="hljs-string">'parallel'</span>,
- *             <span class="hljs-attr">data</span>: [
- *                 [<span class="hljs-number">3</span>,  <span class="hljs-number">56</span>,  <span class="hljs-number">7</span>,   <span class="hljs-number">63</span>,  <span class="hljs-number">0.3</span>,   <span class="hljs-number">14</span>,  <span class="hljs-number">5</span>,  <span class="hljs-string">'良'</span>],
- *                 [<span class="hljs-number">4</span>,  <span class="hljs-number">33</span>,  <span class="hljs-number">7</span>,   <span class="hljs-number">29</span>,  <span class="hljs-number">0.33</span>,  <span class="hljs-number">16</span>,  <span class="hljs-number">6</span>,  <span class="hljs-string">'优'</span>],
+ *             name: &#39;上海&#39;,
+ *             type: &#39;parallel&#39;,
+ *             data: [
+ *                 [3,  56,  7,   63,  0.3,   14,  5,  &#39;良&#39;],
+ *                 [4,  33,  7,   29,  0.33,  16,  6,  &#39;优&#39;],
  *                 ...
  *             ]
  *         },
  *         {
- *             <span class="hljs-attr">name</span>: <span class="hljs-string">'广州'</span>,
- *             <span class="hljs-attr">type</span>: <span class="hljs-string">'parallel'</span>,
- *             <span class="hljs-attr">data</span>: [
- *                 [<span class="hljs-number">4</span>,  <span class="hljs-number">33</span>,  <span class="hljs-number">7</span>,   <span class="hljs-number">29</span>,  <span class="hljs-number">0.33</span>,  <span class="hljs-number">16</span>,  <span class="hljs-number">6</span>,  <span class="hljs-string">'优'</span>],
- *                 [<span class="hljs-number">5</span>,  <span class="hljs-number">42</span>,  <span class="hljs-number">24</span>,  <span class="hljs-number">44</span>,  <span class="hljs-number">0.76</span>,  <span class="hljs-number">40</span>,  <span class="hljs-number">16</span>, <span class="hljs-string">'优'</span>],
+ *             name: &#39;广州&#39;,
+ *             type: &#39;parallel&#39;,
+ *             data: [
+ *                 [4,  33,  7,   29,  0.33,  16,  6,  &#39;优&#39;],
+ *                 [5,  42,  24,  44,  0.76,  40,  16, &#39;优&#39;],
  *                 ...
  *             ]
  *         }
@@ -110,14 +115,21 @@ import java.util.List;
  * <p>  其中有 <a href="#series-parallel.parallelIndex">series-parallel.parallelIndex</a> 属性，指定使用哪个『坐标系』。默认使用第一个『坐标系』。</p>
  * </li>
  * </ul>
+ * <p><br></p>
+ * <hr>
  * <p><strong>配置注意和最佳实践</strong></p>
  * <p>配置多个 <a href="#parallelAxis">parallelAxis</a> 时，有些值一样的属性，如果书写多遍则比较繁琐，那么可以放置在 <a href="#parallel.parallelAxisDefault">parallel.parallelAxisDefault</a> 里。在坐标轴初始化前，<a href="#parallel.parallelAxisDefault">parallel.parallelAxisDefault</a> 里的配置项，会分别融合进 <a href="#parallelAxis">parallelAxis</a>，形成最终的坐标轴的配置。</p>
  * <p><strong>如果数据量很大并且发生卡顿</strong></p>
  * <p>建议把 <a href="#series-parallel.lineStyle.width">series-parallel.lineStyle.width</a> 设为 <code class="codespan">0.5</code>（或更小），
  * 可能显著改善性能。</p>
+ * <p><br></p>
+ * <hr>
  * <p><strong>高维数据的显示</strong></p>
  * <p>维度比较多时，比如有 50+ 的维度，那么就会有 50+ 个轴。那么可能会页面显示不下。</p>
  * <p>可以通过 <a href="#parallel.axisExpandable">parallel.axisExpandable</a> 来改善显示效果。</p>
+ *
+ *
+ * </iframe>
  *
  * @author auto
  */
@@ -128,7 +140,7 @@ public class ParallelSeries extends Series implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.type">https://echarts.apache.org/zh/option.html#series-parallel.type</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-parallel.type">https://echarts.apache.org/v4/zh/option.html#series-parallel.type</a>
      * <br/>序号: 1
      * <br/>默认值: parallel
      * <br/>js类型: ["string"]
@@ -136,7 +148,7 @@ public class ParallelSeries extends Series implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.id">https://echarts.apache.org/zh/option.html#series-parallel.id</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-parallel.id">https://echarts.apache.org/v4/zh/option.html#series-parallel.id</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -145,7 +157,7 @@ public class ParallelSeries extends Series implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.coordinateSystem">https://echarts.apache.org/zh/option.html#series-parallel.coordinateSystem</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-parallel.coordinateSystem">https://echarts.apache.org/v4/zh/option.html#series-parallel.coordinateSystem</a>
      * <br/>序号: 3
      * <br/>默认值: parallel
      * <br/>js类型: ["string"]
@@ -159,7 +171,7 @@ public class ParallelSeries extends Series implements Serializable {
      */
     private String coordinateSystem;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.parallelIndex">https://echarts.apache.org/zh/option.html#series-parallel.parallelIndex</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-parallel.parallelIndex">https://echarts.apache.org/v4/zh/option.html#series-parallel.parallelIndex</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -168,7 +180,7 @@ public class ParallelSeries extends Series implements Serializable {
      */
     private Integer parallelIndex;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.name">https://echarts.apache.org/zh/option.html#series-parallel.name</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-parallel.name">https://echarts.apache.org/v4/zh/option.html#series-parallel.name</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -177,7 +189,7 @@ public class ParallelSeries extends Series implements Serializable {
      */
     private String name;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.lineStyle">https://echarts.apache.org/zh/option.html#series-parallel.lineStyle</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-parallel.lineStyle">https://echarts.apache.org/v4/zh/option.html#series-parallel.lineStyle</a>
      * <br/>序号: 6
      * <br/>默认值: #000
      * <br/>js类型: ["Object"]
@@ -186,7 +198,7 @@ public class ParallelSeries extends Series implements Serializable {
      */
     private LineStyle lineStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.emphasis">https://echarts.apache.org/zh/option.html#series-parallel.emphasis</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-parallel.emphasis">https://echarts.apache.org/v4/zh/option.html#series-parallel.emphasis</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -194,7 +206,7 @@ public class ParallelSeries extends Series implements Serializable {
      */
     private Emphasis emphasis;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.inactiveOpacity">https://echarts.apache.org/zh/option.html#series-parallel.inactiveOpacity</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-parallel.inactiveOpacity">https://echarts.apache.org/v4/zh/option.html#series-parallel.inactiveOpacity</a>
      * <br/>序号: 8
      * <br/>默认值: 0.05
      * <br/>js类型: ["number"]
@@ -203,7 +215,7 @@ public class ParallelSeries extends Series implements Serializable {
      */
     private Integer inactiveOpacity;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.activeOpacity">https://echarts.apache.org/zh/option.html#series-parallel.activeOpacity</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-parallel.activeOpacity">https://echarts.apache.org/v4/zh/option.html#series-parallel.activeOpacity</a>
      * <br/>序号: 9
      * <br/>默认值: 1
      * <br/>js类型: ["number"]
@@ -212,7 +224,7 @@ public class ParallelSeries extends Series implements Serializable {
      */
     private Integer activeOpacity;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.realtime">https://echarts.apache.org/zh/option.html#series-parallel.realtime</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-parallel.realtime">https://echarts.apache.org/v4/zh/option.html#series-parallel.realtime</a>
      * <br/>序号: 10
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -221,7 +233,7 @@ public class ParallelSeries extends Series implements Serializable {
      */
     private Boolean realtime;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.smooth">https://echarts.apache.org/zh/option.html#series-parallel.smooth</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-parallel.smooth">https://echarts.apache.org/v4/zh/option.html#series-parallel.smooth</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","number"]
@@ -230,7 +242,7 @@ public class ParallelSeries extends Series implements Serializable {
      */
     private Object smooth;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.progressive">https://echarts.apache.org/zh/option.html#series-parallel.progressive</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-parallel.progressive">https://echarts.apache.org/v4/zh/option.html#series-parallel.progressive</a>
      * <br/>序号: 12
      * <br/>默认值: 500
      * <br/>js类型: ["number"]
@@ -241,7 +253,7 @@ public class ParallelSeries extends Series implements Serializable {
      */
     private Integer progressive;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.progressiveThreshold">https://echarts.apache.org/zh/option.html#series-parallel.progressiveThreshold</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-parallel.progressiveThreshold">https://echarts.apache.org/v4/zh/option.html#series-parallel.progressiveThreshold</a>
      * <br/>序号: 13
      * <br/>默认值: 3000
      * <br/>js类型: ["number"]
@@ -250,7 +262,7 @@ public class ParallelSeries extends Series implements Serializable {
      */
     private Integer progressiveThreshold;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.progressiveChunkMode">https://echarts.apache.org/zh/option.html#series-parallel.progressiveChunkMode</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-parallel.progressiveChunkMode">https://echarts.apache.org/v4/zh/option.html#series-parallel.progressiveChunkMode</a>
      * <br/>序号: 14
      * <br/>默认值: sequential
      * <br/>js类型: ["string"]
@@ -263,9 +275,9 @@ public class ParallelSeries extends Series implements Serializable {
      */
     private String progressiveChunkMode;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.data">https://echarts.apache.org/zh/option.html#series-parallel.data</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-parallel.data">https://echarts.apache.org/v4/zh/option.html#series-parallel.data</a>
      * <br/>序号: 15
-     * <br/>默认值: 无
+     * <br/>默认值: #000
      * <br/>js类型: ["Array"]
      * <br/>描述:
      * <p>例如 <a href="#series-parallel.data">series-parallel.data</a> 中有如下数据：</p>
@@ -283,9 +295,9 @@ public class ParallelSeries extends Series implements Serializable {
      * </code></pre>
      * <p>数据中，每一行是一个『数据项』，每一列属于一个『维度』。（例如上面数据每一列的含义分别是：『日期』,『AQI指数』, 『PM2.5』, 『PM10』, 『一氧化碳值』, 『二氧化氮值』, 『二氧化硫值』）。</p>
      */
-    private List<?> data;
+    private List<Data> data;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.zlevel">https://echarts.apache.org/zh/option.html#series-parallel.zlevel</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-parallel.zlevel">https://echarts.apache.org/v4/zh/option.html#series-parallel.zlevel</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -296,7 +308,7 @@ public class ParallelSeries extends Series implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.z">https://echarts.apache.org/zh/option.html#series-parallel.z</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-parallel.z">https://echarts.apache.org/v4/zh/option.html#series-parallel.z</a>
      * <br/>序号: 17
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -306,7 +318,7 @@ public class ParallelSeries extends Series implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.silent">https://echarts.apache.org/zh/option.html#series-parallel.silent</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-parallel.silent">https://echarts.apache.org/v4/zh/option.html#series-parallel.silent</a>
      * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -315,7 +327,7 @@ public class ParallelSeries extends Series implements Serializable {
      */
     private Boolean silent;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.animation">https://echarts.apache.org/zh/option.html#series-parallel.animation</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-parallel.animation">https://echarts.apache.org/v4/zh/option.html#series-parallel.animation</a>
      * <br/>序号: 19
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -324,7 +336,7 @@ public class ParallelSeries extends Series implements Serializable {
      */
     private Boolean animation;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.animationThreshold">https://echarts.apache.org/zh/option.html#series-parallel.animationThreshold</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-parallel.animationThreshold">https://echarts.apache.org/v4/zh/option.html#series-parallel.animationThreshold</a>
      * <br/>序号: 20
      * <br/>默认值: 2000
      * <br/>js类型: ["number"]
@@ -333,7 +345,7 @@ public class ParallelSeries extends Series implements Serializable {
      */
     private Integer animationThreshold;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.animationDuration">https://echarts.apache.org/zh/option.html#series-parallel.animationDuration</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-parallel.animationDuration">https://echarts.apache.org/v4/zh/option.html#series-parallel.animationDuration</a>
      * <br/>序号: 21
      * <br/>默认值: 1000
      * <br/>js类型: ["number","Function"]
@@ -347,7 +359,7 @@ public class ParallelSeries extends Series implements Serializable {
      */
     private Object animationDuration;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.animationEasing">https://echarts.apache.org/zh/option.html#series-parallel.animationEasing</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-parallel.animationEasing">https://echarts.apache.org/v4/zh/option.html#series-parallel.animationEasing</a>
      * <br/>序号: 22
      * <br/>默认值: linear
      * <br/>js类型: ["string"]
@@ -356,7 +368,7 @@ public class ParallelSeries extends Series implements Serializable {
      */
     private String animationEasing;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.animationDelay">https://echarts.apache.org/zh/option.html#series-parallel.animationDelay</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-parallel.animationDelay">https://echarts.apache.org/v4/zh/option.html#series-parallel.animationDelay</a>
      * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
@@ -372,7 +384,7 @@ public class ParallelSeries extends Series implements Serializable {
      */
     private Object animationDelay;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.animationDurationUpdate">https://echarts.apache.org/zh/option.html#series-parallel.animationDurationUpdate</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-parallel.animationDurationUpdate">https://echarts.apache.org/v4/zh/option.html#series-parallel.animationDurationUpdate</a>
      * <br/>序号: 24
      * <br/>默认值: 300
      * <br/>js类型: ["number","Function"]
@@ -387,16 +399,16 @@ public class ParallelSeries extends Series implements Serializable {
      */
     private Object animationDurationUpdate;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.animationEasingUpdate">https://echarts.apache.org/zh/option.html#series-parallel.animationEasingUpdate</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-parallel.animationEasingUpdate">https://echarts.apache.org/v4/zh/option.html#series-parallel.animationEasingUpdate</a>
      * <br/>序号: 25
-     * <br/>默认值: cubicInOut
+     * <br/>默认值: cubicOut
      * <br/>js类型: ["string"]
      * <br/>描述:
      * <p>数据更新动画的缓动效果。</p>
      */
     private String animationEasingUpdate;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-parallel.animationDelayUpdate">https://echarts.apache.org/zh/option.html#series-parallel.animationDelayUpdate</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-parallel.animationDelayUpdate">https://echarts.apache.org/v4/zh/option.html#series-parallel.animationDelayUpdate</a>
      * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]

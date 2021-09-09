@@ -5,7 +5,7 @@
                     //name = 'series'+name.slice(0,1).toUpperCase() + name.slice(1);
                     let prop = {
                         order: 0,
-                        url: 'https://echarts.apache.org/zh/option.html#series-' + name,
+                        url: 'https://echarts.apache.org/v4/zh/option.html#series-' + name,
                         name: name + 'Series',
                         description: null,
                         types: ['object'],
@@ -31,7 +31,7 @@
                 //title: {...}|visualMap: [{...}]|options ...
                 let prop = {
                     order: order++,
-                    url: 'https://echarts.apache.org/zh/option.html#',
+                    url: 'https://echarts.apache.org/v4/zh/option.html#',
                     name: null,
                     description: null,
                     types: null,

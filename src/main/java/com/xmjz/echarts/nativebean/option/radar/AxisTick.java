@@ -7,8 +7,8 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisTick">https://echarts.apache.org/zh/option.html#radar.axisTick</a>
- * <br/>序号: 15
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#radar.axisTick">https://echarts.apache.org/v4/zh/option.html#radar.axisTick</a>
+ * <br/>序号: 16
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -23,7 +23,7 @@ public class AxisTick implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisTick.show">https://echarts.apache.org/zh/option.html#radar.axisTick.show</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#radar.axisTick.show">https://echarts.apache.org/v4/zh/option.html#radar.axisTick.show</a>
      * <br/>序号: 1
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -32,7 +32,7 @@ public class AxisTick implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisTick.length">https://echarts.apache.org/zh/option.html#radar.axisTick.length</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#radar.axisTick.length">https://echarts.apache.org/v4/zh/option.html#radar.axisTick.length</a>
      * <br/>序号: 2
      * <br/>默认值: 5
      * <br/>js类型: ["number"]
@@ -41,7 +41,7 @@ public class AxisTick implements Serializable {
      */
     private Integer length;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisTick.lineStyle">https://echarts.apache.org/zh/option.html#radar.axisTick.lineStyle</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#radar.axisTick.lineStyle">https://echarts.apache.org/v4/zh/option.html#radar.axisTick.lineStyle</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

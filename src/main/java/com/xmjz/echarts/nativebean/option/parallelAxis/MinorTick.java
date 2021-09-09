@@ -7,7 +7,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.minorTick">https://echarts.apache.org/zh/option.html#parallelAxis.minorTick</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#parallelAxis.minorTick">https://echarts.apache.org/v4/zh/option.html#parallelAxis.minorTick</a>
  * <br/>序号: 26
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
@@ -19,11 +19,13 @@ import java.io.Serializable;
  * <p>注意：次刻度线无法在类目轴（<a href="#parallelAxis.type">type</a>: <code class="codespan">'category'</code>）中使用。</p>
  * <p>示例：</p>
  * <p>1) 函数绘图中使用次刻度线</p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-function&amp;edit=1&amp;reset=1" width="600" height="350"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-function&amp;edit=1&amp;reset=1" width="600" height="350"><iframe />
  *
  *
  * <p>2) 在对数轴中使用次刻度线</p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-log&amp;edit=1&amp;reset=1" width="600" height="350"></iframe>
+ * <iframe  data-src="https://echarts.apache.org/examples/zh/view.html?c=line-log&edit=1&reset=1" width="600" height="350"><iframe />
+ *
+ * </iframe>
  *
  * @author auto
  */
@@ -34,7 +36,7 @@ public class MinorTick implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.minorTick.show">https://echarts.apache.org/zh/option.html#parallelAxis.minorTick.show</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#parallelAxis.minorTick.show">https://echarts.apache.org/v4/zh/option.html#parallelAxis.minorTick.show</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -43,7 +45,7 @@ public class MinorTick implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.minorTick.splitNumber">https://echarts.apache.org/zh/option.html#parallelAxis.minorTick.splitNumber</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#parallelAxis.minorTick.splitNumber">https://echarts.apache.org/v4/zh/option.html#parallelAxis.minorTick.splitNumber</a>
      * <br/>序号: 2
      * <br/>默认值: 5
      * <br/>js类型: ["number"]
@@ -52,7 +54,7 @@ public class MinorTick implements Serializable {
      */
     private Integer splitNumber;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.minorTick.length">https://echarts.apache.org/zh/option.html#parallelAxis.minorTick.length</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#parallelAxis.minorTick.length">https://echarts.apache.org/v4/zh/option.html#parallelAxis.minorTick.length</a>
      * <br/>序号: 3
      * <br/>默认值: 3
      * <br/>js类型: ["number"]
@@ -61,7 +63,7 @@ public class MinorTick implements Serializable {
      */
     private Integer length;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.minorTick.lineStyle">https://echarts.apache.org/zh/option.html#parallelAxis.minorTick.lineStyle</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#parallelAxis.minorTick.lineStyle">https://echarts.apache.org/v4/zh/option.html#parallelAxis.minorTick.lineStyle</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

@@ -7,8 +7,8 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.axisTick">https://echarts.apache.org/zh/option.html#yAxis.axisTick</a>
- * <br/>序号: 27
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.axisTick">https://echarts.apache.org/v4/zh/option.html#yAxis.axisTick</a>
+ * <br/>序号: 25
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -23,7 +23,7 @@ public class AxisTick implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.axisTick.show">https://echarts.apache.org/zh/option.html#yAxis.axisTick.show</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.axisTick.show">https://echarts.apache.org/v4/zh/option.html#yAxis.axisTick.show</a>
      * <br/>序号: 1
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -32,7 +32,7 @@ public class AxisTick implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.axisTick.alignWithLabel">https://echarts.apache.org/zh/option.html#yAxis.axisTick.alignWithLabel</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.axisTick.alignWithLabel">https://echarts.apache.org/v4/zh/option.html#yAxis.axisTick.alignWithLabel</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -42,7 +42,7 @@ public class AxisTick implements Serializable {
      */
     private Boolean alignWithLabel;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.axisTick.interval">https://echarts.apache.org/zh/option.html#yAxis.axisTick.interval</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.axisTick.interval">https://echarts.apache.org/v4/zh/option.html#yAxis.axisTick.interval</a>
      * <br/>序号: 3
      * <br/>默认值: auto
      * <br/>js类型: ["number","Function"]
@@ -58,7 +58,7 @@ public class AxisTick implements Serializable {
      */
     private Object interval;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.axisTick.inside">https://echarts.apache.org/zh/option.html#yAxis.axisTick.inside</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.axisTick.inside">https://echarts.apache.org/v4/zh/option.html#yAxis.axisTick.inside</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -67,7 +67,7 @@ public class AxisTick implements Serializable {
      */
     private Boolean inside;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.axisTick.length">https://echarts.apache.org/zh/option.html#yAxis.axisTick.length</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.axisTick.length">https://echarts.apache.org/v4/zh/option.html#yAxis.axisTick.length</a>
      * <br/>序号: 5
      * <br/>默认值: 5
      * <br/>js类型: ["number"]
@@ -76,7 +76,7 @@ public class AxisTick implements Serializable {
      */
     private Integer length;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.axisTick.lineStyle">https://echarts.apache.org/zh/option.html#yAxis.axisTick.lineStyle</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.axisTick.lineStyle">https://echarts.apache.org/v4/zh/option.html#yAxis.axisTick.lineStyle</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

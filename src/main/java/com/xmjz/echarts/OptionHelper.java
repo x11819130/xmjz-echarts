@@ -3,6 +3,7 @@ package com.xmjz.echarts;
 import com.xmjz.echarts.nativebean.Option;
 import com.xmjz.echarts.nativebean.option.Calendar;
 import com.xmjz.echarts.nativebean.option.*;
+import com.xmjz.echarts.nativebean.option.xAxis.Data;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -40,32 +41,32 @@ public class OptionHelper {
         return this;
     }
 
-    public OptionHelper setxAxisData(Object[] xAxisData) {
+    public OptionHelper setxAxisData(Data[] xAxisData) {
         setxAxisData(Arrays.asList(xAxisData));
         return this;
     }
 
-    public OptionHelper setxAxisData(List<?> xAxisData) {
+    public OptionHelper setxAxisData(List<Data> xAxisData) {
         this.getxAxis().setData(xAxisData);
         return this;
     }
 
-    public OptionHelper setyAxisData(Object[] yAxisData) {
+    public OptionHelper setyAxisData(com.xmjz.echarts.nativebean.option.yAxis.Data[] yAxisData) {
         setyAxisData(Arrays.asList(yAxisData));
         return this;
     }
 
-    public OptionHelper setyAxisData(List<?> yAxisData) {
+    public OptionHelper setyAxisData(List<com.xmjz.echarts.nativebean.option.yAxis.Data> yAxisData) {
         this.getyAxis().setData(yAxisData);
         return this;
     }
 
-    public OptionHelper setLegendData(String[] legendData) {
+    public OptionHelper setLegendData(com.xmjz.echarts.nativebean.option.legend.Data[] legendData) {
         setLegendData(Arrays.asList(legendData));
         return this;
     }
 
-    public OptionHelper setLegendData(List<?> legendData) {
+    public OptionHelper setLegendData(List<com.xmjz.echarts.nativebean.option.legend.Data> legendData) {
         this.getLegend().setData(legendData);
         return this;
     }
@@ -224,9 +225,4 @@ public class OptionHelper {
     public TextStyle getTextStyle() {
         return Optional.ofNullable(option.getTextStyle()).orElseGet(() -> option.setTextStyle(new TextStyle()).getTextStyle());
     }
-
-    public StateAnimation getStateAnimation() {
-        return Optional.ofNullable(option.getStateAnimation()).orElseGet(() -> option.setStateAnimation(new StateAnimation()).getStateAnimation());
-    }
-
 }

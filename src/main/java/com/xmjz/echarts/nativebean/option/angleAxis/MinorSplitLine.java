@@ -7,7 +7,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.minorSplitLine">https://echarts.apache.org/zh/option.html#angleAxis.minorSplitLine</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#angleAxis.minorSplitLine">https://echarts.apache.org/v4/zh/option.html#angleAxis.minorSplitLine</a>
  * <br/>序号: 22
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
@@ -26,7 +26,7 @@ public class MinorSplitLine implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.minorSplitLine.show">https://echarts.apache.org/zh/option.html#angleAxis.minorSplitLine.show</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#angleAxis.minorSplitLine.show">https://echarts.apache.org/v4/zh/option.html#angleAxis.minorSplitLine.show</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -34,12 +34,4 @@ public class MinorSplitLine implements Serializable {
      * <p>是否显示次分隔线。默认不显示。</p>
      */
     private Boolean show;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.minorSplitLine.lineStyle">https://echarts.apache.org/zh/option.html#angleAxis.minorSplitLine.lineStyle</a>
-     * <br/>序号: 2
-     * <br/>默认值: 无
-     * <br/>js类型: ["Object"]
-     * <br/>描述:
-     */
-    private Object lineStyle;
 }

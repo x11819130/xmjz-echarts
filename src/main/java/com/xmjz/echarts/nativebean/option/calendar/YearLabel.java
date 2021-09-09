@@ -7,7 +7,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel">https://echarts.apache.org/zh/option.html#calendar.yearLabel</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel</a>
  * <br/>序号: 17
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
@@ -23,7 +23,7 @@ public class YearLabel implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.show">https://echarts.apache.org/zh/option.html#calendar.yearLabel.show</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.show">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.show</a>
      * <br/>序号: 1
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -32,7 +32,7 @@ public class YearLabel implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.margin">https://echarts.apache.org/zh/option.html#calendar.yearLabel.margin</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.margin">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.margin</a>
      * <br/>序号: 2
      * <br/>默认值: 30
      * <br/>js类型: ["number"]
@@ -41,7 +41,7 @@ public class YearLabel implements Serializable {
      */
     private Integer margin;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.position">https://echarts.apache.org/zh/option.html#calendar.yearLabel.position</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.position">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.position</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -58,7 +58,7 @@ public class YearLabel implements Serializable {
      */
     private String position;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.formatter">https://echarts.apache.org/zh/option.html#calendar.yearLabel.formatter</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.formatter">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.formatter</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["string","Function"]
@@ -88,7 +88,7 @@ public class YearLabel implements Serializable {
      */
     private Object formatter;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.color">https://echarts.apache.org/zh/option.html#calendar.yearLabel.color</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.color">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.color</a>
      * <br/>序号: 5
      * <br/>默认值: #fff
      * <br/>js类型: ["Color"]
@@ -97,7 +97,7 @@ public class YearLabel implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.fontStyle">https://echarts.apache.org/zh/option.html#calendar.yearLabel.fontStyle</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.fontStyle">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.fontStyle</a>
      * <br/>序号: 6
      * <br/>默认值: normal
      * <br/>js类型: ["string"]
@@ -112,7 +112,7 @@ public class YearLabel implements Serializable {
      */
     private String fontStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.fontWeight">https://echarts.apache.org/zh/option.html#calendar.yearLabel.fontWeight</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.fontWeight">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.fontWeight</a>
      * <br/>序号: 7
      * <br/>默认值: normal
      * <br/>js类型: ["string","number"]
@@ -129,7 +129,7 @@ public class YearLabel implements Serializable {
      */
     private Object fontWeight;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.fontFamily">https://echarts.apache.org/zh/option.html#calendar.yearLabel.fontFamily</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.fontFamily">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.fontFamily</a>
      * <br/>序号: 8
      * <br/>默认值: sans-serif
      * <br/>js类型: ["string"]
@@ -139,7 +139,7 @@ public class YearLabel implements Serializable {
      */
     private String fontFamily;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.fontSize">https://echarts.apache.org/zh/option.html#calendar.yearLabel.fontSize</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.fontSize">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.fontSize</a>
      * <br/>序号: 9
      * <br/>默认值: 12
      * <br/>js类型: ["number"]
@@ -148,7 +148,7 @@ public class YearLabel implements Serializable {
      */
     private Integer fontSize;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.align">https://echarts.apache.org/zh/option.html#calendar.yearLabel.align</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.align">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.align</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -173,7 +173,7 @@ public class YearLabel implements Serializable {
      */
     private String align;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.verticalAlign">https://echarts.apache.org/zh/option.html#calendar.yearLabel.verticalAlign</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.verticalAlign">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.verticalAlign</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -198,7 +198,7 @@ public class YearLabel implements Serializable {
      */
     private String verticalAlign;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.lineHeight">https://echarts.apache.org/zh/option.html#calendar.yearLabel.lineHeight</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.lineHeight">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.lineHeight</a>
      * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -217,7 +217,7 @@ public class YearLabel implements Serializable {
      */
     private Integer lineHeight;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.backgroundColor">https://echarts.apache.org/zh/option.html#calendar.yearLabel.backgroundColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.backgroundColor">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.backgroundColor</a>
      * <br/>序号: 13
      * <br/>默认值: transparent
      * <br/>js类型: ["string","Object"]
@@ -237,16 +237,16 @@ public class YearLabel implements Serializable {
      */
     private Object backgroundColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.borderColor">https://echarts.apache.org/zh/option.html#calendar.yearLabel.borderColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.borderColor">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.borderColor</a>
      * <br/>序号: 14
-     * <br/>默认值: 无
+     * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
      * <br/>描述:
      * <p>文字块边框颜色。</p>
      */
     private String borderColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.borderWidth">https://echarts.apache.org/zh/option.html#calendar.yearLabel.borderWidth</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.borderWidth">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.borderWidth</a>
      * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -255,7 +255,7 @@ public class YearLabel implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.borderRadius">https://echarts.apache.org/zh/option.html#calendar.yearLabel.borderRadius</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.borderRadius">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.borderRadius</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -264,7 +264,7 @@ public class YearLabel implements Serializable {
      */
     private Object borderRadius;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.padding">https://echarts.apache.org/zh/option.html#calendar.yearLabel.padding</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.padding">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.padding</a>
      * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -279,7 +279,7 @@ public class YearLabel implements Serializable {
      */
     private Object padding;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.shadowColor">https://echarts.apache.org/zh/option.html#calendar.yearLabel.shadowColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.shadowColor">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.shadowColor</a>
      * <br/>序号: 18
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -288,7 +288,7 @@ public class YearLabel implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.shadowBlur">https://echarts.apache.org/zh/option.html#calendar.yearLabel.shadowBlur</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.shadowBlur">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.shadowBlur</a>
      * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -297,7 +297,7 @@ public class YearLabel implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.shadowOffsetX">https://echarts.apache.org/zh/option.html#calendar.yearLabel.shadowOffsetX</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.shadowOffsetX">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.shadowOffsetX</a>
      * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -306,7 +306,7 @@ public class YearLabel implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.shadowOffsetY">https://echarts.apache.org/zh/option.html#calendar.yearLabel.shadowOffsetY</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.shadowOffsetY">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.shadowOffsetY</a>
      * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -315,34 +315,39 @@ public class YearLabel implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.width">https://echarts.apache.org/zh/option.html#calendar.yearLabel.width</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.width">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.width</a>
      * <br/>序号: 22
      * <br/>默认值: 无
-     * <br/>js类型: ["number"]
+     * <br/>js类型: ["number","string"]
      * <br/>描述:
-     * <p>文本显示宽度。</p>
+     * <p>文字块的宽度。一般不用指定，不指定则自动是文字的宽度。在想做表格项或者使用图片（参见 <code class="codespan">backgroundColor</code>）时，可能会使用它。</p>
+     * <p>注意，文字块的 <code class="codespan">width</code> 和 <code class="codespan">height</code> 指定的是内容高宽，不包含 <code class="codespan">padding</code>。</p>
+     * <p><code class="codespan">width</code> 也可以是百分比字符串，如 <code class="codespan">'100%'</code>。表示的是所在文本块的 <code class="codespan">contentWidth</code>（即不包含文本块的 <code class="codespan">padding</code>）的百分之多少。之所以以 <code class="codespan">contentWidth</code> 做基数，因为每个文本片段只能基于 <code class="codespan">content box</code> 布局。如果以 <code class="codespan">outerWidth</code> 做基数，则百分比的计算在实用中不具有意义，可能会超出。</p>
+     * <p>注意，如果不定义 <code class="codespan">rich</code> 属性，则不能指定 <code class="codespan">width</code> 和 <code class="codespan">height</code>。</p>
      */
-    private Integer width;
+    private Object width;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.height">https://echarts.apache.org/zh/option.html#calendar.yearLabel.height</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.height">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.height</a>
      * <br/>序号: 23
      * <br/>默认值: 无
-     * <br/>js类型: ["number"]
+     * <br/>js类型: ["number","string"]
      * <br/>描述:
-     * <p>文本显示高度。</p>
+     * <p>文字块的高度。一般不用指定，不指定则自动是文字的高度。在使用图片（参见 <code class="codespan">backgroundColor</code>）时，可能会使用它。</p>
+     * <p>注意，文字块的 <code class="codespan">width</code> 和 <code class="codespan">height</code> 指定的是内容高宽，不包含 <code class="codespan">padding</code>。</p>
+     * <p>注意，如果不定义 <code class="codespan">rich</code> 属性，则不能指定 <code class="codespan">width</code> 和 <code class="codespan">height</code>。</p>
      */
-    private Integer height;
+    private Object height;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.textBorderColor">https://echarts.apache.org/zh/option.html#calendar.yearLabel.textBorderColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.textBorderColor">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.textBorderColor</a>
      * <br/>序号: 24
-     * <br/>默认值: 无
+     * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
      * <br/>描述:
      * <p>文字本身的描边颜色。</p>
      */
     private String textBorderColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.textBorderWidth">https://echarts.apache.org/zh/option.html#calendar.yearLabel.textBorderWidth</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.textBorderWidth">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.textBorderWidth</a>
      * <br/>序号: 25
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -351,7 +356,7 @@ public class YearLabel implements Serializable {
      */
     private Integer textBorderWidth;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.textShadowColor">https://echarts.apache.org/zh/option.html#calendar.yearLabel.textShadowColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.textShadowColor">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.textShadowColor</a>
      * <br/>序号: 26
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -360,7 +365,7 @@ public class YearLabel implements Serializable {
      */
     private String textShadowColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.textShadowBlur">https://echarts.apache.org/zh/option.html#calendar.yearLabel.textShadowBlur</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.textShadowBlur">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.textShadowBlur</a>
      * <br/>序号: 27
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -369,7 +374,7 @@ public class YearLabel implements Serializable {
      */
     private Integer textShadowBlur;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.textShadowOffsetX">https://echarts.apache.org/zh/option.html#calendar.yearLabel.textShadowOffsetX</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.textShadowOffsetX">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.textShadowOffsetX</a>
      * <br/>序号: 28
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -378,7 +383,7 @@ public class YearLabel implements Serializable {
      */
     private Integer textShadowOffsetX;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.textShadowOffsetY">https://echarts.apache.org/zh/option.html#calendar.yearLabel.textShadowOffsetY</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.textShadowOffsetY">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.textShadowOffsetY</a>
      * <br/>序号: 29
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -387,43 +392,8 @@ public class YearLabel implements Serializable {
      */
     private Integer textShadowOffsetY;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.overflow">https://echarts.apache.org/zh/option.html#calendar.yearLabel.overflow</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.rich">https://echarts.apache.org/v4/zh/option.html#calendar.yearLabel.rich</a>
      * <br/>序号: 30
-     * <br/>默认值: none
-     * <br/>js类型: ["string"]
-     * <br/>描述:
-     * <p>文字超出宽度是否截断或者换行。配置<code class="codespan">width</code>时有效</p>
-     * <ul>
-     * <li><code class="codespan">'truncate'</code> 截断，并在末尾显示<code class="codespan">ellipsis</code>配置的文本，默认为<code class="codespan">...</code></li>
-     * <li><code class="codespan">'break'</code> 换行</li>
-     * <li><code class="codespan">'breakAll'</code> 换行，跟<code class="codespan">'break'</code>不同的是，在英语等拉丁文中，<code class="codespan">'breakAll'</code>还会强制单词内换行</li>
-     * </ul>
-     */
-    private String overflow;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.ellipsis">https://echarts.apache.org/zh/option.html#calendar.yearLabel.ellipsis</a>
-     * <br/>序号: 31
-     * <br/>默认值: ...
-     * <br/>js类型: ["string"]
-     * <br/>描述:
-     * <p>在<code class="codespan">overflow</code>配置为<code class="codespan">'truncate'</code>的时候，可以通过该属性配置末尾显示的文本。</p>
-     */
-    private String ellipsis;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.lineOverflow">https://echarts.apache.org/zh/option.html#calendar.yearLabel.lineOverflow</a>
-     * <br/>序号: 32
-     * <br/>默认值: none
-     * <br/>js类型: ["string"]
-     * <br/>描述:
-     * <p>文本超出高度部分是否截断，配置<code class="codespan">height</code>时有效。</p>
-     * <ul>
-     * <li><code class="codespan">'truncate'</code> 在文本行数超出高度部分截断。</li>
-     * </ul>
-     */
-    private String lineOverflow;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.yearLabel.rich">https://echarts.apache.org/zh/option.html#calendar.yearLabel.rich</a>
-     * <br/>序号: 33
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

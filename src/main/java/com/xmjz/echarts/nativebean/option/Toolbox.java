@@ -10,14 +10,20 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox">https://echarts.apache.org/zh/option.html#toolbox</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#toolbox">https://echarts.apache.org/v4/zh/option.html#toolbox</a>
  * <br/>序号: 14
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
  * <p>工具栏。内置有<a href="#toolbox.feature.saveAsImage">导出图片</a>，<a href="#toolbox.feature.dataView">数据视图</a>，<a href="#toolbox.feature.magicType">动态类型切换</a>，<a href="#toolbox.feature.dataZoom">数据区域缩放</a>，<a href="#toolbox.feature.reset">重置</a>五个工具。</p>
  * <p><strong>如下示例：</strong></p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-marker&amp;reset=1&amp;edit=1" width="600" height="400"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-marker&amp;reset=1&amp;edit=1" width="600" height="400"><iframe />
+ *
+ *
+ *
+ *
+ *
+ * </iframe>
  *
  * @author auto
  */
@@ -28,7 +34,7 @@ public class Toolbox implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.id">https://echarts.apache.org/zh/option.html#toolbox.id</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#toolbox.id">https://echarts.apache.org/v4/zh/option.html#toolbox.id</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -37,7 +43,7 @@ public class Toolbox implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.show">https://echarts.apache.org/zh/option.html#toolbox.show</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#toolbox.show">https://echarts.apache.org/v4/zh/option.html#toolbox.show</a>
      * <br/>序号: 2
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -46,7 +52,7 @@ public class Toolbox implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.orient">https://echarts.apache.org/zh/option.html#toolbox.orient</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#toolbox.orient">https://echarts.apache.org/v4/zh/option.html#toolbox.orient</a>
      * <br/>序号: 3
      * <br/>默认值: horizontal
      * <br/>js类型: ["string"]
@@ -60,7 +66,7 @@ public class Toolbox implements Serializable {
      */
     private String orient;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.itemSize">https://echarts.apache.org/zh/option.html#toolbox.itemSize</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#toolbox.itemSize">https://echarts.apache.org/v4/zh/option.html#toolbox.itemSize</a>
      * <br/>序号: 4
      * <br/>默认值: 15
      * <br/>js类型: ["number"]
@@ -69,7 +75,7 @@ public class Toolbox implements Serializable {
      */
     private Integer itemSize;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.itemGap">https://echarts.apache.org/zh/option.html#toolbox.itemGap</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#toolbox.itemGap">https://echarts.apache.org/v4/zh/option.html#toolbox.itemGap</a>
      * <br/>序号: 5
      * <br/>默认值: 10
      * <br/>js类型: ["number"]
@@ -78,7 +84,7 @@ public class Toolbox implements Serializable {
      */
     private Integer itemGap;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.showTitle">https://echarts.apache.org/zh/option.html#toolbox.showTitle</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#toolbox.showTitle">https://echarts.apache.org/v4/zh/option.html#toolbox.showTitle</a>
      * <br/>序号: 6
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -87,7 +93,7 @@ public class Toolbox implements Serializable {
      */
     private Boolean showTitle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.feature">https://echarts.apache.org/zh/option.html#toolbox.feature</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#toolbox.feature">https://echarts.apache.org/v4/zh/option.html#toolbox.feature</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -121,7 +127,7 @@ public class Toolbox implements Serializable {
      */
     private Feature feature;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.iconStyle">https://echarts.apache.org/zh/option.html#toolbox.iconStyle</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#toolbox.iconStyle">https://echarts.apache.org/v4/zh/option.html#toolbox.iconStyle</a>
      * <br/>序号: 8
      * <br/>默认值: none
      * <br/>js类型: ["Object"]
@@ -130,7 +136,7 @@ public class Toolbox implements Serializable {
      */
     private IconStyle iconStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.emphasis">https://echarts.apache.org/zh/option.html#toolbox.emphasis</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#toolbox.emphasis">https://echarts.apache.org/v4/zh/option.html#toolbox.emphasis</a>
      * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -138,7 +144,7 @@ public class Toolbox implements Serializable {
      */
     private Emphasis emphasis;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.zlevel">https://echarts.apache.org/zh/option.html#toolbox.zlevel</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#toolbox.zlevel">https://echarts.apache.org/v4/zh/option.html#toolbox.zlevel</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -149,7 +155,7 @@ public class Toolbox implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.z">https://echarts.apache.org/zh/option.html#toolbox.z</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#toolbox.z">https://echarts.apache.org/v4/zh/option.html#toolbox.z</a>
      * <br/>序号: 11
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -159,7 +165,7 @@ public class Toolbox implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.left">https://echarts.apache.org/zh/option.html#toolbox.left</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#toolbox.left">https://echarts.apache.org/v4/zh/option.html#toolbox.left</a>
      * <br/>序号: 12
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -170,7 +176,7 @@ public class Toolbox implements Serializable {
      */
     private Object left;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.top">https://echarts.apache.org/zh/option.html#toolbox.top</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#toolbox.top">https://echarts.apache.org/v4/zh/option.html#toolbox.top</a>
      * <br/>序号: 13
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -181,7 +187,7 @@ public class Toolbox implements Serializable {
      */
     private Object top;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.right">https://echarts.apache.org/zh/option.html#toolbox.right</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#toolbox.right">https://echarts.apache.org/v4/zh/option.html#toolbox.right</a>
      * <br/>序号: 14
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -192,7 +198,7 @@ public class Toolbox implements Serializable {
      */
     private Object right;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.bottom">https://echarts.apache.org/zh/option.html#toolbox.bottom</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#toolbox.bottom">https://echarts.apache.org/v4/zh/option.html#toolbox.bottom</a>
      * <br/>序号: 15
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -203,7 +209,7 @@ public class Toolbox implements Serializable {
      */
     private Object bottom;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.width">https://echarts.apache.org/zh/option.html#toolbox.width</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#toolbox.width">https://echarts.apache.org/v4/zh/option.html#toolbox.width</a>
      * <br/>序号: 16
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -212,7 +218,7 @@ public class Toolbox implements Serializable {
      */
     private Object width;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.height">https://echarts.apache.org/zh/option.html#toolbox.height</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#toolbox.height">https://echarts.apache.org/v4/zh/option.html#toolbox.height</a>
      * <br/>序号: 17
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -221,7 +227,7 @@ public class Toolbox implements Serializable {
      */
     private Object height;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.tooltip">https://echarts.apache.org/zh/option.html#toolbox.tooltip</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#toolbox.tooltip">https://echarts.apache.org/v4/zh/option.html#toolbox.tooltip</a>
      * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

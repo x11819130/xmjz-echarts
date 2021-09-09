@@ -1,5 +1,6 @@
 package com.xmjz.echarts.nativebean.option;
 
+import com.xmjz.echarts.nativebean.option.grid.Tooltip;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
@@ -7,7 +8,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#grid">https://echarts.apache.org/zh/option.html#grid</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#grid">https://echarts.apache.org/v4/zh/option.html#grid</a>
  * <br/>序号: 3
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
@@ -15,7 +16,13 @@ import java.io.Serializable;
  * <p>直角坐标系内绘图网格，单个 grid 内最多可以放置上下两个 X 轴，左右两个 Y 轴。可以在网格上绘制<a href="#series-line">折线图</a>，<a href="#series-bar">柱状图</a>，<a href="#series-scatter">散点图（气泡图）</a>。</p>
  * <p>在 ECharts 2.x 里单个 echarts 实例中最多只能存在一个 grid 组件，在 ECharts 3 中可以存在任意个 grid 组件。</p>
  * <p><strong>例如下面这个 Anscombe Quartet 的示例：</strong></p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-anscombe-quartet&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="16"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-anscombe-quartet&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="18"><iframe />
+ *
+ *
+ *
+ *
+ *
+ * </iframe>
  *
  * @author auto
  */
@@ -26,7 +33,7 @@ public class Grid implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#grid.id">https://echarts.apache.org/zh/option.html#grid.id</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#grid.id">https://echarts.apache.org/v4/zh/option.html#grid.id</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -35,7 +42,7 @@ public class Grid implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#grid.show">https://echarts.apache.org/zh/option.html#grid.show</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#grid.show">https://echarts.apache.org/v4/zh/option.html#grid.show</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -44,7 +51,7 @@ public class Grid implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#grid.zlevel">https://echarts.apache.org/zh/option.html#grid.zlevel</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#grid.zlevel">https://echarts.apache.org/v4/zh/option.html#grid.zlevel</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -55,7 +62,7 @@ public class Grid implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#grid.z">https://echarts.apache.org/zh/option.html#grid.z</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#grid.z">https://echarts.apache.org/v4/zh/option.html#grid.z</a>
      * <br/>序号: 4
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -65,7 +72,7 @@ public class Grid implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#grid.left">https://echarts.apache.org/zh/option.html#grid.left</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#grid.left">https://echarts.apache.org/v4/zh/option.html#grid.left</a>
      * <br/>序号: 5
      * <br/>默认值: 10%
      * <br/>js类型: ["string","number"]
@@ -76,7 +83,7 @@ public class Grid implements Serializable {
      */
     private Object left;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#grid.top">https://echarts.apache.org/zh/option.html#grid.top</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#grid.top">https://echarts.apache.org/v4/zh/option.html#grid.top</a>
      * <br/>序号: 6
      * <br/>默认值: 60
      * <br/>js类型: ["string","number"]
@@ -87,7 +94,7 @@ public class Grid implements Serializable {
      */
     private Object top;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#grid.right">https://echarts.apache.org/zh/option.html#grid.right</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#grid.right">https://echarts.apache.org/v4/zh/option.html#grid.right</a>
      * <br/>序号: 7
      * <br/>默认值: 10%
      * <br/>js类型: ["string","number"]
@@ -97,7 +104,7 @@ public class Grid implements Serializable {
      */
     private Object right;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#grid.bottom">https://echarts.apache.org/zh/option.html#grid.bottom</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#grid.bottom">https://echarts.apache.org/v4/zh/option.html#grid.bottom</a>
      * <br/>序号: 8
      * <br/>默认值: 60
      * <br/>js类型: ["string","number"]
@@ -107,7 +114,7 @@ public class Grid implements Serializable {
      */
     private Object bottom;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#grid.width">https://echarts.apache.org/zh/option.html#grid.width</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#grid.width">https://echarts.apache.org/v4/zh/option.html#grid.width</a>
      * <br/>序号: 9
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -116,7 +123,7 @@ public class Grid implements Serializable {
      */
     private Object width;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#grid.height">https://echarts.apache.org/zh/option.html#grid.height</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#grid.height">https://echarts.apache.org/v4/zh/option.html#grid.height</a>
      * <br/>序号: 10
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -125,7 +132,7 @@ public class Grid implements Serializable {
      */
     private Object height;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#grid.containLabel">https://echarts.apache.org/zh/option.html#grid.containLabel</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#grid.containLabel">https://echarts.apache.org/v4/zh/option.html#grid.containLabel</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -146,7 +153,7 @@ public class Grid implements Serializable {
      */
     private Boolean containLabel;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#grid.backgroundColor">https://echarts.apache.org/zh/option.html#grid.backgroundColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#grid.backgroundColor">https://echarts.apache.org/v4/zh/option.html#grid.backgroundColor</a>
      * <br/>序号: 12
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -159,7 +166,7 @@ public class Grid implements Serializable {
      */
     private String backgroundColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#grid.borderColor">https://echarts.apache.org/zh/option.html#grid.borderColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#grid.borderColor">https://echarts.apache.org/v4/zh/option.html#grid.borderColor</a>
      * <br/>序号: 13
      * <br/>默认值: #ccc
      * <br/>js类型: ["Color"]
@@ -169,7 +176,7 @@ public class Grid implements Serializable {
      */
     private String borderColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#grid.borderWidth">https://echarts.apache.org/zh/option.html#grid.borderWidth</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#grid.borderWidth">https://echarts.apache.org/v4/zh/option.html#grid.borderWidth</a>
      * <br/>序号: 14
      * <br/>默认值: 1
      * <br/>js类型: ["number"]
@@ -179,7 +186,7 @@ public class Grid implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#grid.shadowBlur">https://echarts.apache.org/zh/option.html#grid.shadowBlur</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#grid.shadowBlur">https://echarts.apache.org/v4/zh/option.html#grid.shadowBlur</a>
      * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -195,7 +202,7 @@ public class Grid implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#grid.shadowColor">https://echarts.apache.org/zh/option.html#grid.shadowColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#grid.shadowColor">https://echarts.apache.org/v4/zh/option.html#grid.shadowColor</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -205,7 +212,7 @@ public class Grid implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#grid.shadowOffsetX">https://echarts.apache.org/zh/option.html#grid.shadowOffsetX</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#grid.shadowOffsetX">https://echarts.apache.org/v4/zh/option.html#grid.shadowOffsetX</a>
      * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -215,7 +222,7 @@ public class Grid implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#grid.shadowOffsetY">https://echarts.apache.org/zh/option.html#grid.shadowOffsetY</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#grid.shadowOffsetY">https://echarts.apache.org/v4/zh/option.html#grid.shadowOffsetY</a>
      * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -225,9 +232,9 @@ public class Grid implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#grid.tooltip">https://echarts.apache.org/zh/option.html#grid.tooltip</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#grid.tooltip">https://echarts.apache.org/v4/zh/option.html#grid.tooltip</a>
      * <br/>序号: 19
-     * <br/>默认值: 无
+     * <br/>默认值: true
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>本坐标系特定的 tooltip 设定。</p>
@@ -246,5 +253,5 @@ public class Grid implements Serializable {
      * </ul>
      * <hr>
      */
-    private Object tooltip;
+    private Tooltip tooltip;
 }

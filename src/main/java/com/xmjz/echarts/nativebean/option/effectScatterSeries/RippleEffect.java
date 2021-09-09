@@ -7,7 +7,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-effectScatter.rippleEffect">https://echarts.apache.org/zh/option.html#series-effectScatter.rippleEffect</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-effectScatter.rippleEffect">https://echarts.apache.org/v4/zh/option.html#series-effectScatter.rippleEffect</a>
  * <br/>序号: 7
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
@@ -23,7 +23,7 @@ public class RippleEffect implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-effectScatter.rippleEffect.color">https://echarts.apache.org/zh/option.html#series-effectScatter.rippleEffect.color</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-effectScatter.rippleEffect.color">https://echarts.apache.org/v4/zh/option.html#series-effectScatter.rippleEffect.color</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -37,7 +37,7 @@ public class RippleEffect implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-effectScatter.rippleEffect.period">https://echarts.apache.org/zh/option.html#series-effectScatter.rippleEffect.period</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-effectScatter.rippleEffect.period">https://echarts.apache.org/v4/zh/option.html#series-effectScatter.rippleEffect.period</a>
      * <br/>序号: 2
      * <br/>默认值: 4
      * <br/>js类型: ["number"]
@@ -46,7 +46,7 @@ public class RippleEffect implements Serializable {
      */
     private Integer period;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-effectScatter.rippleEffect.scale">https://echarts.apache.org/zh/option.html#series-effectScatter.rippleEffect.scale</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-effectScatter.rippleEffect.scale">https://echarts.apache.org/v4/zh/option.html#series-effectScatter.rippleEffect.scale</a>
      * <br/>序号: 3
      * <br/>默认值: 2.5
      * <br/>js类型: ["number"]
@@ -55,7 +55,7 @@ public class RippleEffect implements Serializable {
      */
     private Integer scale;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-effectScatter.rippleEffect.brushType">https://echarts.apache.org/zh/option.html#series-effectScatter.rippleEffect.brushType</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-effectScatter.rippleEffect.brushType">https://echarts.apache.org/v4/zh/option.html#series-effectScatter.rippleEffect.brushType</a>
      * <br/>序号: 4
      * <br/>默认值: fill
      * <br/>js类型: ["string"]

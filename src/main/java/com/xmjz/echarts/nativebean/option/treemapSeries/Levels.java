@@ -8,8 +8,8 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels">https://echarts.apache.org/zh/option.html#series-treemap.levels</a>
- * <br/>序号: 36
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-treemap.levels">https://echarts.apache.org/v4/zh/option.html#series-treemap.levels</a>
+ * <br/>序号: 18
  * <br/>默认值: 无
  * <br/>js类型: ["Array"]
  * <br/>描述:
@@ -42,12 +42,14 @@ import java.util.List;
  *     ...
  * ]
  * </code></pre>
- * <p><strong>视觉映射的规则</strong></p>
+ * <p><br>
+ * <strong>视觉映射的规则</strong></p>
  * <p>treemap中首要关注的是如何在视觉上较好得区分『不同层级』、『同层级中不同类别』。这需要合理得设置不同层级的『矩形颜色』、『边界粗细』、『边界颜色』甚至『矩形颜色饱和度』等。</p>
  * <p>参见这个<a href="https://echarts.apache.org/examples/zh/editor.html?c=treemap-disk&amp;edit=1&amp;reset=1" target="_blank">例子</a>，最顶层级用颜色区分，分成了『红』『绿』『蓝』等大块。每个颜色块中是下一个层级，使用颜色的饱和度来区分（参见 <code class="codespan">colorSaturation</code>）。最外层的矩形边界是『白色』，下层级的矩形边界是当前区块颜色加上饱和度处理（参见 <code class="codespan">borderColorSaturation</code>）。</p>
  * <p><code class="codespan">treemap</code> 是通过这样的规则来支持这种配置的：每个层级计算用户配置的 <code class="codespan">color</code>、<code class="codespan">colorSaturation</code>、<code class="codespan">borderColor</code>、<code class="codespan">borderColorSaturation</code>等视觉信息（在levels中配置）。如果子节点没有配置，则继承父的配置，否则使用自己的配置）。</p>
  * <p>这样，可以做到：父层级配置 <code class="codespan">color</code> 列表，子层级配置 <code class="codespan">colorSaturation</code>。父层级的每个节点会从 <code class="codespan">color</code> 列表中得到一个颜色，子层级的节点会从 <code class="codespan">colorSaturation</code> 中得到一个值，并且继承父节点得到的颜色，合成得到自己的最终颜色。</p>
- * <p><strong>维度与『额外的视觉映射』</strong></p>
+ * <p><br>
+ * <strong>维度与『额外的视觉映射』</strong></p>
  * <p>例子：每一个 <code class="codespan">value</code> 字段是一个 Array，其中每个项对应一个维度（dimension）。</p>
  * <pre><code class="lang-javascript hljs">[
  *     {
@@ -76,10 +78,12 @@ import java.util.List;
  * ]
  * </code></pre>
  * <p>treemap 默认把第一个维度（Array 第一项）映射到『面积』上。而如果想表达更多信息，用户可以把其他的某一个维度（<a href="#series-treemap.viusalDimension">series-treemap.visualDimension</a>），映射到其他的『视觉元素』上，比如颜色明暗等。参见<a href="https://echarts.apache.org/examples/zh/editor.html?c=treemap-obama&amp;edit=1&amp;reset=1" target="_blank">例子</a>中，legend选择 <code class="codespan">Growth</code>时的状态。</p>
+ * <p><br></p>
  * <p><strong>矩形边框（border）/缝隙（gap）设置如何避免混淆</strong></p>
  * <p>如果统一用一种颜色设置矩形的缝隙（gap），那么当不同层级的矩形同时展示时可能会出现混淆。</p>
  * <p>参见 <a href="https://echarts.apache.org/examples/zh/editor.html?c=doc-example/treemap-borderColor&amp;edit=1&amp;reset=1" target="_blank">例子</a>，注意其中红色的区块中的子矩形其实是更深层级，和其他用白色缝隙区分的矩形不是在一个层级。所以，红色区块中矩形的分割线的颜色，我们在 <code class="codespan">borderColorSaturation</code> 中设置为『加了饱和度变化的红颜色』，以示区别。</p>
- * <p><strong>borderWidth, gapWidth, borderColor 的解释</strong></p>
+ * <p><br>
+ * <strong>borderWidth, gapWidth, borderColor 的解释</strong></p>
  * <p><img width="500" height="auto" src="documents/asset/img/treemap-border-gap.png"></p>
  *
  * @author auto
@@ -91,7 +95,7 @@ public class Levels implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.visualDimension">https://echarts.apache.org/zh/option.html#series-treemap.levels.visualDimension</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-treemap.levels.visualDimension">https://echarts.apache.org/v4/zh/option.html#series-treemap.levels.visualDimension</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -99,16 +103,11 @@ public class Levels implements Serializable {
      * <p><code class="codespan">treemap</code> 中支持对数据其他维度进行视觉映射。</p>
      * <p>首先，treemap的数据格式（参见 <a href="#series-treemap.data">series-treemap.data</a>）中，每个节点的 <code class="codespan">value</code> 都可以是数组。数组每项是一个『维度』（dimension）。<code class="codespan">visualDimension</code> 指定了额外的『视觉映射』使用的是数组的哪一项。默认为第 <code class="codespan">0</code> 项。</p>
      * <p>关于视觉设置，详见 <a href="#series-treemap.levels">series-treemap.levels</a>。</p>
+     * <p><br></p>
      * <blockquote>
      * <p>注：treemap中 <code class="codespan">visualDimension</code> 属性可能在多处地方存在：</p>
-     * </blockquote>
-     * <blockquote>
      * <ul>
      * <li>于 <a href="#series-treemap">sereis-treemap</a> 根下，表示本系列全局的统一设置。</li>
-     * </ul>
-     * </blockquote>
-     * <blockquote>
-     * <ul>
      * <li>于 <a href="#series-treemap.levels">series-treemap.levels</a> 的每个数组元素中，表示树每个层级的统一设置。</li>
      * <li>于 <a href="#series-treemap.data">series-treemap.data</a> 的每个节点中，表示每个节点的特定设置。</li>
      * </ul>
@@ -116,7 +115,7 @@ public class Levels implements Serializable {
      */
     private Integer visualDimension;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.visualMin">https://echarts.apache.org/zh/option.html#series-treemap.levels.visualMin</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-treemap.levels.visualMin">https://echarts.apache.org/v4/zh/option.html#series-treemap.levels.visualMin</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -126,7 +125,7 @@ public class Levels implements Serializable {
      */
     private Integer visualMin;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.visualMax">https://echarts.apache.org/zh/option.html#series-treemap.levels.visualMax</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-treemap.levels.visualMax">https://echarts.apache.org/v4/zh/option.html#series-treemap.levels.visualMax</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -136,13 +135,14 @@ public class Levels implements Serializable {
      */
     private Integer visualMax;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.color">https://echarts.apache.org/zh/option.html#series-treemap.levels.color</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-treemap.levels.color">https://echarts.apache.org/v4/zh/option.html#series-treemap.levels.color</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
      * <p>表示同一层级的节点的 颜色 选取列表（选择规则见 <a href="#series-treemap.colorMappingBy">colorMappingBy</a>）。默认为空时，选取系统color列表。</p>
      * <p>关于视觉设置，详见 <a href="#series-treemap.levels">series-treemap.levels</a>。</p>
+     * <p><br></p>
      * <blockquote>
      * <p>注：treemap中 <code class="codespan">color</code> 属性可能在多处地方存在：</p>
      * </blockquote>
@@ -155,25 +155,19 @@ public class Levels implements Serializable {
      */
     private List<?> color;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.colorAlpha">https://echarts.apache.org/zh/option.html#series-treemap.levels.colorAlpha</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-treemap.levels.colorAlpha">https://echarts.apache.org/v4/zh/option.html#series-treemap.levels.colorAlpha</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
-     * <p>表示同一层级的节点的颜色透明度选取范围。</p>
-     * <p>数值范围 0 ~ 1</p>
+     * <p>表示同一层级的节点的 颜色透明度 选取范围。数值范围 0 ~ 1。</p>
      * <p>例如, <code class="codespan">colorAlpha</code> 可以是 <code class="codespan">[0.3, 1]</code>.</p>
      * <p>关于视觉设置，详见 <a href="#series-treemap.levels">series-treemap.levels</a>。</p>
+     * <p><br></p>
      * <blockquote>
      * <p>注：treemap中 <code class="codespan">colorAlpha</code> 属性可能在多处地方存在：</p>
-     * </blockquote>
-     * <blockquote>
      * <ul>
      * <li>于 <a href="#series-treemap">sereis-treemap</a> 根下，表示本系列全局的统一设置。</li>
-     * </ul>
-     * </blockquote>
-     * <blockquote>
-     * <ul>
      * <li>于 <a href="#series-treemap.levels">series-treemap.levels</a> 的每个数组元素中，表示树每个层级的统一设置。</li>
      * <li>于 <a href="#series-treemap.data">series-treemap.data</a> 的每个节点中，表示每个节点的特定设置。</li>
      * </ul>
@@ -181,25 +175,19 @@ public class Levels implements Serializable {
      */
     private List<?> colorAlpha;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.colorSaturation">https://echarts.apache.org/zh/option.html#series-treemap.levels.colorSaturation</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-treemap.levels.colorSaturation">https://echarts.apache.org/v4/zh/option.html#series-treemap.levels.colorSaturation</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
-     * <p>表示同一层级的节点的颜色饱和度 选取范围。</p>
-     * <p>数值范围 0 ~ 1。</p>
+     * <p>表示同一层级的节点的 颜色饱和度 选取范围。数值范围 0 ~ 1。</p>
      * <p>例如, <code class="codespan">colorSaturation</code> 可以是 <code class="codespan">[0.3, 1]</code>.</p>
      * <p>关于视觉设置，详见 <a href="#series-treemap.levels">series-treemap.levels</a>。</p>
+     * <p><br></p>
      * <blockquote>
      * <p>注：treemap中 <code class="codespan">colorSaturation</code> 属性可能在多处地方存在：</p>
-     * </blockquote>
-     * <blockquote>
      * <ul>
      * <li>于 <a href="#series-treemap">sereis-treemap</a> 根下，表示本系列全局的统一设置。</li>
-     * </ul>
-     * </blockquote>
-     * <blockquote>
-     * <ul>
      * <li>于 <a href="#series-treemap.levels">series-treemap.levels</a> 的每个数组元素中，表示树每个层级的统一设置。</li>
      * <li>于 <a href="#series-treemap.data">series-treemap.data</a> 的每个节点中，表示每个节点的特定设置。</li>
      * </ul>
@@ -207,7 +195,7 @@ public class Levels implements Serializable {
      */
     private Integer colorSaturation;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.colorMappingBy">https://echarts.apache.org/zh/option.html#series-treemap.levels.colorMappingBy</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-treemap.levels.colorMappingBy">https://echarts.apache.org/v4/zh/option.html#series-treemap.levels.colorMappingBy</a>
      * <br/>序号: 7
      * <br/>默认值: index
      * <br/>js类型: ["string"]
@@ -229,16 +217,11 @@ public class Levels implements Serializable {
      * </ul>
      * <p>将节点的 <code class="codespan">id</code>（即 <a href="#series-treemap.data.id">series-treemap.data.id</a>）映射到颜色列表中。<code class="codespan">id</code> 是用户指定的，这样能够使得，在treemap 通过 setOption 变化数值时，同一 <code class="codespan">id</code> 映射到同一颜色，保持一致性。参见 <a href="https://echarts.apache.org/examples/zh/editor.html?c=treemap-obama&amp;edit=1&amp;reset=1" target="_blank">例子</a>。</p>
      * <p>关于视觉设置，详见 <a href="#series-treemap.levels">series-treemap.levels</a>。</p>
+     * <p><br></p>
      * <blockquote>
      * <p>注：treemap中 <code class="codespan">colorMappingBy</code> 属性可能在多处地方存在：</p>
-     * </blockquote>
-     * <blockquote>
      * <ul>
      * <li>于 <a href="#series-treemap">sereis-treemap</a> 根下，表示本系列全局的统一设置。</li>
-     * </ul>
-     * </blockquote>
-     * <blockquote>
-     * <ul>
      * <li>于 <a href="#series-treemap.levels">series-treemap.levels</a> 的每个数组元素中，表示树每个层级的统一设置。</li>
      * <li>于 <a href="#series-treemap.data">series-treemap.data</a> 的每个节点中，表示每个节点的特定设置。</li>
      * </ul>
@@ -246,7 +229,7 @@ public class Levels implements Serializable {
      */
     private String colorMappingBy;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.visibleMin">https://echarts.apache.org/zh/option.html#series-treemap.levels.visibleMin</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-treemap.levels.visibleMin">https://echarts.apache.org/v4/zh/option.html#series-treemap.levels.visibleMin</a>
      * <br/>序号: 8
      * <br/>默认值: 10
      * <br/>js类型: ["number"]
@@ -254,16 +237,11 @@ public class Levels implements Serializable {
      * <p>如果某个节点的矩形的面积，小于这个数值（单位：px平方），这个节点就不显示。</p>
      * <p>如果不加这个限制，很小的节点会影响显示效果。</p>
      * <p>关于视觉设置，详见 <a href="#series-treemap.levels">series-treemap.levels</a>。</p>
+     * <p><br></p>
      * <blockquote>
      * <p>注：treemap中 <code class="codespan">visibleMin</code> 属性可能在多处地方存在：</p>
-     * </blockquote>
-     * <blockquote>
      * <ul>
      * <li>于 <a href="#series-treemap">sereis-treemap</a> 根下，表示本系列全局的统一设置。</li>
-     * </ul>
-     * </blockquote>
-     * <blockquote>
-     * <ul>
      * <li>于 <a href="#series-treemap.levels">series-treemap.levels</a> 的每个数组元素中，表示树每个层级的统一设置。</li>
      * <li>于 <a href="#series-treemap.data">series-treemap.data</a> 的每个节点中，表示每个节点的特定设置。</li>
      * </ul>
@@ -271,7 +249,7 @@ public class Levels implements Serializable {
      */
     private Integer visibleMin;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.childrenVisibleMin">https://echarts.apache.org/zh/option.html#series-treemap.levels.childrenVisibleMin</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-treemap.levels.childrenVisibleMin">https://echarts.apache.org/v4/zh/option.html#series-treemap.levels.childrenVisibleMin</a>
      * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -279,16 +257,11 @@ public class Levels implements Serializable {
      * <p>如果某个节点的矩形面积，小于这个数值（单位：px平方），则不显示这个节点的子节点。</p>
      * <p>这能够在矩形面积不足够大时候，隐藏节点的细节。当用户用鼠标缩放节点时，如果面积大于此阈值，又会显示子节点。</p>
      * <p>关于视觉设置，详见 <a href="#series-treemap.levels">series-treemap.levels</a>。</p>
+     * <p><br></p>
      * <blockquote>
      * <p>注：treemap中 <code class="codespan">childrenVisibleMin</code> 属性可能在多处地方存在：</p>
-     * </blockquote>
-     * <blockquote>
      * <ul>
      * <li>于 <a href="#series-treemap">sereis-treemap</a> 根下，表示本系列全局的统一设置。</li>
-     * </ul>
-     * </blockquote>
-     * <blockquote>
-     * <ul>
      * <li>于 <a href="#series-treemap.levels">series-treemap.levels</a> 的每个数组元素中，表示树每个层级的统一设置。</li>
      * <li>于 <a href="#series-treemap.data">series-treemap.data</a> 的每个节点中，表示每个节点的特定设置。</li>
      * </ul>
@@ -296,30 +269,26 @@ public class Levels implements Serializable {
      */
     private Integer childrenVisibleMin;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.label">https://echarts.apache.org/zh/option.html#series-treemap.levels.label</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-treemap.levels.label">https://echarts.apache.org/v4/zh/option.html#series-treemap.levels.label</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p><code class="codespan">label</code> 描述了每个矩形中，文本标签的样式。</p>
+     * <p><br></p>
      * <blockquote>
      * <p>注：treemap中 <code class="codespan">label</code> 属性可能在多处地方存在：</p>
-     * </blockquote>
-     * <blockquote>
      * <ul>
      * <li>于 <a href="#series-treemap">sereis-treemap</a> 根下，表示本系列全局的统一设置。</li>
-     * </ul>
-     * </blockquote>
-     * <blockquote>
-     * <ul>
      * <li>于 <a href="#series-treemap.levels">series-treemap.levels</a> 的每个数组元素中，表示树每个层级的统一设置。</li>
      * <li>于 <a href="#series-treemap.data">series-treemap.data</a> 的每个节点中，表示每个节点的特定设置。</li>
      * </ul>
      * </blockquote>
+     * <p><br></p>
      */
     private Object label;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.upperLabel">https://echarts.apache.org/zh/option.html#series-treemap.levels.upperLabel</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-treemap.levels.upperLabel">https://echarts.apache.org/v4/zh/option.html#series-treemap.levels.upperLabel</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -328,80 +297,48 @@ public class Levels implements Serializable {
      * <p>同 <a href="#series-treemap.label">series-treemap.label</a> 一样，<code class="codespan">upperLabel</code> 可以存在于 <a href="#series-treemap">series-treemap</a> 的根节点，或者 <a href="#series-treemap.level">series-treemap.level</a> 中，或者 <a href="#series-treemap.data">series-treemap.data</a> 的每个数据项中。</p>
      * <p><a href="#series-treemap.label">series-treemap.label</a> 描述的是，当前节点为叶节点时标签的样式；<code class="codespan">upperLabel</code> 描述的是，当前节点为非叶节点（即含有子节点）时标签的样式。（此时标签一般会被显示在节点的最上部）</p>
      * <p>参见：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=treemap-show-parent&amp;edit=1&amp;reset=1" width="700" height="500"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=treemap-show-parent&amp;edit=1&amp;reset=1" width="700" height="500"><iframe />
      *
      *
      *
      *
+     * <p><br></p>
      * <blockquote>
      * <p>注：treemap中 <code class="codespan">label</code> 属性可能在多处地方存在：</p>
-     * </blockquote>
-     * <blockquote>
      * <ul>
      * <li>于 <a href="#series-treemap">sereis-treemap</a> 根下，表示本系列全局的统一设置。</li>
-     * </ul>
-     * </blockquote>
-     * <blockquote>
-     * <ul>
      * <li>于 <a href="#series-treemap.levels">series-treemap.levels</a> 的每个数组元素中，表示树每个层级的统一设置。</li>
      * <li>于 <a href="#series-treemap.data">series-treemap.data</a> 的每个节点中，表示每个节点的特定设置。</li>
      * </ul>
      * </blockquote>
+     * <p><br></p>
+     * </iframe>
      */
     private Object upperLabel;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.itemStyle">https://echarts.apache.org/zh/option.html#series-treemap.levels.itemStyle</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-treemap.levels.itemStyle">https://echarts.apache.org/v4/zh/option.html#series-treemap.levels.itemStyle</a>
      * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
+     * <p><br></p>
      * <blockquote>
      * <p>注：treemap中 <code class="codespan">itemStyle</code> 属性可能在多处地方存在：</p>
-     * </blockquote>
-     * <blockquote>
      * <ul>
      * <li>于 <a href="#series-treemap">sereis-treemap</a> 根下，表示本系列全局的统一设置。</li>
-     * </ul>
-     * </blockquote>
-     * <blockquote>
-     * <ul>
      * <li>于 <a href="#series-treemap.levels">series-treemap.levels</a> 的每个数组元素中，表示树每个层级的统一设置。</li>
      * <li>于 <a href="#series-treemap.data">series-treemap.data</a> 的每个节点中，表示每个节点的特定设置。</li>
      * </ul>
      * </blockquote>
+     * <p><br></p>
      */
     private Object itemStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.emphasis">https://echarts.apache.org/zh/option.html#series-treemap.levels.emphasis</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-treemap.levels.emphasis">https://echarts.apache.org/v4/zh/option.html#series-treemap.levels.emphasis</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
-     * <p>高亮状态配置。</p>
      */
     private Object emphasis;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.blur">https://echarts.apache.org/zh/option.html#series-treemap.levels.blur</a>
-     * <br/>序号: 14
-     * <br/>默认值: 无
-     * <br/>js类型: ["Object"]
-     * <br/>描述:
-     * <blockquote>
-     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
-     * </blockquote>
-     * <p>淡出状态配置。</p>
-     */
-    private Object blur;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-treemap.levels.select">https://echarts.apache.org/zh/option.html#series-treemap.levels.select</a>
-     * <br/>序号: 15
-     * <br/>默认值: 无
-     * <br/>js类型: ["Object"]
-     * <br/>描述:
-     * <blockquote>
-     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
-     * </blockquote>
-     * <p>选中状态配置。</p>
-     */
-    private Object select;
 }

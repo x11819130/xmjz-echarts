@@ -7,8 +7,8 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.itemStyle">https://echarts.apache.org/zh/option.html#series-pie.itemStyle</a>
- * <br/>序号: 26
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.itemStyle">https://echarts.apache.org/v4/zh/option.html#series-pie.itemStyle</a>
+ * <br/>序号: 27
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -23,7 +23,7 @@ public class ItemStyle implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.itemStyle.color">https://echarts.apache.org/zh/option.html#series-pie.itemStyle.color</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.itemStyle.color">https://echarts.apache.org/v4/zh/option.html#series-pie.itemStyle.color</a>
      * <br/>序号: 1
      * <br/>默认值: 自适应
      * <br/>js类型: ["Color","Function"]
@@ -72,7 +72,7 @@ public class ItemStyle implements Serializable {
      */
     private Object color;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.itemStyle.borderColor">https://echarts.apache.org/zh/option.html#series-pie.itemStyle.borderColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.itemStyle.borderColor">https://echarts.apache.org/v4/zh/option.html#series-pie.itemStyle.borderColor</a>
      * <br/>序号: 2
      * <br/>默认值: #000
      * <br/>js类型: ["Color"]
@@ -81,7 +81,7 @@ public class ItemStyle implements Serializable {
      */
     private String borderColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.itemStyle.borderWidth">https://echarts.apache.org/zh/option.html#series-pie.itemStyle.borderWidth</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.itemStyle.borderWidth">https://echarts.apache.org/v4/zh/option.html#series-pie.itemStyle.borderWidth</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -90,7 +90,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.itemStyle.borderType">https://echarts.apache.org/zh/option.html#series-pie.itemStyle.borderType</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.itemStyle.borderType">https://echarts.apache.org/v4/zh/option.html#series-pie.itemStyle.borderType</a>
      * <br/>序号: 4
      * <br/>默认值: solid
      * <br/>js类型: ["string"]
@@ -99,7 +99,7 @@ public class ItemStyle implements Serializable {
      */
     private String borderType;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.itemStyle.shadowBlur">https://echarts.apache.org/zh/option.html#series-pie.itemStyle.shadowBlur</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.itemStyle.shadowBlur">https://echarts.apache.org/v4/zh/option.html#series-pie.itemStyle.shadowBlur</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -114,7 +114,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.itemStyle.shadowColor">https://echarts.apache.org/zh/option.html#series-pie.itemStyle.shadowColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.itemStyle.shadowColor">https://echarts.apache.org/v4/zh/option.html#series-pie.itemStyle.shadowColor</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -123,7 +123,7 @@ public class ItemStyle implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.itemStyle.shadowOffsetX">https://echarts.apache.org/zh/option.html#series-pie.itemStyle.shadowOffsetX</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.itemStyle.shadowOffsetX">https://echarts.apache.org/v4/zh/option.html#series-pie.itemStyle.shadowOffsetX</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -132,7 +132,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.itemStyle.shadowOffsetY">https://echarts.apache.org/zh/option.html#series-pie.itemStyle.shadowOffsetY</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.itemStyle.shadowOffsetY">https://echarts.apache.org/v4/zh/option.html#series-pie.itemStyle.shadowOffsetY</a>
      * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -141,7 +141,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.itemStyle.opacity">https://echarts.apache.org/zh/option.html#series-pie.itemStyle.opacity</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.itemStyle.opacity">https://echarts.apache.org/v4/zh/option.html#series-pie.itemStyle.opacity</a>
      * <br/>序号: 9
      * <br/>默认值: 1
      * <br/>js类型: ["number"]
@@ -149,32 +149,4 @@ public class ItemStyle implements Serializable {
      * <p>图形透明度。支持从 0 到 1 的数字，为 0 时不绘制该图形。</p>
      */
     private Integer opacity;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.itemStyle.decal(Object%20|%20'none')">https://echarts.apache.org/zh/option.html#series-pie.itemStyle.decal(Object%20|%20'none')</a>
-     * <br/>序号: 10
-     * <br/>默认值: 无
-     * <br/>js类型: ["any"]
-     * <br/>描述:
-     * <p>图形的贴花图案，在 <a href="#aria.enabled">aria.enabled</a> 与 <a href="#aria.decal.show">aria.decal.show</a> 都是 <code class="codespan">true</code> 的情况下才生效。</p>
-     * <p>如果为 <code class="codespan">'none'</code> 表示不使用贴花图案。</p>
-     */
-    private Object decal;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.itemStyle.borderRadius">https://echarts.apache.org/zh/option.html#series-pie.itemStyle.borderRadius</a>
-     * <br/>序号: 11
-     * <br/>默认值: 无
-     * <br/>js类型: ["number","string","Array"]
-     * <br/>描述:
-     * <blockquote>
-     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
-     * </blockquote>
-     * <p>用于指定饼图扇形区块的内外圆角半径，支持设置固定数值或者相对于扇形区块的半径的百分比值。例如：</p>
-     * <ul>
-     * <li><code class="codespan">borderRadius: 10</code>：表示内圆角半径和外圆角半径都是 <code class="codespan">10px</code>。</li>
-     * <li><code class="codespan">borderRadius: '20%'</code>：表示内圆角半径和外圆角半径都是饼图扇形区块半径的 <code class="codespan">20%</code>。</li>
-     * <li><code class="codespan">borderRadius: [10, 20]</code>：表示当饼图为环形图时，表示内圆角半径是 <code class="codespan">10px</code>、外圆角半径是 <code class="codespan">20px</code>。</li>
-     * <li><code class="codespan">borderRadius: ['20%', '50%']</code>：表示当饼图为环形图时，内圆角半径是内圆半径的 <code class="codespan">20%</code>、外圆角半径是外圆半径的 <code class="codespan">50%</code>。</li>
-     * </ul>
-     */
-    private Object borderRadius;
 }

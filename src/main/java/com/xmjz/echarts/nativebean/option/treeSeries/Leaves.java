@@ -7,8 +7,8 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.leaves">https://echarts.apache.org/zh/option.html#series-tree.leaves</a>
- * <br/>序号: 32
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-tree.leaves">https://echarts.apache.org/v4/zh/option.html#series-tree.leaves</a>
+ * <br/>序号: 28
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -23,7 +23,7 @@ public class Leaves implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.leaves.label">https://echarts.apache.org/zh/option.html#series-tree.leaves.label</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-tree.leaves.label">https://echarts.apache.org/v4/zh/option.html#series-tree.leaves.label</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -32,7 +32,7 @@ public class Leaves implements Serializable {
      */
     private Object label;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.leaves.itemStyle">https://echarts.apache.org/zh/option.html#series-tree.leaves.itemStyle</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-tree.leaves.itemStyle">https://echarts.apache.org/v4/zh/option.html#series-tree.leaves.itemStyle</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -41,36 +41,12 @@ public class Leaves implements Serializable {
      */
     private Object itemStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.leaves.emphasis">https://echarts.apache.org/zh/option.html#series-tree.leaves.emphasis</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-tree.leaves.emphasis">https://echarts.apache.org/v4/zh/option.html#series-tree.leaves.emphasis</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
-     * <p>叶子节点高亮状态的配置。</p>
+     * <p>叶子节点高亮的样式。</p>
      */
     private Object emphasis;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.leaves.blur">https://echarts.apache.org/zh/option.html#series-tree.leaves.blur</a>
-     * <br/>序号: 4
-     * <br/>默认值: 无
-     * <br/>js类型: ["Object"]
-     * <br/>描述:
-     * <blockquote>
-     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
-     * </blockquote>
-     * <p>叶子节点淡出状态的配置。</p>
-     */
-    private Object blur;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-tree.leaves.select">https://echarts.apache.org/zh/option.html#series-tree.leaves.select</a>
-     * <br/>序号: 5
-     * <br/>默认值: 无
-     * <br/>js类型: ["Object"]
-     * <br/>描述:
-     * <blockquote>
-     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
-     * </blockquote>
-     * <p>叶子节点选中状态的配置。</p>
-     */
-    private Object select;
 }

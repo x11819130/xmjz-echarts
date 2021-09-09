@@ -7,8 +7,8 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.lineStyle">https://echarts.apache.org/zh/option.html#timeline.lineStyle</a>
- * <br/>序号: 26
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.lineStyle">https://echarts.apache.org/v4/zh/option.html#timeline.lineStyle</a>
+ * <br/>序号: 25
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -22,7 +22,7 @@ public class LineStyle implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.lineStyle.show">https://echarts.apache.org/zh/option.html#timeline.lineStyle.show</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.lineStyle.show">https://echarts.apache.org/v4/zh/option.html#timeline.lineStyle.show</a>
      * <br/>序号: 1
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -31,9 +31,9 @@ public class LineStyle implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.lineStyle.color">https://echarts.apache.org/zh/option.html#timeline.lineStyle.color</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.lineStyle.color">https://echarts.apache.org/v4/zh/option.html#timeline.lineStyle.color</a>
      * <br/>序号: 2
-     * <br/>默认值: #DAE1F5
+     * <br/>默认值: #304654
      * <br/>js类型: ["Color"]
      * <br/>描述:
      * <p>timeline 线的颜色。</p>
@@ -76,7 +76,7 @@ public class LineStyle implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.lineStyle.width">https://echarts.apache.org/zh/option.html#timeline.lineStyle.width</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.lineStyle.width">https://echarts.apache.org/v4/zh/option.html#timeline.lineStyle.width</a>
      * <br/>序号: 3
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -85,7 +85,7 @@ public class LineStyle implements Serializable {
      */
     private Integer width;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.lineStyle.type">https://echarts.apache.org/zh/option.html#timeline.lineStyle.type</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.lineStyle.type">https://echarts.apache.org/v4/zh/option.html#timeline.lineStyle.type</a>
      * <br/>序号: 4
      * <br/>默认值: solid
      * <br/>js类型: ["string"]
@@ -100,7 +100,7 @@ public class LineStyle implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.lineStyle.shadowBlur">https://echarts.apache.org/zh/option.html#timeline.lineStyle.shadowBlur</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.lineStyle.shadowBlur">https://echarts.apache.org/v4/zh/option.html#timeline.lineStyle.shadowBlur</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -115,7 +115,7 @@ public class LineStyle implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.lineStyle.shadowColor">https://echarts.apache.org/zh/option.html#timeline.lineStyle.shadowColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.lineStyle.shadowColor">https://echarts.apache.org/v4/zh/option.html#timeline.lineStyle.shadowColor</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -124,7 +124,7 @@ public class LineStyle implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.lineStyle.shadowOffsetX">https://echarts.apache.org/zh/option.html#timeline.lineStyle.shadowOffsetX</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.lineStyle.shadowOffsetX">https://echarts.apache.org/v4/zh/option.html#timeline.lineStyle.shadowOffsetX</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -133,7 +133,7 @@ public class LineStyle implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.lineStyle.shadowOffsetY">https://echarts.apache.org/zh/option.html#timeline.lineStyle.shadowOffsetY</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.lineStyle.shadowOffsetY">https://echarts.apache.org/v4/zh/option.html#timeline.lineStyle.shadowOffsetY</a>
      * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -142,7 +142,7 @@ public class LineStyle implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.lineStyle.opacity">https://echarts.apache.org/zh/option.html#timeline.lineStyle.opacity</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#timeline.lineStyle.opacity">https://echarts.apache.org/v4/zh/option.html#timeline.lineStyle.opacity</a>
      * <br/>序号: 9
      * <br/>默认值: 1
      * <br/>js类型: ["number"]

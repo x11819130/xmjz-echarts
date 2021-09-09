@@ -7,12 +7,12 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label">https://echarts.apache.org/zh/option.html#series-funnel.label</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label">https://echarts.apache.org/v4/zh/option.html#series-funnel.label</a>
  * <br/>序号: 13
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
- * <p>漏斗图图形上的文本标签，可用于说明图形的一些数据信息，比如值，名称等。</p>
+ * <p>漏斗图图形上的文本标签，可用于说明图形的一些数据信息，比如值，名称等，<code class="codespan">label</code>选项在 ECharts 2.x 中放置于<code class="codespan">itemStyle</code>下，在 ECharts 3 中为了让整个配置项结构更扁平合理，<code class="codespan">label</code> 被拿出来跟 <code class="codespan">itemStyle</code> 平级，并且跟 <code class="codespan">itemStyle</code> 一样拥有 <code class="codespan">emphasis</code> 状态。</p>
  *
  * @author auto
  */
@@ -23,7 +23,7 @@ public class Label implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.show">https://echarts.apache.org/zh/option.html#series-funnel.label.show</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label.show">https://echarts.apache.org/v4/zh/option.html#series-funnel.label.show</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -31,7 +31,7 @@ public class Label implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.position">https://echarts.apache.org/zh/option.html#series-funnel.label.position</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label.position">https://echarts.apache.org/v4/zh/option.html#series-funnel.label.position</a>
      * <br/>序号: 2
      * <br/>默认值: outside
      * <br/>js类型: ["string"]
@@ -58,7 +58,7 @@ public class Label implements Serializable {
      */
     private String position;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.formatter">https://echarts.apache.org/zh/option.html#series-funnel.label.formatter</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label.formatter">https://echarts.apache.org/v4/zh/option.html#series-funnel.label.formatter</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["string","Function"]
@@ -72,8 +72,8 @@ public class Label implements Serializable {
      * <li><code class="codespan">{b}</code>：数据名。</li>
      * <li><code class="codespan">{c}</code>：数据值。</li>
      * <li><code class="codespan">{d}</code>：百分比。</li>
-     * <li><code class="codespan">{@xxx}</code>：数据中名为 <code class="codespan">'xxx'</code> 的维度的值，如 <code class="codespan">{@product}</code> 表示名为 <code class="codespan">'product'</code> 的维度的值。</li>
-     * <li><code class="codespan">{@[n]}</code>：数据中维度 <code class="codespan">n</code> 的值，如 <code class="codespan">{@[3]}</code> 表示维度 3 的值，从 0 开始计数。</li>
+     * <li><code class="codespan">{@xxx}：数据中名为</code>'xxx'<code class="codespan">的维度的值，如</code>{@product}<code class="codespan">表示名为</code>'product'` 的维度的值。</li>
+     * <li><code class="codespan">{@[n]}：数据中维度</code>n<code class="codespan">的值，如</code>{@[3]}` 表示维度 3 的值，从 0 开始计数。</li>
      * </ul>
      * <p><strong>示例：</strong></p>
      * <pre><code class="lang-js hljs javascript">formatter: <span class="hljs-string">'{b}: {d}'</span>
@@ -116,10 +116,8 @@ public class Label implements Serializable {
      *     <span class="hljs-comment">// 数据图形的颜色</span>
      *     <span class="hljs-attr">color</span>: string,
      *
-     *
      *     <span class="hljs-comment">// 百分比</span>
      *     <span class="hljs-attr">percent</span>: number,
-     *
      *
      * }
      * </code></pre>
@@ -154,7 +152,7 @@ public class Label implements Serializable {
      */
     private Object formatter;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.color">https://echarts.apache.org/zh/option.html#series-funnel.label.color</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label.color">https://echarts.apache.org/v4/zh/option.html#series-funnel.label.color</a>
      * <br/>序号: 4
      * <br/>默认值: #fff
      * <br/>js类型: ["Color"]
@@ -163,7 +161,7 @@ public class Label implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.fontStyle">https://echarts.apache.org/zh/option.html#series-funnel.label.fontStyle</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label.fontStyle">https://echarts.apache.org/v4/zh/option.html#series-funnel.label.fontStyle</a>
      * <br/>序号: 5
      * <br/>默认值: normal
      * <br/>js类型: ["string"]
@@ -178,7 +176,7 @@ public class Label implements Serializable {
      */
     private String fontStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.fontWeight">https://echarts.apache.org/zh/option.html#series-funnel.label.fontWeight</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label.fontWeight">https://echarts.apache.org/v4/zh/option.html#series-funnel.label.fontWeight</a>
      * <br/>序号: 6
      * <br/>默认值: normal
      * <br/>js类型: ["string","number"]
@@ -195,7 +193,7 @@ public class Label implements Serializable {
      */
     private Object fontWeight;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.fontFamily">https://echarts.apache.org/zh/option.html#series-funnel.label.fontFamily</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label.fontFamily">https://echarts.apache.org/v4/zh/option.html#series-funnel.label.fontFamily</a>
      * <br/>序号: 7
      * <br/>默认值: sans-serif
      * <br/>js类型: ["string"]
@@ -205,7 +203,7 @@ public class Label implements Serializable {
      */
     private String fontFamily;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.fontSize">https://echarts.apache.org/zh/option.html#series-funnel.label.fontSize</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label.fontSize">https://echarts.apache.org/v4/zh/option.html#series-funnel.label.fontSize</a>
      * <br/>序号: 8
      * <br/>默认值: 12
      * <br/>js类型: ["number"]
@@ -214,7 +212,7 @@ public class Label implements Serializable {
      */
     private Integer fontSize;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.align">https://echarts.apache.org/zh/option.html#series-funnel.label.align</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label.align">https://echarts.apache.org/v4/zh/option.html#series-funnel.label.align</a>
      * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -239,7 +237,7 @@ public class Label implements Serializable {
      */
     private String align;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.verticalAlign">https://echarts.apache.org/zh/option.html#series-funnel.label.verticalAlign</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label.verticalAlign">https://echarts.apache.org/v4/zh/option.html#series-funnel.label.verticalAlign</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -264,7 +262,7 @@ public class Label implements Serializable {
      */
     private String verticalAlign;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.lineHeight">https://echarts.apache.org/zh/option.html#series-funnel.label.lineHeight</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label.lineHeight">https://echarts.apache.org/v4/zh/option.html#series-funnel.label.lineHeight</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -283,7 +281,7 @@ public class Label implements Serializable {
      */
     private Integer lineHeight;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.backgroundColor">https://echarts.apache.org/zh/option.html#series-funnel.label.backgroundColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label.backgroundColor">https://echarts.apache.org/v4/zh/option.html#series-funnel.label.backgroundColor</a>
      * <br/>序号: 12
      * <br/>默认值: transparent
      * <br/>js类型: ["string","Object"]
@@ -303,16 +301,16 @@ public class Label implements Serializable {
      */
     private Object backgroundColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.borderColor">https://echarts.apache.org/zh/option.html#series-funnel.label.borderColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label.borderColor">https://echarts.apache.org/v4/zh/option.html#series-funnel.label.borderColor</a>
      * <br/>序号: 13
-     * <br/>默认值: 无
+     * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
      * <br/>描述:
      * <p>文字块边框颜色。</p>
      */
     private String borderColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.borderWidth">https://echarts.apache.org/zh/option.html#series-funnel.label.borderWidth</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label.borderWidth">https://echarts.apache.org/v4/zh/option.html#series-funnel.label.borderWidth</a>
      * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -321,7 +319,7 @@ public class Label implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.borderRadius">https://echarts.apache.org/zh/option.html#series-funnel.label.borderRadius</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label.borderRadius">https://echarts.apache.org/v4/zh/option.html#series-funnel.label.borderRadius</a>
      * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -330,7 +328,7 @@ public class Label implements Serializable {
      */
     private Object borderRadius;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.padding">https://echarts.apache.org/zh/option.html#series-funnel.label.padding</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label.padding">https://echarts.apache.org/v4/zh/option.html#series-funnel.label.padding</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -345,7 +343,7 @@ public class Label implements Serializable {
      */
     private Object padding;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.shadowColor">https://echarts.apache.org/zh/option.html#series-funnel.label.shadowColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label.shadowColor">https://echarts.apache.org/v4/zh/option.html#series-funnel.label.shadowColor</a>
      * <br/>序号: 17
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -354,7 +352,7 @@ public class Label implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.shadowBlur">https://echarts.apache.org/zh/option.html#series-funnel.label.shadowBlur</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label.shadowBlur">https://echarts.apache.org/v4/zh/option.html#series-funnel.label.shadowBlur</a>
      * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -363,7 +361,7 @@ public class Label implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.shadowOffsetX">https://echarts.apache.org/zh/option.html#series-funnel.label.shadowOffsetX</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label.shadowOffsetX">https://echarts.apache.org/v4/zh/option.html#series-funnel.label.shadowOffsetX</a>
      * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -372,7 +370,7 @@ public class Label implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.shadowOffsetY">https://echarts.apache.org/zh/option.html#series-funnel.label.shadowOffsetY</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label.shadowOffsetY">https://echarts.apache.org/v4/zh/option.html#series-funnel.label.shadowOffsetY</a>
      * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -381,34 +379,39 @@ public class Label implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.width">https://echarts.apache.org/zh/option.html#series-funnel.label.width</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label.width">https://echarts.apache.org/v4/zh/option.html#series-funnel.label.width</a>
      * <br/>序号: 21
      * <br/>默认值: 无
-     * <br/>js类型: ["number"]
+     * <br/>js类型: ["number","string"]
      * <br/>描述:
-     * <p>文本显示宽度。</p>
+     * <p>文字块的宽度。一般不用指定，不指定则自动是文字的宽度。在想做表格项或者使用图片（参见 <code class="codespan">backgroundColor</code>）时，可能会使用它。</p>
+     * <p>注意，文字块的 <code class="codespan">width</code> 和 <code class="codespan">height</code> 指定的是内容高宽，不包含 <code class="codespan">padding</code>。</p>
+     * <p><code class="codespan">width</code> 也可以是百分比字符串，如 <code class="codespan">'100%'</code>。表示的是所在文本块的 <code class="codespan">contentWidth</code>（即不包含文本块的 <code class="codespan">padding</code>）的百分之多少。之所以以 <code class="codespan">contentWidth</code> 做基数，因为每个文本片段只能基于 <code class="codespan">content box</code> 布局。如果以 <code class="codespan">outerWidth</code> 做基数，则百分比的计算在实用中不具有意义，可能会超出。</p>
+     * <p>注意，如果不定义 <code class="codespan">rich</code> 属性，则不能指定 <code class="codespan">width</code> 和 <code class="codespan">height</code>。</p>
      */
-    private Integer width;
+    private Object width;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.height">https://echarts.apache.org/zh/option.html#series-funnel.label.height</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label.height">https://echarts.apache.org/v4/zh/option.html#series-funnel.label.height</a>
      * <br/>序号: 22
      * <br/>默认值: 无
-     * <br/>js类型: ["number"]
+     * <br/>js类型: ["number","string"]
      * <br/>描述:
-     * <p>文本显示高度。</p>
+     * <p>文字块的高度。一般不用指定，不指定则自动是文字的高度。在使用图片（参见 <code class="codespan">backgroundColor</code>）时，可能会使用它。</p>
+     * <p>注意，文字块的 <code class="codespan">width</code> 和 <code class="codespan">height</code> 指定的是内容高宽，不包含 <code class="codespan">padding</code>。</p>
+     * <p>注意，如果不定义 <code class="codespan">rich</code> 属性，则不能指定 <code class="codespan">width</code> 和 <code class="codespan">height</code>。</p>
      */
-    private Integer height;
+    private Object height;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.textBorderColor">https://echarts.apache.org/zh/option.html#series-funnel.label.textBorderColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label.textBorderColor">https://echarts.apache.org/v4/zh/option.html#series-funnel.label.textBorderColor</a>
      * <br/>序号: 23
-     * <br/>默认值: 无
+     * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
      * <br/>描述:
      * <p>文字本身的描边颜色。</p>
      */
     private String textBorderColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.textBorderWidth">https://echarts.apache.org/zh/option.html#series-funnel.label.textBorderWidth</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label.textBorderWidth">https://echarts.apache.org/v4/zh/option.html#series-funnel.label.textBorderWidth</a>
      * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -417,7 +420,7 @@ public class Label implements Serializable {
      */
     private Integer textBorderWidth;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.textShadowColor">https://echarts.apache.org/zh/option.html#series-funnel.label.textShadowColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label.textShadowColor">https://echarts.apache.org/v4/zh/option.html#series-funnel.label.textShadowColor</a>
      * <br/>序号: 25
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -426,7 +429,7 @@ public class Label implements Serializable {
      */
     private String textShadowColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.textShadowBlur">https://echarts.apache.org/zh/option.html#series-funnel.label.textShadowBlur</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label.textShadowBlur">https://echarts.apache.org/v4/zh/option.html#series-funnel.label.textShadowBlur</a>
      * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -435,7 +438,7 @@ public class Label implements Serializable {
      */
     private Integer textShadowBlur;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.textShadowOffsetX">https://echarts.apache.org/zh/option.html#series-funnel.label.textShadowOffsetX</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label.textShadowOffsetX">https://echarts.apache.org/v4/zh/option.html#series-funnel.label.textShadowOffsetX</a>
      * <br/>序号: 27
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -444,7 +447,7 @@ public class Label implements Serializable {
      */
     private Integer textShadowOffsetX;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.textShadowOffsetY">https://echarts.apache.org/zh/option.html#series-funnel.label.textShadowOffsetY</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label.textShadowOffsetY">https://echarts.apache.org/v4/zh/option.html#series-funnel.label.textShadowOffsetY</a>
      * <br/>序号: 28
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -453,43 +456,8 @@ public class Label implements Serializable {
      */
     private Integer textShadowOffsetY;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.overflow">https://echarts.apache.org/zh/option.html#series-funnel.label.overflow</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-funnel.label.rich">https://echarts.apache.org/v4/zh/option.html#series-funnel.label.rich</a>
      * <br/>序号: 29
-     * <br/>默认值: none
-     * <br/>js类型: ["string"]
-     * <br/>描述:
-     * <p>文字超出宽度是否截断或者换行。配置<code class="codespan">width</code>时有效</p>
-     * <ul>
-     * <li><code class="codespan">'truncate'</code> 截断，并在末尾显示<code class="codespan">ellipsis</code>配置的文本，默认为<code class="codespan">...</code></li>
-     * <li><code class="codespan">'break'</code> 换行</li>
-     * <li><code class="codespan">'breakAll'</code> 换行，跟<code class="codespan">'break'</code>不同的是，在英语等拉丁文中，<code class="codespan">'breakAll'</code>还会强制单词内换行</li>
-     * </ul>
-     */
-    private String overflow;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.ellipsis">https://echarts.apache.org/zh/option.html#series-funnel.label.ellipsis</a>
-     * <br/>序号: 30
-     * <br/>默认值: ...
-     * <br/>js类型: ["string"]
-     * <br/>描述:
-     * <p>在<code class="codespan">overflow</code>配置为<code class="codespan">'truncate'</code>的时候，可以通过该属性配置末尾显示的文本。</p>
-     */
-    private String ellipsis;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.lineOverflow">https://echarts.apache.org/zh/option.html#series-funnel.label.lineOverflow</a>
-     * <br/>序号: 31
-     * <br/>默认值: none
-     * <br/>js类型: ["string"]
-     * <br/>描述:
-     * <p>文本超出高度部分是否截断，配置<code class="codespan">height</code>时有效。</p>
-     * <ul>
-     * <li><code class="codespan">'truncate'</code> 在文本行数超出高度部分截断。</li>
-     * </ul>
-     */
-    private String lineOverflow;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-funnel.label.rich">https://echarts.apache.org/zh/option.html#series-funnel.label.rich</a>
-     * <br/>序号: 32
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

@@ -1,5 +1,6 @@
 package com.xmjz.echarts.nativebean.option;
 
+import com.xmjz.echarts.nativebean.option.polar.Tooltip;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
@@ -8,14 +9,20 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#polar">https://echarts.apache.org/zh/option.html#polar</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#polar">https://echarts.apache.org/v4/zh/option.html#polar</a>
  * <br/>序号: 6
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
  * <p>极坐标系，可以用于散点图和折线图。每个极坐标系拥有一个<a href="#angleAxis">角度轴</a>和一个<a href="#radiusAxis">半径轴</a>。</p>
  * <p><strong>示例：</strong></p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-polar-punchCard&amp;edit=1&amp;reset=1" width="600" height="400"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-polar-punchCard&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="19"><iframe />
+ *
+ *
+ *
+ *
+ *
+ * </iframe>
  *
  * @author auto
  */
@@ -26,7 +33,7 @@ public class Polar implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#polar.id">https://echarts.apache.org/zh/option.html#polar.id</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#polar.id">https://echarts.apache.org/v4/zh/option.html#polar.id</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -35,7 +42,7 @@ public class Polar implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#polar.zlevel">https://echarts.apache.org/zh/option.html#polar.zlevel</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#polar.zlevel">https://echarts.apache.org/v4/zh/option.html#polar.zlevel</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -46,7 +53,7 @@ public class Polar implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#polar.z">https://echarts.apache.org/zh/option.html#polar.z</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#polar.z">https://echarts.apache.org/v4/zh/option.html#polar.z</a>
      * <br/>序号: 3
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -56,7 +63,7 @@ public class Polar implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#polar.center">https://echarts.apache.org/zh/option.html#polar.center</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#polar.center">https://echarts.apache.org/v4/zh/option.html#polar.center</a>
      * <br/>序号: 4
      * <br/>默认值: ["50%","50%"]
      * <br/>js类型: ["Array"]
@@ -72,7 +79,7 @@ public class Polar implements Serializable {
      */
     private List<?> center;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#polar.radius">https://echarts.apache.org/zh/option.html#polar.radius</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#polar.radius">https://echarts.apache.org/v4/zh/option.html#polar.radius</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["number","string","Array"]
@@ -80,17 +87,17 @@ public class Polar implements Serializable {
      * <p>极坐标系的半径。可以为如下类型：</p>
      * <ul>
      * <li><code class="codespan">number</code>：直接指定外半径值。</li>
-     * <li><code class="codespan">string</code>：例如，<code class="codespan">'20%'</code>，表示外半径为可视区尺寸（容器高宽中较小一项）的 20% 长度。</li>
-     * </ul>
-     * <ul>
-     * <li><code class="codespan">Array.&lt;number|string&gt;</code>：数组的第一项是内半径，第二项是外半径。每一项遵从上述 <code class="codespan">number</code> <code class="codespan">string</code> 的描述。</li>
+     * <li><p><code class="codespan">string</code>：例如，<code class="codespan">'20%'</code>，表示外半径为可视区尺寸（容器高宽中较小一项）的 20% 长度。</p>
+     * </li>
+     * <li><p><code class="codespan">Array.&lt;number|string&gt;</code>：数组的第一项是内半径，第二项是外半径。每一项遵从上述 <code class="codespan">number</code> <code class="codespan">string</code> 的描述。</p>
+     * </li>
      * </ul>
      */
     private Object radius;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#polar.tooltip">https://echarts.apache.org/zh/option.html#polar.tooltip</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#polar.tooltip">https://echarts.apache.org/v4/zh/option.html#polar.tooltip</a>
      * <br/>序号: 6
-     * <br/>默认值: 无
+     * <br/>默认值: true
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>本坐标系特定的 tooltip 设定。</p>
@@ -109,5 +116,5 @@ public class Polar implements Serializable {
      * </ul>
      * <hr>
      */
-    private Object tooltip;
+    private Tooltip tooltip;
 }

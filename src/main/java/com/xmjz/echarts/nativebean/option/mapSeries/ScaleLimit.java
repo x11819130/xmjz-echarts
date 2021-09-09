@@ -7,7 +7,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.scaleLimit">https://echarts.apache.org/zh/option.html#series-map.scaleLimit</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-map.scaleLimit">https://echarts.apache.org/v4/zh/option.html#series-map.scaleLimit</a>
  * <br/>序号: 10
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
@@ -23,7 +23,7 @@ public class ScaleLimit implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.scaleLimit.min">https://echarts.apache.org/zh/option.html#series-map.scaleLimit.min</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-map.scaleLimit.min">https://echarts.apache.org/v4/zh/option.html#series-map.scaleLimit.min</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -32,7 +32,7 @@ public class ScaleLimit implements Serializable {
      */
     private Integer min;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.scaleLimit.max">https://echarts.apache.org/zh/option.html#series-map.scaleLimit.max</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-map.scaleLimit.max">https://echarts.apache.org/v4/zh/option.html#series-map.scaleLimit.max</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["number"]

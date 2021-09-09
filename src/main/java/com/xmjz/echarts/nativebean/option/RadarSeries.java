@@ -1,5 +1,6 @@
 package com.xmjz.echarts.nativebean.option;
 
+import com.xmjz.echarts.nativebean.option.radarSeries.Tooltip;
 import com.xmjz.echarts.nativebean.option.radarSeries.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -9,7 +10,7 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar">https://echarts.apache.org/zh/option.html#series-radar</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar">https://echarts.apache.org/v4/zh/option.html#series-radar</a>
  * <br/>序号: 0
  * <br/>默认值: 无
  * <br/>js类型: ["object"]
@@ -17,7 +18,11 @@ import java.util.List;
  * <p><strong>雷达图</strong></p>
  * <p>雷达图主要用于表现多变量的数据，例如球员的各个属性分析。依赖 <a href="#radar">radar</a> 组件。</p>
  * <p>下面是 AQI 数据用雷达图表现的示例。</p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=radar-aqi&amp;edit=1&amp;reset=1" width="600" height="500" data-ll-timeout="18"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=radar-aqi&amp;edit=1&amp;reset=1" width="600" height="500" data-ll-timeout="17"><iframe />
+ *
+ *
+ *
+ * </iframe>
  *
  * @author auto
  */
@@ -28,7 +33,7 @@ public class RadarSeries extends Series implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.type">https://echarts.apache.org/zh/option.html#series-radar.type</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.type">https://echarts.apache.org/v4/zh/option.html#series-radar.type</a>
      * <br/>序号: 1
      * <br/>默认值: radar
      * <br/>js类型: ["string"]
@@ -36,7 +41,7 @@ public class RadarSeries extends Series implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.id">https://echarts.apache.org/zh/option.html#series-radar.id</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.id">https://echarts.apache.org/v4/zh/option.html#series-radar.id</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -45,7 +50,7 @@ public class RadarSeries extends Series implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.name">https://echarts.apache.org/zh/option.html#series-radar.name</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.name">https://echarts.apache.org/v4/zh/option.html#series-radar.name</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -54,7 +59,7 @@ public class RadarSeries extends Series implements Serializable {
      */
     private String name;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.radarIndex">https://echarts.apache.org/zh/option.html#series-radar.radarIndex</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.radarIndex">https://echarts.apache.org/v4/zh/option.html#series-radar.radarIndex</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -63,14 +68,14 @@ public class RadarSeries extends Series implements Serializable {
      */
     private Integer radarIndex;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.symbol">https://echarts.apache.org/zh/option.html#series-radar.symbol</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.symbol">https://echarts.apache.org/v4/zh/option.html#series-radar.symbol</a>
      * <br/>序号: 5
      * <br/>默认值: circle
      * <br/>js类型: ["string","Function"]
      * <br/>描述:
      * <p>标记的图形。</p>
-     * <p>ECharts 提供的标记类型包括</p>
-     * <p><code class="codespan">'circle'</code>, <code class="codespan">'rect'</code>, <code class="codespan">'roundRect'</code>, <code class="codespan">'triangle'</code>, <code class="codespan">'diamond'</code>, <code class="codespan">'pin'</code>, <code class="codespan">'arrow'</code>, <code class="codespan">'none'</code></p>
+     * <p>ECharts 提供的标记类型包括
+     * <code class="codespan">'circle'</code>, <code class="codespan">'rect'</code>, <code class="codespan">'roundRect'</code>, <code class="codespan">'triangle'</code>, <code class="codespan">'diamond'</code>, <code class="codespan">'pin'</code>, <code class="codespan">'arrow'</code>, <code class="codespan">'none'</code></p>
      * <p>可以通过 <code class="codespan">'image://url'</code> 设置为图片，其中 URL 为图片的链接，或者 <code class="codespan">dataURI</code>。</p>
      * <p>URL 为图片链接例如：</p>
      * <pre><code class="hljs javascript"><span class="hljs-string">'image://http://xxx.xxx.xxx/a/b.png'</span>
@@ -86,7 +91,7 @@ public class RadarSeries extends Series implements Serializable {
      */
     private Object symbol;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.symbolSize">https://echarts.apache.org/zh/option.html#series-radar.symbolSize</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.symbolSize">https://echarts.apache.org/v4/zh/option.html#series-radar.symbolSize</a>
      * <br/>序号: 6
      * <br/>默认值: 4
      * <br/>js类型: ["number","Array","Function"]
@@ -99,7 +104,7 @@ public class RadarSeries extends Series implements Serializable {
      */
     private Object symbolSize;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.symbolRotate">https://echarts.apache.org/zh/option.html#series-radar.symbolRotate</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.symbolRotate">https://echarts.apache.org/v4/zh/option.html#series-radar.symbolRotate</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
@@ -115,7 +120,7 @@ public class RadarSeries extends Series implements Serializable {
      */
     private Object symbolRotate;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.symbolKeepAspect">https://echarts.apache.org/zh/option.html#series-radar.symbolKeepAspect</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.symbolKeepAspect">https://echarts.apache.org/v4/zh/option.html#series-radar.symbolKeepAspect</a>
      * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -124,7 +129,7 @@ public class RadarSeries extends Series implements Serializable {
      */
     private Boolean symbolKeepAspect;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.symbolOffset">https://echarts.apache.org/zh/option.html#series-radar.symbolOffset</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.symbolOffset">https://echarts.apache.org/v4/zh/option.html#series-radar.symbolOffset</a>
      * <br/>序号: 9
      * <br/>默认值: [0,0]
      * <br/>js类型: ["Array"]
@@ -134,70 +139,17 @@ public class RadarSeries extends Series implements Serializable {
      */
     private List<?> symbolOffset;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.label">https://echarts.apache.org/zh/option.html#series-radar.label</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.label">https://echarts.apache.org/v4/zh/option.html#series-radar.label</a>
      * <br/>序号: 10
      * <br/>默认值: top
      * <br/>js类型: ["Object"]
      * <br/>描述:
-     * <p>图形上的文本标签，可用于说明图形的一些数据信息，比如值，名称等。</p>
+     * <p>图形上的文本标签，可用于说明图形的一些数据信息，比如值，名称等，<code class="codespan">label</code>选项在 ECharts 2.x 中放置于<code class="codespan">itemStyle</code>下，在 ECharts 3 中为了让整个配置项结构更扁平合理，<code class="codespan">label</code> 被拿出来跟 <code class="codespan">itemStyle</code> 平级，并且跟 <code class="codespan">itemStyle</code> 一样拥有 <code class="codespan">emphasis</code> 状态。</p>
      */
     private Label label;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.labelLayout">https://echarts.apache.org/zh/option.html#series-radar.labelLayout</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.itemStyle">https://echarts.apache.org/v4/zh/option.html#series-radar.itemStyle</a>
      * <br/>序号: 11
-     * <br/>默认值: 无
-     * <br/>js类型: ["Object","Function"]
-     * <br/>描述:
-     * <blockquote>
-     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
-     * </blockquote>
-     * <p>标签的统一布局配置。</p>
-     * <p>该配置项是在每个系列默认的标签布局基础上，统一调整标签的<code class="codespan">(x, y)</code>位置，标签对齐等属性以实现想要的标签布局效果。</p>
-     * <p>该配置项也可以是一个有如下参数的回调函数</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-comment">// 标签对应数据的 dataIndex</span>
-     * <span class="hljs-attr">dataIndex</span>: number
-     * <span class="hljs-comment">// 标签对应的数据类型，只在关系图中会有 node 和 edge 数据类型的区分</span>
-     * dataType?: string
-     * <span class="hljs-comment">// 标签对应的系列的 index</span>
-     * <span class="hljs-attr">seriesIndex</span>: number
-     * <span class="hljs-comment">// 标签显示的文本</span>
-     * <span class="hljs-attr">text</span>: string
-     * <span class="hljs-comment">// 默认的标签的包围盒，由系列默认的标签布局决定</span>
-     * <span class="hljs-attr">labelRect</span>: {<span class="hljs-attr">x</span>: number, <span class="hljs-attr">y</span>: number, <span class="hljs-attr">width</span>: number, <span class="hljs-attr">height</span>: number}
-     * <span class="hljs-comment">// 默认的标签水平对齐</span>
-     * <span class="hljs-attr">align</span>: <span class="hljs-string">'left'</span> | <span class="hljs-string">'center'</span> | <span class="hljs-string">'right'</span>
-     * <span class="hljs-comment">// 默认的标签垂直对齐</span>
-     * <span class="hljs-attr">verticalAlign</span>: <span class="hljs-string">'top'</span> | <span class="hljs-string">'middle'</span> | <span class="hljs-string">'bottom'</span>
-     * <span class="hljs-comment">// 标签所对应的数据图形的包围盒，可用于定位标签位置</span>
-     * <span class="hljs-attr">rect</span>: {<span class="hljs-attr">x</span>: number, <span class="hljs-attr">y</span>: number, <span class="hljs-attr">width</span>: number, <span class="hljs-attr">height</span>: number}
-     * <span class="hljs-comment">// 默认引导线的位置，目前只有饼图(pie)和漏斗图(funnel)有默认标签位置</span>
-     * <span class="hljs-comment">// 如果没有该值则为 null</span>
-     * labelLinePoints?: number[][]
-     * </code></pre>
-     * <p><strong>示例：</strong></p>
-     * <p>将标签显示在图形右侧 10px 的位置，并且垂直居中：</p>
-     * <pre><code class="lang-js hljs javascript">labelLayout(params) {
-     *     <span class="hljs-keyword">return</span> {
-     *         <span class="hljs-attr">x</span>: params.rect.x + <span class="hljs-number">10</span>,
-     *         <span class="hljs-attr">y</span>: params.rect.y + params.rect.height / <span class="hljs-number">2</span>,
-     *         <span class="hljs-attr">verticalAlign</span>: <span class="hljs-string">'middle'</span>,
-     *         <span class="hljs-attr">align</span>: <span class="hljs-string">'left'</span>
-     *     }
-     * }
-     * </code></pre>
-     * <p>根据图形的包围盒尺寸决定文本尺寸</p>
-     * <pre><code class="lang-js hljs javascript">
-     * labelLayout(params) {
-     *     <span class="hljs-keyword">return</span> {
-     *         <span class="hljs-attr">fontSize</span>: <span class="hljs-built_in">Math</span>.max(params.rect.width / <span class="hljs-number">10</span>, <span class="hljs-number">5</span>)
-     *     };
-     * }
-     * </code></pre>
-     */
-    private LabelLayout labelLayout;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.itemStyle">https://echarts.apache.org/zh/option.html#series-radar.itemStyle</a>
-     * <br/>序号: 12
      * <br/>默认值: 自适应
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -205,8 +157,8 @@ public class RadarSeries extends Series implements Serializable {
      */
     private ItemStyle itemStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.lineStyle">https://echarts.apache.org/zh/option.html#series-radar.lineStyle</a>
-     * <br/>序号: 13
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.lineStyle">https://echarts.apache.org/v4/zh/option.html#series-radar.lineStyle</a>
+     * <br/>序号: 12
      * <br/>默认值: #000
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -214,8 +166,8 @@ public class RadarSeries extends Series implements Serializable {
      */
     private LineStyle lineStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.areaStyle">https://echarts.apache.org/zh/option.html#series-radar.areaStyle</a>
-     * <br/>序号: 14
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.areaStyle">https://echarts.apache.org/v4/zh/option.html#series-radar.areaStyle</a>
+     * <br/>序号: 13
      * <br/>默认值: #000
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -223,56 +175,18 @@ public class RadarSeries extends Series implements Serializable {
      */
     private AreaStyle areaStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.emphasis">https://echarts.apache.org/zh/option.html#series-radar.emphasis</a>
-     * <br/>序号: 15
-     * <br/>默认值: none
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.emphasis">https://echarts.apache.org/v4/zh/option.html#series-radar.emphasis</a>
+     * <br/>序号: 14
+     * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
-     * <p>高亮状态的配置。</p>
+     * <p>高亮的样式设置</p>
      */
     private Emphasis emphasis;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.blur">https://echarts.apache.org/zh/option.html#series-radar.blur</a>
-     * <br/>序号: 16
-     * <br/>默认值: 无
-     * <br/>js类型: ["Object"]
-     * <br/>描述:
-     * <blockquote>
-     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
-     * </blockquote>
-     * <p>淡出状态的配置。开启 <a href="#series-radar.emphasis.focus">emphasis.focus</a> 后有效。</p>
-     */
-    private Blur blur;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.select">https://echarts.apache.org/zh/option.html#series-radar.select</a>
-     * <br/>序号: 17
-     * <br/>默认值: 无
-     * <br/>js类型: ["Object"]
-     * <br/>描述:
-     * <blockquote>
-     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
-     * </blockquote>
-     * <p>选中状态的配置。开启 <a href="#series-radar.selectedMode">selectedMode</a> 后有效。</p>
-     */
-    private Select select;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.selectedMode">https://echarts.apache.org/zh/option.html#series-radar.selectedMode</a>
-     * <br/>序号: 18
-     * <br/>默认值: 无
-     * <br/>js类型: ["boolean","string"]
-     * <br/>描述:
-     * <blockquote>
-     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
-     * </blockquote>
-     *
-     *
-     * <p>选中模式的配置，表示是否支持多个选中，默认关闭，支持布尔值和字符串，字符串取值可选<code class="codespan">'single'</code>，<code class="codespan">'multiple'</code>，分别表示单选还是多选。</p>
-     */
-    private Object selectedMode;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.data">https://echarts.apache.org/zh/option.html#series-radar.data</a>
-     * <br/>序号: 19
-     * <br/>默认值: 无
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.data">https://echarts.apache.org/v4/zh/option.html#series-radar.data</a>
+     * <br/>序号: 15
+     * <br/>默认值: circle
      * <br/>js类型: ["Array"]
      * <br/>描述:
      * <p>雷达图的数据是多变量（维度）的，如下示例：</p>
@@ -289,10 +203,10 @@ public class RadarSeries extends Series implements Serializable {
      * </code></pre>
      * <p>其中的<code class="codespan">value</code>项数组是具体的数据，每个值跟 <a href="#radar.indicator">radar.indicator</a> 一一对应。</p>
      */
-    private List<?> data;
+    private List<Data> data;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.zlevel">https://echarts.apache.org/zh/option.html#series-radar.zlevel</a>
-     * <br/>序号: 20
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.zlevel">https://echarts.apache.org/v4/zh/option.html#series-radar.zlevel</a>
+     * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -302,8 +216,8 @@ public class RadarSeries extends Series implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.z">https://echarts.apache.org/zh/option.html#series-radar.z</a>
-     * <br/>序号: 21
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.z">https://echarts.apache.org/v4/zh/option.html#series-radar.z</a>
+     * <br/>序号: 17
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -312,8 +226,8 @@ public class RadarSeries extends Series implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.silent">https://echarts.apache.org/zh/option.html#series-radar.silent</a>
-     * <br/>序号: 22
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.silent">https://echarts.apache.org/v4/zh/option.html#series-radar.silent</a>
+     * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -321,8 +235,8 @@ public class RadarSeries extends Series implements Serializable {
      */
     private Boolean silent;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.animation">https://echarts.apache.org/zh/option.html#series-radar.animation</a>
-     * <br/>序号: 23
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.animation">https://echarts.apache.org/v4/zh/option.html#series-radar.animation</a>
+     * <br/>序号: 19
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -330,8 +244,8 @@ public class RadarSeries extends Series implements Serializable {
      */
     private Boolean animation;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.animationThreshold">https://echarts.apache.org/zh/option.html#series-radar.animationThreshold</a>
-     * <br/>序号: 24
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.animationThreshold">https://echarts.apache.org/v4/zh/option.html#series-radar.animationThreshold</a>
+     * <br/>序号: 20
      * <br/>默认值: 2000
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -339,8 +253,8 @@ public class RadarSeries extends Series implements Serializable {
      */
     private Integer animationThreshold;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.animationDuration">https://echarts.apache.org/zh/option.html#series-radar.animationDuration</a>
-     * <br/>序号: 25
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.animationDuration">https://echarts.apache.org/v4/zh/option.html#series-radar.animationDuration</a>
+     * <br/>序号: 21
      * <br/>默认值: 1000
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -353,8 +267,8 @@ public class RadarSeries extends Series implements Serializable {
      */
     private Object animationDuration;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.animationEasing">https://echarts.apache.org/zh/option.html#series-radar.animationEasing</a>
-     * <br/>序号: 26
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.animationEasing">https://echarts.apache.org/v4/zh/option.html#series-radar.animationEasing</a>
+     * <br/>序号: 22
      * <br/>默认值: cubicOut
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -362,8 +276,8 @@ public class RadarSeries extends Series implements Serializable {
      */
     private String animationEasing;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.animationDelay">https://echarts.apache.org/zh/option.html#series-radar.animationDelay</a>
-     * <br/>序号: 27
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.animationDelay">https://echarts.apache.org/v4/zh/option.html#series-radar.animationDelay</a>
+     * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -378,8 +292,8 @@ public class RadarSeries extends Series implements Serializable {
      */
     private Object animationDelay;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.animationDurationUpdate">https://echarts.apache.org/zh/option.html#series-radar.animationDurationUpdate</a>
-     * <br/>序号: 28
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.animationDurationUpdate">https://echarts.apache.org/v4/zh/option.html#series-radar.animationDurationUpdate</a>
+     * <br/>序号: 24
      * <br/>默认值: 300
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -393,17 +307,17 @@ public class RadarSeries extends Series implements Serializable {
      */
     private Object animationDurationUpdate;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.animationEasingUpdate">https://echarts.apache.org/zh/option.html#series-radar.animationEasingUpdate</a>
-     * <br/>序号: 29
-     * <br/>默认值: cubicInOut
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.animationEasingUpdate">https://echarts.apache.org/v4/zh/option.html#series-radar.animationEasingUpdate</a>
+     * <br/>序号: 25
+     * <br/>默认值: cubicOut
      * <br/>js类型: ["string"]
      * <br/>描述:
      * <p>数据更新动画的缓动效果。</p>
      */
     private String animationEasingUpdate;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.animationDelayUpdate">https://echarts.apache.org/zh/option.html#series-radar.animationDelayUpdate</a>
-     * <br/>序号: 30
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.animationDelayUpdate">https://echarts.apache.org/v4/zh/option.html#series-radar.animationDelayUpdate</a>
+     * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -418,12 +332,12 @@ public class RadarSeries extends Series implements Serializable {
      */
     private Object animationDelayUpdate;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.tooltip">https://echarts.apache.org/zh/option.html#series-radar.tooltip</a>
-     * <br/>序号: 31
-     * <br/>默认值: 无
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.tooltip">https://echarts.apache.org/v4/zh/option.html#series-radar.tooltip</a>
+     * <br/>序号: 27
+     * <br/>默认值: rgba(50,50,50,0.7)
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>本系列特定的 tooltip 设定。</p>
      */
-    private Object tooltip;
+    private Tooltip tooltip;
 }

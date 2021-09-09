@@ -1,5 +1,6 @@
 package com.xmjz.echarts.nativebean.option;
 
+import com.xmjz.echarts.nativebean.option.pieSeries.Tooltip;
 import com.xmjz.echarts.nativebean.option.pieSeries.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -9,7 +10,7 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie">https://echarts.apache.org/zh/option.html#series-pie</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie">https://echarts.apache.org/v4/zh/option.html#series-pie</a>
  * <br/>序号: 0
  * <br/>默认值: 无
  * <br/>js类型: ["object"]
@@ -17,13 +18,18 @@ import java.util.List;
  * <p><strong>饼图</strong></p>
  * <p>饼图主要用于表现不同类目的数据在总和中的占比。每个的弧度表示数据数量的比例。</p>
  * <p>从 ECharts v4.6.0 版本起，我们提供了 <code class="codespan">'labelLine'</code> 与 <code class="codespan">'edge'</code> 两种新的布局方式。详情参见 <a href="#series-pie.label.alignTo">label.alignTo</a>。</p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=pie-alignTo&amp;reset=1&amp;edit=1" width="900" height="250" data-ll-timeout="22"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=pie-alignTo&amp;reset=1&amp;edit=1" width="900" height="250" data-ll-timeout="20"><iframe />
  *
  *
- * <p>对于一个图表中有多个饼图的场景，可以使用 <a href="#series-pie.left">left</a>、<a href="#series-pie.right">right</a>、<a href="#series-pie.top">top</a>、<a href="#series-pie.bottom">bottom</a>、<a href="#series-pie.width">width</a>、<a href="#series-pie.height">height</a> 配置每个饼图系列的位置和视口大小。<a href="#series-pie.radius">radius</a>、<a href="#series-pie.label.edgeDistance">label.edgeDistance</a> 等支持百分比的配置项，是相对于该配置项决定的矩形的大小而言的。</p>
+ * <p>对于一个图表中有多个饼图的场景，可以使用 <a href="#series-pie.left">left</a>、<a href="#series-pie.right">right</a>、<a href="#series-pie.top">top</a>、<a href="#series-pie.bottom">bottom</a>、<a href="#series-pie.width">width</a>、<a href="#series-pie.height">height</a> 配置每个饼图系列的位置和视口大小。<a href="#series-pie.radius">radius</a>、<a href="#series-pie.label.margin">label.margin</a> 等支持百分比的配置项，是相对于该配置项决定的矩形的大小而言的。</p>
  * <p><strong>Tip:</strong> 饼图更适合表现数据相对于总数的百分比等关系。如果只是表示不同类目数据间的大小，建议使用 <a href="bar" target="_blank">柱状图</a>，人们对于微小的弧度差别相比于微小的长度差别更不敏感，或者也可以通过配置 <a href="#series-pie.roseType">roseType</a> 显示成南丁格尔图，通过半径大小区分数据的大小。</p>
  * <p><strong>下面是自定义南丁格尔图的示例：</strong></p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=pie-custom&amp;edit=1&amp;reset=1" width="500" height="400" data-ll-timeout="23"></iframe>
+ * <iframe  data-src="https://echarts.apache.org/examples/zh/view.html?c=pie-custom&edit=1&reset=1" width="500" height="400"><iframe />
+ *
+ *
+ *
+ *
+ * </iframe>
  *
  * @author auto
  */
@@ -34,7 +40,7 @@ public class PieSeries extends Series implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.type">https://echarts.apache.org/zh/option.html#series-pie.type</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.type">https://echarts.apache.org/v4/zh/option.html#series-pie.type</a>
      * <br/>序号: 1
      * <br/>默认值: pie
      * <br/>js类型: ["string"]
@@ -42,7 +48,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.id">https://echarts.apache.org/zh/option.html#series-pie.id</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.id">https://echarts.apache.org/v4/zh/option.html#series-pie.id</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -51,7 +57,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.name">https://echarts.apache.org/zh/option.html#series-pie.name</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.name">https://echarts.apache.org/v4/zh/option.html#series-pie.name</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -60,7 +66,7 @@ public class PieSeries extends Series implements Serializable {
      */
     private String name;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.legendHoverLink">https://echarts.apache.org/zh/option.html#series-pie.legendHoverLink</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.legendHoverLink">https://echarts.apache.org/v4/zh/option.html#series-pie.legendHoverLink</a>
      * <br/>序号: 4
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -69,17 +75,35 @@ public class PieSeries extends Series implements Serializable {
      */
     private Boolean legendHoverLink;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.selectedMode">https://echarts.apache.org/zh/option.html#series-pie.selectedMode</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.hoverAnimation">https://echarts.apache.org/v4/zh/option.html#series-pie.hoverAnimation</a>
      * <br/>序号: 5
+     * <br/>默认值: true
+     * <br/>js类型: ["boolean"]
+     * <br/>描述:
+     * <p>是否开启 hover 在扇区上的放大动画效果。</p>
+     */
+    private Boolean hoverAnimation;
+    /**
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.hoverOffset">https://echarts.apache.org/v4/zh/option.html#series-pie.hoverOffset</a>
+     * <br/>序号: 6
+     * <br/>默认值: 10
+     * <br/>js类型: ["number"]
+     * <br/>描述:
+     * <p>高亮扇区的偏移距离。</p>
+     */
+    private Integer hoverOffset;
+    /**
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.selectedMode">https://echarts.apache.org/v4/zh/option.html#series-pie.selectedMode</a>
+     * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","string"]
      * <br/>描述:
-     * <p>选中模式的配置，表示是否支持多个选中，默认关闭，支持布尔值和字符串，字符串取值可选<code class="codespan">'single'</code>，<code class="codespan">'multiple'</code>，分别表示单选还是多选。</p>
+     * <p>选中模式，表示是否支持多个选中，默认关闭，支持布尔值和字符串，字符串取值可选<code class="codespan">'single'</code>，<code class="codespan">'multiple'</code>，分别表示单选还是多选。</p>
      */
     private Object selectedMode;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.selectedOffset">https://echarts.apache.org/zh/option.html#series-pie.selectedOffset</a>
-     * <br/>序号: 6
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.selectedOffset">https://echarts.apache.org/v4/zh/option.html#series-pie.selectedOffset</a>
+     * <br/>序号: 8
      * <br/>默认值: 10
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -87,8 +111,8 @@ public class PieSeries extends Series implements Serializable {
      */
     private Integer selectedOffset;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.clockwise">https://echarts.apache.org/zh/option.html#series-pie.clockwise</a>
-     * <br/>序号: 7
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.clockwise">https://echarts.apache.org/v4/zh/option.html#series-pie.clockwise</a>
+     * <br/>序号: 9
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -96,8 +120,8 @@ public class PieSeries extends Series implements Serializable {
      */
     private Boolean clockwise;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.startAngle">https://echarts.apache.org/zh/option.html#series-pie.startAngle</a>
-     * <br/>序号: 8
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.startAngle">https://echarts.apache.org/v4/zh/option.html#series-pie.startAngle</a>
+     * <br/>序号: 10
      * <br/>默认值: 90
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -105,8 +129,8 @@ public class PieSeries extends Series implements Serializable {
      */
     private Integer startAngle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.minAngle">https://echarts.apache.org/zh/option.html#series-pie.minAngle</a>
-     * <br/>序号: 9
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.minAngle">https://echarts.apache.org/v4/zh/option.html#series-pie.minAngle</a>
+     * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -114,8 +138,8 @@ public class PieSeries extends Series implements Serializable {
      */
     private Integer minAngle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.minShowLabelAngle">https://echarts.apache.org/zh/option.html#series-pie.minShowLabelAngle</a>
-     * <br/>序号: 10
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.minShowLabelAngle">https://echarts.apache.org/v4/zh/option.html#series-pie.minShowLabelAngle</a>
+     * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -123,8 +147,8 @@ public class PieSeries extends Series implements Serializable {
      */
     private Integer minShowLabelAngle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.roseType">https://echarts.apache.org/zh/option.html#series-pie.roseType</a>
-     * <br/>序号: 11
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.roseType">https://echarts.apache.org/v4/zh/option.html#series-pie.roseType</a>
+     * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","string"]
      * <br/>描述:
@@ -136,8 +160,8 @@ public class PieSeries extends Series implements Serializable {
      */
     private Object roseType;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.avoidLabelOverlap">https://echarts.apache.org/zh/option.html#series-pie.avoidLabelOverlap</a>
-     * <br/>序号: 12
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.avoidLabelOverlap">https://echarts.apache.org/v4/zh/option.html#series-pie.avoidLabelOverlap</a>
+     * <br/>序号: 14
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -146,8 +170,8 @@ public class PieSeries extends Series implements Serializable {
      */
     private Boolean avoidLabelOverlap;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.stillShowZeroSum">https://echarts.apache.org/zh/option.html#series-pie.stillShowZeroSum</a>
-     * <br/>序号: 13
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.stillShowZeroSum">https://echarts.apache.org/v4/zh/option.html#series-pie.stillShowZeroSum</a>
+     * <br/>序号: 15
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -155,8 +179,8 @@ public class PieSeries extends Series implements Serializable {
      */
     private Boolean stillShowZeroSum;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.cursor">https://echarts.apache.org/zh/option.html#series-pie.cursor</a>
-     * <br/>序号: 14
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.cursor">https://echarts.apache.org/v4/zh/option.html#series-pie.cursor</a>
+     * <br/>序号: 16
      * <br/>默认值: pointer
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -164,8 +188,8 @@ public class PieSeries extends Series implements Serializable {
      */
     private String cursor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.zlevel">https://echarts.apache.org/zh/option.html#series-pie.zlevel</a>
-     * <br/>序号: 15
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.zlevel">https://echarts.apache.org/v4/zh/option.html#series-pie.zlevel</a>
+     * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -175,8 +199,8 @@ public class PieSeries extends Series implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.z">https://echarts.apache.org/zh/option.html#series-pie.z</a>
-     * <br/>序号: 16
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.z">https://echarts.apache.org/v4/zh/option.html#series-pie.z</a>
+     * <br/>序号: 18
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -185,8 +209,8 @@ public class PieSeries extends Series implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.left">https://echarts.apache.org/zh/option.html#series-pie.left</a>
-     * <br/>序号: 17
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.left">https://echarts.apache.org/v4/zh/option.html#series-pie.left</a>
+     * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -196,8 +220,8 @@ public class PieSeries extends Series implements Serializable {
      */
     private Object left;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.top">https://echarts.apache.org/zh/option.html#series-pie.top</a>
-     * <br/>序号: 18
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.top">https://echarts.apache.org/v4/zh/option.html#series-pie.top</a>
+     * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -207,8 +231,8 @@ public class PieSeries extends Series implements Serializable {
      */
     private Object top;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.right">https://echarts.apache.org/zh/option.html#series-pie.right</a>
-     * <br/>序号: 19
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.right">https://echarts.apache.org/v4/zh/option.html#series-pie.right</a>
+     * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -218,8 +242,8 @@ public class PieSeries extends Series implements Serializable {
      */
     private Object right;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.bottom">https://echarts.apache.org/zh/option.html#series-pie.bottom</a>
-     * <br/>序号: 20
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.bottom">https://echarts.apache.org/v4/zh/option.html#series-pie.bottom</a>
+     * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -229,8 +253,8 @@ public class PieSeries extends Series implements Serializable {
      */
     private Object bottom;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.width">https://echarts.apache.org/zh/option.html#series-pie.width</a>
-     * <br/>序号: 21
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.width">https://echarts.apache.org/v4/zh/option.html#series-pie.width</a>
+     * <br/>序号: 23
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -238,8 +262,8 @@ public class PieSeries extends Series implements Serializable {
      */
     private Object width;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.height">https://echarts.apache.org/zh/option.html#series-pie.height</a>
-     * <br/>序号: 22
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.height">https://echarts.apache.org/v4/zh/option.html#series-pie.height</a>
+     * <br/>序号: 24
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -247,79 +271,26 @@ public class PieSeries extends Series implements Serializable {
      */
     private Object height;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.label">https://echarts.apache.org/zh/option.html#series-pie.label</a>
-     * <br/>序号: 23
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.label">https://echarts.apache.org/v4/zh/option.html#series-pie.label</a>
+     * <br/>序号: 25
      * <br/>默认值: outside
      * <br/>js类型: ["Object"]
      * <br/>描述:
-     * <p>饼图图形上的文本标签，可用于说明图形的一些数据信息，比如值，名称等。</p>
+     * <p>饼图图形上的文本标签，可用于说明图形的一些数据信息，比如值，名称等，<code class="codespan">label</code>选项在 ECharts 2.x 中放置于<code class="codespan">itemStyle</code>下，在 ECharts 3 中为了让整个配置项结构更扁平合理，<code class="codespan">label</code> 被拿出来跟 <code class="codespan">itemStyle</code> 平级，并且跟 <code class="codespan">itemStyle</code> 一样拥有 <code class="codespan">emphasis</code> 状态。</p>
      */
     private Label label;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.labelLine">https://echarts.apache.org/zh/option.html#series-pie.labelLine</a>
-     * <br/>序号: 24
-     * <br/>默认值: 90
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.labelLine">https://echarts.apache.org/v4/zh/option.html#series-pie.labelLine</a>
+     * <br/>序号: 26
+     * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
-     * <p>标签的视觉引导线配置。在 <a href="#series-pie.label.position">label 位置</a> 设置为<code class="codespan">'outside'</code>的时候会显示视觉引导线。</p>
+     * <p>标签的视觉引导线样式，在 <a href="#series-pie.label.position">label 位置</a> 设置为<code class="codespan">'outside'</code>的时候会显示视觉引导线。</p>
      */
     private LabelLine labelLine;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.labelLayout">https://echarts.apache.org/zh/option.html#series-pie.labelLayout</a>
-     * <br/>序号: 25
-     * <br/>默认值: 无
-     * <br/>js类型: ["Object","Function"]
-     * <br/>描述:
-     * <blockquote>
-     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
-     * </blockquote>
-     * <p>标签的统一布局配置。</p>
-     * <p>该配置项是在每个系列默认的标签布局基础上，统一调整标签的<code class="codespan">(x, y)</code>位置，标签对齐等属性以实现想要的标签布局效果。</p>
-     * <p>该配置项也可以是一个有如下参数的回调函数</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-comment">// 标签对应数据的 dataIndex</span>
-     * <span class="hljs-attr">dataIndex</span>: number
-     * <span class="hljs-comment">// 标签对应的数据类型，只在关系图中会有 node 和 edge 数据类型的区分</span>
-     * dataType?: string
-     * <span class="hljs-comment">// 标签对应的系列的 index</span>
-     * <span class="hljs-attr">seriesIndex</span>: number
-     * <span class="hljs-comment">// 标签显示的文本</span>
-     * <span class="hljs-attr">text</span>: string
-     * <span class="hljs-comment">// 默认的标签的包围盒，由系列默认的标签布局决定</span>
-     * <span class="hljs-attr">labelRect</span>: {<span class="hljs-attr">x</span>: number, <span class="hljs-attr">y</span>: number, <span class="hljs-attr">width</span>: number, <span class="hljs-attr">height</span>: number}
-     * <span class="hljs-comment">// 默认的标签水平对齐</span>
-     * <span class="hljs-attr">align</span>: <span class="hljs-string">'left'</span> | <span class="hljs-string">'center'</span> | <span class="hljs-string">'right'</span>
-     * <span class="hljs-comment">// 默认的标签垂直对齐</span>
-     * <span class="hljs-attr">verticalAlign</span>: <span class="hljs-string">'top'</span> | <span class="hljs-string">'middle'</span> | <span class="hljs-string">'bottom'</span>
-     * <span class="hljs-comment">// 标签所对应的数据图形的包围盒，可用于定位标签位置</span>
-     * <span class="hljs-attr">rect</span>: {<span class="hljs-attr">x</span>: number, <span class="hljs-attr">y</span>: number, <span class="hljs-attr">width</span>: number, <span class="hljs-attr">height</span>: number}
-     * <span class="hljs-comment">// 默认引导线的位置，目前只有饼图(pie)和漏斗图(funnel)有默认标签位置</span>
-     * <span class="hljs-comment">// 如果没有该值则为 null</span>
-     * labelLinePoints?: number[][]
-     * </code></pre>
-     * <p><strong>示例：</strong></p>
-     * <p>将标签显示在图形右侧 10px 的位置，并且垂直居中：</p>
-     * <pre><code class="lang-js hljs javascript">labelLayout(params) {
-     *     <span class="hljs-keyword">return</span> {
-     *         <span class="hljs-attr">x</span>: params.rect.x + <span class="hljs-number">10</span>,
-     *         <span class="hljs-attr">y</span>: params.rect.y + params.rect.height / <span class="hljs-number">2</span>,
-     *         <span class="hljs-attr">verticalAlign</span>: <span class="hljs-string">'middle'</span>,
-     *         <span class="hljs-attr">align</span>: <span class="hljs-string">'left'</span>
-     *     }
-     * }
-     * </code></pre>
-     * <p>根据图形的包围盒尺寸决定文本尺寸</p>
-     * <pre><code class="lang-js hljs javascript">
-     * labelLayout(params) {
-     *     <span class="hljs-keyword">return</span> {
-     *         <span class="hljs-attr">fontSize</span>: <span class="hljs-built_in">Math</span>.max(params.rect.width / <span class="hljs-number">10</span>, <span class="hljs-number">5</span>)
-     *     };
-     * }
-     * </code></pre>
-     */
-    private LabelLayout labelLayout;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.itemStyle">https://echarts.apache.org/zh/option.html#series-pie.itemStyle</a>
-     * <br/>序号: 26
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.itemStyle">https://echarts.apache.org/v4/zh/option.html#series-pie.itemStyle</a>
+     * <br/>序号: 27
      * <br/>默认值: 自适应
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -327,41 +298,17 @@ public class PieSeries extends Series implements Serializable {
      */
     private ItemStyle itemStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.emphasis">https://echarts.apache.org/zh/option.html#series-pie.emphasis</a>
-     * <br/>序号: 27
-     * <br/>默认值: true
-     * <br/>js类型: ["Object"]
-     * <br/>描述:
-     * <p>高亮状态的扇区和标签样式。</p>
-     */
-    private Emphasis emphasis;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.blur">https://echarts.apache.org/zh/option.html#series-pie.blur</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.emphasis">https://echarts.apache.org/v4/zh/option.html#series-pie.emphasis</a>
      * <br/>序号: 28
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
-     * <blockquote>
-     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
-     * </blockquote>
-     * <p>淡出状态的扇区和标签样式。开启 <a href="#series-pie.emphasis.focus">emphasis.focus</a> 后有效。</p>
+     * <p>高亮的扇区和标签样式。</p>
      */
-    private Blur blur;
+    private Emphasis emphasis;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.select">https://echarts.apache.org/zh/option.html#series-pie.select</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.center">https://echarts.apache.org/v4/zh/option.html#series-pie.center</a>
      * <br/>序号: 29
-     * <br/>默认值: 无
-     * <br/>js类型: ["Object"]
-     * <br/>描述:
-     * <blockquote>
-     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
-     * </blockquote>
-     * <p>选中状态的扇区和标签样式。开启 <a href="#series-pie.selectedMode">selectedMode</a> 后有效。</p>
-     */
-    private Select select;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.center">https://echarts.apache.org/zh/option.html#series-pie.center</a>
-     * <br/>序号: 30
      * <br/>默认值: ["50%","50%"]
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -376,25 +323,25 @@ public class PieSeries extends Series implements Serializable {
      */
     private List<?> center;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.radius">https://echarts.apache.org/zh/option.html#series-pie.radius</a>
-     * <br/>序号: 31
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.radius">https://echarts.apache.org/v4/zh/option.html#series-pie.radius</a>
+     * <br/>序号: 30
      * <br/>默认值: [0,"75%"]
      * <br/>js类型: ["number","string","Array"]
      * <br/>描述:
      * <p>饼图的半径。可以为如下类型：</p>
      * <ul>
      * <li><code class="codespan">number</code>：直接指定外半径值。</li>
-     * <li><code class="codespan">string</code>：例如，<code class="codespan">'20%'</code>，表示外半径为可视区尺寸（容器高宽中较小一项）的 20% 长度。</li>
-     * </ul>
-     * <ul>
-     * <li><code class="codespan">Array.&lt;number|string&gt;</code>：数组的第一项是内半径，第二项是外半径。每一项遵从上述 <code class="codespan">number</code> <code class="codespan">string</code> 的描述。</li>
+     * <li><p><code class="codespan">string</code>：例如，<code class="codespan">'20%'</code>，表示外半径为可视区尺寸（容器高宽中较小一项）的 20% 长度。</p>
+     * </li>
+     * <li><p><code class="codespan">Array.&lt;number|string&gt;</code>：数组的第一项是内半径，第二项是外半径。每一项遵从上述 <code class="codespan">number</code> <code class="codespan">string</code> 的描述。</p>
+     * </li>
      * </ul>
      * <p>可以将内半径设大显示成圆环图（Donut chart）。</p>
      */
     private Object radius;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.seriesLayoutBy">https://echarts.apache.org/zh/option.html#series-pie.seriesLayoutBy</a>
-     * <br/>序号: 32
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.seriesLayoutBy">https://echarts.apache.org/v4/zh/option.html#series-pie.seriesLayoutBy</a>
+     * <br/>序号: 31
      * <br/>默认值: column
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -407,8 +354,8 @@ public class PieSeries extends Series implements Serializable {
      */
     private String seriesLayoutBy;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.datasetIndex">https://echarts.apache.org/zh/option.html#series-pie.datasetIndex</a>
-     * <br/>序号: 33
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.datasetIndex">https://echarts.apache.org/v4/zh/option.html#series-pie.datasetIndex</a>
+     * <br/>序号: 32
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -416,13 +363,13 @@ public class PieSeries extends Series implements Serializable {
      */
     private Integer datasetIndex;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.dimensions">https://echarts.apache.org/zh/option.html#series-pie.dimensions</a>
-     * <br/>序号: 34
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.dimensions">https://echarts.apache.org/v4/zh/option.html#series-pie.dimensions</a>
+     * <br/>序号: 33
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
      * <p>使用 dimensions 定义 <code class="codespan">series.data</code> 或者 <code class="codespan">dataset.source</code> 的每个维度的信息。</p>
-     * <p>注意：如果使用了 <a href="#dataset">dataset</a>，那么可以在 <a href="#dataset.dimensions">dataset.dimensions</a> 中定义 dimension ，或者在 <a href="#dataset.source">dataset.source</a> 的第一行/列中给出 dimension 名称。于是就不用在这里指定 dimension。但如果在这里指定了 <code class="codespan">dimensions</code>，那么优先使用这里的。</p>
+     * <p>注意：如果使用了 <a href="#dataset">dataset</a>，那么可以在 <a href="#dataset.source">dataset.source</a> 的第一行/列中给出 dimension 名称。于是就不用在这里指定 dimension。但是，如果在这里指定了 <code class="codespan">dimensions</code>，那么 ECharts 不再会自动从 <code class="codespan">dataset.source</code> 的第一行/列中获取维度信息。</p>
      * <p>例如：</p>
      * <pre><code class="lang-js hljs javascript">option = {
      *     <span class="hljs-attr">dataset</span>: {
@@ -474,8 +421,8 @@ public class PieSeries extends Series implements Serializable {
      */
     private List<?> dimensions;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.encode">https://echarts.apache.org/zh/option.html#series-pie.encode</a>
-     * <br/>序号: 35
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.encode">https://echarts.apache.org/v4/zh/option.html#series-pie.encode</a>
+     * <br/>序号: 34
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -592,8 +539,8 @@ public class PieSeries extends Series implements Serializable {
      */
     private Object encode;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.data">https://echarts.apache.org/zh/option.html#series-pie.data</a>
-     * <br/>序号: 36
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.data">https://echarts.apache.org/v4/zh/option.html#series-pie.data</a>
+     * <br/>序号: 35
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -630,37 +577,37 @@ public class PieSeries extends Series implements Serializable {
      * }]
      * </code></pre>
      */
-    private List<?> data;
+    private List<Data> data;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.markPoint">https://echarts.apache.org/zh/option.html#series-pie.markPoint</a>
-     * <br/>序号: 37
-     * <br/>默认值: 无
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.markPoint">https://echarts.apache.org/v4/zh/option.html#series-pie.markPoint</a>
+     * <br/>序号: 36
+     * <br/>默认值: pin
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>图表标注。</p>
      */
-    private Object markPoint;
+    private MarkPoint markPoint;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.markLine">https://echarts.apache.org/zh/option.html#series-pie.markLine</a>
-     * <br/>序号: 38
-     * <br/>默认值: 无
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.markLine">https://echarts.apache.org/v4/zh/option.html#series-pie.markLine</a>
+     * <br/>序号: 37
+     * <br/>默认值: 2
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>图表标线。</p>
      */
-    private Object markLine;
+    private MarkLine markLine;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.markArea">https://echarts.apache.org/zh/option.html#series-pie.markArea</a>
-     * <br/>序号: 39
-     * <br/>默认值: 无
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.markArea">https://echarts.apache.org/v4/zh/option.html#series-pie.markArea</a>
+     * <br/>序号: 38
+     * <br/>默认值: 2000
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>图表标域，常用于标记图表中某个范围的数据，例如标出某段时间投放了广告。</p>
      */
-    private Object markArea;
+    private MarkArea markArea;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.silent">https://echarts.apache.org/zh/option.html#series-pie.silent</a>
-     * <br/>序号: 40
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.silent">https://echarts.apache.org/v4/zh/option.html#series-pie.silent</a>
+     * <br/>序号: 39
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -668,8 +615,8 @@ public class PieSeries extends Series implements Serializable {
      */
     private Boolean silent;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.animationType">https://echarts.apache.org/zh/option.html#series-pie.animationType</a>
-     * <br/>序号: 41
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.animationType">https://echarts.apache.org/v4/zh/option.html#series-pie.animationType</a>
+     * <br/>序号: 40
      * <br/>默认值: expansion
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -681,8 +628,8 @@ public class PieSeries extends Series implements Serializable {
      */
     private String animationType;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.animationTypeUpdate">https://echarts.apache.org/zh/option.html#series-pie.animationTypeUpdate</a>
-     * <br/>序号: 42
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.animationTypeUpdate">https://echarts.apache.org/v4/zh/option.html#series-pie.animationTypeUpdate</a>
+     * <br/>序号: 41
      * <br/>默认值: transition
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -697,8 +644,8 @@ public class PieSeries extends Series implements Serializable {
      */
     private String animationTypeUpdate;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.animation">https://echarts.apache.org/zh/option.html#series-pie.animation</a>
-     * <br/>序号: 43
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.animation">https://echarts.apache.org/v4/zh/option.html#series-pie.animation</a>
+     * <br/>序号: 42
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -706,8 +653,8 @@ public class PieSeries extends Series implements Serializable {
      */
     private Boolean animation;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.animationThreshold">https://echarts.apache.org/zh/option.html#series-pie.animationThreshold</a>
-     * <br/>序号: 44
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.animationThreshold">https://echarts.apache.org/v4/zh/option.html#series-pie.animationThreshold</a>
+     * <br/>序号: 43
      * <br/>默认值: 2000
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -715,8 +662,8 @@ public class PieSeries extends Series implements Serializable {
      */
     private Integer animationThreshold;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.animationDuration">https://echarts.apache.org/zh/option.html#series-pie.animationDuration</a>
-     * <br/>序号: 45
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.animationDuration">https://echarts.apache.org/v4/zh/option.html#series-pie.animationDuration</a>
+     * <br/>序号: 44
      * <br/>默认值: 1000
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -729,8 +676,8 @@ public class PieSeries extends Series implements Serializable {
      */
     private Object animationDuration;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.animationEasing">https://echarts.apache.org/zh/option.html#series-pie.animationEasing</a>
-     * <br/>序号: 46
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.animationEasing">https://echarts.apache.org/v4/zh/option.html#series-pie.animationEasing</a>
+     * <br/>序号: 45
      * <br/>默认值: cubicOut
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -738,8 +685,8 @@ public class PieSeries extends Series implements Serializable {
      */
     private String animationEasing;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.animationDelay">https://echarts.apache.org/zh/option.html#series-pie.animationDelay</a>
-     * <br/>序号: 47
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.animationDelay">https://echarts.apache.org/v4/zh/option.html#series-pie.animationDelay</a>
+     * <br/>序号: 46
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -754,8 +701,8 @@ public class PieSeries extends Series implements Serializable {
      */
     private Object animationDelay;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.animationDurationUpdate">https://echarts.apache.org/zh/option.html#series-pie.animationDurationUpdate</a>
-     * <br/>序号: 48
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.animationDurationUpdate">https://echarts.apache.org/v4/zh/option.html#series-pie.animationDurationUpdate</a>
+     * <br/>序号: 47
      * <br/>默认值: 300
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -769,17 +716,17 @@ public class PieSeries extends Series implements Serializable {
      */
     private Object animationDurationUpdate;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.animationEasingUpdate">https://echarts.apache.org/zh/option.html#series-pie.animationEasingUpdate</a>
-     * <br/>序号: 49
-     * <br/>默认值: cubicInOut
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.animationEasingUpdate">https://echarts.apache.org/v4/zh/option.html#series-pie.animationEasingUpdate</a>
+     * <br/>序号: 48
+     * <br/>默认值: cubicOut
      * <br/>js类型: ["string"]
      * <br/>描述:
      * <p>数据更新动画的缓动效果。</p>
      */
     private String animationEasingUpdate;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.animationDelayUpdate">https://echarts.apache.org/zh/option.html#series-pie.animationDelayUpdate</a>
-     * <br/>序号: 50
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.animationDelayUpdate">https://echarts.apache.org/v4/zh/option.html#series-pie.animationDelayUpdate</a>
+     * <br/>序号: 49
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -794,12 +741,12 @@ public class PieSeries extends Series implements Serializable {
      */
     private Object animationDelayUpdate;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pie.tooltip">https://echarts.apache.org/zh/option.html#series-pie.tooltip</a>
-     * <br/>序号: 51
-     * <br/>默认值: 无
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pie.tooltip">https://echarts.apache.org/v4/zh/option.html#series-pie.tooltip</a>
+     * <br/>序号: 50
+     * <br/>默认值: rgba(50,50,50,0.7)
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>本系列特定的 tooltip 设定。</p>
      */
-    private Object tooltip;
+    private Tooltip tooltip;
 }

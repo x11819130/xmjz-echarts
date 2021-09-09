@@ -7,7 +7,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.itemStyle">https://echarts.apache.org/zh/option.html#series-candlestick.itemStyle</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.itemStyle">https://echarts.apache.org/v4/zh/option.html#series-candlestick.itemStyle</a>
  * <br/>序号: 13
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
@@ -23,7 +23,7 @@ public class ItemStyle implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.itemStyle.color">https://echarts.apache.org/zh/option.html#series-candlestick.itemStyle.color</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.itemStyle.color">https://echarts.apache.org/v4/zh/option.html#series-candlestick.itemStyle.color</a>
      * <br/>序号: 1
      * <br/>默认值: #c23531
      * <br/>js类型: ["Color"]
@@ -68,7 +68,7 @@ public class ItemStyle implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.itemStyle.color0">https://echarts.apache.org/zh/option.html#series-candlestick.itemStyle.color0</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.itemStyle.color0">https://echarts.apache.org/v4/zh/option.html#series-candlestick.itemStyle.color0</a>
      * <br/>序号: 2
      * <br/>默认值: #314656
      * <br/>js类型: ["Color"]
@@ -113,7 +113,7 @@ public class ItemStyle implements Serializable {
      */
     private String color0;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.itemStyle.borderColor">https://echarts.apache.org/zh/option.html#series-candlestick.itemStyle.borderColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.itemStyle.borderColor">https://echarts.apache.org/v4/zh/option.html#series-candlestick.itemStyle.borderColor</a>
      * <br/>序号: 3
      * <br/>默认值: #c23531
      * <br/>js类型: ["Color"]
@@ -158,7 +158,7 @@ public class ItemStyle implements Serializable {
      */
     private String borderColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.itemStyle.borderColor0">https://echarts.apache.org/zh/option.html#series-candlestick.itemStyle.borderColor0</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.itemStyle.borderColor0">https://echarts.apache.org/v4/zh/option.html#series-candlestick.itemStyle.borderColor0</a>
      * <br/>序号: 4
      * <br/>默认值: #314656
      * <br/>js类型: ["Color"]
@@ -203,7 +203,7 @@ public class ItemStyle implements Serializable {
      */
     private String borderColor0;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.itemStyle.borderWidth">https://echarts.apache.org/zh/option.html#series-candlestick.itemStyle.borderWidth</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.itemStyle.borderWidth">https://echarts.apache.org/v4/zh/option.html#series-candlestick.itemStyle.borderWidth</a>
      * <br/>序号: 5
      * <br/>默认值: 1
      * <br/>js类型: ["number"]
@@ -212,7 +212,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.itemStyle.shadowBlur">https://echarts.apache.org/zh/option.html#series-candlestick.itemStyle.shadowBlur</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.itemStyle.shadowBlur">https://echarts.apache.org/v4/zh/option.html#series-candlestick.itemStyle.shadowBlur</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -227,7 +227,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.itemStyle.shadowColor">https://echarts.apache.org/zh/option.html#series-candlestick.itemStyle.shadowColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.itemStyle.shadowColor">https://echarts.apache.org/v4/zh/option.html#series-candlestick.itemStyle.shadowColor</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -236,7 +236,7 @@ public class ItemStyle implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.itemStyle.shadowOffsetX">https://echarts.apache.org/zh/option.html#series-candlestick.itemStyle.shadowOffsetX</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.itemStyle.shadowOffsetX">https://echarts.apache.org/v4/zh/option.html#series-candlestick.itemStyle.shadowOffsetX</a>
      * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -245,7 +245,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.itemStyle.shadowOffsetY">https://echarts.apache.org/zh/option.html#series-candlestick.itemStyle.shadowOffsetY</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.itemStyle.shadowOffsetY">https://echarts.apache.org/v4/zh/option.html#series-candlestick.itemStyle.shadowOffsetY</a>
      * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -254,7 +254,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-candlestick.itemStyle.opacity">https://echarts.apache.org/zh/option.html#series-candlestick.itemStyle.opacity</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-candlestick.itemStyle.opacity">https://echarts.apache.org/v4/zh/option.html#series-candlestick.itemStyle.opacity</a>
      * <br/>序号: 10
      * <br/>默认值: 1
      * <br/>js类型: ["number"]

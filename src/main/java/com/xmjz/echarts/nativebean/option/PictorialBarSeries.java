@@ -1,5 +1,6 @@
 package com.xmjz.echarts.nativebean.option;
 
+import com.xmjz.echarts.nativebean.option.pictorialBarSeries.Tooltip;
 import com.xmjz.echarts.nativebean.option.pictorialBarSeries.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -9,7 +10,7 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar">https://echarts.apache.org/zh/option.html#series-pictorialBar</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar</a>
  * <br/>序号: 0
  * <br/>默认值: 无
  * <br/>js类型: ["object"]
@@ -17,7 +18,7 @@ import java.util.List;
  * <p><strong>象形柱图</strong></p>
  * <p>象形柱图是可以设置各种具象图形元素（如图片、<a href="http://www.w3.org/TR/SVG/paths.html#PathData" target="_blank">SVG PathData</a> 等）的柱状图。往往用在信息图中。用于有至少一个类目轴或时间轴的<a href="#grid">直角坐标系</a>上。</p>
  * <p><strong>示例：</strong></p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=pictorialBar-hill&amp;reset=1&amp;edit=1" width="800" height="400" data-ll-timeout="19"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=pictorialBar-hill&amp;reset=1&amp;edit=1" width="800" height="400" data-ll-timeout="23"><iframe />
  *
  *
  *
@@ -25,12 +26,12 @@ import java.util.List;
  * <p>象形柱图可以被想象为：它首先是个柱状图，但是柱状图的柱子并不显示。这些柱子我们称为『基准柱（reference bar）』，根据基准柱来定位和显示各种象形图形（包括图片）。</p>
  * <p>每个象形图形根据基准柱的定位，是通过 <a href="#series-pictorialBar.symbolPosition">symbolPosition</a>、<a href="#series-pictorialBar.symbolOffset">symbolOffset</a> 来调整其于基准柱的相对位置。</p>
  * <p>参见例子：</p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-position&amp;reset=1&amp;edit=1" width="800" height="600"></iframe>
+ * <iframe  data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-position&reset=1&edit=1" width="800" height="600"><iframe />
  *
  *
  * <p>可以使用 <a href="#series-pictorialBar.symbolSize">symbolSize</a> 调整大小，从而形成各种视图效果。</p>
  * <p>参见例子：</p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-symbolSize&amp;reset=1&amp;edit=1" width="800" height="600"></iframe>
+ * <iframe  data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-symbolSize&reset=1&edit=1" width="800" height="600"><iframe />
  *
  *
  *
@@ -41,17 +42,21 @@ import java.util.List;
  * <li>设置为 <code class="codespan">true</code>，则一组重复的图形来代表一个数据项。</li>
  * </ul>
  * <p>参见例子：</p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-repeat&amp;reset=1&amp;edit=1" width="800" height="400"></iframe>
+ * <iframe  data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-repeat&reset=1&edit=1" width="800" height="400"><iframe />
  *
  *
- * <p>每个象形图形可以是基本图形（如 <code class="codespan">'circle'</code>, <code class="codespan">'rect'</code>, ...）、<a href="http://www.w3.org/TR/SVG/paths.html#PathData" target="_blank">SVG PathData</a>、图片，参见：<a href="#series-pictorialBar.symbolType">symbolType</a>。</p>
+ * <p>每个象形图形可以是基本图形（如 <code class="codespan">&#39;circle&#39;</code>, <code class="codespan">&#39;rect&#39;</code>, ...）、<a href="http://www.w3.org/TR/SVG/paths.html#PathData" target="_blank">SVG PathData</a>、图片，参见：<a href="#series-pictorialBar.symbolType">symbolType</a>。</p>
  * <p>参见例子：</p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-graphicType&amp;reset=1&amp;edit=1" width="800" height="400"></iframe>
+ * <iframe  data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-graphicType&reset=1&edit=1" width="800" height="400"><iframe />
  *
  *
  * <p>可以使用 <a href="#series-pictorialBar.symbolClip">symbolClip</a> 对图形进行剪裁。</p>
  * <p>参见例子：</p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-clip&amp;reset=1&amp;edit=1" width="800" height="600"></iframe>
+ * <iframe  data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-clip&reset=1&edit=1" width="800" height="600"><iframe />
+ *
+ *
+ *
+ * </iframe>
  *
  * @author auto
  */
@@ -62,7 +67,7 @@ public class PictorialBarSeries extends Series implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.type">https://echarts.apache.org/zh/option.html#series-pictorialBar.type</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.type">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.type</a>
      * <br/>序号: 1
      * <br/>默认值: pictorialBar
      * <br/>js类型: ["string"]
@@ -70,7 +75,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.id">https://echarts.apache.org/zh/option.html#series-pictorialBar.id</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.id">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.id</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -79,7 +84,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.name">https://echarts.apache.org/zh/option.html#series-pictorialBar.name</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.name">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.name</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -88,7 +93,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private String name;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.legendHoverLink">https://echarts.apache.org/zh/option.html#series-pictorialBar.legendHoverLink</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.legendHoverLink">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.legendHoverLink</a>
      * <br/>序号: 4
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -97,7 +102,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Boolean legendHoverLink;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.coordinateSystem">https://echarts.apache.org/zh/option.html#series-pictorialBar.coordinateSystem</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.coordinateSystem">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.coordinateSystem</a>
      * <br/>序号: 5
      * <br/>默认值: cartesian2d
      * <br/>js类型: ["string"]
@@ -111,7 +116,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private String coordinateSystem;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.xAxisIndex">https://echarts.apache.org/zh/option.html#series-pictorialBar.xAxisIndex</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.xAxisIndex">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.xAxisIndex</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -125,7 +130,7 @@ public class PictorialBarSeries extends Series implements Serializable {
     }
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.yAxisIndex">https://echarts.apache.org/zh/option.html#series-pictorialBar.yAxisIndex</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.yAxisIndex">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.yAxisIndex</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -139,7 +144,7 @@ public class PictorialBarSeries extends Series implements Serializable {
     }
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.cursor">https://echarts.apache.org/zh/option.html#series-pictorialBar.cursor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.cursor">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.cursor</a>
      * <br/>序号: 8
      * <br/>默认值: pointer
      * <br/>js类型: ["string"]
@@ -148,79 +153,17 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private String cursor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.label">https://echarts.apache.org/zh/option.html#series-pictorialBar.label</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.label">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.label</a>
      * <br/>序号: 9
      * <br/>默认值: inside
      * <br/>js类型: ["Object"]
      * <br/>描述:
-     * <p>图形上的文本标签，可用于说明图形的一些数据信息，比如值，名称等。</p>
+     * <p>图形上的文本标签，可用于说明图形的一些数据信息，比如值，名称等，<code class="codespan">label</code>选项在 ECharts 2.x 中放置于<code class="codespan">itemStyle</code>下，在 ECharts 3 中为了让整个配置项结构更扁平合理，<code class="codespan">label</code> 被拿出来跟 <code class="codespan">itemStyle</code> 平级，并且跟 <code class="codespan">itemStyle</code> 一样拥有 <code class="codespan">emphasis</code> 状态。</p>
      */
     private Label label;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.labelLine">https://echarts.apache.org/zh/option.html#series-pictorialBar.labelLine</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.itemStyle">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.itemStyle</a>
      * <br/>序号: 10
-     * <br/>默认值: 无
-     * <br/>js类型: ["Object"]
-     * <br/>描述:
-     * <p>标签的视觉引导线配置。</p>
-     */
-    private LabelLine labelLine;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.labelLayout">https://echarts.apache.org/zh/option.html#series-pictorialBar.labelLayout</a>
-     * <br/>序号: 11
-     * <br/>默认值: 无
-     * <br/>js类型: ["Object","Function"]
-     * <br/>描述:
-     * <blockquote>
-     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
-     * </blockquote>
-     * <p>标签的统一布局配置。</p>
-     * <p>该配置项是在每个系列默认的标签布局基础上，统一调整标签的<code class="codespan">(x, y)</code>位置，标签对齐等属性以实现想要的标签布局效果。</p>
-     * <p>该配置项也可以是一个有如下参数的回调函数</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-comment">// 标签对应数据的 dataIndex</span>
-     * <span class="hljs-attr">dataIndex</span>: number
-     * <span class="hljs-comment">// 标签对应的数据类型，只在关系图中会有 node 和 edge 数据类型的区分</span>
-     * dataType?: string
-     * <span class="hljs-comment">// 标签对应的系列的 index</span>
-     * <span class="hljs-attr">seriesIndex</span>: number
-     * <span class="hljs-comment">// 标签显示的文本</span>
-     * <span class="hljs-attr">text</span>: string
-     * <span class="hljs-comment">// 默认的标签的包围盒，由系列默认的标签布局决定</span>
-     * <span class="hljs-attr">labelRect</span>: {<span class="hljs-attr">x</span>: number, <span class="hljs-attr">y</span>: number, <span class="hljs-attr">width</span>: number, <span class="hljs-attr">height</span>: number}
-     * <span class="hljs-comment">// 默认的标签水平对齐</span>
-     * <span class="hljs-attr">align</span>: <span class="hljs-string">'left'</span> | <span class="hljs-string">'center'</span> | <span class="hljs-string">'right'</span>
-     * <span class="hljs-comment">// 默认的标签垂直对齐</span>
-     * <span class="hljs-attr">verticalAlign</span>: <span class="hljs-string">'top'</span> | <span class="hljs-string">'middle'</span> | <span class="hljs-string">'bottom'</span>
-     * <span class="hljs-comment">// 标签所对应的数据图形的包围盒，可用于定位标签位置</span>
-     * <span class="hljs-attr">rect</span>: {<span class="hljs-attr">x</span>: number, <span class="hljs-attr">y</span>: number, <span class="hljs-attr">width</span>: number, <span class="hljs-attr">height</span>: number}
-     * <span class="hljs-comment">// 默认引导线的位置，目前只有饼图(pie)和漏斗图(funnel)有默认标签位置</span>
-     * <span class="hljs-comment">// 如果没有该值则为 null</span>
-     * labelLinePoints?: number[][]
-     * </code></pre>
-     * <p><strong>示例：</strong></p>
-     * <p>将标签显示在图形右侧 10px 的位置，并且垂直居中：</p>
-     * <pre><code class="lang-js hljs javascript">labelLayout(params) {
-     *     <span class="hljs-keyword">return</span> {
-     *         <span class="hljs-attr">x</span>: params.rect.x + <span class="hljs-number">10</span>,
-     *         <span class="hljs-attr">y</span>: params.rect.y + params.rect.height / <span class="hljs-number">2</span>,
-     *         <span class="hljs-attr">verticalAlign</span>: <span class="hljs-string">'middle'</span>,
-     *         <span class="hljs-attr">align</span>: <span class="hljs-string">'left'</span>
-     *     }
-     * }
-     * </code></pre>
-     * <p>根据图形的包围盒尺寸决定文本尺寸</p>
-     * <pre><code class="lang-js hljs javascript">
-     * labelLayout(params) {
-     *     <span class="hljs-keyword">return</span> {
-     *         <span class="hljs-attr">fontSize</span>: <span class="hljs-built_in">Math</span>.max(params.rect.width / <span class="hljs-number">10</span>, <span class="hljs-number">5</span>)
-     *     };
-     * }
-     * </code></pre>
-     */
-    private LabelLayout labelLayout;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.itemStyle">https://echarts.apache.org/zh/option.html#series-pictorialBar.itemStyle</a>
-     * <br/>序号: 12
      * <br/>默认值: 自适应
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -228,60 +171,20 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private ItemStyle itemStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.emphasis">https://echarts.apache.org/zh/option.html#series-pictorialBar.emphasis</a>
-     * <br/>序号: 13
-     * <br/>默认值: none
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.emphasis">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.emphasis</a>
+     * <br/>序号: 11
+     * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
-     * <p>高亮状态配置。</p>
      */
     private Emphasis emphasis;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.blur">https://echarts.apache.org/zh/option.html#series-pictorialBar.blur</a>
-     * <br/>序号: 14
-     * <br/>默认值: 无
-     * <br/>js类型: ["Object"]
-     * <br/>描述:
-     * <blockquote>
-     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
-     * </blockquote>
-     * <p>淡出状态配置。开启 <a href="#series-pictoialBar.emphasis.focus">emphasis.focus</a> 后有效。</p>
-     */
-    private Blur blur;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.select">https://echarts.apache.org/zh/option.html#series-pictorialBar.select</a>
-     * <br/>序号: 15
-     * <br/>默认值: 无
-     * <br/>js类型: ["Object"]
-     * <br/>描述:
-     * <blockquote>
-     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
-     * </blockquote>
-     * <p>选中状态配置。开启 <a href="#series-bar.selectedMode">selectedMode</a> 后有效。</p>
-     */
-    private Object select;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.selectedMode">https://echarts.apache.org/zh/option.html#series-pictorialBar.selectedMode</a>
-     * <br/>序号: 16
-     * <br/>默认值: 无
-     * <br/>js类型: ["boolean","string"]
-     * <br/>描述:
-     * <blockquote>
-     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
-     * </blockquote>
-     *
-     *
-     * <p>选中模式的配置，表示是否支持多个选中，默认关闭，支持布尔值和字符串，字符串取值可选<code class="codespan">'single'</code>，<code class="codespan">'multiple'</code>，分别表示单选还是多选。</p>
-     */
-    private SelectedMode selectedMode;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.barWidth">https://echarts.apache.org/zh/option.html#series-pictorialBar.barWidth</a>
-     * <br/>序号: 17
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.barWidth">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.barWidth</a>
+     * <br/>序号: 12
      * <br/>默认值: 自适应
      * <br/>js类型: ["number","string"]
      * <br/>描述:
      * <p>柱条的宽度，不设时自适应。</p>
-     *
      *
      *
      *
@@ -290,8 +193,8 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Object barWidth;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.barMaxWidth">https://echarts.apache.org/zh/option.html#series-pictorialBar.barMaxWidth</a>
-     * <br/>序号: 18
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.barMaxWidth">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.barMaxWidth</a>
+     * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["number","string"]
      * <br/>描述:
@@ -302,8 +205,8 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Object barMaxWidth;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.barMinWidth">https://echarts.apache.org/zh/option.html#series-pictorialBar.barMinWidth</a>
-     * <br/>序号: 19
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.barMinWidth">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.barMinWidth</a>
+     * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["number","string"]
      * <br/>描述:
@@ -314,8 +217,8 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Object barMinWidth;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.barMinHeight">https://echarts.apache.org/zh/option.html#series-pictorialBar.barMinHeight</a>
-     * <br/>序号: 20
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.barMinHeight">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.barMinHeight</a>
+     * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -323,18 +226,8 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Integer barMinHeight;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.barMinAngle">https://echarts.apache.org/zh/option.html#series-pictorialBar.barMinAngle</a>
-     * <br/>序号: 21
-     * <br/>默认值: 无
-     * <br/>js类型: ["number"]
-     * <br/>描述:
-     * <p>柱条最小角度，可用于防止某数据项的值过小而影响交互。</p>
-     * <p>仅对极坐标系柱状图有效。</p>
-     */
-    private Integer barMinAngle;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.barGap">https://echarts.apache.org/zh/option.html#series-pictorialBar.barGap</a>
-     * <br/>序号: 22
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.barGap">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.barGap</a>
+     * <br/>序号: 16
      * <br/>默认值: -100%
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -342,12 +235,14 @@ public class PictorialBarSeries extends Series implements Serializable {
      * <p>如果想要两个系列的柱子重叠，可以设置 barGap 为 <code class="codespan">'-100%'</code>。这在用柱子做背景的时候有用。</p>
      * <p>在同一坐标系上，此属性会被多个 <code class="codespan">'pictorialBar'</code> 系列共享。此属性应设置于此坐标系中最后一个 <code class="codespan">'pictorialBar'</code> 系列上才会生效，并且是对此坐标系中所有 <code class="codespan">'pictorialBar'</code> 系列生效。</p>
      * <p>例子：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/barGrid-barGap&amp;reset=1&amp;edit=1" width="600" height="400"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/barGrid-barGap&amp;reset=1&amp;edit=1" width="600" height="400"><iframe />
+     *
+     * </iframe>
      */
     private String barGap;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.barCategoryGap">https://echarts.apache.org/zh/option.html#series-pictorialBar.barCategoryGap</a>
-     * <br/>序号: 23
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.barCategoryGap">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.barCategoryGap</a>
+     * <br/>序号: 17
      * <br/>默认值: 20%
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -356,14 +251,14 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private String barCategoryGap;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.symbol">https://echarts.apache.org/zh/option.html#series-pictorialBar.symbol</a>
-     * <br/>序号: 24
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.symbol">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.symbol</a>
+     * <br/>序号: 18
      * <br/>默认值: circle
      * <br/>js类型: ["string"]
      * <br/>描述:
      * <p>图形类型。</p>
-     * <p>ECharts 提供的标记类型包括</p>
-     * <p><code class="codespan">'circle'</code>, <code class="codespan">'rect'</code>, <code class="codespan">'roundRect'</code>, <code class="codespan">'triangle'</code>, <code class="codespan">'diamond'</code>, <code class="codespan">'pin'</code>, <code class="codespan">'arrow'</code>, <code class="codespan">'none'</code></p>
+     * <p>ECharts 提供的标记类型包括
+     * <code class="codespan">'circle'</code>, <code class="codespan">'rect'</code>, <code class="codespan">'roundRect'</code>, <code class="codespan">'triangle'</code>, <code class="codespan">'diamond'</code>, <code class="codespan">'pin'</code>, <code class="codespan">'arrow'</code>, <code class="codespan">'none'</code></p>
      * <p>可以通过 <code class="codespan">'image://url'</code> 设置为图片，其中 URL 为图片的链接，或者 <code class="codespan">dataURI</code>。</p>
      * <p>URL 为图片链接例如：</p>
      * <pre><code class="hljs javascript"><span class="hljs-string">'image://http://xxx.xxx.xxx/a/b.png'</span>
@@ -373,33 +268,34 @@ public class PictorialBarSeries extends Series implements Serializable {
      * <p>例如：</p>
      * <pre><code class="hljs javascript"><span class="hljs-string">'path://M30.9,53.2C16.8,53.2,5.3,41.7,5.3,27.6S16.8,2,30.9,2C45,2,56.4,13.5,56.4,27.6S45,53.2,30.9,53.2z M30.9,3.5C17.6,3.5,6.8,14.4,6.8,27.6c0,13.3,10.8,24.1,24.101,24.1C44.2,51.7,55,40.9,55,27.6C54.9,14.4,44.1,3.5,30.9,3.5z M36.9,35.8c0,0.601-0.4,1-0.9,1h-1.3c-0.5,0-0.9-0.399-0.9-1V19.5c0-0.6,0.4-1,0.9-1H36c0.5,0,0.9,0.4,0.9,1V35.8z M27.8,35.8 c0,0.601-0.4,1-0.9,1h-1.3c-0.5,0-0.9-0.399-0.9-1V19.5c0-0.6,0.4-1,0.9-1H27c0.5,0,0.9,0.4,0.9,1L27.8,35.8L27.8,35.8z'</span>
      * </code></pre><p>例子：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-graphicType&amp;reset=1&amp;edit=1" width="800" height="400"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-graphicType&amp;reset=1&amp;edit=1" width="800" height="400"><iframe />
      *
      *
      *
      *
      * <p>此属性可以被设置在系列的 <a href="#series-pictorialBar.symbol">根部</a>，表示对此系列中所有数据都生效；也可以被设置在 <a href="series-pictorialBar.data" target="_blank">data</a> 中的 <a href="#series-pictorialBar.data.symbol">每个数据项中</a>，表示只对此数据项生效。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">series: [{
-     *     <span class="hljs-attr">symbol</span>: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
-     *     <span class="hljs-attr">data</span>: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
+     * <pre><code class="lang-js">series: [{
+     *     symbol: ... // 对 data 中所有数据项生效。
+     *     data: [23, 56]
      * }]
      * 或者
-     * <span class="hljs-attr">series</span>: [{
-     *     <span class="hljs-attr">data</span>: [{
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">23</span>
-     *         <span class="hljs-attr">symbol</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     * series: [{
+     *     data: [{
+     *         value: 23
+     *         symbol: ... // 只对此数据项生效
      *     }, {
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">56</span>
-     *         <span class="hljs-attr">symbol</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     *         value: 56
+     *         symbol: ... // 只对此数据项生效
      *     }]
      * }]
      * </code></pre>
+     * </iframe>
      */
     private String symbol;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolSize">https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolSize</a>
-     * <br/>序号: 25
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.symbolSize">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.symbolSize</a>
+     * <br/>序号: 19
      * <br/>默认值: ["100%","100%"]
      * <br/>js类型: ["number","Array"]
      * <br/>描述:
@@ -418,33 +314,34 @@ public class PictorialBarSeries extends Series implements Serializable {
      * </ul>
      * <p>基准柱基于 y 轴（即柱子是横向的）的情况类似对调可得出。</p>
      * <p>例子：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-symbolSize&amp;reset=1&amp;edit=1" width="800" height="600"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-symbolSize&amp;reset=1&amp;edit=1" width="800" height="600"><iframe />
      *
      *
      *
      *
      * <p>此属性可以被设置在系列的 <a href="#series-pictorialBar.symbolSize">根部</a>，表示对此系列中所有数据都生效；也可以被设置在 <a href="series-pictorialBar.data" target="_blank">data</a> 中的 <a href="#series-pictorialBar.data.symbolSize">每个数据项中</a>，表示只对此数据项生效。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">series: [{
-     *     <span class="hljs-attr">symbolSize</span>: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
-     *     <span class="hljs-attr">data</span>: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
+     * <pre><code class="lang-js">series: [{
+     *     symbolSize: ... // 对 data 中所有数据项生效。
+     *     data: [23, 56]
      * }]
      * 或者
-     * <span class="hljs-attr">series</span>: [{
-     *     <span class="hljs-attr">data</span>: [{
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">23</span>
-     *         <span class="hljs-attr">symbolSize</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     * series: [{
+     *     data: [{
+     *         value: 23
+     *         symbolSize: ... // 只对此数据项生效
      *     }, {
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">56</span>
-     *         <span class="hljs-attr">symbolSize</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     *         value: 56
+     *         symbolSize: ... // 只对此数据项生效
      *     }]
      * }]
      * </code></pre>
+     * </iframe>
      */
     private Object symbolSize;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolPosition">https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolPosition</a>
-     * <br/>序号: 26
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.symbolPosition">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.symbolPosition</a>
+     * <br/>序号: 20
      * <br/>默认值: start
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -455,33 +352,34 @@ public class PictorialBarSeries extends Series implements Serializable {
      * <li><code class="codespan">'center'</code>：图形在柱子里居中。</li>
      * </ul>
      * <p>例子：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-position&amp;reset=1&amp;edit=1" width="800" height="600"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-position&amp;reset=1&amp;edit=1" width="800" height="600"><iframe />
      *
      *
      *
      *
      * <p>此属性可以被设置在系列的 <a href="#series-pictorialBar.symbolPosition">根部</a>，表示对此系列中所有数据都生效；也可以被设置在 <a href="series-pictorialBar.data" target="_blank">data</a> 中的 <a href="#series-pictorialBar.data.symbolPosition">每个数据项中</a>，表示只对此数据项生效。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">series: [{
-     *     <span class="hljs-attr">symbolPosition</span>: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
-     *     <span class="hljs-attr">data</span>: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
+     * <pre><code class="lang-js">series: [{
+     *     symbolPosition: ... // 对 data 中所有数据项生效。
+     *     data: [23, 56]
      * }]
      * 或者
-     * <span class="hljs-attr">series</span>: [{
-     *     <span class="hljs-attr">data</span>: [{
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">23</span>
-     *         <span class="hljs-attr">symbolPosition</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     * series: [{
+     *     data: [{
+     *         value: 23
+     *         symbolPosition: ... // 只对此数据项生效
      *     }, {
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">56</span>
-     *         <span class="hljs-attr">symbolPosition</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     *         value: 56
+     *         symbolPosition: ... // 只对此数据项生效
      *     }]
      * }]
      * </code></pre>
+     * </iframe>
      */
     private String symbolPosition;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolOffset">https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolOffset</a>
-     * <br/>序号: 27
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.symbolOffset">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.symbolOffset</a>
+     * <br/>序号: 21
      * <br/>默认值: [0,0]
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -490,33 +388,34 @@ public class PictorialBarSeries extends Series implements Serializable {
      * <p>当设置为百分比时，表示相对于自身尺寸 <a href="#series-pictorialBar.symbolSize">symbolSize</a> 的百分比。</p>
      * <p>例如 <code class="codespan">[0, '-50%']</code> 就是把图形向上移动了自身尺寸的一半的位置。</p>
      * <p>例子：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-position&amp;reset=1&amp;edit=1" width="800" height="600"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-position&amp;reset=1&amp;edit=1" width="800" height="600"><iframe />
      *
      *
      *
      *
      * <p>此属性可以被设置在系列的 <a href="#series-pictorialBar.symbolOffset">根部</a>，表示对此系列中所有数据都生效；也可以被设置在 <a href="series-pictorialBar.data" target="_blank">data</a> 中的 <a href="#series-pictorialBar.data.symbolOffset">每个数据项中</a>，表示只对此数据项生效。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">series: [{
-     *     <span class="hljs-attr">symbolOffset</span>: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
-     *     <span class="hljs-attr">data</span>: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
+     * <pre><code class="lang-js">series: [{
+     *     symbolOffset: ... // 对 data 中所有数据项生效。
+     *     data: [23, 56]
      * }]
      * 或者
-     * <span class="hljs-attr">series</span>: [{
-     *     <span class="hljs-attr">data</span>: [{
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">23</span>
-     *         <span class="hljs-attr">symbolOffset</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     * series: [{
+     *     data: [{
+     *         value: 23
+     *         symbolOffset: ... // 只对此数据项生效
      *     }, {
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">56</span>
-     *         <span class="hljs-attr">symbolOffset</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     *         value: 56
+     *         symbolOffset: ... // 只对此数据项生效
      *     }]
      * }]
      * </code></pre>
+     * </iframe>
      */
     private List<?> symbolOffset;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolRotate">https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolRotate</a>
-     * <br/>序号: 28
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.symbolRotate">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.symbolRotate</a>
+     * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -542,8 +441,8 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Integer symbolRotate;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolRepeat">https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolRepeat</a>
-     * <br/>序号: 29
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.symbolRepeat">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.symbolRepeat</a>
+     * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","number","string"]
      * <br/>描述:
@@ -555,33 +454,34 @@ public class PictorialBarSeries extends Series implements Serializable {
      * <li><code class="codespan">'fixed'</code>：使图形元素重复，即每个数据值用一组重复的图形元素表示。重复的次数依据 <a href="#series-pictorialBar.symbolBoundingData">symbolBoundingData</a> 计算得到，即与 <a href="#series-pictorialBar.data">data</a> 无关。这在此图形被用于做背景时有用。</li>
      * </ul>
      * <p>例子：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-repeat&amp;reset=1&amp;edit=1" width="800" height="400"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-repeat&amp;reset=1&amp;edit=1" width="800" height="400"><iframe />
      *
      *
      *
      *
      * <p>此属性可以被设置在系列的 <a href="#series-pictorialBar.symbolRepeat">根部</a>，表示对此系列中所有数据都生效；也可以被设置在 <a href="series-pictorialBar.data" target="_blank">data</a> 中的 <a href="#series-pictorialBar.data.symbolRepeat">每个数据项中</a>，表示只对此数据项生效。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">series: [{
-     *     <span class="hljs-attr">symbolRepeat</span>: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
-     *     <span class="hljs-attr">data</span>: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
+     * <pre><code class="lang-js">series: [{
+     *     symbolRepeat: ... // 对 data 中所有数据项生效。
+     *     data: [23, 56]
      * }]
      * 或者
-     * <span class="hljs-attr">series</span>: [{
-     *     <span class="hljs-attr">data</span>: [{
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">23</span>
-     *         <span class="hljs-attr">symbolRepeat</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     * series: [{
+     *     data: [{
+     *         value: 23
+     *         symbolRepeat: ... // 只对此数据项生效
      *     }, {
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">56</span>
-     *         <span class="hljs-attr">symbolRepeat</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     *         value: 56
+     *         symbolRepeat: ... // 只对此数据项生效
      *     }]
      * }]
      * </code></pre>
+     * </iframe>
      */
     private Object symbolRepeat;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolRepeatDirection">https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolRepeatDirection</a>
-     * <br/>序号: 30
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.symbolRepeatDirection">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.symbolRepeatDirection</a>
+     * <br/>序号: 24
      * <br/>默认值: start
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -594,33 +494,34 @@ public class PictorialBarSeries extends Series implements Serializable {
      * </ul>
      * <p>这个属性的值可以是：<code class="codespan">'start'</code> 或 <code class="codespan">'end'</code>。</p>
      * <p>例子：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-repeatDirection&amp;reset=1&amp;edit=1" width="800" height="400"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-repeatDirection&amp;reset=1&amp;edit=1" width="800" height="400"><iframe />
      *
      *
      *
      *
      * <p>此属性可以被设置在系列的 <a href="#series-pictorialBar.symbolRepeatDirection">根部</a>，表示对此系列中所有数据都生效；也可以被设置在 <a href="series-pictorialBar.data" target="_blank">data</a> 中的 <a href="#series-pictorialBar.data.symbolRepeatDirection">每个数据项中</a>，表示只对此数据项生效。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">series: [{
-     *     <span class="hljs-attr">symbolRepeatDirection</span>: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
-     *     <span class="hljs-attr">data</span>: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
+     * <pre><code class="lang-js">series: [{
+     *     symbolRepeatDirection: ... // 对 data 中所有数据项生效。
+     *     data: [23, 56]
      * }]
      * 或者
-     * <span class="hljs-attr">series</span>: [{
-     *     <span class="hljs-attr">data</span>: [{
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">23</span>
-     *         <span class="hljs-attr">symbolRepeatDirection</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     * series: [{
+     *     data: [{
+     *         value: 23
+     *         symbolRepeatDirection: ... // 只对此数据项生效
      *     }, {
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">56</span>
-     *         <span class="hljs-attr">symbolRepeatDirection</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     *         value: 56
+     *         symbolRepeatDirection: ... // 只对此数据项生效
      *     }]
      * }]
      * </code></pre>
+     * </iframe>
      */
     private String symbolRepeatDirection;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolMargin">https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolMargin</a>
-     * <br/>序号: 31
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.symbolMargin">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.symbolMargin</a>
+     * <br/>序号: 25
      * <br/>默认值: 无
      * <br/>js类型: ["number","string"]
      * <br/>描述:
@@ -635,33 +536,34 @@ public class PictorialBarSeries extends Series implements Serializable {
      *   这里设置的 <code class="codespan">symbolMargin</code> 无效。</li>
      * </ul>
      * <p>例子：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-repeatLayout&amp;reset=1&amp;edit=1" width="800" height="600"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-repeatLayout&amp;reset=1&amp;edit=1" width="800" height="600"><iframe />
      *
      *
      *
      *
      * <p>此属性可以被设置在系列的 <a href="#series-pictorialBar.symbolMargin">根部</a>，表示对此系列中所有数据都生效；也可以被设置在 <a href="series-pictorialBar.data" target="_blank">data</a> 中的 <a href="#series-pictorialBar.data.symbolMargin">每个数据项中</a>，表示只对此数据项生效。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">series: [{
-     *     <span class="hljs-attr">symbolMargin</span>: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
-     *     <span class="hljs-attr">data</span>: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
+     * <pre><code class="lang-js">series: [{
+     *     symbolMargin: ... // 对 data 中所有数据项生效。
+     *     data: [23, 56]
      * }]
      * 或者
-     * <span class="hljs-attr">series</span>: [{
-     *     <span class="hljs-attr">data</span>: [{
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">23</span>
-     *         <span class="hljs-attr">symbolMargin</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     * series: [{
+     *     data: [{
+     *         value: 23
+     *         symbolMargin: ... // 只对此数据项生效
      *     }, {
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">56</span>
-     *         <span class="hljs-attr">symbolMargin</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     *         value: 56
+     *         symbolMargin: ... // 只对此数据项生效
      *     }]
      * }]
      * </code></pre>
+     * </iframe>
      */
     private Object symbolMargin;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolClip">https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolClip</a>
-     * <br/>序号: 32
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.symbolClip">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.symbolClip</a>
+     * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -672,7 +574,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      * </ul>
      * <p><code class="codespan">symbolClip</code> 常在这种场景下使用：同时表达『总值』和『当前数值』。在这种场景下，可以使用两个系列，一个系列是完整的图形，当做『背景』来表达总数值，另一个系列是使用 <code class="codespan">symbolClip</code> 进行剪裁过的图形，表达当前数值。</p>
      * <p>例子：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-clip&amp;reset=1&amp;edit=1" width="800" height="600"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-clip&amp;reset=1&amp;edit=1" width="800" height="600"><iframe />
      *
      *
      * <p>在这个例子中：</p>
@@ -682,26 +584,27 @@ public class PictorialBarSeries extends Series implements Serializable {
      * </ul>
      * <p>此属性可以被设置在系列的 <a href="#series-pictorialBar.symbolClip">根部</a>，表示对此系列中所有数据都生效；也可以被设置在 <a href="series-pictorialBar.data" target="_blank">data</a> 中的 <a href="#series-pictorialBar.data.symbolClip">每个数据项中</a>，表示只对此数据项生效。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">series: [{
-     *     <span class="hljs-attr">symbolClip</span>: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
-     *     <span class="hljs-attr">data</span>: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
+     * <pre><code class="lang-js">series: [{
+     *     symbolClip: ... // 对 data 中所有数据项生效。
+     *     data: [23, 56]
      * }]
      * 或者
-     * <span class="hljs-attr">series</span>: [{
-     *     <span class="hljs-attr">data</span>: [{
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">23</span>
-     *         <span class="hljs-attr">symbolClip</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     * series: [{
+     *     data: [{
+     *         value: 23
+     *         symbolClip: ... // 只对此数据项生效
      *     }, {
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">56</span>
-     *         <span class="hljs-attr">symbolClip</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     *         value: 56
+     *         symbolClip: ... // 只对此数据项生效
      *     }]
      * }]
      * </code></pre>
+     * </iframe>
      */
     private Boolean symbolClip;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolBoundingData">https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolBoundingData</a>
-     * <br/>序号: 33
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.symbolBoundingData">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.symbolBoundingData</a>
+     * <br/>序号: 27
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
      * <br/>描述:
@@ -723,7 +626,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      * </li>
      * </ul>
      * <p>例子：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-clip&amp;reset=1&amp;edit=1" width="800" height="600"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-clip&amp;reset=1&amp;edit=1" width="800" height="600"><iframe />
      *
      *
      * <ul>
@@ -732,39 +635,41 @@ public class PictorialBarSeries extends Series implements Serializable {
      * </li>
      * </ul>
      * <p>例子：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-repeatLayout&amp;reset=1&amp;edit=1" width="800" height="600"></iframe>
+     * <iframe  data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-repeatLayout&reset=1&edit=1" width="800" height="600"><iframe />
      *
      *
      * <p><br>
      * <code class="codespan">symbolBoundingData</code> 可以是一个数组，例如 <code class="codespan">[-40, 60]</code>，表示同时指定了正值的 <code class="codespan">symbolBoundingData</code> 和负值的 <code class="codespan">symbolBoundingData</code>。</p>
      * <p>参见例子：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-symbolBoundingDataArray&amp;reset=1&amp;edit=1" width="800" height="400"></iframe>
+     * <iframe  data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-symbolBoundingDataArray&reset=1&edit=1" width="800" height="400"><iframe />
+     *
      *
      *
      *
      *
      * <p>此属性可以被设置在系列的 <a href="#series-pictorialBar.symbolBoundingData">根部</a>，表示对此系列中所有数据都生效；也可以被设置在 <a href="series-pictorialBar.data" target="_blank">data</a> 中的 <a href="#series-pictorialBar.data.symbolBoundingData">每个数据项中</a>，表示只对此数据项生效。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">series: [{
-     *     <span class="hljs-attr">symbolBoundingData</span>: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
-     *     <span class="hljs-attr">data</span>: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
+     * <pre><code class="lang-js">series: [{
+     *     symbolBoundingData: ... // 对 data 中所有数据项生效。
+     *     data: [23, 56]
      * }]
      * 或者
-     * <span class="hljs-attr">series</span>: [{
-     *     <span class="hljs-attr">data</span>: [{
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">23</span>
-     *         <span class="hljs-attr">symbolBoundingData</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     * series: [{
+     *     data: [{
+     *         value: 23
+     *         symbolBoundingData: ... // 只对此数据项生效
      *     }, {
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">56</span>
-     *         <span class="hljs-attr">symbolBoundingData</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     *         value: 56
+     *         symbolBoundingData: ... // 只对此数据项生效
      *     }]
      * }]
      * </code></pre>
+     * </iframe>
      */
     private Object symbolBoundingData;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolPatternSize">https://echarts.apache.org/zh/option.html#series-pictorialBar.symbolPatternSize</a>
-     * <br/>序号: 34
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.symbolPatternSize">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.symbolPatternSize</a>
+     * <br/>序号: 28
      * <br/>默认值: 400
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -783,33 +688,34 @@ public class PictorialBarSeries extends Series implements Serializable {
      * </code></pre>
      * <p>这时候，<code class="codespan">symbolPatternSize</code> 指定了 pattern 的缩放尺寸。比如 <code class="codespan">symbolPatternSize</code> 为 400 时表示图片显示为 <code class="codespan">400px * 400px</code> 的尺寸。</p>
      * <p>例子：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-patternSize&amp;reset=1&amp;edit=1" width="800" height="400"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-patternSize&amp;reset=1&amp;edit=1" width="800" height="400"><iframe />
      *
      *
      *
      *
      * <p>此属性可以被设置在系列的 <a href="#series-pictorialBar.symbolPatternSize">根部</a>，表示对此系列中所有数据都生效；也可以被设置在 <a href="series-pictorialBar.data" target="_blank">data</a> 中的 <a href="#series-pictorialBar.data.symbolPatternSize">每个数据项中</a>，表示只对此数据项生效。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">series: [{
-     *     <span class="hljs-attr">symbolPatternSize</span>: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
-     *     <span class="hljs-attr">data</span>: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
+     * <pre><code class="lang-js">series: [{
+     *     symbolPatternSize: ... // 对 data 中所有数据项生效。
+     *     data: [23, 56]
      * }]
      * 或者
-     * <span class="hljs-attr">series</span>: [{
-     *     <span class="hljs-attr">data</span>: [{
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">23</span>
-     *         <span class="hljs-attr">symbolPatternSize</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     * series: [{
+     *     data: [{
+     *         value: 23
+     *         symbolPatternSize: ... // 只对此数据项生效
      *     }, {
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">56</span>
-     *         <span class="hljs-attr">symbolPatternSize</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     *         value: 56
+     *         symbolPatternSize: ... // 只对此数据项生效
      *     }]
      * }]
      * </code></pre>
+     * </iframe>
      */
     private Integer symbolPatternSize;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.hoverAnimation">https://echarts.apache.org/zh/option.html#series-pictorialBar.hoverAnimation</a>
-     * <br/>序号: 35
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.hoverAnimation">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.hoverAnimation</a>
+     * <br/>序号: 29
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -834,13 +740,13 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private HoverAnimation hoverAnimation;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.dimensions">https://echarts.apache.org/zh/option.html#series-pictorialBar.dimensions</a>
-     * <br/>序号: 36
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.dimensions">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.dimensions</a>
+     * <br/>序号: 30
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
      * <p>使用 dimensions 定义 <code class="codespan">series.data</code> 或者 <code class="codespan">dataset.source</code> 的每个维度的信息。</p>
-     * <p>注意：如果使用了 <a href="#dataset">dataset</a>，那么可以在 <a href="#dataset.dimensions">dataset.dimensions</a> 中定义 dimension ，或者在 <a href="#dataset.source">dataset.source</a> 的第一行/列中给出 dimension 名称。于是就不用在这里指定 dimension。但如果在这里指定了 <code class="codespan">dimensions</code>，那么优先使用这里的。</p>
+     * <p>注意：如果使用了 <a href="#dataset">dataset</a>，那么可以在 <a href="#dataset.source">dataset.source</a> 的第一行/列中给出 dimension 名称。于是就不用在这里指定 dimension。但是，如果在这里指定了 <code class="codespan">dimensions</code>，那么 ECharts 不再会自动从 <code class="codespan">dataset.source</code> 的第一行/列中获取维度信息。</p>
      * <p>例如：</p>
      * <pre><code class="lang-js hljs javascript">option = {
      *     <span class="hljs-attr">dataset</span>: {
@@ -892,8 +798,8 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private List<?> dimensions;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.encode">https://echarts.apache.org/zh/option.html#series-pictorialBar.encode</a>
-     * <br/>序号: 37
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.encode">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.encode</a>
+     * <br/>序号: 31
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -1010,9 +916,9 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Object encode;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.data">https://echarts.apache.org/zh/option.html#series-pictorialBar.data</a>
-     * <br/>序号: 38
-     * <br/>默认值: 无
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.data">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.data</a>
+     * <br/>序号: 32
+     * <br/>默认值: circle
      * <br/>js类型: ["Array"]
      * <br/>描述:
      * <p>系列中的数据内容数组。数组项通常为具体的数据项。</p>
@@ -1050,7 +956,8 @@ public class PictorialBarSeries extends Series implements Serializable {
      *     <span class="hljs-comment">// data: [[0, 23], [1, 44], [2, 55], [3, 19]]</span>
      * }]
      * </code></pre>
-     * <p><strong>『值』与 <a href="#xAxis.type">轴类型</a> 的关系：</strong></p>
+     * <p><br>
+     * <strong>『值』与 <a href="#xAxis.type">轴类型</a> 的关系：</strong></p>
      * <ul>
      * <li><p>当某维度对应于数值轴（axis.type 为 <code class="codespan">'value'</code> 或者 <code class="codespan">'log'</code>）的时候：</p>
      * <p>  其值可以为 <code class="codespan">number</code>（例如 <code class="codespan">12</code>）。（也可以兼容 <code class="codespan">string</code> 形式的 number，例如 <code class="codespan">'12'</code>）</p>
@@ -1101,7 +1008,8 @@ public class PictorialBarSeries extends Series implements Serializable {
      * </ul>
      * </li>
      * </ul>
-     * <p><strong>当需要对个别数据进行个性化定义时：</strong></p>
+     * <p><br>
+     * <strong>当需要对个别数据进行个性化定义时：</strong></p>
      * <p>数组项可用对象，其中的 <code class="codespan">value</code> 像表示具体的数值，如：</p>
      * <pre><code class="lang-js hljs javascript">[
      *     <span class="hljs-number">12</span>,
@@ -1127,41 +1035,43 @@ public class PictorialBarSeries extends Series implements Serializable {
      *     [<span class="hljs-number">10</span>, <span class="hljs-number">33</span>]
      * ]
      * </code></pre>
-     * <p><strong>空值：</strong></p>
+     * <p><br>
+     * <strong>空值：</strong></p>
      * <p>当某数据不存在时（ps：<em>不存在</em>不代表值为 0），可以用 <code class="codespan">'-'</code> 或者 <code class="codespan">null</code> 或者 <code class="codespan">undefined</code> 或者 <code class="codespan">NaN</code> 表示。</p>
      * <p>例如，无数据在折线图中可表现为该点是断开的，在其它图中可表示为图形不存在。</p>
+     * <p><br><br></p>
      */
-    private List<?> data;
+    private List<Data> data;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.markPoint">https://echarts.apache.org/zh/option.html#series-pictorialBar.markPoint</a>
-     * <br/>序号: 39
-     * <br/>默认值: 无
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.markPoint">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.markPoint</a>
+     * <br/>序号: 33
+     * <br/>默认值: pin
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>图表标注。</p>
      */
-    private Object markPoint;
+    private MarkPoint markPoint;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.markLine">https://echarts.apache.org/zh/option.html#series-pictorialBar.markLine</a>
-     * <br/>序号: 40
-     * <br/>默认值: 无
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.markLine">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.markLine</a>
+     * <br/>序号: 34
+     * <br/>默认值: 2
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>图表标线。</p>
      */
-    private Object markLine;
+    private MarkLine markLine;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.markArea">https://echarts.apache.org/zh/option.html#series-pictorialBar.markArea</a>
-     * <br/>序号: 41
-     * <br/>默认值: 无
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.markArea">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.markArea</a>
+     * <br/>序号: 35
+     * <br/>默认值: 2000
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>图表标域，常用于标记图表中某个范围的数据，例如标出某段时间投放了广告。</p>
      */
-    private Object markArea;
+    private MarkArea markArea;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.zlevel">https://echarts.apache.org/zh/option.html#series-pictorialBar.zlevel</a>
-     * <br/>序号: 42
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.zlevel">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.zlevel</a>
+     * <br/>序号: 36
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -1171,8 +1081,8 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.z">https://echarts.apache.org/zh/option.html#series-pictorialBar.z</a>
-     * <br/>序号: 43
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.z">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.z</a>
+     * <br/>序号: 37
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -1181,8 +1091,8 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.silent">https://echarts.apache.org/zh/option.html#series-pictorialBar.silent</a>
-     * <br/>序号: 44
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.silent">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.silent</a>
+     * <br/>序号: 38
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -1190,8 +1100,8 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Boolean silent;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.animation">https://echarts.apache.org/zh/option.html#series-pictorialBar.animation</a>
-     * <br/>序号: 45
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.animation">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.animation</a>
+     * <br/>序号: 39
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -1199,8 +1109,8 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Boolean animation;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.animationThreshold">https://echarts.apache.org/zh/option.html#series-pictorialBar.animationThreshold</a>
-     * <br/>序号: 46
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.animationThreshold">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.animationThreshold</a>
+     * <br/>序号: 40
      * <br/>默认值: 2000
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -1208,8 +1118,8 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Integer animationThreshold;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.animationDuration">https://echarts.apache.org/zh/option.html#series-pictorialBar.animationDuration</a>
-     * <br/>序号: 47
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.animationDuration">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.animationDuration</a>
+     * <br/>序号: 41
      * <br/>默认值: 1000
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -1222,8 +1132,8 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Object animationDuration;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.animationEasing">https://echarts.apache.org/zh/option.html#series-pictorialBar.animationEasing</a>
-     * <br/>序号: 48
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.animationEasing">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.animationEasing</a>
+     * <br/>序号: 42
      * <br/>默认值: cubicOut
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -1231,8 +1141,8 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private String animationEasing;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.animationDurationUpdate">https://echarts.apache.org/zh/option.html#series-pictorialBar.animationDurationUpdate</a>
-     * <br/>序号: 49
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.animationDurationUpdate">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.animationDurationUpdate</a>
+     * <br/>序号: 43
      * <br/>默认值: 300
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -1246,21 +1156,21 @@ public class PictorialBarSeries extends Series implements Serializable {
      */
     private Object animationDurationUpdate;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.animationEasingUpdate">https://echarts.apache.org/zh/option.html#series-pictorialBar.animationEasingUpdate</a>
-     * <br/>序号: 50
-     * <br/>默认值: cubicInOut
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.animationEasingUpdate">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.animationEasingUpdate</a>
+     * <br/>序号: 44
+     * <br/>默认值: cubicOut
      * <br/>js类型: ["string"]
      * <br/>描述:
      * <p>数据更新动画的缓动效果。</p>
      */
     private AnimationEasingUpdate animationEasingUpdate;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.tooltip">https://echarts.apache.org/zh/option.html#series-pictorialBar.tooltip</a>
-     * <br/>序号: 51
-     * <br/>默认值: 无
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.tooltip">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.tooltip</a>
+     * <br/>序号: 45
+     * <br/>默认值: rgba(50,50,50,0.7)
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>本系列特定的 tooltip 设定。</p>
      */
-    private Object tooltip;
+    private Tooltip tooltip;
 }

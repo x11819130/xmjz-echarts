@@ -7,7 +7,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.splitArea">https://echarts.apache.org/zh/option.html#singleAxis.splitArea</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.splitArea">https://echarts.apache.org/v4/zh/option.html#singleAxis.splitArea</a>
  * <br/>序号: 35
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
@@ -23,7 +23,7 @@ public class SplitArea implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.splitArea.interval">https://echarts.apache.org/zh/option.html#singleAxis.splitArea.interval</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.splitArea.interval">https://echarts.apache.org/v4/zh/option.html#singleAxis.splitArea.interval</a>
      * <br/>序号: 1
      * <br/>默认值: auto
      * <br/>js类型: ["number","Function"]
@@ -39,7 +39,7 @@ public class SplitArea implements Serializable {
      */
     private Object interval;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.splitArea.show">https://echarts.apache.org/zh/option.html#singleAxis.splitArea.show</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.splitArea.show">https://echarts.apache.org/v4/zh/option.html#singleAxis.splitArea.show</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -48,7 +48,7 @@ public class SplitArea implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.splitArea.areaStyle">https://echarts.apache.org/zh/option.html#singleAxis.splitArea.areaStyle</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.splitArea.areaStyle">https://echarts.apache.org/v4/zh/option.html#singleAxis.splitArea.areaStyle</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

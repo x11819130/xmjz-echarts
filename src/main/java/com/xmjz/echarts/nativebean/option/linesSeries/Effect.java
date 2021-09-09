@@ -7,7 +7,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.effect">https://echarts.apache.org/zh/option.html#series-lines.effect</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-lines.effect">https://echarts.apache.org/v4/zh/option.html#series-lines.effect</a>
  * <br/>序号: 9
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
@@ -24,7 +24,7 @@ public class Effect implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.effect.show">https://echarts.apache.org/zh/option.html#series-lines.effect.show</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-lines.effect.show">https://echarts.apache.org/v4/zh/option.html#series-lines.effect.show</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -33,7 +33,7 @@ public class Effect implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.effect.period">https://echarts.apache.org/zh/option.html#series-lines.effect.period</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-lines.effect.period">https://echarts.apache.org/v4/zh/option.html#series-lines.effect.period</a>
      * <br/>序号: 2
      * <br/>默认值: 4
      * <br/>js类型: ["number"]
@@ -42,7 +42,7 @@ public class Effect implements Serializable {
      */
     private Integer period;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.effect.delay">https://echarts.apache.org/zh/option.html#series-lines.effect.delay</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-lines.effect.delay">https://echarts.apache.org/v4/zh/option.html#series-lines.effect.delay</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
@@ -51,7 +51,7 @@ public class Effect implements Serializable {
      */
     private Object delay;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.effect.constantSpeed">https://echarts.apache.org/zh/option.html#series-lines.effect.constantSpeed</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-lines.effect.constantSpeed">https://echarts.apache.org/v4/zh/option.html#series-lines.effect.constantSpeed</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -60,14 +60,14 @@ public class Effect implements Serializable {
      */
     private Integer constantSpeed;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.effect.symbol">https://echarts.apache.org/zh/option.html#series-lines.effect.symbol</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-lines.effect.symbol">https://echarts.apache.org/v4/zh/option.html#series-lines.effect.symbol</a>
      * <br/>序号: 5
      * <br/>默认值: circle
      * <br/>js类型: ["string"]
      * <br/>描述:
      * <p>特效图形的标记。</p>
-     * <p>ECharts 提供的标记类型包括</p>
-     * <p><code class="codespan">'circle'</code>, <code class="codespan">'rect'</code>, <code class="codespan">'roundRect'</code>, <code class="codespan">'triangle'</code>, <code class="codespan">'diamond'</code>, <code class="codespan">'pin'</code>, <code class="codespan">'arrow'</code>, <code class="codespan">'none'</code></p>
+     * <p>ECharts 提供的标记类型包括
+     * <code class="codespan">'circle'</code>, <code class="codespan">'rect'</code>, <code class="codespan">'roundRect'</code>, <code class="codespan">'triangle'</code>, <code class="codespan">'diamond'</code>, <code class="codespan">'pin'</code>, <code class="codespan">'arrow'</code>, <code class="codespan">'none'</code></p>
      * <p>可以通过 <code class="codespan">'image://url'</code> 设置为图片，其中 URL 为图片的链接，或者 <code class="codespan">dataURI</code>。</p>
      * <p>URL 为图片链接例如：</p>
      * <pre><code class="hljs javascript"><span class="hljs-string">'image://http://xxx.xxx.xxx/a/b.png'</span>
@@ -81,7 +81,7 @@ public class Effect implements Serializable {
      */
     private String symbol;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.effect.symbolSize">https://echarts.apache.org/zh/option.html#series-lines.effect.symbolSize</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-lines.effect.symbolSize">https://echarts.apache.org/v4/zh/option.html#series-lines.effect.symbolSize</a>
      * <br/>序号: 6
      * <br/>默认值: 3
      * <br/>js类型: ["Array","number"]
@@ -90,7 +90,7 @@ public class Effect implements Serializable {
      */
     private Object symbolSize;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.effect.color">https://echarts.apache.org/zh/option.html#series-lines.effect.color</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-lines.effect.color">https://echarts.apache.org/v4/zh/option.html#series-lines.effect.color</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -99,7 +99,7 @@ public class Effect implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.effect.trailLength">https://echarts.apache.org/zh/option.html#series-lines.effect.trailLength</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-lines.effect.trailLength">https://echarts.apache.org/v4/zh/option.html#series-lines.effect.trailLength</a>
      * <br/>序号: 8
      * <br/>默认值: 0.2
      * <br/>js类型: ["number"]
@@ -108,7 +108,7 @@ public class Effect implements Serializable {
      */
     private Integer trailLength;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.effect.loop">https://echarts.apache.org/zh/option.html#series-lines.effect.loop</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-lines.effect.loop">https://echarts.apache.org/v4/zh/option.html#series-lines.effect.loop</a>
      * <br/>序号: 9
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]

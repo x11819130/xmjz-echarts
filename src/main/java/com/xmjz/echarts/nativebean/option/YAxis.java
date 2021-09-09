@@ -10,7 +10,7 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis">https://echarts.apache.org/zh/option.html#yAxis</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis">https://echarts.apache.org/v4/zh/option.html#yAxis</a>
  * <br/>序号: 5
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
@@ -26,7 +26,7 @@ public class YAxis implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.id">https://echarts.apache.org/zh/option.html#yAxis.id</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.id">https://echarts.apache.org/v4/zh/option.html#yAxis.id</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -35,7 +35,7 @@ public class YAxis implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.show">https://echarts.apache.org/zh/option.html#yAxis.show</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.show">https://echarts.apache.org/v4/zh/option.html#yAxis.show</a>
      * <br/>序号: 2
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -44,7 +44,7 @@ public class YAxis implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.gridIndex">https://echarts.apache.org/zh/option.html#yAxis.gridIndex</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.gridIndex">https://echarts.apache.org/v4/zh/option.html#yAxis.gridIndex</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -53,7 +53,7 @@ public class YAxis implements Serializable {
      */
     private Integer gridIndex;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.position">https://echarts.apache.org/zh/option.html#yAxis.position</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.position">https://echarts.apache.org/v4/zh/option.html#yAxis.position</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -68,7 +68,7 @@ public class YAxis implements Serializable {
      */
     private String position;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.offset">https://echarts.apache.org/zh/option.html#yAxis.offset</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.offset">https://echarts.apache.org/v4/zh/option.html#yAxis.offset</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -77,28 +77,8 @@ public class YAxis implements Serializable {
      */
     private Integer offset;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.realtimeSort">https://echarts.apache.org/zh/option.html#yAxis.realtimeSort</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.type">https://echarts.apache.org/v4/zh/option.html#yAxis.type</a>
      * <br/>序号: 6
-     * <br/>默认值: 无
-     * <br/>js类型: ["boolean"]
-     * <br/>描述:
-     * <p>用于制作动态排序柱状图。设为 <code class="codespan">true</code> 时，表示 Y 轴开启实时排序效果，仅当 X 轴的 <a href="#yAxis.type">type</a> 是 <code class="codespan">'value'</code> 时有效。</p>
-     * <p>需要配合其他配置项共同实现动态排序柱状图效果，具体参见<a href="tutorial.html#%E5%8A%A8%E6%80%81%E6%8E%92%E5%BA%8F%E6%9F%B1%E7%8A%B6%E5%9B%BE" target="_blank">动态排序柱状图</a>教程。</p>
-     */
-    private Boolean realtimeSort;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.sortSeriesIndex">https://echarts.apache.org/zh/option.html#yAxis.sortSeriesIndex</a>
-     * <br/>序号: 7
-     * <br/>默认值: 无
-     * <br/>js类型: ["number"]
-     * <br/>描述:
-     * <p>动态排序柱状图用于排序的系列 id。目前只支持一个系列的柱状图排序效果，所以这个值只能取 0。仅当 Y 轴 <a href="#yAxis.realtimeSort">realtimeSort</a> 为 <code class="codespan">true</code> 并且 <a href="#yAxis.type">type</a> 是 <code class="codespan">'value'</code> 时有效。</p>
-     * <p>需要配合其他配置项共同实现动态排序柱状图效果，具体参见<a href="tutorial.html#%E5%8A%A8%E6%80%81%E6%8E%92%E5%BA%8F%E6%9F%B1%E7%8A%B6%E5%9B%BE" target="_blank">动态排序柱状图</a>教程。</p>
-     */
-    private Integer sortSeriesIndex;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.type">https://echarts.apache.org/zh/option.html#yAxis.type</a>
-     * <br/>序号: 8
      * <br/>默认值: value
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -121,8 +101,8 @@ public class YAxis implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.name">https://echarts.apache.org/zh/option.html#yAxis.name</a>
-     * <br/>序号: 9
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.name">https://echarts.apache.org/v4/zh/option.html#yAxis.name</a>
+     * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -130,8 +110,8 @@ public class YAxis implements Serializable {
      */
     private String name;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.nameLocation">https://echarts.apache.org/zh/option.html#yAxis.nameLocation</a>
-     * <br/>序号: 10
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.nameLocation">https://echarts.apache.org/v4/zh/option.html#yAxis.nameLocation</a>
+     * <br/>序号: 8
      * <br/>默认值: end
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -145,8 +125,8 @@ public class YAxis implements Serializable {
      */
     private String nameLocation;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.nameTextStyle">https://echarts.apache.org/zh/option.html#yAxis.nameTextStyle</a>
-     * <br/>序号: 11
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.nameTextStyle">https://echarts.apache.org/v4/zh/option.html#yAxis.nameTextStyle</a>
+     * <br/>序号: 9
      * <br/>默认值: normal
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -154,8 +134,8 @@ public class YAxis implements Serializable {
      */
     private NameTextStyle nameTextStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.nameGap">https://echarts.apache.org/zh/option.html#yAxis.nameGap</a>
-     * <br/>序号: 12
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.nameGap">https://echarts.apache.org/v4/zh/option.html#yAxis.nameGap</a>
+     * <br/>序号: 10
      * <br/>默认值: 15
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -163,8 +143,8 @@ public class YAxis implements Serializable {
      */
     private Integer nameGap;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.nameRotate">https://echarts.apache.org/zh/option.html#yAxis.nameRotate</a>
-     * <br/>序号: 13
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.nameRotate">https://echarts.apache.org/v4/zh/option.html#yAxis.nameRotate</a>
+     * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -172,8 +152,8 @@ public class YAxis implements Serializable {
      */
     private Integer nameRotate;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.inverse">https://echarts.apache.org/zh/option.html#yAxis.inverse</a>
-     * <br/>序号: 14
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.inverse">https://echarts.apache.org/v4/zh/option.html#yAxis.inverse</a>
+     * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -181,8 +161,8 @@ public class YAxis implements Serializable {
      */
     private Boolean inverse;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.boundaryGap">https://echarts.apache.org/zh/option.html#yAxis.boundaryGap</a>
-     * <br/>序号: 15
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.boundaryGap">https://echarts.apache.org/v4/zh/option.html#yAxis.boundaryGap</a>
+     * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","Array"]
      * <br/>描述:
@@ -195,8 +175,8 @@ public class YAxis implements Serializable {
      */
     private Object boundaryGap;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.min">https://echarts.apache.org/zh/option.html#yAxis.min</a>
-     * <br/>序号: 16
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.min">https://echarts.apache.org/v4/zh/option.html#yAxis.min</a>
+     * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["number","string","Function"]
      * <br/>描述:
@@ -213,8 +193,8 @@ public class YAxis implements Serializable {
      */
     private Object min;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.max">https://echarts.apache.org/zh/option.html#yAxis.max</a>
-     * <br/>序号: 17
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.max">https://echarts.apache.org/v4/zh/option.html#yAxis.max</a>
+     * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["number","string","Function"]
      * <br/>描述:
@@ -231,8 +211,8 @@ public class YAxis implements Serializable {
      */
     private Object max;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.scale">https://echarts.apache.org/zh/option.html#yAxis.scale</a>
-     * <br/>序号: 18
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.scale">https://echarts.apache.org/v4/zh/option.html#yAxis.scale</a>
+     * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -242,8 +222,8 @@ public class YAxis implements Serializable {
      */
     private Boolean scale;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.splitNumber">https://echarts.apache.org/zh/option.html#yAxis.splitNumber</a>
-     * <br/>序号: 19
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.splitNumber">https://echarts.apache.org/v4/zh/option.html#yAxis.splitNumber</a>
+     * <br/>序号: 17
      * <br/>默认值: 5
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -252,8 +232,8 @@ public class YAxis implements Serializable {
      */
     private Integer splitNumber;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.minInterval">https://echarts.apache.org/zh/option.html#yAxis.minInterval</a>
-     * <br/>序号: 20
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.minInterval">https://echarts.apache.org/v4/zh/option.html#yAxis.minInterval</a>
+     * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -267,8 +247,8 @@ public class YAxis implements Serializable {
      */
     private Integer minInterval;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.maxInterval">https://echarts.apache.org/zh/option.html#yAxis.maxInterval</a>
-     * <br/>序号: 21
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.maxInterval">https://echarts.apache.org/v4/zh/option.html#yAxis.maxInterval</a>
+     * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -282,8 +262,8 @@ public class YAxis implements Serializable {
      */
     private Integer maxInterval;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.interval">https://echarts.apache.org/zh/option.html#yAxis.interval</a>
-     * <br/>序号: 22
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.interval">https://echarts.apache.org/v4/zh/option.html#yAxis.interval</a>
+     * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -293,8 +273,8 @@ public class YAxis implements Serializable {
      */
     private Integer interval;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.logBase">https://echarts.apache.org/zh/option.html#yAxis.logBase</a>
-     * <br/>序号: 23
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.logBase">https://echarts.apache.org/v4/zh/option.html#yAxis.logBase</a>
+     * <br/>序号: 21
      * <br/>默认值: 10
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -302,8 +282,8 @@ public class YAxis implements Serializable {
      */
     private Integer logBase;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.silent">https://echarts.apache.org/zh/option.html#yAxis.silent</a>
-     * <br/>序号: 24
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.silent">https://echarts.apache.org/v4/zh/option.html#yAxis.silent</a>
+     * <br/>序号: 22
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -311,8 +291,8 @@ public class YAxis implements Serializable {
      */
     private Boolean silent;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.triggerEvent">https://echarts.apache.org/zh/option.html#yAxis.triggerEvent</a>
-     * <br/>序号: 25
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.triggerEvent">https://echarts.apache.org/v4/zh/option.html#yAxis.triggerEvent</a>
+     * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -331,8 +311,8 @@ public class YAxis implements Serializable {
      */
     private Boolean triggerEvent;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.axisLine">https://echarts.apache.org/zh/option.html#yAxis.axisLine</a>
-     * <br/>序号: 26
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.axisLine">https://echarts.apache.org/v4/zh/option.html#yAxis.axisLine</a>
+     * <br/>序号: 24
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -340,8 +320,8 @@ public class YAxis implements Serializable {
      */
     private AxisLine axisLine;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.axisTick">https://echarts.apache.org/zh/option.html#yAxis.axisTick</a>
-     * <br/>序号: 27
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.axisTick">https://echarts.apache.org/v4/zh/option.html#yAxis.axisTick</a>
+     * <br/>序号: 25
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -349,8 +329,8 @@ public class YAxis implements Serializable {
      */
     private AxisTick axisTick;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.minorTick">https://echarts.apache.org/zh/option.html#yAxis.minorTick</a>
-     * <br/>序号: 28
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.minorTick">https://echarts.apache.org/v4/zh/option.html#yAxis.minorTick</a>
+     * <br/>序号: 26
      * <br/>默认值: 5
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -361,16 +341,18 @@ public class YAxis implements Serializable {
      * <p>注意：次刻度线无法在类目轴（<a href="#yAxis.type">type</a>: <code class="codespan">'category'</code>）中使用。</p>
      * <p>示例：</p>
      * <p>1) 函数绘图中使用次刻度线</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-function&amp;edit=1&amp;reset=1" width="600" height="350"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-function&amp;edit=1&amp;reset=1" width="600" height="350"><iframe />
      *
      *
      * <p>2) 在对数轴中使用次刻度线</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-log&amp;edit=1&amp;reset=1" width="600" height="350"></iframe>
+     * <iframe  data-src="https://echarts.apache.org/examples/zh/view.html?c=line-log&edit=1&reset=1" width="600" height="350"><iframe />
+     *
+     * </iframe>
      */
     private MinorTick minorTick;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.axisLabel">https://echarts.apache.org/zh/option.html#yAxis.axisLabel</a>
-     * <br/>序号: 29
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.axisLabel">https://echarts.apache.org/v4/zh/option.html#yAxis.axisLabel</a>
+     * <br/>序号: 27
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -378,8 +360,8 @@ public class YAxis implements Serializable {
      */
     private AxisLabel axisLabel;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.splitLine">https://echarts.apache.org/zh/option.html#yAxis.splitLine</a>
-     * <br/>序号: 30
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.splitLine">https://echarts.apache.org/v4/zh/option.html#yAxis.splitLine</a>
+     * <br/>序号: 28
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -387,8 +369,8 @@ public class YAxis implements Serializable {
      */
     private SplitLine splitLine;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.minorSplitLine">https://echarts.apache.org/zh/option.html#yAxis.minorSplitLine</a>
-     * <br/>序号: 31
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.minorSplitLine">https://echarts.apache.org/v4/zh/option.html#yAxis.minorSplitLine</a>
+     * <br/>序号: 29
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -399,8 +381,8 @@ public class YAxis implements Serializable {
      */
     private MinorSplitLine minorSplitLine;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.splitArea">https://echarts.apache.org/zh/option.html#yAxis.splitArea</a>
-     * <br/>序号: 32
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.splitArea">https://echarts.apache.org/v4/zh/option.html#yAxis.splitArea</a>
+     * <br/>序号: 30
      * <br/>默认值: auto
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -408,8 +390,8 @@ public class YAxis implements Serializable {
      */
     private SplitArea splitArea;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.data">https://echarts.apache.org/zh/option.html#yAxis.data</a>
-     * <br/>序号: 33
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.data">https://echarts.apache.org/v4/zh/option.html#yAxis.data</a>
+     * <br/>序号: 31
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -430,10 +412,10 @@ public class YAxis implements Serializable {
      * }, <span class="hljs-string">'周二'</span>, <span class="hljs-string">'周三'</span>, <span class="hljs-string">'周四'</span>, <span class="hljs-string">'周五'</span>, <span class="hljs-string">'周六'</span>, <span class="hljs-string">'周日'</span>]
      * </code></pre>
      */
-    private List<?> data;
+    private List<Data> data;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.axisPointer">https://echarts.apache.org/zh/option.html#yAxis.axisPointer</a>
-     * <br/>序号: 34
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.axisPointer">https://echarts.apache.org/v4/zh/option.html#yAxis.axisPointer</a>
+     * <br/>序号: 32
      * <br/>默认值: line
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -441,8 +423,8 @@ public class YAxis implements Serializable {
      */
     private AxisPointer axisPointer;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.zlevel">https://echarts.apache.org/zh/option.html#yAxis.zlevel</a>
-     * <br/>序号: 35
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.zlevel">https://echarts.apache.org/v4/zh/option.html#yAxis.zlevel</a>
+     * <br/>序号: 33
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -452,8 +434,8 @@ public class YAxis implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.z">https://echarts.apache.org/zh/option.html#yAxis.z</a>
-     * <br/>序号: 36
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#yAxis.z">https://echarts.apache.org/v4/zh/option.html#yAxis.z</a>
+     * <br/>序号: 34
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:

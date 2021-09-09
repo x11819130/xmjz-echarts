@@ -7,7 +7,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.itemStyle">https://echarts.apache.org/zh/option.html#series-boxplot.itemStyle</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-boxplot.itemStyle">https://echarts.apache.org/v4/zh/option.html#series-boxplot.itemStyle</a>
  * <br/>序号: 11
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
@@ -23,7 +23,7 @@ public class ItemStyle implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.itemStyle.color">https://echarts.apache.org/zh/option.html#series-boxplot.itemStyle.color</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-boxplot.itemStyle.color">https://echarts.apache.org/v4/zh/option.html#series-boxplot.itemStyle.color</a>
      * <br/>序号: 1
      * <br/>默认值: #fff
      * <br/>js类型: ["Color"]
@@ -68,7 +68,7 @@ public class ItemStyle implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.itemStyle.borderColor">https://echarts.apache.org/zh/option.html#series-boxplot.itemStyle.borderColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-boxplot.itemStyle.borderColor">https://echarts.apache.org/v4/zh/option.html#series-boxplot.itemStyle.borderColor</a>
      * <br/>序号: 2
      * <br/>默认值: #000
      * <br/>js类型: ["Color"]
@@ -77,7 +77,7 @@ public class ItemStyle implements Serializable {
      */
     private String borderColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.itemStyle.borderWidth">https://echarts.apache.org/zh/option.html#series-boxplot.itemStyle.borderWidth</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-boxplot.itemStyle.borderWidth">https://echarts.apache.org/v4/zh/option.html#series-boxplot.itemStyle.borderWidth</a>
      * <br/>序号: 3
      * <br/>默认值: 1
      * <br/>js类型: ["number"]
@@ -86,7 +86,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.itemStyle.borderType">https://echarts.apache.org/zh/option.html#series-boxplot.itemStyle.borderType</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-boxplot.itemStyle.borderType">https://echarts.apache.org/v4/zh/option.html#series-boxplot.itemStyle.borderType</a>
      * <br/>序号: 4
      * <br/>默认值: solid
      * <br/>js类型: ["string"]
@@ -95,7 +95,7 @@ public class ItemStyle implements Serializable {
      */
     private String borderType;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.itemStyle.shadowBlur">https://echarts.apache.org/zh/option.html#series-boxplot.itemStyle.shadowBlur</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-boxplot.itemStyle.shadowBlur">https://echarts.apache.org/v4/zh/option.html#series-boxplot.itemStyle.shadowBlur</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -110,7 +110,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.itemStyle.shadowColor">https://echarts.apache.org/zh/option.html#series-boxplot.itemStyle.shadowColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-boxplot.itemStyle.shadowColor">https://echarts.apache.org/v4/zh/option.html#series-boxplot.itemStyle.shadowColor</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -119,7 +119,7 @@ public class ItemStyle implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.itemStyle.shadowOffsetX">https://echarts.apache.org/zh/option.html#series-boxplot.itemStyle.shadowOffsetX</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-boxplot.itemStyle.shadowOffsetX">https://echarts.apache.org/v4/zh/option.html#series-boxplot.itemStyle.shadowOffsetX</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -128,7 +128,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.itemStyle.shadowOffsetY">https://echarts.apache.org/zh/option.html#series-boxplot.itemStyle.shadowOffsetY</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-boxplot.itemStyle.shadowOffsetY">https://echarts.apache.org/v4/zh/option.html#series-boxplot.itemStyle.shadowOffsetY</a>
      * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -137,7 +137,7 @@ public class ItemStyle implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.itemStyle.opacity">https://echarts.apache.org/zh/option.html#series-boxplot.itemStyle.opacity</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-boxplot.itemStyle.opacity">https://echarts.apache.org/v4/zh/option.html#series-boxplot.itemStyle.opacity</a>
      * <br/>序号: 9
      * <br/>默认值: 1
      * <br/>js类型: ["number"]
@@ -145,14 +145,4 @@ public class ItemStyle implements Serializable {
      * <p>图形透明度。支持从 0 到 1 的数字，为 0 时不绘制该图形。</p>
      */
     private Integer opacity;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-boxplot.itemStyle.decal(Object%20|%20'none')">https://echarts.apache.org/zh/option.html#series-boxplot.itemStyle.decal(Object%20|%20'none')</a>
-     * <br/>序号: 10
-     * <br/>默认值: 无
-     * <br/>js类型: ["any"]
-     * <br/>描述:
-     * <p>图形的贴花图案，在 <a href="#aria.enabled">aria.enabled</a> 与 <a href="#aria.decal.show">aria.decal.show</a> 都是 <code class="codespan">true</code> 的情况下才生效。</p>
-     * <p>如果为 <code class="codespan">'none'</code> 表示不使用贴花图案。</p>
-     */
-    private Object decal;
 }

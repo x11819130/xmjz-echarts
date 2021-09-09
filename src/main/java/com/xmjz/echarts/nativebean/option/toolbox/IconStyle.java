@@ -7,7 +7,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.iconStyle">https://echarts.apache.org/zh/option.html#toolbox.iconStyle</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#toolbox.iconStyle">https://echarts.apache.org/v4/zh/option.html#toolbox.iconStyle</a>
  * <br/>序号: 8
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
@@ -23,7 +23,7 @@ public class IconStyle implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.iconStyle.color">https://echarts.apache.org/zh/option.html#toolbox.iconStyle.color</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#toolbox.iconStyle.color">https://echarts.apache.org/v4/zh/option.html#toolbox.iconStyle.color</a>
      * <br/>序号: 1
      * <br/>默认值: none
      * <br/>js类型: ["Color"]
@@ -68,7 +68,7 @@ public class IconStyle implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.iconStyle.borderColor">https://echarts.apache.org/zh/option.html#toolbox.iconStyle.borderColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#toolbox.iconStyle.borderColor">https://echarts.apache.org/v4/zh/option.html#toolbox.iconStyle.borderColor</a>
      * <br/>序号: 2
      * <br/>默认值: #666
      * <br/>js类型: ["Color"]
@@ -77,7 +77,7 @@ public class IconStyle implements Serializable {
      */
     private String borderColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.iconStyle.borderWidth">https://echarts.apache.org/zh/option.html#toolbox.iconStyle.borderWidth</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#toolbox.iconStyle.borderWidth">https://echarts.apache.org/v4/zh/option.html#toolbox.iconStyle.borderWidth</a>
      * <br/>序号: 3
      * <br/>默认值: 1
      * <br/>js类型: ["number"]
@@ -86,7 +86,7 @@ public class IconStyle implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.iconStyle.borderType">https://echarts.apache.org/zh/option.html#toolbox.iconStyle.borderType</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#toolbox.iconStyle.borderType">https://echarts.apache.org/v4/zh/option.html#toolbox.iconStyle.borderType</a>
      * <br/>序号: 4
      * <br/>默认值: solid
      * <br/>js类型: ["string"]
@@ -95,7 +95,7 @@ public class IconStyle implements Serializable {
      */
     private String borderType;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.iconStyle.shadowBlur">https://echarts.apache.org/zh/option.html#toolbox.iconStyle.shadowBlur</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#toolbox.iconStyle.shadowBlur">https://echarts.apache.org/v4/zh/option.html#toolbox.iconStyle.shadowBlur</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -110,7 +110,7 @@ public class IconStyle implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.iconStyle.shadowColor">https://echarts.apache.org/zh/option.html#toolbox.iconStyle.shadowColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#toolbox.iconStyle.shadowColor">https://echarts.apache.org/v4/zh/option.html#toolbox.iconStyle.shadowColor</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -119,7 +119,7 @@ public class IconStyle implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.iconStyle.shadowOffsetX">https://echarts.apache.org/zh/option.html#toolbox.iconStyle.shadowOffsetX</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#toolbox.iconStyle.shadowOffsetX">https://echarts.apache.org/v4/zh/option.html#toolbox.iconStyle.shadowOffsetX</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -128,7 +128,7 @@ public class IconStyle implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.iconStyle.shadowOffsetY">https://echarts.apache.org/zh/option.html#toolbox.iconStyle.shadowOffsetY</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#toolbox.iconStyle.shadowOffsetY">https://echarts.apache.org/v4/zh/option.html#toolbox.iconStyle.shadowOffsetY</a>
      * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -137,7 +137,7 @@ public class IconStyle implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#toolbox.iconStyle.opacity">https://echarts.apache.org/zh/option.html#toolbox.iconStyle.opacity</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#toolbox.iconStyle.opacity">https://echarts.apache.org/v4/zh/option.html#toolbox.iconStyle.opacity</a>
      * <br/>序号: 9
      * <br/>默认值: 1
      * <br/>js类型: ["number"]

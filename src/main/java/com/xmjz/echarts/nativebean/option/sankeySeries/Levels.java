@@ -7,8 +7,8 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.levels">https://echarts.apache.org/zh/option.html#series-sankey.levels</a>
- * <br/>序号: 18
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sankey.levels">https://echarts.apache.org/v4/zh/option.html#series-sankey.levels</a>
+ * <br/>序号: 19
  * <br/>默认值: 无
  * <br/>js类型: ["Array"]
  * <br/>描述:
@@ -55,7 +55,7 @@ public class Levels implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.levels.depth">https://echarts.apache.org/zh/option.html#series-sankey.levels.depth</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sankey.levels.depth">https://echarts.apache.org/v4/zh/option.html#series-sankey.levels.depth</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -64,57 +64,21 @@ public class Levels implements Serializable {
      */
     private Integer depth;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.levels.label">https://echarts.apache.org/zh/option.html#series-sankey.levels.label</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sankey.levels.itemStyle">https://echarts.apache.org/v4/zh/option.html#series-sankey.levels.itemStyle</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
+     * <p>桑基图指定层节点的样式。</p>
      */
-    private Object label;
+    private Object itemStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.levels.itemStyle">https://echarts.apache.org/zh/option.html#series-sankey.levels.itemStyle</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sankey.levels.lineStyle">https://echarts.apache.org/v4/zh/option.html#series-sankey.levels.lineStyle</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
-     */
-    private Object itemStyle;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.levels.lineStyle">https://echarts.apache.org/zh/option.html#series-sankey.levels.lineStyle</a>
-     * <br/>序号: 4
-     * <br/>默认值: 无
-     * <br/>js类型: ["Object"]
-     * <br/>描述:
+     * <p>桑基图指定层出边的样式。其中 <a href="#series-sankey.lineStyle.color">lineStyle.color</a> 支持设置为<code class="codespan">'source'</code>或者<code class="codespan">'target'</code>特殊值，此时出边会自动取源节点或目标节点的颜色作为自己的颜色。</p>
      */
     private Object lineStyle;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.levels.emphasis">https://echarts.apache.org/zh/option.html#series-sankey.levels.emphasis</a>
-     * <br/>序号: 5
-     * <br/>默认值: 无
-     * <br/>js类型: ["Object"]
-     * <br/>描述:
-     */
-    private Object emphasis;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.levels.blur">https://echarts.apache.org/zh/option.html#series-sankey.levels.blur</a>
-     * <br/>序号: 6
-     * <br/>默认值: 无
-     * <br/>js类型: ["Object"]
-     * <br/>描述:
-     * <blockquote>
-     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
-     * </blockquote>
-     */
-    private Object blur;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.levels.select">https://echarts.apache.org/zh/option.html#series-sankey.levels.select</a>
-     * <br/>序号: 7
-     * <br/>默认值: 无
-     * <br/>js类型: ["Object"]
-     * <br/>描述:
-     * <blockquote>
-     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
-     * </blockquote>
-     */
-    private Object select;
 }

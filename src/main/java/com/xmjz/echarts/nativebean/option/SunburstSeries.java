@@ -9,21 +9,23 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst">https://echarts.apache.org/zh/option.html#series-sunburst</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sunburst">https://echarts.apache.org/v4/zh/option.html#series-sunburst</a>
  * <br/>序号: 0
  * <br/>默认值: 无
  * <br/>js类型: ["object"]
  * <br/>描述:
  * <p><a href="https://en.wikipedia.org/wiki/Pie_chart#Ring_chart_/_Sunburst_chart_/_Multilevel_pie_chart" target="_blank">旭日图（Sunburst）</a>由多层的环形图组成，在数据结构上，内圈是外圈的父节点。因此，它既能像<a href="#series-pie">饼图</a>一样表现局部和整体的占比，又能像<a href="#series-treemap">矩形树图</a>一样表现层级关系。</p>
  * <p><strong>示例：</strong></p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=sunburst-monochrome&amp;edit=1&amp;reset=1" width="700" height="500" data-ll-timeout="17"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=sunburst-monochrome&amp;edit=1&amp;reset=1" width="700" height="500" data-ll-timeout="21"><iframe />
  * <p>
  * <p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=sunburst-drink&amp;edit=1&amp;reset=1" width="700" height="700" data-ll-timeout="18"></iframe>
+ * <iframe  data-src="https://echarts.apache.org/examples/zh/view.html?c=sunburst-drink&edit=1&reset=1" width="700" height="700"><iframe />
  *
  *
  * <p><strong>数据下钻</strong></p>
  * <p>旭日图默认支持数据下钻，也就是说，当用户点击了某个扇形块之后，将会以该节点作为根结点显示，并且在中间出现一个返回上层节点的圆。如果不希望有数据下钻功能，可以通过将 <a href="#series-treemap.nodeClick">series-sunburst.nodeClick</a> 设置为 <code class="codespan">false</code> 实现。</p>
+ *
+ * </iframe>
  *
  * @author auto
  */
@@ -34,7 +36,7 @@ public class SunburstSeries extends Series implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.type">https://echarts.apache.org/zh/option.html#series-sunburst.type</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sunburst.type">https://echarts.apache.org/v4/zh/option.html#series-sunburst.type</a>
      * <br/>序号: 1
      * <br/>默认值: sunburst
      * <br/>js类型: ["string"]
@@ -42,7 +44,7 @@ public class SunburstSeries extends Series implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.id">https://echarts.apache.org/zh/option.html#series-sunburst.id</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sunburst.id">https://echarts.apache.org/v4/zh/option.html#series-sunburst.id</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -51,7 +53,7 @@ public class SunburstSeries extends Series implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.name">https://echarts.apache.org/zh/option.html#series-sunburst.name</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sunburst.name">https://echarts.apache.org/v4/zh/option.html#series-sunburst.name</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -60,7 +62,7 @@ public class SunburstSeries extends Series implements Serializable {
      */
     private String name;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.zlevel">https://echarts.apache.org/zh/option.html#series-sunburst.zlevel</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sunburst.zlevel">https://echarts.apache.org/v4/zh/option.html#series-sunburst.zlevel</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -71,7 +73,7 @@ public class SunburstSeries extends Series implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.z">https://echarts.apache.org/zh/option.html#series-sunburst.z</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sunburst.z">https://echarts.apache.org/v4/zh/option.html#series-sunburst.z</a>
      * <br/>序号: 5
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -81,7 +83,7 @@ public class SunburstSeries extends Series implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.center">https://echarts.apache.org/zh/option.html#series-sunburst.center</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sunburst.center">https://echarts.apache.org/v4/zh/option.html#series-sunburst.center</a>
      * <br/>序号: 6
      * <br/>默认值: ["50%","50%"]
      * <br/>js类型: ["Array"]
@@ -97,7 +99,7 @@ public class SunburstSeries extends Series implements Serializable {
      */
     private List<?> center;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.radius">https://echarts.apache.org/zh/option.html#series-sunburst.radius</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sunburst.radius">https://echarts.apache.org/v4/zh/option.html#series-sunburst.radius</a>
      * <br/>序号: 7
      * <br/>默认值: [0,"75%"]
      * <br/>js类型: ["number","string","Array"]
@@ -105,17 +107,17 @@ public class SunburstSeries extends Series implements Serializable {
      * <p>旭日图的半径。可以为如下类型：</p>
      * <ul>
      * <li><code class="codespan">number</code>：直接指定外半径值。</li>
-     * <li><code class="codespan">string</code>：例如，<code class="codespan">'20%'</code>，表示外半径为可视区尺寸（容器高宽中较小一项）的 20% 长度。</li>
-     * </ul>
-     * <ul>
-     * <li><code class="codespan">Array.&lt;number|string&gt;</code>：数组的第一项是内半径，第二项是外半径。每一项遵从上述 <code class="codespan">number</code> <code class="codespan">string</code> 的描述。</li>
+     * <li><p><code class="codespan">string</code>：例如，<code class="codespan">'20%'</code>，表示外半径为可视区尺寸（容器高宽中较小一项）的 20% 长度。</p>
+     * </li>
+     * <li><p><code class="codespan">Array.&lt;number|string&gt;</code>：数组的第一项是内半径，第二项是外半径。每一项遵从上述 <code class="codespan">number</code> <code class="codespan">string</code> 的描述。</p>
+     * </li>
      * </ul>
      */
     private Object radius;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.data">https://echarts.apache.org/zh/option.html#series-sunburst.data</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sunburst.data">https://echarts.apache.org/v4/zh/option.html#series-sunburst.data</a>
      * <br/>序号: 8
-     * <br/>默认值: 无
+     * <br/>默认值: blank
      * <br/>js类型: ["Array"]
      * <br/>描述:
      * <p><a href="#series-sunburst.data">series-sunburst.data</a> 的数据格式是树状的，例如：</p>
@@ -152,49 +154,72 @@ public class SunburstSeries extends Series implements Serializable {
      * }]
      * </code></pre>
      */
-    private List<?> data;
+    private List<Data> data;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.labelLayout">https://echarts.apache.org/zh/option.html#series-sunburst.labelLayout</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sunburst.label">https://echarts.apache.org/v4/zh/option.html#series-sunburst.label</a>
      * <br/>序号: 9
-     * <br/>默认值: 无
-     * <br/>js类型: ["Object","Function"]
-     * <br/>描述:
-     */
-    private Object labelLayout;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.label">https://echarts.apache.org/zh/option.html#series-sunburst.label</a>
-     * <br/>序号: 10
      * <br/>默认值: radial
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p><code class="codespan">label</code> 描述了每个扇形块中，文本标签的样式。</p>
      * <p><strong>优先级：<a href="#series-sunburst.data.label">series.data.label</a> &gt; <a href="#series-sunburst.levels.label">series.levels.label</a> &gt; <a href="#series-sunburst.label">series.label</a>。</strong></p>
-     * <p>图形上的文本标签，可用于说明图形的一些数据信息，比如值，名称等。</p>
+     * <p>图形上的文本标签，可用于说明图形的一些数据信息，比如值，名称等，<code class="codespan">label</code>选项在 ECharts 2.x 中放置于<code class="codespan">itemStyle</code>下，在 ECharts 3 中为了让整个配置项结构更扁平合理，<code class="codespan">label</code> 被拿出来跟 <code class="codespan">itemStyle</code> 平级，并且跟 <code class="codespan">itemStyle</code> 一样拥有 <code class="codespan">emphasis</code> 状态。</p>
      */
     private Label label;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.labelLine">https://echarts.apache.org/zh/option.html#series-sunburst.labelLine</a>
-     * <br/>序号: 11
-     * <br/>默认值: 无
-     * <br/>js类型: ["Object"]
-     * <br/>描述:
-     * <p>标签的视觉引导线配置。</p>
-     */
-    private LabelLine labelLine;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.itemStyle">https://echarts.apache.org/zh/option.html#series-sunburst.itemStyle</a>
-     * <br/>序号: 12
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sunburst.itemStyle">https://echarts.apache.org/v4/zh/option.html#series-sunburst.itemStyle</a>
+     * <br/>序号: 10
      * <br/>默认值: 自适应
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>旭日图扇形块的样式。</p>
      * <p>可以在 <a href="#series-sunburst.itemStyle">series.itemStyle</a> 定义所有扇形块的样式，也可以在 <a href="#series-sunburst.levels.itemStyle">series.levels.itemStyle</a> 定义每一层扇形块的样式，还可以在 <a href="#series-sunburst.data.itemStyle">series.data.itemStyle</a> 定义每个扇形块单独的样式，这三者的优先级从低到高。也就是说，如果定义了 <a href="#series-sunburst.data.itemStyle">series.data.itemStyle</a>，将会覆盖 <a href="#series-sunburst.itemStyle">series.itemStyle</a> 和 <a href="#series-sunburst.levels.itemStyle">series.levels.itemStyle</a>。</p>
      * <p><strong>优先级：<a href="#series-sunburst.data.itemStyle">series.data.itemStyle</a> &gt; <a href="#series-sunburst.levels.itemStyle">series.levels.itemStyle</a> &gt; <a href="#series-sunburst.itemStyle">series.itemStyle</a>。</strong></p>
+     * <p>ECharts 中，通常使用 <em>emphasis</em> 表示鼠标移动到图形上后的高亮状态。对于旭日图而言，我们引入了另两种状态：<em>highlight</em> 表示由于高亮了某个扇形块引起的其他相关扇形块的高亮；<em>downplay</em> 表示除了 highlight 扇形块之外的被淡化的扇形块。参见 <a href="#series-sunburst.highlightPolicy">highlightPolicy</a>。</p>
      */
     private ItemStyle itemStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.nodeClick">https://echarts.apache.org/zh/option.html#series-sunburst.nodeClick</a>
-     * <br/>序号: 13
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sunburst.highlightPolicy">https://echarts.apache.org/v4/zh/option.html#series-sunburst.highlightPolicy</a>
+     * <br/>序号: 11
+     * <br/>默认值: descendant
+     * <br/>js类型: ["string"]
+     * <br/>描述:
+     * <p>当鼠标移动到一个扇形块时，可以高亮相关的扇形块。<strong>如果其值为 <code class="codespan">'descendant'</code>，则会高亮该扇形块和后代元素，其他元素将被淡化（<em>downplay</em>，参见 <a href="#series-sunburst.itemStyle">itemStyle</a>）；如果其值为 <code class="codespan">'ancestor'</code>，则会高亮该扇形块和祖先元素；如果其值为 <code class="codespan">'self'</code> 则只高亮自身；<code class="codespan">'none'</code> 则不会淡化其他元素。</strong></p>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/sunburst-highlight-descendant&amp;edit=1&amp;reset=1" width="700" height="350"><iframe />
+     *
+     *
+     * <p>上面的例子 <code class="codespan">highlightPolicy</code> 是默认值 <code class="codespan">&#39;descendant&#39;</code>，我们通过 <code class="codespan">dispatchAction</code> 触发了旭日图中某个数据块的高亮操作（相当于将鼠标移动到下图中的 <code class="codespan">target</code> 扇形块中）。目标扇形块将采用 <code class="codespan">emphasis</code> 的样式（在本例中是为红色），和目标扇形块相关的扇形块（由 <code class="codespan">highlightPolicy</code> 决定哪些扇形块是相关的）采用 <code class="codespan">highlight</code> 的样式（橙色），其他扇形块采用 <code class="codespan">downplay</code> 的样式（灰色）。而如果没有高亮对象，则所有扇形块都采用默认的样式。样式定义是类似这样的：</p>
+     * <pre><code class="lang-js">itemStyle: {
+     *     color: &#39;yellow&#39;,
+     *     borderWidth: 2
+     * },
+     * emphasis: {
+     *     itemStyle: {
+     *         color: &#39;red&#39;
+     *     }
+     * },
+     * highlight: {
+     *     itemStyle: {
+     *         color: &#39;orange&#39;
+     *     }
+     * },
+     * downplay: {
+     *     itemStyle: {
+     *         color: &#39;#ccc&#39;
+     *     }
+     * }
+     * </code></pre>
+     * <p>而如果将 <code class="codespan">highlightPolicy</code> 设为 <code class="codespan">&#39;ancestor&#39;</code>，则会得到这样的效果：</p>
+     * <iframe  data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/sunburst-highlight-ancestor&edit=1&reset=1" width="700" height="350"><iframe />
+     *
+     *
+     *
+     * </iframe>
+     */
+    private String highlightPolicy;
+    /**
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sunburst.nodeClick">https://echarts.apache.org/v4/zh/option.html#series-sunburst.nodeClick</a>
+     * <br/>序号: 12
      * <br/>默认值: rootToNode
      * <br/>js类型: ["boolean","string"]
      * <br/>描述:
@@ -207,8 +232,8 @@ public class SunburstSeries extends Series implements Serializable {
      */
     private Object nodeClick;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.sort">https://echarts.apache.org/zh/option.html#series-sunburst.sort</a>
-     * <br/>序号: 14
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sunburst.sort">https://echarts.apache.org/v4/zh/option.html#series-sunburst.sort</a>
+     * <br/>序号: 13
      * <br/>默认值: desc
      * <br/>js类型: ["string","Function"]
      * <br/>描述:
@@ -220,8 +245,8 @@ public class SunburstSeries extends Series implements Serializable {
      */
     private Object sort;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.renderLabelForZeroData">https://echarts.apache.org/zh/option.html#series-sunburst.renderLabelForZeroData</a>
-     * <br/>序号: 15
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sunburst.renderLabelForZeroData">https://echarts.apache.org/v4/zh/option.html#series-sunburst.renderLabelForZeroData</a>
+     * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -229,49 +254,35 @@ public class SunburstSeries extends Series implements Serializable {
      */
     private Boolean renderLabelForZeroData;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.emphasis">https://echarts.apache.org/zh/option.html#series-sunburst.emphasis</a>
-     * <br/>序号: 16
-     * <br/>默认值: none
-     * <br/>js类型: ["any"]
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sunburst.emphasis">https://echarts.apache.org/v4/zh/option.html#series-sunburst.emphasis</a>
+     * <br/>序号: 15
+     * <br/>默认值: 无
+     * <br/>js类型: ["Object"]
      * <br/>描述:
-     * <p>高亮状态配置。</p>
+     * <p>鼠标悬停后的配置项。</p>
      */
     private Emphasis emphasis;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.blur">https://echarts.apache.org/zh/option.html#series-sunburst.blur</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sunburst.highlight">https://echarts.apache.org/v4/zh/option.html#series-sunburst.highlight</a>
+     * <br/>序号: 16
+     * <br/>默认值: 无
+     * <br/>js类型: ["Object"]
+     * <br/>描述:
+     * <p>鼠标悬停后相关扇形块的配置项。参见 <a href="#series-sunburst.highlightPolicy">highlightPolicy</a>。</p>
+     */
+    private Highlight highlight;
+    /**
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sunburst.downplay">https://echarts.apache.org/v4/zh/option.html#series-sunburst.downplay</a>
      * <br/>序号: 17
      * <br/>默认值: 无
-     * <br/>js类型: ["any"]
+     * <br/>js类型: ["Object"]
      * <br/>描述:
-     * <p>淡出状态配置。开启 <a href="#series-sunburst.emphasis.focus">emphasis.focus</a> 后有效。</p>
+     * <p>鼠标悬停后不相关扇形块的配置项。参见 <a href="#series-sunburst.highlightPolicy">highlightPolicy</a>。</p>
      */
-    private Blur blur;
+    private Downplay downplay;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.select">https://echarts.apache.org/zh/option.html#series-sunburst.select</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sunburst.levels">https://echarts.apache.org/v4/zh/option.html#series-sunburst.levels</a>
      * <br/>序号: 18
-     * <br/>默认值: 无
-     * <br/>js类型: ["any"]
-     * <br/>描述:
-     * <p>选中状态配置。开启 <a href="#series-sunburst.selectedMode">selectedMode</a> 后有效。</p>
-     */
-    private Select select;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.selectedMode">https://echarts.apache.org/zh/option.html#series-sunburst.selectedMode</a>
-     * <br/>序号: 19
-     * <br/>默认值: 无
-     * <br/>js类型: ["boolean","string"]
-     * <br/>描述:
-     * <blockquote>
-     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
-     * </blockquote>
-     *
-     *
-     * <p>选中模式的配置，表示是否支持多个选中，默认关闭，支持布尔值和字符串，字符串取值可选<code class="codespan">'single'</code>，<code class="codespan">'multiple'</code>，分别表示单选还是多选。</p>
-     */
-    private Object selectedMode;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.levels">https://echarts.apache.org/zh/option.html#series-sunburst.levels</a>
-     * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
@@ -302,8 +313,8 @@ public class SunburstSeries extends Series implements Serializable {
      */
     private List<Levels> levels;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.animation">https://echarts.apache.org/zh/option.html#series-sunburst.animation</a>
-     * <br/>序号: 21
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sunburst.animation">https://echarts.apache.org/v4/zh/option.html#series-sunburst.animation</a>
+     * <br/>序号: 19
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -311,8 +322,8 @@ public class SunburstSeries extends Series implements Serializable {
      */
     private Boolean animation;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.animationThreshold">https://echarts.apache.org/zh/option.html#series-sunburst.animationThreshold</a>
-     * <br/>序号: 22
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sunburst.animationThreshold">https://echarts.apache.org/v4/zh/option.html#series-sunburst.animationThreshold</a>
+     * <br/>序号: 20
      * <br/>默认值: 2000
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -320,8 +331,8 @@ public class SunburstSeries extends Series implements Serializable {
      */
     private Integer animationThreshold;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.animationDuration">https://echarts.apache.org/zh/option.html#series-sunburst.animationDuration</a>
-     * <br/>序号: 23
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sunburst.animationDuration">https://echarts.apache.org/v4/zh/option.html#series-sunburst.animationDuration</a>
+     * <br/>序号: 21
      * <br/>默认值: 1000
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -334,8 +345,8 @@ public class SunburstSeries extends Series implements Serializable {
      */
     private Object animationDuration;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.animationEasing">https://echarts.apache.org/zh/option.html#series-sunburst.animationEasing</a>
-     * <br/>序号: 24
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sunburst.animationEasing">https://echarts.apache.org/v4/zh/option.html#series-sunburst.animationEasing</a>
+     * <br/>序号: 22
      * <br/>默认值: cubicOut
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -343,8 +354,8 @@ public class SunburstSeries extends Series implements Serializable {
      */
     private String animationEasing;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.animationDelay">https://echarts.apache.org/zh/option.html#series-sunburst.animationDelay</a>
-     * <br/>序号: 25
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sunburst.animationDelay">https://echarts.apache.org/v4/zh/option.html#series-sunburst.animationDelay</a>
+     * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -359,8 +370,8 @@ public class SunburstSeries extends Series implements Serializable {
      */
     private Object animationDelay;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.animationDurationUpdate">https://echarts.apache.org/zh/option.html#series-sunburst.animationDurationUpdate</a>
-     * <br/>序号: 26
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sunburst.animationDurationUpdate">https://echarts.apache.org/v4/zh/option.html#series-sunburst.animationDurationUpdate</a>
+     * <br/>序号: 24
      * <br/>默认值: 500
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
@@ -374,17 +385,17 @@ public class SunburstSeries extends Series implements Serializable {
      */
     private Object animationDurationUpdate;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.animationEasingUpdate">https://echarts.apache.org/zh/option.html#series-sunburst.animationEasingUpdate</a>
-     * <br/>序号: 27
-     * <br/>默认值: cubicInOut
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sunburst.animationEasingUpdate">https://echarts.apache.org/v4/zh/option.html#series-sunburst.animationEasingUpdate</a>
+     * <br/>序号: 25
+     * <br/>默认值: cubicOut
      * <br/>js类型: ["string"]
      * <br/>描述:
      * <p>数据更新动画的缓动效果。</p>
      */
     private String animationEasingUpdate;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.animationDelayUpdate">https://echarts.apache.org/zh/option.html#series-sunburst.animationDelayUpdate</a>
-     * <br/>序号: 28
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-sunburst.animationDelayUpdate">https://echarts.apache.org/v4/zh/option.html#series-sunburst.animationDelayUpdate</a>
+     * <br/>序号: 26
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
      * <br/>描述:

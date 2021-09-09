@@ -1,6 +1,7 @@
 package com.xmjz.echarts.nativebean.option;
 
 import com.xmjz.echarts.nativebean.option.singleAxis.AxisPointer;
+import com.xmjz.echarts.nativebean.option.singleAxis.Tooltip;
 import com.xmjz.echarts.nativebean.option.singleAxis.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -10,13 +11,17 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis">https://echarts.apache.org/zh/option.html#singleAxis</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis">https://echarts.apache.org/v4/zh/option.html#singleAxis</a>
  * <br/>序号: 19
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
  * <p>单轴。可以被应用到散点图中展现一维数据，如下示例</p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-single-axis&amp;edit=1&amp;reset=1" width="700" height="500"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-single-axis&amp;edit=1&amp;reset=1" width="700" height="500" data-ll-timeout="19"><iframe />
+ *
+ *
+ *
+ * </iframe>
  *
  * @author auto
  */
@@ -27,7 +32,7 @@ public class SingleAxis implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.id">https://echarts.apache.org/zh/option.html#singleAxis.id</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.id">https://echarts.apache.org/v4/zh/option.html#singleAxis.id</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -36,7 +41,7 @@ public class SingleAxis implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.zlevel">https://echarts.apache.org/zh/option.html#singleAxis.zlevel</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.zlevel">https://echarts.apache.org/v4/zh/option.html#singleAxis.zlevel</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -47,7 +52,7 @@ public class SingleAxis implements Serializable {
      */
     private Integer zlevel;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.z">https://echarts.apache.org/zh/option.html#singleAxis.z</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.z">https://echarts.apache.org/v4/zh/option.html#singleAxis.z</a>
      * <br/>序号: 3
      * <br/>默认值: 2
      * <br/>js类型: ["number"]
@@ -57,7 +62,7 @@ public class SingleAxis implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.left">https://echarts.apache.org/zh/option.html#singleAxis.left</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.left">https://echarts.apache.org/v4/zh/option.html#singleAxis.left</a>
      * <br/>序号: 4
      * <br/>默认值: 5%
      * <br/>js类型: ["string","number"]
@@ -68,7 +73,7 @@ public class SingleAxis implements Serializable {
      */
     private Object left;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.top">https://echarts.apache.org/zh/option.html#singleAxis.top</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.top">https://echarts.apache.org/v4/zh/option.html#singleAxis.top</a>
      * <br/>序号: 5
      * <br/>默认值: 5%
      * <br/>js类型: ["string","number"]
@@ -79,7 +84,7 @@ public class SingleAxis implements Serializable {
      */
     private Object top;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.right">https://echarts.apache.org/zh/option.html#singleAxis.right</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.right">https://echarts.apache.org/v4/zh/option.html#singleAxis.right</a>
      * <br/>序号: 6
      * <br/>默认值: 5%
      * <br/>js类型: ["string","number"]
@@ -89,7 +94,7 @@ public class SingleAxis implements Serializable {
      */
     private Object right;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.bottom">https://echarts.apache.org/zh/option.html#singleAxis.bottom</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.bottom">https://echarts.apache.org/v4/zh/option.html#singleAxis.bottom</a>
      * <br/>序号: 7
      * <br/>默认值: 5%
      * <br/>js类型: ["string","number"]
@@ -99,7 +104,7 @@ public class SingleAxis implements Serializable {
      */
     private Object bottom;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.width">https://echarts.apache.org/zh/option.html#singleAxis.width</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.width">https://echarts.apache.org/v4/zh/option.html#singleAxis.width</a>
      * <br/>序号: 8
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -108,7 +113,7 @@ public class SingleAxis implements Serializable {
      */
     private Object width;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.height">https://echarts.apache.org/zh/option.html#singleAxis.height</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.height">https://echarts.apache.org/v4/zh/option.html#singleAxis.height</a>
      * <br/>序号: 9
      * <br/>默认值: auto
      * <br/>js类型: ["string","number"]
@@ -117,7 +122,7 @@ public class SingleAxis implements Serializable {
      */
     private Object height;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.orient">https://echarts.apache.org/zh/option.html#singleAxis.orient</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.orient">https://echarts.apache.org/v4/zh/option.html#singleAxis.orient</a>
      * <br/>序号: 10
      * <br/>默认值: horizontal
      * <br/>js类型: ["string"]
@@ -126,7 +131,7 @@ public class SingleAxis implements Serializable {
      */
     private String orient;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.type">https://echarts.apache.org/zh/option.html#singleAxis.type</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.type">https://echarts.apache.org/v4/zh/option.html#singleAxis.type</a>
      * <br/>序号: 11
      * <br/>默认值: value
      * <br/>js类型: ["string"]
@@ -150,7 +155,7 @@ public class SingleAxis implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.name">https://echarts.apache.org/zh/option.html#singleAxis.name</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.name">https://echarts.apache.org/v4/zh/option.html#singleAxis.name</a>
      * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -159,7 +164,7 @@ public class SingleAxis implements Serializable {
      */
     private String name;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.nameLocation">https://echarts.apache.org/zh/option.html#singleAxis.nameLocation</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.nameLocation">https://echarts.apache.org/v4/zh/option.html#singleAxis.nameLocation</a>
      * <br/>序号: 13
      * <br/>默认值: end
      * <br/>js类型: ["string"]
@@ -174,7 +179,7 @@ public class SingleAxis implements Serializable {
      */
     private String nameLocation;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.nameTextStyle">https://echarts.apache.org/zh/option.html#singleAxis.nameTextStyle</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.nameTextStyle">https://echarts.apache.org/v4/zh/option.html#singleAxis.nameTextStyle</a>
      * <br/>序号: 14
      * <br/>默认值: normal
      * <br/>js类型: ["Object"]
@@ -183,7 +188,7 @@ public class SingleAxis implements Serializable {
      */
     private NameTextStyle nameTextStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.nameGap">https://echarts.apache.org/zh/option.html#singleAxis.nameGap</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.nameGap">https://echarts.apache.org/v4/zh/option.html#singleAxis.nameGap</a>
      * <br/>序号: 15
      * <br/>默认值: 15
      * <br/>js类型: ["number"]
@@ -192,7 +197,7 @@ public class SingleAxis implements Serializable {
      */
     private Integer nameGap;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.nameRotate">https://echarts.apache.org/zh/option.html#singleAxis.nameRotate</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.nameRotate">https://echarts.apache.org/v4/zh/option.html#singleAxis.nameRotate</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -201,7 +206,7 @@ public class SingleAxis implements Serializable {
      */
     private Integer nameRotate;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.inverse">https://echarts.apache.org/zh/option.html#singleAxis.inverse</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.inverse">https://echarts.apache.org/v4/zh/option.html#singleAxis.inverse</a>
      * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -210,7 +215,7 @@ public class SingleAxis implements Serializable {
      */
     private Boolean inverse;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.boundaryGap">https://echarts.apache.org/zh/option.html#singleAxis.boundaryGap</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.boundaryGap">https://echarts.apache.org/v4/zh/option.html#singleAxis.boundaryGap</a>
      * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["boolean","Array"]
@@ -224,7 +229,7 @@ public class SingleAxis implements Serializable {
      */
     private Object boundaryGap;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.min">https://echarts.apache.org/zh/option.html#singleAxis.min</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.min">https://echarts.apache.org/v4/zh/option.html#singleAxis.min</a>
      * <br/>序号: 19
      * <br/>默认值: 无
      * <br/>js类型: ["number","string","Function"]
@@ -242,7 +247,7 @@ public class SingleAxis implements Serializable {
      */
     private Object min;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.max">https://echarts.apache.org/zh/option.html#singleAxis.max</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.max">https://echarts.apache.org/v4/zh/option.html#singleAxis.max</a>
      * <br/>序号: 20
      * <br/>默认值: 无
      * <br/>js类型: ["number","string","Function"]
@@ -260,7 +265,7 @@ public class SingleAxis implements Serializable {
      */
     private Object max;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.scale">https://echarts.apache.org/zh/option.html#singleAxis.scale</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.scale">https://echarts.apache.org/v4/zh/option.html#singleAxis.scale</a>
      * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -271,7 +276,7 @@ public class SingleAxis implements Serializable {
      */
     private Boolean scale;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.splitNumber">https://echarts.apache.org/zh/option.html#singleAxis.splitNumber</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.splitNumber">https://echarts.apache.org/v4/zh/option.html#singleAxis.splitNumber</a>
      * <br/>序号: 22
      * <br/>默认值: 5
      * <br/>js类型: ["number"]
@@ -281,7 +286,7 @@ public class SingleAxis implements Serializable {
      */
     private Integer splitNumber;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.minInterval">https://echarts.apache.org/zh/option.html#singleAxis.minInterval</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.minInterval">https://echarts.apache.org/v4/zh/option.html#singleAxis.minInterval</a>
      * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -296,7 +301,7 @@ public class SingleAxis implements Serializable {
      */
     private Integer minInterval;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.maxInterval">https://echarts.apache.org/zh/option.html#singleAxis.maxInterval</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.maxInterval">https://echarts.apache.org/v4/zh/option.html#singleAxis.maxInterval</a>
      * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -311,7 +316,7 @@ public class SingleAxis implements Serializable {
      */
     private Integer maxInterval;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.interval">https://echarts.apache.org/zh/option.html#singleAxis.interval</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.interval">https://echarts.apache.org/v4/zh/option.html#singleAxis.interval</a>
      * <br/>序号: 25
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -322,7 +327,7 @@ public class SingleAxis implements Serializable {
      */
     private Integer interval;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.logBase">https://echarts.apache.org/zh/option.html#singleAxis.logBase</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.logBase">https://echarts.apache.org/v4/zh/option.html#singleAxis.logBase</a>
      * <br/>序号: 26
      * <br/>默认值: 10
      * <br/>js类型: ["number"]
@@ -331,7 +336,7 @@ public class SingleAxis implements Serializable {
      */
     private Integer logBase;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.silent">https://echarts.apache.org/zh/option.html#singleAxis.silent</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.silent">https://echarts.apache.org/v4/zh/option.html#singleAxis.silent</a>
      * <br/>序号: 27
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -340,7 +345,7 @@ public class SingleAxis implements Serializable {
      */
     private Boolean silent;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.triggerEvent">https://echarts.apache.org/zh/option.html#singleAxis.triggerEvent</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.triggerEvent">https://echarts.apache.org/v4/zh/option.html#singleAxis.triggerEvent</a>
      * <br/>序号: 28
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -360,7 +365,7 @@ public class SingleAxis implements Serializable {
      */
     private Boolean triggerEvent;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLine">https://echarts.apache.org/zh/option.html#singleAxis.axisLine</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.axisLine">https://echarts.apache.org/v4/zh/option.html#singleAxis.axisLine</a>
      * <br/>序号: 29
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -369,7 +374,7 @@ public class SingleAxis implements Serializable {
      */
     private AxisLine axisLine;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisTick">https://echarts.apache.org/zh/option.html#singleAxis.axisTick</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.axisTick">https://echarts.apache.org/v4/zh/option.html#singleAxis.axisTick</a>
      * <br/>序号: 30
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -378,7 +383,7 @@ public class SingleAxis implements Serializable {
      */
     private AxisTick axisTick;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.minorTick">https://echarts.apache.org/zh/option.html#singleAxis.minorTick</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.minorTick">https://echarts.apache.org/v4/zh/option.html#singleAxis.minorTick</a>
      * <br/>序号: 31
      * <br/>默认值: 5
      * <br/>js类型: ["Object"]
@@ -390,15 +395,17 @@ public class SingleAxis implements Serializable {
      * <p>注意：次刻度线无法在类目轴（<a href="#singleAxis.type">type</a>: <code class="codespan">'category'</code>）中使用。</p>
      * <p>示例：</p>
      * <p>1) 函数绘图中使用次刻度线</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-function&amp;edit=1&amp;reset=1" width="600" height="350"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-function&amp;edit=1&amp;reset=1" width="600" height="350"><iframe />
      *
      *
      * <p>2) 在对数轴中使用次刻度线</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-log&amp;edit=1&amp;reset=1" width="600" height="350"></iframe>
+     * <iframe  data-src="https://echarts.apache.org/examples/zh/view.html?c=line-log&edit=1&reset=1" width="600" height="350"><iframe />
+     *
+     * </iframe>
      */
     private MinorTick minorTick;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisLabel">https://echarts.apache.org/zh/option.html#singleAxis.axisLabel</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.axisLabel">https://echarts.apache.org/v4/zh/option.html#singleAxis.axisLabel</a>
      * <br/>序号: 32
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -407,7 +414,7 @@ public class SingleAxis implements Serializable {
      */
     private AxisLabel axisLabel;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.splitLine">https://echarts.apache.org/zh/option.html#singleAxis.splitLine</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.splitLine">https://echarts.apache.org/v4/zh/option.html#singleAxis.splitLine</a>
      * <br/>序号: 33
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
@@ -416,7 +423,7 @@ public class SingleAxis implements Serializable {
      */
     private SplitLine splitLine;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.minorSplitLine">https://echarts.apache.org/zh/option.html#singleAxis.minorSplitLine</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.minorSplitLine">https://echarts.apache.org/v4/zh/option.html#singleAxis.minorSplitLine</a>
      * <br/>序号: 34
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -428,7 +435,7 @@ public class SingleAxis implements Serializable {
      */
     private MinorSplitLine minorSplitLine;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.splitArea">https://echarts.apache.org/zh/option.html#singleAxis.splitArea</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.splitArea">https://echarts.apache.org/v4/zh/option.html#singleAxis.splitArea</a>
      * <br/>序号: 35
      * <br/>默认值: auto
      * <br/>js类型: ["Object"]
@@ -437,7 +444,7 @@ public class SingleAxis implements Serializable {
      */
     private SplitArea splitArea;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.data">https://echarts.apache.org/zh/option.html#singleAxis.data</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.data">https://echarts.apache.org/v4/zh/option.html#singleAxis.data</a>
      * <br/>序号: 36
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
@@ -459,9 +466,9 @@ public class SingleAxis implements Serializable {
      * }, <span class="hljs-string">'周二'</span>, <span class="hljs-string">'周三'</span>, <span class="hljs-string">'周四'</span>, <span class="hljs-string">'周五'</span>, <span class="hljs-string">'周六'</span>, <span class="hljs-string">'周日'</span>]
      * </code></pre>
      */
-    private List<?> data;
+    private List<Data> data;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.axisPointer">https://echarts.apache.org/zh/option.html#singleAxis.axisPointer</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.axisPointer">https://echarts.apache.org/v4/zh/option.html#singleAxis.axisPointer</a>
      * <br/>序号: 37
      * <br/>默认值: line
      * <br/>js类型: ["Object"]
@@ -470,9 +477,9 @@ public class SingleAxis implements Serializable {
      */
     private AxisPointer axisPointer;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#singleAxis.tooltip">https://echarts.apache.org/zh/option.html#singleAxis.tooltip</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#singleAxis.tooltip">https://echarts.apache.org/v4/zh/option.html#singleAxis.tooltip</a>
      * <br/>序号: 38
-     * <br/>默认值: 无
+     * <br/>默认值: true
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>本坐标系特定的 tooltip 设定。</p>
@@ -491,5 +498,5 @@ public class SingleAxis implements Serializable {
      * </ul>
      * <hr>
      */
-    private Object tooltip;
+    private Tooltip tooltip;
 }

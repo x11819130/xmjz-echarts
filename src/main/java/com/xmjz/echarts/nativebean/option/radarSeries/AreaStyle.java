@@ -7,8 +7,8 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.areaStyle">https://echarts.apache.org/zh/option.html#series-radar.areaStyle</a>
- * <br/>序号: 14
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.areaStyle">https://echarts.apache.org/v4/zh/option.html#series-radar.areaStyle</a>
+ * <br/>序号: 13
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -23,7 +23,7 @@ public class AreaStyle implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.areaStyle.color">https://echarts.apache.org/zh/option.html#series-radar.areaStyle.color</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.areaStyle.color">https://echarts.apache.org/v4/zh/option.html#series-radar.areaStyle.color</a>
      * <br/>序号: 1
      * <br/>默认值: #000
      * <br/>js类型: ["Color"]
@@ -68,7 +68,7 @@ public class AreaStyle implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.areaStyle.shadowBlur">https://echarts.apache.org/zh/option.html#series-radar.areaStyle.shadowBlur</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.areaStyle.shadowBlur">https://echarts.apache.org/v4/zh/option.html#series-radar.areaStyle.shadowBlur</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -83,7 +83,7 @@ public class AreaStyle implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.areaStyle.shadowColor">https://echarts.apache.org/zh/option.html#series-radar.areaStyle.shadowColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.areaStyle.shadowColor">https://echarts.apache.org/v4/zh/option.html#series-radar.areaStyle.shadowColor</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -92,7 +92,7 @@ public class AreaStyle implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.areaStyle.shadowOffsetX">https://echarts.apache.org/zh/option.html#series-radar.areaStyle.shadowOffsetX</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.areaStyle.shadowOffsetX">https://echarts.apache.org/v4/zh/option.html#series-radar.areaStyle.shadowOffsetX</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -101,7 +101,7 @@ public class AreaStyle implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.areaStyle.shadowOffsetY">https://echarts.apache.org/zh/option.html#series-radar.areaStyle.shadowOffsetY</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.areaStyle.shadowOffsetY">https://echarts.apache.org/v4/zh/option.html#series-radar.areaStyle.shadowOffsetY</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -110,7 +110,7 @@ public class AreaStyle implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-radar.areaStyle.opacity">https://echarts.apache.org/zh/option.html#series-radar.areaStyle.opacity</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-radar.areaStyle.opacity">https://echarts.apache.org/v4/zh/option.html#series-radar.areaStyle.opacity</a>
      * <br/>序号: 6
      * <br/>默认值: 1
      * <br/>js类型: ["number"]

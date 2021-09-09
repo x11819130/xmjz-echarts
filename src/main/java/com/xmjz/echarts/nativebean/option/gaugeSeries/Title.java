@@ -8,8 +8,8 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title">https://echarts.apache.org/zh/option.html#series-gauge.title</a>
- * <br/>序号: 25
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-gauge.title">https://echarts.apache.org/v4/zh/option.html#series-gauge.title</a>
+ * <br/>序号: 20
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -24,7 +24,7 @@ public class Title implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.show">https://echarts.apache.org/zh/option.html#series-gauge.title.show</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-gauge.title.show">https://echarts.apache.org/v4/zh/option.html#series-gauge.title.show</a>
      * <br/>序号: 1
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -33,25 +33,25 @@ public class Title implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.offsetCenter">https://echarts.apache.org/zh/option.html#series-gauge.title.offsetCenter</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-gauge.title.offsetCenter">https://echarts.apache.org/v4/zh/option.html#series-gauge.title.offsetCenter</a>
      * <br/>序号: 2
-     * <br/>默认值: [0,"20%"]
+     * <br/>默认值: [0,"-40%"]
      * <br/>js类型: ["Array"]
      * <br/>描述:
      * <p>相对于仪表盘中心的偏移位置，数组第一项是水平方向的偏移，第二项是垂直方向的偏移。可以是绝对的数值，也可以是相对于仪表盘半径的百分比。</p>
      */
     private List<?> offsetCenter;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.color">https://echarts.apache.org/zh/option.html#series-gauge.title.color</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-gauge.title.color">https://echarts.apache.org/v4/zh/option.html#series-gauge.title.color</a>
      * <br/>序号: 3
-     * <br/>默认值: #464646
+     * <br/>默认值: #333
      * <br/>js类型: ["Color"]
      * <br/>描述:
      * <p>文字的颜色。</p>
      */
     private String color;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.fontStyle">https://echarts.apache.org/zh/option.html#series-gauge.title.fontStyle</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-gauge.title.fontStyle">https://echarts.apache.org/v4/zh/option.html#series-gauge.title.fontStyle</a>
      * <br/>序号: 4
      * <br/>默认值: normal
      * <br/>js类型: ["string"]
@@ -66,7 +66,7 @@ public class Title implements Serializable {
      */
     private String fontStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.fontWeight">https://echarts.apache.org/zh/option.html#series-gauge.title.fontWeight</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-gauge.title.fontWeight">https://echarts.apache.org/v4/zh/option.html#series-gauge.title.fontWeight</a>
      * <br/>序号: 5
      * <br/>默认值: normal
      * <br/>js类型: ["string","number"]
@@ -83,7 +83,7 @@ public class Title implements Serializable {
      */
     private Object fontWeight;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.fontFamily">https://echarts.apache.org/zh/option.html#series-gauge.title.fontFamily</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-gauge.title.fontFamily">https://echarts.apache.org/v4/zh/option.html#series-gauge.title.fontFamily</a>
      * <br/>序号: 6
      * <br/>默认值: sans-serif
      * <br/>js类型: ["string"]
@@ -93,16 +93,16 @@ public class Title implements Serializable {
      */
     private String fontFamily;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.fontSize">https://echarts.apache.org/zh/option.html#series-gauge.title.fontSize</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-gauge.title.fontSize">https://echarts.apache.org/v4/zh/option.html#series-gauge.title.fontSize</a>
      * <br/>序号: 7
-     * <br/>默认值: 16
+     * <br/>默认值: 15
      * <br/>js类型: ["number"]
      * <br/>描述:
      * <p>文字的字体大小。</p>
      */
     private Integer fontSize;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.lineHeight">https://echarts.apache.org/zh/option.html#series-gauge.title.lineHeight</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-gauge.title.lineHeight">https://echarts.apache.org/v4/zh/option.html#series-gauge.title.lineHeight</a>
      * <br/>序号: 8
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -121,7 +121,7 @@ public class Title implements Serializable {
      */
     private Integer lineHeight;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.backgroundColor">https://echarts.apache.org/zh/option.html#series-gauge.title.backgroundColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-gauge.title.backgroundColor">https://echarts.apache.org/v4/zh/option.html#series-gauge.title.backgroundColor</a>
      * <br/>序号: 9
      * <br/>默认值: transparent
      * <br/>js类型: ["string","Object"]
@@ -141,16 +141,16 @@ public class Title implements Serializable {
      */
     private Object backgroundColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.borderColor">https://echarts.apache.org/zh/option.html#series-gauge.title.borderColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-gauge.title.borderColor">https://echarts.apache.org/v4/zh/option.html#series-gauge.title.borderColor</a>
      * <br/>序号: 10
-     * <br/>默认值: 无
+     * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
      * <br/>描述:
      * <p>文字块边框颜色。</p>
      */
     private String borderColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.borderWidth">https://echarts.apache.org/zh/option.html#series-gauge.title.borderWidth</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-gauge.title.borderWidth">https://echarts.apache.org/v4/zh/option.html#series-gauge.title.borderWidth</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -159,7 +159,7 @@ public class Title implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.borderRadius">https://echarts.apache.org/zh/option.html#series-gauge.title.borderRadius</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-gauge.title.borderRadius">https://echarts.apache.org/v4/zh/option.html#series-gauge.title.borderRadius</a>
      * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -168,7 +168,7 @@ public class Title implements Serializable {
      */
     private Object borderRadius;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.padding">https://echarts.apache.org/zh/option.html#series-gauge.title.padding</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-gauge.title.padding">https://echarts.apache.org/v4/zh/option.html#series-gauge.title.padding</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
@@ -183,7 +183,7 @@ public class Title implements Serializable {
      */
     private Object padding;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.shadowColor">https://echarts.apache.org/zh/option.html#series-gauge.title.shadowColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-gauge.title.shadowColor">https://echarts.apache.org/v4/zh/option.html#series-gauge.title.shadowColor</a>
      * <br/>序号: 14
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -192,7 +192,7 @@ public class Title implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.shadowBlur">https://echarts.apache.org/zh/option.html#series-gauge.title.shadowBlur</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-gauge.title.shadowBlur">https://echarts.apache.org/v4/zh/option.html#series-gauge.title.shadowBlur</a>
      * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -201,7 +201,7 @@ public class Title implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.shadowOffsetX">https://echarts.apache.org/zh/option.html#series-gauge.title.shadowOffsetX</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-gauge.title.shadowOffsetX">https://echarts.apache.org/v4/zh/option.html#series-gauge.title.shadowOffsetX</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -210,7 +210,7 @@ public class Title implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.shadowOffsetY">https://echarts.apache.org/zh/option.html#series-gauge.title.shadowOffsetY</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-gauge.title.shadowOffsetY">https://echarts.apache.org/v4/zh/option.html#series-gauge.title.shadowOffsetY</a>
      * <br/>序号: 17
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -219,34 +219,39 @@ public class Title implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.width">https://echarts.apache.org/zh/option.html#series-gauge.title.width</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-gauge.title.width">https://echarts.apache.org/v4/zh/option.html#series-gauge.title.width</a>
      * <br/>序号: 18
      * <br/>默认值: 无
-     * <br/>js类型: ["number"]
+     * <br/>js类型: ["number","string"]
      * <br/>描述:
-     * <p>文本显示宽度。</p>
+     * <p>文字块的宽度。一般不用指定，不指定则自动是文字的宽度。在想做表格项或者使用图片（参见 <code class="codespan">backgroundColor</code>）时，可能会使用它。</p>
+     * <p>注意，文字块的 <code class="codespan">width</code> 和 <code class="codespan">height</code> 指定的是内容高宽，不包含 <code class="codespan">padding</code>。</p>
+     * <p><code class="codespan">width</code> 也可以是百分比字符串，如 <code class="codespan">'100%'</code>。表示的是所在文本块的 <code class="codespan">contentWidth</code>（即不包含文本块的 <code class="codespan">padding</code>）的百分之多少。之所以以 <code class="codespan">contentWidth</code> 做基数，因为每个文本片段只能基于 <code class="codespan">content box</code> 布局。如果以 <code class="codespan">outerWidth</code> 做基数，则百分比的计算在实用中不具有意义，可能会超出。</p>
+     * <p>注意，如果不定义 <code class="codespan">rich</code> 属性，则不能指定 <code class="codespan">width</code> 和 <code class="codespan">height</code>。</p>
      */
-    private Integer width;
+    private Object width;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.height">https://echarts.apache.org/zh/option.html#series-gauge.title.height</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-gauge.title.height">https://echarts.apache.org/v4/zh/option.html#series-gauge.title.height</a>
      * <br/>序号: 19
      * <br/>默认值: 无
-     * <br/>js类型: ["number"]
+     * <br/>js类型: ["number","string"]
      * <br/>描述:
-     * <p>文本显示高度。</p>
+     * <p>文字块的高度。一般不用指定，不指定则自动是文字的高度。在使用图片（参见 <code class="codespan">backgroundColor</code>）时，可能会使用它。</p>
+     * <p>注意，文字块的 <code class="codespan">width</code> 和 <code class="codespan">height</code> 指定的是内容高宽，不包含 <code class="codespan">padding</code>。</p>
+     * <p>注意，如果不定义 <code class="codespan">rich</code> 属性，则不能指定 <code class="codespan">width</code> 和 <code class="codespan">height</code>。</p>
      */
-    private Integer height;
+    private Object height;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.textBorderColor">https://echarts.apache.org/zh/option.html#series-gauge.title.textBorderColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-gauge.title.textBorderColor">https://echarts.apache.org/v4/zh/option.html#series-gauge.title.textBorderColor</a>
      * <br/>序号: 20
-     * <br/>默认值: 无
+     * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
      * <br/>描述:
      * <p>文字本身的描边颜色。</p>
      */
     private String textBorderColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.textBorderWidth">https://echarts.apache.org/zh/option.html#series-gauge.title.textBorderWidth</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-gauge.title.textBorderWidth">https://echarts.apache.org/v4/zh/option.html#series-gauge.title.textBorderWidth</a>
      * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -255,7 +260,7 @@ public class Title implements Serializable {
      */
     private Integer textBorderWidth;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.textShadowColor">https://echarts.apache.org/zh/option.html#series-gauge.title.textShadowColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-gauge.title.textShadowColor">https://echarts.apache.org/v4/zh/option.html#series-gauge.title.textShadowColor</a>
      * <br/>序号: 22
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -264,7 +269,7 @@ public class Title implements Serializable {
      */
     private String textShadowColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.textShadowBlur">https://echarts.apache.org/zh/option.html#series-gauge.title.textShadowBlur</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-gauge.title.textShadowBlur">https://echarts.apache.org/v4/zh/option.html#series-gauge.title.textShadowBlur</a>
      * <br/>序号: 23
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -273,7 +278,7 @@ public class Title implements Serializable {
      */
     private Integer textShadowBlur;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.textShadowOffsetX">https://echarts.apache.org/zh/option.html#series-gauge.title.textShadowOffsetX</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-gauge.title.textShadowOffsetX">https://echarts.apache.org/v4/zh/option.html#series-gauge.title.textShadowOffsetX</a>
      * <br/>序号: 24
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -282,7 +287,7 @@ public class Title implements Serializable {
      */
     private Integer textShadowOffsetX;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.textShadowOffsetY">https://echarts.apache.org/zh/option.html#series-gauge.title.textShadowOffsetY</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-gauge.title.textShadowOffsetY">https://echarts.apache.org/v4/zh/option.html#series-gauge.title.textShadowOffsetY</a>
      * <br/>序号: 25
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -291,43 +296,8 @@ public class Title implements Serializable {
      */
     private Integer textShadowOffsetY;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.overflow">https://echarts.apache.org/zh/option.html#series-gauge.title.overflow</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-gauge.title.rich">https://echarts.apache.org/v4/zh/option.html#series-gauge.title.rich</a>
      * <br/>序号: 26
-     * <br/>默认值: none
-     * <br/>js类型: ["string"]
-     * <br/>描述:
-     * <p>文字超出宽度是否截断或者换行。配置<code class="codespan">width</code>时有效</p>
-     * <ul>
-     * <li><code class="codespan">'truncate'</code> 截断，并在末尾显示<code class="codespan">ellipsis</code>配置的文本，默认为<code class="codespan">...</code></li>
-     * <li><code class="codespan">'break'</code> 换行</li>
-     * <li><code class="codespan">'breakAll'</code> 换行，跟<code class="codespan">'break'</code>不同的是，在英语等拉丁文中，<code class="codespan">'breakAll'</code>还会强制单词内换行</li>
-     * </ul>
-     */
-    private String overflow;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.ellipsis">https://echarts.apache.org/zh/option.html#series-gauge.title.ellipsis</a>
-     * <br/>序号: 27
-     * <br/>默认值: ...
-     * <br/>js类型: ["string"]
-     * <br/>描述:
-     * <p>在<code class="codespan">overflow</code>配置为<code class="codespan">'truncate'</code>的时候，可以通过该属性配置末尾显示的文本。</p>
-     */
-    private String ellipsis;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.lineOverflow">https://echarts.apache.org/zh/option.html#series-gauge.title.lineOverflow</a>
-     * <br/>序号: 28
-     * <br/>默认值: none
-     * <br/>js类型: ["string"]
-     * <br/>描述:
-     * <p>文本超出高度部分是否截断，配置<code class="codespan">height</code>时有效。</p>
-     * <ul>
-     * <li><code class="codespan">'truncate'</code> 在文本行数超出高度部分截断。</li>
-     * </ul>
-     */
-    private String lineOverflow;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.rich">https://echarts.apache.org/zh/option.html#series-gauge.title.rich</a>
-     * <br/>序号: 29
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -367,16 +337,4 @@ public class Title implements Serializable {
      * <p>详情参见教程：<a href="tutorial.html#%E5%AF%8C%E6%96%87%E6%9C%AC%E6%A0%87%E7%AD%BE" target="_blank">富文本标签</a></p>
      */
     private Object rich;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-gauge.title.valueAnimation">https://echarts.apache.org/zh/option.html#series-gauge.title.valueAnimation</a>
-     * <br/>序号: 30
-     * <br/>默认值: true
-     * <br/>js类型: ["boolean"]
-     * <br/>描述:
-     * <blockquote>
-     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
-     * </blockquote>
-     * <p>是否开启标签的数字动画。</p>
-     */
-    private Boolean valueAnimation;
 }

@@ -7,7 +7,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageTextStyle">https://echarts.apache.org/zh/option.html#legend.pageTextStyle</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle">https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle</a>
  * <br/>序号: 44
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
@@ -24,7 +24,7 @@ public class PageTextStyle implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageTextStyle.color">https://echarts.apache.org/zh/option.html#legend.pageTextStyle.color</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle.color">https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle.color</a>
      * <br/>序号: 1
      * <br/>默认值: #333
      * <br/>js类型: ["Color"]
@@ -33,7 +33,7 @@ public class PageTextStyle implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageTextStyle.fontStyle">https://echarts.apache.org/zh/option.html#legend.pageTextStyle.fontStyle</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle.fontStyle">https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle.fontStyle</a>
      * <br/>序号: 2
      * <br/>默认值: normal
      * <br/>js类型: ["string"]
@@ -48,7 +48,7 @@ public class PageTextStyle implements Serializable {
      */
     private String fontStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageTextStyle.fontWeight">https://echarts.apache.org/zh/option.html#legend.pageTextStyle.fontWeight</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle.fontWeight">https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle.fontWeight</a>
      * <br/>序号: 3
      * <br/>默认值: normal
      * <br/>js类型: ["string","number"]
@@ -65,7 +65,7 @@ public class PageTextStyle implements Serializable {
      */
     private Object fontWeight;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageTextStyle.fontFamily">https://echarts.apache.org/zh/option.html#legend.pageTextStyle.fontFamily</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle.fontFamily">https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle.fontFamily</a>
      * <br/>序号: 4
      * <br/>默认值: sans-serif
      * <br/>js类型: ["string"]
@@ -75,7 +75,7 @@ public class PageTextStyle implements Serializable {
      */
     private String fontFamily;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageTextStyle.fontSize">https://echarts.apache.org/zh/option.html#legend.pageTextStyle.fontSize</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle.fontSize">https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle.fontSize</a>
      * <br/>序号: 5
      * <br/>默认值: 12
      * <br/>js类型: ["number"]
@@ -84,7 +84,7 @@ public class PageTextStyle implements Serializable {
      */
     private Integer fontSize;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageTextStyle.lineHeight">https://echarts.apache.org/zh/option.html#legend.pageTextStyle.lineHeight</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle.lineHeight">https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle.lineHeight</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -103,34 +103,39 @@ public class PageTextStyle implements Serializable {
      */
     private Integer lineHeight;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageTextStyle.width">https://echarts.apache.org/zh/option.html#legend.pageTextStyle.width</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle.width">https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle.width</a>
      * <br/>序号: 7
      * <br/>默认值: 无
-     * <br/>js类型: ["number"]
+     * <br/>js类型: ["number","string"]
      * <br/>描述:
-     * <p>文本显示宽度。</p>
+     * <p>文字块的宽度。一般不用指定，不指定则自动是文字的宽度。在想做表格项或者使用图片（参见 <code class="codespan">backgroundColor</code>）时，可能会使用它。</p>
+     * <p>注意，文字块的 <code class="codespan">width</code> 和 <code class="codespan">height</code> 指定的是内容高宽，不包含 <code class="codespan">padding</code>。</p>
+     * <p><code class="codespan">width</code> 也可以是百分比字符串，如 <code class="codespan">'100%'</code>。表示的是所在文本块的 <code class="codespan">contentWidth</code>（即不包含文本块的 <code class="codespan">padding</code>）的百分之多少。之所以以 <code class="codespan">contentWidth</code> 做基数，因为每个文本片段只能基于 <code class="codespan">content box</code> 布局。如果以 <code class="codespan">outerWidth</code> 做基数，则百分比的计算在实用中不具有意义，可能会超出。</p>
+     * <p>注意，如果不定义 <code class="codespan">rich</code> 属性，则不能指定 <code class="codespan">width</code> 和 <code class="codespan">height</code>。</p>
      */
-    private Integer width;
+    private Object width;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageTextStyle.height">https://echarts.apache.org/zh/option.html#legend.pageTextStyle.height</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle.height">https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle.height</a>
      * <br/>序号: 8
      * <br/>默认值: 无
-     * <br/>js类型: ["number"]
+     * <br/>js类型: ["number","string"]
      * <br/>描述:
-     * <p>文本显示高度。</p>
+     * <p>文字块的高度。一般不用指定，不指定则自动是文字的高度。在使用图片（参见 <code class="codespan">backgroundColor</code>）时，可能会使用它。</p>
+     * <p>注意，文字块的 <code class="codespan">width</code> 和 <code class="codespan">height</code> 指定的是内容高宽，不包含 <code class="codespan">padding</code>。</p>
+     * <p>注意，如果不定义 <code class="codespan">rich</code> 属性，则不能指定 <code class="codespan">width</code> 和 <code class="codespan">height</code>。</p>
      */
-    private Integer height;
+    private Object height;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageTextStyle.textBorderColor">https://echarts.apache.org/zh/option.html#legend.pageTextStyle.textBorderColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle.textBorderColor">https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle.textBorderColor</a>
      * <br/>序号: 9
-     * <br/>默认值: 无
+     * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
      * <br/>描述:
      * <p>文字本身的描边颜色。</p>
      */
     private String textBorderColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageTextStyle.textBorderWidth">https://echarts.apache.org/zh/option.html#legend.pageTextStyle.textBorderWidth</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle.textBorderWidth">https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle.textBorderWidth</a>
      * <br/>序号: 10
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -139,7 +144,7 @@ public class PageTextStyle implements Serializable {
      */
     private Integer textBorderWidth;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageTextStyle.textShadowColor">https://echarts.apache.org/zh/option.html#legend.pageTextStyle.textShadowColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle.textShadowColor">https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle.textShadowColor</a>
      * <br/>序号: 11
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
@@ -148,7 +153,7 @@ public class PageTextStyle implements Serializable {
      */
     private String textShadowColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageTextStyle.textShadowBlur">https://echarts.apache.org/zh/option.html#legend.pageTextStyle.textShadowBlur</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle.textShadowBlur">https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle.textShadowBlur</a>
      * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -157,7 +162,7 @@ public class PageTextStyle implements Serializable {
      */
     private Integer textShadowBlur;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageTextStyle.textShadowOffsetX">https://echarts.apache.org/zh/option.html#legend.pageTextStyle.textShadowOffsetX</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle.textShadowOffsetX">https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle.textShadowOffsetX</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -166,7 +171,7 @@ public class PageTextStyle implements Serializable {
      */
     private Integer textShadowOffsetX;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageTextStyle.textShadowOffsetY">https://echarts.apache.org/zh/option.html#legend.pageTextStyle.textShadowOffsetY</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle.textShadowOffsetY">https://echarts.apache.org/v4/zh/option.html#legend.pageTextStyle.textShadowOffsetY</a>
      * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -174,39 +179,4 @@ public class PageTextStyle implements Serializable {
      * <p>文字本身的阴影 Y 偏移。</p>
      */
     private Integer textShadowOffsetY;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageTextStyle.overflow">https://echarts.apache.org/zh/option.html#legend.pageTextStyle.overflow</a>
-     * <br/>序号: 15
-     * <br/>默认值: none
-     * <br/>js类型: ["string"]
-     * <br/>描述:
-     * <p>文字超出宽度是否截断或者换行。配置<code class="codespan">width</code>时有效</p>
-     * <ul>
-     * <li><code class="codespan">'truncate'</code> 截断，并在末尾显示<code class="codespan">ellipsis</code>配置的文本，默认为<code class="codespan">...</code></li>
-     * <li><code class="codespan">'break'</code> 换行</li>
-     * <li><code class="codespan">'breakAll'</code> 换行，跟<code class="codespan">'break'</code>不同的是，在英语等拉丁文中，<code class="codespan">'breakAll'</code>还会强制单词内换行</li>
-     * </ul>
-     */
-    private String overflow;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageTextStyle.ellipsis">https://echarts.apache.org/zh/option.html#legend.pageTextStyle.ellipsis</a>
-     * <br/>序号: 16
-     * <br/>默认值: ...
-     * <br/>js类型: ["string"]
-     * <br/>描述:
-     * <p>在<code class="codespan">overflow</code>配置为<code class="codespan">'truncate'</code>的时候，可以通过该属性配置末尾显示的文本。</p>
-     */
-    private String ellipsis;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageTextStyle.lineOverflow">https://echarts.apache.org/zh/option.html#legend.pageTextStyle.lineOverflow</a>
-     * <br/>序号: 17
-     * <br/>默认值: none
-     * <br/>js类型: ["string"]
-     * <br/>描述:
-     * <p>文本超出高度部分是否截断，配置<code class="codespan">height</code>时有效。</p>
-     * <ul>
-     * <li><code class="codespan">'truncate'</code> 在文本行数超出高度部分截断。</li>
-     * </ul>
-     */
-    private String lineOverflow;
 }

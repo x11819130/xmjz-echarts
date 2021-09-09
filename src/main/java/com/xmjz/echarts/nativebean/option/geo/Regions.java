@@ -7,8 +7,8 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.regions">https://echarts.apache.org/zh/option.html#geo.regions</a>
- * <br/>序号: 25
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#geo.regions">https://echarts.apache.org/v4/zh/option.html#geo.regions</a>
+ * <br/>序号: 24
  * <br/>默认值: 无
  * <br/>js类型: ["Array"]
  * <br/>描述:
@@ -33,7 +33,7 @@ public class Regions implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.regions.name">https://echarts.apache.org/zh/option.html#geo.regions.name</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#geo.regions.name">https://echarts.apache.org/v4/zh/option.html#geo.regions.name</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -42,7 +42,7 @@ public class Regions implements Serializable {
      */
     private String name;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.regions.selected">https://echarts.apache.org/zh/option.html#geo.regions.selected</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#geo.regions.selected">https://echarts.apache.org/v4/zh/option.html#geo.regions.selected</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -51,7 +51,7 @@ public class Regions implements Serializable {
      */
     private Boolean selected;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.regions.itemStyle">https://echarts.apache.org/zh/option.html#geo.regions.itemStyle</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#geo.regions.itemStyle">https://echarts.apache.org/v4/zh/option.html#geo.regions.itemStyle</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -60,30 +60,21 @@ public class Regions implements Serializable {
      */
     private Object itemStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.regions.label">https://echarts.apache.org/zh/option.html#geo.regions.label</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#geo.regions.label">https://echarts.apache.org/v4/zh/option.html#geo.regions.label</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
-     * <p>图形上的文本标签，可用于说明图形的一些数据信息，比如值，名称等。</p>
+     * <p>图形上的文本标签，可用于说明图形的一些数据信息，比如值，名称等，<code class="codespan">label</code>选项在 ECharts 2.x 中放置于<code class="codespan">itemStyle</code>下，在 ECharts 3 中为了让整个配置项结构更扁平合理，<code class="codespan">label</code> 被拿出来跟 <code class="codespan">itemStyle</code> 平级，并且跟 <code class="codespan">itemStyle</code> 一样拥有 <code class="codespan">emphasis</code> 状态。</p>
      */
     private Object label;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.regions.emphasis">https://echarts.apache.org/zh/option.html#geo.regions.emphasis</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#geo.regions.emphasis">https://echarts.apache.org/v4/zh/option.html#geo.regions.emphasis</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
-     * <p>高亮状态的设置。</p>
+     * <p>高亮的样式。</p>
      */
     private Object emphasis;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.regions.select">https://echarts.apache.org/zh/option.html#geo.regions.select</a>
-     * <br/>序号: 6
-     * <br/>默认值: 无
-     * <br/>js类型: ["Object"]
-     * <br/>描述:
-     * <p>选中状态的设置。</p>
-     */
-    private Object select;
 }

@@ -7,7 +7,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.splitArea">https://echarts.apache.org/zh/option.html#angleAxis.splitArea</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#angleAxis.splitArea">https://echarts.apache.org/v4/zh/option.html#angleAxis.splitArea</a>
  * <br/>序号: 23
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
@@ -23,7 +23,7 @@ public class SplitArea implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.splitArea.interval">https://echarts.apache.org/zh/option.html#angleAxis.splitArea.interval</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#angleAxis.splitArea.interval">https://echarts.apache.org/v4/zh/option.html#angleAxis.splitArea.interval</a>
      * <br/>序号: 1
      * <br/>默认值: auto
      * <br/>js类型: ["number","Function"]
@@ -39,7 +39,7 @@ public class SplitArea implements Serializable {
      */
     private Object interval;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.splitArea.show">https://echarts.apache.org/zh/option.html#angleAxis.splitArea.show</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#angleAxis.splitArea.show">https://echarts.apache.org/v4/zh/option.html#angleAxis.splitArea.show</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -48,7 +48,7 @@ public class SplitArea implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.splitArea.areaStyle">https://echarts.apache.org/zh/option.html#angleAxis.splitArea.areaStyle</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#angleAxis.splitArea.areaStyle">https://echarts.apache.org/v4/zh/option.html#angleAxis.splitArea.areaStyle</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]

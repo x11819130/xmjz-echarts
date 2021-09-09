@@ -6,7 +6,7 @@
 
     <groupId>com.xmjz</groupId>
     <artifactId>xmjz-echarts</artifactId>
-    <version>5.0.2</version>
+    <version>4.8.0</version>
     <packaging>jar</packaging>
 
     <properties>

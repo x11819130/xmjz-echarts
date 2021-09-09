@@ -7,8 +7,8 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.animationEasingUpdate">https://echarts.apache.org/zh/option.html#series-pictorialBar.animationEasingUpdate</a>
- * <br/>序号: 50
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.animationEasingUpdate">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.animationEasingUpdate</a>
+ * <br/>序号: 44
  * <br/>默认值: 无
  * <br/>js类型: ["string"]
  * <br/>描述:
@@ -23,7 +23,7 @@ public class AnimationEasingUpdate implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.animationEasingUpdate.animationDelay">https://echarts.apache.org/zh/option.html#series-pictorialBar.animationEasingUpdate.animationDelay</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.animationEasingUpdate.animationDelay">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.animationEasingUpdate.animationDelay</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
@@ -39,11 +39,14 @@ public class AnimationEasingUpdate implements Serializable {
      * }
      * </code></pre>
      * <p>例子：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-repeatDirection&amp;reset=1&amp;edit=1" width="800" height="400"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-repeatDirection&amp;reset=1&amp;edit=1" width="800" height="400"><iframe />
+     *
+     *
+     * </iframe>
      */
     private Object animationDelay;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.animationEasingUpdate.animationDelayUpdate">https://echarts.apache.org/zh/option.html#series-pictorialBar.animationEasingUpdate.animationDelayUpdate</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.animationEasingUpdate.animationDelayUpdate">https://echarts.apache.org/v4/zh/option.html#series-pictorialBar.animationEasingUpdate.animationDelayUpdate</a>
      * <br/>序号: 2
      * <br/>默认值: 无
      * <br/>js类型: ["number","Function"]
@@ -59,7 +62,16 @@ public class AnimationEasingUpdate implements Serializable {
      * }
      * </code></pre>
      * <p>例子：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-repeatDirection&amp;reset=1&amp;edit=1" width="800" height="400"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-repeatDirection&amp;reset=1&amp;edit=1" width="800" height="400"><iframe />
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     * </iframe>
      */
     private Object animationDelayUpdate;
 }

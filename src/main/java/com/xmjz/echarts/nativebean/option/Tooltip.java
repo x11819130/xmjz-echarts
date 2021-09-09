@@ -9,7 +9,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip">https://echarts.apache.org/zh/option.html#tooltip</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#tooltip">https://echarts.apache.org/v4/zh/option.html#tooltip</a>
  * <br/>序号: 12
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
@@ -39,7 +39,7 @@ public class Tooltip implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.show">https://echarts.apache.org/zh/option.html#tooltip.show</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#tooltip.show">https://echarts.apache.org/v4/zh/option.html#tooltip.show</a>
      * <br/>序号: 1
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -48,7 +48,7 @@ public class Tooltip implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.trigger">https://echarts.apache.org/zh/option.html#tooltip.trigger</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#tooltip.trigger">https://echarts.apache.org/v4/zh/option.html#tooltip.trigger</a>
      * <br/>序号: 2
      * <br/>默认值: item
      * <br/>js类型: ["string"]
@@ -70,7 +70,7 @@ public class Tooltip implements Serializable {
      */
     private String trigger;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.axisPointer">https://echarts.apache.org/zh/option.html#tooltip.axisPointer</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#tooltip.axisPointer">https://echarts.apache.org/v4/zh/option.html#tooltip.axisPointer</a>
      * <br/>序号: 3
      * <br/>默认值: line
      * <br/>js类型: ["Object"]
@@ -83,18 +83,18 @@ public class Tooltip implements Serializable {
      * <hr>
      * <p>坐标轴指示器是指示坐标轴当前刻度的工具。</p>
      * <p>如下例，鼠标悬浮到图上，可以出现标线和刻度文本。</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/candlestick-axisPointer&amp;edit=1&amp;reset=1" width="600" height="450"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/candlestick-axisPointer&amp;edit=1&amp;reset=1" width="600" height="450"><iframe />
      *
      *
      * <p>上例中，使用了 <a href="#axisPointer.link">axisPointer.link</a> 来关联不同的坐标系中的 axisPointer。</p>
      * <p>坐标轴指示器也有适合触屏的交互方式，如下：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-tooltip-touch&amp;edit=1&amp;reset=1" width="600" height="400"></iframe>
+     * <iframe  data-src="https://echarts.apache.org/examples/zh/view.html?c=line-tooltip-touch&edit=1&reset=1" width="600" height="400"><iframe />
      *
      *
      * <p>坐标轴指示器在多轴的场景能起到辅助作用：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=multiple-y-axis&amp;edit=1&amp;reset=1" width="600" height="300"></iframe>
+     * <iframe  data-src="https://echarts.apache.org/examples/zh/view.html?c=multiple-y-axis&edit=1&reset=1" width="600" height="300"><iframe />
      * <p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=multiple-x-axis&amp;edit=1&amp;reset=1" width="600" height="300"></iframe>
+     * <iframe  data-src="https://echarts.apache.org/examples/zh/view.html?c=multiple-x-axis&edit=1&reset=1" width="600" height="300"><iframe />
      *
      *
      *
@@ -114,7 +114,7 @@ public class Tooltip implements Serializable {
      * <ul>
      * <li><p>设置轴上的 <code class="codespan">axisPointer.show</code>（例如 <a href="#xAxis.axisPointer.show">xAxis.axisPointer.show</a>）为 <code class="codespan">true</code>，则显示此轴的 axisPointer。</p>
      * </li>
-     * <li><p>设置 <a href="#tooltip.trigger">tooltip.trigger</a> 设置为 <code class="codespan">'axis'</code> 或者 <a href="#tooltip.axisPointer.type">tooltip.axisPointer.type</a> 设置为 <code class="codespan">'cross'</code>，则此时坐标系会自动选择显示哪个轴的 axisPointer，也可以使用 <a href="#tooltip.axisPointer.axis">tooltip.axisPointer.axis</a> 改变这种选择。注意，轴上如果设置了 axisPointer，会覆盖此设置。</p>
+     * <li><p>设置 <a href="#tooltip.trigger">tooltip.trigger</a> 设置为 <code class="codespan">&#39;axis&#39;</code> 或者 <a href="#tooltip.axisPointer.type">tooltip.axisPointer.type</a> 设置为 <code class="codespan">&#39;cross&#39;</code>，则此时坐标系会自动选择显示哪个轴的 axisPointer，也可以使用 <a href="#tooltip.axisPointer.axis">tooltip.axisPointer.axis</a> 改变这种选择。注意，轴上如果设置了 axisPointer，会覆盖此设置。</p>
      * </li>
      * </ul>
      * <hr>
@@ -123,23 +123,24 @@ public class Tooltip implements Serializable {
      * <ul>
      * <li><p>设置轴上的 <code class="codespan">axisPointer.label.show</code>（例如 <a href="#xAxis.axisPointer.show">xAxis.axisPointer.label.show</a>）为 <code class="codespan">true</code>，则显示此轴的 axisPointer 的 label。</p>
      * </li>
-     * <li><p>设置 <a href="#tooltip.axisPointer.type">tooltip.axisPointer.type</a> 为 <code class="codespan">'cross'</code> 时会自动显示 axisPointer 的 label。</p>
+     * <li><p>设置 <a href="#tooltip.axisPointer.type">tooltip.axisPointer.type</a> 为 <code class="codespan">&#39;cross&#39;</code> 时会自动显示 axisPointer 的 label。</p>
      * </li>
      * </ul>
      * <hr>
      * <p><strong>关于触屏的 axisPointer 的设置</strong></p>
      * <p>设置轴上的 <code class="codespan">axisPointer.handle.show</code>（例如 <a href="#xAxis.axisPointer.handle.show">xAxis.axisPointer.handle.show</a> 为 <code class="codespan">true</code> 则会显示出此 axisPointer 的拖拽按钮。（polar 坐标系暂不支持此功能）。</p>
      * <p><strong>注意：</strong>
-     * 如果发现此时 tooltip 效果不良好，可设置 <a href="#tooltip.triggerOn">tooltip.triggerOn</a> 为 <code class="codespan">'none'</code>（于是效果为：手指按住按钮则显示 tooltip，松开按钮则隐藏 tooltip），或者 <a href="#tooltip.alwaysShowContent">tooltip.alwaysShowContent</a> 为 <code class="codespan">true</code>（效果为 tooltip 一直显示）。</p>
+     * 如果发现此时 tooltip 效果不良好，可设置 <a href="#tooltip.triggerOn">tooltip.triggerOn</a> 为 <code class="codespan">&#39;none&#39;</code>（于是效果为：手指按住按钮则显示 tooltip，松开按钮则隐藏 tooltip），或者 <a href="#tooltip.alwaysShowContent">tooltip.alwaysShowContent</a> 为 <code class="codespan">true</code>（效果为 tooltip 一直显示）。</p>
      * <p>参见<a href="https://echarts.apache.org/examples/zh/editor.html?c=line-tooltip-touch&amp;edit=1&amp;reset=1" target="_blank">例子</a>。</p>
      * <hr>
      * <p><strong>自动吸附到数据（snap）</strong></p>
      * <p>对于数值轴、时间轴，如果开启了 <a href="#xAxis.axisPointer.snap">snap</a>，则 axisPointer 会自动吸附到最近的点上。</p>
      * <hr>
+     * </iframe>
      */
     private AxisPointer axisPointer;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.showContent">https://echarts.apache.org/zh/option.html#tooltip.showContent</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#tooltip.showContent">https://echarts.apache.org/v4/zh/option.html#tooltip.showContent</a>
      * <br/>序号: 4
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -148,7 +149,7 @@ public class Tooltip implements Serializable {
      */
     private Boolean showContent;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.alwaysShowContent">https://echarts.apache.org/zh/option.html#tooltip.alwaysShowContent</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#tooltip.alwaysShowContent">https://echarts.apache.org/v4/zh/option.html#tooltip.alwaysShowContent</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -158,7 +159,7 @@ public class Tooltip implements Serializable {
      */
     private Boolean alwaysShowContent;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.triggerOn">https://echarts.apache.org/zh/option.html#tooltip.triggerOn</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#tooltip.triggerOn">https://echarts.apache.org/v4/zh/option.html#tooltip.triggerOn</a>
      * <br/>序号: 6
      * <br/>默认值: mousemove|click
      * <br/>js类型: ["string"]
@@ -182,7 +183,7 @@ public class Tooltip implements Serializable {
      */
     private String triggerOn;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.showDelay">https://echarts.apache.org/zh/option.html#tooltip.showDelay</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#tooltip.showDelay">https://echarts.apache.org/v4/zh/option.html#tooltip.showDelay</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -191,7 +192,7 @@ public class Tooltip implements Serializable {
      */
     private Integer showDelay;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.hideDelay">https://echarts.apache.org/zh/option.html#tooltip.hideDelay</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#tooltip.hideDelay">https://echarts.apache.org/v4/zh/option.html#tooltip.hideDelay</a>
      * <br/>序号: 8
      * <br/>默认值: 100
      * <br/>js类型: ["number"]
@@ -200,7 +201,7 @@ public class Tooltip implements Serializable {
      */
     private Integer hideDelay;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.enterable">https://echarts.apache.org/zh/option.html#tooltip.enterable</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#tooltip.enterable">https://echarts.apache.org/v4/zh/option.html#tooltip.enterable</a>
      * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -209,7 +210,7 @@ public class Tooltip implements Serializable {
      */
     private Boolean enterable;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.renderMode">https://echarts.apache.org/zh/option.html#tooltip.renderMode</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#tooltip.renderMode">https://echarts.apache.org/v4/zh/option.html#tooltip.renderMode</a>
      * <br/>序号: 10
      * <br/>默认值: html
      * <br/>js类型: ["string"]
@@ -218,7 +219,7 @@ public class Tooltip implements Serializable {
      */
     private String renderMode;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.confine">https://echarts.apache.org/zh/option.html#tooltip.confine</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#tooltip.confine">https://echarts.apache.org/v4/zh/option.html#tooltip.confine</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -228,7 +229,7 @@ public class Tooltip implements Serializable {
      */
     private Boolean confine;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.appendToBody">https://echarts.apache.org/zh/option.html#tooltip.appendToBody</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#tooltip.appendToBody">https://echarts.apache.org/v4/zh/option.html#tooltip.appendToBody</a>
      * <br/>序号: 12
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
@@ -243,23 +244,8 @@ public class Tooltip implements Serializable {
      */
     private Boolean appendToBody;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.className">https://echarts.apache.org/zh/option.html#tooltip.className</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#tooltip.transitionDuration">https://echarts.apache.org/v4/zh/option.html#tooltip.transitionDuration</a>
      * <br/>序号: 13
-     * <br/>默认值: 无
-     * <br/>js类型: ["string"]
-     * <br/>描述:
-     * <blockquote>
-     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
-     * </blockquote>
-     * <p>指定 tooltip 的 DOM 节点的 CSS 类。（只在 <a href="#tooltip.renderMode"><code class="codespan">html</code></a> 模式下生效）。</p>
-     * <p>Example:</p>
-     * <pre><code class="lang-js hljs javascript">className: <span class="hljs-string">'echarts-tooltip echarts-tooltip-dark'</span>
-     * </code></pre>
-     */
-    private String className;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.transitionDuration">https://echarts.apache.org/zh/option.html#tooltip.transitionDuration</a>
-     * <br/>序号: 14
      * <br/>默认值: 0.4
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -267,8 +253,8 @@ public class Tooltip implements Serializable {
      */
     private Integer transitionDuration;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.position">https://echarts.apache.org/zh/option.html#tooltip.position</a>
-     * <br/>序号: 15
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#tooltip.position">https://echarts.apache.org/v4/zh/option.html#tooltip.position</a>
+     * <br/>序号: 14
      * <br/>默认值: 无
      * <br/>js类型: ["string","Array","Function"]
      * <br/>描述:
@@ -333,13 +319,13 @@ public class Tooltip implements Serializable {
      */
     private Object position;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.formatter">https://echarts.apache.org/zh/option.html#tooltip.formatter</a>
-     * <br/>序号: 16
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#tooltip.formatter">https://echarts.apache.org/v4/zh/option.html#tooltip.formatter</a>
+     * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["string","Function"]
      * <br/>描述:
      * <p>提示框浮层内容格式器，支持字符串模板和回调函数两种形式。</p>
-     * <p><strong>1. 字符串模板</strong></p>
+     * <p><strong>1, 字符串模板</strong></p>
      * <p>模板变量有 <code class="codespan">{a}</code>, <code class="codespan">{b}</code>，<code class="codespan">{c}</code>，<code class="codespan">{d}</code>，<code class="codespan">{e}</code>，分别表示系列名，数据名，数据值等。
      * 在 <a href="#tooltip.trigger">trigger</a> 为 <code class="codespan">'axis'</code> 的时候，会有多个系列的数据，此时可以通过 <code class="codespan">{a0}</code>, <code class="codespan">{a1}</code>, <code class="codespan">{a2}</code> 这种后面加索引的方式表示系列的索引。
      * 不同图表类型下的 <code class="codespan">{a}</code>，<code class="codespan">{b}</code>，<code class="codespan">{c}</code>，<code class="codespan">{d}</code> 含义不一样。
@@ -358,11 +344,10 @@ public class Tooltip implements Serializable {
      * <p><strong>示例：</strong></p>
      * <pre><code class="lang-js hljs javascript">formatter: <span class="hljs-string">'{b0}: {c0}&lt;br /&gt;{b1}: {c1}'</span>
      * </code></pre>
-     * <p><strong>2. 回调函数</strong></p>
+     * <p><strong>2, 回调函数</strong></p>
      * <p>回调函数格式：</p>
-     * <pre><code class="lang-js hljs javascript">(params: <span class="hljs-built_in">Object</span>|<span class="hljs-built_in">Array</span>, <span class="hljs-attr">ticket</span>: string, <span class="hljs-attr">callback</span>: <span class="hljs-function">(<span class="hljs-params">ticket: string, html: string</span>)) =&gt;</span> string | HTMLElement | HTMLElement[]
+     * <pre><code class="lang-js hljs javascript">(params: <span class="hljs-built_in">Object</span>|<span class="hljs-built_in">Array</span>, <span class="hljs-attr">ticket</span>: string, <span class="hljs-attr">callback</span>: <span class="hljs-function">(<span class="hljs-params">ticket: string, html: string</span>)) =&gt;</span> string
      * </code></pre>
-     * <p>支持返回 HTML 字符串或者创建的 DOM 实例。</p>
      * <p>第一个参数 <code class="codespan">params</code> 是 formatter 需要的数据集。格式如下：</p>
      * <pre><code class="lang-js hljs javascript">{
      *     <span class="hljs-attr">componentType</span>: <span class="hljs-string">'series'</span>,
@@ -397,10 +382,8 @@ public class Tooltip implements Serializable {
      *     <span class="hljs-comment">// 数据图形的颜色</span>
      *     <span class="hljs-attr">color</span>: string,
      *
-     *
      *     <span class="hljs-comment">// 饼图的百分比</span>
      *     <span class="hljs-attr">percent</span>: number,
-     *
      *
      * }
      * </code></pre>
@@ -466,8 +449,6 @@ public class Tooltip implements Serializable {
      *     <span class="hljs-comment">// 数据图形的颜色</span>
      *     <span class="hljs-attr">color</span>: string,
      *
-     *
-     *
      * }
      * </code></pre>
      * <p>注：encode 和 dimensionNames 的使用方式，例如：</p>
@@ -512,8 +493,8 @@ public class Tooltip implements Serializable {
      */
     private Object formatter;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.backgroundColor">https://echarts.apache.org/zh/option.html#tooltip.backgroundColor</a>
-     * <br/>序号: 17
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#tooltip.backgroundColor">https://echarts.apache.org/v4/zh/option.html#tooltip.backgroundColor</a>
+     * <br/>序号: 16
      * <br/>默认值: rgba(50,50,50,0.7)
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -521,8 +502,8 @@ public class Tooltip implements Serializable {
      */
     private String backgroundColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.borderColor">https://echarts.apache.org/zh/option.html#tooltip.borderColor</a>
-     * <br/>序号: 18
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#tooltip.borderColor">https://echarts.apache.org/v4/zh/option.html#tooltip.borderColor</a>
+     * <br/>序号: 17
      * <br/>默认值: #333
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -530,8 +511,8 @@ public class Tooltip implements Serializable {
      */
     private String borderColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.borderWidth">https://echarts.apache.org/zh/option.html#tooltip.borderWidth</a>
-     * <br/>序号: 19
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#tooltip.borderWidth">https://echarts.apache.org/v4/zh/option.html#tooltip.borderWidth</a>
+     * <br/>序号: 18
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -539,8 +520,8 @@ public class Tooltip implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.padding">https://echarts.apache.org/zh/option.html#tooltip.padding</a>
-     * <br/>序号: 20
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#tooltip.padding">https://echarts.apache.org/v4/zh/option.html#tooltip.padding</a>
+     * <br/>序号: 19
      * <br/>默认值: 5
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -561,8 +542,8 @@ public class Tooltip implements Serializable {
      */
     private Integer padding;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.textStyle">https://echarts.apache.org/zh/option.html#tooltip.textStyle</a>
-     * <br/>序号: 21
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#tooltip.textStyle">https://echarts.apache.org/v4/zh/option.html#tooltip.textStyle</a>
+     * <br/>序号: 20
      * <br/>默认值: #fff
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -570,8 +551,8 @@ public class Tooltip implements Serializable {
      */
     private TextStyle textStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.extraCssText">https://echarts.apache.org/zh/option.html#tooltip.extraCssText</a>
-     * <br/>序号: 22
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#tooltip.extraCssText">https://echarts.apache.org/v4/zh/option.html#tooltip.extraCssText</a>
+     * <br/>序号: 21
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -580,31 +561,4 @@ public class Tooltip implements Serializable {
      * </code></pre>
      */
     private String extraCssText;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.order">https://echarts.apache.org/zh/option.html#tooltip.order</a>
-     * <br/>序号: 23
-     * <br/>默认值: seriesAsc
-     * <br/>js类型: ["string"]
-     * <br/>描述:
-     * <blockquote>
-     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
-     * </blockquote>
-     * <p>多系列提示框浮层排列顺序。默认值为 <code class="codespan">'seriesAsc'</code></p>
-     * <p>提示框排列顺序可选值:</p>
-     * <ul>
-     * <li><p><code class="codespan">'seriesAsc'</code></p>
-     * <p>  根据系列声明, 升序排列。</p>
-     * </li>
-     * <li><p><code class="codespan">'seriesDesc'</code></p>
-     * <p>  根据系列声明, 降序排列。</p>
-     * </li>
-     * <li><p><code class="codespan">'valueAsc'</code></p>
-     * <p>  根据数据值, 升序排列。</p>
-     * </li>
-     * <li><p><code class="codespan">'valueDesc'</code></p>
-     * <p>  根据数据值, 降序排列。</p>
-     * </li>
-     * </ul>
-     */
-    private String order;
 }

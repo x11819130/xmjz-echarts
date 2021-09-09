@@ -8,7 +8,7 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush">https://echarts.apache.org/zh/option.html#brush</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#brush">https://echarts.apache.org/v4/zh/option.html#brush</a>
  * <br/>序号: 15
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
@@ -21,12 +21,12 @@ import java.util.List;
  * <p>点击 <code class="codespan">toolbox</code> 中的按钮，能够进行『区域选择』、『清除选择』等操作。</p>
  * <p><br>
  * <code class="codespan">横向刷子</code> 的示例如下（点击 <code class="codespan">toolbox</code> 中的按钮启动刷选）：</p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=candlestick-brush&amp;edit=1&amp;reset=1" width="800" height="500"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=candlestick-brush&amp;edit=1&amp;reset=1" width="800" height="500" data-ll-timeout="17"><iframe />
  *
  *
  * <p><br>
  * <code class="codespan">bar</code> 图中的 <code class="codespan">brush</code>（点击 <code class="codespan">toolbox</code> 中的按钮启动刷选）：</p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=bar-brush&amp;edit=1&amp;reset=1" width="800" height="400"></iframe>
+ * <iframe  data-src="https://echarts.apache.org/examples/zh/view.html?c=bar-brush&edit=1&reset=1" width="800" height="400"><iframe />
  *
  *
  *
@@ -49,38 +49,38 @@ import java.util.List;
  * <p>通过指定 <a href="#brush.geoIndex">brush.geoIndex</a> 或 <a href="#brush.xAxisIndex">brush.xAxisIndex</a> 或 <a href="#brush.yAxisIndex">brush.yAxisIndex</a> 来规定可以在哪些坐标系中进行刷选。</p>
  * <p>这几个配置项的取值可以是：</p>
  * <ul>
- * <li><code class="codespan">'all'</code>，表示所有</li>
+ * <li><code class="codespan">&#39;all&#39;</code>，表示所有</li>
  * <li><code class="codespan">number</code>，如 <code class="codespan">0</code>，表示这个 index 所对应的坐标系。</li>
  * <li><code class="codespan">Array</code>，如 <code class="codespan">[0, 4, 2]</code>，表示指定这些 index 所对应的坐标系。</li>
- * <li><code class="codespan">'none'</code> 或 <code class="codespan">null</code> 或 <code class="codespan">undefined</code>，表示不指定。</li>
+ * <li><code class="codespan">&#39;none&#39;</code> 或 <code class="codespan">null</code> 或 <code class="codespan">undefined</code>，表示不指定。</li>
  * </ul>
  * <p>例如：</p>
- * <pre><code class="lang-javascript hljs">option = {
- *     <span class="hljs-attr">geo</span>: {
+ * <pre><code class="lang-javascript">option = {
+ *     geo: {
  *         ...
  *     },
- *     <span class="hljs-attr">brush</span>: {
- *         <span class="hljs-attr">geoIndex</span>: <span class="hljs-string">'all'</span>, <span class="hljs-comment">// 只可以在所有 geo 坐标系中刷选，也就是上面定义的 geo 组件中。</span>
+ *     brush: {
+ *         geoIndex: &#39;all&#39;, // 只可以在所有 geo 坐标系中刷选，也就是上面定义的 geo 组件中。
  *         ...
  *     }
  * };
  * </code></pre>
  * <p>例如：</p>
- * <pre><code class="lang-javascript hljs">option = {
- *     <span class="hljs-attr">grid</span>: [
- *         {...}, <span class="hljs-comment">// grid 0</span>
- *         {...}  <span class="hljs-comment">// grid 1</span>
+ * <pre><code class="lang-javascript">option = {
+ *     grid: [
+ *         {...}, // grid 0
+ *         {...}  // grid 1
  *     ],
- *     <span class="hljs-attr">xAxis</span>: [
- *         {<span class="hljs-attr">gridIndex</span>: <span class="hljs-number">1</span>, ...}, <span class="hljs-comment">// xAxis 0，属于 grid 1。</span>
- *         {<span class="hljs-attr">gridIndex</span>: <span class="hljs-number">0</span>, ...}  <span class="hljs-comment">// xAxis 1，属于 grid 0。</span>
+ *     xAxis: [
+ *         {gridIndex: 1, ...}, // xAxis 0，属于 grid 1。
+ *         {gridIndex: 0, ...}  // xAxis 1，属于 grid 0。
  *     ],
- *     <span class="hljs-attr">yAxis</span>: [
- *         {<span class="hljs-attr">gridIndex</span>: <span class="hljs-number">1</span>, ...}, <span class="hljs-comment">// yAxis 0，属于 grid 1。</span>
- *         {<span class="hljs-attr">gridIndex</span>: <span class="hljs-number">0</span>, ...}  <span class="hljs-comment">// yAxis 1，属于 grid 0。</span>
+ *     yAxis: [
+ *         {gridIndex: 1, ...}, // yAxis 0，属于 grid 1。
+ *         {gridIndex: 0, ...}  // yAxis 1，属于 grid 0。
  *     ],
- *     <span class="hljs-attr">brush</span>: {
- *         <span class="hljs-attr">xAxisIndex</span>: [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>], <span class="hljs-comment">// 只可以在 xAxisIndex 为 `0` 和 `1` 的 xAxis 所在的直角坐标系中刷选。</span>
+ *     brush: {
+ *         xAxisIndex: [0, 1], // 只可以在 xAxisIndex 为 `0` 和 `1` 的 xAxis 所在的直角坐标系中刷选。
  *         ...
  *     }
  * };
@@ -89,15 +89,15 @@ import java.util.List;
  * <hr>
  * <p><strong> 使用 API 控制选框 </strong></p>
  * <p>可以通过调用 <code class="codespan">dispatchAction</code> 来用程序主动渲染选框，例如：</p>
- * <pre><code class="lang-javascript hljs">myChart.dispatchAction({
- *     <span class="hljs-attr">type</span>: <span class="hljs-string">'brush'</span>,
- *     <span class="hljs-attr">areas</span>: [
+ * <pre><code class="lang-javascript">myChart.dispatchAction({
+ *     type: &#39;brush&#39;,
+ *     areas: [
  *         {
- *             <span class="hljs-attr">geoIndex</span>: <span class="hljs-number">0</span>,
- *             <span class="hljs-comment">// 指定选框的类型。</span>
- *             <span class="hljs-attr">brushType</span>: <span class="hljs-string">'polygon'</span>,
- *             <span class="hljs-comment">// 指定选框的形状。</span>
- *             <span class="hljs-attr">coordRange</span>: [[<span class="hljs-number">119.72</span>,<span class="hljs-number">34.85</span>],[<span class="hljs-number">119.68</span>,<span class="hljs-number">34.85</span>],[<span class="hljs-number">119.5</span>,<span class="hljs-number">34.84</span>],[<span class="hljs-number">119.19</span>,<span class="hljs-number">34.77</span>]]
+ *             geoIndex: 0,
+ *             // 指定选框的类型。
+ *             brushType: &#39;polygon&#39;,
+ *             // 指定选框的形状。
+ *             coordRange: [[119.72,34.85],[119.68,34.85],[119.5,34.84],[119.19,34.77]]
  *         }
  *     ]
  * });
@@ -108,30 +108,30 @@ import java.util.List;
  * <p><strong> brushLink </strong></p>
  * <p>不同系列间，选中的项可以联动。</p>
  * <p>参见如下效果（刷选一个 <code class="codespan">scatter</code>，其他 <code class="codespan">scatter</code> 以及 <code class="codespan">parallel</code> 图都会有选中效果）：</p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-matrix&amp;edit=1&amp;reset=1" width="800" height="550"></iframe>
+ * <iframe  data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-matrix&edit=1&reset=1" width="800" height="550"><iframe />
  *
  *
  * <p><code class="codespan">brushLink</code> 配置项是一个数组，内容是 seriesIndex，指定了哪些 series 可以被联动。例如可以是：</p>
  * <ul>
  * <li><code class="codespan">[3, 4, 5]</code> 表示 seriesIndex 为 <code class="codespan">3</code>, <code class="codespan">4</code>, <code class="codespan">5</code> 的 series 可以被联动。</li>
- * <li><code class="codespan">'all'</code> 表示所有 series 都进行 brushLink。</li>
- * <li><code class="codespan">'none'</code> 或 <code class="codespan">null</code> 或 <code class="codespan">undefined</code> 表示不启用 brushLink 功能。</li>
+ * <li><code class="codespan">&#39;all&#39;</code> 表示所有 series 都进行 brushLink。</li>
+ * <li><code class="codespan">&#39;none&#39;</code> 或 <code class="codespan">null</code> 或 <code class="codespan">undefined</code> 表示不启用 brushLink 功能。</li>
  * </ul>
  * <p><strong>注意</strong></p>
  * <p>brushLink 是通过 dataIndex 进行映射，所以需要保证，<strong>联动的每个系列的 <code class="codespan">data</code> 都是 <code class="codespan">index</code> 对应的</strong>。*</p>
  * <p>例如：</p>
- * <pre><code class="lang-javascript hljs">option = {
- *     <span class="hljs-attr">brush</span>: {
- *         <span class="hljs-attr">brushLink</span>: [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>]
+ * <pre><code class="lang-javascript">option = {
+ *     brush: {
+ *         brushLink: [0, 1]
  *     },
- *     <span class="hljs-attr">series</span>: [
+ *     series: [
  *         {
- *             <span class="hljs-attr">type</span>: <span class="hljs-string">'bar'</span>
- *             <span class="hljs-attr">data</span>: [<span class="hljs-number">232</span>,    <span class="hljs-number">4434</span>,    <span class="hljs-number">545</span>,      <span class="hljs-number">654</span>]     <span class="hljs-comment">// data 有四个项</span>
+ *             type: &#39;bar&#39;
+ *             data: [232,    4434,    545,      654]     // data 有四个项
  *         },
  *         {
- *             <span class="hljs-attr">type</span>: <span class="hljs-string">'parallel'</span>,
- *             <span class="hljs-attr">data</span>: [[<span class="hljs-number">4</span>, <span class="hljs-number">5</span>], [<span class="hljs-number">3</span>, <span class="hljs-number">5</span>], [<span class="hljs-number">66</span>, <span class="hljs-number">33</span>], [<span class="hljs-number">99</span>, <span class="hljs-number">66</span>]] <span class="hljs-comment">// data 同样有四个项，两个系列的 data 是对应的。</span>
+ *             type: &#39;parallel&#39;,
+ *             data: [[4, 5], [3, 5], [66, 33], [99, 66]] // data 同样有四个项，两个系列的 data 是对应的。
  *         }
  *     ]
  * };
@@ -144,8 +144,8 @@ import java.util.List;
  * <p>但是频繁的事件可能导致性能问题，或者动画效果很差。所以 brush 组件提供了 <a href="#brush.throttleType">brush.throttleType</a>，<a href="#brush.throttleDelay">brush.throttleDelay</a> 来解决这个问题。</p>
  * <p>throttleType 取值可以是：</p>
  * <ul>
- * <li><code class="codespan">'debounce'</code>：表示只有停止动作了（即一段时间没有操作了），才会触发事件。时间阈值由 <a href="#brush.throttleDelay">brush.throttleDelay</a> 指定。</li>
- * <li><code class="codespan">'fixRate'</code>：表示按照一定的频率触发事件，时间间隔由 <a href="#brush.throttleDelay">brush.throttleDelay</a> 指定。</li>
+ * <li><code class="codespan">&#39;debounce&#39;</code>：表示只有停止动作了（即一段时间没有操作了），才会触发事件。时间阈值由 <a href="#brush.throttleDelay">brush.throttleDelay</a> 指定。</li>
+ * <li><code class="codespan">&#39;fixRate&#39;</code>：表示按照一定的频率触发事件，时间间隔由 <a href="#brush.throttleDelay">brush.throttleDelay</a> 指定。</li>
  * </ul>
  * <p><br></p>
  * <hr>
@@ -154,6 +154,7 @@ import java.util.List;
  * <p><br></p>
  * <hr>
  * <p>下面是详细配置。</p>
+ * </iframe>
  *
  * @author auto
  */
@@ -164,7 +165,7 @@ public class Brush implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.id">https://echarts.apache.org/zh/option.html#brush.id</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#brush.id">https://echarts.apache.org/v4/zh/option.html#brush.id</a>
      * <br/>序号: 1
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -173,7 +174,7 @@ public class Brush implements Serializable {
      */
     private String id;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.toolbox">https://echarts.apache.org/zh/option.html#brush.toolbox</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#brush.toolbox">https://echarts.apache.org/v4/zh/option.html#brush.toolbox</a>
      * <br/>序号: 2
      * <br/>默认值: ["rect","polygon","keep","clear"]
      * <br/>js类型: ["Array"]
@@ -191,45 +192,46 @@ public class Brush implements Serializable {
      */
     private List<?> toolbox;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.brushLink">https://echarts.apache.org/zh/option.html#brush.brushLink</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#brush.brushLink">https://echarts.apache.org/v4/zh/option.html#brush.brushLink</a>
      * <br/>序号: 3
      * <br/>默认值: 无
      * <br/>js类型: ["Array","string"]
      * <br/>描述:
      * <p>不同系列间，选中的项可以联动。</p>
      * <p>参见如下效果（刷选一个 <code class="codespan">scatter</code>，其他 <code class="codespan">scatter</code> 以及 <code class="codespan">parallel</code> 图都会有选中效果）：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-matrix&amp;edit=1&amp;reset=1" width="800" height="550"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-matrix&amp;edit=1&amp;reset=1" width="800" height="550"><iframe />
      *
      *
      * <p><code class="codespan">brushLink</code> 配置项是一个数组，内容是 seriesIndex，指定了哪些 series 可以被联动。例如可以是：</p>
      * <ul>
      * <li><code class="codespan">[3, 4, 5]</code> 表示 seriesIndex 为 <code class="codespan">3</code>, <code class="codespan">4</code>, <code class="codespan">5</code> 的 series 可以被联动。</li>
-     * <li><code class="codespan">'all'</code> 表示所有 series 都进行 brushLink。</li>
-     * <li><code class="codespan">'none'</code> 或 <code class="codespan">null</code> 或 <code class="codespan">undefined</code> 表示不启用 brushLink 功能。</li>
+     * <li><code class="codespan">&#39;all&#39;</code> 表示所有 series 都进行 brushLink。</li>
+     * <li><code class="codespan">&#39;none&#39;</code> 或 <code class="codespan">null</code> 或 <code class="codespan">undefined</code> 表示不启用 brushLink 功能。</li>
      * </ul>
      * <p><strong>注意</strong></p>
      * <p>brushLink 是通过 dataIndex 进行映射，所以需要保证，<strong>联动的每个系列的 <code class="codespan">data</code> 都是 <code class="codespan">index</code> 对应的</strong>。*</p>
      * <p>例如：</p>
-     * <pre><code class="lang-javascript hljs">option = {
-     *     <span class="hljs-attr">brush</span>: {
-     *         <span class="hljs-attr">brushLink</span>: [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>]
+     * <pre><code class="lang-javascript">option = {
+     *     brush: {
+     *         brushLink: [0, 1]
      *     },
-     *     <span class="hljs-attr">series</span>: [
+     *     series: [
      *         {
-     *             <span class="hljs-attr">type</span>: <span class="hljs-string">'bar'</span>
-     *             <span class="hljs-attr">data</span>: [<span class="hljs-number">232</span>,    <span class="hljs-number">4434</span>,    <span class="hljs-number">545</span>,      <span class="hljs-number">654</span>]     <span class="hljs-comment">// data 有四个项</span>
+     *             type: &#39;bar&#39;
+     *             data: [232,    4434,    545,      654]     // data 有四个项
      *         },
      *         {
-     *             <span class="hljs-attr">type</span>: <span class="hljs-string">'parallel'</span>,
-     *             <span class="hljs-attr">data</span>: [[<span class="hljs-number">4</span>, <span class="hljs-number">5</span>], [<span class="hljs-number">3</span>, <span class="hljs-number">5</span>], [<span class="hljs-number">66</span>, <span class="hljs-number">33</span>], [<span class="hljs-number">99</span>, <span class="hljs-number">66</span>]] <span class="hljs-comment">// data 同样有四个项，两个系列的 data 是对应的。</span>
+     *             type: &#39;parallel&#39;,
+     *             data: [[4, 5], [3, 5], [66, 33], [99, 66]] // data 同样有四个项，两个系列的 data 是对应的。
      *         }
      *     ]
      * };
      * </code></pre>
+     * </iframe>
      */
     private Object brushLink;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.seriesIndex">https://echarts.apache.org/zh/option.html#brush.seriesIndex</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#brush.seriesIndex">https://echarts.apache.org/v4/zh/option.html#brush.seriesIndex</a>
      * <br/>序号: 4
      * <br/>默认值: all
      * <br/>js类型: ["Array","number","string"]
@@ -243,7 +245,7 @@ public class Brush implements Serializable {
      */
     private Object seriesIndex;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.geoIndex">https://echarts.apache.org/zh/option.html#brush.geoIndex</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#brush.geoIndex">https://echarts.apache.org/v4/zh/option.html#brush.geoIndex</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Array","number","string"]
@@ -297,7 +299,7 @@ public class Brush implements Serializable {
      */
     private Object geoIndex;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.xAxisIndex">https://echarts.apache.org/zh/option.html#brush.xAxisIndex</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#brush.xAxisIndex">https://echarts.apache.org/v4/zh/option.html#brush.xAxisIndex</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["Array","number","string"]
@@ -356,7 +358,7 @@ public class Brush implements Serializable {
     }
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.yAxisIndex">https://echarts.apache.org/zh/option.html#brush.yAxisIndex</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#brush.yAxisIndex">https://echarts.apache.org/v4/zh/option.html#brush.yAxisIndex</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["Array","number","string"]
@@ -415,7 +417,7 @@ public class Brush implements Serializable {
     }
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.brushType">https://echarts.apache.org/zh/option.html#brush.brushType</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#brush.brushType">https://echarts.apache.org/v4/zh/option.html#brush.brushType</a>
      * <br/>序号: 8
      * <br/>默认值: rect
      * <br/>js类型: ["string"]
@@ -430,7 +432,7 @@ public class Brush implements Serializable {
      */
     private String brushType;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.brushMode">https://echarts.apache.org/zh/option.html#brush.brushMode</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#brush.brushMode">https://echarts.apache.org/v4/zh/option.html#brush.brushMode</a>
      * <br/>序号: 9
      * <br/>默认值: single
      * <br/>js类型: ["string"]
@@ -443,7 +445,7 @@ public class Brush implements Serializable {
      */
     private String brushMode;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.transformable">https://echarts.apache.org/zh/option.html#brush.transformable</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#brush.transformable">https://echarts.apache.org/v4/zh/option.html#brush.transformable</a>
      * <br/>序号: 10
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -452,7 +454,7 @@ public class Brush implements Serializable {
      */
     private Boolean transformable;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.brushStyle">https://echarts.apache.org/zh/option.html#brush.brushStyle</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#brush.brushStyle">https://echarts.apache.org/v4/zh/option.html#brush.brushStyle</a>
      * <br/>序号: 11
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -467,7 +469,7 @@ public class Brush implements Serializable {
      */
     private Object brushStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.throttleType">https://echarts.apache.org/zh/option.html#brush.throttleType</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#brush.throttleType">https://echarts.apache.org/v4/zh/option.html#brush.throttleType</a>
      * <br/>序号: 12
      * <br/>默认值: fixRate
      * <br/>js类型: ["string"]
@@ -482,7 +484,7 @@ public class Brush implements Serializable {
      */
     private String throttleType;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.throttleDelay">https://echarts.apache.org/zh/option.html#brush.throttleDelay</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#brush.throttleDelay">https://echarts.apache.org/v4/zh/option.html#brush.throttleDelay</a>
      * <br/>序号: 13
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -498,7 +500,7 @@ public class Brush implements Serializable {
      */
     private Integer throttleDelay;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.removeOnClick">https://echarts.apache.org/zh/option.html#brush.removeOnClick</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#brush.removeOnClick">https://echarts.apache.org/v4/zh/option.html#brush.removeOnClick</a>
      * <br/>序号: 14
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
@@ -507,7 +509,7 @@ public class Brush implements Serializable {
      */
     private Boolean removeOnClick;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.inBrush">https://echarts.apache.org/zh/option.html#brush.inBrush</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#brush.inBrush">https://echarts.apache.org/v4/zh/option.html#brush.inBrush</a>
      * <br/>序号: 15
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -528,7 +530,7 @@ public class Brush implements Serializable {
      */
     private Object inBrush;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.outOfBrush">https://echarts.apache.org/zh/option.html#brush.outOfBrush</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#brush.outOfBrush">https://echarts.apache.org/v4/zh/option.html#brush.outOfBrush</a>
      * <br/>序号: 16
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
@@ -557,7 +559,7 @@ public class Brush implements Serializable {
      */
     private Object outOfBrush;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#brush.z">https://echarts.apache.org/zh/option.html#brush.z</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#brush.z">https://echarts.apache.org/v4/zh/option.html#brush.z</a>
      * <br/>序号: 17
      * <br/>默认值: 10000
      * <br/>js类型: ["number"]

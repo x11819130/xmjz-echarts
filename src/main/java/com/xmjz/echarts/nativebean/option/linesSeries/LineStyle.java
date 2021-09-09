@@ -7,7 +7,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.lineStyle">https://echarts.apache.org/zh/option.html#series-lines.lineStyle</a>
+ * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-lines.lineStyle">https://echarts.apache.org/v4/zh/option.html#series-lines.lineStyle</a>
  * <br/>序号: 14
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
@@ -22,7 +22,7 @@ public class LineStyle implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.lineStyle.color">https://echarts.apache.org/zh/option.html#series-lines.lineStyle.color</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-lines.lineStyle.color">https://echarts.apache.org/v4/zh/option.html#series-lines.lineStyle.color</a>
      * <br/>序号: 1
      * <br/>默认值: 自适应
      * <br/>js类型: ["Color"]
@@ -71,7 +71,7 @@ public class LineStyle implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.lineStyle.width">https://echarts.apache.org/zh/option.html#series-lines.lineStyle.width</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-lines.lineStyle.width">https://echarts.apache.org/v4/zh/option.html#series-lines.lineStyle.width</a>
      * <br/>序号: 2
      * <br/>默认值: 1
      * <br/>js类型: ["number"]
@@ -80,7 +80,7 @@ public class LineStyle implements Serializable {
      */
     private Integer width;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.lineStyle.type">https://echarts.apache.org/zh/option.html#series-lines.lineStyle.type</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-lines.lineStyle.type">https://echarts.apache.org/v4/zh/option.html#series-lines.lineStyle.type</a>
      * <br/>序号: 3
      * <br/>默认值: solid
      * <br/>js类型: ["string"]
@@ -95,7 +95,7 @@ public class LineStyle implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.lineStyle.shadowBlur">https://echarts.apache.org/zh/option.html#series-lines.lineStyle.shadowBlur</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-lines.lineStyle.shadowBlur">https://echarts.apache.org/v4/zh/option.html#series-lines.lineStyle.shadowBlur</a>
      * <br/>序号: 4
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -110,7 +110,7 @@ public class LineStyle implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.lineStyle.shadowColor">https://echarts.apache.org/zh/option.html#series-lines.lineStyle.shadowColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-lines.lineStyle.shadowColor">https://echarts.apache.org/v4/zh/option.html#series-lines.lineStyle.shadowColor</a>
      * <br/>序号: 5
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
@@ -119,7 +119,7 @@ public class LineStyle implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.lineStyle.shadowOffsetX">https://echarts.apache.org/zh/option.html#series-lines.lineStyle.shadowOffsetX</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-lines.lineStyle.shadowOffsetX">https://echarts.apache.org/v4/zh/option.html#series-lines.lineStyle.shadowOffsetX</a>
      * <br/>序号: 6
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -128,7 +128,7 @@ public class LineStyle implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.lineStyle.shadowOffsetY">https://echarts.apache.org/zh/option.html#series-lines.lineStyle.shadowOffsetY</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-lines.lineStyle.shadowOffsetY">https://echarts.apache.org/v4/zh/option.html#series-lines.lineStyle.shadowOffsetY</a>
      * <br/>序号: 7
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
@@ -137,7 +137,7 @@ public class LineStyle implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.lineStyle.opacity">https://echarts.apache.org/zh/option.html#series-lines.lineStyle.opacity</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-lines.lineStyle.opacity">https://echarts.apache.org/v4/zh/option.html#series-lines.lineStyle.opacity</a>
      * <br/>序号: 8
      * <br/>默认值: 0.5
      * <br/>js类型: ["number"]
@@ -146,7 +146,7 @@ public class LineStyle implements Serializable {
      */
     private Integer opacity;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-lines.lineStyle.curveness">https://echarts.apache.org/zh/option.html#series-lines.lineStyle.curveness</a>
+     * 官方文档: <a href="https://echarts.apache.org/v4/zh/option.html#series-lines.lineStyle.curveness">https://echarts.apache.org/v4/zh/option.html#series-lines.lineStyle.curveness</a>
      * <br/>序号: 9
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
