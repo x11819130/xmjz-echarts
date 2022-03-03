@@ -141,18 +141,18 @@ public class Calendar implements Serializable {
      * <br/>描述:
      * <p>必填，日历坐标的范围 支持多种格式</p>
      * <p>使用示例：</p>
-     * <pre><code class="lang-js hljs javascript">
+     * <pre><code class="lang-ts hljs typescript">
      * <span class="hljs-comment">// 某一年</span>
-     * <span class="hljs-attr">range</span>: <span class="hljs-number">2017</span>
+     * range: <span class="hljs-number">2017</span>
      *
      * <span class="hljs-comment">// 某个月</span>
-     * <span class="hljs-attr">range</span>: <span class="hljs-string">'2017-02'</span>
+     * range: <span class="hljs-string">'2017-02'</span>
      *
      * <span class="hljs-comment">// 某个区间</span>
-     * <span class="hljs-attr">range</span>: [<span class="hljs-string">'2017-01-02'</span>, <span class="hljs-string">'2017-02-23'</span>]
+     * range: [<span class="hljs-string">'2017-01-02'</span>, <span class="hljs-string">'2017-02-23'</span>]
      *
      * <span class="hljs-comment">// 注意 此写法会识别为['2017-01-01', '2017-02-01']</span>
-     * <span class="hljs-attr">range</span>: [<span class="hljs-string">'2017-01'</span>, <span class="hljs-string">'2017-02'</span>]
+     * range: [<span class="hljs-string">'2017-01'</span>, <span class="hljs-string">'2017-02'</span>]
      *
      * </code></pre>
      */
@@ -165,21 +165,21 @@ public class Calendar implements Serializable {
      * <p>日历每格框的大小，可设置单值 或数组  第一个元素是宽 第二个元素是高。
      * 支持设置自适应：<code class="codespan">auto</code>, 默认为高宽均为20</p>
      * <p>使用示例：</p>
-     * <pre><code class="lang-js hljs javascript">
+     * <pre><code class="lang-ts hljs typescript">
      * <span class="hljs-comment">// 设置宽高均为20</span>
-     * <span class="hljs-attr">cellSize</span>: <span class="hljs-number">20</span>
+     * cellSize: <span class="hljs-number">20</span>
      *
      * <span class="hljs-comment">// 设置宽为20，高为40</span>
-     * <span class="hljs-attr">cellSize</span>: [<span class="hljs-number">20</span>, <span class="hljs-number">40</span>]
+     * cellSize: [<span class="hljs-number">20</span>, <span class="hljs-number">40</span>]
      *
      * <span class="hljs-comment">// 设置宽高均为40</span>
-     * <span class="hljs-attr">cellSize</span>: [<span class="hljs-number">40</span>]
+     * cellSize: [<span class="hljs-number">40</span>]
      *
      * <span class="hljs-comment">// 设置宽高均自适应</span>
-     * <span class="hljs-attr">cellSize</span>: <span class="hljs-string">'auto'</span>
+     * cellSize: <span class="hljs-string">'auto'</span>
      *
      * <span class="hljs-comment">// 设置宽自适应，高为40</span>
-     * <span class="hljs-attr">cellSize</span>: [<span class="hljs-string">'auto'</span>, <span class="hljs-number">40</span>]
+     * cellSize: [<span class="hljs-string">'auto'</span>, <span class="hljs-number">40</span>]
      *
      * </code></pre>
      */

@@ -15,7 +15,7 @@ import java.util.List;
  * <br/>描述:
  * <p><strong>漏斗图</strong></p>
  * <p><strong>示例：</strong></p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=funnel&amp;reset=1&amp;edit=1" width="600" height="400" data-ll-timeout="21"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=funnel&amp;reset=1&amp;edit=1" width="600" height="400" data-ll-timeout="26"></iframe>
  *
  * @author auto
  */
@@ -175,42 +175,42 @@ public class FunnelSeries extends Series implements Serializable {
      * <p>标签的统一布局配置。</p>
      * <p>该配置项是在每个系列默认的标签布局基础上，统一调整标签的<code class="codespan">(x, y)</code>位置，标签对齐等属性以实现想要的标签布局效果。</p>
      * <p>该配置项也可以是一个有如下参数的回调函数</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-comment">// 标签对应数据的 dataIndex</span>
-     * <span class="hljs-attr">dataIndex</span>: number
+     * <pre><code class="lang-ts hljs typescript"><span class="hljs-comment">// 标签对应数据的 dataIndex</span>
+     * dataIndex: <span class="hljs-built_in">number</span>
      * <span class="hljs-comment">// 标签对应的数据类型，只在关系图中会有 node 和 edge 数据类型的区分</span>
-     * dataType?: string
+     * dataType?: <span class="hljs-built_in">string</span>
      * <span class="hljs-comment">// 标签对应的系列的 index</span>
-     * <span class="hljs-attr">seriesIndex</span>: number
+     * seriesIndex: <span class="hljs-built_in">number</span>
      * <span class="hljs-comment">// 标签显示的文本</span>
-     * <span class="hljs-attr">text</span>: string
+     * text: <span class="hljs-built_in">string</span>
      * <span class="hljs-comment">// 默认的标签的包围盒，由系列默认的标签布局决定</span>
-     * <span class="hljs-attr">labelRect</span>: {<span class="hljs-attr">x</span>: number, <span class="hljs-attr">y</span>: number, <span class="hljs-attr">width</span>: number, <span class="hljs-attr">height</span>: number}
+     * labelRect: {x: <span class="hljs-built_in">number</span>, y: <span class="hljs-built_in">number</span>, width: <span class="hljs-built_in">number</span>, height: <span class="hljs-built_in">number</span>}
      * <span class="hljs-comment">// 默认的标签水平对齐</span>
-     * <span class="hljs-attr">align</span>: <span class="hljs-string">'left'</span> | <span class="hljs-string">'center'</span> | <span class="hljs-string">'right'</span>
+     * align: <span class="hljs-string">'left'</span> | <span class="hljs-string">'center'</span> | <span class="hljs-string">'right'</span>
      * <span class="hljs-comment">// 默认的标签垂直对齐</span>
-     * <span class="hljs-attr">verticalAlign</span>: <span class="hljs-string">'top'</span> | <span class="hljs-string">'middle'</span> | <span class="hljs-string">'bottom'</span>
+     * verticalAlign: <span class="hljs-string">'top'</span> | <span class="hljs-string">'middle'</span> | <span class="hljs-string">'bottom'</span>
      * <span class="hljs-comment">// 标签所对应的数据图形的包围盒，可用于定位标签位置</span>
-     * <span class="hljs-attr">rect</span>: {<span class="hljs-attr">x</span>: number, <span class="hljs-attr">y</span>: number, <span class="hljs-attr">width</span>: number, <span class="hljs-attr">height</span>: number}
+     * rect: {x: <span class="hljs-built_in">number</span>, y: <span class="hljs-built_in">number</span>, width: <span class="hljs-built_in">number</span>, height: <span class="hljs-built_in">number</span>}
      * <span class="hljs-comment">// 默认引导线的位置，目前只有饼图(pie)和漏斗图(funnel)有默认标签位置</span>
      * <span class="hljs-comment">// 如果没有该值则为 null</span>
-     * labelLinePoints?: number[][]
+     * labelLinePoints?: <span class="hljs-built_in">number</span>[][]
      * </code></pre>
      * <p><strong>示例：</strong></p>
      * <p>将标签显示在图形右侧 10px 的位置，并且垂直居中：</p>
-     * <pre><code class="lang-js hljs javascript">labelLayout(params) {
+     * <pre><code class="lang-ts hljs typescript">labelLayout(params) {
      *     <span class="hljs-keyword">return</span> {
-     *         <span class="hljs-attr">x</span>: params.rect.x + <span class="hljs-number">10</span>,
-     *         <span class="hljs-attr">y</span>: params.rect.y + params.rect.height / <span class="hljs-number">2</span>,
-     *         <span class="hljs-attr">verticalAlign</span>: <span class="hljs-string">'middle'</span>,
-     *         <span class="hljs-attr">align</span>: <span class="hljs-string">'left'</span>
+     *         x: params.rect.x + <span class="hljs-number">10</span>,
+     *         y: params.rect.y + params.rect.height / <span class="hljs-number">2</span>,
+     *         verticalAlign: <span class="hljs-string">'middle'</span>,
+     *         align: <span class="hljs-string">'left'</span>
      *     }
      * }
      * </code></pre>
      * <p>根据图形的包围盒尺寸决定文本尺寸</p>
-     * <pre><code class="lang-js hljs javascript">
+     * <pre><code class="lang-ts hljs typescript">
      * labelLayout(params) {
      *     <span class="hljs-keyword">return</span> {
-     *         <span class="hljs-attr">fontSize</span>: <span class="hljs-built_in">Math</span>.max(params.rect.width / <span class="hljs-number">10</span>, <span class="hljs-number">5</span>)
+     *         fontSize: <span class="hljs-built_in">Math</span>.max(params.rect.width / <span class="hljs-number">10</span>, <span class="hljs-number">5</span>)
      *     };
      * }
      * </code></pre>
@@ -256,7 +256,10 @@ public class FunnelSeries extends Series implements Serializable {
      * </blockquote>
      *
      *
-     * <p>选中模式的配置，表示是否支持多个选中，默认关闭，支持布尔值和字符串，字符串取值可选<code class="codespan">'single'</code>，<code class="codespan">'multiple'</code>，分别表示单选还是多选。</p>
+     * <p>选中模式的配置，表示是否支持多个选中，默认关闭，支持布尔值和字符串，字符串取值可选<code class="codespan">'single'</code>，<code class="codespan">'multiple'</code>，<code class="codespan">'series'</code> 分别表示单选，多选以及选择整个系列。</p>
+     * <blockquote>
+     * <p>从 v5.3.0 开始支持 <code class="codespan">'series'</code>。</p>
+     * </blockquote>
      */
     private Object selectedMode;
     /**
@@ -361,9 +364,9 @@ public class FunnelSeries extends Series implements Serializable {
      * <p>使用 dimensions 定义 <code class="codespan">series.data</code> 或者 <code class="codespan">dataset.source</code> 的每个维度的信息。</p>
      * <p>注意：如果使用了 <a href="#dataset">dataset</a>，那么可以在 <a href="#dataset.dimensions">dataset.dimensions</a> 中定义 dimension ，或者在 <a href="#dataset.source">dataset.source</a> 的第一行/列中给出 dimension 名称。于是就不用在这里指定 dimension。但如果在这里指定了 <code class="codespan">dimensions</code>，那么优先使用这里的。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">option = {
-     *     <span class="hljs-attr">dataset</span>: {
-     *         <span class="hljs-attr">source</span>: [
+     * <pre><code class="lang-ts hljs typescript">option = {
+     *     dataset: {
+     *         source: [
      *             <span class="hljs-comment">// 有了上面 dimensions 定义后，下面这五个维度的名称分别为：</span>
      *             <span class="hljs-comment">// 'date', 'open', 'close', 'highest', 'lowest'</span>
      *             [<span class="hljs-number">12</span>, <span class="hljs-number">44</span>, <span class="hljs-number">55</span>, <span class="hljs-number">66</span>, <span class="hljs-number">2</span>],
@@ -371,21 +374,21 @@ public class FunnelSeries extends Series implements Serializable {
      *             ...
      *         ]
      *     },
-     *     <span class="hljs-attr">series</span>: {
-     *         <span class="hljs-attr">type</span>: <span class="hljs-string">'xxx'</span>,
+     *     series: {
+     *         <span class="hljs-keyword">type</span>: <span class="hljs-string">'xxx'</span>,
      *         <span class="hljs-comment">// 定义了每个维度的名称。这个名称会被显示到默认的 tooltip 中。</span>
-     *         <span class="hljs-attr">dimensions</span>: [<span class="hljs-string">'date'</span>, <span class="hljs-string">'open'</span>, <span class="hljs-string">'close'</span>, <span class="hljs-string">'highest'</span>, <span class="hljs-string">'lowest'</span>]
+     *         dimensions: [<span class="hljs-string">'date'</span>, <span class="hljs-string">'open'</span>, <span class="hljs-string">'close'</span>, <span class="hljs-string">'highest'</span>, <span class="hljs-string">'lowest'</span>]
      *     }
      * }
      * </code></pre>
-     * <pre><code class="lang-js hljs javascript">series: {
-     *     <span class="hljs-attr">type</span>: <span class="hljs-string">'xxx'</span>,
-     *     <span class="hljs-attr">dimensions</span>: [
+     * <pre><code class="lang-ts hljs typescript">series: {
+     *     <span class="hljs-keyword">type</span>: <span class="hljs-string">'xxx'</span>,
+     *     dimensions: [
      *         <span class="hljs-literal">null</span>,                <span class="hljs-comment">// 如果此维度不想给出定义，则使用 null 即可</span>
-     *         {<span class="hljs-attr">type</span>: <span class="hljs-string">'ordinal'</span>},   <span class="hljs-comment">// 只定义此维度的类型。</span>
+     *         {<span class="hljs-keyword">type</span>: <span class="hljs-string">'ordinal'</span>},   <span class="hljs-comment">// 只定义此维度的类型。</span>
      *                              <span class="hljs-comment">// 'ordinal' 表示离散型，一般文本使用这种类型。</span>
      *                              <span class="hljs-comment">// 如果类型没有被定义，会自动猜测类型。</span>
-     *         {<span class="hljs-attr">name</span>: <span class="hljs-string">'good'</span>, <span class="hljs-attr">type</span>: <span class="hljs-string">'number'</span>},
+     *         {name: <span class="hljs-string">'good'</span>, <span class="hljs-keyword">type</span>: <span class="hljs-string">'number'</span>},
      *         <span class="hljs-string">'bad'</span>                <span class="hljs-comment">// 等同于 {name: 'bad'}</span>
      *     ]
      * }
@@ -416,9 +419,9 @@ public class FunnelSeries extends Series implements Serializable {
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>可以定义 <code class="codespan">data</code> 的哪个维度被编码成什么。比如：</p>
-     * <pre><code class="lang-js hljs javascript">option = {
-     *     <span class="hljs-attr">dataset</span>: {
-     *         <span class="hljs-attr">source</span>: [
+     * <pre><code class="lang-ts hljs typescript">option = {
+     *     dataset: {
+     *         source: [
      *             <span class="hljs-comment">// 每一列称为一个『维度』。</span>
      *             <span class="hljs-comment">// 这里分别是维度 0、1、2、3、4。</span>
      *             [<span class="hljs-number">12</span>, <span class="hljs-number">44</span>, <span class="hljs-number">55</span>, <span class="hljs-number">66</span>, <span class="hljs-number">2</span>],
@@ -426,104 +429,104 @@ public class FunnelSeries extends Series implements Serializable {
      *             ...
      *         ]
      *     },
-     *     <span class="hljs-attr">series</span>: {
-     *         <span class="hljs-attr">type</span>: <span class="hljs-string">'xxx'</span>,
-     *         <span class="hljs-attr">encode</span>: {
-     *             <span class="hljs-attr">x</span>: [<span class="hljs-number">3</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>],      <span class="hljs-comment">// 表示维度 3、1、5 映射到 x 轴。</span>
-     *             <span class="hljs-attr">y</span>: <span class="hljs-number">2</span>,              <span class="hljs-comment">// 表示维度 2 映射到 y 轴。</span>
-     *             <span class="hljs-attr">tooltip</span>: [<span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">4</span>] <span class="hljs-comment">// 表示维度 3、2、4 会在 tooltip 中显示。</span>
+     *     series: {
+     *         <span class="hljs-keyword">type</span>: <span class="hljs-string">'xxx'</span>,
+     *         encode: {
+     *             x: [<span class="hljs-number">3</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>],      <span class="hljs-comment">// 表示维度 3、1、5 映射到 x 轴。</span>
+     *             y: <span class="hljs-number">2</span>,              <span class="hljs-comment">// 表示维度 2 映射到 y 轴。</span>
+     *             tooltip: [<span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">4</span>] <span class="hljs-comment">// 表示维度 3、2、4 会在 tooltip 中显示。</span>
      *         }
      *     }
      * }
      * </code></pre>
      * <p>当使用 <a href="#series.dimensions">dimensions</a> 给维度定义名称后，<code class="codespan">encode</code> 中可直接引用名称，例如：</p>
-     * <pre><code class="lang-js hljs javascript">series: {
-     *     <span class="hljs-attr">type</span>: <span class="hljs-string">'xxx'</span>,
-     *     <span class="hljs-attr">dimensions</span>: [<span class="hljs-string">'date'</span>, <span class="hljs-string">'open'</span>, <span class="hljs-string">'close'</span>, <span class="hljs-string">'highest'</span>, <span class="hljs-string">'lowest'</span>],
-     *     <span class="hljs-attr">encode</span>: {
-     *         <span class="hljs-attr">x</span>: <span class="hljs-string">'date'</span>,
-     *         <span class="hljs-attr">y</span>: [<span class="hljs-string">'open'</span>, <span class="hljs-string">'close'</span>, <span class="hljs-string">'highest'</span>, <span class="hljs-string">'lowest'</span>]
+     * <pre><code class="lang-ts hljs typescript">series: {
+     *     <span class="hljs-keyword">type</span>: <span class="hljs-string">'xxx'</span>,
+     *     dimensions: [<span class="hljs-string">'date'</span>, <span class="hljs-string">'open'</span>, <span class="hljs-string">'close'</span>, <span class="hljs-string">'highest'</span>, <span class="hljs-string">'lowest'</span>],
+     *     encode: {
+     *         x: <span class="hljs-string">'date'</span>,
+     *         y: [<span class="hljs-string">'open'</span>, <span class="hljs-string">'close'</span>, <span class="hljs-string">'highest'</span>, <span class="hljs-string">'lowest'</span>]
      *     }
      * }
      * </code></pre>
      * <p><code class="codespan">encode</code> 声明的基本结构如下，其中冒号左边是坐标系、标签等特定名称，如 <code class="codespan">'x'</code>, <code class="codespan">'y'</code>, <code class="codespan">'tooltip'</code> 等，冒号右边是数据中的维度名（string 格式）或者维度的序号（number 格式，从 0 开始计数），可以指定一个或多个维度（使用数组）。通常情况下，下面各种信息不需要所有的都写，按需写即可。</p>
      * <p>下面是 encode 支持的属性：</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-comment">// 在任何坐标系和系列中，都支持：</span>
-     * <span class="hljs-attr">encode</span>: {
+     * <pre><code class="lang-ts hljs typescript"><span class="hljs-comment">// 在任何坐标系和系列中，都支持：</span>
+     * encode: {
      *     <span class="hljs-comment">// 使用 “名为 product 的维度” 和 “名为 score 的维度” 的值在 tooltip 中显示</span>
-     *     <span class="hljs-attr">tooltip</span>: [<span class="hljs-string">'product'</span>, <span class="hljs-string">'score'</span>]
+     *     tooltip: [<span class="hljs-string">'product'</span>, <span class="hljs-string">'score'</span>]
      *     <span class="hljs-comment">// 使用第一个维度和第三个维度的维度名连起来作为系列名。（有时候名字比较长，这可以避免在 series.name 重复输入这些名字）</span>
-     *     <span class="hljs-attr">seriesName</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">3</span>],
+     *     seriesName: [<span class="hljs-number">1</span>, <span class="hljs-number">3</span>],
      *     <span class="hljs-comment">// 表示使用第二个维度中的值作为 id。这在使用 setOption 动态更新数据时有用处，可以使新老数据用 id 对应起来，从而能够产生合适的数据更新动画。</span>
-     *     <span class="hljs-attr">itemId</span>: <span class="hljs-number">2</span>,
+     *     itemId: <span class="hljs-number">2</span>,
      *     <span class="hljs-comment">// 指定数据项的名称使用第三个维度在饼图等图表中有用，可以使这个名字显示在图例（legend）中。</span>
-     *     <span class="hljs-attr">itemName</span>: <span class="hljs-number">3</span>,
+     *     itemName: <span class="hljs-number">3</span>,
      *     <span class="hljs-comment">// 指定数据项的组 ID (groupID)，组 ID 会被用于分类数据，并在全局过渡动画中决定如何进行合并和分裂动画，具体见 universalTransition</span>
-     *     <span class="hljs-attr">itemGroupId</span>: <span class="hljs-number">4</span>
+     *     itemGroupId: <span class="hljs-number">4</span>
      * }
      *
      * <span class="hljs-comment">// 直角坐标系（grid/cartesian）特有的属性：</span>
-     * <span class="hljs-attr">encode</span>: {
+     * encode: {
      *     <span class="hljs-comment">// 把 “维度1”、“维度5”、“名为 score 的维度” 映射到 X 轴：</span>
-     *     <span class="hljs-attr">x</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">5</span>, <span class="hljs-string">'score'</span>],
+     *     x: [<span class="hljs-number">1</span>, <span class="hljs-number">5</span>, <span class="hljs-string">'score'</span>],
      *     <span class="hljs-comment">// 把“维度0”映射到 Y 轴。</span>
-     *     <span class="hljs-attr">y</span>: <span class="hljs-number">0</span>
+     *     y: <span class="hljs-number">0</span>
      * }
      *
      * <span class="hljs-comment">// 单轴（singleAxis）特有的属性：</span>
-     * <span class="hljs-attr">encode</span>: {
-     *     <span class="hljs-attr">single</span>: <span class="hljs-number">3</span>
+     * encode: {
+     *     single: <span class="hljs-number">3</span>
      * }
      *
      * <span class="hljs-comment">// 极坐标系（polar）特有的属性：</span>
-     * <span class="hljs-attr">encode</span>: {
-     *     <span class="hljs-attr">radius</span>: <span class="hljs-number">3</span>,
-     *     <span class="hljs-attr">angle</span>: <span class="hljs-number">2</span>
+     * encode: {
+     *     radius: <span class="hljs-number">3</span>,
+     *     angle: <span class="hljs-number">2</span>
      * }
      *
      * <span class="hljs-comment">// 地理坐标系（geo）特有的属性：</span>
-     * <span class="hljs-attr">encode</span>: {
-     *     <span class="hljs-attr">lng</span>: <span class="hljs-number">3</span>,
-     *     <span class="hljs-attr">lat</span>: <span class="hljs-number">2</span>
+     * encode: {
+     *     lng: <span class="hljs-number">3</span>,
+     *     lat: <span class="hljs-number">2</span>
      * }
      *
      * <span class="hljs-comment">// 对于一些没有坐标系的图表，例如饼图、漏斗图等，可以是：</span>
-     * <span class="hljs-attr">encode</span>: {
-     *     <span class="hljs-attr">value</span>: <span class="hljs-number">3</span>
+     * encode: {
+     *     value: <span class="hljs-number">3</span>
      * }
      * </code></pre>
      * <p>这是个更丰富的 <code class="codespan">encode</code> 的<a href="https://echarts.apache.org/examples/zh/view.html?c=dataset-encode1&amp;edit=1&amp;reset=1" target="_blank">示例</a>：</p>
      * <p>特殊地，在 <a href="#series-custom">自定义系列（custom series）</a> 中，<code class="codespan">encode</code> 中轴可以不指定或设置为 <code class="codespan">null/undefined</code>，从而使系列免于受这个轴控制，也就是说，轴的范围（extent）不会受此系列数值的影响，轴被 <a href="#dataZoom">dataZoom</a> 控制时也不会过滤掉这个系列：</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-keyword">var</span> option = {
-     *     <span class="hljs-attr">xAxis</span>: {},
-     *     <span class="hljs-attr">yAxis</span>: {},
-     *     <span class="hljs-attr">dataZoom</span>: [{
-     *         <span class="hljs-attr">xAxisIndex</span>: <span class="hljs-number">0</span>
+     * <pre><code class="lang-ts hljs typescript"><span class="hljs-keyword">var</span> option = {
+     *     xAxis: {},
+     *     yAxis: {},
+     *     dataZoom: [{
+     *         xAxisIndex: <span class="hljs-number">0</span>
      *     }, {
-     *         <span class="hljs-attr">yAxisIndex</span>: <span class="hljs-number">0</span>
+     *         yAxisIndex: <span class="hljs-number">0</span>
      *     }],
-     *     <span class="hljs-attr">series</span>: {
-     *         <span class="hljs-attr">type</span>: <span class="hljs-string">'custom'</span>,
-     *         <span class="hljs-attr">renderItem</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">params, api</span>) </span>{
+     *     series: {
+     *         <span class="hljs-keyword">type</span>: <span class="hljs-string">'custom'</span>,
+     *         renderItem: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">params, api</span>) </span>{
      *             <span class="hljs-keyword">return</span> {
-     *                 <span class="hljs-attr">type</span>: <span class="hljs-string">'circle'</span>,
-     *                 <span class="hljs-attr">shape</span>: {
-     *                     <span class="hljs-attr">cx</span>: <span class="hljs-number">100</span>, <span class="hljs-comment">// x 位置永远为 100</span>
-     *                     <span class="hljs-attr">cy</span>: api.coord([<span class="hljs-number">0</span>, api.value(<span class="hljs-number">0</span>)])[<span class="hljs-number">1</span>],
-     *                     <span class="hljs-attr">r</span>: <span class="hljs-number">30</span>
+     *                 <span class="hljs-keyword">type</span>: <span class="hljs-string">'circle'</span>,
+     *                 shape: {
+     *                     cx: <span class="hljs-number">100</span>, <span class="hljs-comment">// x 位置永远为 100</span>
+     *                     cy: api.coord([<span class="hljs-number">0</span>, api.value(<span class="hljs-number">0</span>)])[<span class="hljs-number">1</span>],
+     *                     r: <span class="hljs-number">30</span>
      *                 },
-     *                 <span class="hljs-attr">style</span>: {
-     *                     <span class="hljs-attr">fill</span>: <span class="hljs-string">'blue'</span>
+     *                 style: {
+     *                     fill: <span class="hljs-string">'blue'</span>
      *                 }
      *             };
      *         },
-     *         <span class="hljs-attr">encode</span>: {
+     *         encode: {
      *             <span class="hljs-comment">// 这样这个系列就不会被 x 轴以及 x</span>
      *             <span class="hljs-comment">// 轴上的 dataZoom 控制了。</span>
-     *             <span class="hljs-attr">x</span>: <span class="hljs-number">-1</span>,
-     *             <span class="hljs-attr">y</span>: <span class="hljs-number">1</span>
+     *             x: <span class="hljs-number">-1</span>,
+     *             y: <span class="hljs-number">1</span>
      *         },
-     *         <span class="hljs-attr">data</span>: [ ... ]
+     *         data: [ ... ]
      *     }
      * };
      * </code></pre>
@@ -544,35 +547,35 @@ public class FunnelSeries extends Series implements Serializable {
      * <br/>js类型: ["Array"]
      * <br/>描述:
      * <p>系列中的数据内容数组。数组项可以为单个数值，如：</p>
-     * <pre><code class="lang-js hljs javascript">[<span class="hljs-number">12</span>, <span class="hljs-number">34</span>, <span class="hljs-number">56</span>, <span class="hljs-number">10</span>, <span class="hljs-number">23</span>]
+     * <pre><code class="lang-ts hljs typescript">[<span class="hljs-number">12</span>, <span class="hljs-number">34</span>, <span class="hljs-number">56</span>, <span class="hljs-number">10</span>, <span class="hljs-number">23</span>]
      * </code></pre>
      * <p>如果需要在数据中加入其它维度给 <a href="#visualMap">visualMap</a> 组件用来映射到颜色等其它图形属性。每个数据项也可以是数组，如：</p>
-     * <pre><code class="lang-js hljs javascript">[[<span class="hljs-number">12</span>, <span class="hljs-number">14</span>], [<span class="hljs-number">34</span>, <span class="hljs-number">50</span>], [<span class="hljs-number">56</span>, <span class="hljs-number">30</span>], [<span class="hljs-number">10</span>, <span class="hljs-number">15</span>], [<span class="hljs-number">23</span>, <span class="hljs-number">10</span>]]
+     * <pre><code class="lang-ts hljs typescript">[[<span class="hljs-number">12</span>, <span class="hljs-number">14</span>], [<span class="hljs-number">34</span>, <span class="hljs-number">50</span>], [<span class="hljs-number">56</span>, <span class="hljs-number">30</span>], [<span class="hljs-number">10</span>, <span class="hljs-number">15</span>], [<span class="hljs-number">23</span>, <span class="hljs-number">10</span>]]
      * </code></pre>
      * <p>这时候可以将每项数组中的第二个值指定给 <a href="#visualMap">visualMap</a> 组件。</p>
      * <p>更多时候我们需要指定每个数据项的名称，这时候需要每个项为一个对象：</p>
-     * <pre><code class="lang-js hljs javascript">[{
+     * <pre><code class="lang-ts hljs typescript">[{
      *     <span class="hljs-comment">// 数据项的名称</span>
-     *     <span class="hljs-attr">name</span>: <span class="hljs-string">'数据1'</span>,
+     *     name: <span class="hljs-string">'数据1'</span>,
      *     <span class="hljs-comment">// 数据项值8</span>
-     *     <span class="hljs-attr">value</span>: <span class="hljs-number">10</span>
+     *     value: <span class="hljs-number">10</span>
      * }, {
-     *     <span class="hljs-attr">name</span>: <span class="hljs-string">'数据2'</span>,
-     *     <span class="hljs-attr">value</span>: <span class="hljs-number">20</span>
+     *     name: <span class="hljs-string">'数据2'</span>,
+     *     value: <span class="hljs-number">20</span>
      * }]
      * </code></pre>
      * <p>需要对个别内容指定进行个性化定义时：</p>
-     * <pre><code class="lang-js hljs javascript">[{
-     *     <span class="hljs-attr">name</span>: <span class="hljs-string">'数据1'</span>,
-     *     <span class="hljs-attr">value</span>: <span class="hljs-number">10</span>
+     * <pre><code class="lang-ts hljs typescript">[{
+     *     name: <span class="hljs-string">'数据1'</span>,
+     *     value: <span class="hljs-number">10</span>
      * }, {
      *     <span class="hljs-comment">// 数据项名称</span>
-     *     <span class="hljs-attr">name</span>: <span class="hljs-string">'数据2'</span>,
-     *     <span class="hljs-attr">value</span> : <span class="hljs-number">56</span>,
+     *     name: <span class="hljs-string">'数据2'</span>,
+     *     value : <span class="hljs-number">56</span>,
      *     <span class="hljs-comment">//自定义特殊 tooltip，仅对该数据项有效</span>
-     *     <span class="hljs-attr">tooltip</span>:{},
+     *     tooltip:{},
      *     <span class="hljs-comment">//自定义特殊itemStyle，仅对该item有效</span>
-     *     <span class="hljs-attr">itemStyle</span>:{}
+     *     itemStyle:{}
      * }]
      * </code></pre>
      */
@@ -631,7 +634,7 @@ public class FunnelSeries extends Series implements Serializable {
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
      * <p>初始动画的时长，支持回调函数，可以通过每个数据返回不同的时长实现更戏剧的初始动画效果：</p>
-     * <pre><code class="lang-js hljs javascript">animationDuration: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">animationDuration: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
      *     <span class="hljs-comment">// 越往后的数据时长越大</span>
      *     <span class="hljs-keyword">return</span> idx * <span class="hljs-number">100</span>;
      * }
@@ -653,7 +656,7 @@ public class FunnelSeries extends Series implements Serializable {
      * <br/>描述:
      * <p>初始动画的延迟，支持回调函数，可以通过每个数据返回不同的 delay 时间实现更戏剧的初始动画效果。</p>
      * <p>如下示例：</p>
-     * <pre><code class="lang-js hljs javascript">animationDelay: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">animationDelay: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
      *     <span class="hljs-comment">// 越往后的数据延迟越大</span>
      *     <span class="hljs-keyword">return</span> idx * <span class="hljs-number">100</span>;
      * }
@@ -668,7 +671,7 @@ public class FunnelSeries extends Series implements Serializable {
      * <br/>描述:
      * <p>数据更新动画的时长。</p>
      * <p>支持回调函数，可以通过每个数据返回不同的时长实现更戏剧的更新动画效果：</p>
-     * <pre><code class="lang-js hljs javascript">animationDurationUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">animationDurationUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
      *     <span class="hljs-comment">// 越往后的数据时长越大</span>
      *     <span class="hljs-keyword">return</span> idx * <span class="hljs-number">100</span>;
      * }
@@ -690,7 +693,7 @@ public class FunnelSeries extends Series implements Serializable {
      * <br/>描述:
      * <p>数据更新动画的延迟，支持回调函数，可以通过每个数据返回不同的 delay 时间实现更戏剧的更新动画效果。</p>
      * <p>如下示例：</p>
-     * <pre><code class="lang-js hljs javascript">animationDelayUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">animationDelayUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
      *     <span class="hljs-comment">// 越往后的数据延迟越大</span>
      *     <span class="hljs-keyword">return</span> idx * <span class="hljs-number">100</span>;
      * }

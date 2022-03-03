@@ -199,35 +199,35 @@ public class AxisPointer implements Serializable {
      * <p>不同轴的 axisPointer 可以进行联动，在这里设置。联动表示轴能同步一起活动。轴依据他们的 axisPointer 当前对应的值来联动。</p>
      * <p>联动的效果可以看这两个例子：<a href="https://echarts.apache.org/examples/zh/view.html?c=candlestick-brush&amp;edit=1&amp;reset=1" target="_blank">例子A</a>，<a href="https://echarts.apache.org/examples/zh/view.html?c=scatter-nutrients-matrix&amp;edit=1&amp;reset=1" target="_blank">例子B</a>。</p>
      * <p>link 是一个数组，其中每一项表示一个 link group，一个 group 中的坐标轴互相联动。例如：</p>
-     * <pre><code class="lang-js hljs javascript">link: [
+     * <pre><code class="lang-ts hljs typescript">link: [
      *     {
      *         <span class="hljs-comment">// 表示所有 xAxisIndex 为 0、3、4 和 yAxisName 为 'someName' 的坐标轴联动。</span>
-     *         <span class="hljs-attr">xAxisIndex</span>: [<span class="hljs-number">0</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>],
-     *         <span class="hljs-attr">yAxisName</span>: <span class="hljs-string">'someName'</span>
+     *         xAxisIndex: [<span class="hljs-number">0</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>],
+     *         yAxisName: <span class="hljs-string">'someName'</span>
      *     },
      *     {
      *         <span class="hljs-comment">// 表示左右 xAxisId 为 'aa'、'cc' 以及所有的 angleAxis 联动。</span>
-     *         <span class="hljs-attr">xAxisId</span>: [<span class="hljs-string">'aa'</span>, <span class="hljs-string">'cc'</span>],
-     *         <span class="hljs-attr">angleAxis</span>: <span class="hljs-string">'all'</span>
+     *         xAxisId: [<span class="hljs-string">'aa'</span>, <span class="hljs-string">'cc'</span>],
+     *         angleAxis: <span class="hljs-string">'all'</span>
      *     },
      *     ...
      * ]
      * </code></pre>
      * <p>如上所示，每个 link group 中可以用这些方式引用坐标轴：</p>
-     * <pre><code class="lang-js hljs javascript">{
+     * <pre><code class="lang-ts hljs typescript">{
      *     <span class="hljs-comment">// 以下的 'some' 均表示轴的维度，也就是表示 'x', 'y', 'radius', 'angle', 'single'</span>
-     *     <span class="hljs-attr">someAxisIndex</span>: [...], <span class="hljs-comment">// 可以是一个数组或单值或 'all'</span>
-     *     <span class="hljs-attr">someAxisName</span>: [...],  <span class="hljs-comment">// 可以是一个数组或单值或 'all'</span>
-     *     <span class="hljs-attr">someAxisId</span>: [...],    <span class="hljs-comment">// 可以是一个数组或单值或 'all'</span>
+     *     someAxisIndex: [...], <span class="hljs-comment">// 可以是一个数组或单值或 'all'</span>
+     *     someAxisName: [...],  <span class="hljs-comment">// 可以是一个数组或单值或 'all'</span>
+     *     someAxisId: [...],    <span class="hljs-comment">// 可以是一个数组或单值或 'all'</span>
      * }
      * </code></pre>
      * <hr>
      * <p><strong>如何联动不同类型（<a href="#xAxis.type">axis.type</a>）的轴？</strong></p>
      * <p>如果 axis 的类型不同，比如 axisA type 为 'category'，axisB type 为 'time'，可以在每个 link group 中写转换函数（mapper）来进行值的转换，例如：</p>
-     * <pre><code class="lang-js hljs javascript">link: [{
-     *     <span class="hljs-attr">xAxisIndex</span>: [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>],
-     *     <span class="hljs-attr">yAxisName</span>: [<span class="hljs-string">'yy'</span>],
-     *     <span class="hljs-attr">mapper</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">sourceVal, sourceAxisInfo, targetAxisInfo</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">link: [{
+     *     xAxisIndex: [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>],
+     *     yAxisName: [<span class="hljs-string">'yy'</span>],
+     *     mapper: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">sourceVal, sourceAxisInfo, targetAxisInfo</span>) </span>{
      *         <span class="hljs-keyword">if</span> (sourceAxisInfo.axisName === <span class="hljs-string">'yy'</span>) {
      *             <span class="hljs-comment">// from timestamp to '2012-02-05'</span>
      *             <span class="hljs-keyword">return</span> echarts.format.formatTime(<span class="hljs-string">'yyyy-MM-dd'</span>, sourceVal);

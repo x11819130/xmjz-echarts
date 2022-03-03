@@ -102,13 +102,13 @@ import java.util.List;
  * <p><br>
  * <strong>兼容 ECharts4</strong></p>
  * <p>如下这种设置方式，也支持：</p>
- * <pre><code class="lang-js hljs javascript">option = {
- *     <span class="hljs-attr">baseOption</span>: {
- *         <span class="hljs-attr">timeline</span>: {},
- *         <span class="hljs-attr">series</span>: [],
+ * <pre><code class="lang-ts hljs typescript">option = {
+ *     baseOption: {
+ *         timeline: {},
+ *         series: [],
  *         <span class="hljs-comment">// ... other properties of baseOption.</span>
  *     },
- *     <span class="hljs-attr">options</span>: []
+ *     options: []
  * };
  * </code></pre>
  *
@@ -295,12 +295,12 @@ public class Timeline implements Serializable {
      * <br/>描述:
      * <p>timeline内边距，单位px，默认各方向内边距为5，接受数组分别设定上右下左边距。</p>
      * <p>使用示例：</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-comment">// 设置内边距为 5</span>
-     * <span class="hljs-attr">padding</span>: <span class="hljs-number">5</span>
+     * <pre><code class="lang-ts hljs typescript"><span class="hljs-comment">// 设置内边距为 5</span>
+     * padding: <span class="hljs-number">5</span>
      * <span class="hljs-comment">// 设置上下的内边距为 5，左右的内边距为 10</span>
-     * <span class="hljs-attr">padding</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>]
+     * padding: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>]
      * <span class="hljs-comment">// 分别设置四个方向的内边距</span>
-     * <span class="hljs-attr">padding</span>: [
+     * padding: [
      *     <span class="hljs-number">5</span>,  <span class="hljs-comment">// 上</span>
      *     <span class="hljs-number">10</span>, <span class="hljs-comment">// 右</span>
      *     <span class="hljs-number">5</span>,  <span class="hljs-comment">// 下</span>

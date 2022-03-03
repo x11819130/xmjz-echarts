@@ -85,9 +85,9 @@ public class Feature implements Serializable {
      * <br/>描述:
      * <p>动态类型切换
      * <strong>示例：</strong></p>
-     * <pre><code class="lang-js hljs javascript">feature: {
-     *     <span class="hljs-attr">magicType</span>: {
-     *         <span class="hljs-attr">type</span>: [<span class="hljs-string">'line'</span>, <span class="hljs-string">'bar'</span>, <span class="hljs-string">'stack'</span>]
+     * <pre><code class="lang-ts hljs typescript">feature: {
+     *     magicType: {
+     *         <span class="hljs-keyword">type</span>: [<span class="hljs-string">'line'</span>, <span class="hljs-string">'bar'</span>, <span class="hljs-string">'stack'</span>]
      *     }
      * }
      * </code></pre>

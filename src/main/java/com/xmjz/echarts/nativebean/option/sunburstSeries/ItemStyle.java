@@ -66,11 +66,11 @@ public class ItemStyle implements Serializable {
      * <code class="codespan">borderDashOffset</code>
      *  可实现更灵活的虚线效果。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">{
+     * <pre><code class="lang-ts hljs typescript">{
      *
-     * <span class="hljs-attr">borderType</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
+     * borderType: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
      *
-     * <span class="hljs-attr">borderDashOffset</span>: <span class="hljs-number">5</span>
+     * borderDashOffset: <span class="hljs-number">5</span>
      * }
      * </code></pre>
      */
@@ -158,9 +158,9 @@ public class ItemStyle implements Serializable {
      * <br/>描述:
      * <p>图形阴影的模糊大小。该属性配合 <code class="codespan">shadowColor</code>,<code class="codespan">shadowOffsetX</code>, <code class="codespan">shadowOffsetY</code> 一起设置图形的阴影效果。</p>
      * <p>示例：</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">shadowColor</span>: <span class="hljs-string">'rgba(0, 0, 0, 0.5)'</span>,
-     *     <span class="hljs-attr">shadowBlur</span>: <span class="hljs-number">10</span>
+     * <pre><code class="lang-ts hljs typescript">{
+     *     shadowColor: <span class="hljs-string">'rgba(0, 0, 0, 0.5)'</span>,
+     *     shadowBlur: <span class="hljs-number">10</span>
      * }
      * </code></pre>
      */
@@ -206,4 +206,32 @@ public class ItemStyle implements Serializable {
      * <p>如果为 <code class="codespan">'none'</code> 表示不使用贴花图案。</p>
      */
     private Object decal;
+    /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sunburst.itemStyle.borderRadius">https://echarts.apache.org/zh/option.html#series-sunburst.itemStyle.borderRadius</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["number","string","Array"]
+     * <br/>描述:
+     * <blockquote>
+     * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
+     * </blockquote>
+     * <p>用于指定旭日图扇形区块的内外圆角半径，支持设置固定数值或者相对于扇形区块的半径的百分比值。</p>
+     * <p>从 <code class="codespan">v5.3.0</code> 开始，支持分别配置从内到外顺时针方向四个角的圆角半径，百分比值从相对于内外扇形的半径更改为相对于内外扇形的半径差。</p>
+     * <p>例如：</p>
+     * <p><code class="codespan">v5.3.0</code> 之前</p>
+     * <ul>
+     * <li><code class="codespan">borderRadius: 10</code>：表示内圆角半径和外圆角半径都是 <code class="codespan">10px</code>。</li>
+     * <li><code class="codespan">borderRadius: '20%'</code>：表示内圆角半径和外圆角半径都是扇形区块半径的 <code class="codespan">20%</code>。</li>
+     * <li><code class="codespan">borderRadius: [10, 20]</code>：表示为环形图时，内圆角半径是 <code class="codespan">10px</code>、外圆角半径是 <code class="codespan">20px</code>。</li>
+     * <li><code class="codespan">borderRadius: ['20%', '50%']</code>：表示为环形图时，内圆角半径是内圆半径的 <code class="codespan">20%</code>、外圆角半径是外圆半径的 <code class="codespan">50%</code>。</li>
+     * </ul>
+     * <p><code class="codespan">v5.3.0</code> 之后</p>
+     * <ul>
+     * <li><code class="codespan">borderRadius: 10</code>：表示内圆角半径和外圆角半径都是 <code class="codespan">10px</code>。</li>
+     * <li><code class="codespan">borderRadius: '20%'</code>：表示内圆角半径和外圆角半径都是扇形区块半径的 <code class="codespan">20%</code>。</li>
+     * <li><code class="codespan">borderRadius: [10, 20]</code>：表示为环形图时，内圆角半径是 <code class="codespan">10px</code>、外圆角半径是 <code class="codespan">20px</code>。</li>
+     * <li><code class="codespan">borderRadius: ['20%', '50%']</code>：表示为环形图时，内圆角半径是内外圆半径差的 <code class="codespan">20%</code>、外圆角半径是内外圆半径差的 <code class="codespan">50%</code>。</li>
+     * <li><code class="codespan">borderRadius: [5, 10, 15, 20]</code>：表示内圆角半径分别为 <code class="codespan">5px</code> 和 <code class="codespan">10px</code>，外圆角半径分别为 <code class="codespan">15px</code> 和 <code class="codespan">20px</code>。</li>
+     * </ul>
+     */
+    private Object borderRadius;
 }

@@ -332,7 +332,7 @@ public class ParallelSeries extends Series implements Serializable {
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
      * <p>初始动画的时长，支持回调函数，可以通过每个数据返回不同的时长实现更戏剧的初始动画效果：</p>
-     * <pre><code class="lang-js hljs javascript">animationDuration: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">animationDuration: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
      *     <span class="hljs-comment">// 越往后的数据时长越大</span>
      *     <span class="hljs-keyword">return</span> idx * <span class="hljs-number">100</span>;
      * }
@@ -354,7 +354,7 @@ public class ParallelSeries extends Series implements Serializable {
      * <br/>描述:
      * <p>初始动画的延迟，支持回调函数，可以通过每个数据返回不同的 delay 时间实现更戏剧的初始动画效果。</p>
      * <p>如下示例：</p>
-     * <pre><code class="lang-js hljs javascript">animationDelay: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">animationDelay: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
      *     <span class="hljs-comment">// 越往后的数据延迟越大</span>
      *     <span class="hljs-keyword">return</span> idx * <span class="hljs-number">100</span>;
      * }
@@ -369,7 +369,7 @@ public class ParallelSeries extends Series implements Serializable {
      * <br/>描述:
      * <p>数据更新动画的时长。</p>
      * <p>支持回调函数，可以通过每个数据返回不同的时长实现更戏剧的更新动画效果：</p>
-     * <pre><code class="lang-js hljs javascript">animationDurationUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">animationDurationUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
      *     <span class="hljs-comment">// 越往后的数据时长越大</span>
      *     <span class="hljs-keyword">return</span> idx * <span class="hljs-number">100</span>;
      * }
@@ -391,7 +391,7 @@ public class ParallelSeries extends Series implements Serializable {
      * <br/>描述:
      * <p>数据更新动画的延迟，支持回调函数，可以通过每个数据返回不同的 delay 时间实现更戏剧的更新动画效果。</p>
      * <p>如下示例：</p>
-     * <pre><code class="lang-js hljs javascript">animationDelayUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">animationDelayUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
      *     <span class="hljs-comment">// 越往后的数据延迟越大</span>
      *     <span class="hljs-keyword">return</span> idx * <span class="hljs-number">100</span>;
      * }

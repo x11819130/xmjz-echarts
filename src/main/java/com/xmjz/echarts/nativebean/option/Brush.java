@@ -20,7 +20,7 @@ import java.util.List;
  * <p>点击 <code class="codespan">toolbox</code> 中的按钮，能够进行『区域选择』、『清除选择』等操作。</p>
  * <p><br>
  * <code class="codespan">横向刷子</code> 的示例如下（点击 <code class="codespan">toolbox</code> 中的按钮启动刷选）：</p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=candlestick-brush&amp;edit=1&amp;reset=1" width="800" height="500" data-ll-timeout="20"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=candlestick-brush&amp;edit=1&amp;reset=1" width="800" height="500"></iframe>
  *
  *
  * <p><br>

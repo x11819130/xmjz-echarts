@@ -16,7 +16,7 @@ import java.io.Serializable;
  * <p>标题组件，包含主标题和副标题。</p>
  * <p>在 ECharts 2.x 中单个 ECharts 实例最多只能拥有一个标题组件。但是在 ECharts 3 中可以存在任意多个标题组件，这在需要标题进行排版，或者单个实例中的多个图表都需要标题时会比较有用。</p>
  * <p><strong>例如下面不同缓动函数效果的示例，每一个缓动效果图都带有一个标题组件：</strong></p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-easing&amp;edit=1&amp;reset=1" width="700" height="400" data-ll-timeout="18"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-easing&amp;edit=1&amp;reset=1" width="700" height="400" data-ll-timeout="21"></iframe>
  *
  * @author auto
  */
@@ -150,12 +150,12 @@ public class Title implements Serializable {
      * <br/>描述:
      * <p>标题内边距，单位px，默认各方向内边距为5，接受数组分别设定上右下左边距。</p>
      * <p>使用示例：</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-comment">// 设置内边距为 5</span>
-     * <span class="hljs-attr">padding</span>: <span class="hljs-number">5</span>
+     * <pre><code class="lang-ts hljs typescript"><span class="hljs-comment">// 设置内边距为 5</span>
+     * padding: <span class="hljs-number">5</span>
      * <span class="hljs-comment">// 设置上下的内边距为 5，左右的内边距为 10</span>
-     * <span class="hljs-attr">padding</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>]
+     * padding: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>]
      * <span class="hljs-comment">// 分别设置四个方向的内边距</span>
-     * <span class="hljs-attr">padding</span>: [
+     * padding: [
      *     <span class="hljs-number">5</span>,  <span class="hljs-comment">// 上</span>
      *     <span class="hljs-number">10</span>, <span class="hljs-comment">// 右</span>
      *     <span class="hljs-number">5</span>,  <span class="hljs-comment">// 下</span>
@@ -277,9 +277,9 @@ public class Title implements Serializable {
      * <br/>描述:
      * <p>图形阴影的模糊大小。该属性配合 <code class="codespan">shadowColor</code>,<code class="codespan">shadowOffsetX</code>, <code class="codespan">shadowOffsetY</code> 一起设置图形的阴影效果。</p>
      * <p>示例：</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">shadowColor</span>: <span class="hljs-string">'rgba(0, 0, 0, 0.5)'</span>,
-     *     <span class="hljs-attr">shadowBlur</span>: <span class="hljs-number">10</span>
+     * <pre><code class="lang-ts hljs typescript">{
+     *     shadowColor: <span class="hljs-string">'rgba(0, 0, 0, 0.5)'</span>,
+     *     shadowBlur: <span class="hljs-number">10</span>
      * }
      * </code></pre>
      * <p><strong>注意</strong>：此配置项生效的前提是，设置了 <code class="codespan">show: true</code> 以及值不为 <code class="codespan">tranparent</code> 的背景色 <code class="codespan">backgroundColor</code>。</p>

@@ -31,7 +31,7 @@ public class ItemStyle implements Serializable {
      * <p>支持使用<code class="codespan">rgb(255,255,255)</code>，<code class="codespan">rgba(255,255,255,1)</code>，<code class="codespan">#fff</code>等方式设置为纯色，也支持设置为渐变色和纹理填充，具体见<a href="#color">option.color</a></p>
      * </blockquote>
      * <p>支持使用回调函数。回调函数格式如下：</p>
-     * <pre><code class="lang-js hljs javascript">(params: <span class="hljs-built_in">Object</span>) =&gt; Color
+     * <pre><code class="lang-ts hljs typescript">(params: <span class="hljs-built_in">Object</span>) =&gt; Color
      * </code></pre>
      * <p>传入的是数据项 <code class="codespan">seriesIndex</code>, <code class="codespan">dataIndex</code>, <code class="codespan">data</code>, <code class="codespan">value</code> 等各个参数。</p>
      */
@@ -68,11 +68,11 @@ public class ItemStyle implements Serializable {
      * <code class="codespan">borderDashOffset</code>
      *  可实现更灵活的虚线效果。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">{
+     * <pre><code class="lang-ts hljs typescript">{
      *
-     * <span class="hljs-attr">borderType</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
+     * borderType: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
      *
-     * <span class="hljs-attr">borderDashOffset</span>: <span class="hljs-number">5</span>
+     * borderDashOffset: <span class="hljs-number">5</span>
      * }
      * </code></pre>
      */
@@ -160,9 +160,9 @@ public class ItemStyle implements Serializable {
      * <br/>描述:
      * <p>图形阴影的模糊大小。该属性配合 <code class="codespan">shadowColor</code>,<code class="codespan">shadowOffsetX</code>, <code class="codespan">shadowOffsetY</code> 一起设置图形的阴影效果。</p>
      * <p>示例：</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">shadowColor</span>: <span class="hljs-string">'rgba(0, 0, 0, 0.5)'</span>,
-     *     <span class="hljs-attr">shadowBlur</span>: <span class="hljs-number">10</span>
+     * <pre><code class="lang-ts hljs typescript">{
+     *     shadowColor: <span class="hljs-string">'rgba(0, 0, 0, 0.5)'</span>,
+     *     shadowBlur: <span class="hljs-number">10</span>
      * }
      * </code></pre>
      */

@@ -12,13 +12,13 @@ import java.io.Serializable;
  * <br/>js类型: ["Array"]
  * <br/>描述:
  * <p>雷达图的指示器，用来指定雷达图中的多个变量（维度），如下示例。</p>
- * <pre><code class="lang-js hljs javascript">indicator: [
- *    { <span class="hljs-attr">name</span>: <span class="hljs-string">'销售（sales）'</span>, <span class="hljs-attr">max</span>: <span class="hljs-number">6500</span>},
- *    { <span class="hljs-attr">name</span>: <span class="hljs-string">'管理（Administration）'</span>, <span class="hljs-attr">max</span>: <span class="hljs-number">16000</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">'red'</span>}, <span class="hljs-comment">// 标签设置为红色</span>
- *    { <span class="hljs-attr">name</span>: <span class="hljs-string">'信息技术（Information Techology）'</span>, <span class="hljs-attr">max</span>: <span class="hljs-number">30000</span>},
- *    { <span class="hljs-attr">name</span>: <span class="hljs-string">'客服（Customer Support）'</span>, <span class="hljs-attr">max</span>: <span class="hljs-number">38000</span>},
- *    { <span class="hljs-attr">name</span>: <span class="hljs-string">'研发（Development）'</span>, <span class="hljs-attr">max</span>: <span class="hljs-number">52000</span>},
- *    { <span class="hljs-attr">name</span>: <span class="hljs-string">'市场（Marketing）'</span>, <span class="hljs-attr">max</span>: <span class="hljs-number">25000</span>}
+ * <pre><code class="lang-ts hljs typescript">indicator: [
+ *    { name: <span class="hljs-string">'销售（sales）'</span>, max: <span class="hljs-number">6500</span>},
+ *    { name: <span class="hljs-string">'管理（Administration）'</span>, max: <span class="hljs-number">16000</span>, color: <span class="hljs-string">'red'</span>}, <span class="hljs-comment">// 标签设置为红色</span>
+ *    { name: <span class="hljs-string">'信息技术（Information Techology）'</span>, max: <span class="hljs-number">30000</span>},
+ *    { name: <span class="hljs-string">'客服（Customer Support）'</span>, max: <span class="hljs-number">38000</span>},
+ *    { name: <span class="hljs-string">'研发（Development）'</span>, max: <span class="hljs-number">52000</span>},
+ *    { name: <span class="hljs-string">'市场（Marketing）'</span>, max: <span class="hljs-number">25000</span>}
  * ]
  * </code></pre>
  *

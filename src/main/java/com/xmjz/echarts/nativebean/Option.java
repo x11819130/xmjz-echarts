@@ -31,7 +31,7 @@ public class Option implements Serializable {
      * <p>标题组件，包含主标题和副标题。</p>
      * <p>在 ECharts 2.x 中单个 ECharts 实例最多只能拥有一个标题组件。但是在 ECharts 3 中可以存在任意多个标题组件，这在需要标题进行排版，或者单个实例中的多个图表都需要标题时会比较有用。</p>
      * <p><strong>例如下面不同缓动函数效果的示例，每一个缓动效果图都带有一个标题组件：</strong></p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-easing&amp;edit=1&amp;reset=1" width="700" height="400" data-ll-timeout="18"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-easing&amp;edit=1&amp;reset=1" width="700" height="400" data-ll-timeout="21"></iframe>
      */
     private Title title;
     /**
@@ -53,7 +53,7 @@ public class Option implements Serializable {
      * <p>直角坐标系内绘图网格，单个 grid 内最多可以放置上下两个 X 轴，左右两个 Y 轴。可以在网格上绘制<a href="#series-line">折线图</a>，<a href="#series-bar">柱状图</a>，<a href="#series-scatter">散点图（气泡图）</a>。</p>
      * <p>在 ECharts 2.x 里单个 echarts 实例中最多只能存在一个 grid 组件，在 ECharts 3 中可以存在任意个 grid 组件。</p>
      * <p><strong>例如下面这个 Anscombe Quartet 的示例：</strong></p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-anscombe-quartet&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="17"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-anscombe-quartet&amp;edit=1&amp;reset=1" width="600" height="400" class="loaded" src="https://echarts.apache.org/examples/zh/view.html?c=scatter-anscombe-quartet&amp;edit=1&amp;reset=1" data-was-processed="true"></iframe>
      */
     private Grid grid;
     /**
@@ -89,7 +89,7 @@ public class Option implements Serializable {
      * <br/>描述:
      * <p>极坐标系，可以用于散点图和折线图。每个极坐标系拥有一个<a href="#angleAxis">角度轴</a>和一个<a href="#radiusAxis">半径轴</a>。</p>
      * <p><strong>示例：</strong></p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-polar-punchCard&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="19"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-polar-punchCard&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="25"></iframe>
      */
     private Polar polar;
     /**
@@ -135,7 +135,7 @@ public class Option implements Serializable {
      * </li>
      * </ul>
      * <p>如下例子：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/scatter-dataZoom-all&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="17"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/scatter-dataZoom-all&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="19"></iframe>
      *
      *
      * <p><br></p>
@@ -341,14 +341,14 @@ public class Option implements Serializable {
      * <p>既然是『数据』到『视觉元素』的映射，<code class="codespan">visualMap</code> 中可以指定数据的『哪个维度』（参见<a href="#visualMap.dimension">visualMap.dimension</a>）映射到哪些『视觉元素』（参见<a href="#visualMap.inRange">visualMap.inRange</a> 和 <a href="#visualMap.outOfRange">visualMap.outOfRange</a>）中。</p>
      * <p><br>
      * 在 visualMap 组件所控制的 series 中，如果 series 中某个数据项需要避开 visualMap 映射，可以这么配置：</p>
-     * <pre><code class="hljs javascript">series: {
-     *     <span class="hljs-attr">type</span>: <span class="hljs-string">'...'</span>,
-     *     <span class="hljs-attr">data</span>: [
-     *         {<span class="hljs-attr">name</span>: <span class="hljs-string">'Shanghai'</span>, <span class="hljs-attr">value</span>: <span class="hljs-number">251</span>},
-     *         {<span class="hljs-attr">name</span>: <span class="hljs-string">'Haikou'</span>, <span class="hljs-attr">value</span>: <span class="hljs-number">21</span>},
+     * <pre><code class="hljs typescript">series: {
+     *     <span class="hljs-keyword">type</span>: <span class="hljs-string">'...'</span>,
+     *     data: [
+     *         {name: <span class="hljs-string">'Shanghai'</span>, value: <span class="hljs-number">251</span>},
+     *         {name: <span class="hljs-string">'Haikou'</span>, value: <span class="hljs-number">21</span>},
      *         <span class="hljs-comment">// 设置 `visualMap: false` 则 visualMap 不对此项进行控制，此时系列</span>
      *         <span class="hljs-comment">// 可使用自身的视觉参数（color/symbol/ ...控制此项的显示。</span>
-     *         {<span class="hljs-attr">name</span>: <span class="hljs-string">'Beijing'</span>, <span class="hljs-attr">value</span>: <span class="hljs-number">821</span>, <span class="hljs-attr">visualMap</span>: <span class="hljs-literal">false</span>},
+     *         {name: <span class="hljs-string">'Beijing'</span>, value: <span class="hljs-number">821</span>, visualMap: <span class="hljs-literal">false</span>},
      *         ...
      *     ]
      * }
@@ -376,7 +376,6 @@ public class Option implements Serializable {
      * <li><p>可以设置在系列的每个数据项中，即 <a href="#series.data.tooltip">series.data.tooltip</a></p>
      * </li>
      * </ul>
-     * <hr>
      */
     private Tooltip tooltip;
     /**
@@ -469,7 +468,7 @@ public class Option implements Serializable {
      * <p>点击 <code class="codespan">toolbox</code> 中的按钮，能够进行『区域选择』、『清除选择』等操作。</p>
      * <p><br>
      * <code class="codespan">横向刷子</code> 的示例如下（点击 <code class="codespan">toolbox</code> 中的按钮启动刷选）：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=candlestick-brush&amp;edit=1&amp;reset=1" width="800" height="500" data-ll-timeout="20"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=candlestick-brush&amp;edit=1&amp;reset=1" width="800" height="500"></iframe>
      *
      *
      * <p><br>
@@ -612,14 +611,14 @@ public class Option implements Serializable {
      * <p>地理坐标系组件。</p>
      * <p>地理坐标系组件用于地图的绘制，支持在地理坐标系上绘制<a href="#series-scatter">散点图</a>，<a href="#series-lines">线集</a>。</p>
      * <p><code class="codespan">3.1.10</code> 开始 geo 组件也支持鼠标事件。事件参数为</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">componentType</span>: <span class="hljs-string">'geo'</span>,
+     * <pre><code class="lang-ts hljs typescript">{
+     *     componentType: <span class="hljs-string">'geo'</span>,
      *     <span class="hljs-comment">// Geo 组件在 option 中的 index</span>
-     *     <span class="hljs-attr">geoIndex</span>: number,
+     *     geoIndex: <span class="hljs-built_in">number</span>,
      *     <span class="hljs-comment">// 点击区域的名称，比如"上海"</span>
-     *     <span class="hljs-attr">name</span>: string,
+     *     name: <span class="hljs-built_in">string</span>,
      *     <span class="hljs-comment">// 传入的点击区域的 region 对象，见 geo.regions</span>
-     *     <span class="hljs-attr">region</span>: <span class="hljs-built_in">Object</span>
+     *     region: <span class="hljs-built_in">Object</span>
      * }
      * </code></pre>
      * <p><strong>Tip:</strong>
@@ -648,7 +647,7 @@ public class Option implements Serializable {
      * </code></pre>
      * <p>数据中，每一行是一个『数据项』，每一列属于一个『维度』。（例如上面数据每一列的含义分别是：『日期』,『AQI指数』, 『PM2.5』, 『PM10』, 『一氧化碳值』, 『二氧化氮值』, 『二氧化硫值』）。</p>
      * <p>平行坐标系适用于对这种多维数据进行可视化分析。每一个维度（每一列）对应一个坐标轴，每一个『数据项』是一条线，贯穿多个坐标轴。在坐标轴上，可以进行数据选取等操作。如下：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/parallel-all&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="18"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/parallel-all&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="25"></iframe>
      *
      *
      * <p><strong>配置方式概要</strong></p>
@@ -758,7 +757,7 @@ public class Option implements Serializable {
      * </code></pre>
      * <p>数据中，每一行是一个『数据项』，每一列属于一个『维度』。（例如上面数据每一列的含义分别是：『日期』,『AQI指数』, 『PM2.5』, 『PM10』, 『一氧化碳值』, 『二氧化氮值』, 『二氧化硫值』）。</p>
      * <p>平行坐标系适用于对这种多维数据进行可视化分析。每一个维度（每一列）对应一个坐标轴，每一个『数据项』是一条线，贯穿多个坐标轴。在坐标轴上，可以进行数据选取等操作。如下：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/parallel-all&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="19"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/parallel-all&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="61"></iframe>
      *
      *
      * <p><strong>配置方式概要</strong></p>
@@ -851,7 +850,7 @@ public class Option implements Serializable {
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>单轴。可以被应用到散点图中展现一维数据，如下示例</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-single-axis&amp;edit=1&amp;reset=1" width="700" height="500" data-ll-timeout="19"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-single-axis&amp;edit=1&amp;reset=1" width="700" height="500" data-ll-timeout="27"></iframe>
      */
     private SingleAxis singleAxis;
     /**
@@ -948,13 +947,13 @@ public class Option implements Serializable {
      * <p><br>
      * <strong>兼容 ECharts4</strong></p>
      * <p>如下这种设置方式，也支持：</p>
-     * <pre><code class="lang-js hljs javascript">option = {
-     *     <span class="hljs-attr">baseOption</span>: {
-     *         <span class="hljs-attr">timeline</span>: {},
-     *         <span class="hljs-attr">series</span>: [],
+     * <pre><code class="lang-ts hljs typescript">option = {
+     *     baseOption: {
+     *         timeline: {},
+     *         series: [],
      *         <span class="hljs-comment">// ... other properties of baseOption.</span>
      *     },
-     *     <span class="hljs-attr">options</span>: []
+     *     options: []
      * };
      * </code></pre>
      */
@@ -978,17 +977,14 @@ public class Option implements Serializable {
      * <a href="#graphic.elements-arc">arc</a>,
      * <a href="#graphic.elements-group">group</a>,</p>
      * <p>下面示例中，使用图形元素做了水印，和文本块：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-graphic&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="20"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-graphic&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="27"></iframe>
      *
      *
      * <p>下面示例中，使用隐藏的图形元素实现了拖拽：</p>
-     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-draggable&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="21"></iframe>
+     * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-draggable&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="28"></iframe>
      *
      *
      *
-     *
-     * <p><br></p>
-     * <hr>
      * <p><strong>graphic 设置介绍</strong></p>
      * <p>只配一个图形元素时的简写方法：</p>
      * <pre><code class="lang-javascript hljs">myChart.setOption({
@@ -1053,8 +1049,6 @@ public class Option implements Serializable {
      * </code></pre>
      * <p>注意，如果没有指定 id，第二次 setOption 时会按照元素在 option 中出现的顺序和已有的图形元素进行匹配。这有时会产生不易理解的效果。
      * 所以，一般来说，更新 elements 时推荐使用 id 进行准确的指定，而非省略 id。</p>
-     * <p><br></p>
-     * <hr>
      * <p><strong>图形元素设置介绍</strong></p>
      * <p>介绍每个图形元素的配置。不同类型的图形元素的设置有这些共性：</p>
      * <pre><code class="lang-javascript hljs">{
@@ -1098,17 +1092,11 @@ public class Option implements Serializable {
      *     <span class="hljs-attr">onclick</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{...}
      * }
      * </code></pre>
-     * <p><br></p>
-     * <hr>
      * <p><strong>图形元素的事件</strong></p>
      * <p>支持这些事件配置：
      * <code class="codespan">onclick</code>, <code class="codespan">onmouseover</code>, <code class="codespan">onmouseout</code>, <code class="codespan">onmousemove</code>, <code class="codespan">onmousewheel</code>, <code class="codespan">onmousedown</code>, <code class="codespan">onmouseup</code>, <code class="codespan">ondrag</code>, <code class="codespan">ondragstart</code>, <code class="codespan">ondragend</code>, <code class="codespan">ondragenter</code>, <code class="codespan">ondragleave</code>, <code class="codespan">ondragover</code>, <code class="codespan">ondrop</code>。</p>
-     * <p><br></p>
-     * <hr>
      * <p><strong>图形元素的层级关系</strong></p>
      * <p>只有 <code class="codespan">group</code> 元素可以有子节点，从而以该 <code class="codespan">group</code> 元素为根的元素树可以共同定位（共同移动）。</p>
-     * <p><br></p>
-     * <hr>
      * <p><strong>图形元素的基本形状设置</strong></p>
      * <p>每个图形元素本身有自己的图形基本的位置和尺寸设置，例如：</p>
      * <pre><code class="lang-javascript hljs">{
@@ -1148,8 +1136,6 @@ public class Option implements Serializable {
      *
      * }
      * </code></pre>
-     * <p><br></p>
-     * <hr>
      * <p><strong>图形元素的定位和 transfrom</strong></p>
      * <p>除此以外，可以以 transform 的方式对图形进行平移、旋转、缩放，
      * 参见：<a href="#graphic.elements.position">position</a>、<a href="#graphic.elements.rotation">rotation</a>、<a href="#graphic.elements.scale">scale</a>、<a href="#graphic.elements.origin">origin</a>。</p>
@@ -1164,20 +1150,16 @@ public class Option implements Serializable {
      *     }
      * }
      * </code></pre>
-     * <ul>
-     * <li>每个图形元素在父节点的坐标系中进行 transform，也就是说父子节点的 transform 能『叠加』。</li>
-     * <li>每个图形元素进行 transform 顺序是：<ol>
+     * <p>每个图形元素在父节点的坐标系中进行 transform，也就是说父子节点的 transform 能『叠加』。</p>
+     * <p>每个图形元素进行 transform 顺序是：</p>
+     * <ol>
      * <li>平移 [-el.origin[0], -el.origin[1]]。</li>
      * <li>根据 el.scale 缩放。</li>
      * <li>根据 el.rotation 旋转。</li>
      * <li>根据 el.origin 平移。</li>
      * <li>根据 el.position 平移。</li>
      * </ol>
-     * </li>
-     * <li>也就是说先缩放旋转后平移，这样平移不会影响缩放旋转的 origin。</li>
-     * </ul>
-     * <p><br></p>
-     * <hr>
+     * <p>也就是说先缩放旋转后平移，这样平移不会影响缩放旋转的 origin。</p>
      * <p><strong>图形元素相对定位</strong></p>
      * <p>以上两者是基本的绝对定位，除此之外，在实际应用中，容器尺寸常常是不确定甚至动态变化的，所以需要提供相对定位的机制。graphic 组件使用 <a href="#graphic.elements.left">left</a> / <a href="#graphic.elements.right">right</a> / <a href="#graphic.elements.top">top</a> / <a href="#graphic.elements.bottom">bottom</a> / <a href="#graphic.elements.width">width</a> / <a href="#graphic.elements.height">height</a> 提供了相对定位的机制。</p>
      * <p>例如：</p>
@@ -1290,8 +1272,8 @@ public class Option implements Serializable {
     private Aria aria;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series">https://echarts.apache.org/zh/option.html#series</a>
-     * <br/>默认值: [{
-     * <br/>js类型: ["string"]
+     * <br/>默认值: 无
+     * <br/>js类型: ["Array"]
      * <br/>描述:
      */
     private List<Series> series;
@@ -1311,44 +1293,44 @@ public class Option implements Serializable {
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>调色盘颜色列表。如果系列没有设置颜色，则会依次循环从该列表中取颜色作为系列颜色。 默认为：</p>
-     * <pre><code class="lang-js hljs javascript">[<span class="hljs-string">'#5470c6'</span>, <span class="hljs-string">'#91cc75'</span>, <span class="hljs-string">'#fac858'</span>, <span class="hljs-string">'#ee6666'</span>, <span class="hljs-string">'#73c0de'</span>, <span class="hljs-string">'#3ba272'</span>, <span class="hljs-string">'#fc8452'</span>, <span class="hljs-string">'#9a60b4'</span>, <span class="hljs-string">'#ea7ccc'</span>]
+     * <pre><code class="lang-ts hljs typescript">[<span class="hljs-string">'#5470c6'</span>, <span class="hljs-string">'#91cc75'</span>, <span class="hljs-string">'#fac858'</span>, <span class="hljs-string">'#ee6666'</span>, <span class="hljs-string">'#73c0de'</span>, <span class="hljs-string">'#3ba272'</span>, <span class="hljs-string">'#fc8452'</span>, <span class="hljs-string">'#9a60b4'</span>, <span class="hljs-string">'#ea7ccc'</span>]
      * </code></pre>
      * <p>支持的颜色格式：</p>
      * <ul>
-     * <li><p>使用 RGB 表示纯颜色，比如 <code class="codespan">'rgb(128, 128, 128)'</code>，如果想要加上 alpha 通道表示不透明度，可以使用 RGBA，比如 <code class="codespan">'rgba(128, 128, 128, 0.5)'</code>，也可以使用十六进制格式，比如 <code class="codespan">'#ccc'</code>。</p>
+     * <li><p>使用 RGB 表示颜色，比如 <code class="codespan">'rgb(128, 128, 128)'</code>，如果想要加上 alpha 通道表示不透明度，可以使用 RGBA，比如 <code class="codespan">'rgba(128, 128, 128, 0.5)'</code>，也可以使用十六进制格式，比如 <code class="codespan">'#ccc'</code>。</p>
      * </li>
      * <li><p>渐变色或者纹理填充</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-comment">// 线性渐变，前四个参数分别是 x0, y0, x2, y2, 范围从 0 - 1，相当于在图形包围盒中的百分比，如果 globalCoord 为 `true`，则该四个值是绝对的像素位置</span>
+     * <pre><code class="lang-ts hljs typescript"><span class="hljs-comment">// 线性渐变，前四个参数分别是 x0, y0, x2, y2, 范围从 0 - 1，相当于在图形包围盒中的百分比，如果 globalCoord 为 `true`，则该四个值是绝对的像素位置</span>
      * {
-     *   <span class="hljs-attr">type</span>: <span class="hljs-string">'linear'</span>,
-     *   <span class="hljs-attr">x</span>: <span class="hljs-number">0</span>,
-     *   <span class="hljs-attr">y</span>: <span class="hljs-number">0</span>,
-     *   <span class="hljs-attr">x2</span>: <span class="hljs-number">0</span>,
-     *   <span class="hljs-attr">y2</span>: <span class="hljs-number">1</span>,
-     *   <span class="hljs-attr">colorStops</span>: [{
-     *       <span class="hljs-attr">offset</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">'red'</span> <span class="hljs-comment">// 0% 处的颜色</span>
+     *   <span class="hljs-keyword">type</span>: <span class="hljs-string">'linear'</span>,
+     *   x: <span class="hljs-number">0</span>,
+     *   y: <span class="hljs-number">0</span>,
+     *   x2: <span class="hljs-number">0</span>,
+     *   y2: <span class="hljs-number">1</span>,
+     *   colorStops: [{
+     *       offset: <span class="hljs-number">0</span>, color: <span class="hljs-string">'red'</span> <span class="hljs-comment">// 0% 处的颜色</span>
      *   }, {
-     *       <span class="hljs-attr">offset</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">'blue'</span> <span class="hljs-comment">// 100% 处的颜色</span>
+     *       offset: <span class="hljs-number">1</span>, color: <span class="hljs-string">'blue'</span> <span class="hljs-comment">// 100% 处的颜色</span>
      *   }],
-     *   <span class="hljs-attr">global</span>: <span class="hljs-literal">false</span> <span class="hljs-comment">// 缺省为 false</span>
+     *   global: <span class="hljs-literal">false</span> <span class="hljs-comment">// 缺省为 false</span>
      * }
      * <span class="hljs-comment">// 径向渐变，前三个参数分别是圆心 x, y 和半径，取值同线性渐变</span>
      * {
-     *   <span class="hljs-attr">type</span>: <span class="hljs-string">'radial'</span>,
-     *   <span class="hljs-attr">x</span>: <span class="hljs-number">0.5</span>,
-     *   <span class="hljs-attr">y</span>: <span class="hljs-number">0.5</span>,
-     *   <span class="hljs-attr">r</span>: <span class="hljs-number">0.5</span>,
-     *   <span class="hljs-attr">colorStops</span>: [{
-     *       <span class="hljs-attr">offset</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">'red'</span> <span class="hljs-comment">// 0% 处的颜色</span>
+     *   <span class="hljs-keyword">type</span>: <span class="hljs-string">'radial'</span>,
+     *   x: <span class="hljs-number">0.5</span>,
+     *   y: <span class="hljs-number">0.5</span>,
+     *   r: <span class="hljs-number">0.5</span>,
+     *   colorStops: [{
+     *       offset: <span class="hljs-number">0</span>, color: <span class="hljs-string">'red'</span> <span class="hljs-comment">// 0% 处的颜色</span>
      *   }, {
-     *       <span class="hljs-attr">offset</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">'blue'</span> <span class="hljs-comment">// 100% 处的颜色</span>
+     *       offset: <span class="hljs-number">1</span>, color: <span class="hljs-string">'blue'</span> <span class="hljs-comment">// 100% 处的颜色</span>
      *   }],
-     *   <span class="hljs-attr">global</span>: <span class="hljs-literal">false</span> <span class="hljs-comment">// 缺省为 false</span>
+     *   global: <span class="hljs-literal">false</span> <span class="hljs-comment">// 缺省为 false</span>
      * }
      * <span class="hljs-comment">// 纹理填充</span>
      * {
-     *   <span class="hljs-attr">image</span>: imageDom, <span class="hljs-comment">// 支持为 HTMLImageElement, HTMLCanvasElement，不支持路径字符串</span>
-     *   <span class="hljs-attr">repeat</span>: <span class="hljs-string">'repeat'</span> <span class="hljs-comment">// 是否平铺，可以是 'repeat-x', 'repeat-y', 'no-repeat'</span>
+     *   image: imageDom, <span class="hljs-comment">// 支持为 HTMLImageElement, HTMLCanvasElement，不支持路径字符串</span>
+     *   repeat: <span class="hljs-string">'repeat'</span> <span class="hljs-comment">// 是否平铺，可以是 'repeat-x', 'repeat-y', 'no-repeat'</span>
      * }
      * </code></pre>
      * </li>
@@ -1396,7 +1378,7 @@ public class Option implements Serializable {
      * <br/>js类型: ["number"]
      * <br/>描述:
      * <p>初始动画的时长，支持回调函数，可以通过每个数据返回不同的时长实现更戏剧的初始动画效果：</p>
-     * <pre><code class="lang-js hljs javascript">animationDuration: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">animationDuration: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
      *     <span class="hljs-comment">// 越往后的数据时长越大</span>
      *     <span class="hljs-keyword">return</span> idx * <span class="hljs-number">100</span>;
      * }
@@ -1418,7 +1400,7 @@ public class Option implements Serializable {
      * <br/>描述:
      * <p>初始动画的延迟，支持回调函数，可以通过每个数据返回不同的 delay 时间实现更戏剧的初始动画效果。</p>
      * <p>如下示例：</p>
-     * <pre><code class="lang-js hljs javascript">animationDelay: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">animationDelay: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
      *     <span class="hljs-comment">// 越往后的数据延迟越大</span>
      *     <span class="hljs-keyword">return</span> idx * <span class="hljs-number">100</span>;
      * }
@@ -1433,7 +1415,7 @@ public class Option implements Serializable {
      * <br/>描述:
      * <p>数据更新动画的时长。</p>
      * <p>支持回调函数，可以通过每个数据返回不同的时长实现更戏剧的更新动画效果：</p>
-     * <pre><code class="lang-js hljs javascript">animationDurationUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">animationDurationUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
      *     <span class="hljs-comment">// 越往后的数据时长越大</span>
      *     <span class="hljs-keyword">return</span> idx * <span class="hljs-number">100</span>;
      * }
@@ -1455,7 +1437,7 @@ public class Option implements Serializable {
      * <br/>描述:
      * <p>数据更新动画的延迟，支持回调函数，可以通过每个数据返回不同的 delay 时间实现更戏剧的更新动画效果。</p>
      * <p>如下示例：</p>
-     * <pre><code class="lang-js hljs javascript">animationDelayUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">animationDelayUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
      *     <span class="hljs-comment">// 越往后的数据延迟越大</span>
      *     <span class="hljs-keyword">return</span> idx * <span class="hljs-number">100</span>;
      * }

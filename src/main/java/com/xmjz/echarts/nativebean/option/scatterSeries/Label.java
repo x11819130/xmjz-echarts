@@ -39,16 +39,16 @@ public class Label implements Serializable {
      * <ul>
      * <li><p>可以通过内置的语义声明位置：</p>
      * <p>  示例：</p>
-     * <pre><code class="lang-js hljs javascript">  position: <span class="hljs-string">'top'</span>
+     * <pre><code class="lang-ts hljs typescript">  position: <span class="hljs-string">'top'</span>
      * </code></pre>
      * <p>  支持：<code class="codespan">top</code> / <code class="codespan">left</code> / <code class="codespan">right</code> / <code class="codespan">bottom</code> / <code class="codespan">inside</code> / <code class="codespan">insideLeft</code> / <code class="codespan">insideRight</code> / <code class="codespan">insideTop</code> / <code class="codespan">insideBottom</code> / <code class="codespan">insideTopLeft</code> / <code class="codespan">insideBottomLeft</code> / <code class="codespan">insideTopRight</code> / <code class="codespan">insideBottomRight</code></p>
      * </li>
      * <li><p>也可以用一个数组表示相对的百分比或者绝对像素值表示标签相对于图形包围盒左上角的位置。</p>
      * <p>  示例：</p>
-     * <pre><code class="lang-js hljs javascript">  <span class="hljs-comment">// 绝对的像素值</span>
-     *   <span class="hljs-attr">position</span>: [<span class="hljs-number">10</span>, <span class="hljs-number">10</span>],
+     * <pre><code class="lang-ts hljs typescript">  <span class="hljs-comment">// 绝对的像素值</span>
+     *   position: [<span class="hljs-number">10</span>, <span class="hljs-number">10</span>],
      *   <span class="hljs-comment">// 相对的百分比</span>
-     *   <span class="hljs-attr">position</span>: [<span class="hljs-string">'50%'</span>, <span class="hljs-string">'50%'</span>]
+     *   position: [<span class="hljs-string">'50%'</span>, <span class="hljs-string">'50%'</span>]
      * </code></pre>
      * </li>
      * </ul>
@@ -98,29 +98,29 @@ public class Label implements Serializable {
      * <li><code class="codespan">{@[n]}</code>：数据中维度 <code class="codespan">n</code> 的值，如 <code class="codespan">{@[3]}</code> 表示维度 3 的值，从 0 开始计数。</li>
      * </ul>
      * <p><strong>示例：</strong></p>
-     * <pre><code class="lang-js hljs javascript">formatter: <span class="hljs-string">'{b}: {@score}'</span>
+     * <pre><code class="lang-ts hljs typescript">formatter: <span class="hljs-string">'{b}: {@score}'</span>
      * </code></pre>
      * <p><strong>回调函数</strong></p>
      * <p>回调函数格式：</p>
-     * <pre><code class="lang-js hljs javascript">(params: <span class="hljs-built_in">Object</span>|<span class="hljs-built_in">Array</span>) =&gt; string
+     * <pre><code class="lang-ts hljs typescript">(params: <span class="hljs-built_in">Object</span>|<span class="hljs-built_in">Array</span>) =&gt; <span class="hljs-built_in">string</span>
      * </code></pre>
      * <p>参数 <code class="codespan">params</code> 是 formatter 需要的单个数据集。格式如下：</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">componentType</span>: <span class="hljs-string">'series'</span>,
+     * <pre><code class="lang-ts hljs typescript">{
+     *     componentType: <span class="hljs-string">'series'</span>,
      *     <span class="hljs-comment">// 系列类型</span>
-     *     <span class="hljs-attr">seriesType</span>: string,
+     *     seriesType: <span class="hljs-built_in">string</span>,
      *     <span class="hljs-comment">// 系列在传入的 option.series 中的 index</span>
-     *     <span class="hljs-attr">seriesIndex</span>: number,
+     *     seriesIndex: <span class="hljs-built_in">number</span>,
      *     <span class="hljs-comment">// 系列名称</span>
-     *     <span class="hljs-attr">seriesName</span>: string,
+     *     seriesName: <span class="hljs-built_in">string</span>,
      *     <span class="hljs-comment">// 数据名，类目名</span>
-     *     <span class="hljs-attr">name</span>: string,
+     *     name: <span class="hljs-built_in">string</span>,
      *     <span class="hljs-comment">// 数据在传入的 data 数组中的 index</span>
-     *     <span class="hljs-attr">dataIndex</span>: number,
+     *     dataIndex: <span class="hljs-built_in">number</span>,
      *     <span class="hljs-comment">// 传入的原始数据项</span>
-     *     <span class="hljs-attr">data</span>: <span class="hljs-built_in">Object</span>,
+     *     data: <span class="hljs-built_in">Object</span>,
      *     <span class="hljs-comment">// 传入的数据值。在多数系列下它和 data 相同。在一些系列下是 data 中的分量（如 map、radar 中）</span>
-     *     <span class="hljs-attr">value</span>: number|<span class="hljs-built_in">Array</span>|<span class="hljs-built_in">Object</span>,
+     *     value: <span class="hljs-built_in">number</span>|<span class="hljs-built_in">Array</span>|<span class="hljs-built_in">Object</span>,
      *     <span class="hljs-comment">// 坐标轴 encode 映射信息，</span>
      *     <span class="hljs-comment">// key 为坐标轴（如 'x' 'y' 'radius' 'angle' 等）</span>
      *     <span class="hljs-comment">// value 必然为数组，不会为 null/undefied，表示 dimension index 。</span>
@@ -129,23 +129,20 @@ public class Label implements Serializable {
      *     <span class="hljs-comment">//     x: [2] // dimension index 为 2 的数据映射到 x 轴</span>
      *     <span class="hljs-comment">//     y: [0] // dimension index 为 0 的数据映射到 y 轴</span>
      *     <span class="hljs-comment">// }</span>
-     *     <span class="hljs-attr">encode</span>: <span class="hljs-built_in">Object</span>,
+     *     encode: <span class="hljs-built_in">Object</span>,
      *     <span class="hljs-comment">// 维度名列表</span>
-     *     <span class="hljs-attr">dimensionNames</span>: <span class="hljs-built_in">Array</span>&lt;<span class="hljs-built_in">String</span>&gt;,
+     *     dimensionNames: <span class="hljs-built_in">Array</span>&lt;<span class="hljs-built_in">String</span>&gt;,
      *     <span class="hljs-comment">// 数据的维度 index，如 0 或 1 或 2 ...</span>
      *     <span class="hljs-comment">// 仅在雷达图中使用。</span>
-     *     <span class="hljs-attr">dimensionIndex</span>: number,
+     *     dimensionIndex: <span class="hljs-built_in">number</span>,
      *     <span class="hljs-comment">// 数据图形的颜色</span>
-     *     <span class="hljs-attr">color</span>: string,
-     *
-     *
-     *
+     *     color: <span class="hljs-built_in">string</span>
      * }
      * </code></pre>
      * <p>注：encode 和 dimensionNames 的使用方式，例如：</p>
      * <p>如果数据为：</p>
-     * <pre><code class="lang-js hljs javascript">dataset: {
-     *     <span class="hljs-attr">source</span>: [
+     * <pre><code class="lang-ts hljs typescript">dataset: {
+     *     source: [
      *         [<span class="hljs-string">'Matcha Latte'</span>, <span class="hljs-number">43.3</span>, <span class="hljs-number">85.8</span>, <span class="hljs-number">93.7</span>],
      *         [<span class="hljs-string">'Milk Tea'</span>, <span class="hljs-number">83.1</span>, <span class="hljs-number">73.4</span>, <span class="hljs-number">55.1</span>],
      *         [<span class="hljs-string">'Cheese Cocoa'</span>, <span class="hljs-number">86.4</span>, <span class="hljs-number">65.2</span>, <span class="hljs-number">82.5</span>],
@@ -154,21 +151,21 @@ public class Label implements Serializable {
      * }
      * </code></pre>
      * <p>则可这样得到 y 轴对应的 value：</p>
-     * <pre><code class="lang-js hljs javascript">params.value[params.encode.y[<span class="hljs-number">0</span>]]
+     * <pre><code class="lang-ts hljs typescript">params.value[params.encode.y[<span class="hljs-number">0</span>]]
      * </code></pre>
      * <p>如果数据为：</p>
-     * <pre><code class="lang-js hljs javascript">dataset: {
-     *     <span class="hljs-attr">dimensions</span>: [<span class="hljs-string">'product'</span>, <span class="hljs-string">'2015'</span>, <span class="hljs-string">'2016'</span>, <span class="hljs-string">'2017'</span>],
-     *     <span class="hljs-attr">source</span>: [
-     *         {<span class="hljs-attr">product</span>: <span class="hljs-string">'Matcha Latte'</span>, <span class="hljs-string">'2015'</span>: <span class="hljs-number">43.3</span>, <span class="hljs-string">'2016'</span>: <span class="hljs-number">85.8</span>, <span class="hljs-string">'2017'</span>: <span class="hljs-number">93.7</span>},
-     *         {<span class="hljs-attr">product</span>: <span class="hljs-string">'Milk Tea'</span>, <span class="hljs-string">'2015'</span>: <span class="hljs-number">83.1</span>, <span class="hljs-string">'2016'</span>: <span class="hljs-number">73.4</span>, <span class="hljs-string">'2017'</span>: <span class="hljs-number">55.1</span>},
-     *         {<span class="hljs-attr">product</span>: <span class="hljs-string">'Cheese Cocoa'</span>, <span class="hljs-string">'2015'</span>: <span class="hljs-number">86.4</span>, <span class="hljs-string">'2016'</span>: <span class="hljs-number">65.2</span>, <span class="hljs-string">'2017'</span>: <span class="hljs-number">82.5</span>},
-     *         {<span class="hljs-attr">product</span>: <span class="hljs-string">'Walnut Brownie'</span>, <span class="hljs-string">'2015'</span>: <span class="hljs-number">72.4</span>, <span class="hljs-string">'2016'</span>: <span class="hljs-number">53.9</span>, <span class="hljs-string">'2017'</span>: <span class="hljs-number">39.1</span>}
+     * <pre><code class="lang-ts hljs typescript">dataset: {
+     *     dimensions: [<span class="hljs-string">'product'</span>, <span class="hljs-string">'2015'</span>, <span class="hljs-string">'2016'</span>, <span class="hljs-string">'2017'</span>],
+     *     source: [
+     *         {product: <span class="hljs-string">'Matcha Latte'</span>, <span class="hljs-string">'2015'</span>: <span class="hljs-number">43.3</span>, <span class="hljs-string">'2016'</span>: <span class="hljs-number">85.8</span>, <span class="hljs-string">'2017'</span>: <span class="hljs-number">93.7</span>},
+     *         {product: <span class="hljs-string">'Milk Tea'</span>, <span class="hljs-string">'2015'</span>: <span class="hljs-number">83.1</span>, <span class="hljs-string">'2016'</span>: <span class="hljs-number">73.4</span>, <span class="hljs-string">'2017'</span>: <span class="hljs-number">55.1</span>},
+     *         {product: <span class="hljs-string">'Cheese Cocoa'</span>, <span class="hljs-string">'2015'</span>: <span class="hljs-number">86.4</span>, <span class="hljs-string">'2016'</span>: <span class="hljs-number">65.2</span>, <span class="hljs-string">'2017'</span>: <span class="hljs-number">82.5</span>},
+     *         {product: <span class="hljs-string">'Walnut Brownie'</span>, <span class="hljs-string">'2015'</span>: <span class="hljs-number">72.4</span>, <span class="hljs-string">'2016'</span>: <span class="hljs-number">53.9</span>, <span class="hljs-string">'2017'</span>: <span class="hljs-number">39.1</span>}
      *     ]
      * }
      * </code></pre>
      * <p>则可这样得到 y 轴对应的 value：</p>
-     * <pre><code class="lang-js hljs javascript">params.value[params.dimensionNames[params.encode.y[<span class="hljs-number">0</span>]]]
+     * <pre><code class="lang-ts hljs typescript">params.value[params.dimensionNames[params.encode.y[<span class="hljs-number">0</span>]]]
      * </code></pre>
      */
     private Object formatter;
@@ -241,10 +238,10 @@ public class Label implements Serializable {
      * <li><code class="codespan">'right'</code></li>
      * </ul>
      * <p><code class="codespan">rich</code> 中如果没有设置 <code class="codespan">align</code>，则会取父层级的 <code class="codespan">align</code>。例如：</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">align</span>: right,
-     *     <span class="hljs-attr">rich</span>: {
-     *         <span class="hljs-attr">a</span>: {
+     * <pre><code class="lang-ts hljs typescript">{
+     *     align: right,
+     *     rich: {
+     *         a: {
      *             <span class="hljs-comment">// 没有设置 `align`，则 `align` 为 right</span>
      *         }
      *     }
@@ -265,10 +262,10 @@ public class Label implements Serializable {
      * <li><code class="codespan">'bottom'</code></li>
      * </ul>
      * <p><code class="codespan">rich</code> 中如果没有设置 <code class="codespan">verticalAlign</code>，则会取父层级的 <code class="codespan">verticalAlign</code>。例如：</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">verticalAlign</span>: bottom,
-     *     <span class="hljs-attr">rich</span>: {
-     *         <span class="hljs-attr">a</span>: {
+     * <pre><code class="lang-ts hljs typescript">{
+     *     verticalAlign: bottom,
+     *     rich: {
+     *         a: {
      *             <span class="hljs-comment">// 没有设置 `verticalAlign`，则 `verticalAlign` 为 bottom</span>
      *         }
      *     }
@@ -283,10 +280,10 @@ public class Label implements Serializable {
      * <br/>描述:
      * <p>行高。</p>
      * <p><code class="codespan">rich</code> 中如果没有设置 <code class="codespan">lineHeight</code>，则会取父层级的 <code class="codespan">lineHeight</code>。例如：</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">lineHeight</span>: <span class="hljs-number">56</span>,
-     *     <span class="hljs-attr">rich</span>: {
-     *         <span class="hljs-attr">a</span>: {
+     * <pre><code class="lang-ts hljs typescript">{
+     *     lineHeight: <span class="hljs-number">56</span>,
+     *     rich: {
+     *         a: {
      *             <span class="hljs-comment">// 没有设置 `lineHeight`，则 `lineHeight` 为 56</span>
      *         }
      *     }
@@ -302,8 +299,8 @@ public class Label implements Serializable {
      * <p>文字块背景色。</p>
      * <p>可以使用颜色值，例如：<code class="codespan">'#123234'</code>, <code class="codespan">'red'</code>, <code class="codespan">'rgba(0,23,11,0.3)'</code>。</p>
      * <p>也可以直接使用图片，例如：</p>
-     * <pre><code class="lang-js hljs javascript">backgroundColor: {
-     *     <span class="hljs-attr">image</span>: <span class="hljs-string">'xxx/xxx.png'</span>
+     * <pre><code class="lang-ts hljs typescript">backgroundColor: {
+     *     image: <span class="hljs-string">'xxx/xxx.png'</span>
      *     <span class="hljs-comment">// 这里可以是图片的 URL，</span>
      *     <span class="hljs-comment">// 或者图片的 dataURI，</span>
      *     <span class="hljs-comment">// 或者 HTMLImageElement 对象，</span>
@@ -347,11 +344,11 @@ public class Label implements Serializable {
      * <code class="codespan">borderDashOffset</code>
      *  可实现更灵活的虚线效果。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">{
+     * <pre><code class="lang-ts hljs typescript">{
      *
-     * <span class="hljs-attr">borderType</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
+     * borderType: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
      *
-     * <span class="hljs-attr">borderDashOffset</span>: <span class="hljs-number">5</span>
+     * borderDashOffset: <span class="hljs-number">5</span>
      * }
      * </code></pre>
      */
@@ -475,11 +472,11 @@ public class Label implements Serializable {
      * <code class="codespan">textBorderDashOffset</code>
      *  可实现更灵活的虚线效果。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">{
+     * <pre><code class="lang-ts hljs typescript">{
      *
-     * <span class="hljs-attr">textBorderType</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
+     * textBorderType: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
      *
-     * <span class="hljs-attr">textBorderDashOffset</span>: <span class="hljs-number">5</span>
+     * textBorderDashOffset: <span class="hljs-number">5</span>
      * }
      * </code></pre>
      */
@@ -554,49 +551,38 @@ public class Label implements Serializable {
      */
     private String ellipsis;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.label.lineOverflow">https://echarts.apache.org/zh/option.html#series-scatter.label.lineOverflow</a>
-     * <br/>默认值: none
-     * <br/>js类型: ["string"]
-     * <br/>描述:
-     * <p>文本超出高度部分是否截断，配置<code class="codespan">height</code>时有效。</p>
-     * <ul>
-     * <li><code class="codespan">'truncate'</code> 在文本行数超出高度部分截断。</li>
-     * </ul>
-     */
-    private String lineOverflow;
-    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-scatter.label.rich">https://echarts.apache.org/zh/option.html#series-scatter.label.rich</a>
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>在 <code class="codespan">rich</code> 里面，可以自定义富文本样式。利用富文本样式，可以在标签中做出非常丰富的效果。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">label: {
+     * <pre><code class="lang-ts hljs typescript">label: {
      *     <span class="hljs-comment">// 在文本中，可以对部分文本采用 rich 中定义样式。</span>
      *     <span class="hljs-comment">// 这里需要在文本中使用标记符号：</span>
      *     <span class="hljs-comment">// `{styleName|text content text content}` 标记样式名。</span>
      *     <span class="hljs-comment">// 注意，换行仍是使用 '\n'。</span>
-     *     <span class="hljs-attr">formatter</span>: [
+     *     formatter: [
      *         <span class="hljs-string">'{a|这段文本采用样式a}'</span>,
      *         <span class="hljs-string">'{b|这段文本采用样式b}这段用默认样式{x|这段用样式x}'</span>
      *     ].join(<span class="hljs-string">'\n'</span>),
      *
-     *     <span class="hljs-attr">rich</span>: {
-     *         <span class="hljs-attr">a</span>: {
-     *             <span class="hljs-attr">color</span>: <span class="hljs-string">'red'</span>,
-     *             <span class="hljs-attr">lineHeight</span>: <span class="hljs-number">10</span>
+     *     rich: {
+     *         a: {
+     *             color: <span class="hljs-string">'red'</span>,
+     *             lineHeight: <span class="hljs-number">10</span>
      *         },
-     *         <span class="hljs-attr">b</span>: {
-     *             <span class="hljs-attr">backgroundColor</span>: {
-     *                 <span class="hljs-attr">image</span>: <span class="hljs-string">'xxx/xxx.jpg'</span>
+     *         b: {
+     *             backgroundColor: {
+     *                 image: <span class="hljs-string">'xxx/xxx.jpg'</span>
      *             },
-     *             <span class="hljs-attr">height</span>: <span class="hljs-number">40</span>
+     *             height: <span class="hljs-number">40</span>
      *         },
-     *         <span class="hljs-attr">x</span>: {
-     *             <span class="hljs-attr">fontSize</span>: <span class="hljs-number">18</span>,
-     *             <span class="hljs-attr">fontFamily</span>: <span class="hljs-string">'Microsoft YaHei'</span>,
-     *             <span class="hljs-attr">borderColor</span>: <span class="hljs-string">'#449933'</span>,
-     *             <span class="hljs-attr">borderRadius</span>: <span class="hljs-number">4</span>
+     *         x: {
+     *             fontSize: <span class="hljs-number">18</span>,
+     *             fontFamily: <span class="hljs-string">'Microsoft YaHei'</span>,
+     *             borderColor: <span class="hljs-string">'#449933'</span>,
+     *             borderRadius: <span class="hljs-number">4</span>
      *         },
      *         ...
      *     }

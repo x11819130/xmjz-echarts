@@ -13,11 +13,11 @@ import java.io.Serializable;
  * <br/>描述:
  * <p>在地图中对特定的区域配置样式。</p>
  * <p>例如：</p>
- * <pre><code class="lang-js hljs javascript">regions: [{
- *     <span class="hljs-attr">name</span>: <span class="hljs-string">'广东'</span>,
- *     <span class="hljs-attr">itemStyle</span>: {
- *         <span class="hljs-attr">areaColor</span>: <span class="hljs-string">'red'</span>,
- *         <span class="hljs-attr">color</span>: <span class="hljs-string">'red'</span>
+ * <pre><code class="lang-ts hljs typescript">regions: [{
+ *     name: <span class="hljs-string">'广东'</span>,
+ *     itemStyle: {
+ *         areaColor: <span class="hljs-string">'red'</span>,
+ *         color: <span class="hljs-string">'red'</span>
  *     }
  * }]
  * </code></pre>
@@ -93,7 +93,7 @@ public class Regions implements Serializable {
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.regions.tooltip">https://echarts.apache.org/zh/option.html#geo.regions.tooltip</a>
      * <br/>默认值: 无
-     * <br/>js类型: ["any"]
+     * <br/>js类型: ["Object"]
      * <br/>描述:
      * <blockquote>
      * <p>从 <code class="codespan">v5.1.0</code> 开始支持</p>

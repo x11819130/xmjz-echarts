@@ -63,11 +63,11 @@ public class LineStyle implements Serializable {
      * <code class="codespan">dashOffset</code>
      *  可实现更灵活的虚线效果。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">{
+     * <pre><code class="lang-ts hljs typescript">{
      *
-     * <span class="hljs-attr">type</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
+     * <span class="hljs-keyword">type</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
      *
-     * <span class="hljs-attr">dashOffset</span>: <span class="hljs-number">5</span>
+     * dashOffset: <span class="hljs-number">5</span>
      * }
      * </code></pre>
      */
@@ -155,9 +155,9 @@ public class LineStyle implements Serializable {
      * <br/>描述:
      * <p>图形阴影的模糊大小。该属性配合 <code class="codespan">shadowColor</code>,<code class="codespan">shadowOffsetX</code>, <code class="codespan">shadowOffsetY</code> 一起设置图形的阴影效果。</p>
      * <p>示例：</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">shadowColor</span>: <span class="hljs-string">'rgba(0, 0, 0, 0.5)'</span>,
-     *     <span class="hljs-attr">shadowBlur</span>: <span class="hljs-number">10</span>
+     * <pre><code class="lang-ts hljs typescript">{
+     *     shadowColor: <span class="hljs-string">'rgba(0, 0, 0, 0.5)'</span>,
+     *     shadowBlur: <span class="hljs-number">10</span>
      * }
      * </code></pre>
      */

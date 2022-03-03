@@ -14,7 +14,7 @@ import java.util.List;
  * <br/>描述:
  * <p>极坐标系，可以用于散点图和折线图。每个极坐标系拥有一个<a href="#angleAxis">角度轴</a>和一个<a href="#radiusAxis">半径轴</a>。</p>
  * <p><strong>示例：</strong></p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-polar-punchCard&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="19"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-polar-punchCard&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="25"></iframe>
  *
  * @author auto
  */
@@ -87,7 +87,6 @@ public class Polar implements Serializable {
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>本坐标系特定的 tooltip 设定。</p>
-     * <hr>
      * <p><strong>提示框组件的通用介绍：</strong></p>
      * <p>提示框组件可以设置在多种地方：</p>
      * <ul>
@@ -100,7 +99,6 @@ public class Polar implements Serializable {
      * <li><p>可以设置在系列的每个数据项中，即 <a href="#series.data.tooltip">series.data.tooltip</a></p>
      * </li>
      * </ul>
-     * <hr>
      */
     private Object tooltip;
 }

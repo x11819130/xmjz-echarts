@@ -43,9 +43,9 @@ public class Emphasis implements Serializable {
      * </ul>
      * <p><strong>示例：</strong></p>
      * <p>下面代码配置了柱状图在高亮一个图形的时候，淡出当前直角坐标系所有其它的系列。</p>
-     * <pre><code class="lang-js hljs javascript">emphasis: {
-     *     <span class="hljs-attr">focus</span>: <span class="hljs-string">'series'</span>,
-     *     <span class="hljs-attr">blurScope</span>: <span class="hljs-string">'coordinateSystem'</span>
+     * <pre><code class="lang-ts hljs typescript">emphasis: {
+     *     focus: <span class="hljs-string">'series'</span>,
+     *     blurScope: <span class="hljs-string">'coordinateSystem'</span>
      * }
      * </code></pre>
      * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=bar-y-category-stack&amp;reset=1&amp;edit=1" width="600" height="400"></iframe>

@@ -7,7 +7,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name">https://echarts.apache.org/zh/option.html#radar.name</a>
+ * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName">https://echarts.apache.org/zh/option.html#radar.axisName</a>
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -18,11 +18,11 @@ import java.io.Serializable;
 @Getter
 @Setter
 @Accessors(chain = true)
-public class Name implements Serializable {
+public class AxisName implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.show">https://echarts.apache.org/zh/option.html#radar.name.show</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.show">https://echarts.apache.org/zh/option.html#radar.axisName.show</a>
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -30,22 +30,22 @@ public class Name implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.formatter">https://echarts.apache.org/zh/option.html#radar.name.formatter</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.formatter">https://echarts.apache.org/zh/option.html#radar.axisName.formatter</a>
      * <br/>默认值: 无
      * <br/>js类型: ["string","Function"]
      * <br/>描述:
      * <p>指示器名称显示的格式器。支持字符串和回调函数，如下示例：</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-comment">// 使用字符串模板，模板变量为指示器名称 {value}</span>
-     * <span class="hljs-attr">formatter</span>: <span class="hljs-string">'【{value}】'</span>
+     * <pre><code class="lang-ts hljs typescript"><span class="hljs-comment">// 使用字符串模板，模板变量为指示器名称 {value}</span>
+     * formatter: <span class="hljs-string">'【{value}】'</span>
      * <span class="hljs-comment">// 使用回调函数，第一个参数是指示器名称，第二个参数是指示器配置项</span>
-     * <span class="hljs-attr">formatter</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">value, indicator</span>) </span>{
+     * formatter: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">value, indicator</span>) </span>{
      *     <span class="hljs-keyword">return</span> <span class="hljs-string">'【'</span> + value + <span class="hljs-string">'】'</span>;
      * }
      * </code></pre>
      */
     private Object formatter;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.color">https://echarts.apache.org/zh/option.html#radar.name.color</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.color">https://echarts.apache.org/zh/option.html#radar.axisName.color</a>
      * <br/>默认值: #333
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -53,7 +53,7 @@ public class Name implements Serializable {
      */
     private String color;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.fontStyle">https://echarts.apache.org/zh/option.html#radar.name.fontStyle</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.fontStyle">https://echarts.apache.org/zh/option.html#radar.axisName.fontStyle</a>
      * <br/>默认值: normal
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -67,7 +67,7 @@ public class Name implements Serializable {
      */
     private String fontStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.fontWeight">https://echarts.apache.org/zh/option.html#radar.name.fontWeight</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.fontWeight">https://echarts.apache.org/zh/option.html#radar.axisName.fontWeight</a>
      * <br/>默认值: normal
      * <br/>js类型: ["string","number"]
      * <br/>描述:
@@ -83,7 +83,7 @@ public class Name implements Serializable {
      */
     private Object fontWeight;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.fontFamily">https://echarts.apache.org/zh/option.html#radar.name.fontFamily</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.fontFamily">https://echarts.apache.org/zh/option.html#radar.axisName.fontFamily</a>
      * <br/>默认值: sans-serif
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -92,7 +92,7 @@ public class Name implements Serializable {
      */
     private String fontFamily;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.fontSize">https://echarts.apache.org/zh/option.html#radar.name.fontSize</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.fontSize">https://echarts.apache.org/zh/option.html#radar.axisName.fontSize</a>
      * <br/>默认值: 12
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -100,16 +100,16 @@ public class Name implements Serializable {
      */
     private Integer fontSize;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.lineHeight">https://echarts.apache.org/zh/option.html#radar.name.lineHeight</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.lineHeight">https://echarts.apache.org/zh/option.html#radar.axisName.lineHeight</a>
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
      * <p>行高。</p>
      * <p><code class="codespan">rich</code> 中如果没有设置 <code class="codespan">lineHeight</code>，则会取父层级的 <code class="codespan">lineHeight</code>。例如：</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">lineHeight</span>: <span class="hljs-number">56</span>,
-     *     <span class="hljs-attr">rich</span>: {
-     *         <span class="hljs-attr">a</span>: {
+     * <pre><code class="lang-ts hljs typescript">{
+     *     lineHeight: <span class="hljs-number">56</span>,
+     *     rich: {
+     *         a: {
      *             <span class="hljs-comment">// 没有设置 `lineHeight`，则 `lineHeight` 为 56</span>
      *         }
      *     }
@@ -118,15 +118,15 @@ public class Name implements Serializable {
      */
     private Integer lineHeight;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.backgroundColor">https://echarts.apache.org/zh/option.html#radar.name.backgroundColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.backgroundColor">https://echarts.apache.org/zh/option.html#radar.axisName.backgroundColor</a>
      * <br/>默认值: transparent
      * <br/>js类型: ["string","Object"]
      * <br/>描述:
      * <p>文字块背景色。</p>
      * <p>可以使用颜色值，例如：<code class="codespan">'#123234'</code>, <code class="codespan">'red'</code>, <code class="codespan">'rgba(0,23,11,0.3)'</code>。</p>
      * <p>也可以直接使用图片，例如：</p>
-     * <pre><code class="lang-js hljs javascript">backgroundColor: {
-     *     <span class="hljs-attr">image</span>: <span class="hljs-string">'xxx/xxx.png'</span>
+     * <pre><code class="lang-ts hljs typescript">backgroundColor: {
+     *     image: <span class="hljs-string">'xxx/xxx.png'</span>
      *     <span class="hljs-comment">// 这里可以是图片的 URL，</span>
      *     <span class="hljs-comment">// 或者图片的 dataURI，</span>
      *     <span class="hljs-comment">// 或者 HTMLImageElement 对象，</span>
@@ -137,7 +137,7 @@ public class Name implements Serializable {
      */
     private Object backgroundColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.borderColor">https://echarts.apache.org/zh/option.html#radar.name.borderColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.borderColor">https://echarts.apache.org/zh/option.html#radar.axisName.borderColor</a>
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -145,7 +145,7 @@ public class Name implements Serializable {
      */
     private String borderColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.borderWidth">https://echarts.apache.org/zh/option.html#radar.name.borderWidth</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.borderWidth">https://echarts.apache.org/zh/option.html#radar.axisName.borderWidth</a>
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -153,7 +153,7 @@ public class Name implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.borderType">https://echarts.apache.org/zh/option.html#radar.name.borderType</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.borderType">https://echarts.apache.org/zh/option.html#radar.axisName.borderType</a>
      * <br/>默认值: solid
      * <br/>js类型: ["string","number","Array"]
      * <br/>描述:
@@ -168,17 +168,17 @@ public class Name implements Serializable {
      * <code class="codespan">borderDashOffset</code>
      *  可实现更灵活的虚线效果。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">{
+     * <pre><code class="lang-ts hljs typescript">{
      *
-     * <span class="hljs-attr">borderType</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
+     * borderType: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
      *
-     * <span class="hljs-attr">borderDashOffset</span>: <span class="hljs-number">5</span>
+     * borderDashOffset: <span class="hljs-number">5</span>
      * }
      * </code></pre>
      */
     private Object borderType;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.borderDashOffset">https://echarts.apache.org/zh/option.html#radar.name.borderDashOffset</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.borderDashOffset">https://echarts.apache.org/zh/option.html#radar.axisName.borderDashOffset</a>
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -194,7 +194,7 @@ public class Name implements Serializable {
      */
     private Integer borderDashOffset;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.borderRadius">https://echarts.apache.org/zh/option.html#radar.name.borderRadius</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.borderRadius">https://echarts.apache.org/zh/option.html#radar.axisName.borderRadius</a>
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
      * <br/>描述:
@@ -202,7 +202,7 @@ public class Name implements Serializable {
      */
     private Object borderRadius;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.padding">https://echarts.apache.org/zh/option.html#radar.name.padding</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.padding">https://echarts.apache.org/zh/option.html#radar.axisName.padding</a>
      * <br/>默认值: 无
      * <br/>js类型: ["number","Array"]
      * <br/>描述:
@@ -216,7 +216,7 @@ public class Name implements Serializable {
      */
     private Object padding;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.shadowColor">https://echarts.apache.org/zh/option.html#radar.name.shadowColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.shadowColor">https://echarts.apache.org/zh/option.html#radar.axisName.shadowColor</a>
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -224,7 +224,7 @@ public class Name implements Serializable {
      */
     private String shadowColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.shadowBlur">https://echarts.apache.org/zh/option.html#radar.name.shadowBlur</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.shadowBlur">https://echarts.apache.org/zh/option.html#radar.axisName.shadowBlur</a>
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -232,7 +232,7 @@ public class Name implements Serializable {
      */
     private Integer shadowBlur;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.shadowOffsetX">https://echarts.apache.org/zh/option.html#radar.name.shadowOffsetX</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.shadowOffsetX">https://echarts.apache.org/zh/option.html#radar.axisName.shadowOffsetX</a>
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -240,7 +240,7 @@ public class Name implements Serializable {
      */
     private Integer shadowOffsetX;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.shadowOffsetY">https://echarts.apache.org/zh/option.html#radar.name.shadowOffsetY</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.shadowOffsetY">https://echarts.apache.org/zh/option.html#radar.axisName.shadowOffsetY</a>
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -248,7 +248,7 @@ public class Name implements Serializable {
      */
     private Integer shadowOffsetY;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.width">https://echarts.apache.org/zh/option.html#radar.name.width</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.width">https://echarts.apache.org/zh/option.html#radar.axisName.width</a>
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -256,7 +256,7 @@ public class Name implements Serializable {
      */
     private Integer width;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.height">https://echarts.apache.org/zh/option.html#radar.name.height</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.height">https://echarts.apache.org/zh/option.html#radar.axisName.height</a>
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -264,7 +264,7 @@ public class Name implements Serializable {
      */
     private Integer height;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.textBorderColor">https://echarts.apache.org/zh/option.html#radar.name.textBorderColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.textBorderColor">https://echarts.apache.org/zh/option.html#radar.axisName.textBorderColor</a>
      * <br/>默认值: 无
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -272,7 +272,7 @@ public class Name implements Serializable {
      */
     private String textBorderColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.textBorderWidth">https://echarts.apache.org/zh/option.html#radar.name.textBorderWidth</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.textBorderWidth">https://echarts.apache.org/zh/option.html#radar.axisName.textBorderWidth</a>
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -280,7 +280,7 @@ public class Name implements Serializable {
      */
     private Integer textBorderWidth;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.textBorderType">https://echarts.apache.org/zh/option.html#radar.name.textBorderType</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.textBorderType">https://echarts.apache.org/zh/option.html#radar.axisName.textBorderType</a>
      * <br/>默认值: solid
      * <br/>js类型: ["string","number","Array"]
      * <br/>描述:
@@ -295,17 +295,17 @@ public class Name implements Serializable {
      * <code class="codespan">textBorderDashOffset</code>
      *  可实现更灵活的虚线效果。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">{
+     * <pre><code class="lang-ts hljs typescript">{
      *
-     * <span class="hljs-attr">textBorderType</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
+     * textBorderType: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
      *
-     * <span class="hljs-attr">textBorderDashOffset</span>: <span class="hljs-number">5</span>
+     * textBorderDashOffset: <span class="hljs-number">5</span>
      * }
      * </code></pre>
      */
     private Object textBorderType;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.textBorderDashOffset">https://echarts.apache.org/zh/option.html#radar.name.textBorderDashOffset</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.textBorderDashOffset">https://echarts.apache.org/zh/option.html#radar.axisName.textBorderDashOffset</a>
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -321,7 +321,7 @@ public class Name implements Serializable {
      */
     private Integer textBorderDashOffset;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.textShadowColor">https://echarts.apache.org/zh/option.html#radar.name.textShadowColor</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.textShadowColor">https://echarts.apache.org/zh/option.html#radar.axisName.textShadowColor</a>
      * <br/>默认值: transparent
      * <br/>js类型: ["Color"]
      * <br/>描述:
@@ -329,7 +329,7 @@ public class Name implements Serializable {
      */
     private String textShadowColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.textShadowBlur">https://echarts.apache.org/zh/option.html#radar.name.textShadowBlur</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.textShadowBlur">https://echarts.apache.org/zh/option.html#radar.axisName.textShadowBlur</a>
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -337,7 +337,7 @@ public class Name implements Serializable {
      */
     private Integer textShadowBlur;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.textShadowOffsetX">https://echarts.apache.org/zh/option.html#radar.name.textShadowOffsetX</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.textShadowOffsetX">https://echarts.apache.org/zh/option.html#radar.axisName.textShadowOffsetX</a>
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -345,7 +345,7 @@ public class Name implements Serializable {
      */
     private Integer textShadowOffsetX;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.textShadowOffsetY">https://echarts.apache.org/zh/option.html#radar.name.textShadowOffsetY</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.textShadowOffsetY">https://echarts.apache.org/zh/option.html#radar.axisName.textShadowOffsetY</a>
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -353,7 +353,7 @@ public class Name implements Serializable {
      */
     private Integer textShadowOffsetY;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.overflow">https://echarts.apache.org/zh/option.html#radar.name.overflow</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.overflow">https://echarts.apache.org/zh/option.html#radar.axisName.overflow</a>
      * <br/>默认值: none
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -366,7 +366,7 @@ public class Name implements Serializable {
      */
     private String overflow;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.ellipsis">https://echarts.apache.org/zh/option.html#radar.name.ellipsis</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.ellipsis">https://echarts.apache.org/zh/option.html#radar.axisName.ellipsis</a>
      * <br/>默认值: ...
      * <br/>js类型: ["string"]
      * <br/>描述:
@@ -374,49 +374,38 @@ public class Name implements Serializable {
      */
     private String ellipsis;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.lineOverflow">https://echarts.apache.org/zh/option.html#radar.name.lineOverflow</a>
-     * <br/>默认值: none
-     * <br/>js类型: ["string"]
-     * <br/>描述:
-     * <p>文本超出高度部分是否截断，配置<code class="codespan">height</code>时有效。</p>
-     * <ul>
-     * <li><code class="codespan">'truncate'</code> 在文本行数超出高度部分截断。</li>
-     * </ul>
-     */
-    private String lineOverflow;
-    /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name.rich">https://echarts.apache.org/zh/option.html#radar.name.rich</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName.rich">https://echarts.apache.org/zh/option.html#radar.axisName.rich</a>
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>在 <code class="codespan">rich</code> 里面，可以自定义富文本样式。利用富文本样式，可以在标签中做出非常丰富的效果。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">label: {
+     * <pre><code class="lang-ts hljs typescript">label: {
      *     <span class="hljs-comment">// 在文本中，可以对部分文本采用 rich 中定义样式。</span>
      *     <span class="hljs-comment">// 这里需要在文本中使用标记符号：</span>
      *     <span class="hljs-comment">// `{styleName|text content text content}` 标记样式名。</span>
      *     <span class="hljs-comment">// 注意，换行仍是使用 '\n'。</span>
-     *     <span class="hljs-attr">formatter</span>: [
+     *     formatter: [
      *         <span class="hljs-string">'{a|这段文本采用样式a}'</span>,
      *         <span class="hljs-string">'{b|这段文本采用样式b}这段用默认样式{x|这段用样式x}'</span>
      *     ].join(<span class="hljs-string">'\n'</span>),
      *
-     *     <span class="hljs-attr">rich</span>: {
-     *         <span class="hljs-attr">a</span>: {
-     *             <span class="hljs-attr">color</span>: <span class="hljs-string">'red'</span>,
-     *             <span class="hljs-attr">lineHeight</span>: <span class="hljs-number">10</span>
+     *     rich: {
+     *         a: {
+     *             color: <span class="hljs-string">'red'</span>,
+     *             lineHeight: <span class="hljs-number">10</span>
      *         },
-     *         <span class="hljs-attr">b</span>: {
-     *             <span class="hljs-attr">backgroundColor</span>: {
-     *                 <span class="hljs-attr">image</span>: <span class="hljs-string">'xxx/xxx.jpg'</span>
+     *         b: {
+     *             backgroundColor: {
+     *                 image: <span class="hljs-string">'xxx/xxx.jpg'</span>
      *             },
-     *             <span class="hljs-attr">height</span>: <span class="hljs-number">40</span>
+     *             height: <span class="hljs-number">40</span>
      *         },
-     *         <span class="hljs-attr">x</span>: {
-     *             <span class="hljs-attr">fontSize</span>: <span class="hljs-number">18</span>,
-     *             <span class="hljs-attr">fontFamily</span>: <span class="hljs-string">'Microsoft YaHei'</span>,
-     *             <span class="hljs-attr">borderColor</span>: <span class="hljs-string">'#449933'</span>,
-     *             <span class="hljs-attr">borderRadius</span>: <span class="hljs-number">4</span>
+     *         x: {
+     *             fontSize: <span class="hljs-number">18</span>,
+     *             fontFamily: <span class="hljs-string">'Microsoft YaHei'</span>,
+     *             borderColor: <span class="hljs-string">'#449933'</span>,
+     *             borderRadius: <span class="hljs-number">4</span>
      *         },
      *         ...
      *     }

@@ -49,6 +49,14 @@ public class XAxis implements Serializable {
      */
     private Integer gridIndex;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.alignTicks">https://echarts.apache.org/zh/option.html#xAxis.alignTicks</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["boolean"]
+     * <br/>描述:
+     * <p>在多个 x 轴为数值轴的时候，可以开启该配置项自动对齐刻度。只对<code class="codespan">'value'</code>和<code class="codespan">'log'</code>类型的轴有效。</p>
+     */
+    private Boolean alignTicks;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.position">https://echarts.apache.org/zh/option.html#xAxis.position</a>
      * <br/>默认值: 无
      * <br/>js类型: ["string"]
@@ -174,7 +182,7 @@ public class XAxis implements Serializable {
      * <p>类目轴中 <code class="codespan">boundaryGap</code> 可以配置为 <code class="codespan">true</code> 和 <code class="codespan">false</code>。默认为 <code class="codespan">true</code>，这时候<a href="#xAxis.axisTick">刻度</a>只是作为分隔线，标签和数据点都会在两个<a href="#xAxis.axisTick">刻度</a>之间的带(band)中间。</p>
      * <p>非类目轴，包括时间，数值，对数轴，<code class="codespan">boundaryGap</code>是一个两个值的数组，分别表示数据最小值和最大值的延伸范围，可以直接设置数值或者相对的百分比，在设置 <a href="#xAxis.min">min</a> 和 <a href="#xAxis.max">max</a> 后无效。
      * <strong>示例：</strong></p>
-     * <pre><code class="lang-js hljs javascript">boundaryGap: [<span class="hljs-string">'20%'</span>, <span class="hljs-string">'20%'</span>]
+     * <pre><code class="lang-ts hljs typescript">boundaryGap: [<span class="hljs-string">'20%'</span>, <span class="hljs-string">'20%'</span>]
      * </code></pre>
      */
     private Object boundaryGap;
@@ -188,7 +196,7 @@ public class XAxis implements Serializable {
      * <p>不设置时会自动计算最小值保证坐标轴刻度的均匀分布。</p>
      * <p>在类目轴中，也可以设置为类目的序数（如类目轴 <code class="codespan">data: ['类A', '类B', '类C']</code> 中，序数 <code class="codespan">2</code> 表示 <code class="codespan">'类C'</code>。也可以设置为负数，如 <code class="codespan">-3</code>）。</p>
      * <p>当设置成 <code class="codespan">function</code> 形式时，可以根据计算得出的数据最大最小值设定坐标轴的最小值。如：</p>
-     * <pre><code class="lang-js hljs javascript">min: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">value</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">min: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">value</span>) </span>{
      *     <span class="hljs-keyword">return</span> value.min - <span class="hljs-number">20</span>;
      * }
      * </code></pre>
@@ -205,7 +213,7 @@ public class XAxis implements Serializable {
      * <p>不设置时会自动计算最大值保证坐标轴刻度的均匀分布。</p>
      * <p>在类目轴中，也可以设置为类目的序数（如类目轴 <code class="codespan">data: ['类A', '类B', '类C']</code> 中，序数 <code class="codespan">2</code> 表示 <code class="codespan">'类C'</code>。也可以设置为负数，如 <code class="codespan">-3</code>）。</p>
      * <p>当设置成 <code class="codespan">function</code> 形式时，可以根据计算得出的数据最大最小值设定坐标轴的最小值。如：</p>
-     * <pre><code class="lang-js hljs javascript">max: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">value</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">max: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">value</span>) </span>{
      *     <span class="hljs-keyword">return</span> value.max - <span class="hljs-number">20</span>;
      * }
      * </code></pre>
@@ -238,8 +246,8 @@ public class XAxis implements Serializable {
      * <br/>描述:
      * <p>自动计算的坐标轴最小间隔大小。</p>
      * <p>例如可以设置成<code class="codespan">1</code>保证坐标轴分割刻度显示成整数。</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">minInterval</span>: <span class="hljs-number">1</span>
+     * <pre><code class="lang-ts hljs typescript">{
+     *     minInterval: <span class="hljs-number">1</span>
      * }
      * </code></pre>
      * <p>只在数值轴或时间轴中（<a href="#xAxis.type">type</a>: 'value' 或 'time'）有效。</p>
@@ -252,8 +260,8 @@ public class XAxis implements Serializable {
      * <br/>描述:
      * <p>自动计算的坐标轴最大间隔大小。</p>
      * <p>例如，在时间轴（（<a href="#xAxis.type">type</a>: 'time'））可以设置成 <code class="codespan">3600 * 24 * 1000</code> 保证坐标轴分割刻度最大为一天。</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">maxInterval</span>: <span class="hljs-number">3600</span> * <span class="hljs-number">24</span> * <span class="hljs-number">1000</span>
+     * <pre><code class="lang-ts hljs typescript">{
+     *     maxInterval: <span class="hljs-number">3600</span> * <span class="hljs-number">24</span> * <span class="hljs-number">1000</span>
      * }
      * </code></pre>
      * <p>只在数值轴或时间轴中（<a href="#xAxis.type">type</a>: 'value' 或 'time'）有效。</p>
@@ -292,14 +300,14 @@ public class XAxis implements Serializable {
      * <br/>描述:
      * <p>坐标轴的标签是否响应和触发鼠标事件，默认不响应。</p>
      * <p>事件参数如下：</p>
-     * <pre><code class="lang-js hljs javascript">{
+     * <pre><code class="lang-ts hljs typescript">{
      *     <span class="hljs-comment">// 组件类型，xAxis, yAxis, radiusAxis, angleAxis</span>
      *     <span class="hljs-comment">// 对应组件类型都会有一个属性表示组件的 index，例如 xAxis 就是 xAxisIndex</span>
-     *     <span class="hljs-attr">componentType</span>: string,
+     *     componentType: <span class="hljs-built_in">string</span>,
      *     <span class="hljs-comment">// 未格式化过的刻度值, 点击刻度标签有效</span>
-     *     <span class="hljs-attr">value</span>: <span class="hljs-string">''</span>,
+     *     value: <span class="hljs-string">''</span>,
      *     <span class="hljs-comment">// 坐标轴名称, 点击坐标轴名称有效</span>
-     *     <span class="hljs-attr">name</span>: <span class="hljs-string">''</span>
+     *     name: <span class="hljs-string">''</span>
      * }
      * </code></pre>
      */
@@ -383,15 +391,15 @@ public class XAxis implements Serializable {
      * <p>如果没有设置 <a href="#xAxis.type">type</a>，但是设置了 <code class="codespan">axis.data</code>，则认为 <code class="codespan">type</code> 是 <code class="codespan">'category'</code>。</p>
      * <p>如果设置了 <a href="#xAxis.type">type</a> 是 <code class="codespan">'category'</code>，但没有设置 <code class="codespan">axis.data</code>，则 <code class="codespan">axis.data</code> 的内容会自动从 <a href="#series.data">series.data</a> 中获取，这会比较方便。不过注意，<code class="codespan">axis.data</code> 指明的是 <code class="codespan">'category'</code> 轴的取值范围。如果不指定而是从 <a href="#series.data">series.data</a> 中获取，那么只能获取到 <a href="#series.data">series.data</a> 中出现的值。比如说，假如 <a href="#series.data">series.data</a> 为空时，就什么也获取不到。</p>
      * <p>示例：</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-comment">// 所有类目名称列表</span>
-     * <span class="hljs-attr">data</span>: [<span class="hljs-string">'周一'</span>, <span class="hljs-string">'周二'</span>, <span class="hljs-string">'周三'</span>, <span class="hljs-string">'周四'</span>, <span class="hljs-string">'周五'</span>, <span class="hljs-string">'周六'</span>, <span class="hljs-string">'周日'</span>]
+     * <pre><code class="lang-ts hljs typescript"><span class="hljs-comment">// 所有类目名称列表</span>
+     * data: [<span class="hljs-string">'周一'</span>, <span class="hljs-string">'周二'</span>, <span class="hljs-string">'周三'</span>, <span class="hljs-string">'周四'</span>, <span class="hljs-string">'周五'</span>, <span class="hljs-string">'周六'</span>, <span class="hljs-string">'周日'</span>]
      * <span class="hljs-comment">// 每一项也可以是具体的配置项，此时取配置项中的 `value` 为类目名</span>
-     * <span class="hljs-attr">data</span>: [{
-     *     <span class="hljs-attr">value</span>: <span class="hljs-string">'周一'</span>,
+     * data: [{
+     *     value: <span class="hljs-string">'周一'</span>,
      *     <span class="hljs-comment">// 突出周一</span>
-     *     <span class="hljs-attr">textStyle</span>: {
-     *         <span class="hljs-attr">fontSize</span>: <span class="hljs-number">20</span>,
-     *         <span class="hljs-attr">color</span>: <span class="hljs-string">'red'</span>
+     *     textStyle: {
+     *         fontSize: <span class="hljs-number">20</span>,
+     *         color: <span class="hljs-string">'red'</span>
      *     }
      * }, <span class="hljs-string">'周二'</span>, <span class="hljs-string">'周三'</span>, <span class="hljs-string">'周四'</span>, <span class="hljs-string">'周五'</span>, <span class="hljs-string">'周六'</span>, <span class="hljs-string">'周日'</span>]
      * </code></pre>

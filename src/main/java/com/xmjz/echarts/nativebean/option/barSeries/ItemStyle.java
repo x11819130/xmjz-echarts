@@ -23,7 +23,7 @@ public class ItemStyle implements Serializable {
 
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-bar.itemStyle.color">https://echarts.apache.org/zh/option.html#series-bar.itemStyle.color</a>
-     * <br/>默认值: 自适应
+     * <br/>默认值: auto
      * <br/>js类型: ["Color"]
      * <br/>描述:
      * <p>柱条的颜色。 默认从全局调色盘 <a href="#color">option.color</a> 获取颜色。  </p>
@@ -75,9 +75,9 @@ public class ItemStyle implements Serializable {
      * <br/>描述:
      * <p>图形阴影的模糊大小。该属性配合 <code class="codespan">shadowColor</code>,<code class="codespan">shadowOffsetX</code>, <code class="codespan">shadowOffsetY</code> 一起设置图形的阴影效果。</p>
      * <p>示例：</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">shadowColor</span>: <span class="hljs-string">'rgba(0, 0, 0, 0.5)'</span>,
-     *     <span class="hljs-attr">shadowBlur</span>: <span class="hljs-number">10</span>
+     * <pre><code class="lang-ts hljs typescript">{
+     *     shadowColor: <span class="hljs-string">'rgba(0, 0, 0, 0.5)'</span>,
+     *     shadowBlur: <span class="hljs-number">10</span>
      * }
      * </code></pre>
      */

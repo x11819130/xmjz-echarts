@@ -179,12 +179,12 @@ public class Legend implements Serializable {
      * <br/>描述:
      * <p>图例内边距，单位px，默认各方向内边距为5，接受数组分别设定上右下左边距。</p>
      * <p>使用示例：</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-comment">// 设置内边距为 5</span>
-     * <span class="hljs-attr">padding</span>: <span class="hljs-number">5</span>
+     * <pre><code class="lang-ts hljs typescript"><span class="hljs-comment">// 设置内边距为 5</span>
+     * padding: <span class="hljs-number">5</span>
      * <span class="hljs-comment">// 设置上下的内边距为 5，左右的内边距为 10</span>
-     * <span class="hljs-attr">padding</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>]
+     * padding: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>]
      * <span class="hljs-comment">// 分别设置四个方向的内边距</span>
-     * <span class="hljs-attr">padding</span>: [
+     * padding: [
      *     <span class="hljs-number">5</span>,  <span class="hljs-comment">// 上</span>
      *     <span class="hljs-number">10</span>, <span class="hljs-comment">// 右</span>
      *     <span class="hljs-number">5</span>,  <span class="hljs-comment">// 下</span>
@@ -248,10 +248,10 @@ public class Legend implements Serializable {
      * <br/>描述:
      * <p>用来格式化图例文本，支持字符串模板和回调函数两种形式。</p>
      * <p>示例：</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-comment">// 使用字符串模板，模板变量为图例名称 {name}</span>
-     * <span class="hljs-attr">formatter</span>: <span class="hljs-string">'Legend {name}'</span>
+     * <pre><code class="lang-ts hljs typescript"><span class="hljs-comment">// 使用字符串模板，模板变量为图例名称 {name}</span>
+     * formatter: <span class="hljs-string">'Legend {name}'</span>
      * <span class="hljs-comment">// 使用回调函数</span>
-     * <span class="hljs-attr">formatter</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">name</span>) </span>{
+     * formatter: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">name</span>) </span>{
      *     <span class="hljs-keyword">return</span> <span class="hljs-string">'Legend '</span> + name;
      * }
      * </code></pre>
@@ -320,12 +320,12 @@ public class Legend implements Serializable {
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>图例的 tooltip 配置，配置项同 <a href="#tooltip">tooltip</a>。默认不显示，可以在 legend 文字很多的时候对文字做裁剪并且开启 tooltip，如下示例：</p>
-     * <pre><code class="lang-js hljs javascript">legend: {
-     *     <span class="hljs-attr">formatter</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">name</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">legend: {
+     *     formatter: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">name</span>) </span>{
      *         <span class="hljs-keyword">return</span> echarts.format.truncateText(name, <span class="hljs-number">40</span>, <span class="hljs-string">'14px Microsoft Yahei'</span>, <span class="hljs-string">'…'</span>);
      *     },
-     *     <span class="hljs-attr">tooltip</span>: {
-     *         <span class="hljs-attr">show</span>: <span class="hljs-literal">true</span>
+     *     tooltip: {
+     *         show: <span class="hljs-literal">true</span>
      *     }
      * }
      * </code></pre>
@@ -417,9 +417,9 @@ public class Legend implements Serializable {
      * <br/>描述:
      * <p>图形阴影的模糊大小。该属性配合 <code class="codespan">shadowColor</code>,<code class="codespan">shadowOffsetX</code>, <code class="codespan">shadowOffsetY</code> 一起设置图形的阴影效果。</p>
      * <p>示例：</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">shadowColor</span>: <span class="hljs-string">'rgba(0, 0, 0, 0.5)'</span>,
-     *     <span class="hljs-attr">shadowBlur</span>: <span class="hljs-number">10</span>
+     * <pre><code class="lang-ts hljs typescript">{
+     *     shadowColor: <span class="hljs-string">'rgba(0, 0, 0, 0.5)'</span>,
+     *     shadowBlur: <span class="hljs-number">10</span>
      * }
      * </code></pre>
      * <p><strong>注意</strong>：此配置项生效的前提是，设置了 <code class="codespan">show: true</code> 以及值不为 <code class="codespan">tranparent</code> 的背景色 <code class="codespan">backgroundColor</code>。</p>
@@ -506,9 +506,9 @@ public class Legend implements Serializable {
      * <p><a href="#legend.type">legend.type</a> 为 <code class="codespan">'scroll'</code> 时有效。</p>
      * <p>图例控制块中，页信息的显示格式。默认为 <code class="codespan">'{current}/{total}'</code>，其中 <code class="codespan">{current}</code> 是当前页号（从 1 开始计数），<code class="codespan">{total}</code> 是总页数。</p>
      * <p>如果 <code class="codespan">pageFormatter</code> 使用函数，须返回字符串，参数为：</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">current</span>: number
-     *     <span class="hljs-attr">total</span>: number
+     * <pre><code class="lang-ts hljs typescript">{
+     *     current: <span class="hljs-built_in">number</span>
+     *     total: <span class="hljs-built_in">number</span>
      * }
      * </code></pre>
      * <p>参见 <a href="https://echarts.apache.org/examples/zh/editor.html?c=pie-legend&amp;edit=1&amp;reset=1" target="_blank">滚动图例（垂直）</a> 或 <a href="https://echarts.apache.org/examples/zh/editor.html?c=radar2&amp;edit=1&amp;reset=1" target="_blank">滚动图例（水平）</a>。</p>
@@ -595,23 +595,23 @@ public class Legend implements Serializable {
      * </blockquote>
      * <p>图例组件中的选择器按钮，目前包括全选和反选两种功能。默认不显示，用户可手动开启，也可以手动配置每个按钮的标题。</p>
      * <p>使用方式如下：</p>
-     * <pre><code class="lang-js hljs javascript">selector: [
+     * <pre><code class="lang-ts hljs typescript">selector: [
      *     {
-     *         <span class="hljs-attr">type</span>: <span class="hljs-string">'all or inverse'</span>,
+     *         <span class="hljs-keyword">type</span>: <span class="hljs-string">'all or inverse'</span>,
      *         <span class="hljs-comment">// 可以是任意你喜欢的 title</span>
-     *         <span class="hljs-attr">title</span>: <span class="hljs-string">'全选'</span>
+     *         title: <span class="hljs-string">'全选'</span>
      *     },
      *     {
-     *         <span class="hljs-attr">type</span>: <span class="hljs-string">'inverse'</span>,
-     *         <span class="hljs-attr">title</span>: <span class="hljs-string">'反选'</span>
+     *         <span class="hljs-keyword">type</span>: <span class="hljs-string">'inverse'</span>,
+     *         title: <span class="hljs-string">'反选'</span>
      *     }
      * ]
      *
      * <span class="hljs-comment">// 或</span>
-     * <span class="hljs-attr">selector</span>: <span class="hljs-literal">true</span>
+     * selector: <span class="hljs-literal">true</span>
      *
      * <span class="hljs-comment">// 或</span>
-     * <span class="hljs-attr">selector</span>: [<span class="hljs-string">'all'</span>, <span class="hljs-string">'inverse'</span>]
+     * selector: [<span class="hljs-string">'all'</span>, <span class="hljs-string">'inverse'</span>]
      * </code></pre>
      */
     private Object selector;

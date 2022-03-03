@@ -12,35 +12,35 @@ import java.io.Serializable;
  * <br/>js类型: ["Array"]
  * <br/>描述:
  * <p>桑基图每一层的设置。可以逐层设置，如下：</p>
- * <pre><code class="lang-js hljs javascript">levels: [{
- *     <span class="hljs-attr">depth</span>: <span class="hljs-number">0</span>,
- *     <span class="hljs-attr">itemStyle</span>: {
- *         <span class="hljs-attr">color</span>: <span class="hljs-string">'#fbb4ae'</span>
+ * <pre><code class="lang-ts hljs typescript">levels: [{
+ *     depth: <span class="hljs-number">0</span>,
+ *     itemStyle: {
+ *         color: <span class="hljs-string">'#fbb4ae'</span>
  *     },
- *     <span class="hljs-attr">lineStyle</span>: {
- *         <span class="hljs-attr">color</span>: <span class="hljs-string">'source'</span>,
- *         <span class="hljs-attr">opacity</span>: <span class="hljs-number">0.6</span>
+ *     lineStyle: {
+ *         color: <span class="hljs-string">'source'</span>,
+ *         opacity: <span class="hljs-number">0.6</span>
  *     }
  * }, {
- *     <span class="hljs-attr">depth</span>: <span class="hljs-number">1</span>,
- *     <span class="hljs-attr">itemStyle</span>: {
- *         <span class="hljs-attr">color</span>: <span class="hljs-string">'#b3cde3'</span>
+ *     depth: <span class="hljs-number">1</span>,
+ *     itemStyle: {
+ *         color: <span class="hljs-string">'#b3cde3'</span>
  *     },
- *     <span class="hljs-attr">lineStyle</span>: {
- *         <span class="hljs-attr">color</span>: <span class="hljs-string">'source'</span>,
- *         <span class="hljs-attr">opacity</span>: <span class="hljs-number">0.6</span>
+ *     lineStyle: {
+ *         color: <span class="hljs-string">'source'</span>,
+ *         opacity: <span class="hljs-number">0.6</span>
  *     }
  * }]
  * </code></pre>
  * <p>也可以只设置某一层：</p>
- * <pre><code class="lang-js hljs javascript">levels: [{
- *     <span class="hljs-attr">depth</span>: <span class="hljs-number">3</span>,
- *     <span class="hljs-attr">itemStyle</span>: {
- *         <span class="hljs-attr">color</span>: <span class="hljs-string">'#fbb4ae'</span>
+ * <pre><code class="lang-ts hljs typescript">levels: [{
+ *     depth: <span class="hljs-number">3</span>,
+ *     itemStyle: {
+ *         color: <span class="hljs-string">'#fbb4ae'</span>
  *     },
- *     <span class="hljs-attr">lineStyle</span>: {
- *         <span class="hljs-attr">color</span>: <span class="hljs-string">'source'</span>,
- *         <span class="hljs-attr">opacity</span>: <span class="hljs-number">0.6</span>
+ *     lineStyle: {
+ *         color: <span class="hljs-string">'source'</span>,
+ *         opacity: <span class="hljs-number">0.6</span>
  *     }
  * }]
  * </code></pre>

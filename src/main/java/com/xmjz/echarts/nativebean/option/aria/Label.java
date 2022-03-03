@@ -13,28 +13,28 @@ import java.io.Serializable;
  * <br/>描述:
  * <p>如果 <a href="#aria.enabled">aria.enabled</a> 设置为 <code class="codespan">true</code>，<code class="codespan">label</code> 默认开启。开启后，会根据图表、数据、标题等情况，自动智能生成关于图表的描述，用户也可以通过配置项修改描述。</p>
  * <p><strong>例子：</strong></p>
- * <pre><code class="lang-js hljs javascript">option = {
- *     <span class="hljs-attr">aria</span>: {
+ * <pre><code class="lang-ts hljs typescript">option = {
+ *     aria: {
  *         <span class="hljs-comment">// 下面几行可以不写，因为 label.enabled 默认 true</span>
  *         <span class="hljs-comment">// label: {</span>
  *         <span class="hljs-comment">//     enabled: true</span>
  *         <span class="hljs-comment">// },</span>
- *         <span class="hljs-attr">enabled</span>: <span class="hljs-literal">true</span>
+ *         enabled: <span class="hljs-literal">true</span>
  *     },
- *     <span class="hljs-attr">title</span>: {
- *         <span class="hljs-attr">text</span>: <span class="hljs-string">'某站点用户访问来源'</span>,
- *         <span class="hljs-attr">x</span>: <span class="hljs-string">'center'</span>
+ *     title: {
+ *         text: <span class="hljs-string">'某站点用户访问来源'</span>,
+ *         x: <span class="hljs-string">'center'</span>
  *     },
- *     <span class="hljs-attr">series</span>: [
+ *     series: [
  *         {
- *             <span class="hljs-attr">name</span>: <span class="hljs-string">'访问来源'</span>,
- *             <span class="hljs-attr">type</span>: <span class="hljs-string">'pie'</span>,
- *             <span class="hljs-attr">data</span>: [
- *                 { <span class="hljs-attr">value</span>: <span class="hljs-number">335</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">'直接访问'</span> },
- *                 { <span class="hljs-attr">value</span>: <span class="hljs-number">310</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">'邮件营销'</span> },
- *                 { <span class="hljs-attr">value</span>: <span class="hljs-number">234</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">'联盟广告'</span> },
- *                 { <span class="hljs-attr">value</span>: <span class="hljs-number">135</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">'视频广告'</span> },
- *                 { <span class="hljs-attr">value</span>: <span class="hljs-number">1548</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">'搜索引擎'</span> }
+ *             name: <span class="hljs-string">'访问来源'</span>,
+ *             <span class="hljs-keyword">type</span>: <span class="hljs-string">'pie'</span>,
+ *             data: [
+ *                 { value: <span class="hljs-number">335</span>, name: <span class="hljs-string">'直接访问'</span> },
+ *                 { value: <span class="hljs-number">310</span>, name: <span class="hljs-string">'邮件营销'</span> },
+ *                 { value: <span class="hljs-number">234</span>, name: <span class="hljs-string">'联盟广告'</span> },
+ *                 { value: <span class="hljs-number">135</span>, name: <span class="hljs-string">'视频广告'</span> },
+ *                 { value: <span class="hljs-number">1548</span>, name: <span class="hljs-string">'搜索引擎'</span> }
  *             ]
  *         }
  *     ]

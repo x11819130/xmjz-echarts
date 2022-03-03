@@ -16,7 +16,6 @@ import java.io.Serializable;
  * <blockquote>
  * <p><strong>注意：</strong> <code class="codespan">tooltip.axisPointer</code> 中诸配置项的优先级低于轴上的 axisPointer 的配置项。</p>
  * </blockquote>
- * <hr>
  * <p>坐标轴指示器是指示坐标轴当前刻度的工具。</p>
  * <p>如下例，鼠标悬浮到图上，可以出现标线和刻度文本。</p>
  * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/candlestick-axisPointer&amp;edit=1&amp;reset=1" width="600" height="450"></iframe>
@@ -181,7 +180,7 @@ public class AxisPointer implements Serializable {
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
      * <p>初始动画的时长，支持回调函数，可以通过每个数据返回不同的时长实现更戏剧的初始动画效果：</p>
-     * <pre><code class="lang-js hljs javascript">animationDuration: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">animationDuration: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
      *     <span class="hljs-comment">// 越往后的数据时长越大</span>
      *     <span class="hljs-keyword">return</span> idx * <span class="hljs-number">100</span>;
      * }
@@ -203,7 +202,7 @@ public class AxisPointer implements Serializable {
      * <br/>描述:
      * <p>初始动画的延迟，支持回调函数，可以通过每个数据返回不同的 delay 时间实现更戏剧的初始动画效果。</p>
      * <p>如下示例：</p>
-     * <pre><code class="lang-js hljs javascript">animationDelay: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">animationDelay: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
      *     <span class="hljs-comment">// 越往后的数据延迟越大</span>
      *     <span class="hljs-keyword">return</span> idx * <span class="hljs-number">100</span>;
      * }
@@ -218,7 +217,7 @@ public class AxisPointer implements Serializable {
      * <br/>描述:
      * <p>数据更新动画的时长。</p>
      * <p>支持回调函数，可以通过每个数据返回不同的时长实现更戏剧的更新动画效果：</p>
-     * <pre><code class="lang-js hljs javascript">animationDurationUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">animationDurationUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
      *     <span class="hljs-comment">// 越往后的数据时长越大</span>
      *     <span class="hljs-keyword">return</span> idx * <span class="hljs-number">100</span>;
      * }
@@ -240,7 +239,7 @@ public class AxisPointer implements Serializable {
      * <br/>描述:
      * <p>数据更新动画的延迟，支持回调函数，可以通过每个数据返回不同的 delay 时间实现更戏剧的更新动画效果。</p>
      * <p>如下示例：</p>
-     * <pre><code class="lang-js hljs javascript">animationDelayUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">animationDelayUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
      *     <span class="hljs-comment">// 越往后的数据延迟越大</span>
      *     <span class="hljs-keyword">return</span> idx * <span class="hljs-number">100</span>;
      * }

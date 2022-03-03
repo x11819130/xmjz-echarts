@@ -39,7 +39,7 @@ public class Dataset implements Serializable {
      * <br/>描述:
      * <p>原始数据。一般来说，原始数据表达的是二维表。可以用如下这些格式表达二维表：</p>
      * <p>二维数组，其中第一行/列可以给出 <a href="#dataset.dimensions">维度名</a>，也可以不给出，直接就是数据：</p>
-     * <pre><code class="lang-js hljs javascript">[
+     * <pre><code class="lang-ts hljs typescript">[
      *     [<span class="hljs-string">'product'</span>, <span class="hljs-string">'2015'</span>, <span class="hljs-string">'2016'</span>, <span class="hljs-string">'2017'</span>],
      *     [<span class="hljs-string">'Matcha Latte'</span>, <span class="hljs-number">43.3</span>, <span class="hljs-number">85.8</span>, <span class="hljs-number">93.7</span>],
      *     [<span class="hljs-string">'Milk Tea'</span>, <span class="hljs-number">83.1</span>, <span class="hljs-number">73.4</span>, <span class="hljs-number">55.1</span>],
@@ -48,15 +48,15 @@ public class Dataset implements Serializable {
      * ]
      * </code></pre>
      * <p>按行的 key-value 形式（对象数组），其中键（key）表明了 <a href="#dataset.dimensions">维度名</a>：</p>
-     * <pre><code class="lang-js hljs javascript">[
-     *     {<span class="hljs-attr">product</span>: <span class="hljs-string">'Matcha Latte'</span>, <span class="hljs-attr">count</span>: <span class="hljs-number">823</span>, <span class="hljs-attr">score</span>: <span class="hljs-number">95.8</span>},
-     *     {<span class="hljs-attr">product</span>: <span class="hljs-string">'Milk Tea'</span>, <span class="hljs-attr">count</span>: <span class="hljs-number">235</span>, <span class="hljs-attr">score</span>: <span class="hljs-number">81.4</span>},
-     *     {<span class="hljs-attr">product</span>: <span class="hljs-string">'Cheese Cocoa'</span>, <span class="hljs-attr">count</span>: <span class="hljs-number">1042</span>, <span class="hljs-attr">score</span>: <span class="hljs-number">91.2</span>},
-     *     {<span class="hljs-attr">product</span>: <span class="hljs-string">'Walnut Brownie'</span>, <span class="hljs-attr">count</span>: <span class="hljs-number">988</span>, <span class="hljs-attr">score</span>: <span class="hljs-number">76.9</span>}
+     * <pre><code class="lang-ts hljs typescript">[
+     *     {product: <span class="hljs-string">'Matcha Latte'</span>, count: <span class="hljs-number">823</span>, score: <span class="hljs-number">95.8</span>},
+     *     {product: <span class="hljs-string">'Milk Tea'</span>, count: <span class="hljs-number">235</span>, score: <span class="hljs-number">81.4</span>},
+     *     {product: <span class="hljs-string">'Cheese Cocoa'</span>, count: <span class="hljs-number">1042</span>, score: <span class="hljs-number">91.2</span>},
+     *     {product: <span class="hljs-string">'Walnut Brownie'</span>, count: <span class="hljs-number">988</span>, score: <span class="hljs-number">76.9</span>}
      * ]
      * </code></pre>
      * <p>按列的 key-value 形式，每一项表示二维表的 “一列”：</p>
-     * <pre><code class="lang-js hljs javascript">{
+     * <pre><code class="lang-ts hljs typescript">{
      *     <span class="hljs-string">'product'</span>: [<span class="hljs-string">'Matcha Latte'</span>, <span class="hljs-string">'Milk Tea'</span>, <span class="hljs-string">'Cheese Cocoa'</span>, <span class="hljs-string">'Walnut Brownie'</span>],
      *     <span class="hljs-string">'count'</span>: [<span class="hljs-number">823</span>, <span class="hljs-number">235</span>, <span class="hljs-number">1042</span>, <span class="hljs-number">988</span>],
      *     <span class="hljs-string">'score'</span>: [<span class="hljs-number">95.8</span>, <span class="hljs-number">81.4</span>, <span class="hljs-number">91.2</span>, <span class="hljs-number">76.9</span>]
@@ -73,9 +73,9 @@ public class Dataset implements Serializable {
      * <p>使用 dimensions 定义 <code class="codespan">series.data</code> 或者 <code class="codespan">dataset.source</code> 的每个维度的信息。</p>
      * <p>注意：如果使用了 <a href="#dataset">dataset</a>，那么可以在 <a href="#dataset.dimensions">dataset.dimensions</a> 中定义 dimension ，或者在 <a href="#dataset.source">dataset.source</a> 的第一行/列中给出 dimension 名称。于是就不用在这里指定 dimension。但如果在这里指定了 <code class="codespan">dimensions</code>，那么优先使用这里的。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">option = {
-     *     <span class="hljs-attr">dataset</span>: {
-     *         <span class="hljs-attr">source</span>: [
+     * <pre><code class="lang-ts hljs typescript">option = {
+     *     dataset: {
+     *         source: [
      *             <span class="hljs-comment">// 有了上面 dimensions 定义后，下面这五个维度的名称分别为：</span>
      *             <span class="hljs-comment">// 'date', 'open', 'close', 'highest', 'lowest'</span>
      *             [<span class="hljs-number">12</span>, <span class="hljs-number">44</span>, <span class="hljs-number">55</span>, <span class="hljs-number">66</span>, <span class="hljs-number">2</span>],
@@ -83,21 +83,21 @@ public class Dataset implements Serializable {
      *             ...
      *         ]
      *     },
-     *     <span class="hljs-attr">series</span>: {
-     *         <span class="hljs-attr">type</span>: <span class="hljs-string">'xxx'</span>,
+     *     series: {
+     *         <span class="hljs-keyword">type</span>: <span class="hljs-string">'xxx'</span>,
      *         <span class="hljs-comment">// 定义了每个维度的名称。这个名称会被显示到默认的 tooltip 中。</span>
-     *         <span class="hljs-attr">dimensions</span>: [<span class="hljs-string">'date'</span>, <span class="hljs-string">'open'</span>, <span class="hljs-string">'close'</span>, <span class="hljs-string">'highest'</span>, <span class="hljs-string">'lowest'</span>]
+     *         dimensions: [<span class="hljs-string">'date'</span>, <span class="hljs-string">'open'</span>, <span class="hljs-string">'close'</span>, <span class="hljs-string">'highest'</span>, <span class="hljs-string">'lowest'</span>]
      *     }
      * }
      * </code></pre>
-     * <pre><code class="lang-js hljs javascript">series: {
-     *     <span class="hljs-attr">type</span>: <span class="hljs-string">'xxx'</span>,
-     *     <span class="hljs-attr">dimensions</span>: [
+     * <pre><code class="lang-ts hljs typescript">series: {
+     *     <span class="hljs-keyword">type</span>: <span class="hljs-string">'xxx'</span>,
+     *     dimensions: [
      *         <span class="hljs-literal">null</span>,                <span class="hljs-comment">// 如果此维度不想给出定义，则使用 null 即可</span>
-     *         {<span class="hljs-attr">type</span>: <span class="hljs-string">'ordinal'</span>},   <span class="hljs-comment">// 只定义此维度的类型。</span>
+     *         {<span class="hljs-keyword">type</span>: <span class="hljs-string">'ordinal'</span>},   <span class="hljs-comment">// 只定义此维度的类型。</span>
      *                              <span class="hljs-comment">// 'ordinal' 表示离散型，一般文本使用这种类型。</span>
      *                              <span class="hljs-comment">// 如果类型没有被定义，会自动猜测类型。</span>
-     *         {<span class="hljs-attr">name</span>: <span class="hljs-string">'good'</span>, <span class="hljs-attr">type</span>: <span class="hljs-string">'number'</span>},
+     *         {name: <span class="hljs-string">'good'</span>, <span class="hljs-keyword">type</span>: <span class="hljs-string">'number'</span>},
      *         <span class="hljs-string">'bad'</span>                <span class="hljs-comment">// 等同于 {name: 'bad'}</span>
      *     ]
      * }
@@ -125,17 +125,18 @@ public class Dataset implements Serializable {
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#dataset.sourceHeader">https://echarts.apache.org/zh/option.html#dataset.sourceHeader</a>
      * <br/>默认值: 无
-     * <br/>js类型: ["boolean"]
+     * <br/>js类型: ["boolean","number"]
      * <br/>描述:
-     * <p><code class="codespan">dataset.source</code> 第一行/列是否是 <a href="dataset.dimensions" target="_blank">维度名</a> 信息。可选值：</p>
+     * <p><code class="codespan">dataset.source</code> 第一行/列是否是 <a href="#dataset.dimensions">维度名</a> 信息。可选值：</p>
      * <ul>
-     * <li><code class="codespan">null/undefine</code>：默认，自动探测。</li>
+     * <li><code class="codespan">null/undefined/'auto'</code>：默认，自动探测。</li>
      * <li><code class="codespan">true</code>：第一行/列是维度名信息。</li>
      * <li><code class="codespan">false</code>：第一行/列直接开始是数据。</li>
+     * <li><code class="codespan">number</code>: 维度名行/列数，也就是数据行/列的开始索引。例如：<code class="codespan">sourceHeader: 2</code> 意味着前两行/列为维度名，从第三行/列开始为数据。 </li>
      * </ul>
      * <p>注意：“第一行/列” 的意思是，如果 <a href="#series.seriesLayoutBy">series.seriesLayoutBy</a> 设置为 <code class="codespan">'column'</code>（默认值），则取第一行，如果 <code class="codespan">series.seriesLayoutBy</code> 设置为 <code class="codespan">'row'</code>，则取第一列。</p>
      */
-    private Boolean sourceHeader;
+    private Object sourceHeader;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#dataset.transform">https://echarts.apache.org/zh/option.html#dataset.transform</a>
      * <br/>默认值: 无

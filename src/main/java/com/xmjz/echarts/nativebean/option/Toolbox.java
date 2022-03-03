@@ -208,33 +208,33 @@ public class Toolbox implements Serializable {
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>工具箱的 tooltip 配置，配置项同 <a href="#tooltip">tooltip</a>。默认不显示，可以在需要特殊定制文字样式（尤其是想用自定义 CSS 控制文字样式）的时候开启 tooltip，如下示例：</p>
-     * <pre><code class="lang-js hljs javascript">option = {
-     *     <span class="hljs-attr">tooltip</span>: {
-     *         <span class="hljs-attr">show</span>: <span class="hljs-literal">true</span> <span class="hljs-comment">// 必须引入 tooltip 组件</span>
+     * <pre><code class="lang-ts hljs typescript">option = {
+     *     tooltip: {
+     *         show: <span class="hljs-literal">true</span> <span class="hljs-comment">// 必须引入 tooltip 组件</span>
      *     },
-     *     <span class="hljs-attr">toolbox</span>: {
-     *         <span class="hljs-attr">show</span>: <span class="hljs-literal">true</span>,
-     *         <span class="hljs-attr">showTitle</span>: <span class="hljs-literal">false</span>, <span class="hljs-comment">// 隐藏默认文字，否则两者位置会重叠</span>
-     *         <span class="hljs-attr">feature</span>: {
-     *             <span class="hljs-attr">saveAsImage</span>: {
-     *                 <span class="hljs-attr">show</span>: <span class="hljs-literal">true</span>,
-     *                 <span class="hljs-attr">title</span>: <span class="hljs-string">'Save As Image'</span>
+     *     toolbox: {
+     *         show: <span class="hljs-literal">true</span>,
+     *         showTitle: <span class="hljs-literal">false</span>, <span class="hljs-comment">// 隐藏默认文字，否则两者位置会重叠</span>
+     *         feature: {
+     *             saveAsImage: {
+     *                 show: <span class="hljs-literal">true</span>,
+     *                 title: <span class="hljs-string">'Save As Image'</span>
      *             },
-     *             <span class="hljs-attr">dataView</span>: {
-     *                 <span class="hljs-attr">show</span>: <span class="hljs-literal">true</span>,
-     *                 <span class="hljs-attr">title</span>: <span class="hljs-string">'Data View'</span>
+     *             dataView: {
+     *                 show: <span class="hljs-literal">true</span>,
+     *                 title: <span class="hljs-string">'Data View'</span>
      *             },
      *         },
-     *         <span class="hljs-attr">tooltip</span>: { <span class="hljs-comment">// 和 option.tooltip 的配置项相同</span>
-     *             <span class="hljs-attr">show</span>: <span class="hljs-literal">true</span>,
-     *             <span class="hljs-attr">formatter</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">param</span>) </span>{
+     *         tooltip: { <span class="hljs-comment">// 和 option.tooltip 的配置项相同</span>
+     *             show: <span class="hljs-literal">true</span>,
+     *             formatter: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">param</span>) </span>{
      *                 <span class="hljs-keyword">return</span> <span class="hljs-keyword">return</span> <span class="hljs-string">'&lt;div&gt;'</span> + param.title + <span class="hljs-string">'&lt;/div&gt;'</span>; <span class="hljs-comment">// 自定义的 DOM 结构</span>
      *             },
-     *             <span class="hljs-attr">backgroundColor</span>: <span class="hljs-string">'#222'</span>,
-     *             <span class="hljs-attr">textStyle</span>: {
-     *                 <span class="hljs-attr">fontSize</span>: <span class="hljs-number">12</span>,
+     *             backgroundColor: <span class="hljs-string">'#222'</span>,
+     *             textStyle: {
+     *                 fontSize: <span class="hljs-number">12</span>,
      *             },
-     *             <span class="hljs-attr">extraCssText</span>: <span class="hljs-string">'box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);'</span> <span class="hljs-comment">// 自定义的 CSS 样式</span>
+     *             extraCssText: <span class="hljs-string">'box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);'</span> <span class="hljs-comment">// 自定义的 CSS 样式</span>
      *         }
      *     },
      *     ...

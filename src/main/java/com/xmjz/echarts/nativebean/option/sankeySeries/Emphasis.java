@@ -22,6 +22,18 @@ public class Emphasis implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.emphasis.disabled">https://echarts.apache.org/zh/option.html#series-sankey.emphasis.disabled</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["boolean"]
+     * <br/>描述:
+     * <blockquote>
+     * <p>从 <code class="codespan">v5.3.0</code> 开始支持</p>
+     * </blockquote>
+     * <p>是否关闭高亮状态。</p>
+     * <p>关闭高亮状态可以在鼠标移到图形上，tooltip 触发，或者图例联动的时候不再触发高亮效果。在图形非常多的时候可以关闭以提升交互流畅性。</p>
+     */
+    private Boolean disabled;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-sankey.emphasis.focus">https://echarts.apache.org/zh/option.html#series-sankey.emphasis.focus</a>
      * <br/>默认值: none
      * <br/>js类型: ["string"]
@@ -42,9 +54,9 @@ public class Emphasis implements Serializable {
      * </ul>
      * <p><strong>示例：</strong></p>
      * <p>下面代码配置了柱状图在高亮一个图形的时候，淡出当前直角坐标系所有其它的系列。</p>
-     * <pre><code class="lang-js hljs javascript">emphasis: {
-     *     <span class="hljs-attr">focus</span>: <span class="hljs-string">'series'</span>,
-     *     <span class="hljs-attr">blurScope</span>: <span class="hljs-string">'coordinateSystem'</span>
+     * <pre><code class="lang-ts hljs typescript">emphasis: {
+     *     focus: <span class="hljs-string">'series'</span>,
+     *     blurScope: <span class="hljs-string">'coordinateSystem'</span>
      * }
      * </code></pre>
      * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=bar-y-category-stack&amp;reset=1&amp;edit=1" width="600" height="400"></iframe>

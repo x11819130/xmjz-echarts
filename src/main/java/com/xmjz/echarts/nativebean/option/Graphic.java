@@ -27,17 +27,14 @@ import java.util.List;
  * <a href="#graphic.elements-arc">arc</a>,
  * <a href="#graphic.elements-group">group</a>,</p>
  * <p>下面示例中，使用图形元素做了水印，和文本块：</p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-graphic&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="20"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-graphic&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="27"></iframe>
  *
  *
  * <p>下面示例中，使用隐藏的图形元素实现了拖拽：</p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-draggable&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="21"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-draggable&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="28"></iframe>
  *
  *
  *
- *
- * <p><br></p>
- * <hr>
  * <p><strong>graphic 设置介绍</strong></p>
  * <p>只配一个图形元素时的简写方法：</p>
  * <pre><code class="lang-javascript hljs">myChart.setOption({
@@ -102,8 +99,6 @@ import java.util.List;
  * </code></pre>
  * <p>注意，如果没有指定 id，第二次 setOption 时会按照元素在 option 中出现的顺序和已有的图形元素进行匹配。这有时会产生不易理解的效果。
  * 所以，一般来说，更新 elements 时推荐使用 id 进行准确的指定，而非省略 id。</p>
- * <p><br></p>
- * <hr>
  * <p><strong>图形元素设置介绍</strong></p>
  * <p>介绍每个图形元素的配置。不同类型的图形元素的设置有这些共性：</p>
  * <pre><code class="lang-javascript hljs">{
@@ -147,17 +142,11 @@ import java.util.List;
  *     <span class="hljs-attr">onclick</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{...}
  * }
  * </code></pre>
- * <p><br></p>
- * <hr>
  * <p><strong>图形元素的事件</strong></p>
  * <p>支持这些事件配置：
  * <code class="codespan">onclick</code>, <code class="codespan">onmouseover</code>, <code class="codespan">onmouseout</code>, <code class="codespan">onmousemove</code>, <code class="codespan">onmousewheel</code>, <code class="codespan">onmousedown</code>, <code class="codespan">onmouseup</code>, <code class="codespan">ondrag</code>, <code class="codespan">ondragstart</code>, <code class="codespan">ondragend</code>, <code class="codespan">ondragenter</code>, <code class="codespan">ondragleave</code>, <code class="codespan">ondragover</code>, <code class="codespan">ondrop</code>。</p>
- * <p><br></p>
- * <hr>
  * <p><strong>图形元素的层级关系</strong></p>
  * <p>只有 <code class="codespan">group</code> 元素可以有子节点，从而以该 <code class="codespan">group</code> 元素为根的元素树可以共同定位（共同移动）。</p>
- * <p><br></p>
- * <hr>
  * <p><strong>图形元素的基本形状设置</strong></p>
  * <p>每个图形元素本身有自己的图形基本的位置和尺寸设置，例如：</p>
  * <pre><code class="lang-javascript hljs">{
@@ -197,8 +186,6 @@ import java.util.List;
  *
  * }
  * </code></pre>
- * <p><br></p>
- * <hr>
  * <p><strong>图形元素的定位和 transfrom</strong></p>
  * <p>除此以外，可以以 transform 的方式对图形进行平移、旋转、缩放，
  * 参见：<a href="#graphic.elements.position">position</a>、<a href="#graphic.elements.rotation">rotation</a>、<a href="#graphic.elements.scale">scale</a>、<a href="#graphic.elements.origin">origin</a>。</p>
@@ -213,20 +200,16 @@ import java.util.List;
  *     }
  * }
  * </code></pre>
- * <ul>
- * <li>每个图形元素在父节点的坐标系中进行 transform，也就是说父子节点的 transform 能『叠加』。</li>
- * <li>每个图形元素进行 transform 顺序是：<ol>
+ * <p>每个图形元素在父节点的坐标系中进行 transform，也就是说父子节点的 transform 能『叠加』。</p>
+ * <p>每个图形元素进行 transform 顺序是：</p>
+ * <ol>
  * <li>平移 [-el.origin[0], -el.origin[1]]。</li>
  * <li>根据 el.scale 缩放。</li>
  * <li>根据 el.rotation 旋转。</li>
  * <li>根据 el.origin 平移。</li>
  * <li>根据 el.position 平移。</li>
  * </ol>
- * </li>
- * <li>也就是说先缩放旋转后平移，这样平移不会影响缩放旋转的 origin。</li>
- * </ul>
- * <p><br></p>
- * <hr>
+ * <p>也就是说先缩放旋转后平移，这样平移不会影响缩放旋转的 origin。</p>
  * <p><strong>图形元素相对定位</strong></p>
  * <p>以上两者是基本的绝对定位，除此之外，在实际应用中，容器尺寸常常是不确定甚至动态变化的，所以需要提供相对定位的机制。graphic 组件使用 <a href="#graphic.elements.left">left</a> / <a href="#graphic.elements.right">right</a> / <a href="#graphic.elements.top">top</a> / <a href="#graphic.elements.bottom">bottom</a> / <a href="#graphic.elements.width">width</a> / <a href="#graphic.elements.height">height</a> 提供了相对定位的机制。</p>
  * <p>例如：</p>

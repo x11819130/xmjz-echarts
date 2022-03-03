@@ -17,7 +17,7 @@ import java.util.List;
  * <p>树图主要用来可视化树形数据结构，是一种特殊的层次类型，具有唯一的根节点，左子树，和右子树。</p>
  * <p><strong>注意：目前不支持在单个 series 中直接绘制森林，可以通过在一个 option 中配置多个 series 实现森林</strong></p>
  * <p><strong>树图示例：</strong></p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=tree-vertical&amp;edit=1&amp;reset=1" width="900" height="780" data-ll-timeout="19"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=tree-vertical&amp;edit=1&amp;reset=1" width="900" height="780" data-ll-timeout="23"></iframe>
  *
  *
  * <p><strong>多个 series 组合成森林示例：</strong></p>
@@ -167,7 +167,7 @@ public class TreeSeries extends Series implements Serializable {
      * <p>例如：</p>
      * <pre><code class="hljs javascript"><span class="hljs-string">'path://M30.9,53.2C16.8,53.2,5.3,41.7,5.3,27.6S16.8,2,30.9,2C45,2,56.4,13.5,56.4,27.6S45,53.2,30.9,53.2z M30.9,3.5C17.6,3.5,6.8,14.4,6.8,27.6c0,13.3,10.8,24.1,24.101,24.1C44.2,51.7,55,40.9,55,27.6C54.9,14.4,44.1,3.5,30.9,3.5z M36.9,35.8c0,0.601-0.4,1-0.9,1h-1.3c-0.5,0-0.9-0.399-0.9-1V19.5c0-0.6,0.4-1,0.9-1H36c0.5,0,0.9,0.4,0.9,1V35.8z M27.8,35.8 c0,0.601-0.4,1-0.9,1h-1.3c-0.5,0-0.9-0.399-0.9-1V19.5c0-0.6,0.4-1,0.9-1H27c0.5,0,0.9,0.4,0.9,1L27.8,35.8L27.8,35.8z'</span>
      * </code></pre><p>如果需要每个数据的图形不一样，可以设置为如下格式的回调函数：</p>
-     * <pre><code class="lang-js hljs javascript">(value: <span class="hljs-built_in">Array</span>|number, <span class="hljs-attr">params</span>: <span class="hljs-built_in">Object</span>) =&gt; string
+     * <pre><code class="lang-ts hljs typescript">(value: <span class="hljs-built_in">Array</span>|<span class="hljs-built_in">number</span>, params: <span class="hljs-built_in">Object</span>) =&gt; <span class="hljs-built_in">string</span>
      * </code></pre>
      * <p>其中第一个参数 <code class="codespan">value</code> 为 <a href="#series-tree.data">data</a> 中的数据值。第二个参数<code class="codespan">params</code> 是其它的数据项参数。</p>
      */
@@ -179,7 +179,7 @@ public class TreeSeries extends Series implements Serializable {
      * <br/>描述:
      * <p>标记的大小，可以设置成诸如 <code class="codespan">10</code> 这样单一的数字，也可以用数组分开表示宽和高，例如 <code class="codespan">[20, 10]</code> 表示标记宽为<code class="codespan">20</code>，高为<code class="codespan">10</code>。</p>
      * <p>如果需要每个数据的图形大小不一样，可以设置为如下格式的回调函数：</p>
-     * <pre><code class="lang-js hljs javascript">(value: <span class="hljs-built_in">Array</span>|number, <span class="hljs-attr">params</span>: <span class="hljs-built_in">Object</span>) =&gt; number|<span class="hljs-built_in">Array</span>
+     * <pre><code class="lang-ts hljs typescript">(value: <span class="hljs-built_in">Array</span>|<span class="hljs-built_in">number</span>, params: <span class="hljs-built_in">Object</span>) =&gt; <span class="hljs-built_in">number</span>|<span class="hljs-built_in">Array</span>
      * </code></pre>
      * <p>其中第一个参数 <code class="codespan">value</code> 为 <a href="#series-tree.data">data</a> 中的数据值。第二个参数<code class="codespan">params</code> 是其它的数据项参数。</p>
      */
@@ -191,7 +191,7 @@ public class TreeSeries extends Series implements Serializable {
      * <br/>描述:
      * <p>标记的旋转角度（而非弧度）。正值表示逆时针旋转。注意在 <code class="codespan">markLine</code> 中当 <code class="codespan">symbol</code> 为 <code class="codespan">'arrow'</code> 时会忽略 <code class="codespan">symbolRotate</code> 强制设置为切线的角度。</p>
      * <p>如果需要每个数据的旋转角度不一样，可以设置为如下格式的回调函数：</p>
-     * <pre><code class="lang-js hljs javascript">(value: <span class="hljs-built_in">Array</span>|number, <span class="hljs-attr">params</span>: <span class="hljs-built_in">Object</span>) =&gt; number
+     * <pre><code class="lang-ts hljs typescript">(value: <span class="hljs-built_in">Array</span>|<span class="hljs-built_in">number</span>, params: <span class="hljs-built_in">Object</span>) =&gt; <span class="hljs-built_in">number</span>
      * </code></pre>
      * <p>其中第一个参数 <code class="codespan">value</code> 为 <a href="#series-tree.data">data</a> 中的数据值。第二个参数<code class="codespan">params</code> 是其它的数据项参数。</p>
      * <blockquote>
@@ -289,42 +289,42 @@ public class TreeSeries extends Series implements Serializable {
      * <p>标签的统一布局配置。</p>
      * <p>该配置项是在每个系列默认的标签布局基础上，统一调整标签的<code class="codespan">(x, y)</code>位置，标签对齐等属性以实现想要的标签布局效果。</p>
      * <p>该配置项也可以是一个有如下参数的回调函数</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-comment">// 标签对应数据的 dataIndex</span>
-     * <span class="hljs-attr">dataIndex</span>: number
+     * <pre><code class="lang-ts hljs typescript"><span class="hljs-comment">// 标签对应数据的 dataIndex</span>
+     * dataIndex: <span class="hljs-built_in">number</span>
      * <span class="hljs-comment">// 标签对应的数据类型，只在关系图中会有 node 和 edge 数据类型的区分</span>
-     * dataType?: string
+     * dataType?: <span class="hljs-built_in">string</span>
      * <span class="hljs-comment">// 标签对应的系列的 index</span>
-     * <span class="hljs-attr">seriesIndex</span>: number
+     * seriesIndex: <span class="hljs-built_in">number</span>
      * <span class="hljs-comment">// 标签显示的文本</span>
-     * <span class="hljs-attr">text</span>: string
+     * text: <span class="hljs-built_in">string</span>
      * <span class="hljs-comment">// 默认的标签的包围盒，由系列默认的标签布局决定</span>
-     * <span class="hljs-attr">labelRect</span>: {<span class="hljs-attr">x</span>: number, <span class="hljs-attr">y</span>: number, <span class="hljs-attr">width</span>: number, <span class="hljs-attr">height</span>: number}
+     * labelRect: {x: <span class="hljs-built_in">number</span>, y: <span class="hljs-built_in">number</span>, width: <span class="hljs-built_in">number</span>, height: <span class="hljs-built_in">number</span>}
      * <span class="hljs-comment">// 默认的标签水平对齐</span>
-     * <span class="hljs-attr">align</span>: <span class="hljs-string">'left'</span> | <span class="hljs-string">'center'</span> | <span class="hljs-string">'right'</span>
+     * align: <span class="hljs-string">'left'</span> | <span class="hljs-string">'center'</span> | <span class="hljs-string">'right'</span>
      * <span class="hljs-comment">// 默认的标签垂直对齐</span>
-     * <span class="hljs-attr">verticalAlign</span>: <span class="hljs-string">'top'</span> | <span class="hljs-string">'middle'</span> | <span class="hljs-string">'bottom'</span>
+     * verticalAlign: <span class="hljs-string">'top'</span> | <span class="hljs-string">'middle'</span> | <span class="hljs-string">'bottom'</span>
      * <span class="hljs-comment">// 标签所对应的数据图形的包围盒，可用于定位标签位置</span>
-     * <span class="hljs-attr">rect</span>: {<span class="hljs-attr">x</span>: number, <span class="hljs-attr">y</span>: number, <span class="hljs-attr">width</span>: number, <span class="hljs-attr">height</span>: number}
+     * rect: {x: <span class="hljs-built_in">number</span>, y: <span class="hljs-built_in">number</span>, width: <span class="hljs-built_in">number</span>, height: <span class="hljs-built_in">number</span>}
      * <span class="hljs-comment">// 默认引导线的位置，目前只有饼图(pie)和漏斗图(funnel)有默认标签位置</span>
      * <span class="hljs-comment">// 如果没有该值则为 null</span>
-     * labelLinePoints?: number[][]
+     * labelLinePoints?: <span class="hljs-built_in">number</span>[][]
      * </code></pre>
      * <p><strong>示例：</strong></p>
      * <p>将标签显示在图形右侧 10px 的位置，并且垂直居中：</p>
-     * <pre><code class="lang-js hljs javascript">labelLayout(params) {
+     * <pre><code class="lang-ts hljs typescript">labelLayout(params) {
      *     <span class="hljs-keyword">return</span> {
-     *         <span class="hljs-attr">x</span>: params.rect.x + <span class="hljs-number">10</span>,
-     *         <span class="hljs-attr">y</span>: params.rect.y + params.rect.height / <span class="hljs-number">2</span>,
-     *         <span class="hljs-attr">verticalAlign</span>: <span class="hljs-string">'middle'</span>,
-     *         <span class="hljs-attr">align</span>: <span class="hljs-string">'left'</span>
+     *         x: params.rect.x + <span class="hljs-number">10</span>,
+     *         y: params.rect.y + params.rect.height / <span class="hljs-number">2</span>,
+     *         verticalAlign: <span class="hljs-string">'middle'</span>,
+     *         align: <span class="hljs-string">'left'</span>
      *     }
      * }
      * </code></pre>
      * <p>根据图形的包围盒尺寸决定文本尺寸</p>
-     * <pre><code class="lang-js hljs javascript">
+     * <pre><code class="lang-ts hljs typescript">
      * labelLayout(params) {
      *     <span class="hljs-keyword">return</span> {
-     *         <span class="hljs-attr">fontSize</span>: <span class="hljs-built_in">Math</span>.max(params.rect.width / <span class="hljs-number">10</span>, <span class="hljs-number">5</span>)
+     *         fontSize: <span class="hljs-built_in">Math</span>.max(params.rect.width / <span class="hljs-number">10</span>, <span class="hljs-number">5</span>)
      *     };
      * }
      * </code></pre>
@@ -378,7 +378,10 @@ public class TreeSeries extends Series implements Serializable {
      * </blockquote>
      *
      *
-     * <p>选中模式的配置，表示是否支持多个选中，默认关闭，支持布尔值和字符串，字符串取值可选<code class="codespan">'single'</code>，<code class="codespan">'multiple'</code>，分别表示单选还是多选。</p>
+     * <p>选中模式的配置，表示是否支持多个选中，默认关闭，支持布尔值和字符串，字符串取值可选<code class="codespan">'single'</code>，<code class="codespan">'multiple'</code>，<code class="codespan">'series'</code> 分别表示单选，多选以及选择整个系列。</p>
+     * <blockquote>
+     * <p>从 v5.3.0 开始支持 <code class="codespan">'series'</code>。</p>
+     * </blockquote>
      */
     private Object selectedMode;
     /**

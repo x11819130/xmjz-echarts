@@ -27,7 +27,6 @@ import java.io.Serializable;
  * <li><p>可以设置在系列的每个数据项中，即 <a href="#series.data.tooltip">series.data.tooltip</a></p>
  * </li>
  * </ul>
- * <hr>
  *
  * @author auto
  */
@@ -77,7 +76,6 @@ public class Tooltip implements Serializable {
      * <blockquote>
      * <p><strong>注意：</strong> <code class="codespan">tooltip.axisPointer</code> 中诸配置项的优先级低于轴上的 axisPointer 的配置项。</p>
      * </blockquote>
-     * <hr>
      * <p>坐标轴指示器是指示坐标轴当前刻度的工具。</p>
      * <p>如下例，鼠标悬浮到图上，可以出现标线和刻度文本。</p>
      * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/candlestick-axisPointer&amp;edit=1&amp;reset=1" width="600" height="450"></iframe>
@@ -240,7 +238,7 @@ public class Tooltip implements Serializable {
      * </blockquote>
      * <p>指定 tooltip 的 DOM 节点的 CSS 类。（只在 <a href="#tooltip.renderMode"><code class="codespan">html</code></a> 模式下生效）。</p>
      * <p>Example:</p>
-     * <pre><code class="lang-js hljs javascript">className: <span class="hljs-string">'echarts-tooltip echarts-tooltip-dark'</span>
+     * <pre><code class="lang-ts hljs typescript">className: <span class="hljs-string">'echarts-tooltip echarts-tooltip-dark'</span>
      * </code></pre>
      */
     private String className;
@@ -263,15 +261,15 @@ public class Tooltip implements Serializable {
      * <li><p><code class="codespan">Array</code></p>
      * <p>  通过数组表示提示框浮层的位置，支持数字设置绝对位置，百分比设置相对位置。</p>
      * <p>  示例:</p>
-     * <pre><code class="lang-js hljs javascript">  <span class="hljs-comment">// 绝对位置，相对于容器左侧 10px, 上侧 10 px</span>
-     *   <span class="hljs-attr">position</span>: [<span class="hljs-number">10</span>, <span class="hljs-number">10</span>]
+     * <pre><code class="lang-ts hljs typescript">  <span class="hljs-comment">// 绝对位置，相对于容器左侧 10px, 上侧 10 px</span>
+     *   position: [<span class="hljs-number">10</span>, <span class="hljs-number">10</span>]
      *   <span class="hljs-comment">// 相对位置，放置在容器正中间</span>
-     *   <span class="hljs-attr">position</span>: [<span class="hljs-string">'50%'</span>, <span class="hljs-string">'50%'</span>]
+     *   position: [<span class="hljs-string">'50%'</span>, <span class="hljs-string">'50%'</span>]
      * </code></pre>
      * </li>
      * <li><p><code class="codespan">Function</code></p>
      * <p>  回调函数，格式如下：</p>
-     * <pre><code class="lang-js hljs javascript">  (point: <span class="hljs-built_in">Array</span>, <span class="hljs-attr">params</span>: <span class="hljs-built_in">Object</span>|<span class="hljs-built_in">Array</span>.&lt;<span class="hljs-built_in">Object</span>&gt;, <span class="hljs-attr">dom</span>: HTMLDomElement, <span class="hljs-attr">rect</span>: <span class="hljs-built_in">Object</span>, <span class="hljs-attr">size</span>: <span class="hljs-built_in">Object</span>) =&gt; <span class="hljs-built_in">Array</span>
+     * <pre><code class="lang-ts hljs typescript">  (point: <span class="hljs-built_in">Array</span>, params: <span class="hljs-built_in">Object</span>|<span class="hljs-built_in">Array</span>.&lt;<span class="hljs-built_in">Object</span>&gt;, dom: HTMLDomElement, rect: <span class="hljs-built_in">Object</span>, size: <span class="hljs-built_in">Object</span>) =&gt; <span class="hljs-built_in">Array</span>
      * </code></pre>
      * <p>  <strong>参数：</strong><br>
      *   point: 鼠标位置，如 [20, 40]。<br>
@@ -283,15 +281,15 @@ public class Tooltip implements Serializable {
      *   可以是一个表示 tooltip 位置的数组，数组值可以是绝对的像素值，也可以是相  百分比。<br>
      *   也可以是一个对象，如：<code class="codespan">{left: 10, top: 30}</code>，或者 <code class="codespan">{right: '20%', bottom: 40}</code>。<br></p>
      * <p>  如下示例：</p>
-     * <pre><code class="lang-js hljs javascript">  position: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">point, params, dom, rect, size</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">  position: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">point, params, dom, rect, size</span>) </span>{
      *       <span class="hljs-comment">// 固定在顶部</span>
      *       <span class="hljs-keyword">return</span> [point[<span class="hljs-number">0</span>], <span class="hljs-string">'10%'</span>];
      *   }
      * </code></pre>
      * <p>  或者：</p>
-     * <pre><code class="lang-js hljs javascript">  position: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">pos, params, dom, rect, size</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">  position: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">pos, params, dom, rect, size</span>) </span>{
      *       <span class="hljs-comment">// 鼠标在左侧时 tooltip 显示到右侧，鼠标在右侧时 tooltip 显示到左侧。</span>
-     *       <span class="hljs-keyword">var</span> obj = {<span class="hljs-attr">top</span>: <span class="hljs-number">60</span>};
+     *       <span class="hljs-keyword">var</span> obj = {top: <span class="hljs-number">60</span>};
      *       obj[[<span class="hljs-string">'left'</span>, <span class="hljs-string">'right'</span>][+(pos[<span class="hljs-number">0</span>] &lt; size.viewSize[<span class="hljs-number">0</span>] / <span class="hljs-number">2</span>)]] = <span class="hljs-number">5</span>;
      *       <span class="hljs-keyword">return</span> obj;
      *   }
@@ -340,30 +338,30 @@ public class Tooltip implements Serializable {
      * </ul>
      * <p>更多其它图表模板变量的含义可以见相应的图表的 label.formatter 配置项。</p>
      * <p><strong>示例：</strong></p>
-     * <pre><code class="lang-js hljs javascript">formatter: <span class="hljs-string">'{b0}: {c0}&lt;br /&gt;{b1}: {c1}'</span>
+     * <pre><code class="lang-ts hljs typescript">formatter: <span class="hljs-string">'{b0}: {c0}&lt;br /&gt;{b1}: {c1}'</span>
      * </code></pre>
      * <p><strong>2. 回调函数</strong></p>
      * <p>回调函数格式：</p>
-     * <pre><code class="lang-js hljs javascript">(params: <span class="hljs-built_in">Object</span>|<span class="hljs-built_in">Array</span>, <span class="hljs-attr">ticket</span>: string, <span class="hljs-attr">callback</span>: <span class="hljs-function">(<span class="hljs-params">ticket: string, html: string</span>)) =&gt;</span> string | HTMLElement | HTMLElement[]
+     * <pre><code class="lang-ts hljs typescript">(params: <span class="hljs-built_in">Object</span>|<span class="hljs-built_in">Array</span>, ticket: <span class="hljs-built_in">string</span>, callback: <span class="hljs-function">(<span class="hljs-params">ticket: <span class="hljs-built_in">string</span>, html: <span class="hljs-built_in">string</span></span>)) =&gt;</span> <span class="hljs-built_in">string</span> | HTMLElement | HTMLElement[]
      * </code></pre>
      * <p>支持返回 HTML 字符串或者创建的 DOM 实例。</p>
      * <p>第一个参数 <code class="codespan">params</code> 是 formatter 需要的数据集。格式如下：</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">componentType</span>: <span class="hljs-string">'series'</span>,
+     * <pre><code class="lang-ts hljs typescript">{
+     *     componentType: <span class="hljs-string">'series'</span>,
      *     <span class="hljs-comment">// 系列类型</span>
-     *     <span class="hljs-attr">seriesType</span>: string,
+     *     seriesType: <span class="hljs-built_in">string</span>,
      *     <span class="hljs-comment">// 系列在传入的 option.series 中的 index</span>
-     *     <span class="hljs-attr">seriesIndex</span>: number,
+     *     seriesIndex: <span class="hljs-built_in">number</span>,
      *     <span class="hljs-comment">// 系列名称</span>
-     *     <span class="hljs-attr">seriesName</span>: string,
+     *     seriesName: <span class="hljs-built_in">string</span>,
      *     <span class="hljs-comment">// 数据名，类目名</span>
-     *     <span class="hljs-attr">name</span>: string,
+     *     name: <span class="hljs-built_in">string</span>,
      *     <span class="hljs-comment">// 数据在传入的 data 数组中的 index</span>
-     *     <span class="hljs-attr">dataIndex</span>: number,
+     *     dataIndex: <span class="hljs-built_in">number</span>,
      *     <span class="hljs-comment">// 传入的原始数据项</span>
-     *     <span class="hljs-attr">data</span>: <span class="hljs-built_in">Object</span>,
+     *     data: <span class="hljs-built_in">Object</span>,
      *     <span class="hljs-comment">// 传入的数据值。在多数系列下它和 data 相同。在一些系列下是 data 中的分量（如 map、radar 中）</span>
-     *     <span class="hljs-attr">value</span>: number|<span class="hljs-built_in">Array</span>|<span class="hljs-built_in">Object</span>,
+     *     value: <span class="hljs-built_in">number</span>|<span class="hljs-built_in">Array</span>|<span class="hljs-built_in">Object</span>,
      *     <span class="hljs-comment">// 坐标轴 encode 映射信息，</span>
      *     <span class="hljs-comment">// key 为坐标轴（如 'x' 'y' 'radius' 'angle' 等）</span>
      *     <span class="hljs-comment">// value 必然为数组，不会为 null/undefied，表示 dimension index 。</span>
@@ -372,26 +370,22 @@ public class Tooltip implements Serializable {
      *     <span class="hljs-comment">//     x: [2] // dimension index 为 2 的数据映射到 x 轴</span>
      *     <span class="hljs-comment">//     y: [0] // dimension index 为 0 的数据映射到 y 轴</span>
      *     <span class="hljs-comment">// }</span>
-     *     <span class="hljs-attr">encode</span>: <span class="hljs-built_in">Object</span>,
+     *     encode: <span class="hljs-built_in">Object</span>,
      *     <span class="hljs-comment">// 维度名列表</span>
-     *     <span class="hljs-attr">dimensionNames</span>: <span class="hljs-built_in">Array</span>&lt;<span class="hljs-built_in">String</span>&gt;,
+     *     dimensionNames: <span class="hljs-built_in">Array</span>&lt;<span class="hljs-built_in">String</span>&gt;,
      *     <span class="hljs-comment">// 数据的维度 index，如 0 或 1 或 2 ...</span>
      *     <span class="hljs-comment">// 仅在雷达图中使用。</span>
-     *     <span class="hljs-attr">dimensionIndex</span>: number,
+     *     dimensionIndex: <span class="hljs-built_in">number</span>,
      *     <span class="hljs-comment">// 数据图形的颜色</span>
-     *     <span class="hljs-attr">color</span>: string,
-     *
-     *
-     *     <span class="hljs-comment">// 饼图的百分比</span>
-     *     <span class="hljs-attr">percent</span>: number,
-     *
-     *
+     *     color: <span class="hljs-built_in">string</span>,
+     *     <span class="hljs-comment">// 饼图，漏斗图的百分比</span>
+     *     percent: <span class="hljs-built_in">number</span>
      * }
      * </code></pre>
      * <p>注：encode 和 dimensionNames 的使用方式，例如：</p>
      * <p>如果数据为：</p>
-     * <pre><code class="lang-js hljs javascript">dataset: {
-     *     <span class="hljs-attr">source</span>: [
+     * <pre><code class="lang-ts hljs typescript">dataset: {
+     *     source: [
      *         [<span class="hljs-string">'Matcha Latte'</span>, <span class="hljs-number">43.3</span>, <span class="hljs-number">85.8</span>, <span class="hljs-number">93.7</span>],
      *         [<span class="hljs-string">'Milk Tea'</span>, <span class="hljs-number">83.1</span>, <span class="hljs-number">73.4</span>, <span class="hljs-number">55.1</span>],
      *         [<span class="hljs-string">'Cheese Cocoa'</span>, <span class="hljs-number">86.4</span>, <span class="hljs-number">65.2</span>, <span class="hljs-number">82.5</span>],
@@ -400,39 +394,39 @@ public class Tooltip implements Serializable {
      * }
      * </code></pre>
      * <p>则可这样得到 y 轴对应的 value：</p>
-     * <pre><code class="lang-js hljs javascript">params.value[params.encode.y[<span class="hljs-number">0</span>]]
+     * <pre><code class="lang-ts hljs typescript">params.value[params.encode.y[<span class="hljs-number">0</span>]]
      * </code></pre>
      * <p>如果数据为：</p>
-     * <pre><code class="lang-js hljs javascript">dataset: {
-     *     <span class="hljs-attr">dimensions</span>: [<span class="hljs-string">'product'</span>, <span class="hljs-string">'2015'</span>, <span class="hljs-string">'2016'</span>, <span class="hljs-string">'2017'</span>],
-     *     <span class="hljs-attr">source</span>: [
-     *         {<span class="hljs-attr">product</span>: <span class="hljs-string">'Matcha Latte'</span>, <span class="hljs-string">'2015'</span>: <span class="hljs-number">43.3</span>, <span class="hljs-string">'2016'</span>: <span class="hljs-number">85.8</span>, <span class="hljs-string">'2017'</span>: <span class="hljs-number">93.7</span>},
-     *         {<span class="hljs-attr">product</span>: <span class="hljs-string">'Milk Tea'</span>, <span class="hljs-string">'2015'</span>: <span class="hljs-number">83.1</span>, <span class="hljs-string">'2016'</span>: <span class="hljs-number">73.4</span>, <span class="hljs-string">'2017'</span>: <span class="hljs-number">55.1</span>},
-     *         {<span class="hljs-attr">product</span>: <span class="hljs-string">'Cheese Cocoa'</span>, <span class="hljs-string">'2015'</span>: <span class="hljs-number">86.4</span>, <span class="hljs-string">'2016'</span>: <span class="hljs-number">65.2</span>, <span class="hljs-string">'2017'</span>: <span class="hljs-number">82.5</span>},
-     *         {<span class="hljs-attr">product</span>: <span class="hljs-string">'Walnut Brownie'</span>, <span class="hljs-string">'2015'</span>: <span class="hljs-number">72.4</span>, <span class="hljs-string">'2016'</span>: <span class="hljs-number">53.9</span>, <span class="hljs-string">'2017'</span>: <span class="hljs-number">39.1</span>}
+     * <pre><code class="lang-ts hljs typescript">dataset: {
+     *     dimensions: [<span class="hljs-string">'product'</span>, <span class="hljs-string">'2015'</span>, <span class="hljs-string">'2016'</span>, <span class="hljs-string">'2017'</span>],
+     *     source: [
+     *         {product: <span class="hljs-string">'Matcha Latte'</span>, <span class="hljs-string">'2015'</span>: <span class="hljs-number">43.3</span>, <span class="hljs-string">'2016'</span>: <span class="hljs-number">85.8</span>, <span class="hljs-string">'2017'</span>: <span class="hljs-number">93.7</span>},
+     *         {product: <span class="hljs-string">'Milk Tea'</span>, <span class="hljs-string">'2015'</span>: <span class="hljs-number">83.1</span>, <span class="hljs-string">'2016'</span>: <span class="hljs-number">73.4</span>, <span class="hljs-string">'2017'</span>: <span class="hljs-number">55.1</span>},
+     *         {product: <span class="hljs-string">'Cheese Cocoa'</span>, <span class="hljs-string">'2015'</span>: <span class="hljs-number">86.4</span>, <span class="hljs-string">'2016'</span>: <span class="hljs-number">65.2</span>, <span class="hljs-string">'2017'</span>: <span class="hljs-number">82.5</span>},
+     *         {product: <span class="hljs-string">'Walnut Brownie'</span>, <span class="hljs-string">'2015'</span>: <span class="hljs-number">72.4</span>, <span class="hljs-string">'2016'</span>: <span class="hljs-number">53.9</span>, <span class="hljs-string">'2017'</span>: <span class="hljs-number">39.1</span>}
      *     ]
      * }
      * </code></pre>
      * <p>则可这样得到 y 轴对应的 value：</p>
-     * <pre><code class="lang-js hljs javascript">params.value[params.dimensionNames[params.encode.y[<span class="hljs-number">0</span>]]]
+     * <pre><code class="lang-ts hljs typescript">params.value[params.dimensionNames[params.encode.y[<span class="hljs-number">0</span>]]]
      * </code></pre>
      * <p>在 <a href="#tooltip.trigger">trigger</a> 为 <code class="codespan">'axis'</code> 的时候，或者 tooltip 被 <a href="#xAxis.axisPointer">axisPointer</a> 触发的时候，<code class="codespan">params</code> 是多个系列的数据数组。其中每项内容格式同上，并且，</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">componentType</span>: <span class="hljs-string">'series'</span>,
+     * <pre><code class="lang-ts hljs typescript">{
+     *     componentType: <span class="hljs-string">'series'</span>,
      *     <span class="hljs-comment">// 系列类型</span>
-     *     <span class="hljs-attr">seriesType</span>: string,
+     *     seriesType: <span class="hljs-built_in">string</span>,
      *     <span class="hljs-comment">// 系列在传入的 option.series 中的 index</span>
-     *     <span class="hljs-attr">seriesIndex</span>: number,
+     *     seriesIndex: <span class="hljs-built_in">number</span>,
      *     <span class="hljs-comment">// 系列名称</span>
-     *     <span class="hljs-attr">seriesName</span>: string,
+     *     seriesName: <span class="hljs-built_in">string</span>,
      *     <span class="hljs-comment">// 数据名，类目名</span>
-     *     <span class="hljs-attr">name</span>: string,
+     *     name: <span class="hljs-built_in">string</span>,
      *     <span class="hljs-comment">// 数据在传入的 data 数组中的 index</span>
-     *     <span class="hljs-attr">dataIndex</span>: number,
+     *     dataIndex: <span class="hljs-built_in">number</span>,
      *     <span class="hljs-comment">// 传入的原始数据项</span>
-     *     <span class="hljs-attr">data</span>: <span class="hljs-built_in">Object</span>,
+     *     data: <span class="hljs-built_in">Object</span>,
      *     <span class="hljs-comment">// 传入的数据值。在多数系列下它和 data 相同。在一些系列下是 data 中的分量（如 map、radar 中）</span>
-     *     <span class="hljs-attr">value</span>: number|<span class="hljs-built_in">Array</span>|<span class="hljs-built_in">Object</span>,
+     *     value: <span class="hljs-built_in">number</span>|<span class="hljs-built_in">Array</span>|<span class="hljs-built_in">Object</span>,
      *     <span class="hljs-comment">// 坐标轴 encode 映射信息，</span>
      *     <span class="hljs-comment">// key 为坐标轴（如 'x' 'y' 'radius' 'angle' 等）</span>
      *     <span class="hljs-comment">// value 必然为数组，不会为 null/undefied，表示 dimension index 。</span>
@@ -441,23 +435,20 @@ public class Tooltip implements Serializable {
      *     <span class="hljs-comment">//     x: [2] // dimension index 为 2 的数据映射到 x 轴</span>
      *     <span class="hljs-comment">//     y: [0] // dimension index 为 0 的数据映射到 y 轴</span>
      *     <span class="hljs-comment">// }</span>
-     *     <span class="hljs-attr">encode</span>: <span class="hljs-built_in">Object</span>,
+     *     encode: <span class="hljs-built_in">Object</span>,
      *     <span class="hljs-comment">// 维度名列表</span>
-     *     <span class="hljs-attr">dimensionNames</span>: <span class="hljs-built_in">Array</span>&lt;<span class="hljs-built_in">String</span>&gt;,
+     *     dimensionNames: <span class="hljs-built_in">Array</span>&lt;<span class="hljs-built_in">String</span>&gt;,
      *     <span class="hljs-comment">// 数据的维度 index，如 0 或 1 或 2 ...</span>
      *     <span class="hljs-comment">// 仅在雷达图中使用。</span>
-     *     <span class="hljs-attr">dimensionIndex</span>: number,
+     *     dimensionIndex: <span class="hljs-built_in">number</span>,
      *     <span class="hljs-comment">// 数据图形的颜色</span>
-     *     <span class="hljs-attr">color</span>: string,
-     *
-     *
-     *
+     *     color: <span class="hljs-built_in">string</span>
      * }
      * </code></pre>
      * <p>注：encode 和 dimensionNames 的使用方式，例如：</p>
      * <p>如果数据为：</p>
-     * <pre><code class="lang-js hljs javascript">dataset: {
-     *     <span class="hljs-attr">source</span>: [
+     * <pre><code class="lang-ts hljs typescript">dataset: {
+     *     source: [
      *         [<span class="hljs-string">'Matcha Latte'</span>, <span class="hljs-number">43.3</span>, <span class="hljs-number">85.8</span>, <span class="hljs-number">93.7</span>],
      *         [<span class="hljs-string">'Milk Tea'</span>, <span class="hljs-number">83.1</span>, <span class="hljs-number">73.4</span>, <span class="hljs-number">55.1</span>],
      *         [<span class="hljs-string">'Cheese Cocoa'</span>, <span class="hljs-number">86.4</span>, <span class="hljs-number">65.2</span>, <span class="hljs-number">82.5</span>],
@@ -466,28 +457,27 @@ public class Tooltip implements Serializable {
      * }
      * </code></pre>
      * <p>则可这样得到 y 轴对应的 value：</p>
-     * <pre><code class="lang-js hljs javascript">params.value[params.encode.y[<span class="hljs-number">0</span>]]
+     * <pre><code class="lang-ts hljs typescript">params.value[params.encode.y[<span class="hljs-number">0</span>]]
      * </code></pre>
      * <p>如果数据为：</p>
-     * <pre><code class="lang-js hljs javascript">dataset: {
-     *     <span class="hljs-attr">dimensions</span>: [<span class="hljs-string">'product'</span>, <span class="hljs-string">'2015'</span>, <span class="hljs-string">'2016'</span>, <span class="hljs-string">'2017'</span>],
-     *     <span class="hljs-attr">source</span>: [
-     *         {<span class="hljs-attr">product</span>: <span class="hljs-string">'Matcha Latte'</span>, <span class="hljs-string">'2015'</span>: <span class="hljs-number">43.3</span>, <span class="hljs-string">'2016'</span>: <span class="hljs-number">85.8</span>, <span class="hljs-string">'2017'</span>: <span class="hljs-number">93.7</span>},
-     *         {<span class="hljs-attr">product</span>: <span class="hljs-string">'Milk Tea'</span>, <span class="hljs-string">'2015'</span>: <span class="hljs-number">83.1</span>, <span class="hljs-string">'2016'</span>: <span class="hljs-number">73.4</span>, <span class="hljs-string">'2017'</span>: <span class="hljs-number">55.1</span>},
-     *         {<span class="hljs-attr">product</span>: <span class="hljs-string">'Cheese Cocoa'</span>, <span class="hljs-string">'2015'</span>: <span class="hljs-number">86.4</span>, <span class="hljs-string">'2016'</span>: <span class="hljs-number">65.2</span>, <span class="hljs-string">'2017'</span>: <span class="hljs-number">82.5</span>},
-     *         {<span class="hljs-attr">product</span>: <span class="hljs-string">'Walnut Brownie'</span>, <span class="hljs-string">'2015'</span>: <span class="hljs-number">72.4</span>, <span class="hljs-string">'2016'</span>: <span class="hljs-number">53.9</span>, <span class="hljs-string">'2017'</span>: <span class="hljs-number">39.1</span>}
+     * <pre><code class="lang-ts hljs typescript">dataset: {
+     *     dimensions: [<span class="hljs-string">'product'</span>, <span class="hljs-string">'2015'</span>, <span class="hljs-string">'2016'</span>, <span class="hljs-string">'2017'</span>],
+     *     source: [
+     *         {product: <span class="hljs-string">'Matcha Latte'</span>, <span class="hljs-string">'2015'</span>: <span class="hljs-number">43.3</span>, <span class="hljs-string">'2016'</span>: <span class="hljs-number">85.8</span>, <span class="hljs-string">'2017'</span>: <span class="hljs-number">93.7</span>},
+     *         {product: <span class="hljs-string">'Milk Tea'</span>, <span class="hljs-string">'2015'</span>: <span class="hljs-number">83.1</span>, <span class="hljs-string">'2016'</span>: <span class="hljs-number">73.4</span>, <span class="hljs-string">'2017'</span>: <span class="hljs-number">55.1</span>},
+     *         {product: <span class="hljs-string">'Cheese Cocoa'</span>, <span class="hljs-string">'2015'</span>: <span class="hljs-number">86.4</span>, <span class="hljs-string">'2016'</span>: <span class="hljs-number">65.2</span>, <span class="hljs-string">'2017'</span>: <span class="hljs-number">82.5</span>},
+     *         {product: <span class="hljs-string">'Walnut Brownie'</span>, <span class="hljs-string">'2015'</span>: <span class="hljs-number">72.4</span>, <span class="hljs-string">'2016'</span>: <span class="hljs-number">53.9</span>, <span class="hljs-string">'2017'</span>: <span class="hljs-number">39.1</span>}
      *     ]
      * }
      * </code></pre>
      * <p>则可这样得到 y 轴对应的 value：</p>
-     * <pre><code class="lang-js hljs javascript">params.value[params.dimensionNames[params.encode.y[<span class="hljs-number">0</span>]]]
+     * <pre><code class="lang-ts hljs typescript">params.value[params.dimensionNames[params.encode.y[<span class="hljs-number">0</span>]]]
      * </code></pre>
-     * <p><strong>注：</strong> ECharts 2.x 使用数组表示各参数的方式不再支持。</p>
      * <p>第二个参数 <code class="codespan">ticket</code> 是异步回调标识，配合第三个参数 <code class="codespan">callback</code> 使用。
      * 第三个参数 <code class="codespan">callback</code> 是异步回调，在提示框浮层内容是异步获取的时候，可以通过 callback 传入上述的 <code class="codespan">ticket</code> 和 <code class="codespan">html</code> 更新提示框浮层内容。</p>
      * <p>示例：</p>
-     * <pre><code class="lang-js hljs javascript">formatter: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">params, ticket, callback</span>) </span>{
-     *     $.<span class="hljs-keyword">get</span>('detail?name=' + params.name, function (content) {
+     * <pre><code class="lang-ts hljs typescript">formatter: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">params, ticket, callback</span>) </span>{
+     *     $.<span class="hljs-keyword">get</span>(<span class="hljs-string">'detail?name='</span> + params.name, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">content</span>) </span>{
      *         callback(ticket, toHTML(content));
      *     });
      *     <span class="hljs-keyword">return</span> <span class="hljs-string">'Loading'</span>;
@@ -495,6 +485,24 @@ public class Tooltip implements Serializable {
      * </code></pre>
      */
     private Object formatter;
+    /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.valueFormatter">https://echarts.apache.org/zh/option.html#tooltip.valueFormatter</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["string"]
+     * <br/>描述:
+     * <blockquote>
+     * <p>从 <code class="codespan">v5.3.0</code> 开始支持</p>
+     * </blockquote>
+     * <p>tooltip 中数值显示部分的格式化回调函数。</p>
+     * <p>回调函数格式：</p>
+     * <pre><code class="lang-ts hljs typescript">(value: <span class="hljs-built_in">number</span> | <span class="hljs-built_in">string</span>) =&gt; <span class="hljs-built_in">string</span>
+     * </code></pre>
+     * <p>示例：</p>
+     * <pre><code class="lang-ts hljs typescript"><span class="hljs-comment">// 添加 $ 前缀</span>
+     * valueFormatter: <span class="hljs-function">(<span class="hljs-params">value</span>) =&gt;</span> <span class="hljs-string">'$'</span> + value.toFixed(<span class="hljs-number">2</span>)
+     * </code></pre>
+     */
+    private String valueFormatter;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#tooltip.backgroundColor">https://echarts.apache.org/zh/option.html#tooltip.backgroundColor</a>
      * <br/>默认值: rgba(50,50,50,0.7)
@@ -526,12 +534,12 @@ public class Tooltip implements Serializable {
      * <br/>描述:
      * <p>提示框浮层内边距，单位px，默认各方向内边距为5，接受数组分别设定上右下左边距。</p>
      * <p>使用示例：</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-comment">// 设置内边距为 5</span>
-     * <span class="hljs-attr">padding</span>: <span class="hljs-number">5</span>
+     * <pre><code class="lang-ts hljs typescript"><span class="hljs-comment">// 设置内边距为 5</span>
+     * padding: <span class="hljs-number">5</span>
      * <span class="hljs-comment">// 设置上下的内边距为 5，左右的内边距为 10</span>
-     * <span class="hljs-attr">padding</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>]
+     * padding: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>]
      * <span class="hljs-comment">// 分别设置四个方向的内边距</span>
-     * <span class="hljs-attr">padding</span>: [
+     * padding: [
      *     <span class="hljs-number">5</span>,  <span class="hljs-comment">// 上</span>
      *     <span class="hljs-number">10</span>, <span class="hljs-comment">// 右</span>
      *     <span class="hljs-number">5</span>,  <span class="hljs-comment">// 下</span>
@@ -554,7 +562,7 @@ public class Tooltip implements Serializable {
      * <br/>js类型: ["string"]
      * <br/>描述:
      * <p>额外附加到浮层的 css 样式。如下为浮层添加阴影的示例：</p>
-     * <pre><code class="lang-js hljs javascript">extraCssText: <span class="hljs-string">'box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);'</span>
+     * <pre><code class="lang-ts hljs typescript">extraCssText: <span class="hljs-string">'box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);'</span>
      * </code></pre>
      */
     private String extraCssText;

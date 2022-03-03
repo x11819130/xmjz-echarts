@@ -16,14 +16,14 @@ import java.util.List;
  * <p>地理坐标系组件。</p>
  * <p>地理坐标系组件用于地图的绘制，支持在地理坐标系上绘制<a href="#series-scatter">散点图</a>，<a href="#series-lines">线集</a>。</p>
  * <p><code class="codespan">3.1.10</code> 开始 geo 组件也支持鼠标事件。事件参数为</p>
- * <pre><code class="lang-js hljs javascript">{
- *     <span class="hljs-attr">componentType</span>: <span class="hljs-string">'geo'</span>,
+ * <pre><code class="lang-ts hljs typescript">{
+ *     componentType: <span class="hljs-string">'geo'</span>,
  *     <span class="hljs-comment">// Geo 组件在 option 中的 index</span>
- *     <span class="hljs-attr">geoIndex</span>: number,
+ *     geoIndex: <span class="hljs-built_in">number</span>,
  *     <span class="hljs-comment">// 点击区域的名称，比如"上海"</span>
- *     <span class="hljs-attr">name</span>: string,
+ *     name: <span class="hljs-built_in">string</span>,
  *     <span class="hljs-comment">// 传入的点击区域的 region 对象，见 geo.regions</span>
- *     <span class="hljs-attr">region</span>: <span class="hljs-built_in">Object</span>
+ *     region: <span class="hljs-built_in">Object</span>
  * }
  * </code></pre>
  * <p><strong>Tip:</strong>
@@ -60,12 +60,12 @@ public class Geo implements Serializable {
      * <br/>描述:
      * <p>使用 <a href="api.html#echarts.registerMap" target="_blank">registerMap</a> 注册的地图名称。</p>
      * <p><strong>geoJSON 引入示例</strong></p>
-     * <pre><code class="lang-js hljs javascript">$.<span class="hljs-keyword">get</span>('map/china_geo.json', function (chinaJson) {
-     *     echarts.registerMap(<span class="hljs-string">'china'</span>, {<span class="hljs-attr">geoJSON</span>: geoJson});
+     * <pre><code class="lang-ts hljs typescript">$.<span class="hljs-keyword">get</span>(<span class="hljs-string">'map/china_geo.json'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">chinaJson</span>) </span>{
+     *     echarts.registerMap(<span class="hljs-string">'china'</span>, {geoJSON: geoJson});
      *     <span class="hljs-keyword">var</span> chart = echarts.init(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'main'</span>));
      *     chart.setOption({
-     *         <span class="hljs-attr">geo</span>: [{
-     *             <span class="hljs-attr">map</span>: <span class="hljs-string">'china'</span>,
+     *         geo: [{
+     *             map: <span class="hljs-string">'china'</span>,
      *             ...
      *         }]
      *     });
@@ -74,12 +74,12 @@ public class Geo implements Serializable {
      * <p>也参见示例 <a href="https://echarts.apache.org/examples/zh/editor.html?c=custom-hexbin" target="_blank">geoJSON hexbin</a>。</p>
      * <p>如上所示，ECharts 可以使用 <a href="http://geojson.org/" target="_blank">GeoJSON</a> 格式的数据作为地图的轮廓，你可以获取第三方的 <a href="http://geojson.org/" target="_blank">GeoJSON</a> 数据注册到 ECharts 中。例如第三方资源 <a href="https://github.com/echarts-maps" target="_blank">maps</a>。</p>
      * <p><strong>SVG 引入示例</strong></p>
-     * <pre><code class="lang-js hljs javascript">$.<span class="hljs-keyword">get</span>('map/topographic_map.svg', function (svg) {
-     *     echarts.registerMap(<span class="hljs-string">'topo'</span>, {<span class="hljs-attr">svg</span>: svg});
+     * <pre><code class="lang-ts hljs typescript">$.<span class="hljs-keyword">get</span>(<span class="hljs-string">'map/topographic_map.svg'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">svg</span>) </span>{
+     *     echarts.registerMap(<span class="hljs-string">'topo'</span>, {svg: svg});
      *     <span class="hljs-keyword">var</span> chart = echarts.init(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'main'</span>));
      *     chart.setOption({
-     *         <span class="hljs-attr">geo</span>: [{
-     *             <span class="hljs-attr">map</span>: <span class="hljs-string">'topo'</span>,
+     *         geo: [{
+     *             map: <span class="hljs-string">'topo'</span>,
      *             ...
      *         }]
      *     });
@@ -98,13 +98,47 @@ public class Geo implements Serializable {
      */
     private Object roam;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.projection">https://echarts.apache.org/zh/option.html#geo.projection</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["Object"]
+     * <br/>描述:
+     * <p>自定义地图投影，至少需要提供<code class="codespan">project</code>, <code class="codespan">unproject</code>两个方法分别用来计算投影后的坐标以及计算投影前的坐标。</p>
+     * <p>比如墨卡托投影：</p>
+     * <pre><code class="lang-ts hljs typescript">series: {
+     *     <span class="hljs-keyword">type</span>: <span class="hljs-string">'map'</span>,
+     *     projection: {
+     *         project: <span class="hljs-function">(<span class="hljs-params">point</span>) =&gt;</span> [point[<span class="hljs-number">0</span>] / <span class="hljs-number">180</span> * <span class="hljs-built_in">Math</span>.PI, -<span class="hljs-built_in">Math</span>.log(<span class="hljs-built_in">Math</span>.tan((<span class="hljs-built_in">Math</span>.PI / <span class="hljs-number">2</span> + point[<span class="hljs-number">1</span>] / <span class="hljs-number">180</span> * <span class="hljs-built_in">Math</span>.PI) / <span class="hljs-number">2</span>))],
+     *         unproject: <span class="hljs-function">(<span class="hljs-params">point</span>) =&gt;</span> [point[<span class="hljs-number">0</span>] * <span class="hljs-number">180</span> / <span class="hljs-built_in">Math</span>.PI, <span class="hljs-number">2</span> * <span class="hljs-number">180</span> / <span class="hljs-built_in">Math</span>.PI * <span class="hljs-built_in">Math</span>.atan(<span class="hljs-built_in">Math</span>.exp(point[<span class="hljs-number">1</span>])) - <span class="hljs-number">90</span>]
+     *     }
+     * }
+     * </code></pre>
+     * <p>除了我们自己实现投影公式，我们也可以使用 <a href="https://github.com/d3/d3-geo" target="_blank">d3-geo</a> 等第三方库提供的现成的投影实现：</p>
+     * <pre><code class="lang-ts hljs typescript"><span class="hljs-keyword">const</span> projection = d3.geoConicEqualArea();
+     * <span class="hljs-comment">// ...</span>
+     * series: {
+     *     <span class="hljs-keyword">type</span>: <span class="hljs-string">'map'</span>,
+     *     projection: {
+     *         project: <span class="hljs-function">(<span class="hljs-params">point</span>) =&gt;</span> projection(point),
+     *         unproject: <span class="hljs-function">(<span class="hljs-params">point</span>) =&gt;</span> projection.invert(point)
+     *     }
+     * }
+     * </code></pre>
+     * <p>注：自定义投影只有在使用<code class="codespan">GeoJSON</code>作为数据源的时候有用。</p>
+     */
+    private Projection projection;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#geo.center">https://echarts.apache.org/zh/option.html#geo.center</a>
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
-     * <p>当前视角的中心点，用经纬度表示</p>
-     * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">center: [<span class="hljs-number">115.97</span>, <span class="hljs-number">29.71</span>]
+     * <p>当前视角的中心点，默认使用原始坐标（经纬度）。如果设置了<code class="codespan">projection</code>则用投影后的坐标表示。</p>
+     * <p>示例：</p>
+     * <pre><code class="lang-ts hljs typescript">center: [<span class="hljs-number">115.97</span>, <span class="hljs-number">29.71</span>]
+     * </code></pre>
+     * <pre><code class="lang-ts hljs typescript">projection: {
+     *     projection: <span class="hljs-function">(<span class="hljs-params">pt</span>) =&gt;</span> project(pt)
+     * },
+     * center: project([<span class="hljs-number">115.97</span>, <span class="hljs-number">29.71</span>])
      * </code></pre>
      */
     private List<?> center;
@@ -113,8 +147,8 @@ public class Geo implements Serializable {
      * <br/>默认值: 0.75
      * <br/>js类型: ["number"]
      * <br/>描述:
-     * <p>这个参数用于 scale 地图的长宽比。</p>
-     * <p>最终的 <code class="codespan">aspect</code> 的计算方式是：<code class="codespan">geoBoundingRect.width / geoBoundingRect.height * aspectScale</code></p>
+     * <p>这个参数用于 scale 地图的长宽比，如果设置了<code class="codespan">projection</code>则无效。</p>
+     * <p>最终的 <code class="codespan">aspect</code> 的计算方式是：<code class="codespan">geoBoundingRect.width / geoBoundingRect.height * aspectScale</code>。</p>
      */
     private Integer aspectScale;
     /**
@@ -123,10 +157,10 @@ public class Geo implements Serializable {
      * <br/>js类型: ["Array"]
      * <br/>描述:
      * <p>二维数组，定义定位的左上角以及右下角分别所对应的经纬度。例如</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-comment">// 设置为一张完整经纬度的世界地图</span>
-     * <span class="hljs-attr">map</span>: <span class="hljs-string">'world'</span>,
-     * <span class="hljs-attr">left</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">top</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">right</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">bottom</span>: <span class="hljs-number">0</span>,
-     * <span class="hljs-attr">boundingCoords</span>: [
+     * <pre><code class="lang-ts hljs typescript"><span class="hljs-comment">// 设置为一张完整经纬度的世界地图</span>
+     * map: <span class="hljs-string">'world'</span>,
+     * left: <span class="hljs-number">0</span>, top: <span class="hljs-number">0</span>, right: <span class="hljs-number">0</span>, bottom: <span class="hljs-number">0</span>,
+     * boundingCoords: [
      *     <span class="hljs-comment">// 定位左上角经纬度</span>
      *     [<span class="hljs-number">-180</span>, <span class="hljs-number">90</span>],
      *     <span class="hljs-comment">// 定位右下角经纬度</span>
@@ -157,7 +191,7 @@ public class Geo implements Serializable {
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>自定义地区的名称映射，如：</p>
-     * <pre><code class="lang-js hljs javascript">{
+     * <pre><code class="lang-ts hljs typescript">{
      *     <span class="hljs-string">'China'</span> : <span class="hljs-string">'中国'</span>
      * }
      * </code></pre>
@@ -173,11 +207,11 @@ public class Geo implements Serializable {
      * </blockquote>
      * <p>默认是 <code class="codespan">'name'</code>，针对 GeoJSON 要素的自定义属性名称，作为主键用于关联数据点和 GeoJSON 地理要素。
      * 例如：</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">nameProperty</span>: <span class="hljs-string">'NAME'</span>, <span class="hljs-comment">// 数据点中的 name：Alabama 会关联到 GeoJSON 中 NAME 属性值为 Alabama 的地理要素{"type":"Feature","id":"01","properties":{"NAME":"Alabama"}, "geometry": { ... }}</span>
-     *     <span class="hljs-attr">data</span>:[
-     *         {<span class="hljs-attr">name</span>: <span class="hljs-string">'Alabama'</span>, <span class="hljs-attr">value</span>: <span class="hljs-number">4822023</span>},
-     *         {<span class="hljs-attr">name</span>: <span class="hljs-string">'Alaska'</span>, <span class="hljs-attr">value</span>: <span class="hljs-number">731449</span>},
+     * <pre><code class="lang-ts hljs typescript">{
+     *     nameProperty: <span class="hljs-string">'NAME'</span>, <span class="hljs-comment">// 数据点中的 name：Alabama 会关联到 GeoJSON 中 NAME 属性值为 Alabama 的地理要素{"type":"Feature","id":"01","properties":{"NAME":"Alabama"}, "geometry": { ... }}</span>
+     *     data:[
+     *         {name: <span class="hljs-string">'Alabama'</span>, value: <span class="hljs-number">4822023</span>},
+     *         {name: <span class="hljs-string">'Alaska'</span>, value: <span class="hljs-number">731449</span>},
      *     ]
      * }
      * </code></pre>
@@ -300,9 +334,9 @@ public class Geo implements Serializable {
      * <br/>描述:
      * <p><code class="codespan">layoutCenter</code> 和 <code class="codespan">layoutSize</code> 提供了除了 <code class="codespan">left/right/top/bottom/width/height</code> 之外的布局手段。</p>
      * <p>在使用 <code class="codespan">left/right/top/bottom/width/height</code> 的时候，可能很难在保持地图高宽比的情况下把地图放在某个盒形区域的正中间，并且保证不超出盒形的范围。此时可以通过 <code class="codespan">layoutCenter</code> 属性定义地图中心在屏幕中的位置，<code class="codespan">layoutSize</code> 定义地图的大小。如下示例</p>
-     * <pre><code class="lang-js hljs javascript">layoutCenter: [<span class="hljs-string">'30%'</span>, <span class="hljs-string">'30%'</span>],
+     * <pre><code class="lang-ts hljs typescript">layoutCenter: [<span class="hljs-string">'30%'</span>, <span class="hljs-string">'30%'</span>],
      * <span class="hljs-comment">// 如果宽高比大于 1 则宽度为 100，如果小于 1 则高度为 100，保证了不超过 100x100 的区域</span>
-     * <span class="hljs-attr">layoutSize</span>: <span class="hljs-number">100</span>
+     * layoutSize: <span class="hljs-number">100</span>
      * </code></pre>
      * <p>设置这两个值后 <code class="codespan">left/right/top/bottom/width/height</code> 无效。</p>
      */
@@ -322,11 +356,11 @@ public class Geo implements Serializable {
      * <br/>描述:
      * <p>在地图中对特定的区域配置样式。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">regions: [{
-     *     <span class="hljs-attr">name</span>: <span class="hljs-string">'广东'</span>,
-     *     <span class="hljs-attr">itemStyle</span>: {
-     *         <span class="hljs-attr">areaColor</span>: <span class="hljs-string">'red'</span>,
-     *         <span class="hljs-attr">color</span>: <span class="hljs-string">'red'</span>
+     * <pre><code class="lang-ts hljs typescript">regions: [{
+     *     name: <span class="hljs-string">'广东'</span>,
+     *     itemStyle: {
+     *         areaColor: <span class="hljs-string">'red'</span>,
+     *         color: <span class="hljs-string">'red'</span>
      *     }
      * }]
      * </code></pre>
@@ -350,7 +384,6 @@ public class Geo implements Serializable {
      * <p>从 <code class="codespan">v5.1.0</code> 开始支持</p>
      * </blockquote>
      * <p>本坐标系特定的 tooltip 设定。</p>
-     * <hr>
      * <p><strong>提示框组件的通用介绍：</strong></p>
      * <p>提示框组件可以设置在多种地方：</p>
      * <ul>
@@ -363,7 +396,6 @@ public class Geo implements Serializable {
      * <li><p>可以设置在系列的每个数据项中，即 <a href="#series.data.tooltip">series.data.tooltip</a></p>
      * </li>
      * </ul>
-     * <hr>
      */
     private Object tooltip;
 }

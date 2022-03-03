@@ -14,7 +14,7 @@ import java.io.Serializable;
  * <p>直角坐标系内绘图网格，单个 grid 内最多可以放置上下两个 X 轴，左右两个 Y 轴。可以在网格上绘制<a href="#series-line">折线图</a>，<a href="#series-bar">柱状图</a>，<a href="#series-scatter">散点图（气泡图）</a>。</p>
  * <p>在 ECharts 2.x 里单个 echarts 实例中最多只能存在一个 grid 组件，在 ECharts 3 中可以存在任意个 grid 组件。</p>
  * <p><strong>例如下面这个 Anscombe Quartet 的示例：</strong></p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-anscombe-quartet&amp;edit=1&amp;reset=1" width="600" height="400" data-ll-timeout="17"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=scatter-anscombe-quartet&amp;edit=1&amp;reset=1" width="600" height="400" class="loaded" src="https://echarts.apache.org/examples/zh/view.html?c=scatter-anscombe-quartet&amp;edit=1&amp;reset=1" data-was-processed="true"></iframe>
  *
  * @author auto
  */
@@ -170,9 +170,9 @@ public class Grid implements Serializable {
      * <br/>描述:
      * <p>图形阴影的模糊大小。该属性配合 <code class="codespan">shadowColor</code>,<code class="codespan">shadowOffsetX</code>, <code class="codespan">shadowOffsetY</code> 一起设置图形的阴影效果。</p>
      * <p>示例：</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">shadowColor</span>: <span class="hljs-string">'rgba(0, 0, 0, 0.5)'</span>,
-     *     <span class="hljs-attr">shadowBlur</span>: <span class="hljs-number">10</span>
+     * <pre><code class="lang-ts hljs typescript">{
+     *     shadowColor: <span class="hljs-string">'rgba(0, 0, 0, 0.5)'</span>,
+     *     shadowBlur: <span class="hljs-number">10</span>
      * }
      * </code></pre>
      * <p><strong>注意</strong>：此配置项生效的前提是，设置了 <code class="codespan">show: true</code> 以及值不为 <code class="codespan">tranparent</code> 的背景色 <code class="codespan">backgroundColor</code>。</p>
@@ -211,7 +211,6 @@ public class Grid implements Serializable {
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>本坐标系特定的 tooltip 设定。</p>
-     * <hr>
      * <p><strong>提示框组件的通用介绍：</strong></p>
      * <p>提示框组件可以设置在多种地方：</p>
      * <ul>
@@ -224,7 +223,6 @@ public class Grid implements Serializable {
      * <li><p>可以设置在系列的每个数据项中，即 <a href="#series.data.tooltip">series.data.tooltip</a></p>
      * </li>
      * </ul>
-     * <hr>
      */
     private Object tooltip;
 }

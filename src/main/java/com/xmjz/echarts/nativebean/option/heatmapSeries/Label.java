@@ -39,16 +39,16 @@ public class Label implements Serializable {
      * <ul>
      * <li><p>可以通过内置的语义声明位置：</p>
      * <p>  示例：</p>
-     * <pre><code class="lang-js hljs javascript">  position: <span class="hljs-string">'top'</span>
+     * <pre><code class="lang-ts hljs typescript">  position: <span class="hljs-string">'top'</span>
      * </code></pre>
      * <p>  支持：<code class="codespan">top</code> / <code class="codespan">left</code> / <code class="codespan">right</code> / <code class="codespan">bottom</code> / <code class="codespan">inside</code> / <code class="codespan">insideLeft</code> / <code class="codespan">insideRight</code> / <code class="codespan">insideTop</code> / <code class="codespan">insideBottom</code> / <code class="codespan">insideTopLeft</code> / <code class="codespan">insideBottomLeft</code> / <code class="codespan">insideTopRight</code> / <code class="codespan">insideBottomRight</code></p>
      * </li>
      * <li><p>也可以用一个数组表示相对的百分比或者绝对像素值表示标签相对于图形包围盒左上角的位置。</p>
      * <p>  示例：</p>
-     * <pre><code class="lang-js hljs javascript">  <span class="hljs-comment">// 绝对的像素值</span>
-     *   <span class="hljs-attr">position</span>: [<span class="hljs-number">10</span>, <span class="hljs-number">10</span>],
+     * <pre><code class="lang-ts hljs typescript">  <span class="hljs-comment">// 绝对的像素值</span>
+     *   position: [<span class="hljs-number">10</span>, <span class="hljs-number">10</span>],
      *   <span class="hljs-comment">// 相对的百分比</span>
-     *   <span class="hljs-attr">position</span>: [<span class="hljs-string">'50%'</span>, <span class="hljs-string">'50%'</span>]
+     *   position: [<span class="hljs-string">'50%'</span>, <span class="hljs-string">'50%'</span>]
      * </code></pre>
      * </li>
      * </ul>
@@ -151,10 +151,10 @@ public class Label implements Serializable {
      * <li><code class="codespan">'right'</code></li>
      * </ul>
      * <p><code class="codespan">rich</code> 中如果没有设置 <code class="codespan">align</code>，则会取父层级的 <code class="codespan">align</code>。例如：</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">align</span>: right,
-     *     <span class="hljs-attr">rich</span>: {
-     *         <span class="hljs-attr">a</span>: {
+     * <pre><code class="lang-ts hljs typescript">{
+     *     align: right,
+     *     rich: {
+     *         a: {
      *             <span class="hljs-comment">// 没有设置 `align`，则 `align` 为 right</span>
      *         }
      *     }
@@ -175,10 +175,10 @@ public class Label implements Serializable {
      * <li><code class="codespan">'bottom'</code></li>
      * </ul>
      * <p><code class="codespan">rich</code> 中如果没有设置 <code class="codespan">verticalAlign</code>，则会取父层级的 <code class="codespan">verticalAlign</code>。例如：</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">verticalAlign</span>: bottom,
-     *     <span class="hljs-attr">rich</span>: {
-     *         <span class="hljs-attr">a</span>: {
+     * <pre><code class="lang-ts hljs typescript">{
+     *     verticalAlign: bottom,
+     *     rich: {
+     *         a: {
      *             <span class="hljs-comment">// 没有设置 `verticalAlign`，则 `verticalAlign` 为 bottom</span>
      *         }
      *     }
@@ -193,10 +193,10 @@ public class Label implements Serializable {
      * <br/>描述:
      * <p>行高。</p>
      * <p><code class="codespan">rich</code> 中如果没有设置 <code class="codespan">lineHeight</code>，则会取父层级的 <code class="codespan">lineHeight</code>。例如：</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">lineHeight</span>: <span class="hljs-number">56</span>,
-     *     <span class="hljs-attr">rich</span>: {
-     *         <span class="hljs-attr">a</span>: {
+     * <pre><code class="lang-ts hljs typescript">{
+     *     lineHeight: <span class="hljs-number">56</span>,
+     *     rich: {
+     *         a: {
      *             <span class="hljs-comment">// 没有设置 `lineHeight`，则 `lineHeight` 为 56</span>
      *         }
      *     }
@@ -212,8 +212,8 @@ public class Label implements Serializable {
      * <p>文字块背景色。</p>
      * <p>可以使用颜色值，例如：<code class="codespan">'#123234'</code>, <code class="codespan">'red'</code>, <code class="codespan">'rgba(0,23,11,0.3)'</code>。</p>
      * <p>也可以直接使用图片，例如：</p>
-     * <pre><code class="lang-js hljs javascript">backgroundColor: {
-     *     <span class="hljs-attr">image</span>: <span class="hljs-string">'xxx/xxx.png'</span>
+     * <pre><code class="lang-ts hljs typescript">backgroundColor: {
+     *     image: <span class="hljs-string">'xxx/xxx.png'</span>
      *     <span class="hljs-comment">// 这里可以是图片的 URL，</span>
      *     <span class="hljs-comment">// 或者图片的 dataURI，</span>
      *     <span class="hljs-comment">// 或者 HTMLImageElement 对象，</span>
@@ -257,11 +257,11 @@ public class Label implements Serializable {
      * <code class="codespan">borderDashOffset</code>
      *  可实现更灵活的虚线效果。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">{
+     * <pre><code class="lang-ts hljs typescript">{
      *
-     * <span class="hljs-attr">borderType</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
+     * borderType: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
      *
-     * <span class="hljs-attr">borderDashOffset</span>: <span class="hljs-number">5</span>
+     * borderDashOffset: <span class="hljs-number">5</span>
      * }
      * </code></pre>
      */
@@ -385,11 +385,11 @@ public class Label implements Serializable {
      * <code class="codespan">textBorderDashOffset</code>
      *  可实现更灵活的虚线效果。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">{
+     * <pre><code class="lang-ts hljs typescript">{
      *
-     * <span class="hljs-attr">textBorderType</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
+     * textBorderType: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
      *
-     * <span class="hljs-attr">textBorderDashOffset</span>: <span class="hljs-number">5</span>
+     * textBorderDashOffset: <span class="hljs-number">5</span>
      * }
      * </code></pre>
      */
@@ -464,49 +464,38 @@ public class Label implements Serializable {
      */
     private String ellipsis;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.label.lineOverflow">https://echarts.apache.org/zh/option.html#series-heatmap.label.lineOverflow</a>
-     * <br/>默认值: none
-     * <br/>js类型: ["string"]
-     * <br/>描述:
-     * <p>文本超出高度部分是否截断，配置<code class="codespan">height</code>时有效。</p>
-     * <ul>
-     * <li><code class="codespan">'truncate'</code> 在文本行数超出高度部分截断。</li>
-     * </ul>
-     */
-    private String lineOverflow;
-    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-heatmap.label.rich">https://echarts.apache.org/zh/option.html#series-heatmap.label.rich</a>
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>在 <code class="codespan">rich</code> 里面，可以自定义富文本样式。利用富文本样式，可以在标签中做出非常丰富的效果。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">label: {
+     * <pre><code class="lang-ts hljs typescript">label: {
      *     <span class="hljs-comment">// 在文本中，可以对部分文本采用 rich 中定义样式。</span>
      *     <span class="hljs-comment">// 这里需要在文本中使用标记符号：</span>
      *     <span class="hljs-comment">// `{styleName|text content text content}` 标记样式名。</span>
      *     <span class="hljs-comment">// 注意，换行仍是使用 '\n'。</span>
-     *     <span class="hljs-attr">formatter</span>: [
+     *     formatter: [
      *         <span class="hljs-string">'{a|这段文本采用样式a}'</span>,
      *         <span class="hljs-string">'{b|这段文本采用样式b}这段用默认样式{x|这段用样式x}'</span>
      *     ].join(<span class="hljs-string">'\n'</span>),
      *
-     *     <span class="hljs-attr">rich</span>: {
-     *         <span class="hljs-attr">a</span>: {
-     *             <span class="hljs-attr">color</span>: <span class="hljs-string">'red'</span>,
-     *             <span class="hljs-attr">lineHeight</span>: <span class="hljs-number">10</span>
+     *     rich: {
+     *         a: {
+     *             color: <span class="hljs-string">'red'</span>,
+     *             lineHeight: <span class="hljs-number">10</span>
      *         },
-     *         <span class="hljs-attr">b</span>: {
-     *             <span class="hljs-attr">backgroundColor</span>: {
-     *                 <span class="hljs-attr">image</span>: <span class="hljs-string">'xxx/xxx.jpg'</span>
+     *         b: {
+     *             backgroundColor: {
+     *                 image: <span class="hljs-string">'xxx/xxx.jpg'</span>
      *             },
-     *             <span class="hljs-attr">height</span>: <span class="hljs-number">40</span>
+     *             height: <span class="hljs-number">40</span>
      *         },
-     *         <span class="hljs-attr">x</span>: {
-     *             <span class="hljs-attr">fontSize</span>: <span class="hljs-number">18</span>,
-     *             <span class="hljs-attr">fontFamily</span>: <span class="hljs-string">'Microsoft YaHei'</span>,
-     *             <span class="hljs-attr">borderColor</span>: <span class="hljs-string">'#449933'</span>,
-     *             <span class="hljs-attr">borderRadius</span>: <span class="hljs-number">4</span>
+     *         x: {
+     *             fontSize: <span class="hljs-number">18</span>,
+     *             fontFamily: <span class="hljs-string">'Microsoft YaHei'</span>,
+     *             borderColor: <span class="hljs-string">'#449933'</span>,
+     *             borderRadius: <span class="hljs-number">4</span>
      *         },
      *         ...
      *     }

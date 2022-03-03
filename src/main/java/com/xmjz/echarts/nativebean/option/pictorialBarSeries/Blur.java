@@ -14,7 +14,7 @@ import java.io.Serializable;
  * <blockquote>
  * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
  * </blockquote>
- * <p>淡出状态配置。开启 <a href="#series-pictoialBar.emphasis.focus">emphasis.focus</a> 后有效。</p>
+ * <p>淡出状态配置。开启 <a href="#series-pictorialBar.emphasis.focus">emphasis.focus</a> 后有效。</p>
  *
  * @author auto
  */

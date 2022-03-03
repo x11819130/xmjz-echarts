@@ -36,10 +36,10 @@ public class DayLabel implements Serializable {
      * <br/>描述:
      * <p>一周从周几开始，默认从周日开始</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">
-     * <span class="hljs-attr">calendar</span>: [{
-     *     <span class="hljs-attr">dayLabel</span>: {
-     *         <span class="hljs-attr">firstDay</span>: <span class="hljs-number">1</span> <span class="hljs-comment">// 从周一开始</span>
+     * <pre><code class="lang-ts hljs typescript">
+     * calendar: [{
+     *     dayLabel: {
+     *         firstDay: <span class="hljs-number">1</span> <span class="hljs-comment">// 从周一开始</span>
      *     }
      * }]
      *
@@ -69,23 +69,35 @@ public class DayLabel implements Serializable {
     private String position;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.nameMap">https://echarts.apache.org/zh/option.html#calendar.dayLabel.nameMap</a>
-     * <br/>默认值: en
+     * <br/>默认值: 无
      * <br/>js类型: ["string","Array"]
      * <br/>描述:
-     * <p>星期显示的效果，默认为'en'
-     * 可设置中英文以及自定义
-     * 下标0为对应星期天的文字显示</p>
+     * <p>星期显示的效果，默认为'en'。从 <code class="codespan">v5.2.2</code> 起，默认为<a href="api.html#echarts.init" target="_blank">初始化图表</a> 时指定的语言 <code class="codespan">locale</code>，如未指定则根据浏览器语言自动侦测。</p>
+     * <p>可设置中英文以及自定义。从 <code class="codespan">v5.2.2</code> 起，还可以是任意内置(<code class="codespan">ZH</code> / <code class="codespan">EN</code>)或其他<a href="api.html#echarts.registerLocale" target="_blank">已注册的语言包</a>名称（区分大小写）。</p>
+     * <p>下标 <code class="codespan">0</code> 为对应 <code class="codespan">星期日</code> 的文字显示</p>
      * <p>使用示例：</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-comment">// 快捷设置英文 ['S', 'M', 'T', 'W', 'T', 'F', 'S'],</span>
-     * <span class="hljs-attr">nameMap</span>: <span class="hljs-string">'en'</span>
-     * <span class="hljs-comment">// 快捷设置中文 ['日', '一', '二', '三', '四', '五', '六']</span>
-     * <span class="hljs-attr">nameMap</span>: <span class="hljs-string">'cn'</span>
-     * <span class="hljs-comment">// 自定义设置： 中英文混杂 或者不显示</span>
-     * <span class="hljs-attr">nameMap</span>: [<span class="hljs-string">'S'</span>, <span class="hljs-string">'一'</span>, <span class="hljs-string">'T'</span>, <span class="hljs-string">'三'</span>, <span class="hljs-string">''</span>, <span class="hljs-string">'五'</span>, <span class="hljs-string">'S'</span>],
+     * <pre><code class="lang-ts hljs typescript">
+     * <span class="hljs-comment">// v5.2.2 以前版本</span>
      *
-     * <span class="hljs-attr">calendar</span>: [{
-     *     <span class="hljs-attr">dayLabel</span>: {
-     *         <span class="hljs-attr">nameMap</span>: <span class="hljs-string">'en'</span>
+     * <span class="hljs-comment">// 快捷设置英文 ['S', 'M', 'T', 'W', 'T', 'F', 'S']</span>
+     * nameMap: <span class="hljs-string">'en'</span>,
+     * <span class="hljs-comment">// 快捷设置中文 ['日', '一', '二', '三', '四', '五', '六']</span>
+     * nameMap: <span class="hljs-string">'cn'</span>,
+     *
+     * <span class="hljs-comment">// v5.2.2 及以后版本</span>
+     *
+     * <span class="hljs-comment">// 快捷设置英文 ['S', 'M', 'T', 'W', 'T', 'F', 'S']</span>
+     * nameMap: <span class="hljs-string">'EN'</span>,
+     * <span class="hljs-comment">// 快捷设置中文 ['日', '一', '二', '三', '四', '五', '六']</span>
+     * nameMap: <span class="hljs-string">'ZH'</span>,
+     *
+     * <span class="hljs-comment">// 自定义设置： 中英文混杂 或者不显示</span>
+     * nameMap: [<span class="hljs-string">'S'</span>, <span class="hljs-string">'一'</span>, <span class="hljs-string">'T'</span>, <span class="hljs-string">'三'</span>, <span class="hljs-string">''</span>, <span class="hljs-string">'五'</span>, <span class="hljs-string">'S'</span>],
+     *
+     * calendar: [{
+     *     dayLabel: {
+     *         <span class="hljs-comment">// nameMap: 'en' // v5.2.2 以前版本</span>
+     *         nameMap: <span class="hljs-string">'EN'</span>    <span class="hljs-comment">// v5.2.2 及以后版本</span>
      *     }
      * }]
      * </code></pre>
@@ -159,10 +171,10 @@ public class DayLabel implements Serializable {
      * <li><code class="codespan">'right'</code></li>
      * </ul>
      * <p><code class="codespan">rich</code> 中如果没有设置 <code class="codespan">align</code>，则会取父层级的 <code class="codespan">align</code>。例如：</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">align</span>: right,
-     *     <span class="hljs-attr">rich</span>: {
-     *         <span class="hljs-attr">a</span>: {
+     * <pre><code class="lang-ts hljs typescript">{
+     *     align: right,
+     *     rich: {
+     *         a: {
      *             <span class="hljs-comment">// 没有设置 `align`，则 `align` 为 right</span>
      *         }
      *     }
@@ -183,10 +195,10 @@ public class DayLabel implements Serializable {
      * <li><code class="codespan">'bottom'</code></li>
      * </ul>
      * <p><code class="codespan">rich</code> 中如果没有设置 <code class="codespan">verticalAlign</code>，则会取父层级的 <code class="codespan">verticalAlign</code>。例如：</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">verticalAlign</span>: bottom,
-     *     <span class="hljs-attr">rich</span>: {
-     *         <span class="hljs-attr">a</span>: {
+     * <pre><code class="lang-ts hljs typescript">{
+     *     verticalAlign: bottom,
+     *     rich: {
+     *         a: {
      *             <span class="hljs-comment">// 没有设置 `verticalAlign`，则 `verticalAlign` 为 bottom</span>
      *         }
      *     }
@@ -201,10 +213,10 @@ public class DayLabel implements Serializable {
      * <br/>描述:
      * <p>行高。</p>
      * <p><code class="codespan">rich</code> 中如果没有设置 <code class="codespan">lineHeight</code>，则会取父层级的 <code class="codespan">lineHeight</code>。例如：</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">lineHeight</span>: <span class="hljs-number">56</span>,
-     *     <span class="hljs-attr">rich</span>: {
-     *         <span class="hljs-attr">a</span>: {
+     * <pre><code class="lang-ts hljs typescript">{
+     *     lineHeight: <span class="hljs-number">56</span>,
+     *     rich: {
+     *         a: {
      *             <span class="hljs-comment">// 没有设置 `lineHeight`，则 `lineHeight` 为 56</span>
      *         }
      *     }
@@ -220,8 +232,8 @@ public class DayLabel implements Serializable {
      * <p>文字块背景色。</p>
      * <p>可以使用颜色值，例如：<code class="codespan">'#123234'</code>, <code class="codespan">'red'</code>, <code class="codespan">'rgba(0,23,11,0.3)'</code>。</p>
      * <p>也可以直接使用图片，例如：</p>
-     * <pre><code class="lang-js hljs javascript">backgroundColor: {
-     *     <span class="hljs-attr">image</span>: <span class="hljs-string">'xxx/xxx.png'</span>
+     * <pre><code class="lang-ts hljs typescript">backgroundColor: {
+     *     image: <span class="hljs-string">'xxx/xxx.png'</span>
      *     <span class="hljs-comment">// 这里可以是图片的 URL，</span>
      *     <span class="hljs-comment">// 或者图片的 dataURI，</span>
      *     <span class="hljs-comment">// 或者 HTMLImageElement 对象，</span>
@@ -263,11 +275,11 @@ public class DayLabel implements Serializable {
      * <code class="codespan">borderDashOffset</code>
      *  可实现更灵活的虚线效果。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">{
+     * <pre><code class="lang-ts hljs typescript">{
      *
-     * <span class="hljs-attr">borderType</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
+     * borderType: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
      *
-     * <span class="hljs-attr">borderDashOffset</span>: <span class="hljs-number">5</span>
+     * borderDashOffset: <span class="hljs-number">5</span>
      * }
      * </code></pre>
      */
@@ -390,11 +402,11 @@ public class DayLabel implements Serializable {
      * <code class="codespan">textBorderDashOffset</code>
      *  可实现更灵活的虚线效果。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">{
+     * <pre><code class="lang-ts hljs typescript">{
      *
-     * <span class="hljs-attr">textBorderType</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
+     * textBorderType: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
      *
-     * <span class="hljs-attr">textBorderDashOffset</span>: <span class="hljs-number">5</span>
+     * textBorderDashOffset: <span class="hljs-number">5</span>
      * }
      * </code></pre>
      */
@@ -469,49 +481,38 @@ public class DayLabel implements Serializable {
      */
     private String ellipsis;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.lineOverflow">https://echarts.apache.org/zh/option.html#calendar.dayLabel.lineOverflow</a>
-     * <br/>默认值: none
-     * <br/>js类型: ["string"]
-     * <br/>描述:
-     * <p>文本超出高度部分是否截断，配置<code class="codespan">height</code>时有效。</p>
-     * <ul>
-     * <li><code class="codespan">'truncate'</code> 在文本行数超出高度部分截断。</li>
-     * </ul>
-     */
-    private String lineOverflow;
-    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.dayLabel.rich">https://echarts.apache.org/zh/option.html#calendar.dayLabel.rich</a>
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>在 <code class="codespan">rich</code> 里面，可以自定义富文本样式。利用富文本样式，可以在标签中做出非常丰富的效果。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">label: {
+     * <pre><code class="lang-ts hljs typescript">label: {
      *     <span class="hljs-comment">// 在文本中，可以对部分文本采用 rich 中定义样式。</span>
      *     <span class="hljs-comment">// 这里需要在文本中使用标记符号：</span>
      *     <span class="hljs-comment">// `{styleName|text content text content}` 标记样式名。</span>
      *     <span class="hljs-comment">// 注意，换行仍是使用 '\n'。</span>
-     *     <span class="hljs-attr">formatter</span>: [
+     *     formatter: [
      *         <span class="hljs-string">'{a|这段文本采用样式a}'</span>,
      *         <span class="hljs-string">'{b|这段文本采用样式b}这段用默认样式{x|这段用样式x}'</span>
      *     ].join(<span class="hljs-string">'\n'</span>),
      *
-     *     <span class="hljs-attr">rich</span>: {
-     *         <span class="hljs-attr">a</span>: {
-     *             <span class="hljs-attr">color</span>: <span class="hljs-string">'red'</span>,
-     *             <span class="hljs-attr">lineHeight</span>: <span class="hljs-number">10</span>
+     *     rich: {
+     *         a: {
+     *             color: <span class="hljs-string">'red'</span>,
+     *             lineHeight: <span class="hljs-number">10</span>
      *         },
-     *         <span class="hljs-attr">b</span>: {
-     *             <span class="hljs-attr">backgroundColor</span>: {
-     *                 <span class="hljs-attr">image</span>: <span class="hljs-string">'xxx/xxx.jpg'</span>
+     *         b: {
+     *             backgroundColor: {
+     *                 image: <span class="hljs-string">'xxx/xxx.jpg'</span>
      *             },
-     *             <span class="hljs-attr">height</span>: <span class="hljs-number">40</span>
+     *             height: <span class="hljs-number">40</span>
      *         },
-     *         <span class="hljs-attr">x</span>: {
-     *             <span class="hljs-attr">fontSize</span>: <span class="hljs-number">18</span>,
-     *             <span class="hljs-attr">fontFamily</span>: <span class="hljs-string">'Microsoft YaHei'</span>,
-     *             <span class="hljs-attr">borderColor</span>: <span class="hljs-string">'#449933'</span>,
-     *             <span class="hljs-attr">borderRadius</span>: <span class="hljs-number">4</span>
+     *         x: {
+     *             fontSize: <span class="hljs-number">18</span>,
+     *             fontFamily: <span class="hljs-string">'Microsoft YaHei'</span>,
+     *             borderColor: <span class="hljs-string">'#449933'</span>,
+     *             borderRadius: <span class="hljs-number">4</span>
      *         },
      *         ...
      *     }

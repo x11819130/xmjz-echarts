@@ -39,7 +39,7 @@ public class AxisLabel implements Serializable {
      * <p>可以设置成 0 强制显示所有标签。</p>
      * <p>如果设置为 <code class="codespan">1</code>，表示『隔一个标签显示一个标签』，如果值为 <code class="codespan">2</code>，表示隔两个标签显示一个标签，以此类推。</p>
      * <p>可以用数值表示间隔的数据，也可以通过回调函数控制。回调函数格式如下：</p>
-     * <pre><code class="lang-js hljs javascript">(index:number, <span class="hljs-attr">value</span>: string) =&gt; boolean
+     * <pre><code class="lang-ts hljs typescript">(index:<span class="hljs-built_in">number</span>, value: <span class="hljs-built_in">string</span>) =&gt; <span class="hljs-built_in">boolean</span>
      * </code></pre>
      * <p>第一个参数是类目的 index，第二个值是类目名称，如果跳过则返回 <code class="codespan">false</code>。</p>
      */
@@ -76,10 +76,10 @@ public class AxisLabel implements Serializable {
      * <br/>描述:
      * <p>刻度标签的内容格式器，支持字符串模板和回调函数两种形式。</p>
      * <p>示例:</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-comment">// 使用字符串模板，模板变量为刻度默认标签 {value}</span>
-     * <span class="hljs-attr">formatter</span>: <span class="hljs-string">'{value} kg'</span>
+     * <pre><code class="lang-ts hljs typescript"><span class="hljs-comment">// 使用字符串模板，模板变量为刻度默认标签 {value}</span>
+     * formatter: <span class="hljs-string">'{value} kg'</span>
      * <span class="hljs-comment">// 使用函数模板，函数参数分别为刻度数值（类目），刻度的索引</span>
-     * <span class="hljs-attr">formatter</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">value, index</span>) </span>{
+     * formatter: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">value, index</span>) </span>{
      *     <span class="hljs-keyword">return</span> value + <span class="hljs-string">'kg'</span>;
      * }
      * </code></pre>
@@ -241,14 +241,14 @@ public class AxisLabel implements Serializable {
      * <p>其他语言请参考相应<a href="https://github.com/apache/echarts/tree/master/src/i18n" target="_blank">语言包</a>中的定义，语言包可以通过 <a href="api.html#echarts.registerLocale" target="_blank">echarts.registerLocale</a> 注册。</p>
      * </blockquote>
      * <p>示例:</p>
-     * <pre><code class="lang-js hljs javascript">formatter: <span class="hljs-string">'{yyyy}-{MM}-{dd}'</span> <span class="hljs-comment">// 得到的 label 形如：'2020-12-02'</span>
-     * <span class="hljs-attr">formatter</span>: <span class="hljs-string">'{d}日'</span> <span class="hljs-comment">// 得到的 label 形如：'2日'</span>
+     * <pre><code class="lang-ts hljs typescript">formatter: <span class="hljs-string">'{yyyy}-{MM}-{dd}'</span> <span class="hljs-comment">// 得到的 label 形如：'2020-12-02'</span>
+     * formatter: <span class="hljs-string">'{d}日'</span> <span class="hljs-comment">// 得到的 label 形如：'2日'</span>
      * </code></pre>
      * <p><strong> 回调函数 </strong></p>
      * <p>回调函数可以根据刻度值返回不同的格式，如果有复杂的时间格式化需求，也可以引用第三方的日期时间相关的库（如 <a href="https://momentjs.com/" target="_blank">Moment.js</a>、<a href="https://date-fns.org/" target="_blank">date-fns</a> 等），返回显示的文本。</p>
      * <p>示例：</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-comment">// 使用函数模板，函数参数分别为刻度数值（类目），刻度的索引</span>
-     * <span class="hljs-attr">formatter</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">value, index</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript"><span class="hljs-comment">// 使用函数模板，函数参数分别为刻度数值（类目），刻度的索引</span>
+     * formatter: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">value, index</span>) </span>{
      *     <span class="hljs-comment">// 格式化成月/日，只在第一个刻度显示年份</span>
      *     <span class="hljs-keyword">var</span> date = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(value);
      *     <span class="hljs-keyword">var</span> texts = [(date.getMonth() + <span class="hljs-number">1</span>), date.getDate()];
@@ -261,43 +261,43 @@ public class AxisLabel implements Serializable {
      * <p><strong> 分级模板 </strong></p>
      * <p>有时候，我们希望对不同的时间粒度采用不同的格式化策略。例如，在季度图表中，我们可能希望对每个月的第一天显示月份，而其他日期显示日期。我们可以使用以下方式实现该效果：</p>
      * <p>示例：</p>
-     * <pre><code class="lang-js hljs javascript">formatter: {
-     *     <span class="hljs-attr">month</span>: <span class="hljs-string">'{MMMM}'</span>, <span class="hljs-comment">// 一月、二月、……</span>
-     *     <span class="hljs-attr">day</span>: <span class="hljs-string">'{d}日'</span> <span class="hljs-comment">// 1日、2日、……</span>
+     * <pre><code class="lang-ts hljs typescript">formatter: {
+     *     month: <span class="hljs-string">'{MMMM}'</span>, <span class="hljs-comment">// 一月、二月、……</span>
+     *     day: <span class="hljs-string">'{d}日'</span> <span class="hljs-comment">// 1日、2日、……</span>
      * }
      * </code></pre>
      * <p>支持的分级以及各自默认的取值为：</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">year</span>: <span class="hljs-string">'{yyyy}'</span>,
-     *     <span class="hljs-attr">month</span>: <span class="hljs-string">'{MMM}'</span>,
-     *     <span class="hljs-attr">day</span>: <span class="hljs-string">'{d}'</span>,
-     *     <span class="hljs-attr">hour</span>: <span class="hljs-string">'{HH}:{mm}'</span>,
-     *     <span class="hljs-attr">minute</span>: <span class="hljs-string">'{HH}:{mm}'</span>,
-     *     <span class="hljs-attr">second</span>: <span class="hljs-string">'{HH}:{mm}:{ss}'</span>,
-     *     <span class="hljs-attr">millisecond</span>: <span class="hljs-string">'{hh}:{mm}:{ss} {SSS}'</span>,
-     *     <span class="hljs-attr">none</span>: <span class="hljs-string">'{yyyy}-{MM}-{dd} {hh}:{mm}:{ss} {SSS}'</span>
+     * <pre><code class="lang-ts hljs typescript">{
+     *     year: <span class="hljs-string">'{yyyy}'</span>,
+     *     month: <span class="hljs-string">'{MMM}'</span>,
+     *     day: <span class="hljs-string">'{d}'</span>,
+     *     hour: <span class="hljs-string">'{HH}:{mm}'</span>,
+     *     minute: <span class="hljs-string">'{HH}:{mm}'</span>,
+     *     second: <span class="hljs-string">'{HH}:{mm}:{ss}'</span>,
+     *     millisecond: <span class="hljs-string">'{hh}:{mm}:{ss} {SSS}'</span>,
+     *     none: <span class="hljs-string">'{yyyy}-{MM}-{dd} {hh}:{mm}:{ss} {SSS}'</span>
      * }
      * </code></pre>
      * <p>以 <code class="codespan">day</code> 为例，当一个刻度点的值的小时、分钟、秒、毫秒都为 <code class="codespan">0</code> 时，将采用 <code class="codespan">day</code> 的分级值作为模板。<code class="codespan">none</code> 表示当其他规则都不适用时采用的模板，也就是带有毫秒值的刻度点的模板。</p>
      * <p><strong> 富文本 </strong></p>
      * <p>以上这三种形式的 formatter 都支持富文本，所以可以做成一些复杂的效果。</p>
      * <p>示例：</p>
-     * <pre><code class="lang-js hljs javascript">xAxis: {
-     *     <span class="hljs-attr">type</span>: <span class="hljs-string">'time'</span>,
-     *     <span class="hljs-attr">axisLabel</span>: {
-     *         <span class="hljs-attr">formatter</span>: {
+     * <pre><code class="lang-ts hljs typescript">xAxis: {
+     *     <span class="hljs-keyword">type</span>: <span class="hljs-string">'time'</span>,
+     *     axisLabel: {
+     *         formatter: {
      *             <span class="hljs-comment">// 一年的第一个月显示年度信息和月份信息</span>
-     *             <span class="hljs-attr">year</span>: <span class="hljs-string">'{yearStyle|{yyyy}}\n{monthStyle|{MMM}}'</span>,
-     *             <span class="hljs-attr">month</span>: <span class="hljs-string">'{monthStyle|{MMM}}'</span>
+     *             year: <span class="hljs-string">'{yearStyle|{yyyy}}\n{monthStyle|{MMM}}'</span>,
+     *             month: <span class="hljs-string">'{monthStyle|{MMM}}'</span>
      *         },
-     *         <span class="hljs-attr">rich</span>: {
-     *             <span class="hljs-attr">yearStyle</span>: {
+     *         rich: {
+     *             yearStyle: {
      *                 <span class="hljs-comment">// 让年度信息更醒目</span>
-     *                 <span class="hljs-attr">color</span>: <span class="hljs-string">'#000'</span>,
-     *                 <span class="hljs-attr">fontWeight</span>: <span class="hljs-string">'bold'</span>
+     *                 color: <span class="hljs-string">'#000'</span>,
+     *                 fontWeight: <span class="hljs-string">'bold'</span>
      *             },
-     *             <span class="hljs-attr">monthStyle</span>: {
-     *                 <span class="hljs-attr">color</span>: <span class="hljs-string">'#999'</span>
+     *             monthStyle: {
+     *                 color: <span class="hljs-string">'#999'</span>
      *             }
      *         }
      *     }
@@ -305,10 +305,10 @@ public class AxisLabel implements Serializable {
      * </code></pre>
      * <p>使用回调函数形式实现上面例子同样的效果：</p>
      * <p>示例：</p>
-     * <pre><code class="lang-js hljs javascript">xAxis: {
-     *     <span class="hljs-attr">type</span>: <span class="hljs-string">'time'</span>,
-     *     <span class="hljs-attr">axisLabel</span>: {
-     *         <span class="hljs-attr">formatter</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">value</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">xAxis: {
+     *     <span class="hljs-keyword">type</span>: <span class="hljs-string">'time'</span>,
+     *     axisLabel: {
+     *         formatter: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">value</span>) </span>{
      *             <span class="hljs-keyword">const</span> date = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(value);
      *             <span class="hljs-keyword">const</span> yearStart = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(value);
      *             yearStart.setMonth(<span class="hljs-number">0</span>);
@@ -326,13 +326,13 @@ public class AxisLabel implements Serializable {
      *                 <span class="hljs-keyword">return</span> <span class="hljs-string">'{month|'</span> + (date.getMonth() + <span class="hljs-number">1</span>) + <span class="hljs-string">'月}'</span>
      *             }
      *         },
-     *         <span class="hljs-attr">rich</span>: {
-     *             <span class="hljs-attr">year</span>: {
-     *                 <span class="hljs-attr">color</span>: <span class="hljs-string">'#000'</span>,
-     *                 <span class="hljs-attr">fontWeight</span>: <span class="hljs-string">'bold'</span>
+     *         rich: {
+     *             year: {
+     *                 color: <span class="hljs-string">'#000'</span>,
+     *                 fontWeight: <span class="hljs-string">'bold'</span>
      *             },
-     *             <span class="hljs-attr">month</span>: {
-     *                 <span class="hljs-attr">color</span>: <span class="hljs-string">'#999'</span>
+     *             month: {
+     *                 color: <span class="hljs-string">'#999'</span>
      *             }
      *         }
      *     }
@@ -357,16 +357,27 @@ public class AxisLabel implements Serializable {
      */
     private Boolean showMaxLabel;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.axisLabel.hideOverlap">https://echarts.apache.org/zh/option.html#radiusAxis.axisLabel.hideOverlap</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["boolean"]
+     * <br/>描述:
+     * <blockquote>
+     * <p>从 <code class="codespan">v5.2.0</code> 开始支持</p>
+     * </blockquote>
+     * <p>是否隐藏重叠的标签。</p>
+     */
+    private Boolean hideOverlap;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.axisLabel.color">https://echarts.apache.org/zh/option.html#radiusAxis.axisLabel.color</a>
      * <br/>默认值: 无
      * <br/>js类型: ["Color","Function"]
      * <br/>描述:
      * <p>刻度标签文字的颜色，默认取 <a href="#radiusAxis.axisLine.lineStyle.color">axisLine.lineStyle.color</a>。支持回调函数，格式如下</p>
-     * <pre><code class="lang-js hljs javascript">(val: string) =&gt; Color
+     * <pre><code class="lang-ts hljs typescript">(val: <span class="hljs-built_in">string</span>) =&gt; Color
      * </code></pre>
      * <p>参数是标签的文本，返回颜色值，如下示例：</p>
-     * <pre><code class="lang-js hljs javascript">textStyle: {
-     *     <span class="hljs-attr">color</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">value, index</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">textStyle: {
+     *     color: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">value, index</span>) </span>{
      *         <span class="hljs-keyword">return</span> value &gt;= <span class="hljs-number">0</span> ? <span class="hljs-string">'green'</span> : <span class="hljs-string">'red'</span>;
      *     }
      * }
@@ -433,10 +444,10 @@ public class AxisLabel implements Serializable {
      * <li><code class="codespan">'right'</code></li>
      * </ul>
      * <p><code class="codespan">rich</code> 中如果没有设置 <code class="codespan">align</code>，则会取父层级的 <code class="codespan">align</code>。例如：</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">align</span>: right,
-     *     <span class="hljs-attr">rich</span>: {
-     *         <span class="hljs-attr">a</span>: {
+     * <pre><code class="lang-ts hljs typescript">{
+     *     align: right,
+     *     rich: {
+     *         a: {
      *             <span class="hljs-comment">// 没有设置 `align`，则 `align` 为 right</span>
      *         }
      *     }
@@ -457,10 +468,10 @@ public class AxisLabel implements Serializable {
      * <li><code class="codespan">'bottom'</code></li>
      * </ul>
      * <p><code class="codespan">rich</code> 中如果没有设置 <code class="codespan">verticalAlign</code>，则会取父层级的 <code class="codespan">verticalAlign</code>。例如：</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">verticalAlign</span>: bottom,
-     *     <span class="hljs-attr">rich</span>: {
-     *         <span class="hljs-attr">a</span>: {
+     * <pre><code class="lang-ts hljs typescript">{
+     *     verticalAlign: bottom,
+     *     rich: {
+     *         a: {
      *             <span class="hljs-comment">// 没有设置 `verticalAlign`，则 `verticalAlign` 为 bottom</span>
      *         }
      *     }
@@ -475,10 +486,10 @@ public class AxisLabel implements Serializable {
      * <br/>描述:
      * <p>行高。</p>
      * <p><code class="codespan">rich</code> 中如果没有设置 <code class="codespan">lineHeight</code>，则会取父层级的 <code class="codespan">lineHeight</code>。例如：</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">lineHeight</span>: <span class="hljs-number">56</span>,
-     *     <span class="hljs-attr">rich</span>: {
-     *         <span class="hljs-attr">a</span>: {
+     * <pre><code class="lang-ts hljs typescript">{
+     *     lineHeight: <span class="hljs-number">56</span>,
+     *     rich: {
+     *         a: {
      *             <span class="hljs-comment">// 没有设置 `lineHeight`，则 `lineHeight` 为 56</span>
      *         }
      *     }
@@ -494,8 +505,8 @@ public class AxisLabel implements Serializable {
      * <p>文字块背景色。</p>
      * <p>可以使用颜色值，例如：<code class="codespan">'#123234'</code>, <code class="codespan">'red'</code>, <code class="codespan">'rgba(0,23,11,0.3)'</code>。</p>
      * <p>也可以直接使用图片，例如：</p>
-     * <pre><code class="lang-js hljs javascript">backgroundColor: {
-     *     <span class="hljs-attr">image</span>: <span class="hljs-string">'xxx/xxx.png'</span>
+     * <pre><code class="lang-ts hljs typescript">backgroundColor: {
+     *     image: <span class="hljs-string">'xxx/xxx.png'</span>
      *     <span class="hljs-comment">// 这里可以是图片的 URL，</span>
      *     <span class="hljs-comment">// 或者图片的 dataURI，</span>
      *     <span class="hljs-comment">// 或者 HTMLImageElement 对象，</span>
@@ -537,11 +548,11 @@ public class AxisLabel implements Serializable {
      * <code class="codespan">borderDashOffset</code>
      *  可实现更灵活的虚线效果。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">{
+     * <pre><code class="lang-ts hljs typescript">{
      *
-     * <span class="hljs-attr">borderType</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
+     * borderType: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
      *
-     * <span class="hljs-attr">borderDashOffset</span>: <span class="hljs-number">5</span>
+     * borderDashOffset: <span class="hljs-number">5</span>
      * }
      * </code></pre>
      */
@@ -664,11 +675,11 @@ public class AxisLabel implements Serializable {
      * <code class="codespan">textBorderDashOffset</code>
      *  可实现更灵活的虚线效果。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">{
+     * <pre><code class="lang-ts hljs typescript">{
      *
-     * <span class="hljs-attr">textBorderType</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
+     * textBorderType: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
      *
-     * <span class="hljs-attr">textBorderDashOffset</span>: <span class="hljs-number">5</span>
+     * textBorderDashOffset: <span class="hljs-number">5</span>
      * }
      * </code></pre>
      */
@@ -743,49 +754,38 @@ public class AxisLabel implements Serializable {
      */
     private String ellipsis;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.axisLabel.lineOverflow">https://echarts.apache.org/zh/option.html#radiusAxis.axisLabel.lineOverflow</a>
-     * <br/>默认值: none
-     * <br/>js类型: ["string"]
-     * <br/>描述:
-     * <p>文本超出高度部分是否截断，配置<code class="codespan">height</code>时有效。</p>
-     * <ul>
-     * <li><code class="codespan">'truncate'</code> 在文本行数超出高度部分截断。</li>
-     * </ul>
-     */
-    private String lineOverflow;
-    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radiusAxis.axisLabel.rich">https://echarts.apache.org/zh/option.html#radiusAxis.axisLabel.rich</a>
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>在 <code class="codespan">rich</code> 里面，可以自定义富文本样式。利用富文本样式，可以在标签中做出非常丰富的效果。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">label: {
+     * <pre><code class="lang-ts hljs typescript">label: {
      *     <span class="hljs-comment">// 在文本中，可以对部分文本采用 rich 中定义样式。</span>
      *     <span class="hljs-comment">// 这里需要在文本中使用标记符号：</span>
      *     <span class="hljs-comment">// `{styleName|text content text content}` 标记样式名。</span>
      *     <span class="hljs-comment">// 注意，换行仍是使用 '\n'。</span>
-     *     <span class="hljs-attr">formatter</span>: [
+     *     formatter: [
      *         <span class="hljs-string">'{a|这段文本采用样式a}'</span>,
      *         <span class="hljs-string">'{b|这段文本采用样式b}这段用默认样式{x|这段用样式x}'</span>
      *     ].join(<span class="hljs-string">'\n'</span>),
      *
-     *     <span class="hljs-attr">rich</span>: {
-     *         <span class="hljs-attr">a</span>: {
-     *             <span class="hljs-attr">color</span>: <span class="hljs-string">'red'</span>,
-     *             <span class="hljs-attr">lineHeight</span>: <span class="hljs-number">10</span>
+     *     rich: {
+     *         a: {
+     *             color: <span class="hljs-string">'red'</span>,
+     *             lineHeight: <span class="hljs-number">10</span>
      *         },
-     *         <span class="hljs-attr">b</span>: {
-     *             <span class="hljs-attr">backgroundColor</span>: {
-     *                 <span class="hljs-attr">image</span>: <span class="hljs-string">'xxx/xxx.jpg'</span>
+     *         b: {
+     *             backgroundColor: {
+     *                 image: <span class="hljs-string">'xxx/xxx.jpg'</span>
      *             },
-     *             <span class="hljs-attr">height</span>: <span class="hljs-number">40</span>
+     *             height: <span class="hljs-number">40</span>
      *         },
-     *         <span class="hljs-attr">x</span>: {
-     *             <span class="hljs-attr">fontSize</span>: <span class="hljs-number">18</span>,
-     *             <span class="hljs-attr">fontFamily</span>: <span class="hljs-string">'Microsoft YaHei'</span>,
-     *             <span class="hljs-attr">borderColor</span>: <span class="hljs-string">'#449933'</span>,
-     *             <span class="hljs-attr">borderRadius</span>: <span class="hljs-number">4</span>
+     *         x: {
+     *             fontSize: <span class="hljs-number">18</span>,
+     *             fontFamily: <span class="hljs-string">'Microsoft YaHei'</span>,
+     *             borderColor: <span class="hljs-string">'#449933'</span>,
+     *             borderRadius: <span class="hljs-number">4</span>
      *         },
      *         ...
      *     }

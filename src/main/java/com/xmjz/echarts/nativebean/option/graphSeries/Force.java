@@ -56,8 +56,8 @@ public class Force implements Serializable {
      * <br/>描述:
      * <p>边的两个节点之间的距离，这个距离也会受 <a href="#series-graph.force.repulsion">repulsion</a>。</p>
      * <p>支持设置成数组表达边长的范围，此时不同大小的值会线性映射到不同的长度。值越小则长度越长。如下示例</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-comment">// 值最大的边长度会趋向于 10，值最小的边长度会趋向于 50</span>
-     * <span class="hljs-attr">edgeLength</span>: [<span class="hljs-number">10</span>, <span class="hljs-number">50</span>]
+     * <pre><code class="lang-ts hljs typescript"><span class="hljs-comment">// 值最大的边长度会趋向于 10，值最小的边长度会趋向于 50</span>
+     * edgeLength: [<span class="hljs-number">10</span>, <span class="hljs-number">50</span>]
      * </code></pre>
      */
     private Object edgeLength;

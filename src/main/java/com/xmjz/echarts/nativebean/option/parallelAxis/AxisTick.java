@@ -48,7 +48,7 @@ public class AxisTick implements Serializable {
      * <p>可以设置成 0 强制显示所有标签。</p>
      * <p>如果设置为 <code class="codespan">1</code>，表示『隔一个标签显示一个标签』，如果值为 <code class="codespan">2</code>，表示隔两个标签显示一个标签，以此类推。</p>
      * <p>可以用数值表示间隔的数据，也可以通过回调函数控制。回调函数格式如下：</p>
-     * <pre><code class="lang-js hljs javascript">(index:number, <span class="hljs-attr">value</span>: string) =&gt; boolean
+     * <pre><code class="lang-ts hljs typescript">(index:<span class="hljs-built_in">number</span>, value: <span class="hljs-built_in">string</span>) =&gt; <span class="hljs-built_in">boolean</span>
      * </code></pre>
      * <p>第一个参数是类目的 index，第二个值是类目名称，如果跳过则返回 <code class="codespan">false</code>。</p>
      */

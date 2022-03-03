@@ -16,7 +16,7 @@ import java.util.List;
  * <p><strong>象形柱图</strong></p>
  * <p>象形柱图是可以设置各种具象图形元素（如图片、<a href="http://www.w3.org/TR/SVG/paths.html#PathData" target="_blank">SVG PathData</a> 等）的柱状图。往往用在信息图中。用于有至少一个类目轴或时间轴的<a href="#grid">直角坐标系</a>上。</p>
  * <p><strong>示例：</strong></p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=pictorialBar-hill&amp;reset=1&amp;edit=1" width="800" height="400" data-ll-timeout="20"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=pictorialBar-hill&amp;reset=1&amp;edit=1" width="800" height="400" data-ll-timeout="24"></iframe>
  *
  *
  *
@@ -24,7 +24,7 @@ import java.util.List;
  * <p>象形柱图可以被想象为：它首先是个柱状图，但是柱状图的柱子并不显示。这些柱子我们称为『基准柱（reference bar）』，根据基准柱来定位和显示各种象形图形（包括图片）。</p>
  * <p>每个象形图形根据基准柱的定位，是通过 <a href="#series-pictorialBar.symbolPosition">symbolPosition</a>、<a href="#series-pictorialBar.symbolOffset">symbolOffset</a> 来调整其于基准柱的相对位置。</p>
  * <p>参见例子：</p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-position&amp;reset=1&amp;edit=1" width="800" height="600"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=doc-example/pictorialBar-position&amp;reset=1&amp;edit=1" width="800" height="600" data-ll-timeout="25"></iframe>
  *
  *
  * <p>可以使用 <a href="#series-pictorialBar.symbolSize">symbolSize</a> 调整大小，从而形成各种视图效果。</p>
@@ -180,42 +180,42 @@ public class PictorialBarSeries extends Series implements Serializable {
      * <p>标签的统一布局配置。</p>
      * <p>该配置项是在每个系列默认的标签布局基础上，统一调整标签的<code class="codespan">(x, y)</code>位置，标签对齐等属性以实现想要的标签布局效果。</p>
      * <p>该配置项也可以是一个有如下参数的回调函数</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-comment">// 标签对应数据的 dataIndex</span>
-     * <span class="hljs-attr">dataIndex</span>: number
+     * <pre><code class="lang-ts hljs typescript"><span class="hljs-comment">// 标签对应数据的 dataIndex</span>
+     * dataIndex: <span class="hljs-built_in">number</span>
      * <span class="hljs-comment">// 标签对应的数据类型，只在关系图中会有 node 和 edge 数据类型的区分</span>
-     * dataType?: string
+     * dataType?: <span class="hljs-built_in">string</span>
      * <span class="hljs-comment">// 标签对应的系列的 index</span>
-     * <span class="hljs-attr">seriesIndex</span>: number
+     * seriesIndex: <span class="hljs-built_in">number</span>
      * <span class="hljs-comment">// 标签显示的文本</span>
-     * <span class="hljs-attr">text</span>: string
+     * text: <span class="hljs-built_in">string</span>
      * <span class="hljs-comment">// 默认的标签的包围盒，由系列默认的标签布局决定</span>
-     * <span class="hljs-attr">labelRect</span>: {<span class="hljs-attr">x</span>: number, <span class="hljs-attr">y</span>: number, <span class="hljs-attr">width</span>: number, <span class="hljs-attr">height</span>: number}
+     * labelRect: {x: <span class="hljs-built_in">number</span>, y: <span class="hljs-built_in">number</span>, width: <span class="hljs-built_in">number</span>, height: <span class="hljs-built_in">number</span>}
      * <span class="hljs-comment">// 默认的标签水平对齐</span>
-     * <span class="hljs-attr">align</span>: <span class="hljs-string">'left'</span> | <span class="hljs-string">'center'</span> | <span class="hljs-string">'right'</span>
+     * align: <span class="hljs-string">'left'</span> | <span class="hljs-string">'center'</span> | <span class="hljs-string">'right'</span>
      * <span class="hljs-comment">// 默认的标签垂直对齐</span>
-     * <span class="hljs-attr">verticalAlign</span>: <span class="hljs-string">'top'</span> | <span class="hljs-string">'middle'</span> | <span class="hljs-string">'bottom'</span>
+     * verticalAlign: <span class="hljs-string">'top'</span> | <span class="hljs-string">'middle'</span> | <span class="hljs-string">'bottom'</span>
      * <span class="hljs-comment">// 标签所对应的数据图形的包围盒，可用于定位标签位置</span>
-     * <span class="hljs-attr">rect</span>: {<span class="hljs-attr">x</span>: number, <span class="hljs-attr">y</span>: number, <span class="hljs-attr">width</span>: number, <span class="hljs-attr">height</span>: number}
+     * rect: {x: <span class="hljs-built_in">number</span>, y: <span class="hljs-built_in">number</span>, width: <span class="hljs-built_in">number</span>, height: <span class="hljs-built_in">number</span>}
      * <span class="hljs-comment">// 默认引导线的位置，目前只有饼图(pie)和漏斗图(funnel)有默认标签位置</span>
      * <span class="hljs-comment">// 如果没有该值则为 null</span>
-     * labelLinePoints?: number[][]
+     * labelLinePoints?: <span class="hljs-built_in">number</span>[][]
      * </code></pre>
      * <p><strong>示例：</strong></p>
      * <p>将标签显示在图形右侧 10px 的位置，并且垂直居中：</p>
-     * <pre><code class="lang-js hljs javascript">labelLayout(params) {
+     * <pre><code class="lang-ts hljs typescript">labelLayout(params) {
      *     <span class="hljs-keyword">return</span> {
-     *         <span class="hljs-attr">x</span>: params.rect.x + <span class="hljs-number">10</span>,
-     *         <span class="hljs-attr">y</span>: params.rect.y + params.rect.height / <span class="hljs-number">2</span>,
-     *         <span class="hljs-attr">verticalAlign</span>: <span class="hljs-string">'middle'</span>,
-     *         <span class="hljs-attr">align</span>: <span class="hljs-string">'left'</span>
+     *         x: params.rect.x + <span class="hljs-number">10</span>,
+     *         y: params.rect.y + params.rect.height / <span class="hljs-number">2</span>,
+     *         verticalAlign: <span class="hljs-string">'middle'</span>,
+     *         align: <span class="hljs-string">'left'</span>
      *     }
      * }
      * </code></pre>
      * <p>根据图形的包围盒尺寸决定文本尺寸</p>
-     * <pre><code class="lang-js hljs javascript">
+     * <pre><code class="lang-ts hljs typescript">
      * labelLayout(params) {
      *     <span class="hljs-keyword">return</span> {
-     *         <span class="hljs-attr">fontSize</span>: <span class="hljs-built_in">Math</span>.max(params.rect.width / <span class="hljs-number">10</span>, <span class="hljs-number">5</span>)
+     *         fontSize: <span class="hljs-built_in">Math</span>.max(params.rect.width / <span class="hljs-number">10</span>, <span class="hljs-number">5</span>)
      *     };
      * }
      * </code></pre>
@@ -245,7 +245,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      * <blockquote>
      * <p>从 <code class="codespan">v5.0.0</code> 开始支持</p>
      * </blockquote>
-     * <p>淡出状态配置。开启 <a href="#series-pictoialBar.emphasis.focus">emphasis.focus</a> 后有效。</p>
+     * <p>淡出状态配置。开启 <a href="#series-pictorialBar.emphasis.focus">emphasis.focus</a> 后有效。</p>
      */
     private Blur blur;
     /**
@@ -258,7 +258,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      * </blockquote>
      * <p>选中状态配置。开启 <a href="#series-bar.selectedMode">selectedMode</a> 后有效。</p>
      */
-    private Object select;
+    private Select select;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-pictorialBar.selectedMode">https://echarts.apache.org/zh/option.html#series-pictorialBar.selectedMode</a>
      * <br/>默认值: 无
@@ -269,7 +269,10 @@ public class PictorialBarSeries extends Series implements Serializable {
      * </blockquote>
      *
      *
-     * <p>选中模式的配置，表示是否支持多个选中，默认关闭，支持布尔值和字符串，字符串取值可选<code class="codespan">'single'</code>，<code class="codespan">'multiple'</code>，分别表示单选还是多选。</p>
+     * <p>选中模式的配置，表示是否支持多个选中，默认关闭，支持布尔值和字符串，字符串取值可选<code class="codespan">'single'</code>，<code class="codespan">'multiple'</code>，<code class="codespan">'series'</code> 分别表示单选，多选以及选择整个系列。</p>
+     * <blockquote>
+     * <p>从 v5.3.0 开始支持 <code class="codespan">'series'</code>。</p>
+     * </blockquote>
      */
     private SelectedMode selectedMode;
     /**
@@ -370,18 +373,18 @@ public class PictorialBarSeries extends Series implements Serializable {
      *
      * <p>此属性可以被设置在系列的 <a href="#series-pictorialBar.symbol">根部</a>，表示对此系列中所有数据都生效；也可以被设置在 <a href="series-pictorialBar.data" target="_blank">data</a> 中的 <a href="#series-pictorialBar.data.symbol">每个数据项中</a>，表示只对此数据项生效。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">series: [{
-     *     <span class="hljs-attr">symbol</span>: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
-     *     <span class="hljs-attr">data</span>: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
+     * <pre><code class="lang-ts hljs typescript">series: [{
+     *     symbol: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
+     *     data: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
      * }]
      * 或者
-     * <span class="hljs-attr">series</span>: [{
-     *     <span class="hljs-attr">data</span>: [{
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">23</span>
-     *         <span class="hljs-attr">symbol</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     * series: [{
+     *     data: [{
+     *         value: <span class="hljs-number">23</span>
+     *         symbol: ... <span class="hljs-comment">// 只对此数据项生效</span>
      *     }, {
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">56</span>
-     *         <span class="hljs-attr">symbol</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     *         value: <span class="hljs-number">56</span>
+     *         symbol: ... <span class="hljs-comment">// 只对此数据项生效</span>
      *     }]
      * }]
      * </code></pre>
@@ -414,18 +417,18 @@ public class PictorialBarSeries extends Series implements Serializable {
      *
      * <p>此属性可以被设置在系列的 <a href="#series-pictorialBar.symbolSize">根部</a>，表示对此系列中所有数据都生效；也可以被设置在 <a href="series-pictorialBar.data" target="_blank">data</a> 中的 <a href="#series-pictorialBar.data.symbolSize">每个数据项中</a>，表示只对此数据项生效。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">series: [{
-     *     <span class="hljs-attr">symbolSize</span>: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
-     *     <span class="hljs-attr">data</span>: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
+     * <pre><code class="lang-ts hljs typescript">series: [{
+     *     symbolSize: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
+     *     data: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
      * }]
      * 或者
-     * <span class="hljs-attr">series</span>: [{
-     *     <span class="hljs-attr">data</span>: [{
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">23</span>
-     *         <span class="hljs-attr">symbolSize</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     * series: [{
+     *     data: [{
+     *         value: <span class="hljs-number">23</span>
+     *         symbolSize: ... <span class="hljs-comment">// 只对此数据项生效</span>
      *     }, {
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">56</span>
-     *         <span class="hljs-attr">symbolSize</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     *         value: <span class="hljs-number">56</span>
+     *         symbolSize: ... <span class="hljs-comment">// 只对此数据项生效</span>
      *     }]
      * }]
      * </code></pre>
@@ -450,18 +453,18 @@ public class PictorialBarSeries extends Series implements Serializable {
      *
      * <p>此属性可以被设置在系列的 <a href="#series-pictorialBar.symbolPosition">根部</a>，表示对此系列中所有数据都生效；也可以被设置在 <a href="series-pictorialBar.data" target="_blank">data</a> 中的 <a href="#series-pictorialBar.data.symbolPosition">每个数据项中</a>，表示只对此数据项生效。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">series: [{
-     *     <span class="hljs-attr">symbolPosition</span>: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
-     *     <span class="hljs-attr">data</span>: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
+     * <pre><code class="lang-ts hljs typescript">series: [{
+     *     symbolPosition: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
+     *     data: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
      * }]
      * 或者
-     * <span class="hljs-attr">series</span>: [{
-     *     <span class="hljs-attr">data</span>: [{
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">23</span>
-     *         <span class="hljs-attr">symbolPosition</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     * series: [{
+     *     data: [{
+     *         value: <span class="hljs-number">23</span>
+     *         symbolPosition: ... <span class="hljs-comment">// 只对此数据项生效</span>
      *     }, {
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">56</span>
-     *         <span class="hljs-attr">symbolPosition</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     *         value: <span class="hljs-number">56</span>
+     *         symbolPosition: ... <span class="hljs-comment">// 只对此数据项生效</span>
      *     }]
      * }]
      * </code></pre>
@@ -484,18 +487,18 @@ public class PictorialBarSeries extends Series implements Serializable {
      *
      * <p>此属性可以被设置在系列的 <a href="#series-pictorialBar.symbolOffset">根部</a>，表示对此系列中所有数据都生效；也可以被设置在 <a href="series-pictorialBar.data" target="_blank">data</a> 中的 <a href="#series-pictorialBar.data.symbolOffset">每个数据项中</a>，表示只对此数据项生效。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">series: [{
-     *     <span class="hljs-attr">symbolOffset</span>: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
-     *     <span class="hljs-attr">data</span>: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
+     * <pre><code class="lang-ts hljs typescript">series: [{
+     *     symbolOffset: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
+     *     data: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
      * }]
      * 或者
-     * <span class="hljs-attr">series</span>: [{
-     *     <span class="hljs-attr">data</span>: [{
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">23</span>
-     *         <span class="hljs-attr">symbolOffset</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     * series: [{
+     *     data: [{
+     *         value: <span class="hljs-number">23</span>
+     *         symbolOffset: ... <span class="hljs-comment">// 只对此数据项生效</span>
      *     }, {
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">56</span>
-     *         <span class="hljs-attr">symbolOffset</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     *         value: <span class="hljs-number">56</span>
+     *         symbolOffset: ... <span class="hljs-comment">// 只对此数据项生效</span>
      *     }]
      * }]
      * </code></pre>
@@ -510,18 +513,18 @@ public class PictorialBarSeries extends Series implements Serializable {
      * <p>注意，<code class="codespan">symbolRotate</code> 并不会影响图形的定位（哪怕超出基准柱的边界），而只是单纯得绕自身中心旋转。</p>
      * <p>此属性可以被设置在系列的 <a href="#series-pictorialBar.symbolRotate">根部</a>，表示对此系列中所有数据都生效；也可以被设置在 <a href="series-pictorialBar.data" target="_blank">data</a> 中的 <a href="#series-pictorialBar.data.symbolRotate">每个数据项中</a>，表示只对此数据项生效。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">series: [{
-     *     <span class="hljs-attr">symbolRotate</span>: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
-     *     <span class="hljs-attr">data</span>: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
+     * <pre><code class="lang-ts hljs typescript">series: [{
+     *     symbolRotate: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
+     *     data: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
      * }]
      * 或者
-     * <span class="hljs-attr">series</span>: [{
-     *     <span class="hljs-attr">data</span>: [{
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">23</span>
-     *         <span class="hljs-attr">symbolRotate</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     * series: [{
+     *     data: [{
+     *         value: <span class="hljs-number">23</span>
+     *         symbolRotate: ... <span class="hljs-comment">// 只对此数据项生效</span>
      *     }, {
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">56</span>
-     *         <span class="hljs-attr">symbolRotate</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     *         value: <span class="hljs-number">56</span>
+     *         symbolRotate: ... <span class="hljs-comment">// 只对此数据项生效</span>
      *     }]
      * }]
      * </code></pre>
@@ -547,18 +550,18 @@ public class PictorialBarSeries extends Series implements Serializable {
      *
      * <p>此属性可以被设置在系列的 <a href="#series-pictorialBar.symbolRepeat">根部</a>，表示对此系列中所有数据都生效；也可以被设置在 <a href="series-pictorialBar.data" target="_blank">data</a> 中的 <a href="#series-pictorialBar.data.symbolRepeat">每个数据项中</a>，表示只对此数据项生效。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">series: [{
-     *     <span class="hljs-attr">symbolRepeat</span>: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
-     *     <span class="hljs-attr">data</span>: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
+     * <pre><code class="lang-ts hljs typescript">series: [{
+     *     symbolRepeat: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
+     *     data: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
      * }]
      * 或者
-     * <span class="hljs-attr">series</span>: [{
-     *     <span class="hljs-attr">data</span>: [{
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">23</span>
-     *         <span class="hljs-attr">symbolRepeat</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     * series: [{
+     *     data: [{
+     *         value: <span class="hljs-number">23</span>
+     *         symbolRepeat: ... <span class="hljs-comment">// 只对此数据项生效</span>
      *     }, {
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">56</span>
-     *         <span class="hljs-attr">symbolRepeat</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     *         value: <span class="hljs-number">56</span>
+     *         symbolRepeat: ... <span class="hljs-comment">// 只对此数据项生效</span>
      *     }]
      * }]
      * </code></pre>
@@ -585,18 +588,18 @@ public class PictorialBarSeries extends Series implements Serializable {
      *
      * <p>此属性可以被设置在系列的 <a href="#series-pictorialBar.symbolRepeatDirection">根部</a>，表示对此系列中所有数据都生效；也可以被设置在 <a href="series-pictorialBar.data" target="_blank">data</a> 中的 <a href="#series-pictorialBar.data.symbolRepeatDirection">每个数据项中</a>，表示只对此数据项生效。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">series: [{
-     *     <span class="hljs-attr">symbolRepeatDirection</span>: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
-     *     <span class="hljs-attr">data</span>: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
+     * <pre><code class="lang-ts hljs typescript">series: [{
+     *     symbolRepeatDirection: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
+     *     data: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
      * }]
      * 或者
-     * <span class="hljs-attr">series</span>: [{
-     *     <span class="hljs-attr">data</span>: [{
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">23</span>
-     *         <span class="hljs-attr">symbolRepeatDirection</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     * series: [{
+     *     data: [{
+     *         value: <span class="hljs-number">23</span>
+     *         symbolRepeatDirection: ... <span class="hljs-comment">// 只对此数据项生效</span>
      *     }, {
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">56</span>
-     *         <span class="hljs-attr">symbolRepeatDirection</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     *         value: <span class="hljs-number">56</span>
+     *         symbolRepeatDirection: ... <span class="hljs-comment">// 只对此数据项生效</span>
      *     }]
      * }]
      * </code></pre>
@@ -625,18 +628,18 @@ public class PictorialBarSeries extends Series implements Serializable {
      *
      * <p>此属性可以被设置在系列的 <a href="#series-pictorialBar.symbolMargin">根部</a>，表示对此系列中所有数据都生效；也可以被设置在 <a href="series-pictorialBar.data" target="_blank">data</a> 中的 <a href="#series-pictorialBar.data.symbolMargin">每个数据项中</a>，表示只对此数据项生效。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">series: [{
-     *     <span class="hljs-attr">symbolMargin</span>: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
-     *     <span class="hljs-attr">data</span>: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
+     * <pre><code class="lang-ts hljs typescript">series: [{
+     *     symbolMargin: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
+     *     data: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
      * }]
      * 或者
-     * <span class="hljs-attr">series</span>: [{
-     *     <span class="hljs-attr">data</span>: [{
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">23</span>
-     *         <span class="hljs-attr">symbolMargin</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     * series: [{
+     *     data: [{
+     *         value: <span class="hljs-number">23</span>
+     *         symbolMargin: ... <span class="hljs-comment">// 只对此数据项生效</span>
      *     }, {
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">56</span>
-     *         <span class="hljs-attr">symbolMargin</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     *         value: <span class="hljs-number">56</span>
+     *         symbolMargin: ... <span class="hljs-comment">// 只对此数据项生效</span>
      *     }]
      * }]
      * </code></pre>
@@ -664,18 +667,18 @@ public class PictorialBarSeries extends Series implements Serializable {
      * </ul>
      * <p>此属性可以被设置在系列的 <a href="#series-pictorialBar.symbolClip">根部</a>，表示对此系列中所有数据都生效；也可以被设置在 <a href="series-pictorialBar.data" target="_blank">data</a> 中的 <a href="#series-pictorialBar.data.symbolClip">每个数据项中</a>，表示只对此数据项生效。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">series: [{
-     *     <span class="hljs-attr">symbolClip</span>: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
-     *     <span class="hljs-attr">data</span>: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
+     * <pre><code class="lang-ts hljs typescript">series: [{
+     *     symbolClip: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
+     *     data: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
      * }]
      * 或者
-     * <span class="hljs-attr">series</span>: [{
-     *     <span class="hljs-attr">data</span>: [{
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">23</span>
-     *         <span class="hljs-attr">symbolClip</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     * series: [{
+     *     data: [{
+     *         value: <span class="hljs-number">23</span>
+     *         symbolClip: ... <span class="hljs-comment">// 只对此数据项生效</span>
      *     }, {
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">56</span>
-     *         <span class="hljs-attr">symbolClip</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     *         value: <span class="hljs-number">56</span>
+     *         symbolClip: ... <span class="hljs-comment">// 只对此数据项生效</span>
      *     }]
      * }]
      * </code></pre>
@@ -726,18 +729,18 @@ public class PictorialBarSeries extends Series implements Serializable {
      *
      * <p>此属性可以被设置在系列的 <a href="#series-pictorialBar.symbolBoundingData">根部</a>，表示对此系列中所有数据都生效；也可以被设置在 <a href="series-pictorialBar.data" target="_blank">data</a> 中的 <a href="#series-pictorialBar.data.symbolBoundingData">每个数据项中</a>，表示只对此数据项生效。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">series: [{
-     *     <span class="hljs-attr">symbolBoundingData</span>: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
-     *     <span class="hljs-attr">data</span>: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
+     * <pre><code class="lang-ts hljs typescript">series: [{
+     *     symbolBoundingData: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
+     *     data: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
      * }]
      * 或者
-     * <span class="hljs-attr">series</span>: [{
-     *     <span class="hljs-attr">data</span>: [{
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">23</span>
-     *         <span class="hljs-attr">symbolBoundingData</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     * series: [{
+     *     data: [{
+     *         value: <span class="hljs-number">23</span>
+     *         symbolBoundingData: ... <span class="hljs-comment">// 只对此数据项生效</span>
      *     }, {
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">56</span>
-     *         <span class="hljs-attr">symbolBoundingData</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     *         value: <span class="hljs-number">56</span>
+     *         symbolBoundingData: ... <span class="hljs-comment">// 只对此数据项生效</span>
      *     }]
      * }]
      * </code></pre>
@@ -749,15 +752,15 @@ public class PictorialBarSeries extends Series implements Serializable {
      * <br/>js类型: ["number"]
      * <br/>描述:
      * <p>可以使用图片作为图形的 pattern。</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-keyword">var</span> textureImg = <span class="hljs-keyword">new</span> Image();
+     * <pre><code class="lang-ts hljs typescript"><span class="hljs-keyword">var</span> textureImg = <span class="hljs-keyword">new</span> Image();
      * textureImg.src = <span class="hljs-string">'data:image/jpeg;base64,...'</span>; <span class="hljs-comment">// dataURI</span>
      * <span class="hljs-comment">// 或者</span>
      * <span class="hljs-comment">// textureImg.src = 'http://xxx.xxx.xxx/xx.png'; // URL</span>
      * ...
      * itemStyle: {
-     *     <span class="hljs-attr">color</span>: {
-     *         <span class="hljs-attr">image</span>: textureImg,
-     *         <span class="hljs-attr">repeat</span>: <span class="hljs-string">'repeat'</span>
+     *     color: {
+     *         image: textureImg,
+     *         repeat: <span class="hljs-string">'repeat'</span>
      *     }
      * }
      * </code></pre>
@@ -770,18 +773,18 @@ public class PictorialBarSeries extends Series implements Serializable {
      *
      * <p>此属性可以被设置在系列的 <a href="#series-pictorialBar.symbolPatternSize">根部</a>，表示对此系列中所有数据都生效；也可以被设置在 <a href="series-pictorialBar.data" target="_blank">data</a> 中的 <a href="#series-pictorialBar.data.symbolPatternSize">每个数据项中</a>，表示只对此数据项生效。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">series: [{
-     *     <span class="hljs-attr">symbolPatternSize</span>: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
-     *     <span class="hljs-attr">data</span>: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
+     * <pre><code class="lang-ts hljs typescript">series: [{
+     *     symbolPatternSize: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
+     *     data: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
      * }]
      * 或者
-     * <span class="hljs-attr">series</span>: [{
-     *     <span class="hljs-attr">data</span>: [{
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">23</span>
-     *         <span class="hljs-attr">symbolPatternSize</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     * series: [{
+     *     data: [{
+     *         value: <span class="hljs-number">23</span>
+     *         symbolPatternSize: ... <span class="hljs-comment">// 只对此数据项生效</span>
      *     }, {
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">56</span>
-     *         <span class="hljs-attr">symbolPatternSize</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     *         value: <span class="hljs-number">56</span>
+     *         symbolPatternSize: ... <span class="hljs-comment">// 只对此数据项生效</span>
      *     }]
      * }]
      * </code></pre>
@@ -795,18 +798,18 @@ public class PictorialBarSeries extends Series implements Serializable {
      * <p>是否开启 hover 在图形上的提示动画效果。</p>
      * <p>此属性可以被设置在系列的 <a href="#series-pictorialBar.hoverAnimation">根部</a>，表示对此系列中所有数据都生效；也可以被设置在 <a href="series-pictorialBar.data" target="_blank">data</a> 中的 <a href="#series-pictorialBar.data.hoverAnimation">每个数据项中</a>，表示只对此数据项生效。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">series: [{
-     *     <span class="hljs-attr">hoverAnimation</span>: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
-     *     <span class="hljs-attr">data</span>: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
+     * <pre><code class="lang-ts hljs typescript">series: [{
+     *     hoverAnimation: ... <span class="hljs-comment">// 对 data 中所有数据项生效。</span>
+     *     data: [<span class="hljs-number">23</span>, <span class="hljs-number">56</span>]
      * }]
      * 或者
-     * <span class="hljs-attr">series</span>: [{
-     *     <span class="hljs-attr">data</span>: [{
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">23</span>
-     *         <span class="hljs-attr">hoverAnimation</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     * series: [{
+     *     data: [{
+     *         value: <span class="hljs-number">23</span>
+     *         hoverAnimation: ... <span class="hljs-comment">// 只对此数据项生效</span>
      *     }, {
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">56</span>
-     *         <span class="hljs-attr">hoverAnimation</span>: ... <span class="hljs-comment">// 只对此数据项生效</span>
+     *         value: <span class="hljs-number">56</span>
+     *         hoverAnimation: ... <span class="hljs-comment">// 只对此数据项生效</span>
      *     }]
      * }]
      * </code></pre>
@@ -820,9 +823,9 @@ public class PictorialBarSeries extends Series implements Serializable {
      * <p>使用 dimensions 定义 <code class="codespan">series.data</code> 或者 <code class="codespan">dataset.source</code> 的每个维度的信息。</p>
      * <p>注意：如果使用了 <a href="#dataset">dataset</a>，那么可以在 <a href="#dataset.dimensions">dataset.dimensions</a> 中定义 dimension ，或者在 <a href="#dataset.source">dataset.source</a> 的第一行/列中给出 dimension 名称。于是就不用在这里指定 dimension。但如果在这里指定了 <code class="codespan">dimensions</code>，那么优先使用这里的。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">option = {
-     *     <span class="hljs-attr">dataset</span>: {
-     *         <span class="hljs-attr">source</span>: [
+     * <pre><code class="lang-ts hljs typescript">option = {
+     *     dataset: {
+     *         source: [
      *             <span class="hljs-comment">// 有了上面 dimensions 定义后，下面这五个维度的名称分别为：</span>
      *             <span class="hljs-comment">// 'date', 'open', 'close', 'highest', 'lowest'</span>
      *             [<span class="hljs-number">12</span>, <span class="hljs-number">44</span>, <span class="hljs-number">55</span>, <span class="hljs-number">66</span>, <span class="hljs-number">2</span>],
@@ -830,21 +833,21 @@ public class PictorialBarSeries extends Series implements Serializable {
      *             ...
      *         ]
      *     },
-     *     <span class="hljs-attr">series</span>: {
-     *         <span class="hljs-attr">type</span>: <span class="hljs-string">'xxx'</span>,
+     *     series: {
+     *         <span class="hljs-keyword">type</span>: <span class="hljs-string">'xxx'</span>,
      *         <span class="hljs-comment">// 定义了每个维度的名称。这个名称会被显示到默认的 tooltip 中。</span>
-     *         <span class="hljs-attr">dimensions</span>: [<span class="hljs-string">'date'</span>, <span class="hljs-string">'open'</span>, <span class="hljs-string">'close'</span>, <span class="hljs-string">'highest'</span>, <span class="hljs-string">'lowest'</span>]
+     *         dimensions: [<span class="hljs-string">'date'</span>, <span class="hljs-string">'open'</span>, <span class="hljs-string">'close'</span>, <span class="hljs-string">'highest'</span>, <span class="hljs-string">'lowest'</span>]
      *     }
      * }
      * </code></pre>
-     * <pre><code class="lang-js hljs javascript">series: {
-     *     <span class="hljs-attr">type</span>: <span class="hljs-string">'xxx'</span>,
-     *     <span class="hljs-attr">dimensions</span>: [
+     * <pre><code class="lang-ts hljs typescript">series: {
+     *     <span class="hljs-keyword">type</span>: <span class="hljs-string">'xxx'</span>,
+     *     dimensions: [
      *         <span class="hljs-literal">null</span>,                <span class="hljs-comment">// 如果此维度不想给出定义，则使用 null 即可</span>
-     *         {<span class="hljs-attr">type</span>: <span class="hljs-string">'ordinal'</span>},   <span class="hljs-comment">// 只定义此维度的类型。</span>
+     *         {<span class="hljs-keyword">type</span>: <span class="hljs-string">'ordinal'</span>},   <span class="hljs-comment">// 只定义此维度的类型。</span>
      *                              <span class="hljs-comment">// 'ordinal' 表示离散型，一般文本使用这种类型。</span>
      *                              <span class="hljs-comment">// 如果类型没有被定义，会自动猜测类型。</span>
-     *         {<span class="hljs-attr">name</span>: <span class="hljs-string">'good'</span>, <span class="hljs-attr">type</span>: <span class="hljs-string">'number'</span>},
+     *         {name: <span class="hljs-string">'good'</span>, <span class="hljs-keyword">type</span>: <span class="hljs-string">'number'</span>},
      *         <span class="hljs-string">'bad'</span>                <span class="hljs-comment">// 等同于 {name: 'bad'}</span>
      *     ]
      * }
@@ -875,9 +878,9 @@ public class PictorialBarSeries extends Series implements Serializable {
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>可以定义 <code class="codespan">data</code> 的哪个维度被编码成什么。比如：</p>
-     * <pre><code class="lang-js hljs javascript">option = {
-     *     <span class="hljs-attr">dataset</span>: {
-     *         <span class="hljs-attr">source</span>: [
+     * <pre><code class="lang-ts hljs typescript">option = {
+     *     dataset: {
+     *         source: [
      *             <span class="hljs-comment">// 每一列称为一个『维度』。</span>
      *             <span class="hljs-comment">// 这里分别是维度 0、1、2、3、4。</span>
      *             [<span class="hljs-number">12</span>, <span class="hljs-number">44</span>, <span class="hljs-number">55</span>, <span class="hljs-number">66</span>, <span class="hljs-number">2</span>],
@@ -885,104 +888,104 @@ public class PictorialBarSeries extends Series implements Serializable {
      *             ...
      *         ]
      *     },
-     *     <span class="hljs-attr">series</span>: {
-     *         <span class="hljs-attr">type</span>: <span class="hljs-string">'xxx'</span>,
-     *         <span class="hljs-attr">encode</span>: {
-     *             <span class="hljs-attr">x</span>: [<span class="hljs-number">3</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>],      <span class="hljs-comment">// 表示维度 3、1、5 映射到 x 轴。</span>
-     *             <span class="hljs-attr">y</span>: <span class="hljs-number">2</span>,              <span class="hljs-comment">// 表示维度 2 映射到 y 轴。</span>
-     *             <span class="hljs-attr">tooltip</span>: [<span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">4</span>] <span class="hljs-comment">// 表示维度 3、2、4 会在 tooltip 中显示。</span>
+     *     series: {
+     *         <span class="hljs-keyword">type</span>: <span class="hljs-string">'xxx'</span>,
+     *         encode: {
+     *             x: [<span class="hljs-number">3</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>],      <span class="hljs-comment">// 表示维度 3、1、5 映射到 x 轴。</span>
+     *             y: <span class="hljs-number">2</span>,              <span class="hljs-comment">// 表示维度 2 映射到 y 轴。</span>
+     *             tooltip: [<span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">4</span>] <span class="hljs-comment">// 表示维度 3、2、4 会在 tooltip 中显示。</span>
      *         }
      *     }
      * }
      * </code></pre>
      * <p>当使用 <a href="#series.dimensions">dimensions</a> 给维度定义名称后，<code class="codespan">encode</code> 中可直接引用名称，例如：</p>
-     * <pre><code class="lang-js hljs javascript">series: {
-     *     <span class="hljs-attr">type</span>: <span class="hljs-string">'xxx'</span>,
-     *     <span class="hljs-attr">dimensions</span>: [<span class="hljs-string">'date'</span>, <span class="hljs-string">'open'</span>, <span class="hljs-string">'close'</span>, <span class="hljs-string">'highest'</span>, <span class="hljs-string">'lowest'</span>],
-     *     <span class="hljs-attr">encode</span>: {
-     *         <span class="hljs-attr">x</span>: <span class="hljs-string">'date'</span>,
-     *         <span class="hljs-attr">y</span>: [<span class="hljs-string">'open'</span>, <span class="hljs-string">'close'</span>, <span class="hljs-string">'highest'</span>, <span class="hljs-string">'lowest'</span>]
+     * <pre><code class="lang-ts hljs typescript">series: {
+     *     <span class="hljs-keyword">type</span>: <span class="hljs-string">'xxx'</span>,
+     *     dimensions: [<span class="hljs-string">'date'</span>, <span class="hljs-string">'open'</span>, <span class="hljs-string">'close'</span>, <span class="hljs-string">'highest'</span>, <span class="hljs-string">'lowest'</span>],
+     *     encode: {
+     *         x: <span class="hljs-string">'date'</span>,
+     *         y: [<span class="hljs-string">'open'</span>, <span class="hljs-string">'close'</span>, <span class="hljs-string">'highest'</span>, <span class="hljs-string">'lowest'</span>]
      *     }
      * }
      * </code></pre>
      * <p><code class="codespan">encode</code> 声明的基本结构如下，其中冒号左边是坐标系、标签等特定名称，如 <code class="codespan">'x'</code>, <code class="codespan">'y'</code>, <code class="codespan">'tooltip'</code> 等，冒号右边是数据中的维度名（string 格式）或者维度的序号（number 格式，从 0 开始计数），可以指定一个或多个维度（使用数组）。通常情况下，下面各种信息不需要所有的都写，按需写即可。</p>
      * <p>下面是 encode 支持的属性：</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-comment">// 在任何坐标系和系列中，都支持：</span>
-     * <span class="hljs-attr">encode</span>: {
+     * <pre><code class="lang-ts hljs typescript"><span class="hljs-comment">// 在任何坐标系和系列中，都支持：</span>
+     * encode: {
      *     <span class="hljs-comment">// 使用 “名为 product 的维度” 和 “名为 score 的维度” 的值在 tooltip 中显示</span>
-     *     <span class="hljs-attr">tooltip</span>: [<span class="hljs-string">'product'</span>, <span class="hljs-string">'score'</span>]
+     *     tooltip: [<span class="hljs-string">'product'</span>, <span class="hljs-string">'score'</span>]
      *     <span class="hljs-comment">// 使用第一个维度和第三个维度的维度名连起来作为系列名。（有时候名字比较长，这可以避免在 series.name 重复输入这些名字）</span>
-     *     <span class="hljs-attr">seriesName</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">3</span>],
+     *     seriesName: [<span class="hljs-number">1</span>, <span class="hljs-number">3</span>],
      *     <span class="hljs-comment">// 表示使用第二个维度中的值作为 id。这在使用 setOption 动态更新数据时有用处，可以使新老数据用 id 对应起来，从而能够产生合适的数据更新动画。</span>
-     *     <span class="hljs-attr">itemId</span>: <span class="hljs-number">2</span>,
+     *     itemId: <span class="hljs-number">2</span>,
      *     <span class="hljs-comment">// 指定数据项的名称使用第三个维度在饼图等图表中有用，可以使这个名字显示在图例（legend）中。</span>
-     *     <span class="hljs-attr">itemName</span>: <span class="hljs-number">3</span>,
+     *     itemName: <span class="hljs-number">3</span>,
      *     <span class="hljs-comment">// 指定数据项的组 ID (groupID)，组 ID 会被用于分类数据，并在全局过渡动画中决定如何进行合并和分裂动画，具体见 universalTransition</span>
-     *     <span class="hljs-attr">itemGroupId</span>: <span class="hljs-number">4</span>
+     *     itemGroupId: <span class="hljs-number">4</span>
      * }
      *
      * <span class="hljs-comment">// 直角坐标系（grid/cartesian）特有的属性：</span>
-     * <span class="hljs-attr">encode</span>: {
+     * encode: {
      *     <span class="hljs-comment">// 把 “维度1”、“维度5”、“名为 score 的维度” 映射到 X 轴：</span>
-     *     <span class="hljs-attr">x</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">5</span>, <span class="hljs-string">'score'</span>],
+     *     x: [<span class="hljs-number">1</span>, <span class="hljs-number">5</span>, <span class="hljs-string">'score'</span>],
      *     <span class="hljs-comment">// 把“维度0”映射到 Y 轴。</span>
-     *     <span class="hljs-attr">y</span>: <span class="hljs-number">0</span>
+     *     y: <span class="hljs-number">0</span>
      * }
      *
      * <span class="hljs-comment">// 单轴（singleAxis）特有的属性：</span>
-     * <span class="hljs-attr">encode</span>: {
-     *     <span class="hljs-attr">single</span>: <span class="hljs-number">3</span>
+     * encode: {
+     *     single: <span class="hljs-number">3</span>
      * }
      *
      * <span class="hljs-comment">// 极坐标系（polar）特有的属性：</span>
-     * <span class="hljs-attr">encode</span>: {
-     *     <span class="hljs-attr">radius</span>: <span class="hljs-number">3</span>,
-     *     <span class="hljs-attr">angle</span>: <span class="hljs-number">2</span>
+     * encode: {
+     *     radius: <span class="hljs-number">3</span>,
+     *     angle: <span class="hljs-number">2</span>
      * }
      *
      * <span class="hljs-comment">// 地理坐标系（geo）特有的属性：</span>
-     * <span class="hljs-attr">encode</span>: {
-     *     <span class="hljs-attr">lng</span>: <span class="hljs-number">3</span>,
-     *     <span class="hljs-attr">lat</span>: <span class="hljs-number">2</span>
+     * encode: {
+     *     lng: <span class="hljs-number">3</span>,
+     *     lat: <span class="hljs-number">2</span>
      * }
      *
      * <span class="hljs-comment">// 对于一些没有坐标系的图表，例如饼图、漏斗图等，可以是：</span>
-     * <span class="hljs-attr">encode</span>: {
-     *     <span class="hljs-attr">value</span>: <span class="hljs-number">3</span>
+     * encode: {
+     *     value: <span class="hljs-number">3</span>
      * }
      * </code></pre>
      * <p>这是个更丰富的 <code class="codespan">encode</code> 的<a href="https://echarts.apache.org/examples/zh/view.html?c=dataset-encode1&amp;edit=1&amp;reset=1" target="_blank">示例</a>：</p>
      * <p>特殊地，在 <a href="#series-custom">自定义系列（custom series）</a> 中，<code class="codespan">encode</code> 中轴可以不指定或设置为 <code class="codespan">null/undefined</code>，从而使系列免于受这个轴控制，也就是说，轴的范围（extent）不会受此系列数值的影响，轴被 <a href="#dataZoom">dataZoom</a> 控制时也不会过滤掉这个系列：</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-keyword">var</span> option = {
-     *     <span class="hljs-attr">xAxis</span>: {},
-     *     <span class="hljs-attr">yAxis</span>: {},
-     *     <span class="hljs-attr">dataZoom</span>: [{
-     *         <span class="hljs-attr">xAxisIndex</span>: <span class="hljs-number">0</span>
+     * <pre><code class="lang-ts hljs typescript"><span class="hljs-keyword">var</span> option = {
+     *     xAxis: {},
+     *     yAxis: {},
+     *     dataZoom: [{
+     *         xAxisIndex: <span class="hljs-number">0</span>
      *     }, {
-     *         <span class="hljs-attr">yAxisIndex</span>: <span class="hljs-number">0</span>
+     *         yAxisIndex: <span class="hljs-number">0</span>
      *     }],
-     *     <span class="hljs-attr">series</span>: {
-     *         <span class="hljs-attr">type</span>: <span class="hljs-string">'custom'</span>,
-     *         <span class="hljs-attr">renderItem</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">params, api</span>) </span>{
+     *     series: {
+     *         <span class="hljs-keyword">type</span>: <span class="hljs-string">'custom'</span>,
+     *         renderItem: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">params, api</span>) </span>{
      *             <span class="hljs-keyword">return</span> {
-     *                 <span class="hljs-attr">type</span>: <span class="hljs-string">'circle'</span>,
-     *                 <span class="hljs-attr">shape</span>: {
-     *                     <span class="hljs-attr">cx</span>: <span class="hljs-number">100</span>, <span class="hljs-comment">// x 位置永远为 100</span>
-     *                     <span class="hljs-attr">cy</span>: api.coord([<span class="hljs-number">0</span>, api.value(<span class="hljs-number">0</span>)])[<span class="hljs-number">1</span>],
-     *                     <span class="hljs-attr">r</span>: <span class="hljs-number">30</span>
+     *                 <span class="hljs-keyword">type</span>: <span class="hljs-string">'circle'</span>,
+     *                 shape: {
+     *                     cx: <span class="hljs-number">100</span>, <span class="hljs-comment">// x 位置永远为 100</span>
+     *                     cy: api.coord([<span class="hljs-number">0</span>, api.value(<span class="hljs-number">0</span>)])[<span class="hljs-number">1</span>],
+     *                     r: <span class="hljs-number">30</span>
      *                 },
-     *                 <span class="hljs-attr">style</span>: {
-     *                     <span class="hljs-attr">fill</span>: <span class="hljs-string">'blue'</span>
+     *                 style: {
+     *                     fill: <span class="hljs-string">'blue'</span>
      *                 }
      *             };
      *         },
-     *         <span class="hljs-attr">encode</span>: {
+     *         encode: {
      *             <span class="hljs-comment">// 这样这个系列就不会被 x 轴以及 x</span>
      *             <span class="hljs-comment">// 轴上的 dataZoom 控制了。</span>
-     *             <span class="hljs-attr">x</span>: <span class="hljs-number">-1</span>,
-     *             <span class="hljs-attr">y</span>: <span class="hljs-number">1</span>
+     *             x: <span class="hljs-number">-1</span>,
+     *             y: <span class="hljs-number">1</span>
      *         },
-     *         <span class="hljs-attr">data</span>: [ ... ]
+     *         data: [ ... ]
      *     }
      * };
      * </code></pre>
@@ -1006,8 +1009,8 @@ public class PictorialBarSeries extends Series implements Serializable {
      * <p>注意，如果系列没有指定 <code class="codespan">data</code>，并且 option 有 <a href="#dataset">dataset</a>，那么默认使用第一个 <a href="#dataset">dataset</a>。如果指定了 <code class="codespan">data</code>，则不会再使用 <a href="#dataset">dataset</a>。</p>
      * <p>可以使用 <code class="codespan">series.datasetIndex</code> 指定其他的 <a href="#dataset">dataset</a>。</p>
      * <p>通常来说，数据用一个二维数组表示。如下，每一列被称为一个『维度』。</p>
-     * <pre><code class="lang-js hljs javascript">series: [{
-     *     <span class="hljs-attr">data</span>: [
+     * <pre><code class="lang-ts hljs typescript">series: [{
+     *     data: [
      *         <span class="hljs-comment">// 维度X   维度Y   其他维度 ...</span>
      *         [  <span class="hljs-number">3.4</span>,    <span class="hljs-number">4.5</span>,   <span class="hljs-number">15</span>,   <span class="hljs-number">43</span>],
      *         [  <span class="hljs-number">4.2</span>,    <span class="hljs-number">2.3</span>,   <span class="hljs-number">20</span>,   <span class="hljs-number">91</span>],
@@ -1027,12 +1030,12 @@ public class PictorialBarSeries extends Series implements Serializable {
      * </li>
      * </ul>
      * <p>特别地，当只有一个轴为类目轴（axis.type 为 <code class="codespan">'category'</code>）的时候，数据可以简化用一个一维数组表示。例如：</p>
-     * <pre><code class="lang-js hljs javascript">xAxis: {
-     *     <span class="hljs-attr">data</span>: [<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'n'</span>]
+     * <pre><code class="lang-ts hljs typescript">xAxis: {
+     *     data: [<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'n'</span>]
      * },
-     * <span class="hljs-attr">series</span>: [{
+     * series: [{
      *     <span class="hljs-comment">// 与 xAxis.data 一一对应。</span>
-     *     <span class="hljs-attr">data</span>: [<span class="hljs-number">23</span>,  <span class="hljs-number">44</span>,  <span class="hljs-number">55</span>,  <span class="hljs-number">19</span>]
+     *     data: [<span class="hljs-number">23</span>,  <span class="hljs-number">44</span>,  <span class="hljs-number">55</span>,  <span class="hljs-number">19</span>]
      *     <span class="hljs-comment">// 它其实是下面这种形式的简化：</span>
      *     <span class="hljs-comment">// data: [[0, 23], [1, 44], [2, 55], [3, 19]]</span>
      * }]
@@ -1044,16 +1047,16 @@ public class PictorialBarSeries extends Series implements Serializable {
      * </li>
      * <li><p>当某维度对应于类目轴（axis.type 为 <code class="codespan">'category'</code>）的时候：</p>
      * <p>  其值须为类目的『序数』（从 <code class="codespan">0</code> 开始）或者类目的『字符串值』。例如：</p>
-     * <pre><code class="lang-js hljs javascript">  xAxis: {
-     *       <span class="hljs-attr">type</span>: <span class="hljs-string">'category'</span>,
-     *       <span class="hljs-attr">data</span>: [<span class="hljs-string">'星期一'</span>, <span class="hljs-string">'星期二'</span>, <span class="hljs-string">'星期三'</span>, <span class="hljs-string">'星期四'</span>]
+     * <pre><code class="lang-ts hljs typescript">  xAxis: {
+     *       <span class="hljs-keyword">type</span>: <span class="hljs-string">'category'</span>,
+     *       data: [<span class="hljs-string">'星期一'</span>, <span class="hljs-string">'星期二'</span>, <span class="hljs-string">'星期三'</span>, <span class="hljs-string">'星期四'</span>]
      *   },
-     *   <span class="hljs-attr">yAxis</span>: {
-     *       <span class="hljs-attr">type</span>: <span class="hljs-string">'category'</span>,
-     *       <span class="hljs-attr">data</span>: [<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'n'</span>, <span class="hljs-string">'p'</span>, <span class="hljs-string">'q'</span>]
+     *   yAxis: {
+     *       <span class="hljs-keyword">type</span>: <span class="hljs-string">'category'</span>,
+     *       data: [<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'n'</span>, <span class="hljs-string">'p'</span>, <span class="hljs-string">'q'</span>]
      *   },
-     *   <span class="hljs-attr">series</span>: [{
-     *       <span class="hljs-attr">data</span>: [
+     *   series: [{
+     *       data: [
      *           <span class="hljs-comment">// xAxis    yAxis</span>
      *           [  <span class="hljs-number">0</span>,        <span class="hljs-number">0</span>,    <span class="hljs-number">2</span>  ], <span class="hljs-comment">// 意思是此点位于 xAxis: '星期一', yAxis: 'a'。</span>
      *           [  <span class="hljs-string">'星期四'</span>,  <span class="hljs-number">2</span>,    <span class="hljs-number">1</span>  ], <span class="hljs-comment">// 意思是此点位于 xAxis: '星期四', yAxis: 'm'。</span>
@@ -1090,15 +1093,15 @@ public class PictorialBarSeries extends Series implements Serializable {
      * </ul>
      * <p><strong>当需要对个别数据进行个性化定义时：</strong></p>
      * <p>数组项可用对象，其中的 <code class="codespan">value</code> 像表示具体的数值，如：</p>
-     * <pre><code class="lang-js hljs javascript">[
+     * <pre><code class="lang-ts hljs typescript">[
      *     <span class="hljs-number">12</span>,
      *     <span class="hljs-number">34</span>,
      *     {
-     *         <span class="hljs-attr">value</span> : <span class="hljs-number">56</span>,
+     *         value : <span class="hljs-number">56</span>,
      *         <span class="hljs-comment">//自定义标签样式，仅对该数据项有效</span>
-     *         <span class="hljs-attr">label</span>: {},
+     *         label: {},
      *         <span class="hljs-comment">//自定义特殊 itemStyle，仅对该数据项有效</span>
-     *         <span class="hljs-attr">itemStyle</span>:{}
+     *         itemStyle:{}
      *     },
      *     <span class="hljs-number">10</span>
      * ]
@@ -1107,9 +1110,9 @@ public class PictorialBarSeries extends Series implements Serializable {
      *     [<span class="hljs-number">12</span>, <span class="hljs-number">33</span>],
      *     [<span class="hljs-number">34</span>, <span class="hljs-number">313</span>],
      *     {
-     *         <span class="hljs-attr">value</span>: [<span class="hljs-number">56</span>, <span class="hljs-number">44</span>],
-     *         <span class="hljs-attr">label</span>: {},
-     *         <span class="hljs-attr">itemStyle</span>:{}
+     *         value: [<span class="hljs-number">56</span>, <span class="hljs-number">44</span>],
+     *         label: {},
+     *         itemStyle:{}
      *     },
      *     [<span class="hljs-number">10</span>, <span class="hljs-number">33</span>]
      * ]
@@ -1192,7 +1195,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
      * <p>初始动画的时长，支持回调函数，可以通过每个数据返回不同的时长实现更戏剧的初始动画效果：</p>
-     * <pre><code class="lang-js hljs javascript">animationDuration: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">animationDuration: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
      *     <span class="hljs-comment">// 越往后的数据时长越大</span>
      *     <span class="hljs-keyword">return</span> idx * <span class="hljs-number">100</span>;
      * }
@@ -1214,7 +1217,7 @@ public class PictorialBarSeries extends Series implements Serializable {
      * <br/>描述:
      * <p>数据更新动画的时长。</p>
      * <p>支持回调函数，可以通过每个数据返回不同的时长实现更戏剧的更新动画效果：</p>
-     * <pre><code class="lang-js hljs javascript">animationDurationUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">animationDurationUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
      *     <span class="hljs-comment">// 越往后的数据时长越大</span>
      *     <span class="hljs-keyword">return</span> idx * <span class="hljs-number">100</span>;
      * }

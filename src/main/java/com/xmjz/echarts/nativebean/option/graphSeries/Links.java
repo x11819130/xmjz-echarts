@@ -12,12 +12,12 @@ import java.io.Serializable;
  * <br/>js类型: ["Array"]
  * <br/>描述:
  * <p>节点间的关系数据。示例：</p>
- * <pre><code class="lang-js hljs javascript">links: [{
- *     <span class="hljs-attr">source</span>: <span class="hljs-string">'n1'</span>,
- *     <span class="hljs-attr">target</span>: <span class="hljs-string">'n2'</span>
+ * <pre><code class="lang-ts hljs typescript">links: [{
+ *     source: <span class="hljs-string">'n1'</span>,
+ *     target: <span class="hljs-string">'n2'</span>
  * }, {
- *     <span class="hljs-attr">source</span>: <span class="hljs-string">'n2'</span>,
- *     <span class="hljs-attr">target</span>: <span class="hljs-string">'n3'</span>
+ *     source: <span class="hljs-string">'n2'</span>,
+ *     target: <span class="hljs-string">'n3'</span>
  * }]
  * </code></pre>
  *

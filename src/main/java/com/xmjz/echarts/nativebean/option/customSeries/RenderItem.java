@@ -12,35 +12,35 @@ import java.io.Serializable;
  * <br/>js类型: ["Function"]
  * <br/>描述:
  * <p>custom 系列需要开发者自己提供图形渲染的逻辑。这个渲染逻辑一般命名为 <a href="#series-custom.renderItem">renderItem</a>。例如：</p>
- * <pre><code class="lang-js hljs javascript"><span class="hljs-keyword">var</span> option = {
+ * <pre><code class="lang-ts hljs typescript"><span class="hljs-keyword">var</span> option = {
  *     ...,
- *     <span class="hljs-attr">series</span>: [{
- *         <span class="hljs-attr">type</span>: <span class="hljs-string">'custom'</span>,
- *         <span class="hljs-attr">renderItem</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">params, api</span>) </span>{
+ *     series: [{
+ *         <span class="hljs-keyword">type</span>: <span class="hljs-string">'custom'</span>,
+ *         renderItem: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">params, api</span>) </span>{
  *             <span class="hljs-keyword">var</span> categoryIndex = api.value(<span class="hljs-number">0</span>);
  *             <span class="hljs-keyword">var</span> start = api.coord([api.value(<span class="hljs-number">1</span>), categoryIndex]);
  *             <span class="hljs-keyword">var</span> end = api.coord([api.value(<span class="hljs-number">2</span>), categoryIndex]);
  *             <span class="hljs-keyword">var</span> height = api.size([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>])[<span class="hljs-number">1</span>] * <span class="hljs-number">0.6</span>;
  *
  *             <span class="hljs-keyword">var</span> rectShape = echarts.graphic.clipRectByRect({
- *                 <span class="hljs-attr">x</span>: start[<span class="hljs-number">0</span>],
- *                 <span class="hljs-attr">y</span>: start[<span class="hljs-number">1</span>] - height / <span class="hljs-number">2</span>,
- *                 <span class="hljs-attr">width</span>: end[<span class="hljs-number">0</span>] - start[<span class="hljs-number">0</span>],
- *                 <span class="hljs-attr">height</span>: height
+ *                 x: start[<span class="hljs-number">0</span>],
+ *                 y: start[<span class="hljs-number">1</span>] - height / <span class="hljs-number">2</span>,
+ *                 width: end[<span class="hljs-number">0</span>] - start[<span class="hljs-number">0</span>],
+ *                 height: height
  *             }, {
- *                 <span class="hljs-attr">x</span>: params.coordSys.x,
- *                 <span class="hljs-attr">y</span>: params.coordSys.y,
- *                 <span class="hljs-attr">width</span>: params.coordSys.width,
- *                 <span class="hljs-attr">height</span>: params.coordSys.height
+ *                 x: params.coordSys.x,
+ *                 y: params.coordSys.y,
+ *                 width: params.coordSys.width,
+ *                 height: params.coordSys.height
  *             });
  *
  *             <span class="hljs-keyword">return</span> rectShape &amp;&amp; {
- *                 <span class="hljs-attr">type</span>: <span class="hljs-string">'rect'</span>,
- *                 <span class="hljs-attr">shape</span>: rectShape,
- *                 <span class="hljs-attr">style</span>: api.style()
+ *                 <span class="hljs-keyword">type</span>: <span class="hljs-string">'rect'</span>,
+ *                 shape: rectShape,
+ *                 style: api.style()
  *             };
  *         },
- *         <span class="hljs-attr">data</span>: data
+ *         data: data
  *     }]
  * }
  * </code></pre>
@@ -83,33 +83,33 @@ public class RenderItem implements Serializable {
      * <p>图形元素。每个图形元素是一个 object。详细信息参见：<a href="#graphic.elements">graphic</a>。（width\height\top\bottom 不支持）</p>
      * <p>如果什么都不渲染，可以不返回任何东西。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-comment">// 单独一个矩形</span>
+     * <pre><code class="lang-ts hljs typescript"><span class="hljs-comment">// 单独一个矩形</span>
      * {
-     *     <span class="hljs-attr">type</span>: <span class="hljs-string">'rect'</span>,
-     *     <span class="hljs-attr">shape</span>: {
-     *         <span class="hljs-attr">x</span>: x, <span class="hljs-attr">y</span>: y, <span class="hljs-attr">width</span>: width, <span class="hljs-attr">height</span>: height
+     *     <span class="hljs-keyword">type</span>: <span class="hljs-string">'rect'</span>,
+     *     shape: {
+     *         x: x, y: y, width: width, height: height
      *     },
-     *     <span class="hljs-attr">style</span>: api.style()
+     *     style: api.style()
      * }
      * </code></pre>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-comment">// 一组图形元素</span>
+     * <pre><code class="lang-ts hljs typescript"><span class="hljs-comment">// 一组图形元素</span>
      * {
-     *     <span class="hljs-attr">type</span>: <span class="hljs-string">'group'</span>,
+     *     <span class="hljs-keyword">type</span>: <span class="hljs-string">'group'</span>,
      *     <span class="hljs-comment">// 如果 diffChildrenByName 设为 true，则会使用 child.name 进行 diff，</span>
      *     <span class="hljs-comment">// 从而能有更好的过度动画，但是降低性能。缺省为 false。</span>
      *     <span class="hljs-comment">// diffChildrenByName: true,</span>
-     *     <span class="hljs-attr">children</span>: [{
-     *         <span class="hljs-attr">type</span>: <span class="hljs-string">'circle'</span>,
-     *         <span class="hljs-attr">shape</span>: {
-     *             <span class="hljs-attr">cx</span>: cx, <span class="hljs-attr">cy</span>: cy, <span class="hljs-attr">r</span>: r
+     *     children: [{
+     *         <span class="hljs-keyword">type</span>: <span class="hljs-string">'circle'</span>,
+     *         shape: {
+     *             cx: cx, cy: cy, r: r
      *         },
-     *         <span class="hljs-attr">style</span>: api.style()
+     *         style: api.style()
      *     }, {
-     *         <span class="hljs-attr">type</span>: <span class="hljs-string">'line'</span>,
-     *         <span class="hljs-attr">shape</span>: {
-     *             <span class="hljs-attr">x1</span>: x1, <span class="hljs-attr">y1</span>: y1, <span class="hljs-attr">x2</span>: x2, <span class="hljs-attr">y2</span>: y2
+     *         <span class="hljs-keyword">type</span>: <span class="hljs-string">'line'</span>,
+     *         shape: {
+     *             x1: x1, y1: y1, x2: x2, y2: y2
      *         },
-     *         <span class="hljs-attr">style</span>: api.style()
+     *         style: api.style()
      *     }]
      * }
      * </code></pre>

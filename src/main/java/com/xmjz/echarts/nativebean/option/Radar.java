@@ -92,13 +92,13 @@ public class Radar implements Serializable {
      */
     private Integer startAngle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.name">https://echarts.apache.org/zh/option.html#radar.name</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.axisName">https://echarts.apache.org/zh/option.html#radar.axisName</a>
      * <br/>默认值: true
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>雷达图每个指示器名称的配置项。</p>
      */
-    private Name name;
+    private AxisName axisName;
     /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#radar.nameGap">https://echarts.apache.org/zh/option.html#radar.nameGap</a>
      * <br/>默认值: 15
@@ -146,14 +146,14 @@ public class Radar implements Serializable {
      * <br/>描述:
      * <p>坐标轴的标签是否响应和触发鼠标事件，默认不响应。</p>
      * <p>事件参数如下：</p>
-     * <pre><code class="lang-js hljs javascript">{
+     * <pre><code class="lang-ts hljs typescript">{
      *     <span class="hljs-comment">// 组件类型，xAxis, yAxis, radiusAxis, angleAxis</span>
      *     <span class="hljs-comment">// 对应组件类型都会有一个属性表示组件的 index，例如 xAxis 就是 xAxisIndex</span>
-     *     <span class="hljs-attr">componentType</span>: string,
+     *     componentType: <span class="hljs-built_in">string</span>,
      *     <span class="hljs-comment">// 未格式化过的刻度值, 点击刻度标签有效</span>
-     *     <span class="hljs-attr">value</span>: <span class="hljs-string">''</span>,
+     *     value: <span class="hljs-string">''</span>,
      *     <span class="hljs-comment">// 坐标轴名称, 点击坐标轴名称有效</span>
-     *     <span class="hljs-attr">name</span>: <span class="hljs-string">''</span>
+     *     name: <span class="hljs-string">''</span>
      * }
      * </code></pre>
      */
@@ -204,13 +204,13 @@ public class Radar implements Serializable {
      * <br/>js类型: ["Array"]
      * <br/>描述:
      * <p>雷达图的指示器，用来指定雷达图中的多个变量（维度），如下示例。</p>
-     * <pre><code class="lang-js hljs javascript">indicator: [
-     *    { <span class="hljs-attr">name</span>: <span class="hljs-string">'销售（sales）'</span>, <span class="hljs-attr">max</span>: <span class="hljs-number">6500</span>},
-     *    { <span class="hljs-attr">name</span>: <span class="hljs-string">'管理（Administration）'</span>, <span class="hljs-attr">max</span>: <span class="hljs-number">16000</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">'red'</span>}, <span class="hljs-comment">// 标签设置为红色</span>
-     *    { <span class="hljs-attr">name</span>: <span class="hljs-string">'信息技术（Information Techology）'</span>, <span class="hljs-attr">max</span>: <span class="hljs-number">30000</span>},
-     *    { <span class="hljs-attr">name</span>: <span class="hljs-string">'客服（Customer Support）'</span>, <span class="hljs-attr">max</span>: <span class="hljs-number">38000</span>},
-     *    { <span class="hljs-attr">name</span>: <span class="hljs-string">'研发（Development）'</span>, <span class="hljs-attr">max</span>: <span class="hljs-number">52000</span>},
-     *    { <span class="hljs-attr">name</span>: <span class="hljs-string">'市场（Marketing）'</span>, <span class="hljs-attr">max</span>: <span class="hljs-number">25000</span>}
+     * <pre><code class="lang-ts hljs typescript">indicator: [
+     *    { name: <span class="hljs-string">'销售（sales）'</span>, max: <span class="hljs-number">6500</span>},
+     *    { name: <span class="hljs-string">'管理（Administration）'</span>, max: <span class="hljs-number">16000</span>, color: <span class="hljs-string">'red'</span>}, <span class="hljs-comment">// 标签设置为红色</span>
+     *    { name: <span class="hljs-string">'信息技术（Information Techology）'</span>, max: <span class="hljs-number">30000</span>},
+     *    { name: <span class="hljs-string">'客服（Customer Support）'</span>, max: <span class="hljs-number">38000</span>},
+     *    { name: <span class="hljs-string">'研发（Development）'</span>, max: <span class="hljs-number">52000</span>},
+     *    { name: <span class="hljs-string">'市场（Marketing）'</span>, max: <span class="hljs-number">25000</span>}
      * ]
      * </code></pre>
      */

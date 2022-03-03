@@ -15,10 +15,10 @@ import java.util.List;
  * <br/>描述:
  * <p><a href="https://en.wikipedia.org/wiki/Pie_chart#Ring_chart_/_Sunburst_chart_/_Multilevel_pie_chart" target="_blank">旭日图（Sunburst）</a>由多层的环形图组成，在数据结构上，内圈是外圈的父节点。因此，它既能像<a href="#series-pie">饼图</a>一样表现局部和整体的占比，又能像<a href="#series-treemap">矩形树图</a>一样表现层级关系。</p>
  * <p><strong>示例：</strong></p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=sunburst-monochrome&amp;edit=1&amp;reset=1" width="700" height="500" data-ll-timeout="17"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=sunburst-monochrome&amp;edit=1&amp;reset=1" width="700" height="500" data-ll-timeout="30"></iframe>
  * <p>
  * <p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=sunburst-drink&amp;edit=1&amp;reset=1" width="700" height="700" data-ll-timeout="18"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=sunburst-drink&amp;edit=1&amp;reset=1" width="700" height="700" data-ll-timeout="31"></iframe>
  *
  *
  * <p><strong>数据下钻</strong></p>
@@ -110,36 +110,36 @@ public class SunburstSeries extends Series implements Serializable {
      * <br/>js类型: ["Array"]
      * <br/>描述:
      * <p><a href="#series-sunburst.data">series-sunburst.data</a> 的数据格式是树状的，例如：</p>
-     * <pre><code class="lang-js hljs javascript">[{
-     *     <span class="hljs-attr">name</span>: <span class="hljs-string">'parent1'</span>,
-     *     <span class="hljs-attr">value</span>: <span class="hljs-number">10</span>,          <span class="hljs-comment">// 可以不写父元素的 value，则为子元素之和；</span>
+     * <pre><code class="lang-ts hljs typescript">[{
+     *     name: <span class="hljs-string">'parent1'</span>,
+     *     value: <span class="hljs-number">10</span>,          <span class="hljs-comment">// 可以不写父元素的 value，则为子元素之和；</span>
      *                         <span class="hljs-comment">// 如果写了，并且大于子元素之和，可以用来表示还有其他子元素未显示</span>
-     *     <span class="hljs-attr">children</span>: [{
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">5</span>,
-     *         <span class="hljs-attr">name</span>: <span class="hljs-string">'child1'</span>,
-     *         <span class="hljs-attr">children</span>: [{
-     *             <span class="hljs-attr">value</span>: <span class="hljs-number">2</span>,
-     *             <span class="hljs-attr">name</span>: <span class="hljs-string">'grandchild1'</span>,
-     *             <span class="hljs-attr">itemStyle</span>: {
+     *     children: [{
+     *         value: <span class="hljs-number">5</span>,
+     *         name: <span class="hljs-string">'child1'</span>,
+     *         children: [{
+     *             value: <span class="hljs-number">2</span>,
+     *             name: <span class="hljs-string">'grandchild1'</span>,
+     *             itemStyle: {
      *                 <span class="hljs-comment">// 每个数据可以有自己的样式，覆盖 series.itemStyle 和 level.itemStyle</span>
      *             },
-     *             <span class="hljs-attr">label</span>: {
+     *             label: {
      *                 <span class="hljs-comment">// 标签样式，同上</span>
      *             }
      *         }]
      *     }, {
-     *         <span class="hljs-attr">value</span>: <span class="hljs-number">3</span>,
-     *         <span class="hljs-attr">name</span>: <span class="hljs-string">'child2'</span>
+     *         value: <span class="hljs-number">3</span>,
+     *         name: <span class="hljs-string">'child2'</span>
      *     }],
-     *     <span class="hljs-attr">itemStyle</span>: {
+     *     itemStyle: {
      *         <span class="hljs-comment">// parent1 的图形样式，不会被后代继承</span>
      *     },
-     *     <span class="hljs-attr">label</span>: {
+     *     label: {
      *         <span class="hljs-comment">// parent1 的标签样式，不会被后代继承</span>
      *     }
      * }, {
-     *     <span class="hljs-attr">name</span>: <span class="hljs-string">'parent2'</span>,
-     *     <span class="hljs-attr">value</span>: <span class="hljs-number">4</span>
+     *     name: <span class="hljs-string">'parent2'</span>,
+     *     value: <span class="hljs-number">4</span>
      * }]
      * </code></pre>
      */
@@ -198,7 +198,7 @@ public class SunburstSeries extends Series implements Serializable {
      * <br/>js类型: ["string","Function"]
      * <br/>描述:
      * <p>扇形块根据数据 <a href="#series-sunburst.data.value"><code class="codespan">value</code></a> 的排序方式，如果未指定 <code class="codespan">value</code>，则其值为子元素 <code class="codespan">value</code> 之和。默认值 <code class="codespan">'desc'</code> 表示降序排序；还可以设置为 <code class="codespan">'asc'</code> 表示升序排序；<code class="codespan">null</code> 表示不排序，使用原始数据的顺序；或者用回调函数进行排列：</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">nodeA, nodeB</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript"><span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">nodeA, nodeB</span>) </span>{
      *     <span class="hljs-keyword">return</span> nodeA.getValue() - nodeB.getValue();
      * }
      * </code></pre>
@@ -246,7 +246,10 @@ public class SunburstSeries extends Series implements Serializable {
      * </blockquote>
      *
      *
-     * <p>选中模式的配置，表示是否支持多个选中，默认关闭，支持布尔值和字符串，字符串取值可选<code class="codespan">'single'</code>，<code class="codespan">'multiple'</code>，分别表示单选还是多选。</p>
+     * <p>选中模式的配置，表示是否支持多个选中，默认关闭，支持布尔值和字符串，字符串取值可选<code class="codespan">'single'</code>，<code class="codespan">'multiple'</code>，<code class="codespan">'series'</code> 分别表示单选，多选以及选择整个系列。</p>
+     * <blockquote>
+     * <p>从 v5.3.0 开始支持 <code class="codespan">'series'</code>。</p>
+     * </blockquote>
      */
     private Object selectedMode;
     /**
@@ -257,19 +260,19 @@ public class SunburstSeries extends Series implements Serializable {
      * <p><strong>多层配置</strong></p>
      * <p>旭日图是一种有层次的结构，为了方便同一层样式的配置，我们提供了 levels 配置项。它是一个数组，其中的第 0 项表示数据下钻后返回上级的图形，其后的每一项分别表示从圆心向外层的层级。</p>
      * <p>例如，假设我们没有数据下钻功能，并且希望将最内层的扇形块的颜色设为红色，文字设为蓝色，可以这样设置：</p>
-     * <pre><code class="lang-js hljs javascript">series: {
+     * <pre><code class="lang-ts hljs typescript">series: {
      *     <span class="hljs-comment">// ...</span>
-     *     <span class="hljs-attr">levels</span>: [
+     *     levels: [
      *         {
      *             <span class="hljs-comment">// 留给数据下钻点的空白配置</span>
      *         },
      *         {
      *             <span class="hljs-comment">// 最靠内测的第一层</span>
-     *             <span class="hljs-attr">itemStyle</span>: {
-     *                 <span class="hljs-attr">color</span>: <span class="hljs-string">'red'</span>
+     *             itemStyle: {
+     *                 color: <span class="hljs-string">'red'</span>
      *             },
-     *             <span class="hljs-attr">label</span>: {
-     *                 <span class="hljs-attr">color</span>: <span class="hljs-string">'blue'</span>
+     *             label: {
+     *                 color: <span class="hljs-string">'blue'</span>
      *             }
      *         },
      *         {
@@ -302,7 +305,7 @@ public class SunburstSeries extends Series implements Serializable {
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
      * <p>初始动画的时长，支持回调函数，可以通过每个数据返回不同的时长实现更戏剧的初始动画效果：</p>
-     * <pre><code class="lang-js hljs javascript">animationDuration: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">animationDuration: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
      *     <span class="hljs-comment">// 越往后的数据时长越大</span>
      *     <span class="hljs-keyword">return</span> idx * <span class="hljs-number">100</span>;
      * }
@@ -324,7 +327,7 @@ public class SunburstSeries extends Series implements Serializable {
      * <br/>描述:
      * <p>初始动画的延迟，支持回调函数，可以通过每个数据返回不同的 delay 时间实现更戏剧的初始动画效果。</p>
      * <p>如下示例：</p>
-     * <pre><code class="lang-js hljs javascript">animationDelay: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">animationDelay: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
      *     <span class="hljs-comment">// 越往后的数据延迟越大</span>
      *     <span class="hljs-keyword">return</span> idx * <span class="hljs-number">100</span>;
      * }
@@ -339,7 +342,7 @@ public class SunburstSeries extends Series implements Serializable {
      * <br/>描述:
      * <p>数据更新动画的时长。</p>
      * <p>支持回调函数，可以通过每个数据返回不同的时长实现更戏剧的更新动画效果：</p>
-     * <pre><code class="lang-js hljs javascript">animationDurationUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">animationDurationUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
      *     <span class="hljs-comment">// 越往后的数据时长越大</span>
      *     <span class="hljs-keyword">return</span> idx * <span class="hljs-number">100</span>;
      * }
@@ -361,7 +364,7 @@ public class SunburstSeries extends Series implements Serializable {
      * <br/>描述:
      * <p>数据更新动画的延迟，支持回调函数，可以通过每个数据返回不同的 delay 时间实现更戏剧的更新动画效果。</p>
      * <p>如下示例：</p>
-     * <pre><code class="lang-js hljs javascript">animationDelayUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">animationDelayUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
      *     <span class="hljs-comment">// 越往后的数据延迟越大</span>
      *     <span class="hljs-keyword">return</span> idx * <span class="hljs-number">100</span>;
      * }

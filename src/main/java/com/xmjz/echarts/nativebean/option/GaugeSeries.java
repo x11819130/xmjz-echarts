@@ -16,7 +16,7 @@ import java.util.List;
  * <br/>描述:
  * <p><strong>仪表盘</strong></p>
  * <p><strong>示例：</strong></p>
- * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=gauge&amp;reset=1&amp;edit=1" width="600" height="500" data-ll-timeout="16"></iframe>
+ * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=gauge&amp;reset=1&amp;edit=1" width="600" height="500" data-ll-timeout="26"></iframe>
  *
  * @author auto
  */
@@ -144,35 +144,35 @@ public class GaugeSeries extends Series implements Serializable {
      * <br/>js类型: ["Array"]
      * <br/>描述:
      * <p>系列中的数据内容数组。数组项可以为单个数值，如：</p>
-     * <pre><code class="lang-js hljs javascript">[<span class="hljs-number">12</span>, <span class="hljs-number">34</span>, <span class="hljs-number">56</span>, <span class="hljs-number">10</span>, <span class="hljs-number">23</span>]
+     * <pre><code class="lang-ts hljs typescript">[<span class="hljs-number">12</span>, <span class="hljs-number">34</span>, <span class="hljs-number">56</span>, <span class="hljs-number">10</span>, <span class="hljs-number">23</span>]
      * </code></pre>
      * <p>如果需要在数据中加入其它维度给 <a href="#visualMap">visualMap</a> 组件用来映射到颜色等其它图形属性。每个数据项也可以是数组，如：</p>
-     * <pre><code class="lang-js hljs javascript">[[<span class="hljs-number">12</span>, <span class="hljs-number">14</span>], [<span class="hljs-number">34</span>, <span class="hljs-number">50</span>], [<span class="hljs-number">56</span>, <span class="hljs-number">30</span>], [<span class="hljs-number">10</span>, <span class="hljs-number">15</span>], [<span class="hljs-number">23</span>, <span class="hljs-number">10</span>]]
+     * <pre><code class="lang-ts hljs typescript">[[<span class="hljs-number">12</span>, <span class="hljs-number">14</span>], [<span class="hljs-number">34</span>, <span class="hljs-number">50</span>], [<span class="hljs-number">56</span>, <span class="hljs-number">30</span>], [<span class="hljs-number">10</span>, <span class="hljs-number">15</span>], [<span class="hljs-number">23</span>, <span class="hljs-number">10</span>]]
      * </code></pre>
      * <p>这时候可以将每项数组中的第二个值指定给 <a href="#visualMap">visualMap</a> 组件。</p>
      * <p>更多时候我们需要指定每个数据项的名称，这时候需要每个项为一个对象：</p>
-     * <pre><code class="lang-js hljs javascript">[{
+     * <pre><code class="lang-ts hljs typescript">[{
      *     <span class="hljs-comment">// 数据项的名称</span>
-     *     <span class="hljs-attr">name</span>: <span class="hljs-string">'数据1'</span>,
+     *     name: <span class="hljs-string">'数据1'</span>,
      *     <span class="hljs-comment">// 数据项值8</span>
-     *     <span class="hljs-attr">value</span>: <span class="hljs-number">10</span>
+     *     value: <span class="hljs-number">10</span>
      * }, {
-     *     <span class="hljs-attr">name</span>: <span class="hljs-string">'数据2'</span>,
-     *     <span class="hljs-attr">value</span>: <span class="hljs-number">20</span>
+     *     name: <span class="hljs-string">'数据2'</span>,
+     *     value: <span class="hljs-number">20</span>
      * }]
      * </code></pre>
      * <p>需要对个别内容指定进行个性化定义时：</p>
-     * <pre><code class="lang-js hljs javascript">[{
-     *     <span class="hljs-attr">name</span>: <span class="hljs-string">'数据1'</span>,
-     *     <span class="hljs-attr">value</span>: <span class="hljs-number">10</span>
+     * <pre><code class="lang-ts hljs typescript">[{
+     *     name: <span class="hljs-string">'数据1'</span>,
+     *     value: <span class="hljs-number">10</span>
      * }, {
      *     <span class="hljs-comment">// 数据项名称</span>
-     *     <span class="hljs-attr">name</span>: <span class="hljs-string">'数据2'</span>,
-     *     <span class="hljs-attr">value</span> : <span class="hljs-number">56</span>,
+     *     name: <span class="hljs-string">'数据2'</span>,
+     *     value : <span class="hljs-number">56</span>,
      *     <span class="hljs-comment">//自定义特殊 tooltip，仅对该数据项有效</span>
-     *     <span class="hljs-attr">tooltip</span>:{},
+     *     tooltip:{},
      *     <span class="hljs-comment">//自定义特殊itemStyle，仅对该item有效</span>
-     *     <span class="hljs-attr">itemStyle</span>:{}
+     *     itemStyle:{}
      * }]
      * </code></pre>
      */
@@ -349,7 +349,7 @@ public class GaugeSeries extends Series implements Serializable {
      * <br/>js类型: ["number","Function"]
      * <br/>描述:
      * <p>初始动画的时长，支持回调函数，可以通过每个数据返回不同的时长实现更戏剧的初始动画效果：</p>
-     * <pre><code class="lang-js hljs javascript">animationDuration: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">animationDuration: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
      *     <span class="hljs-comment">// 越往后的数据时长越大</span>
      *     <span class="hljs-keyword">return</span> idx * <span class="hljs-number">100</span>;
      * }
@@ -371,7 +371,7 @@ public class GaugeSeries extends Series implements Serializable {
      * <br/>描述:
      * <p>初始动画的延迟，支持回调函数，可以通过每个数据返回不同的 delay 时间实现更戏剧的初始动画效果。</p>
      * <p>如下示例：</p>
-     * <pre><code class="lang-js hljs javascript">animationDelay: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">animationDelay: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
      *     <span class="hljs-comment">// 越往后的数据延迟越大</span>
      *     <span class="hljs-keyword">return</span> idx * <span class="hljs-number">100</span>;
      * }
@@ -386,7 +386,7 @@ public class GaugeSeries extends Series implements Serializable {
      * <br/>描述:
      * <p>数据更新动画的时长。</p>
      * <p>支持回调函数，可以通过每个数据返回不同的时长实现更戏剧的更新动画效果：</p>
-     * <pre><code class="lang-js hljs javascript">animationDurationUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">animationDurationUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
      *     <span class="hljs-comment">// 越往后的数据时长越大</span>
      *     <span class="hljs-keyword">return</span> idx * <span class="hljs-number">100</span>;
      * }
@@ -408,7 +408,7 @@ public class GaugeSeries extends Series implements Serializable {
      * <br/>描述:
      * <p>数据更新动画的延迟，支持回调函数，可以通过每个数据返回不同的 delay 时间实现更戏剧的更新动画效果。</p>
      * <p>如下示例：</p>
-     * <pre><code class="lang-js hljs javascript">animationDelayUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
+     * <pre><code class="lang-ts hljs typescript">animationDelayUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">idx</span>) </span>{
      *     <span class="hljs-comment">// 越往后的数据延迟越大</span>
      *     <span class="hljs-keyword">return</span> idx * <span class="hljs-number">100</span>;
      * }

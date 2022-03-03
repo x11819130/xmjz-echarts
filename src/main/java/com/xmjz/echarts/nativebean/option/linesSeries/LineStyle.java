@@ -27,7 +27,7 @@ public class LineStyle implements Serializable {
      * <br/>描述:
      * <p>线的颜色。 默认从<a href="#color">option.color 调色盘</a> 获取颜色。</p>
      * <p>支持使用回调函数。回调函数格式如下：</p>
-     * <pre><code class="lang-js hljs javascript">(params: <span class="hljs-built_in">Object</span>) =&gt; Color
+     * <pre><code class="lang-ts hljs typescript">(params: <span class="hljs-built_in">Object</span>) =&gt; Color
      * </code></pre>
      * <p>传入的是数据项 <code class="codespan">seriesIndex</code>, <code class="codespan">dataIndex</code>, <code class="codespan">data</code>, <code class="codespan">value</code> 等各个参数。</p>
      * <blockquote>
@@ -59,11 +59,11 @@ public class LineStyle implements Serializable {
      * <code class="codespan">dashOffset</code>
      *  可实现更灵活的虚线效果。</p>
      * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">{
+     * <pre><code class="lang-ts hljs typescript">{
      *
-     * <span class="hljs-attr">type</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
+     * <span class="hljs-keyword">type</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
      *
-     * <span class="hljs-attr">dashOffset</span>: <span class="hljs-number">5</span>
+     * dashOffset: <span class="hljs-number">5</span>
      * }
      * </code></pre>
      */
@@ -151,9 +151,9 @@ public class LineStyle implements Serializable {
      * <br/>描述:
      * <p>图形阴影的模糊大小。该属性配合 <code class="codespan">shadowColor</code>,<code class="codespan">shadowOffsetX</code>, <code class="codespan">shadowOffsetY</code> 一起设置图形的阴影效果。</p>
      * <p>示例：</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">shadowColor</span>: <span class="hljs-string">'rgba(0, 0, 0, 0.5)'</span>,
-     *     <span class="hljs-attr">shadowBlur</span>: <span class="hljs-number">10</span>
+     * <pre><code class="lang-ts hljs typescript">{
+     *     shadowColor: <span class="hljs-string">'rgba(0, 0, 0, 0.5)'</span>,
+     *     shadowBlur: <span class="hljs-number">10</span>
      * }
      * </code></pre>
      */

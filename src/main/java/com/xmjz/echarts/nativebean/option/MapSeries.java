@@ -71,13 +71,13 @@ public class MapSeries extends Series implements Serializable {
      * <br/>描述:
      * <p>使用 <a href="api.html#echarts.registerMap" target="_blank">registerMap</a> 注册的地图名称。</p>
      * <p><strong>geoJSON 引入示例</strong></p>
-     * <pre><code class="lang-js hljs javascript">$.<span class="hljs-keyword">get</span>('map/china_geo.json', function (geoJson) {
-     *     echarts.registerMap(<span class="hljs-string">'china'</span>, {<span class="hljs-attr">geoJSON</span>: geoJson});
+     * <pre><code class="lang-ts hljs typescript">$.<span class="hljs-keyword">get</span>(<span class="hljs-string">'map/china_geo.json'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">geoJson</span>) </span>{
+     *     echarts.registerMap(<span class="hljs-string">'china'</span>, {geoJSON: geoJson});
      *     <span class="hljs-keyword">var</span> chart = echarts.init(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'main'</span>));
      *     chart.setOption({
-     *         <span class="hljs-attr">series</span>: [{
-     *             <span class="hljs-attr">type</span>: <span class="hljs-string">'map'</span>,
-     *             <span class="hljs-attr">map</span>: <span class="hljs-string">'china'</span>,
+     *         series: [{
+     *             <span class="hljs-keyword">type</span>: <span class="hljs-string">'map'</span>,
+     *             map: <span class="hljs-string">'china'</span>,
      *             ...
      *         }]
      *     });
@@ -86,13 +86,13 @@ public class MapSeries extends Series implements Serializable {
      * <p>也参见示例 <a href="https://echarts.apache.org/examples/zh/editor.html?c=map-usa" target="_blank">USA Population Estimates</a>。</p>
      * <p>如上所示，ECharts 可以使用 <a href="http://geojson.org/" target="_blank">GeoJSON</a> 格式的数据作为地图的轮廓，你可以获取第三方的 <a href="http://geojson.org/" target="_blank">GeoJSON</a> 数据注册到 ECharts 中。例如第三方资源 <a href="https://github.com/echarts-maps" target="_blank">maps</a>。</p>
      * <p><strong>SVG 引入示例</strong></p>
-     * <pre><code class="lang-js hljs javascript">$.<span class="hljs-keyword">get</span>('map/topographic_map.svg', function (svg) {
-     *     echarts.registerMap(<span class="hljs-string">'topo'</span>, {<span class="hljs-attr">svg</span>: svg});
+     * <pre><code class="lang-ts hljs typescript">$.<span class="hljs-keyword">get</span>(<span class="hljs-string">'map/topographic_map.svg'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">svg</span>) </span>{
+     *     echarts.registerMap(<span class="hljs-string">'topo'</span>, {svg: svg});
      *     <span class="hljs-keyword">var</span> chart = echarts.init(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'main'</span>));
      *     chart.setOption({
-     *         <span class="hljs-attr">series</span>: [{
-     *             <span class="hljs-attr">type</span>: <span class="hljs-string">'map'</span>,
-     *             <span class="hljs-attr">map</span>: <span class="hljs-string">'topo'</span>,
+     *         series: [{
+     *             <span class="hljs-keyword">type</span>: <span class="hljs-string">'map'</span>,
+     *             map: <span class="hljs-string">'topo'</span>,
      *             ...
      *         }]
      *     });
@@ -111,13 +111,47 @@ public class MapSeries extends Series implements Serializable {
      */
     private Object roam;
     /**
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.projection">https://echarts.apache.org/zh/option.html#series-map.projection</a>
+     * <br/>默认值: 无
+     * <br/>js类型: ["Object"]
+     * <br/>描述:
+     * <p>自定义地图投影，至少需要提供<code class="codespan">project</code>, <code class="codespan">unproject</code>两个方法分别用来计算投影后的坐标以及计算投影前的坐标。</p>
+     * <p>比如墨卡托投影：</p>
+     * <pre><code class="lang-ts hljs typescript">series: {
+     *     <span class="hljs-keyword">type</span>: <span class="hljs-string">'map'</span>,
+     *     projection: {
+     *         project: <span class="hljs-function">(<span class="hljs-params">point</span>) =&gt;</span> [point[<span class="hljs-number">0</span>] / <span class="hljs-number">180</span> * <span class="hljs-built_in">Math</span>.PI, -<span class="hljs-built_in">Math</span>.log(<span class="hljs-built_in">Math</span>.tan((<span class="hljs-built_in">Math</span>.PI / <span class="hljs-number">2</span> + point[<span class="hljs-number">1</span>] / <span class="hljs-number">180</span> * <span class="hljs-built_in">Math</span>.PI) / <span class="hljs-number">2</span>))],
+     *         unproject: <span class="hljs-function">(<span class="hljs-params">point</span>) =&gt;</span> [point[<span class="hljs-number">0</span>] * <span class="hljs-number">180</span> / <span class="hljs-built_in">Math</span>.PI, <span class="hljs-number">2</span> * <span class="hljs-number">180</span> / <span class="hljs-built_in">Math</span>.PI * <span class="hljs-built_in">Math</span>.atan(<span class="hljs-built_in">Math</span>.exp(point[<span class="hljs-number">1</span>])) - <span class="hljs-number">90</span>]
+     *     }
+     * }
+     * </code></pre>
+     * <p>除了我们自己实现投影公式，我们也可以使用 <a href="https://github.com/d3/d3-geo" target="_blank">d3-geo</a> 等第三方库提供的现成的投影实现：</p>
+     * <pre><code class="lang-ts hljs typescript"><span class="hljs-keyword">const</span> projection = d3.geoConicEqualArea();
+     * <span class="hljs-comment">// ...</span>
+     * series: {
+     *     <span class="hljs-keyword">type</span>: <span class="hljs-string">'map'</span>,
+     *     projection: {
+     *         project: <span class="hljs-function">(<span class="hljs-params">point</span>) =&gt;</span> projection(point),
+     *         unproject: <span class="hljs-function">(<span class="hljs-params">point</span>) =&gt;</span> projection.invert(point)
+     *     }
+     * }
+     * </code></pre>
+     * <p>注：自定义投影只有在使用<code class="codespan">GeoJSON</code>作为数据源的时候有用。</p>
+     */
+    private Projection projection;
+    /**
      * 官方文档: <a href="https://echarts.apache.org/zh/option.html#series-map.center">https://echarts.apache.org/zh/option.html#series-map.center</a>
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
-     * <p>当前视角的中心点，用经纬度表示</p>
-     * <p>例如：</p>
-     * <pre><code class="lang-js hljs javascript">center: [<span class="hljs-number">115.97</span>, <span class="hljs-number">29.71</span>]
+     * <p>当前视角的中心点，默认使用原始坐标（经纬度）。如果设置了<code class="codespan">projection</code>则用投影后的坐标表示。</p>
+     * <p>示例：</p>
+     * <pre><code class="lang-ts hljs typescript">center: [<span class="hljs-number">115.97</span>, <span class="hljs-number">29.71</span>]
+     * </code></pre>
+     * <pre><code class="lang-ts hljs typescript">projection: {
+     *     projection: <span class="hljs-function">(<span class="hljs-params">pt</span>) =&gt;</span> project(pt)
+     * },
+     * center: project([<span class="hljs-number">115.97</span>, <span class="hljs-number">29.71</span>])
      * </code></pre>
      */
     private List<?> center;
@@ -126,8 +160,8 @@ public class MapSeries extends Series implements Serializable {
      * <br/>默认值: 0.75
      * <br/>js类型: ["number"]
      * <br/>描述:
-     * <p>这个参数用于 scale 地图的长宽比。</p>
-     * <p>最终的 <code class="codespan">aspect</code> 的计算方式是：<code class="codespan">geoBoundingRect.width / geoBoundingRect.height * aspectScale</code></p>
+     * <p>这个参数用于 scale 地图的长宽比，如果设置了<code class="codespan">projection</code>则无效。</p>
+     * <p>最终的 <code class="codespan">aspect</code> 的计算方式是：<code class="codespan">geoBoundingRect.width / geoBoundingRect.height * aspectScale</code>。</p>
      */
     private Integer aspectScale;
     /**
@@ -136,10 +170,10 @@ public class MapSeries extends Series implements Serializable {
      * <br/>js类型: ["Array"]
      * <br/>描述:
      * <p>二维数组，定义定位的左上角以及右下角分别所对应的经纬度。例如</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-comment">// 设置为一张完整经纬度的世界地图</span>
-     * <span class="hljs-attr">map</span>: <span class="hljs-string">'world'</span>,
-     * <span class="hljs-attr">left</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">top</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">right</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">bottom</span>: <span class="hljs-number">0</span>,
-     * <span class="hljs-attr">boundingCoords</span>: [
+     * <pre><code class="lang-ts hljs typescript"><span class="hljs-comment">// 设置为一张完整经纬度的世界地图</span>
+     * map: <span class="hljs-string">'world'</span>,
+     * left: <span class="hljs-number">0</span>, top: <span class="hljs-number">0</span>, right: <span class="hljs-number">0</span>, bottom: <span class="hljs-number">0</span>,
+     * boundingCoords: [
      *     <span class="hljs-comment">// 定位左上角经纬度</span>
      *     [<span class="hljs-number">-180</span>, <span class="hljs-number">90</span>],
      *     <span class="hljs-comment">// 定位右下角经纬度</span>
@@ -170,7 +204,7 @@ public class MapSeries extends Series implements Serializable {
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>自定义地区的名称映射，如：</p>
-     * <pre><code class="lang-js hljs javascript">{
+     * <pre><code class="lang-ts hljs typescript">{
      *     <span class="hljs-string">'China'</span> : <span class="hljs-string">'中国'</span>
      * }
      * </code></pre>
@@ -186,11 +220,11 @@ public class MapSeries extends Series implements Serializable {
      * </blockquote>
      * <p>默认是 <code class="codespan">'name'</code>，针对 GeoJSON 要素的自定义属性名称，作为主键用于关联数据点和 GeoJSON 地理要素。
      * 例如：</p>
-     * <pre><code class="lang-js hljs javascript">{
-     *     <span class="hljs-attr">nameProperty</span>: <span class="hljs-string">'NAME'</span>, <span class="hljs-comment">// 数据点中的 name：Alabama 会关联到 GeoJSON 中 NAME 属性值为 Alabama 的地理要素{"type":"Feature","id":"01","properties":{"NAME":"Alabama"}, "geometry": { ... }}</span>
-     *     <span class="hljs-attr">data</span>:[
-     *         {<span class="hljs-attr">name</span>: <span class="hljs-string">'Alabama'</span>, <span class="hljs-attr">value</span>: <span class="hljs-number">4822023</span>},
-     *         {<span class="hljs-attr">name</span>: <span class="hljs-string">'Alaska'</span>, <span class="hljs-attr">value</span>: <span class="hljs-number">731449</span>},
+     * <pre><code class="lang-ts hljs typescript">{
+     *     nameProperty: <span class="hljs-string">'NAME'</span>, <span class="hljs-comment">// 数据点中的 name：Alabama 会关联到 GeoJSON 中 NAME 属性值为 Alabama 的地理要素{"type":"Feature","id":"01","properties":{"NAME":"Alabama"}, "geometry": { ... }}</span>
+     *     data:[
+     *         {name: <span class="hljs-string">'Alabama'</span>, value: <span class="hljs-number">4822023</span>},
+     *         {name: <span class="hljs-string">'Alaska'</span>, value: <span class="hljs-number">731449</span>},
      *     ]
      * }
      * </code></pre>
@@ -302,9 +336,9 @@ public class MapSeries extends Series implements Serializable {
      * <br/>描述:
      * <p><code class="codespan">layoutCenter</code> 和 <code class="codespan">layoutSize</code> 提供了除了 <code class="codespan">left/right/top/bottom/width/height</code> 之外的布局手段。</p>
      * <p>在使用 <code class="codespan">left/right/top/bottom/width/height</code> 的时候，可能很难在保持地图高宽比的情况下把地图放在某个盒形区域的正中间，并且保证不超出盒形的范围。此时可以通过 <code class="codespan">layoutCenter</code> 属性定义地图中心在屏幕中的位置，<code class="codespan">layoutSize</code> 定义地图的大小。如下示例</p>
-     * <pre><code class="lang-js hljs javascript">layoutCenter: [<span class="hljs-string">'30%'</span>, <span class="hljs-string">'30%'</span>],
+     * <pre><code class="lang-ts hljs typescript">layoutCenter: [<span class="hljs-string">'30%'</span>, <span class="hljs-string">'30%'</span>],
      * <span class="hljs-comment">// 如果宽高比大于 1 则宽度为 100，如果小于 1 则高度为 100，保证了不超过 100x100 的区域</span>
-     * <span class="hljs-attr">layoutSize</span>: <span class="hljs-number">100</span>
+     * layoutSize: <span class="hljs-number">100</span>
      * </code></pre>
      * <p>设置这两个值后 <code class="codespan">left/right/top/bottom/width/height</code> 无效。</p>
      */
@@ -389,42 +423,42 @@ public class MapSeries extends Series implements Serializable {
      * <p>标签的统一布局配置。</p>
      * <p>该配置项是在每个系列默认的标签布局基础上，统一调整标签的<code class="codespan">(x, y)</code>位置，标签对齐等属性以实现想要的标签布局效果。</p>
      * <p>该配置项也可以是一个有如下参数的回调函数</p>
-     * <pre><code class="lang-js hljs javascript"><span class="hljs-comment">// 标签对应数据的 dataIndex</span>
-     * <span class="hljs-attr">dataIndex</span>: number
+     * <pre><code class="lang-ts hljs typescript"><span class="hljs-comment">// 标签对应数据的 dataIndex</span>
+     * dataIndex: <span class="hljs-built_in">number</span>
      * <span class="hljs-comment">// 标签对应的数据类型，只在关系图中会有 node 和 edge 数据类型的区分</span>
-     * dataType?: string
+     * dataType?: <span class="hljs-built_in">string</span>
      * <span class="hljs-comment">// 标签对应的系列的 index</span>
-     * <span class="hljs-attr">seriesIndex</span>: number
+     * seriesIndex: <span class="hljs-built_in">number</span>
      * <span class="hljs-comment">// 标签显示的文本</span>
-     * <span class="hljs-attr">text</span>: string
+     * text: <span class="hljs-built_in">string</span>
      * <span class="hljs-comment">// 默认的标签的包围盒，由系列默认的标签布局决定</span>
-     * <span class="hljs-attr">labelRect</span>: {<span class="hljs-attr">x</span>: number, <span class="hljs-attr">y</span>: number, <span class="hljs-attr">width</span>: number, <span class="hljs-attr">height</span>: number}
+     * labelRect: {x: <span class="hljs-built_in">number</span>, y: <span class="hljs-built_in">number</span>, width: <span class="hljs-built_in">number</span>, height: <span class="hljs-built_in">number</span>}
      * <span class="hljs-comment">// 默认的标签水平对齐</span>
-     * <span class="hljs-attr">align</span>: <span class="hljs-string">'left'</span> | <span class="hljs-string">'center'</span> | <span class="hljs-string">'right'</span>
+     * align: <span class="hljs-string">'left'</span> | <span class="hljs-string">'center'</span> | <span class="hljs-string">'right'</span>
      * <span class="hljs-comment">// 默认的标签垂直对齐</span>
-     * <span class="hljs-attr">verticalAlign</span>: <span class="hljs-string">'top'</span> | <span class="hljs-string">'middle'</span> | <span class="hljs-string">'bottom'</span>
+     * verticalAlign: <span class="hljs-string">'top'</span> | <span class="hljs-string">'middle'</span> | <span class="hljs-string">'bottom'</span>
      * <span class="hljs-comment">// 标签所对应的数据图形的包围盒，可用于定位标签位置</span>
-     * <span class="hljs-attr">rect</span>: {<span class="hljs-attr">x</span>: number, <span class="hljs-attr">y</span>: number, <span class="hljs-attr">width</span>: number, <span class="hljs-attr">height</span>: number}
+     * rect: {x: <span class="hljs-built_in">number</span>, y: <span class="hljs-built_in">number</span>, width: <span class="hljs-built_in">number</span>, height: <span class="hljs-built_in">number</span>}
      * <span class="hljs-comment">// 默认引导线的位置，目前只有饼图(pie)和漏斗图(funnel)有默认标签位置</span>
      * <span class="hljs-comment">// 如果没有该值则为 null</span>
-     * labelLinePoints?: number[][]
+     * labelLinePoints?: <span class="hljs-built_in">number</span>[][]
      * </code></pre>
      * <p><strong>示例：</strong></p>
      * <p>将标签显示在图形右侧 10px 的位置，并且垂直居中：</p>
-     * <pre><code class="lang-js hljs javascript">labelLayout(params) {
+     * <pre><code class="lang-ts hljs typescript">labelLayout(params) {
      *     <span class="hljs-keyword">return</span> {
-     *         <span class="hljs-attr">x</span>: params.rect.x + <span class="hljs-number">10</span>,
-     *         <span class="hljs-attr">y</span>: params.rect.y + params.rect.height / <span class="hljs-number">2</span>,
-     *         <span class="hljs-attr">verticalAlign</span>: <span class="hljs-string">'middle'</span>,
-     *         <span class="hljs-attr">align</span>: <span class="hljs-string">'left'</span>
+     *         x: params.rect.x + <span class="hljs-number">10</span>,
+     *         y: params.rect.y + params.rect.height / <span class="hljs-number">2</span>,
+     *         verticalAlign: <span class="hljs-string">'middle'</span>,
+     *         align: <span class="hljs-string">'left'</span>
      *     }
      * }
      * </code></pre>
      * <p>根据图形的包围盒尺寸决定文本尺寸</p>
-     * <pre><code class="lang-js hljs javascript">
+     * <pre><code class="lang-ts hljs typescript">
      * labelLayout(params) {
      *     <span class="hljs-keyword">return</span> {
-     *         <span class="hljs-attr">fontSize</span>: <span class="hljs-built_in">Math</span>.max(params.rect.width / <span class="hljs-number">10</span>, <span class="hljs-number">5</span>)
+     *         fontSize: <span class="hljs-built_in">Math</span>.max(params.rect.width / <span class="hljs-number">10</span>, <span class="hljs-number">5</span>)
      *     };
      * }
      * </code></pre>
@@ -444,35 +478,35 @@ public class MapSeries extends Series implements Serializable {
      * <br/>js类型: ["Array"]
      * <br/>描述:
      * <p>地图系列中的数据内容数组。数组项可以为单个数值，如：</p>
-     * <pre><code class="lang-js hljs javascript">[<span class="hljs-number">12</span>, <span class="hljs-number">34</span>, <span class="hljs-number">56</span>, <span class="hljs-number">10</span>, <span class="hljs-number">23</span>]
+     * <pre><code class="lang-ts hljs typescript">[<span class="hljs-number">12</span>, <span class="hljs-number">34</span>, <span class="hljs-number">56</span>, <span class="hljs-number">10</span>, <span class="hljs-number">23</span>]
      * </code></pre>
      * <p>如果需要在数据中加入其它维度给 <a href="#visualMap">visualMap</a> 组件用来映射到颜色等其它图形属性。每个数据项也可以是数组，如：</p>
-     * <pre><code class="lang-js hljs javascript">[[<span class="hljs-number">12</span>, <span class="hljs-number">14</span>], [<span class="hljs-number">34</span>, <span class="hljs-number">50</span>], [<span class="hljs-number">56</span>, <span class="hljs-number">30</span>], [<span class="hljs-number">10</span>, <span class="hljs-number">15</span>], [<span class="hljs-number">23</span>, <span class="hljs-number">10</span>]]
+     * <pre><code class="lang-ts hljs typescript">[[<span class="hljs-number">12</span>, <span class="hljs-number">14</span>], [<span class="hljs-number">34</span>, <span class="hljs-number">50</span>], [<span class="hljs-number">56</span>, <span class="hljs-number">30</span>], [<span class="hljs-number">10</span>, <span class="hljs-number">15</span>], [<span class="hljs-number">23</span>, <span class="hljs-number">10</span>]]
      * </code></pre>
      * <p>这时候可以将每项数组中的第二个值指定给 <a href="#visualMap">visualMap</a> 组件。</p>
      * <p>更多时候我们需要指定每个数据项的名称，这时候需要每个项为一个对象：</p>
-     * <pre><code class="lang-js hljs javascript">[{
+     * <pre><code class="lang-ts hljs typescript">[{
      *     <span class="hljs-comment">// 数据项的名称</span>
-     *     <span class="hljs-attr">name</span>: <span class="hljs-string">'数据1'</span>,
+     *     name: <span class="hljs-string">'数据1'</span>,
      *     <span class="hljs-comment">// 数据项值8</span>
-     *     <span class="hljs-attr">value</span>: <span class="hljs-number">10</span>
+     *     value: <span class="hljs-number">10</span>
      * }, {
-     *     <span class="hljs-attr">name</span>: <span class="hljs-string">'数据2'</span>,
-     *     <span class="hljs-attr">value</span>: <span class="hljs-number">20</span>
+     *     name: <span class="hljs-string">'数据2'</span>,
+     *     value: <span class="hljs-number">20</span>
      * }]
      * </code></pre>
      * <p>需要对个别内容指定进行个性化定义时：</p>
-     * <pre><code class="lang-js hljs javascript">[{
-     *     <span class="hljs-attr">name</span>: <span class="hljs-string">'数据1'</span>,
-     *     <span class="hljs-attr">value</span>: <span class="hljs-number">10</span>
+     * <pre><code class="lang-ts hljs typescript">[{
+     *     name: <span class="hljs-string">'数据1'</span>,
+     *     value: <span class="hljs-number">10</span>
      * }, {
      *     <span class="hljs-comment">// 数据项名称</span>
-     *     <span class="hljs-attr">name</span>: <span class="hljs-string">'数据2'</span>,
-     *     <span class="hljs-attr">value</span> : <span class="hljs-number">56</span>,
+     *     name: <span class="hljs-string">'数据2'</span>,
+     *     value : <span class="hljs-number">56</span>,
      *     <span class="hljs-comment">//自定义特殊 tooltip，仅对该数据项有效</span>
-     *     <span class="hljs-attr">tooltip</span>:{},
+     *     tooltip:{},
      *     <span class="hljs-comment">//自定义特殊itemStyle，仅对该item有效</span>
-     *     <span class="hljs-attr">itemStyle</span>:{}
+     *     itemStyle:{}
      * }]
      * </code></pre>
      */
