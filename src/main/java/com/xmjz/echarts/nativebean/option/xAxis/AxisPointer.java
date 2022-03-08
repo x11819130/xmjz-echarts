@@ -1,5 +1,10 @@
 package com.xmjz.echarts.nativebean.option.xAxis;
 
+import com.xmjz.echarts.BaseEcharts;
+import com.xmjz.echarts.nativebean.option.xAxis.axisPointer.Handle;
+import com.xmjz.echarts.nativebean.option.xAxis.axisPointer.Label;
+import com.xmjz.echarts.nativebean.option.xAxis.axisPointer.LineStyle;
+import com.xmjz.echarts.nativebean.option.xAxis.axisPointer.ShadowStyle;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
@@ -7,7 +12,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.axisPointer">https://echarts.apache.org/zh/option.html#xAxis.axisPointer</a>
+ * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.axisPointer">#xAxis.axisPointer</a>
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -18,20 +23,20 @@ import java.io.Serializable;
 @Getter
 @Setter
 @Accessors(chain = true)
-public class AxisPointer implements Serializable {
+public class AxisPointer extends BaseEcharts implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.axisPointer.show">https://echarts.apache.org/zh/option.html#xAxis.axisPointer.show</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.axisPointer.show">#xAxis.axisPointer.show</a>
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
-     * <p>默认不显示。但是如果 <a href="#tooltip.trigger">tooltip.trigger</a> 设置为 <code class="codespan">'axis'</code> 或者 <a href="#tooltip.axisPointer.type">tooltip.axisPointer.type</a> 设置为 <code class="codespan">'cross'</code>，则自动显示 axisPointer。坐标系会自动选择显示显示哪个轴的 axisPointer，也可以使用 <a href="#tooltip.axisPointer.axis">tooltip.axisPointer.axis</a> 改变这种选择。</p>
+     * <p>默认不显示。但是如果 <a href="https://echarts.apache.org/zh/option.html#tooltip.trigger">tooltip.trigger</a> 设置为 <code class="codespan">'axis'</code> 或者 <a href="https://echarts.apache.org/zh/option.html#tooltip.axisPointer.type">tooltip.axisPointer.type</a> 设置为 <code class="codespan">'cross'</code>，则自动显示 axisPointer。坐标系会自动选择显示显示哪个轴的 axisPointer，也可以使用 <a href="https://echarts.apache.org/zh/option.html#tooltip.axisPointer.axis">tooltip.axisPointer.axis</a> 改变这种选择。</p>
      */
     private Boolean show;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.axisPointer.type">https://echarts.apache.org/zh/option.html#xAxis.axisPointer.type</a>
-     * <br/>默认值: line
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.axisPointer.type">#xAxis.axisPointer.type</a>
+     * <br/>默认值: 'line'
      * <br/>js类型: ["string"]
      * <br/>描述:
      * <p>指示器类型。</p>
@@ -47,7 +52,7 @@ public class AxisPointer implements Serializable {
      */
     private String type;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.axisPointer.snap">https://echarts.apache.org/zh/option.html#xAxis.axisPointer.snap</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.axisPointer.snap">#xAxis.axisPointer.snap</a>
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -56,7 +61,7 @@ public class AxisPointer implements Serializable {
      */
     private Boolean snap;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.axisPointer.z">https://echarts.apache.org/zh/option.html#xAxis.axisPointer.z</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.axisPointer.z">#xAxis.axisPointer.z</a>
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -64,31 +69,31 @@ public class AxisPointer implements Serializable {
      */
     private Integer z;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.axisPointer.label">https://echarts.apache.org/zh/option.html#xAxis.axisPointer.label</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.axisPointer.label">#xAxis.axisPointer.label</a>
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>坐标轴指示器的文本标签。</p>
      */
-    private Object label;
+    private Label label;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.axisPointer.lineStyle">https://echarts.apache.org/zh/option.html#xAxis.axisPointer.lineStyle</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.axisPointer.lineStyle">#xAxis.axisPointer.lineStyle</a>
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
-     * <p><a href="#tooltip.axisPointer.type">axisPointer.type</a> 为 <code class="codespan">'line'</code> 时有效。</p>
+     * <p><a href="https://echarts.apache.org/zh/option.html#tooltip.axisPointer.type">axisPointer.type</a> 为 <code class="codespan">'line'</code> 时有效。</p>
      */
-    private Object lineStyle;
+    private LineStyle lineStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.axisPointer.shadowStyle">https://echarts.apache.org/zh/option.html#xAxis.axisPointer.shadowStyle</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.axisPointer.shadowStyle">#xAxis.axisPointer.shadowStyle</a>
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
-     * <p><a href="#tooltip.axisPointer.type">axisPointer.type</a> 为 <code class="codespan">'shadow'</code> 时有效。</p>
+     * <p><a href="https://echarts.apache.org/zh/option.html#tooltip.axisPointer.type">axisPointer.type</a> 为 <code class="codespan">'shadow'</code> 时有效。</p>
      */
-    private Object shadowStyle;
+    private ShadowStyle shadowStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.axisPointer.triggerTooltip">https://echarts.apache.org/zh/option.html#xAxis.axisPointer.triggerTooltip</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.axisPointer.triggerTooltip">#xAxis.axisPointer.triggerTooltip</a>
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -96,7 +101,7 @@ public class AxisPointer implements Serializable {
      */
     private Boolean triggerTooltip;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.axisPointer.value">https://echarts.apache.org/zh/option.html#xAxis.axisPointer.value</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.axisPointer.value">#xAxis.axisPointer.value</a>
      * <br/>默认值: 无
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -104,7 +109,7 @@ public class AxisPointer implements Serializable {
      */
     private Integer value;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.axisPointer.status">https://echarts.apache.org/zh/option.html#xAxis.axisPointer.status</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.axisPointer.status">#xAxis.axisPointer.status</a>
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -112,11 +117,11 @@ public class AxisPointer implements Serializable {
      */
     private Boolean status;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.axisPointer.handle">https://echarts.apache.org/zh/option.html#xAxis.axisPointer.handle</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#xAxis.axisPointer.handle">#xAxis.axisPointer.handle</a>
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
      * <p>拖拽手柄，适用于触屏的环境。参见 <a href="https://echarts.apache.org/examples/zh/editor.html?c=line-tooltip-touch&amp;edit=1&amp;reset=1" target="_blank">例子</a>。</p>
      */
-    private Object handle;
+    private Handle handle;
 }

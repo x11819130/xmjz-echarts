@@ -6,7 +6,7 @@
 
     <groupId>com.xmjz</groupId>
     <artifactId>xmjz-echarts</artifactId>
-    <version>5.3.0</version>
+    <version>5.3.1</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -86,7 +86,8 @@
                     <execution>
                         <!--verify阶段:检测测试后的包是否完好,此阶段位于package之后,install/deploy之前-->
                         <!--详见:https://maven.apache.org/ref/3.8.2/maven-core/lifecycles.htm -->
-                        <phase>verify</phase>
+                        <!--<phase>verify</phase>-->
+                        <phase>none</phase>
                         <goals>
                             <goal>delombok</goal>
                         </goals>
@@ -98,14 +99,15 @@
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>3.0.1</version>
                 <configuration>
-                    <!-- 从delombok还原的源码目录导出文档 -->
+                    <!--从delombok还原的源码目录导出文档-->
                     <sourcepath>${project.build.directory}/generated-test-sources/delombok</sourcepath>
                     <additionalJOption>-Xdoclint:none</additionalJOption>
                 </configuration>
                 <executions>
                     <execution>
                         <id>attach-javadocs</id>
-                        <phase>verify</phase>
+                        <!--<phase>verify</phase>-->
+                        <phase>none</phase>
                         <goals>
                             <goal>jar</goal>
                         </goals>

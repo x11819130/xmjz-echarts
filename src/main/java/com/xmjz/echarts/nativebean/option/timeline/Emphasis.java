@@ -1,5 +1,8 @@
 package com.xmjz.echarts.nativebean.option.timeline;
 
+import com.xmjz.echarts.BaseEcharts;
+import com.xmjz.echarts.nativebean.option.timeline.emphasis.ItemStyle;
+import com.xmjz.echarts.nativebean.option.timeline.emphasis.Label;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
@@ -7,7 +10,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.emphasis">https://echarts.apache.org/zh/option.html#timeline.emphasis</a>
+ * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.emphasis">#timeline.emphasis</a>
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -17,25 +20,25 @@ import java.io.Serializable;
 @Getter
 @Setter
 @Accessors(chain = true)
-public class Emphasis implements Serializable {
+public class Emphasis extends BaseEcharts implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.emphasis.label">https://echarts.apache.org/zh/option.html#timeline.emphasis.label</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.emphasis.label">#timeline.emphasis.label</a>
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
      */
-    private Object label;
+    private Label label;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.emphasis.itemStyle">https://echarts.apache.org/zh/option.html#timeline.emphasis.itemStyle</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.emphasis.itemStyle">#timeline.emphasis.itemStyle</a>
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
      */
-    private Object itemStyle;
+    private ItemStyle itemStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.emphasis.checkpointStyle">https://echarts.apache.org/zh/option.html#timeline.emphasis.checkpointStyle</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.emphasis.checkpointStyle">#timeline.emphasis.checkpointStyle</a>
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -43,7 +46,7 @@ public class Emphasis implements Serializable {
      */
     private Object checkpointStyle;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.emphasis.controlStyle">https://echarts.apache.org/zh/option.html#timeline.emphasis.controlStyle</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#timeline.emphasis.controlStyle">#timeline.emphasis.controlStyle</a>
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

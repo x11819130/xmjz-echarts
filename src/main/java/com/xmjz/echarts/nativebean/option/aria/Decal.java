@@ -1,5 +1,7 @@
 package com.xmjz.echarts.nativebean.option.aria;
 
+import com.xmjz.echarts.BaseEcharts;
+import com.xmjz.echarts.nativebean.option.aria.decal.Decals;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
@@ -7,7 +9,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#aria.decal">https://echarts.apache.org/zh/option.html#aria.decal</a>
+ * 官方文档: <a href="https://echarts.apache.org/zh/option.html#aria.decal">#aria.decal</a>
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -28,23 +30,23 @@ import java.io.Serializable;
 @Getter
 @Setter
 @Accessors(chain = true)
-public class Decal implements Serializable {
+public class Decal extends BaseEcharts implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#aria.decal.show">https://echarts.apache.org/zh/option.html#aria.decal.show</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#aria.decal.show">#aria.decal.show</a>
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
-     * <p>是否显示贴花图案，默认不显示。如果要显示贴花，需要保证 <a href="#aria.enabled">aria.enabled</a> 与 <code class="codespan">aria.decal.show</code> 都是 <code class="codespan">true</code>。</p>
+     * <p>是否显示贴花图案，默认不显示。如果要显示贴花，需要保证 <a href="https://echarts.apache.org/zh/option.html#aria.enabled">aria.enabled</a> 与 <code class="codespan">aria.decal.show</code> 都是 <code class="codespan">true</code>。</p>
      */
     private Boolean show;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#aria.decal.decals">https://echarts.apache.org/zh/option.html#aria.decal.decals</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#aria.decal.decals">#aria.decal.decals</a>
      * <br/>默认值: 无
      * <br/>js类型: ["Object","Array"]
      * <br/>描述:
      * <p>贴花图案的样式。如果是 <code class="codespan">Object</code> 类型，表示为所有数据采用同样的样式，如果是数组，则数组的每一项各为一种样式，数据将会依次循环取数组中的样式。</p>
      */
-    private Object decals;
+    private Decals decals;
 }

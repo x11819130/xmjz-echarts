@@ -1,5 +1,6 @@
 package com.xmjz.echarts.nativebean.option.parallelAxis;
 
+import com.xmjz.echarts.BaseEcharts;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
@@ -7,7 +8,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle">https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle</a>
+ * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle">#parallelAxis.areaSelectStyle</a>
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -18,11 +19,11 @@ import java.io.Serializable;
 @Getter
 @Setter
 @Accessors(chain = true)
-public class AreaSelectStyle implements Serializable {
+public class AreaSelectStyle extends BaseEcharts implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle.width">https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle.width</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle.width">#parallelAxis.areaSelectStyle.width</a>
      * <br/>默认值: 20
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -30,7 +31,7 @@ public class AreaSelectStyle implements Serializable {
      */
     private Integer width;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle.borderWidth">https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle.borderWidth</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle.borderWidth">#parallelAxis.areaSelectStyle.borderWidth</a>
      * <br/>默认值: 1
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -38,23 +39,23 @@ public class AreaSelectStyle implements Serializable {
      */
     private Integer borderWidth;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle.borderColor">https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle.borderColor</a>
-     * <br/>默认值: rgba(160,197,232)
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle.borderColor">#parallelAxis.areaSelectStyle.borderColor</a>
+     * <br/>默认值: 'rgba(160,197,232)'
      * <br/>js类型: ["Color"]
      * <br/>描述:
      * <p>选框的边框颜色。</p>
      */
     private String borderColor;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle.color">https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle.color</a>
-     * <br/>默认值: rgba(160,197,232)
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle.color">#parallelAxis.areaSelectStyle.color</a>
+     * <br/>默认值: 'rgba(160,197,232)'
      * <br/>js类型: ["Color"]
      * <br/>描述:
      * <p>选框的填充色。</p>
      */
     private String color;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle.opacity">https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle.opacity</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#parallelAxis.areaSelectStyle.opacity">#parallelAxis.areaSelectStyle.opacity</a>
      * <br/>默认值: 0.3
      * <br/>js类型: ["number"]
      * <br/>描述:

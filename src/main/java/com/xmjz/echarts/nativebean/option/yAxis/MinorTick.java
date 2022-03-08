@@ -1,5 +1,7 @@
 package com.xmjz.echarts.nativebean.option.yAxis;
 
+import com.xmjz.echarts.BaseEcharts;
+import com.xmjz.echarts.nativebean.option.yAxis.minorTick.LineStyle;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
@@ -7,7 +9,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.minorTick">https://echarts.apache.org/zh/option.html#yAxis.minorTick</a>
+ * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.minorTick">#yAxis.minorTick</a>
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -15,7 +17,7 @@ import java.io.Serializable;
  * <p>从 <code class="codespan">v4.6.0</code> 开始支持</p>
  * </blockquote>
  * <p>坐标轴次刻度线相关设置。</p>
- * <p>注意：次刻度线无法在类目轴（<a href="#yAxis.type">type</a>: <code class="codespan">'category'</code>）中使用。</p>
+ * <p>注意：次刻度线无法在类目轴（<a href="https://echarts.apache.org/zh/option.html#yAxis.type">type</a>: <code class="codespan">'category'</code>）中使用。</p>
  * <p>示例：</p>
  * <p>1) 函数绘图中使用次刻度线</p>
  * <iframe data-src="https://echarts.apache.org/examples/zh/view.html?c=line-function&amp;edit=1&amp;reset=1" width="600" height="350"></iframe>
@@ -29,11 +31,11 @@ import java.io.Serializable;
 @Getter
 @Setter
 @Accessors(chain = true)
-public class MinorTick implements Serializable {
+public class MinorTick extends BaseEcharts implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.minorTick.show">https://echarts.apache.org/zh/option.html#yAxis.minorTick.show</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.minorTick.show">#yAxis.minorTick.show</a>
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -41,7 +43,7 @@ public class MinorTick implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.minorTick.splitNumber">https://echarts.apache.org/zh/option.html#yAxis.minorTick.splitNumber</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.minorTick.splitNumber">#yAxis.minorTick.splitNumber</a>
      * <br/>默认值: 5
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -49,7 +51,7 @@ public class MinorTick implements Serializable {
      */
     private Integer splitNumber;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.minorTick.length">https://echarts.apache.org/zh/option.html#yAxis.minorTick.length</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.minorTick.length">#yAxis.minorTick.length</a>
      * <br/>默认值: 3
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -57,10 +59,10 @@ public class MinorTick implements Serializable {
      */
     private Integer length;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.minorTick.lineStyle">https://echarts.apache.org/zh/option.html#yAxis.minorTick.lineStyle</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#yAxis.minorTick.lineStyle">#yAxis.minorTick.lineStyle</a>
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
      */
-    private Object lineStyle;
+    private LineStyle lineStyle;
 }

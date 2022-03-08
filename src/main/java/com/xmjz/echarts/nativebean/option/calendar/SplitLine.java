@@ -1,5 +1,7 @@
 package com.xmjz.echarts.nativebean.option.calendar;
 
+import com.xmjz.echarts.BaseEcharts;
+import com.xmjz.echarts.nativebean.option.calendar.splitLine.LineStyle;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
@@ -7,7 +9,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.splitLine">https://echarts.apache.org/zh/option.html#calendar.splitLine</a>
+ * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.splitLine">#calendar.splitLine</a>
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -18,11 +20,11 @@ import java.io.Serializable;
 @Getter
 @Setter
 @Accessors(chain = true)
-public class SplitLine implements Serializable {
+public class SplitLine extends BaseEcharts implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.splitLine.show">https://echarts.apache.org/zh/option.html#calendar.splitLine.show</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.splitLine.show">#calendar.splitLine.show</a>
      * <br/>默认值: true
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -30,10 +32,10 @@ public class SplitLine implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.splitLine.lineStyle">https://echarts.apache.org/zh/option.html#calendar.splitLine.lineStyle</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#calendar.splitLine.lineStyle">#calendar.splitLine.lineStyle</a>
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
      */
-    private Object lineStyle;
+    private LineStyle lineStyle;
 }

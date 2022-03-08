@@ -1,5 +1,6 @@
 package com.xmjz.echarts.nativebean.option.legend;
 
+import com.xmjz.echarts.BaseEcharts;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
@@ -8,11 +9,11 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageIcons">https://echarts.apache.org/zh/option.html#legend.pageIcons</a>
+ * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageIcons">#legend.pageIcons</a>
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
- * <p><a href="#legend.type">legend.type</a> 为 <code class="codespan">'scroll'</code> 时有效。</p>
+ * <p><a href="https://echarts.apache.org/zh/option.html#legend.type">legend.type</a> 为 <code class="codespan">'scroll'</code> 时有效。</p>
  * <p>图例控制块的图标。</p>
  *
  * @author auto
@@ -20,15 +21,15 @@ import java.util.List;
 @Getter
 @Setter
 @Accessors(chain = true)
-public class PageIcons implements Serializable {
+public class PageIcons extends BaseEcharts implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageIcons.horizontal">https://echarts.apache.org/zh/option.html#legend.pageIcons.horizontal</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageIcons.horizontal">#legend.pageIcons.horizontal</a>
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
-     * <p><a href="#legend.orient">legend.orient</a> 为 <code class="codespan">'horizontal'</code> 时的翻页按钮图标。</p>
+     * <p><a href="https://echarts.apache.org/zh/option.html#legend.orient">legend.orient</a> 为 <code class="codespan">'horizontal'</code> 时的翻页按钮图标。</p>
      * <p>是一个数组，表示 <code class="codespan">[previous page button, next page button]</code>。默认值为 <code class="codespan">['M0,0L12,-10L12,10z', 'M0,0L-12,-10L-12,10z']</code>，。</p>
      * <p>数组中每项，</p>
      * <p>可以通过 <code class="codespan">'image://url'</code> 设置为图片，其中 URL 为图片的链接，或者 <code class="codespan">dataURI</code>。</p>
@@ -43,11 +44,11 @@ public class PageIcons implements Serializable {
      */
     private List<?> horizontal;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageIcons.vertical">https://echarts.apache.org/zh/option.html#legend.pageIcons.vertical</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#legend.pageIcons.vertical">#legend.pageIcons.vertical</a>
      * <br/>默认值: 无
      * <br/>js类型: ["Array"]
      * <br/>描述:
-     * <p><a href="#legend.orient">legend.orient</a> 为 <code class="codespan">'vertical'</code> 时的翻页按钮图标。</p>
+     * <p><a href="https://echarts.apache.org/zh/option.html#legend.orient">legend.orient</a> 为 <code class="codespan">'vertical'</code> 时的翻页按钮图标。</p>
      * <p>是一个数组，表示 <code class="codespan">[previous page button, next page button]</code>。默认值为 <code class="codespan">['M0,0L20,0L10,-20z', 'M0,0L20,0L10,20z']</code>，。</p>
      * <p>数组中每项，</p>
      * <p>可以通过 <code class="codespan">'image://url'</code> 设置为图片，其中 URL 为图片的链接，或者 <code class="codespan">dataURI</code>。</p>

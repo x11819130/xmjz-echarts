@@ -1,5 +1,6 @@
 package com.xmjz.echarts.nativebean.option;
 
+import com.xmjz.echarts.BaseEcharts;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
@@ -7,7 +8,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#stateAnimation">https://echarts.apache.org/zh/option.html#stateAnimation</a>
+ * 官方文档: <a href="https://echarts.apache.org/zh/option.html#stateAnimation">#stateAnimation</a>
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
@@ -18,11 +19,11 @@ import java.io.Serializable;
 @Getter
 @Setter
 @Accessors(chain = true)
-public class StateAnimation implements Serializable {
+public class StateAnimation extends BaseEcharts implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#stateAnimation.duration">https://echarts.apache.org/zh/option.html#stateAnimation.duration</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#stateAnimation.duration">#stateAnimation.duration</a>
      * <br/>默认值: 300
      * <br/>js类型: ["number"]
      * <br/>描述:
@@ -30,7 +31,7 @@ public class StateAnimation implements Serializable {
      */
     private Integer duration;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#stateAnimation.easing">https://echarts.apache.org/zh/option.html#stateAnimation.easing</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#stateAnimation.easing">#stateAnimation.easing</a>
      * <br/>默认值: cubicOut
      * <br/>js类型: ["string"]
      * <br/>描述:

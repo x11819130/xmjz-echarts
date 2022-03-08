@@ -1,5 +1,6 @@
 package com.xmjz.echarts.nativebean.option;
 
+import com.xmjz.echarts.BaseEcharts;
 import com.xmjz.echarts.nativebean.option.media.Query;
 import lombok.Getter;
 import lombok.Setter;
@@ -8,7 +9,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#media">https://echarts.apache.org/zh/option.html#media</a>
+ * 官方文档: <a href="https://echarts.apache.org/zh/option.html#media">#media</a>
  * <br/>默认值: 无
  * <br/>js类型: ["Array"]
  * <br/>描述:
@@ -19,11 +20,11 @@ import java.io.Serializable;
 @Getter
 @Setter
 @Accessors(chain = true)
-public class Media implements Serializable {
+public class Media extends BaseEcharts implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#media.query">https://echarts.apache.org/zh/option.html#media.query</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#media.query">#media.query</a>
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
@@ -31,7 +32,7 @@ public class Media implements Serializable {
      */
     private Query query;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#media.option">https://echarts.apache.org/zh/option.html#media.option</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#media.option">#media.option</a>
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:

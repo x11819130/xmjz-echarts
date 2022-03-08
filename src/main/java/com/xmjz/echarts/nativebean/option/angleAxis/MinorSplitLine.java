@@ -1,5 +1,7 @@
 package com.xmjz.echarts.nativebean.option.angleAxis;
 
+import com.xmjz.echarts.BaseEcharts;
+import com.xmjz.echarts.nativebean.option.angleAxis.minorSplitLine.LineStyle;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
@@ -7,25 +9,25 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.minorSplitLine">https://echarts.apache.org/zh/option.html#angleAxis.minorSplitLine</a>
+ * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.minorSplitLine">#angleAxis.minorSplitLine</a>
  * <br/>默认值: 无
  * <br/>js类型: ["Object"]
  * <br/>描述:
  * <blockquote>
  * <p>从 <code class="codespan">v4.6.0</code> 开始支持</p>
  * </blockquote>
- * <p>坐标轴在 <a href="#grid">grid</a> 区域中的次分隔线。次分割线会对齐次刻度线 <a href="#angleAxis.minorTick">minorTick</a></p>
+ * <p>坐标轴在 <a href="https://echarts.apache.org/zh/option.html#grid">grid</a> 区域中的次分隔线。次分割线会对齐次刻度线 <a href="https://echarts.apache.org/zh/option.html#angleAxis.minorTick">minorTick</a></p>
  *
  * @author auto
  */
 @Getter
 @Setter
 @Accessors(chain = true)
-public class MinorSplitLine implements Serializable {
+public class MinorSplitLine extends BaseEcharts implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.minorSplitLine.show">https://echarts.apache.org/zh/option.html#angleAxis.minorSplitLine.show</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.minorSplitLine.show">#angleAxis.minorSplitLine.show</a>
      * <br/>默认值: 无
      * <br/>js类型: ["boolean"]
      * <br/>描述:
@@ -33,10 +35,10 @@ public class MinorSplitLine implements Serializable {
      */
     private Boolean show;
     /**
-     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.minorSplitLine.lineStyle">https://echarts.apache.org/zh/option.html#angleAxis.minorSplitLine.lineStyle</a>
+     * 官方文档: <a href="https://echarts.apache.org/zh/option.html#angleAxis.minorSplitLine.lineStyle">#angleAxis.minorSplitLine.lineStyle</a>
      * <br/>默认值: 无
      * <br/>js类型: ["Object"]
      * <br/>描述:
      */
-    private Object lineStyle;
+    private LineStyle lineStyle;
 }
